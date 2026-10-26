@@ -1,0 +1,20 @@
+{
+  "id": "FQI-SRC-SILLS-2.Lem2.53",
+  "source": {
+    "identity_id": "FQI-SRC-SILLS-2.Lem2.53",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity381.lean",
+    "sha256": "a1d23ff78afbc78618ee74dc7d1c98de6e2fcfea9bb0931099aeecf95915b277"
+  },
+  "native_status": "unsupported_structure",
+  "original_lean_proved": false,
+  "remaining_obligations": [
+    "列表展开与ht代换已在Lean执行；仍需桥接t/t^2的支撑内移位",
+    "证明原分母条件并消去额外证书极点",
+    "处理随n变化的参数域、端点、初值和目标递推"
+  ],
+  "native_report": "FQI-SRC-SILLS-2.Lem2.53/native.json",
+  "verified_preprocessing_steps": [
+    "explicit_Pochhammer_lists_expanded_in_Lean",
+    "parameter_power_equality_rewritten_in_Lean"
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "scope": "fixed twelve remaining train A candidates; other candidates not reclassified",
+  "initial_complete_train_proofs": 5,
+  "selected": 12,
+  "actual_expr_symbolic_success": 12,
+  "local_lean_verified": 12,
+  "new_original_proofs": 1,
+  "remaining_original_proofs": 11,
+  "complete_train_proofs": 6,
+  "limitation": "Rational field relations do not establish original-domain representations, denominator conditions, boundaries or initial values.",
+  "records": [
+    {
+      "id": "FQI-CHU-VANDERMONDE-Q",
+      "source": {
+        "identity_id": "FQI-CHU-VANDERMONDE-Q",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity012.lean",
+        "sha256": "de9763fcd57e8cbcac60204818afc35d76206e420d1e8b625a8ce9901e614fe6"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "qwz",
+      "group": "phi_lower_denominators",
+      "remaining_obligations": [
+        "用 phiDefined [c] q n 推出支撑内各个 Poch 分母非零",
+        "证明终止上参数和 Gaussian 表示的转换；原假设不要求全局 regular q",
+        "把 q-WZ 通量中的可去极点消去，并处理随 n 变化的分母条件",
+        "生成求和、边界、初值及原目标递推的完整 Lean 证明"
+      ],
+      "certificate_denominator": "X*(Q*c - 1)*(Q*q - X)",
+      "report_links": {
+        "native": "FQI-CHU-VANDERMONDE-Q/native.json",
+        "symbolic": "FQI-CHU-VANDERMONDE-Q/native_symbolic.json",
+        "local": "FQI-CHU-VANDERMONDE-Q/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-CHU-VANDERMONDE-BALANCED",
+      "source": {
+        "identity_id": "FQI-CHU-VANDERMONDE-BALANCED",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity013.lean",
+        "sha256": "88ce8e4082af6f33dcf20bacef1e64cd6df41d4faf89b14ffcb96548014d3361"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "qwz",
+      "group": "phi_lower_denominators",
+      "remaining_obligations": [
+        "将 phiDefined 的有限支撑非零假设传给公共终止上参数桥接",
+        "清除下参数 Poch(c,q,n) 后生成移位起点 Poch(c*q^k,q,n-k) 的 Lean 规则",
+        "验证目标可能为零时的递推比较，不除以目标值",
+        "生成完整边界、初值与求和证明"
+      ],
+      "certificate_denominator": "(Q*c - 1)*(Q*q - X)",
+      "report_links": {
+        "native": "FQI-CHU-VANDERMONDE-BALANCED/native.json",
+        "symbolic": "FQI-CHU-VANDERMONDE-BALANCED/native_symbolic.json",
+        "local": "FQI-CHU-VANDERMONDE-BALANCED/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-BAILEY-UNIT",
+      "source": {
+        "identity_id": "FQI-BAILEY-UNIT",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity020.lean",
+        "sha256": "c9ff70f5bf2bf5d8733261930ecb4272ef3bdea4886fb44b63c93d51a4181133"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "direct",
+      "group": "direct_piecewise_endpoints",
+      "remaining_obligations": [
+        "把 unitBailey 的 r=0 分支与 r>0 分支分别桥接到原定义",
+        "证书的 1-a*q^(2r) 因子不由原假设保证非零，必须在通量中消去",
+        "分别证明 n=0 初值、n>0 的两个端点及 q=0 可能情形",
+        "由直接 q-Gosper 的原差分组装原分段目标"
+      ],
+      "certificate_denominator": "(Q - 1)*(X**2*a - 1)",
+      "report_links": {
+        "native": "FQI-BAILEY-UNIT/native.json",
+        "symbolic": "FQI-BAILEY-UNIT/native_symbolic.json",
+        "local": "FQI-BAILEY-UNIT/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex5",
+      "source": {
+        "identity_id": "FQI-SRC-GR2-1.Ex5",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity051.lean",
+        "sha256": "db6ff636c05fef41a7008ec6dae82f1221b2f211d8f20b77c49d246eccca5a16"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "qwz",
+      "group": "shifted_products_and_prefactor",
+      "remaining_obligations": [
+        "证明 pochList、外部乘数和含 m 的移位起点 Poch(c*q^k,q,m) 转换",
+        "为依赖 n 的下参数 c*q^(1-n)/b 传递 phiDefined 条件",
+        "处理原假设未排除的分子零值与证书可去极点",
+        "生成参数 m 保持任意时的递推、移动边界与初值证明"
+      ],
+      "certificate_denominator": "X*c*(Q*b - 1)*(Q*q - X)",
+      "report_links": {
+        "native": "FQI-SRC-GR2-1.Ex5/native.json",
+        "symbolic": "FQI-SRC-GR2-1.Ex5/native_symbolic.json",
+        "local": "FQI-SRC-GR2-1.Ex5/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex6iii",
+      "source": {
+        "identity_id": "FQI-SRC-GR2-1.Ex6iii",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity053.lean",
+        "sha256": "d7cf234268f0fdff200f09611a3bfba0b0f4b8f1d61e1343b27512df4de5927c"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": true,
+      "native_status": "proved",
+      "route": "qwz",
+      "group": "terminating_phi_product",
+      "remaining_obligations": [],
+      "certificate_denominator": "Q*q - X",
+      "report_links": {
+        "native": "FQI-SRC-GR2-1.Ex6iii/native.json",
+        "symbolic": "FQI-SRC-GR2-1.Ex6iii/native_symbolic.json",
+        "local": "FQI-SRC-GR2-1.Ex6iii/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-SRC-AP-3.E1",
+      "source": {
+        "identity_id": "FQI-SRC-AP-3.E1",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity277.lean",
+        "sha256": "fe84fa8f662ce0180e4ddb68ceb0a37a1fc2801d18b94764eb0fc9f03d837703"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "qwz",
+      "group": "bilateral_support",
+      "remaining_obligations": [
+        "证明 Int.Icc 双边求和到可验证支撑的重编号",
+        "桥接 gaussianInt 与自然数 Gaussian，验证 j*j 的 toNat",
+        "原声明允许 q=0，不能直接使用搜索中的负幂商表示",
+        "验证两侧移动边界、初值及步长为二的 Gaussian 上指标变化"
+      ],
+      "certificate_denominator": "x*(Q*q - X)*(Q*q + X)",
+      "report_links": {
+        "native": "FQI-SRC-AP-3.E1/native.json",
+        "symbolic": "FQI-SRC-AP-3.E1/native_symbolic.json",
+        "local": "FQI-SRC-AP-3.E1/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-SRC-AQ-3.37",
+      "source": {
+        "identity_id": "FQI-SRC-AQ-3.37",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity315.lean",
+        "sha256": "1d9d466eee5eb4798d3b4deace3d841b3345bd30029f06c40eb64b6d92cc34d2"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "direct",
+      "group": "direct_piecewise_endpoints",
+      "remaining_obligations": [
+        "把 pochList 单元素和 (1-q) 分母桥接到原式",
+        "在原差分中消去 1-q^(2r+1) 可去极点，不增加非零假设",
+        "从原 h_domain 证明实际使用的分母非零；保留 q=0 的合法情形",
+        "单独验证 n=0、n>0 和求和端点，组装分段目标"
+      ],
+      "certificate_denominator": "(Q - 1)*(X**2*q - 1)",
+      "report_links": {
+        "native": "FQI-SRC-AQ-3.37/native.json",
+        "symbolic": "FQI-SRC-AQ-3.37/native_symbolic.json",
+        "local": "FQI-SRC-AQ-3.37/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.JacobiFinite",
+      "source": {
+        "identity_id": "FQI-SRC-SILLS-1.JacobiFinite",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity358.lean",
+        "sha256": "92fd6c5451f63dd6853839f64d39157ae6d36d8a15a7c5266939deb4a9acaccb"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "qwz",
+      "group": "bilateral_support",
+      "remaining_obligations": [
+        "验证反向等式及 Int.Icc 支撑重编号",
+        "证明整数 (-1)^j、x^j、三角数 toNat 和 gaussianInt 的表示",
+        "分开处理 q=0 与形式有理函数搜索所用非零域",
+        "生成双边望远镜、移动端点与目标乘积递推证明"
+      ],
+      "certificate_denominator": "x*(Q*q - X)",
+      "report_links": {
+        "native": "FQI-SRC-SILLS-1.JacobiFinite/native.json",
+        "symbolic": "FQI-SRC-SILLS-1.JacobiFinite/native_symbolic.json",
+        "local": "FQI-SRC-SILLS-1.JacobiFinite/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Pair122",
+      "source": {
+        "identity_id": "FQI-SRC-SILLS-2.Pair122",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity371.lean",
+        "sha256": "8ccb3eda2edff1b4c51228065377e89b3de13ac135611f5feeb1c38568ba27c2"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "qwz",
+      "group": "dependent_bases_and_domains",
+      "remaining_obligations": [
+        "从原定义证明 sillsAlpha x q 1 2 r 的整除分支和自然数指数化简",
+        "桥接 q 与 q^2 两种 Poch 基底的移位关系",
+        "由 h_domain 推导分母条件，并在通量中消去未获非零保证的证书因子",
+        "验证 n 依赖域、上下边界、初值和目标递推"
+      ],
+      "certificate_denominator": "(Q*q - 1)*(Q*q + 1)*(Q*q - X)*(Q*q + X)*(X**2*x - 1)*(Q**2*q*x + 1)*(Q**2*q**2*x + 1)",
+      "report_links": {
+        "native": "FQI-SRC-SILLS-2.Pair122/native.json",
+        "symbolic": "FQI-SRC-SILLS-2.Pair122/native_symbolic.json",
+        "local": "FQI-SRC-SILLS-2.Pair122/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.31",
+      "source": {
+        "identity_id": "FQI-SRC-SILLS-2.Lem2.31",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity372.lean",
+        "sha256": "eb182312af3a567ee3ac9598194a608c81f75e4b95440d41dcadc8d87b9e8198"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "qwz",
+      "group": "bilateral_support",
+      "remaining_obligations": [
+        "在 Lean 使用 ht:t^2=q；研究输入已作代换但这不算表示证明",
+        "验证整数双边支撑、平方指数 toNat 与 gaussianInt",
+        "原式允许 t=0，必须保留该情形",
+        "完成双边移动边界、初值及目标乘积递推证明"
+      ],
+      "certificate_denominator": "a*(Q*q - X)*(Q*q + X)",
+      "report_links": {
+        "native": "FQI-SRC-SILLS-2.Lem2.31/native.json",
+        "symbolic": "FQI-SRC-SILLS-2.Lem2.31/native_symbolic.json",
+        "local": "FQI-SRC-SILLS-2.Lem2.31/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.53",
+      "source": {
+        "identity_id": "FQI-SRC-SILLS-2.Lem2.53",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity381.lean",
+        "sha256": "a1d23ff78afbc78618ee74dc7d1c98de6e2fcfea9bb0931099aeecf95915b277"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "qwz",
+      "group": "dependent_bases_and_domains",
+      "remaining_obligations": [
+        "证明 ht:t^2=q 代换和 pochList 到 Poch 的表示转换",
+        "对 t 与 t^2 建立实际支撑内的移位及分母规则",
+        "消去证书额外极点，不把其全部非零作为新假设",
+        "处理 n 依赖域、端点与初值，组装目标递推"
+      ],
+      "certificate_denominator": "(Q*q - 1)*(Q*q + 1)*(Q*q - X)*(Q*q + X)*(Q**2*q**3 - 1)*(X**2*q + 1)",
+      "report_links": {
+        "native": "FQI-SRC-SILLS-2.Lem2.53/native.json",
+        "symbolic": "FQI-SRC-SILLS-2.Lem2.53/native_symbolic.json",
+        "local": "FQI-SRC-SILLS-2.Lem2.53/local_validation.json"
+      }
+    },
+    {
+      "id": "FQI-SRC-SILLS-3.Lem3.3",
+      "source": {
+        "identity_id": "FQI-SRC-SILLS-3.Lem3.3",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity385.lean",
+        "sha256": "88e2944c1019d5a6535a449d273e475f4b68b3df9e9b4a0980c6272d5d503fba"
+      },
+      "typechecked": true,
+      "actual_lean_expr_extracted": true,
+      "certificate_constructed": true,
+      "local_lean_verified": true,
+      "independent_rational_residual_verified": true,
+      "original_lean_proved": false,
+      "native_status": "unsupported_structure",
+      "route": "qwz",
+      "group": "dependent_bases_and_domains",
+      "remaining_obligations": [
+        "桥接 q、q^2 基底与自然数 n-r 的截断减法",
+        "从 h_domain 推导各个 Poch 和 1-x 分母条件",
+        "在通量中消去未被原假设排除的证书极点",
+        "生成原目标递推、实际支撑内的局部关系、边界与初值证明"
+      ],
+      "certificate_denominator": "(Q*q - 1)*(Q*q + 1)*(Q*q - X)*(X**2*x - 1)",
+      "report_links": {
+        "native": "FQI-SRC-SILLS-3.Lem3.3/native.json",
+        "symbolic": "FQI-SRC-SILLS-3.Lem3.3/native_symbolic.json",
+        "local": "FQI-SRC-SILLS-3.Lem3.3/local_validation.json"
+      }
+    }
+  ]
+}

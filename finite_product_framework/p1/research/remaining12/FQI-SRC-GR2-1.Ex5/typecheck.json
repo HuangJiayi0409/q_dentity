@@ -1,0 +1,14 @@
+{
+  "id": "FQI-SRC-GR2-1.Ex5",
+  "source": {
+    "identity_id": "FQI-SRC-GR2-1.Ex5",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity051.lean",
+    "sha256": "db6ff636c05fef41a7008ec6dae82f1221b2f211d8f20b77c49d246eccca5a16"
+  },
+  "well_typed_original_goal": true,
+  "typecheck": {
+    "exit_code": 1,
+    "output": "P1_ELABORATED_GOAL: pochList [c, b * q ^ n] q m / poch b q m =\n  poch (b / c) q n / poch b q n *\n    ∑ k ∈ Finset.range (n + 1),\n      pochList [q ^ (-↑n), c] q k / pochList [q, c * q ^ (1 - ↑n) / b] q k * q ^ k * poch (c * q ^ k) q m\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-GR2-1.Ex5/Typecheck.lean:30:2: error: P1_TYPECHECK_ONLY\n"
+  },
+  "is_proof": false
+}

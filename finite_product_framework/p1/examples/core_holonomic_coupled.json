@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "solver": "q_holonomic",
+  "input": {
+    "n_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        [
+          "add",
+          1,
+          [
+            "mul",
+            "Q",
+            "X"
+          ]
+        ],
+        0
+      ]
+    ],
+    "k_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        [
+          "add",
+          1,
+          [
+            "mul",
+            "Q",
+            "X"
+          ]
+        ],
+        0
+      ]
+    ],
+    "observable": [
+      1,
+      0
+    ]
+  }
+}

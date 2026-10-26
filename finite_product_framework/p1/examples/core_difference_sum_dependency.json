@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "solver": "difference_ring",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": [
+          "pow",
+          [
+            "add",
+            1,
+            [
+              "mul",
+              -1,
+              "X"
+            ]
+          ],
+          -1
+        ]
+      },
+      {
+        "name": "J",
+        "kind": "sum",
+        "increment": [
+          "add",
+          [
+            "pow",
+            [
+              "add",
+              1,
+              [
+                "mul",
+                -1,
+                "X"
+              ]
+            ],
+            -2
+          ],
+          [
+            "mul",
+            2,
+            "H",
+            [
+              "pow",
+              [
+                "add",
+                1,
+                [
+                  "mul",
+                  -1,
+                  "X"
+                ]
+              ],
+              -1
+            ]
+          ]
+        ]
+      }
+    ],
+    "rhs_basis": [
+      [
+        "add",
+        [
+          "pow",
+          [
+            "add",
+            1,
+            [
+              "mul",
+              -1,
+              "X"
+            ]
+          ],
+          -2
+        ],
+        [
+          "mul",
+          2,
+          "H",
+          [
+            "pow",
+            [
+              "add",
+              1,
+              [
+                "mul",
+                -1,
+                "X"
+              ]
+            ],
+            -1
+          ]
+        ]
+      ]
+    ]
+  }
+}

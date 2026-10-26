@@ -1,0 +1,275 @@
+{
+  "args": [
+    {
+      "args": [
+        {
+          "args": [
+            {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "nat",
+                      "value": 2
+                    },
+                    {
+                      "name": "n",
+                      "op": "var"
+                    }
+                  ],
+                  "op": "HMul.hMul"
+                },
+                {
+                  "op": "nat",
+                  "value": 1
+                }
+              ],
+              "op": "HAdd.hAdd"
+            }
+          ],
+          "op": "Finset.range"
+        },
+        {
+          "body": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "name": "q",
+                    "op": "var"
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "nat",
+                        "value": 2
+                      },
+                      {
+                        "args": [
+                          {
+                            "name": "n",
+                            "op": "var"
+                          }
+                        ],
+                        "op": "Nat.cast"
+                      }
+                    ],
+                    "op": "HMul.hMul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "args": [
+                          {
+                            "name": "n",
+                            "op": "var"
+                          }
+                        ],
+                        "op": "Nat.cast"
+                      },
+                      {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "name": "k",
+                                "op": "var"
+                              }
+                            ],
+                            "op": "Nat.cast"
+                          },
+                          {
+                            "args": [
+                              {
+                                "name": "n",
+                                "op": "var"
+                              }
+                            ],
+                            "op": "Nat.cast"
+                          }
+                        ],
+                        "op": "HSub.hSub"
+                      }
+                    ],
+                    "op": "HAdd.hAdd"
+                  }
+                ],
+                "op": "FiniteQBenchmark.gaussianInt"
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "name": "a",
+                        "op": "var"
+                      },
+                      {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "name": "k",
+                                "op": "var"
+                              }
+                            ],
+                            "op": "Nat.cast"
+                          },
+                          {
+                            "args": [
+                              {
+                                "name": "n",
+                                "op": "var"
+                              }
+                            ],
+                            "op": "Nat.cast"
+                          }
+                        ],
+                        "op": "HSub.hSub"
+                      }
+                    ],
+                    "op": "HPow.hPow"
+                  },
+                  {
+                    "args": [
+                      {
+                        "name": "t",
+                        "op": "var"
+                      },
+                      {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "args": [
+                                      {
+                                        "name": "k",
+                                        "op": "var"
+                                      }
+                                    ],
+                                    "op": "Nat.cast"
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "name": "n",
+                                        "op": "var"
+                                      }
+                                    ],
+                                    "op": "Nat.cast"
+                                  }
+                                ],
+                                "op": "HSub.hSub"
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "args": [
+                                      {
+                                        "name": "k",
+                                        "op": "var"
+                                      }
+                                    ],
+                                    "op": "Nat.cast"
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "name": "n",
+                                        "op": "var"
+                                      }
+                                    ],
+                                    "op": "Nat.cast"
+                                  }
+                                ],
+                                "op": "HSub.hSub"
+                              }
+                            ],
+                            "op": "HMul.hMul"
+                          }
+                        ],
+                        "op": "Int.toNat"
+                      }
+                    ],
+                    "op": "HPow.hPow"
+                  }
+                ],
+                "op": "HMul.hMul"
+              }
+            ],
+            "op": "HMul.hMul"
+          },
+          "name": "k",
+          "op": "lambda"
+        }
+      ],
+      "op": "Finset.sum"
+    },
+    {
+      "args": [
+        {
+          "args": [
+            {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "a",
+                      "op": "var"
+                    }
+                  ],
+                  "op": "Neg.neg"
+                },
+                {
+                  "name": "t",
+                  "op": "var"
+                }
+              ],
+              "op": "HMul.hMul"
+            },
+            {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "name": "t",
+                          "op": "var"
+                        }
+                      ],
+                      "op": "Neg.neg"
+                    },
+                    {
+                      "name": "a",
+                      "op": "var"
+                    }
+                  ],
+                  "op": "HDiv.hDiv"
+                },
+                {
+                  "args": [],
+                  "op": "List.nil"
+                }
+              ],
+              "op": "List.cons"
+            }
+          ],
+          "op": "List.cons"
+        },
+        {
+          "name": "q",
+          "op": "var"
+        },
+        {
+          "name": "n",
+          "op": "var"
+        }
+      ],
+      "op": "FiniteQBenchmark.pochList"
+    }
+  ],
+  "op": "Eq"
+}

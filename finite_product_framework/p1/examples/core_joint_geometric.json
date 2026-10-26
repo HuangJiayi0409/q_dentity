@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "solver": "q_zeilberger_joint",
+  "input": {"components": [
+    {"summand": ["pow", "a", "n"]},
+    {"summand": ["pow", "b", "n"]}
+  ]}
+}

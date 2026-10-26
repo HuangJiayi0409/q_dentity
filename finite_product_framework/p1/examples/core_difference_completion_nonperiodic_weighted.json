@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "solver": "finite_difference_ring",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": 1
+      }
+    ],
+    "rhs_basis": [
+      [
+        "add",
+        [
+          "mul",
+          -2,
+          "E",
+          [
+            "pow",
+            "H",
+            -1
+          ]
+        ],
+        [
+          "mul",
+          "E",
+          "q",
+          [
+            "pow",
+            [
+              "add",
+              1,
+              "H"
+            ],
+            -1
+          ],
+          [
+            "add",
+            2,
+            "H"
+          ]
+        ]
+      ]
+    ],
+    "algebraic_extensions": [
+      {
+        "name": "E",
+        "polynomial": [
+          "add",
+          [
+            "pow",
+            "E",
+            2
+          ],
+          [
+            "mul",
+            -1,
+            "C",
+            [
+              "pow",
+              "X",
+              2
+            ]
+          ]
+        ],
+        "shift": [
+          "mul",
+          "E",
+          "q"
+        ]
+      }
+    ],
+    "operator": [
+      [
+        "add",
+        2,
+        "H"
+      ],
+      -2
+    ]
+  }
+}

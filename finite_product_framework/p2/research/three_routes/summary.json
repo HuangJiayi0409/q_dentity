@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-13",
+  "status": "bounded_trials_completed",
+  "new_lean_proofs": 0,
+  "new_general_parameter_proofs": 0,
+  "fixed_degree_checks": {
+    "FQI-SRC-GR2-7.6.8": 4,
+    "FQI-SRC-GR2-1.Ex33": 5,
+    "FQI-SRC-GR2-9.Ex5ii": 21
+  },
+  "negative_controls": "Adding 1 to each tested target is rejected; no Float allowed",
+  "tool_status": "Maple 2024.2 loads original qFPS; built-in LittleqJacobi symbolic recurrence computed",
+  "qfps_gf_status": "Raw qHolonomicRE call failed; internal qphi path triggers qshift selector error",
+  "qfps_aw_status": "Raw qHolonomicRE call failed; specialized AW divided-difference preprocessing not implemented",
+  "decision": "Prioritize generic basis inversion; retain operator route as integration work",
+  "scope_limitations": [
+    "Explicit formula transcription has not been linked to Lean Expr",
+    "Fixed integer degrees and specialized parameters are diagnostic only",
+    "Free symbolic parameter results hold as rational functions away from poles",
+    "AW diagnostic uses triangular elimination, not the specialized operator algorithm"
+  ],
+  "vendor": {
+    "url": "https://hypergeometric-summation.org/qFPS.mpl",
+    "original_unmodified": true,
+    "copyright": "Original author copyright notices retained; not a Python port"
+  },
+  "sha256": {
+    "finite_trials.py": "8c282389792b94f83eaa7ed893ec4eca4d4fea79d63fa0a5b4ecbae8b8ea0dd4",
+    "qfps_probe.mpl": "4cc42de437760ca344836ffb8b989652b345d8d54352afcc360c474f44ec5cff",
+    "finite_results.json": "d42d5b98a5bfe1fea42fc0219ce2a8ae3619959061a3708dc72a2a03cade749a",
+    "qfps_probe.log": "f7a90c1cd9c64bb14622beb3c69f96a9c1946ff97c7066b56cb68118f8906c0a",
+    "inputs.json": "7295192a1f0778c8b2cd1cd0c06d3de6f24ad846b03eb96c0a4242fdefe0d7a1",
+    "vendor/qFPS.mpl": "a6b230d258988366ee6c41154819b545e0e42cc684d33f86fc6ed683bf3eb425",
+    "build_report.py": "032d2589b3f63f64d7c6c7c6143b674823c3743ed74d41b621dd99790b5533d1"
+  }
+}

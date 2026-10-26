@@ -1,0 +1,127 @@
+{
+  "id": "FQI-CHU-VANDERMONDE-Q",
+  "branch": "main",
+  "F": "q**k*Poch(a, q, k)*Poch(q**(-n), q, k)/(Poch(c, q, k)*Poch(q, q, k))",
+  "T": "a**n*Poch(c/a, q, n)/Poch(c, q, n)",
+  "lo": "0",
+  "hi": "n",
+  "route": "qwz",
+  "change": "identity",
+  "obligations": "Original parameter domain, boundary and initial values; no Lean representation proof yet.",
+  "source": {
+    "identity_id": "FQI-CHU-VANDERMONDE-Q",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity012.lean",
+    "sha256": "de9763fcd57e8cbcac60204818afc35d76206e420d1e8b625a8ce9901e614fe6"
+  },
+  "status": "constructed",
+  "stage": "finished",
+  "case_index": 0,
+  "lean_representation_verified": false,
+  "automatic_train_proof": false,
+  "input_origin": "explicit research transcription; not production Lean frontend",
+  "formal_domain": "Q(q, independent parameters); original singular values and parameter domains not discharged",
+  "mathematical_preconditions_status": "candidate transformations recorded; Lean equivalence/support proof pending",
+  "code_sha256": {
+    "inputs.py": "b65360f1d067870ed66e4a30dbf2c24d1b832479a1594ca04109b19b59bf464b",
+    "engine.py": "8192d5fac9b5840bbeea5d4554d1084e03faf43d93c6d5c38c5f1e1a789d9d1d",
+    "run_trials.py": "d899476a9a7d76a53dff1dfed4f802fcc4af1e5e677726b98695b26a59dbdbdb"
+  },
+  "budgets_seconds": {
+    "preparation": 60,
+    "construction": 30
+  },
+  "diagnostics": {
+    "sum_checks": [
+      {
+        "n": 0,
+        "lower": 0,
+        "upper": 0,
+        "equal": true
+      },
+      {
+        "n": 1,
+        "lower": 0,
+        "upper": 1,
+        "equal": true
+      },
+      {
+        "n": 2,
+        "lower": 0,
+        "upper": 2,
+        "equal": true
+      }
+    ],
+    "mismatches": [],
+    "skipped": [],
+    "independent_shift_checks": 6,
+    "sample_parameters": {
+      "q": "2/3",
+      "m": "2",
+      "u": "1",
+      "v": "2",
+      "a": "2/7",
+      "b": "3/11",
+      "c": "5/13",
+      "d": "7/17",
+      "e": "11/19",
+      "f": "13/23",
+      "t": "17/29",
+      "x": "19/31",
+      "z": "23/37",
+      "w": "29/41"
+    },
+    "interpretation": "exact finite diagnostics only; a mismatch needs original-source/domain review, not automatic rejection of the theorem"
+  },
+  "derived_shifts": {
+    "U": "(Q*q - 1)/(Q*q - X)",
+    "V": "(-Q*X*a*q + Q*q + X**2*a*q - X*q)/(Q*X**2*c*q - Q*X*c - Q*X*q + Q)",
+    "c": "(Q*c - a)/(Q*c - 1)"
+  },
+  "q_power_symbols": {
+    "Q": "n",
+    "X": "k"
+  },
+  "construction": {
+    "algorithm": "q-Gosper",
+    "coefficient_domain": "QQ(Q,a,c,q)",
+    "down_ratio": "(Q**2*X**2*a*c*q**2 + Q**2*X*a**2*q**3 - Q**2*X*a*c*q**2 - Q**2*X*a*q**3 - Q**2*X*c*q**3 - Q**2*a*q**4 + Q**2*c*q**3 + Q**2*q**4 - Q*X**3*a*c - Q*X**2*a**2*q**2 - Q*X**2*a**2*q + Q*X**2*a*c + Q*X**2*a*q + Q*X**2*c*q + Q*X*a*q**3 + 2*Q*X*a*q**2 - Q*X*c*q - Q*X*q**2 - Q*q**3 + X**3*a**2 - X**2*a*q - X**2*a + X*q)/(-Q**2*X**3*c**2 - Q**2*X**2*a*c*q**2 + Q**2*X**2*c**2*q + Q**2*X**2*c**2 + Q**2*X**2*c*q**2 + Q**2*X**2*c*q + Q**2*X*a*c*q**2 + Q**2*X*a*q**3 - Q**2*X*c**2*q - 2*Q**2*X*c*q**2 - Q**2*X*c*q - Q**2*X*q**3 - Q**2*a*q**3 + Q**2*c*q**2 + Q**2*q**3 + Q*X**3*a*c - Q*X**2*a*c - Q*X**2*a*q - Q*X**2*c*q + Q*X*a*q + Q*X*c*q + Q*X*q**2 - Q*q**2)",
+    "normal_form": {
+      "dispersion": [
+        1
+      ],
+      "updates": [
+        {
+          "shift": 1,
+          "factor": "X + (Q*a*q - Q*c - Q*q + 1)/(Q*c - a)"
+        }
+      ],
+      "P": "Q*a*q/(Q*c - a) - Q*c/(Q*c - a) - Q*q/(Q*c - a) + X + 1/(Q*c - a)",
+      "A": "Q**2*X*a*c*q**2 - Q**2*c*q**3 - Q*X**2*a*c - Q*X*a**2*q**2 + Q*X*c*q + Q*a*q**3 + X**2*a**2 - X*a*q",
+      "B": "-Q**2*X**2*c**2*q + Q**2*X*c**2*q + Q**2*X*c*q**2 - Q**2*c*q**2 + Q*X**2*a*c*q - Q*X*a*c*q - Q*X*a*q**2 + Q*a*q**2",
+      "normal_form_residual": "0",
+      "remaining_dispersion": []
+    },
+    "laurent_bounds": {
+      "lower": -1,
+      "upper": -1,
+      "lower_resonance": -1,
+      "upper_resonance": null,
+      "source": "q-Gosper Laurent leading/trailing coefficient bounds"
+    },
+    "linear_system": {
+      "unknowns": 1,
+      "equations": 2
+    },
+    "status": "constructed",
+    "laurent_solution": "1/(Q**2*X*c**2*q**2 - 2*Q*X*a*c*q**2 + X*a**2*q**2)",
+    "antidifference_ratio": "(-Q*X**2*c + Q*X*c + Q*X*q - Q*q)/(Q*X**2*c + Q*X*a*q - Q*X*c - Q*X*q - X**2*a + X)",
+    "rational_residual": "0",
+    "difference_over_summand": "(Q*X*c + Q*a*q - Q*c - Q*q - X*a + 1)/(Q**2*c*q - Q*X*c - Q*q + X)",
+    "certificate": "(-Q*X**2*c + Q*X*c + Q*X*q - Q*q)/(Q**2*X*c*q - Q*X**2*c - Q*X*q + X**2)",
+    "q_wz_residual": "0",
+    "sympy_version": "1.14.0",
+    "independent_qwz_residual": "0"
+  },
+  "elapsed_seconds": 1.991,
+  "source_unchanged": true
+}

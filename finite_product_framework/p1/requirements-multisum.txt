@@ -1,0 +1,2 @@
+# Optional acceleration for large exact multivariate coefficient systems.
+python-flint==0.9.0

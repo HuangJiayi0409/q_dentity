@@ -1,0 +1,72 @@
+{
+  "status": "local_checks_passed_full_catalog_blocked",
+  "scope": "Design and inherited candidate indexing only; no CAS or Lean proof run",
+  "new_train_proofs": 0,
+  "checks": [
+    {
+      "name": "candidate_index",
+      "command": [
+        "python3",
+        "finite_product_framework/p1/branches/index_remaining.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"candidates\": 120, \"new_train_proofs\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "name": "inventory",
+      "command": [
+        "python3",
+        "round2_identity_catalog/scripts/proof_algorithms.py",
+        "--check-train-a-review"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "train_mapping",
+      "command": [
+        "python3",
+        "finite_product_framework/research/train_a_methods/build_table.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"action\": \"checked\",\n  \"records\": 197,\n  \"exact_A_train_membership\": true,\n  \"source_hashes_verified\": 394,\n  \"test_files_read\": 0,\n  \"tool_trials_run\": 0,\n  \"primary_mechanism_counts\": {\n    \"P1\": 120,\n    \"P2\": 62,\n    \"P3\": 10,\n    \"UNRESOLVED\": 5\n  },\n  \"outputs\": [\n    \"table.json\",\n    \"table.csv\",\n    \"index.html\",\n    \"summary.json\"\n  ]\n}\n\n",
+      "stderr": ""
+    },
+    {
+      "name": "catalog_build",
+      "command": [
+        "python3",
+        "round2_identity_catalog/scripts/build_catalog.py"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/hjy/Project/finite_q_identity_catalog/round2_identity_catalog/scripts/build_catalog.py\", line 414, in <module>\n    build()\n  File \"/home/hjy/Project/finite_q_identity_catalog/round2_identity_catalog/scripts/build_catalog.py\", line 108, in build\n    manifest[str(resolution_path.relative_to(ROOT))]=sha(resolution_path)\n  File \"/home/hjy/Project/finite_q_identity_catalog/round2_identity_catalog/scripts/build_catalog.py\", line 20, in sha\n    return hashlib.sha256(path.read_bytes()).hexdigest()\n  File \"/usr/lib/python3.10/pathlib.py\", line 1126, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/usr/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/hjy/Project/finite_q_identity_catalog/round1_source_collection/metadata/pending16_resolutions.json'\n"
+    },
+    {
+      "name": "catalog_validate",
+      "command": [
+        "python3",
+        "round2_identity_catalog/scripts/validate_catalog.py"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/home/hjy/Project/finite_q_identity_catalog/round2_identity_catalog/scripts/validate_catalog.py\", line 9, in <module>\n    from math_checks import run as math_checks\n  File \"/home/hjy/Project/finite_q_identity_catalog/round2_identity_catalog/scripts/math_checks.py\", line 14, in <module>\n    import validate_sills as si\nModuleNotFoundError: No module named 'validate_sills'\n"
+    }
+  ],
+  "local_document_links": "passed",
+  "full_catalog_blockers": [
+    "round1_source_collection/metadata/pending16_resolutions.json missing",
+    "validate_sills module missing"
+  ],
+  "artifacts_sha256": {
+    "finite_product_framework/p1/branches/remaining_methods.md": "466aaffa4d36ec5f530deb87b28668370f3b19b1dc0977ebf1db9a2cf6c5506c",
+    "finite_product_framework/p1/branches/remaining_candidates.json": "23ef449e86ed423ebf787ac7aab63f237a4c690ae62366d38354b005dd54a23f",
+    "finite_product_framework/p1/branches/index_remaining.py": "3c0feaca2fbe62dcc9604d2004b1a1a19da314d9d3e8ba5a83b7bcd1ce621e33",
+    "round2_identity_catalog/scripts/proof_algorithms.py": "4cc33b676ef8b1cf8621f97720efd5cff9e726516b5ba37166f84fb6c97e5a93",
+    "round2_identity_catalog/已构建算法.md": "020728a527e33350a4500bb3cd6af79a3f12ece2de1ea53fab863d5a3ab4184a"
+  }
+}

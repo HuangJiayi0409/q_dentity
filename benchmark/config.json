@@ -1,0 +1,22 @@
+{
+  "seed": 20261018,
+  "test_size": 100,
+  "train_size": 346,
+  "stratification": "four_families",
+  "test_family_targets": {
+    "A": 57,
+    "C": 15,
+    "F": 16,
+    "G": 12
+  },
+  "allocation": "integer_minimum_squared_distance_to_proportional_quotas",
+  "sampling": "seeded_whole_group_shuffle_first_exact_fit",
+  "group_policy": "preserve_existing_recorded_relation_components",
+  "difficulty_policy": "retain_accepted_v2_labels_without_separate_quotas",
+  "scope": "statements_with_deferred_proofs",
+  "frozen_split_source": "metadata/frozen_split.json",
+  "lean_statements": {
+    "generated": 446,
+    "target_proofs": "deferred"
+  }
+}

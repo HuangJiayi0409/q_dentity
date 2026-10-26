@@ -1,0 +1,20 @@
+{
+  "id": "FQI-SRC-SILLS-2.Pair122",
+  "source": {
+    "identity_id": "FQI-SRC-SILLS-2.Pair122",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity371.lean",
+    "sha256": "8ccb3eda2edff1b4c51228065377e89b3de13ac135611f5feeb1c38568ba27c2"
+  },
+  "native_status": "unsupported_structure",
+  "original_lean_proved": false,
+  "remaining_obligations": [
+    "sillsAlpha及整除分支已在Lean展开；仍需验证整数指数归一化与q/q^2相关基底移位",
+    "由原h_domain传递分母条件并消去证书额外极点",
+    "完成支撑、边界、初值和目标递推证明"
+  ],
+  "native_report": "FQI-SRC-SILLS-2.Pair122/native.json",
+  "verified_preprocessing_steps": [
+    "explicit_Pochhammer_lists_expanded_in_Lean",
+    "sillsAlpha_definition_and_unit_divisibility_expanded"
+  ]
+}

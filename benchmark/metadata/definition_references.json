@@ -1,0 +1,50 @@
+[
+  {
+    "path": "round1_source_collection/books/ANDREWS_P.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/books/ANDREWS_Q.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/books/FINE.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/books/GR.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/books/KAC_CHEUNG.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/books/SILLS.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/records/ANDREWS_P_supplement.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/records/ANDREWS_Q_supplement.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/records/FINE_supplement.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/records/GR2_supplement.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/records/KAC_CHEUNG_supplement.md",
+    "exists_in_repository": false
+  },
+  {
+    "path": "round1_source_collection/records/SILLS_supplement.md",
+    "exists_in_repository": false
+  }
+]

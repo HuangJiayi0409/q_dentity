@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "solver": "finite_difference_ring",
+  "input": {
+    "extensions": [],
+    "rhs_basis": [
+      "E"
+    ],
+    "algebraic_extensions": [
+      {
+        "name": "E",
+        "polynomial": [
+          "add",
+          -1,
+          [
+            "pow",
+            "E",
+            2
+          ]
+        ],
+        "shift": [
+          "mul",
+          -1,
+          "E"
+        ]
+      }
+    ]
+  }
+}

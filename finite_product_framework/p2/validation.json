@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "complete_train_proofs": 1,
+  "checks": [
+    {
+      "name": "renamed_parameters",
+      "status": "passed",
+      "result": "proved",
+      "report": "generated/tests/renamed_parameters/report.json"
+    },
+    {
+      "name": "no_nonzero_assumptions",
+      "status": "passed",
+      "result": "proved",
+      "report": "generated/tests/no_nonzero_assumptions/report.json"
+    },
+    {
+      "name": "wrong_coefficient_rejected",
+      "status": "passed",
+      "result": "unsupported_or_unclosed_structure",
+      "report": "generated/tests/wrong_coefficient_rejected/report.json"
+    },
+    {
+      "name": "forged_backend_rejected",
+      "status": "passed",
+      "result": "lean_verification_failed",
+      "report": "generated/tests/forged_backend_rejected/report.json"
+    },
+    {
+      "name": "three_arbitrary_series",
+      "status": "passed",
+      "result": "proved",
+      "report": "generated/tests/three_arbitrary_series/report.json"
+    },
+    {
+      "name": "invalid_inverse_cancellation_rejected",
+      "status": "passed",
+      "result": "unsupported_or_unclosed_structure",
+      "report": "generated/tests/invalid_inverse_cancellation_rejected/report.json"
+    },
+    {
+      "name": "scope_guard",
+      "status": "passed"
+    }
+  ],
+  "synthetic_cases_count_as_train": false,
+  "native_report": "generated/runs/FQI-SRC-FINE-15.2/report.json",
+  "code_sha256": {
+    "run.py": "a5f88f74bbeba6e9a16d7277c2fdbbd9a6eb0083749d13fe4cf834b17c2dd361",
+    "check.py": "f69bd24e5bc8f80b907e667fb3f42031bb14b75128f528d31021fd8c406fcfd7",
+    "lean/Coefficient.lean": "97607cc59f0f384182fc184c653da2fd9e966348676b6ad01486682579c0fb5c",
+    "lean/Export.lean": "f5a0d2eb28a7c9ad84e3314a022b37db2e14e2876be858ccf5e05e8476106ddd"
+  }
+}

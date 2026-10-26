@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "solver": "difference_field",
+  "input": {
+    "extensions": [
+      {
+        "name": "P",
+        "kind": "product",
+        "ratio": 2
+      }
+    ],
+    "rhs_basis": [
+      [
+        "add",
+        [
+          "pow",
+          [
+            "add",
+            1,
+            [
+              "mul",
+              2,
+              "P"
+            ]
+          ],
+          -1
+        ],
+        [
+          "mul",
+          -1,
+          [
+            "pow",
+            [
+              "add",
+              1,
+              "P"
+            ],
+            -1
+          ]
+        ]
+      ]
+    ]
+  }
+}

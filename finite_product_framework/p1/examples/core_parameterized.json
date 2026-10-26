@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "solver": "parameterized_q_gosper",
+  "input": {
+    "k_shift": 1,
+    "rhs_basis": [1, ["add", 1, "X"]]
+  }
+}

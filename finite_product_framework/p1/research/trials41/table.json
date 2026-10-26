@@ -1,0 +1,869 @@
+{
+  "summary": {
+    "identities_attempted": 41,
+    "subproblems_attempted": 50,
+    "identity_statuses": {
+      "all_local_certificates_constructed": 15,
+      "timeout": 24,
+      "no_antidifference_for_chosen_local_problems": 2
+    },
+    "subproblem_statuses": {
+      "constructed": 16,
+      "timeout": 32,
+      "no_q_hypergeometric_antidifference": 2
+    },
+    "excluded_deferred_identities": 8,
+    "excluded_existing_proved_identities": 2,
+    "new_lean_proofs": 0,
+    "interpretation": "Local formal certificates and diagnostic checks only; no proof of all original domain, boundaries, initial values or proposed transformations.",
+    "code_sha256": {
+      "inputs.py": "b65360f1d067870ed66e4a30dbf2c24d1b832479a1594ca04109b19b59bf464b",
+      "engine.py": "8192d5fac9b5840bbeea5d4554d1084e03faf43d93c6d5c38c5f1e1a789d9d1d",
+      "run_trials.py": "d899476a9a7d76a53dff1dfed4f802fcc4af1e5e677726b98695b26a59dbdbdb"
+    }
+  },
+  "records": [
+    {
+      "id": "FQI-CHU-VANDERMONDE-Q",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/00.json",
+          "sha256": "473ce8354fd5aea5ce3d44b913509f6514520b73d8cd728fb634419c529df553"
+        }
+      ]
+    },
+    {
+      "id": "FQI-CHU-VANDERMONDE-BALANCED",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/01.json",
+          "sha256": "43fc804962fc5bdec02d3de62f30a0b05bb4d1f7e741f43f5f7ea0549bf08b6c"
+        }
+      ]
+    },
+    {
+      "id": "FQI-TERMINATING-6PHI5",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/02.json",
+          "sha256": "9522b4bfd26d2189a35a4dee95f588f0b997084084cbf37dae2d9da60fd738f2"
+        }
+      ]
+    },
+    {
+      "id": "FQI-BAILEY-UNIT",
+      "review_group": "conditional_candidate",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/03.json",
+          "sha256": "8bf87888f26f6c68afc9f2847a3a16a706afb5f3942a7c140e6ffe4e5b423cfa"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex3i",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 2,
+      "subproblem_statuses": {
+        "constructed": 2
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "b_power",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/04.json",
+          "sha256": "8d717133ce46d52eb6629e060f9efa03421bab2001c4b0c8e3099e8d25de3319"
+        },
+        {
+          "branch": "a_power",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/05.json",
+          "sha256": "b0ccd2fd2a8ac0e070bd36756d11f17d40b5d81464da3bdefcaa5d339ef0a015"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex5",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/06.json",
+          "sha256": "dc8521b7b6e4f945ff16374ee0d8bfc3382924cdd1e733e2d32b42fc1e06a606"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex6i",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 2,
+      "subproblem_statuses": {
+        "timeout": 2
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "parity_0",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/07.json",
+          "sha256": "15cad1403013ddb2911903776bd99d4098220aa45e3901638b0d5453170d6483"
+        },
+        {
+          "branch": "parity_1",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/08.json",
+          "sha256": "eb49db7fe4c4d44f298081584644f4d7926379bfdce35b7232a40a0de7c837fd"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex6iii",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/09.json",
+          "sha256": "230119ad7017f405d862c2aa0dbeafd3fab3c5b9bda0009e73ea08e67bffa79d"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-2.3.2",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 2,
+      "subproblem_statuses": {
+        "timeout": 2
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "parity_0",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/10.json",
+          "sha256": "c08c5422319a74061c08a0ef4875c7c331ab433ec35d8d8ff5e28d24a698ffa5"
+        },
+        {
+          "branch": "parity_1",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/11.json",
+          "sha256": "1841ea640fef99f0f7a09441ae7f78b30cc1383dfc3590b020d47eda82906fc3"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex5",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/12.json",
+          "sha256": "a5b6eafaf55757e3280961734316f6eb9569b475cd977a7e71bcf5d8e0589e9d"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex12",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/13.json",
+          "sha256": "945f767aaf80155e4adbd57ca42826870b9f8c4b42637adb7c4b1900898fa1af"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex14i",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/14.json",
+          "sha256": "d04e2a686f6d0e11732714c0013673a2a0f11e7455a56f1c1b7380e3a1fbf2b3"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.5",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/15.json",
+          "sha256": "2d86150721d9f0364f45ab7e790421846301a383064099626794ace67ebf43d6"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.6",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/16.json",
+          "sha256": "7151385e8a901c68426a1737d415e3e86e77538d7495d748e827ac9b8094bfb3"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.8",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/17.json",
+          "sha256": "ba75c47b13f815b58b979da1f8d05e9dc74fae9206e028b6279b51cbea641084"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex34",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/18.json",
+          "sha256": "93a67ba85b58ed9b6a424027957a1a7d32711a4d058617937ffcd27c0ad5a255"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex18iii",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/19.json",
+          "sha256": "22ddf1ec80d2b9576e6a27491eb6ca00ecb75597d9895b334be1bf66d01b5c82"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex18iv",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/20.json",
+          "sha256": "ed4764a6633ee276335beb89eb2e633fab9794904f0b6efa799e48f544a36273"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex19i",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/21.json",
+          "sha256": "b37ac0229760f9e2bd5052dd7b1da89d661c7b6359df11c00332312f68720857"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex19ii",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/22.json",
+          "sha256": "7d3397b4f63601f07d5b4990e09994e93e8afd13588b476f841fe7903b82c7da"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-8.1.2",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 2,
+      "subproblem_statuses": {
+        "timeout": 2
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "ordered_0",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/23.json",
+          "sha256": "997a5e121f13a4ffec36bbe9586da55a8c8a7194d8c36743e56d97cb11c33b0f"
+        },
+        {
+          "branch": "ordered_1",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/24.json",
+          "sha256": "0354df6501efc0e266c49071cf5da7376e784f612add23031fdbe467c593f7f3"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex21-p0",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 2,
+      "subproblem_statuses": {
+        "timeout": 2
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "b_eq_a",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/25.json",
+          "sha256": "f59d1bbfa3fbe2c026f10716e4837e2d43a970a24df54925ecedb1475f186617"
+        },
+        {
+          "branch": "e_eq_a",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/26.json",
+          "sha256": "ce09a4158dfed612999ea3a9f07a7978aae8010db442a6e912e2d0a2a3474543"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-II-19",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 2,
+      "subproblem_statuses": {
+        "timeout": 2
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "parity_0",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/27.json",
+          "sha256": "b587af36517e2f859ba77626008a68bfad985742e9ecfd23ba04697cf4214283"
+        },
+        {
+          "branch": "parity_1",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/28.json",
+          "sha256": "f026a15a55e16eb14cad80d952012323e9b2465145aa1123eef614da2a96e534"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-GR2-II-22",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/29.json",
+          "sha256": "e595fce82ec2b05fc02ab7b31a717cebcf7a9577febe273b0e682426528b43e9"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-AP-3.3.11",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 2,
+      "subproblem_statuses": {
+        "timeout": 2
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "support_0",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/30.json",
+          "sha256": "e48d1b643b7500b649e05224e3f7e5bd23f82cd2a3c67c9570b3375a05d6e5ab"
+        },
+        {
+          "branch": "support_1",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/31.json",
+          "sha256": "86acdaf1e11b50df990e5bf4a64596bc83006e28fcf14cbe1a8d08f46117ffd1"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-AP-3.3.14",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/32.json",
+          "sha256": "e64b3dec866897f07ad406f99c209620700f9233dd9f69897f4ea8964e28752d"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-AP-3.E1",
+      "review_group": "conditional_candidate",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/33.json",
+          "sha256": "651905af210df27752c96ac42f12a6c5e9abdb9be39916282a44175d08c78ba1"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-AP-13.E3",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/34.json",
+          "sha256": "9d95b959447f77e164632cffc616184e4289629dbe890a9415316714019d32e5"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-AQ-3.17",
+      "review_group": "conditional_candidate",
+      "status": "no_antidifference_for_chosen_local_problems",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "no_q_hypergeometric_antidifference": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "no_q_hypergeometric_antidifference",
+          "stage": "finished",
+          "path": "results/35.json",
+          "sha256": "9ab23a64ffa9695d7397bc781ad7a58ef6e74a1c93b5bb2bb904a892cc806856"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-AQ-3.18",
+      "review_group": "conditional_candidate",
+      "status": "no_antidifference_for_chosen_local_problems",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "no_q_hypergeometric_antidifference": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "no_q_hypergeometric_antidifference",
+          "stage": "finished",
+          "path": "results/36.json",
+          "sha256": "c71bf72ce919885492e196158b231d512c78dbb06fdbebd1ed4579f15e7c5b3e"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-AQ-3.37",
+      "review_group": "conditional_candidate",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/37.json",
+          "sha256": "411fc8a34b4ac3aff89a43e5ff29e4a61678940ebde3e31173aca5ded4abc207"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-AQ-4.24",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/38.json",
+          "sha256": "606427ad6dc72d537b95a37ab0ba7caa1e73a0f868721ef2e43cf4305ba7494d"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.JacobiFinite",
+      "review_group": "conditional_candidate",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/39.json",
+          "sha256": "fe4a22f781503ea6203915214eaf7197f7eb1ed6f01d543d941feaf4ff37e9d7"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.75",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/40.json",
+          "sha256": "5907121a7dd27ec4ca2ab08cfc4c640d6e1d7c036d34234b8dc17bbcc16df21a"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Pair122",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/41.json",
+          "sha256": "f0d0115418c312c0a25555f38fbb7e3470b1ae1dced219763e0dc3630d78d293"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.31",
+      "review_group": "conditional_candidate",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/42.json",
+          "sha256": "0cee70af6c1977a3c3586bcfc533fd1ce3915cf6a274c5df3c3360a2325fca51"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex2c",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "timeout",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "timeout": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/43.json",
+          "sha256": "07552f124cf8f7934819092e776086b19c131038a788f78c17743cc1b8c92b71"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex2f",
+      "review_group": "conditional_candidate",
+      "status": "timeout",
+      "subproblem_count": 3,
+      "subproblem_statuses": {
+        "timeout": 3
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "residue_0",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/44.json",
+          "sha256": "f16c5a866a0b16ab00ad2f07e5b724186564b4cecf4c634a744ea5d1998d5d1e"
+        },
+        {
+          "branch": "residue_1",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/45.json",
+          "sha256": "c10a0bd237ce7ad7ff96acbb1942285b33ff3008e4c2947c867fc91e8e99ce76"
+        },
+        {
+          "branch": "residue_2",
+          "status": "timeout",
+          "stage": "q_gosper_construction",
+          "path": "results/46.json",
+          "sha256": "e01deaecc70ac9566a62306728656217491043dc4fe27f5aec873f837b76dd8d"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.53",
+      "review_group": "conditional_candidate",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/47.json",
+          "sha256": "1b9f8a825e942f65785e6db614e7b32f2d8518dd945fa8e5351dccc56fb6942f"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-SILLS-3.Lem3.3",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/48.json",
+          "sha256": "1d71dc123b5d78f79f91b0febd140991c7b9b8776c4494d62f57ae6e8753b5a3"
+        }
+      ]
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-4.4",
+      "review_group": "prioritize_symbolic_trial",
+      "status": "all_local_certificates_constructed",
+      "subproblem_count": 1,
+      "subproblem_statuses": {
+        "constructed": 1
+      },
+      "original_domain_and_lean_verified": false,
+      "reports": [
+        {
+          "branch": "main",
+          "status": "constructed",
+          "stage": "finished",
+          "path": "results/49.json",
+          "sha256": "6b7a3c038c667d8df73e20676caba9f7ae60d163423082caeec9d331a709d15a"
+        }
+      ]
+    }
+  ]
+}

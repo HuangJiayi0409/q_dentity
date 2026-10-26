@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "solver": "q_holonomic",
+  "input": {
+    "summands": [
+      [
+        "pow",
+        2,
+        "n"
+      ],
+      [
+        "mul",
+        -1,
+        [
+          "pow",
+          2,
+          "n"
+        ]
+      ]
+    ]
+  }
+}

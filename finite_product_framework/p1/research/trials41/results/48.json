@@ -1,0 +1,127 @@
+{
+  "id": "FQI-SRC-SILLS-3.Lem3.3",
+  "branch": "main",
+  "F": "(-1)**k*q**(k**2)*(-q**(2*k)*x + 1)*Poch(x**2, q**2, k)/((1 - x)*Poch(q, q, -k + n)*Poch(q**2, q**2, k)*Poch(q*x, q, k + n))",
+  "T": "1/Poch(q**2, q**2, n)",
+  "lo": "0",
+  "hi": "n",
+  "route": "qwz",
+  "change": "identity",
+  "obligations": "Original parameter domain, boundary and initial values; no Lean representation proof yet.",
+  "source": {
+    "identity_id": "FQI-SRC-SILLS-3.Lem3.3",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity385.lean",
+    "sha256": "88e2944c1019d5a6535a449d273e475f4b68b3df9e9b4a0980c6272d5d503fba"
+  },
+  "status": "constructed",
+  "stage": "finished",
+  "case_index": 48,
+  "lean_representation_verified": false,
+  "automatic_train_proof": false,
+  "input_origin": "explicit research transcription; not production Lean frontend",
+  "formal_domain": "Q(q, independent parameters); original singular values and parameter domains not discharged",
+  "mathematical_preconditions_status": "candidate transformations recorded; Lean equivalence/support proof pending",
+  "code_sha256": {
+    "inputs.py": "b65360f1d067870ed66e4a30dbf2c24d1b832479a1594ca04109b19b59bf464b",
+    "engine.py": "8192d5fac9b5840bbeea5d4554d1084e03faf43d93c6d5c38c5f1e1a789d9d1d",
+    "run_trials.py": "d899476a9a7d76a53dff1dfed4f802fcc4af1e5e677726b98695b26a59dbdbdb"
+  },
+  "budgets_seconds": {
+    "preparation": 60,
+    "construction": 30
+  },
+  "diagnostics": {
+    "sum_checks": [
+      {
+        "n": 0,
+        "lower": 0,
+        "upper": 0,
+        "equal": true
+      },
+      {
+        "n": 1,
+        "lower": 0,
+        "upper": 1,
+        "equal": true
+      },
+      {
+        "n": 2,
+        "lower": 0,
+        "upper": 2,
+        "equal": true
+      }
+    ],
+    "mismatches": [],
+    "skipped": [],
+    "independent_shift_checks": 6,
+    "sample_parameters": {
+      "q": "2/3",
+      "m": "2",
+      "u": "1",
+      "v": "2",
+      "a": "2/7",
+      "b": "3/11",
+      "c": "5/13",
+      "d": "7/17",
+      "e": "11/19",
+      "f": "13/23",
+      "t": "17/29",
+      "x": "19/31",
+      "z": "23/37",
+      "w": "29/41"
+    },
+    "interpretation": "exact finite diagnostics only; a mismatch needs original-source/domain review, not automatic rejection of the theorem"
+  },
+  "derived_shifts": {
+    "U": "X/(Q**2*X*q**2*x - Q*X**2*q*x - Q*q + X)",
+    "V": "(-Q*X**5*q**3*x**3 + Q*X**3*q**3*x + Q*X**3*q*x**2 - Q*X*q + X**6*q**3*x**3 - X**4*q**3*x - X**4*q*x**2 + X**2*q)/(Q*X**5*q**3*x**2 - Q*X**3*q**3*x - Q*X**3*q*x**2 + Q*X*q*x - X**4*q**2*x + X**2*q**2 + X**2*x - 1)",
+    "c": "-1/(Q**2*q**2 - 1)"
+  },
+  "q_power_symbols": {
+    "X": "k",
+    "Q": "n"
+  },
+  "construction": {
+    "algorithm": "q-Gosper",
+    "coefficient_domain": "QQ(Q,q,x)",
+    "down_ratio": "(-Q**2*X**6*q**3*x**4 - Q**2*X**6*q**3*x**3 + Q**2*X**4*q**5*x**2 + Q**2*X**4*q**5*x + Q**2*X**4*q**3*x**3 + Q**2*X**4*q**3*x**2 - Q**2*X**2*q**5*x - Q**2*X**2*q**5 + Q*X**7*q**2*x**4 + Q*X**7*q*x**4 + Q*X**7*q*x**3 - Q*X**5*q**4*x**2 - Q*X**5*q**3*x**2 - Q*X**5*q**3*x - Q*X**5*q*x**3 - Q*X**5*q*x**2 + Q*X**3*q**3*x + Q*X**3*q**3 - Q*X**3*q**2*x**2 + Q*X*q**4 - X**8*x**4 + X**6*q**2*x**2 + X**4*x**2 - X**2*q**2)/(Q**2*X**6*q**3*x**3 + Q**2*X**6*q**3*x**2 - Q**2*X**4*q**5*x**2 - Q**2*X**4*q**5*x - Q**2*X**4*q**3*x**3 - Q**2*X**4*q**3*x**2 + Q**2*X**2*q**5*x**2 + Q**2*X**2*q**5*x - Q*X**7*q*x**3 - Q*X**5*q**2*x**2 - Q*X**5*q**2*x + Q*X**5*q*x**3 + Q*X**3*q**5*x + Q*X**3*q**4*x + Q*X**3*q**4 + Q*X**3*q**2*x**2 + Q*X**3*q**2*x - Q*X*q**5*x - Q*X*q**4*x - Q*X*q**4 + X**6*x**2 - X**4*x**2 - X**2*q**4 + q**4)",
+    "normal_form": {
+      "dispersion": [
+        1
+      ],
+      "updates": [
+        {
+          "shift": 1,
+          "factor": "X**4 + X**3*(-Q*q*x - Q*q)/x + X*(Q*q*x + Q*q)/x**2 - 1/x**2"
+        }
+      ],
+      "P": "-Q*X**3*q - Q*X**3*q/x + Q*X*q/x + Q*X*q/x**2 + X**4 - 1/x**2",
+      "A": "Q*X**3*q**2*x**4 - Q*X*q**4*x**2 - X**4*x**4 + X**2*q**2*x**2",
+      "B": "-Q*X**3*q**5*x**3 + Q*X*q**5*x**3 + X**2*q**4*x**2 - q**4*x**2",
+      "normal_form_residual": "0",
+      "remaining_dispersion": []
+    },
+    "laurent_bounds": {
+      "lower": 0,
+      "upper": 0,
+      "lower_resonance": null,
+      "upper_resonance": null,
+      "source": "q-Gosper Laurent leading/trailing coefficient bounds"
+    },
+    "linear_system": {
+      "unknowns": 1,
+      "equations": 5
+    },
+    "status": "constructed",
+    "laurent_solution": "-1/(q**4*x**4)",
+    "antidifference_ratio": "(-Q*X**3*q*x + Q*X*q*x + X**2 - 1)/(Q*X**3*q*x**2 + Q*X**3*q*x - Q*X*q*x - Q*X*q - X**4*x**2 + 1)",
+    "rational_residual": "0",
+    "difference_over_summand": "(Q**2*X*q**2*x + Q**2*X*q**2 - Q*X**2*q*x - Q*q)/(Q**4*X*q**4*x - Q**3*X**2*q**3*x - Q**3*q**3 - Q**2*X*q**2*x + Q**2*X*q**2 + Q*X**2*q*x + Q*q - X)",
+    "certificate": "(-Q*X**2*q + Q*q)/(Q**3*X**2*q**3*x - Q**3*q**3 - Q**2*X**3*q**2*x + Q**2*X*q**2 - Q*X**2*q*x + Q*q + X**3*x - X)",
+    "q_wz_residual": "0",
+    "sympy_version": "1.14.0",
+    "independent_qwz_residual": "0"
+  },
+  "elapsed_seconds": 2.91,
+  "source_unchanged": true
+}

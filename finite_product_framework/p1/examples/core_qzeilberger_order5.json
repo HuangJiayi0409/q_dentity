@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "solver": "q_zeilberger",
+  "input": {
+    "n_shift": "X",
+    "k_shift": ["mul", "Q", ["sub", 1, ["mul", "a", ["pow", "X", 5]]]]
+  }
+}

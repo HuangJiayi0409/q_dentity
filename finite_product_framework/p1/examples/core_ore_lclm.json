@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "solver": "q_ore",
+  "input": {
+    "operation": "lclm",
+    "a": [["neg", "Q"], 1],
+    "b": [["neg", "a"], 1]
+  }
+}

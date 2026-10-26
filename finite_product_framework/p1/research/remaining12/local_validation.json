@@ -1,0 +1,236 @@
+{
+  "records": [
+    {
+      "id": "FQI-CHU-VANDERMONDE-Q",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-CHU-VANDERMONDE-Q/LocalRelation.lean",
+      "proof_sha256": "42285fb42cab387c6556637b95ccb3612e2854187ad58522cabe779b747600e2",
+      "native_report_sha256": "d85336928a00a1c531186eff00d811860260a56ad815a645764a2023077e7b2c",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "a": "v2",
+        "c": "v3",
+        "q": "v4"
+      }
+    },
+    {
+      "id": "FQI-CHU-VANDERMONDE-BALANCED",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-CHU-VANDERMONDE-BALANCED/LocalRelation.lean",
+      "proof_sha256": "9b4d278cb0a00c568cd922e842ac0311e3385e786a3f581f2cd982a28b69258c",
+      "native_report_sha256": "045f1c3208f77df56530e35830c1b22f2ead5368e036692f2b8190ae9f551006",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "a": "v2",
+        "c": "v3",
+        "q": "v4"
+      }
+    },
+    {
+      "id": "FQI-BAILEY-UNIT",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-BAILEY-UNIT/LocalRelation.lean:4:72: warning: Variable name `v3` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _v3\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-BAILEY-UNIT/LocalRelation.lean",
+      "proof_sha256": "736674cd0c70318a55d7646feefb1faca5684ceb68cec94297f2b683d474d3cd",
+      "native_report_sha256": "70fe872469f4e05ed5eb18204ec9af46c1317432a9838d2d13d88cbf9bbe957a",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "a": "v2",
+        "q": "v3"
+      }
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex5",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-GR2-1.Ex5/LocalRelation.lean",
+      "proof_sha256": "a263aead4b180d3249c6162944380ffc86d3a995988ec3e772d697d9c939d93e",
+      "native_report_sha256": "286d76cc706e9e1d92260ae0ff796b8e4b937dafb3a25dd1d7168f838b82e35e",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "E_m": "v0",
+        "Q": "v1",
+        "X": "v2",
+        "b": "v3",
+        "c": "v4",
+        "q": "v5"
+      }
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex6iii",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-GR2-1.Ex6iii/LocalRelation.lean",
+      "proof_sha256": "ec20e4b56ed1cc125985b1a867ba5d436cd2d2dcf489a22b072802ce61add5f0",
+      "native_report_sha256": "becb68ec036ae06f6c5e884a061a92691c79b37fe9cde9085cb68e065e24ea3d",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "a": "v2",
+        "q": "v3"
+      }
+    },
+    {
+      "id": "FQI-SRC-AP-3.E1",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-AP-3.E1/LocalRelation.lean",
+      "proof_sha256": "ea1e31b07d3b9c2e86525f14347cb0fbee04cd04d1becba662506e78064dad77",
+      "native_report_sha256": "6c36daf97f8dd0395b839b05f24757ff2c023df32aa1f523efbb3e7abfbcf5ca",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "q": "v2",
+        "x": "v3"
+      }
+    },
+    {
+      "id": "FQI-SRC-AQ-3.37",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-AQ-3.37/LocalRelation.lean",
+      "proof_sha256": "6daa8c2d45e84a46a1875ff51ee695e75254123532d6e20d45fa7f1d78b9ccca",
+      "native_report_sha256": "ab1f69577c90202dda5b7e25522f873bbe6dc4669b09547ddd7d21ecb06e9d57",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "q": "v2"
+      }
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.JacobiFinite",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-1.JacobiFinite/LocalRelation.lean",
+      "proof_sha256": "58e8740eb3f784474cee21ed961e512a17e64f2a3f1731b927f7f8e9d3dc9018",
+      "native_report_sha256": "27e51e18458d3df9c63607e9c9b46e710eba0b8ae213b7a5443b2079dd26825d",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "q": "v2",
+        "x": "v3"
+      }
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Pair122",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-2.Pair122/LocalRelation.lean",
+      "proof_sha256": "0edc625934b8a3516887710480f863b708ed16f1f010b460dfbda33f4aeefe13",
+      "native_report_sha256": "22bac59df9dba2db0c1993dfbee45acab690ebe64263393e08dc9fd025e6613d",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "q": "v2",
+        "x": "v3"
+      }
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.31",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-2.Lem2.31/LocalRelation.lean",
+      "proof_sha256": "1152205850f2b3a59970c39c1899da331648fb6a2cc175ebf6307bcb1458b4ed",
+      "native_report_sha256": "c1cf099822979d0142dc20cc341af9f07c3bc2527fe6070098b49a0035e5f493",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "a": "v2",
+        "q": "v3"
+      }
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.53",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-2.Lem2.53/LocalRelation.lean",
+      "proof_sha256": "70956218af301945f4a5c8699d458ffe93c11a24e9b97b3ff9b2cf8e3170ff22",
+      "native_report_sha256": "8281cf4ba7943d18cf66b360c5a1918dcb278efc15f6c038aabd9bd5782350f1",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "q": "v2"
+      }
+    },
+    {
+      "id": "FQI-SRC-SILLS-3.Lem3.3",
+      "status": "passed",
+      "lean": {
+        "exit_code": 0,
+        "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+      },
+      "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-3.Lem3.3/LocalRelation.lean",
+      "proof_sha256": "f3b6b9d1edce3beedea8c48f10a70c5c15b97df1e50f2240d2a33ce994d1bf36",
+      "native_report_sha256": "168d5dd723270a146ef4a4204a55e491b54c9430d974eda2c60192271b80456a",
+      "scope": "local cleared rational identity only; not the original finite sum proof",
+      "automatic_train_proof": false,
+      "symbol_mapping": {
+        "Q": "v0",
+        "X": "v1",
+        "q": "v2",
+        "x": "v3"
+      }
+    }
+  ],
+  "passed": 12,
+  "original_proofs_claimed": 0
+}

@@ -1,0 +1,4026 @@
+[
+  {
+    "source_id": "GR2-1.2.26",
+    "canonical_id": "FQI-SRC-GR2-1.2.26",
+    "family_id": "coefficient-recurrences",
+    "source_family_id": "coefficient-recurrences",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.2.47",
+    "canonical_id": "FQI-SRC-GR2-1.2.47",
+    "family_id": "q-numbers",
+    "source_family_id": "q-numbers",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.2.55",
+    "canonical_id": "FQI-SRC-GR2-1.2.55",
+    "family_id": "q-numbers",
+    "source_family_id": "q-numbers",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.3.25",
+    "canonical_id": "FQI-SRC-GR2-1.3.25",
+    "family_id": "coefficient-recurrences",
+    "source_family_id": "coefficient-recurrences",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.9.10",
+    "canonical_id": "FQI-SRC-GR2-1.9.10",
+    "family_id": "karlsson-minton",
+    "source_family_id": "karlsson-minton",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.9.11",
+    "canonical_id": "FQI-SRC-GR2-1.9.11",
+    "family_id": "karlsson-minton",
+    "source_family_id": "karlsson-minton",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.9.12",
+    "canonical_id": "FQI-SRC-GR2-1.9.12",
+    "family_id": "karlsson-minton",
+    "source_family_id": "karlsson-minton",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.9.9-finite",
+    "canonical_id": "FQI-SRC-GR2-1.9.9-finite",
+    "family_id": "karlsson-minton",
+    "source_family_id": "karlsson-minton",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex1ii",
+    "canonical_id": "FQI-SRC-GR2-1.Ex1ii",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex3i",
+    "canonical_id": "FQI-SRC-GR2-1.Ex3i",
+    "family_id": "q-vandermonde",
+    "source_family_id": "q-vandermonde",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex3ii",
+    "canonical_id": "FQI-SRC-GR2-1.Ex3ii",
+    "family_id": "q-multinomial",
+    "source_family_id": "q-multinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex4ii",
+    "canonical_id": "FQI-SRC-GR2-1.Ex4ii",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex5",
+    "canonical_id": "FQI-SRC-GR2-1.Ex5",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex6i",
+    "canonical_id": "FQI-SRC-GR2-1.Ex6i",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex6iii",
+    "canonical_id": "FQI-SRC-GR2-1.Ex6iii",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex12iv",
+    "canonical_id": "FQI-SRC-GR2-1.Ex12iv",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex15i",
+    "canonical_id": "FQI-SRC-GR2-1.Ex15i",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex17",
+    "canonical_id": "FQI-SRC-GR2-1.Ex17",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex29",
+    "canonical_id": "FQI-SRC-GR2-1.Ex29",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex31-monomial",
+    "canonical_id": "FQI-SRC-GR2-1.Ex31-monomial",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex31-term",
+    "canonical_id": "FQI-SRC-GR2-1.Ex31-term",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex33",
+    "canonical_id": "FQI-SRC-GR2-1.Ex33",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.Ex35",
+    "canonical_id": "FQI-SRC-GR2-1.Ex35",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-1.NoteEx2-partition",
+    "canonical_id": "FQI-RECTANGLE-PARTITIONS",
+    "family_id": "rectangle-partitions",
+    "source_family_id": "rectangle-partitions",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-1.NoteEx2-subspace",
+    "canonical_id": "FQI-SUBSPACE-COUNT",
+    "family_id": "finite-fields",
+    "source_family_id": "finite-fields",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-2.2.2",
+    "canonical_id": "FQI-SRC-GR2-2.2.2",
+    "family_id": "finite-inversion",
+    "source_family_id": "finite-inversion",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.2.4",
+    "canonical_id": "FQI-SRC-GR2-2.2.4",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.3.2",
+    "canonical_id": "FQI-SRC-GR2-2.3.2",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.3.4",
+    "canonical_id": "FQI-SRC-GR2-2.3.4",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.7.5",
+    "canonical_id": "FQI-SRC-GR2-2.7.5",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.8.2",
+    "canonical_id": "FQI-SRC-GR2-2.8.2",
+    "family_id": "finite-inversion",
+    "source_family_id": "finite-inversion",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.10.3",
+    "canonical_id": "FQI-SRC-GR2-2.10.3",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.10.8",
+    "canonical_id": "FQI-SRC-GR2-2.10.8",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex5",
+    "canonical_id": "FQI-SRC-GR2-2.Ex5",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex6",
+    "canonical_id": "FQI-SRC-GR2-2.Ex6",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex10",
+    "canonical_id": "FQI-SRC-GR2-2.Ex10",
+    "family_id": "q-racah",
+    "source_family_id": "q-racah",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex11",
+    "canonical_id": "FQI-SRC-GR2-2.Ex11",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex12",
+    "canonical_id": "FQI-SRC-GR2-2.Ex12",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex8",
+    "canonical_id": "FQI-SRC-GR2-2.Ex8",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex14i",
+    "canonical_id": "FQI-SRC-GR2-2.Ex14i",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex14ii",
+    "canonical_id": "FQI-SRC-GR2-2.Ex14ii",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex19",
+    "canonical_id": "FQI-SRC-GR2-2.Ex19",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex20",
+    "canonical_id": "FQI-SRC-GR2-2.Ex20",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex27",
+    "canonical_id": "FQI-SRC-GR2-2.Ex27",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex28",
+    "canonical_id": "FQI-SRC-GR2-2.Ex28",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex29",
+    "canonical_id": "FQI-SRC-GR2-2.Ex29",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex35i",
+    "canonical_id": "FQI-SRC-GR2-2.Ex35i",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex35ii",
+    "canonical_id": "FQI-SRC-GR2-2.Ex35ii",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex35iii",
+    "canonical_id": "FQI-SRC-GR2-2.Ex35iii",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex36i",
+    "canonical_id": "FQI-SRC-GR2-2.Ex36i",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex36ii",
+    "canonical_id": "FQI-SRC-GR2-2.Ex36ii",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.Ex36iii",
+    "canonical_id": "FQI-SRC-GR2-2.Ex36iii",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-2.NoteEx31",
+    "canonical_id": "FQI-Q-DYSON",
+    "family_id": "constant-term",
+    "source_family_id": "constant-term",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-3.2.6",
+    "canonical_id": "FQI-SRC-GR2-3.2.6",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.6.6",
+    "canonical_id": "FQI-SRC-GR2-3.6.6",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.6.10",
+    "canonical_id": "FQI-SRC-GR2-3.6.10",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.6.16",
+    "canonical_id": "FQI-SRC-GR2-3.6.16",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.6.17",
+    "canonical_id": "FQI-SRC-GR2-3.6.17",
+    "family_id": "finite-inversion",
+    "source_family_id": "finite-inversion",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.6.18",
+    "canonical_id": "FQI-SRC-GR2-3.6.18",
+    "family_id": "finite-inversion",
+    "source_family_id": "finite-inversion",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.8.14",
+    "canonical_id": "FQI-SRC-GR2-3.8.14",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.8.15",
+    "canonical_id": "FQI-SRC-GR2-3.8.15",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.9.5",
+    "canonical_id": "FQI-SRC-GR2-3.9.5",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.10.3",
+    "canonical_id": "FQI-SRC-GR2-3.10.3",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.10.5",
+    "canonical_id": "FQI-SRC-GR2-3.10.5",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.10.6",
+    "canonical_id": "FQI-SRC-GR2-3.10.6",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.10.7",
+    "canonical_id": "FQI-SRC-GR2-3.10.7",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.10.8",
+    "canonical_id": "FQI-SRC-GR2-3.10.8",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.10.11",
+    "canonical_id": "FQI-SRC-GR2-3.10.11",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.10.14",
+    "canonical_id": "FQI-SRC-GR2-3.10.14",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.10.15",
+    "canonical_id": "FQI-SRC-GR2-3.10.15",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.10.16",
+    "canonical_id": "FQI-SRC-GR2-3.10.16",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex3",
+    "canonical_id": "FQI-SRC-GR2-3.Ex3",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex4-odd",
+    "canonical_id": "FQI-SRC-GR2-3.Ex4-odd",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex4-transform",
+    "canonical_id": "FQI-SRC-GR2-3.Ex4-transform",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex12",
+    "canonical_id": "FQI-SRC-GR2-3.Ex12",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex13i",
+    "canonical_id": "FQI-SRC-GR2-3.Ex13i",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex13ii",
+    "canonical_id": "FQI-SRC-GR2-3.Ex13ii",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex21-mixed",
+    "canonical_id": "FQI-SRC-GR2-3.Ex21-mixed",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex21-quad",
+    "canonical_id": "FQI-SRC-GR2-3.Ex21-quad",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex23",
+    "canonical_id": "FQI-SRC-GR2-3.Ex23",
+    "family_id": "finite-inversion",
+    "source_family_id": "finite-inversion",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex31i",
+    "canonical_id": "FQI-SRC-GR2-3.Ex31i",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex31ii",
+    "canonical_id": "FQI-SRC-GR2-3.Ex31ii",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-3.Ex34",
+    "canonical_id": "FQI-SRC-GR2-3.Ex34",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-5.Ex11",
+    "canonical_id": "FQI-SRC-GR2-5.Ex11",
+    "family_id": "bilateral-series",
+    "source_family_id": "bilateral-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-5.Ex18iii",
+    "canonical_id": "FQI-SRC-GR2-5.Ex18iii",
+    "family_id": "bilateral-series",
+    "source_family_id": "bilateral-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-5.Ex18iv",
+    "canonical_id": "FQI-SRC-GR2-5.Ex18iv",
+    "family_id": "bilateral-series",
+    "source_family_id": "bilateral-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-5.Ex19i",
+    "canonical_id": "FQI-SRC-GR2-5.Ex19i",
+    "family_id": "dixon-watson-whipple",
+    "source_family_id": "dixon-watson-whipple",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-5.Ex19ii",
+    "canonical_id": "FQI-SRC-GR2-5.Ex19ii",
+    "family_id": "dixon-watson-whipple",
+    "source_family_id": "dixon-watson-whipple",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-6.6.10",
+    "canonical_id": "FQI-SRC-GR2-6.6.10",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-6.Ex14",
+    "canonical_id": "FQI-SRC-GR2-6.Ex14",
+    "family_id": "constant-term",
+    "source_family_id": "constant-term",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.2.1",
+    "canonical_id": "FQI-SRC-GR2-7.2.1",
+    "family_id": "q-racah",
+    "source_family_id": "q-racah",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.2.12",
+    "canonical_id": "FQI-SRC-GR2-7.2.12",
+    "family_id": "q-racah",
+    "source_family_id": "q-racah",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.2.18",
+    "canonical_id": "FQI-SRC-GR2-7.2.18",
+    "family_id": "q-racah",
+    "source_family_id": "q-racah",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.2.22",
+    "canonical_id": "FQI-SRC-GR2-7.2.22",
+    "family_id": "q-hahn",
+    "source_family_id": "q-hahn",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.2.24",
+    "canonical_id": "FQI-SRC-GR2-7.2.24",
+    "family_id": "q-hahn",
+    "source_family_id": "q-hahn",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.3.6",
+    "canonical_id": "FQI-SRC-GR2-7.3.6",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.3.17",
+    "canonical_id": "FQI-SRC-GR2-7.3.17",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.4.14",
+    "canonical_id": "FQI-SRC-GR2-7.4.14",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.5.3",
+    "canonical_id": "FQI-SRC-GR2-7.5.3",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.5.20",
+    "canonical_id": "FQI-SRC-GR2-7.5.20",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.5.35",
+    "canonical_id": "FQI-SRC-GR2-7.5.35",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.5.36",
+    "canonical_id": "FQI-SRC-GR2-7.5.36",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.6.2",
+    "canonical_id": "FQI-SRC-GR2-7.6.2",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.6.8",
+    "canonical_id": "FQI-SRC-GR2-7.6.8",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.6.14",
+    "canonical_id": "FQI-SRC-GR2-7.6.14",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.7.6",
+    "canonical_id": "FQI-SRC-GR2-7.7.6",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.7.10",
+    "canonical_id": "FQI-SRC-GR2-7.7.10",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.7.7",
+    "canonical_id": "FQI-SRC-GR2-7.7.7",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex5",
+    "canonical_id": "FQI-SRC-GR2-7.Ex5",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex8i",
+    "canonical_id": "FQI-SRC-GR2-7.Ex8i",
+    "family_id": "q-krawtchouk",
+    "source_family_id": "q-krawtchouk",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex8ii",
+    "canonical_id": "FQI-SRC-GR2-7.Ex8ii",
+    "family_id": "q-krawtchouk",
+    "source_family_id": "q-krawtchouk",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex10",
+    "canonical_id": "FQI-SRC-GR2-7.Ex10",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex11",
+    "canonical_id": "FQI-SRC-GR2-7.Ex11",
+    "family_id": "q-krawtchouk",
+    "source_family_id": "q-krawtchouk",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex14",
+    "canonical_id": "FQI-SRC-GR2-7.Ex14",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex17",
+    "canonical_id": "FQI-SRC-GR2-7.Ex17",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex19",
+    "canonical_id": "FQI-SRC-GR2-7.Ex19",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex27",
+    "canonical_id": "FQI-SRC-GR2-7.Ex27",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex32",
+    "canonical_id": "FQI-SRC-GR2-7.Ex32",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex37-finite",
+    "canonical_id": "FQI-SRC-GR2-7.Ex37-finite",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex38",
+    "canonical_id": "FQI-SRC-GR2-7.Ex38",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex40",
+    "canonical_id": "FQI-SRC-GR2-7.Ex40",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-7.Ex41",
+    "canonical_id": "FQI-SRC-GR2-7.Ex41",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.1.2",
+    "canonical_id": "FQI-SRC-GR2-8.1.2",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.1.4",
+    "canonical_id": "FQI-SRC-GR2-8.1.4",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.2.5",
+    "canonical_id": "FQI-SRC-GR2-8.2.5",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.2.6",
+    "canonical_id": "FQI-SRC-GR2-8.2.6",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.2.12",
+    "canonical_id": "FQI-SRC-GR2-8.2.12",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.3.3",
+    "canonical_id": "FQI-SRC-GR2-8.3.3",
+    "family_id": "q-hahn",
+    "source_family_id": "q-hahn",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.4.7",
+    "canonical_id": "FQI-SRC-GR2-8.4.7",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.5.1",
+    "canonical_id": "FQI-SRC-GR2-8.5.1",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.7.4",
+    "canonical_id": "FQI-SRC-GR2-8.7.4",
+    "family_id": "q-racah",
+    "source_family_id": "q-racah",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.7.6",
+    "canonical_id": "FQI-SRC-GR2-8.7.6",
+    "family_id": "q-racah",
+    "source_family_id": "q-racah",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.7.9-finite",
+    "canonical_id": "FQI-SRC-GR2-8.7.9-finite",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.7.13",
+    "canonical_id": "FQI-SRC-GR2-8.7.13",
+    "family_id": "q-racah",
+    "source_family_id": "q-racah",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.8.15",
+    "canonical_id": "FQI-SRC-GR2-8.8.15",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.9.1",
+    "canonical_id": "FQI-SRC-GR2-8.9.1",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.9.2",
+    "canonical_id": "FQI-SRC-GR2-8.9.2",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.9.5",
+    "canonical_id": "FQI-SRC-GR2-8.9.5",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.9.8",
+    "canonical_id": "FQI-SRC-GR2-8.9.8",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.9.9",
+    "canonical_id": "FQI-SRC-GR2-8.9.9",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex1i",
+    "canonical_id": "FQI-SRC-GR2-8.Ex1i",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex1ii",
+    "canonical_id": "FQI-SRC-GR2-8.Ex1ii",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex2",
+    "canonical_id": "FQI-SRC-GR2-8.Ex2",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex4i",
+    "canonical_id": "FQI-SRC-GR2-8.Ex4i",
+    "family_id": "q-hahn",
+    "source_family_id": "q-hahn",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex4ii",
+    "canonical_id": "FQI-SRC-GR2-8.Ex4ii",
+    "family_id": "q-hahn",
+    "source_family_id": "q-hahn",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex7i",
+    "canonical_id": "FQI-SRC-GR2-8.Ex7i",
+    "family_id": "q-hahn",
+    "source_family_id": "q-hahn",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex8",
+    "canonical_id": "FQI-SRC-GR2-8.Ex8",
+    "family_id": "q-racah",
+    "source_family_id": "q-racah",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex11",
+    "canonical_id": "FQI-SRC-GR2-8.Ex11",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex12",
+    "canonical_id": "FQI-SRC-GR2-8.Ex12",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex9",
+    "canonical_id": "FQI-SRC-GR2-8.Ex9",
+    "family_id": "q-racah",
+    "source_family_id": "q-racah",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex15",
+    "canonical_id": "FQI-SRC-GR2-8.Ex15",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex16",
+    "canonical_id": "FQI-SRC-GR2-8.Ex16",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex17i",
+    "canonical_id": "FQI-SRC-GR2-8.Ex17i",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex17ii",
+    "canonical_id": "FQI-SRC-GR2-8.Ex17ii",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex20",
+    "canonical_id": "FQI-SRC-GR2-8.Ex20",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex21",
+    "canonical_id": "FQI-SRC-GR2-8.Ex21",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex24",
+    "canonical_id": "FQI-SRC-GR2-8.Ex24",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex26",
+    "canonical_id": "FQI-SRC-GR2-8.Ex26",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex27",
+    "canonical_id": "FQI-SRC-GR2-8.Ex27",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-8.Ex28",
+    "canonical_id": "FQI-SRC-GR2-8.Ex28",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-9.2.2",
+    "canonical_id": "FQI-SRC-GR2-9.2.2",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-9.5.3-finite",
+    "canonical_id": "FQI-SRC-GR2-9.5.3-finite",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-9.Ex4i",
+    "canonical_id": "FQI-SRC-GR2-9.Ex4i",
+    "family_id": "q-hahn",
+    "source_family_id": "q-hahn",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-9.Ex4ii",
+    "canonical_id": "FQI-SRC-GR2-9.Ex4ii",
+    "family_id": "q-hahn",
+    "source_family_id": "q-hahn",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-9.Ex5i",
+    "canonical_id": "FQI-SRC-GR2-9.Ex5i",
+    "family_id": "q-hahn",
+    "source_family_id": "q-hahn",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-9.Ex5ii",
+    "canonical_id": "FQI-SRC-GR2-9.Ex5ii",
+    "family_id": "q-hahn",
+    "source_family_id": "q-hahn",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-9.Ex7",
+    "canonical_id": "FQI-SRC-GR2-9.Ex7",
+    "family_id": "ultraspherical",
+    "source_family_id": "ultraspherical",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-9.Ex10ii",
+    "canonical_id": "FQI-SRC-GR2-9.Ex10ii",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-9.Ex17i",
+    "canonical_id": "FQI-SRC-GR2-9.Ex17i",
+    "family_id": "askey-wilson",
+    "source_family_id": "askey-wilson",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-9.Ex17ii",
+    "canonical_id": "FQI-SRC-GR2-9.Ex17ii",
+    "family_id": "q-jacobi",
+    "source_family_id": "q-jacobi",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-10.Ex18",
+    "canonical_id": "FQI-SRC-GR2-10.Ex18",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.6.5-p0",
+    "canonical_id": "FQI-SRC-GR2-11.6.5-p0",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.6.6-p0",
+    "canonical_id": "FQI-SRC-GR2-11.6.6-p0",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.6.21-p0",
+    "canonical_id": "FQI-SRC-GR2-11.6.21-p0",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.7.1",
+    "canonical_id": "FQI-SRC-GR2-11.7.1",
+    "family_id": "multivariate",
+    "source_family_id": "multivariate",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.7.8-p0",
+    "canonical_id": "FQI-SRC-GR2-11.7.8-p0",
+    "family_id": "multivariate",
+    "source_family_id": "multivariate",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.Ex21-p0",
+    "canonical_id": "FQI-SRC-GR2-11.Ex21-p0",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.Ex22-p0",
+    "canonical_id": "FQI-SRC-GR2-11.Ex22-p0",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.Ex23ii",
+    "canonical_id": "FQI-SRC-GR2-11.Ex23ii",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.Ex24ii",
+    "canonical_id": "FQI-SRC-GR2-11.Ex24ii",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.Ex38-p0",
+    "canonical_id": "FQI-SRC-GR2-11.Ex38-p0",
+    "family_id": "multivariate",
+    "source_family_id": "multivariate",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.Ex39-p0",
+    "canonical_id": "FQI-SRC-GR2-11.Ex39-p0",
+    "family_id": "multivariate",
+    "source_family_id": "multivariate",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-11.Ex40-p0",
+    "canonical_id": "FQI-SRC-GR2-11.Ex40-p0",
+    "family_id": "multivariate",
+    "source_family_id": "multivariate",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-02",
+    "canonical_id": "FQI-POCHHAMMER-NEGATIVE",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-I-03",
+    "canonical_id": "FQI-SRC-GR2-I-03",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-07",
+    "canonical_id": "FQI-SRC-GR2-I-07",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-08",
+    "canonical_id": "FQI-SRC-GR2-I-08",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-09",
+    "canonical_id": "FQI-SRC-GR2-I-09",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-10",
+    "canonical_id": "FQI-SRC-GR2-I-10",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-11",
+    "canonical_id": "FQI-SRC-GR2-I-11",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-12",
+    "canonical_id": "FQI-SRC-GR2-I-12",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-13",
+    "canonical_id": "FQI-SRC-GR2-I-13",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-14",
+    "canonical_id": "FQI-SRC-GR2-I-14",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-15",
+    "canonical_id": "FQI-SRC-GR2-I-15",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-16",
+    "canonical_id": "FQI-SRC-GR2-I-16",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-17",
+    "canonical_id": "FQI-SRC-GR2-I-17",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-18",
+    "canonical_id": "FQI-SRC-GR2-I-18",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-19",
+    "canonical_id": "FQI-SRC-GR2-I-19",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-20",
+    "canonical_id": "FQI-SRC-GR2-I-20",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-21",
+    "canonical_id": "FQI-SRC-GR2-I-21",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-22",
+    "canonical_id": "FQI-SRC-GR2-I-22",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-25",
+    "canonical_id": "FQI-SRC-GR2-I-25",
+    "family_id": "product-residues",
+    "source_family_id": "product-residues",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-26",
+    "canonical_id": "FQI-SRC-GR2-I-26",
+    "family_id": "product-residues",
+    "source_family_id": "product-residues",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-27",
+    "canonical_id": "FQI-POCHHAMMER-RESIDUES",
+    "family_id": "product-residues",
+    "source_family_id": "product-residues",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-I-28",
+    "canonical_id": "FQI-SRC-GR2-I-28",
+    "family_id": "product-residues",
+    "source_family_id": "product-residues",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-30",
+    "canonical_id": "FQI-POCHHAMMER-ROOTS",
+    "family_id": "product-residues",
+    "source_family_id": "product-residues",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-I-33",
+    "canonical_id": "FQI-SRC-GR2-I-33",
+    "family_id": "product-residues",
+    "source_family_id": "product-residues",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-39",
+    "canonical_id": "FQI-GAUSSIAN-SYMMETRY",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-I-42",
+    "canonical_id": "FQI-SRC-GR2-I-42",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-43",
+    "canonical_id": "FQI-SRC-GR2-I-43",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-44",
+    "canonical_id": "FQI-SRC-GR2-I-44",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-45",
+    "canonical_id": "FQI-SRC-GR2-I-45",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-46",
+    "canonical_id": "FQI-SRC-GR2-I-46",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-I-47",
+    "canonical_id": "FQI-SRC-GR2-I-47",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-II-04",
+    "canonical_id": "FQI-FINITE-Q-BINOMIAL",
+    "family_id": "q-binomial",
+    "source_family_id": "q-binomial",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "展开有限 1φ0 并用 (q^−n;q)_k/(q;q)_k=(−1)^k q^{k(k−1)/2−nk}[n choose k]_q；令原 z=q^n z。"
+  },
+  {
+    "source_id": "GR2-II-06",
+    "canonical_id": "FQI-CHU-VANDERMONDE-Q",
+    "family_id": "q-vandermonde",
+    "source_family_id": "q-vandermonde",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-II-07",
+    "canonical_id": "FQI-CHU-VANDERMONDE-BALANCED",
+    "family_id": "q-vandermonde",
+    "source_family_id": "q-vandermonde",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-II-12",
+    "canonical_id": "FQI-PFAFF-SAALSCHUETZ",
+    "family_id": "saalschuetz",
+    "source_family_id": "saalschuetz",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-II-14",
+    "canonical_id": "FQI-SRC-GR2-II-14",
+    "family_id": "dixon-watson-whipple",
+    "source_family_id": "dixon-watson-whipple",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-II-15",
+    "canonical_id": "FQI-SRC-GR2-II-15",
+    "family_id": "dixon-watson-whipple",
+    "source_family_id": "dixon-watson-whipple",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-II-17",
+    "canonical_id": "FQI-SRC-GR2-II-17",
+    "family_id": "dixon-watson-whipple",
+    "source_family_id": "dixon-watson-whipple",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-II-19",
+    "canonical_id": "FQI-SRC-GR2-II-19",
+    "family_id": "dixon-watson-whipple",
+    "source_family_id": "dixon-watson-whipple",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-II-21",
+    "canonical_id": "FQI-TERMINATING-6PHI5",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-II-22",
+    "canonical_id": "FQI-SRC-GR2-II-22",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-II-34",
+    "canonical_id": "FQI-SRC-GR2-II-34",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-II-35",
+    "canonical_id": "FQI-SRC-GR2-II-35",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-II-36",
+    "canonical_id": "FQI-SRC-GR2-II-36",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-II-37",
+    "canonical_id": "FQI-SRC-GR2-II-37",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-06",
+    "canonical_id": "FQI-SRC-GR2-III-06",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-07",
+    "canonical_id": "FQI-SRC-GR2-III-07",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-08",
+    "canonical_id": "FQI-SRC-GR2-III-08",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-11",
+    "canonical_id": "FQI-SRC-GR2-III-11",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-12",
+    "canonical_id": "FQI-SRC-GR2-III-12",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-13",
+    "canonical_id": "FQI-SRC-GR2-III-13",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-14",
+    "canonical_id": "FQI-SRC-GR2-III-14",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-15",
+    "canonical_id": "FQI-SRC-GR2-III-15",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-16",
+    "canonical_id": "FQI-SEARS-4PHI3-II",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-III-18",
+    "canonical_id": "FQI-WATSON-8PHI7",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "GR2-III-19",
+    "canonical_id": "FQI-SRC-GR2-III-19",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-21",
+    "canonical_id": "FQI-SRC-GR2-III-21",
+    "family_id": "bibasic",
+    "source_family_id": "bibasic",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-22",
+    "canonical_id": "FQI-SRC-GR2-III-22",
+    "family_id": "clausen",
+    "source_family_id": "clausen",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-25",
+    "canonical_id": "FQI-SRC-GR2-III-25",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-26",
+    "canonical_id": "FQI-SRC-GR2-III-26",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-27",
+    "canonical_id": "FQI-SRC-GR2-III-27",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "GR2-III-28",
+    "canonical_id": "FQI-SRC-GR2-III-28",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.2.1",
+    "canonical_id": "FQI-RECTANGLE-PARTITIONS",
+    "family_id": "rectangle-partitions",
+    "source_family_id": "rectangle-partitions",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "n=N+M，k=M；补零到恰 M 个部分，按大小 s 分组。"
+  },
+  {
+    "source_id": "AP-3.2.7",
+    "canonical_id": "FQI-SRC-AP-3.2.7",
+    "family_id": "rectangle-partitions",
+    "source_family_id": "rectangle-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.3.1",
+    "canonical_id": "FQI-SRC-AP-3.3.1",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.3.2",
+    "canonical_id": "FQI-GAUSSIAN-SYMMETRY",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "m→k。"
+  },
+  {
+    "source_id": "AP-3.3.3",
+    "canonical_id": "FQI-PASCAL-Q-N-K",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "m→k。"
+  },
+  {
+    "source_id": "AP-3.3.4",
+    "canonical_id": "FQI-PASCAL-Q-K",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "m→k，交换右侧两项次序。"
+  },
+  {
+    "source_id": "AP-3.3.6",
+    "canonical_id": "FQI-FINITE-Q-BINOMIAL",
+    "family_id": "q-binomial",
+    "source_family_id": "q-binomial",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "N→n，j→k，交换等号两侧。"
+  },
+  {
+    "source_id": "AP-3.3.8",
+    "canonical_id": "FQI-GAUSS-ALTERNATING",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AP-3.3.9",
+    "canonical_id": "FQI-SRC-AP-3.3.9",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.3.10",
+    "canonical_id": "FQI-GAUSSIAN-VANDERMONDE",
+    "family_id": "q-vandermonde",
+    "source_family_id": "q-vandermonde",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AP-3.3.11",
+    "canonical_id": "FQI-SRC-AP-3.3.11",
+    "family_id": "saalschuetz",
+    "source_family_id": "saalschuetz",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.3.12",
+    "canonical_id": "FQI-PFAFF-SAALSCHUETZ",
+    "family_id": "saalschuetz",
+    "source_family_id": "saalschuetz",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "N→n；合并多参数 Pochhammer 后正是有限 3φ2 定义。"
+  },
+  {
+    "source_id": "AP-3.3.14",
+    "canonical_id": "FQI-SRC-AP-3.3.14",
+    "family_id": "saalschuetz",
+    "source_family_id": "saalschuetz",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.4.2",
+    "canonical_id": "FQI-SRC-AP-3.4.2",
+    "family_id": "q-multinomial",
+    "source_family_id": "q-multinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.4.4",
+    "canonical_id": "FQI-SRC-AP-3.4.4",
+    "family_id": "q-multinomial",
+    "source_family_id": "q-multinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.5.RECIP",
+    "canonical_id": "FQI-GAUSSIAN-RECIPROCITY",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "展开 G(N,M;q)=[N+M choose M]_q，n=N+M，k=M；NM=k(n−k)。"
+  },
+  {
+    "source_id": "AP-3.E1",
+    "canonical_id": "FQI-SRC-AP-3.E1",
+    "family_id": "finite-products",
+    "source_family_id": "finite-products",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.E5",
+    "canonical_id": "FQI-ROGERS-SZEGO-SQRT",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AP-3.E6",
+    "canonical_id": "FQI-ROGERS-SZEGO-RECURRENCE",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AP-3.E7",
+    "canonical_id": "FQI-SRC-AP-3.E7",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.E10",
+    "canonical_id": "FQI-SCHUR-RR-BUNDLE",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AP-9.E4a",
+    "canonical_id": "FQI-SCHUR-RR-BUNDLE",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "identical_statement",
+    "witness": "公式、定义与条件逐字相同；仅书内定位不同。"
+  },
+  {
+    "source_id": "AP-3.E12a",
+    "canonical_id": "FQI-SRC-AP-3.E12a",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-3.E12b",
+    "canonical_id": "FQI-SRC-AP-3.E12b",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-7.E11",
+    "canonical_id": "FQI-SRC-AP-7.E11",
+    "family_id": "gollnitz",
+    "source_family_id": "gollnitz",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.3.9",
+    "canonical_id": "FQI-OSCILLATION-M-EVEN",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AP-9.3.10",
+    "canonical_id": "FQI-OSCILLATION-M-ODD",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AP-9.3.11",
+    "canonical_id": "FQI-OSCILLATION-P-EVEN",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AP-9.3.12",
+    "canonical_id": "FQI-OSCILLATION-P-ODD",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AP-9.E4b",
+    "canonical_id": "FQI-SRC-AP-9.E4b",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-11.2.1",
+    "canonical_id": "FQI-SRC-AP-11.2.1",
+    "family_id": "plane-partitions",
+    "source_family_id": "plane-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-11.2.4",
+    "canonical_id": "FQI-SRC-AP-11.2.4",
+    "family_id": "plane-partitions",
+    "source_family_id": "plane-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-11.2.9",
+    "canonical_id": "FQI-SRC-AP-11.2.9",
+    "family_id": "plane-partitions",
+    "source_family_id": "plane-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-11.2.10",
+    "canonical_id": "FQI-SRC-AP-11.2.10",
+    "family_id": "plane-partitions",
+    "source_family_id": "plane-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-13.T1",
+    "canonical_id": "FQI-SUBSPACE-COUNT",
+    "family_id": "finite-fields",
+    "source_family_id": "finite-fields",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "m→k；附带乘积是 Gaussian 定义，不另计命题。"
+  },
+  {
+    "source_id": "AP-13.E3",
+    "canonical_id": "FQI-SRC-AP-13.E3",
+    "family_id": "q-binomial",
+    "source_family_id": "q-binomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-13.E5",
+    "canonical_id": "FQI-SRC-AP-13.E5",
+    "family_id": "q-binomial",
+    "source_family_id": "q-binomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-13.E6",
+    "canonical_id": "FQI-GAUSSIAN-VANDERMONDE",
+    "family_id": "q-vandermonde",
+    "source_family_id": "finite-fields",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "在代表式中换 (n,m,k)→(m,n,h−k)；指数成为 k(m−h+k)，因子交换。"
+  },
+  {
+    "source_id": "AP-5.CAYLEY",
+    "canonical_id": "FQI-CAYLEY",
+    "family_id": "cayley",
+    "source_family_id": "cayley",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AP-12.E1",
+    "canonical_id": "FQI-CAYLEY",
+    "family_id": "cayley",
+    "source_family_id": "cayley",
+    "relation_to_representative": "identical_statement",
+    "witness": "公式、定义与条件逐字相同；仅书内定位不同。"
+  },
+  {
+    "source_id": "AP-3.5.MULTIPROD",
+    "canonical_id": "FQI-SRC-AP-3.5.MULTIPROD",
+    "family_id": "q-multinomial",
+    "source_family_id": "q-multinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.3.5",
+    "canonical_id": "FQI-SRC-AP-9.3.5",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.3.6",
+    "canonical_id": "FQI-SRC-AP-9.3.6",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.3.7",
+    "canonical_id": "FQI-SRC-AP-9.3.7",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.3.8",
+    "canonical_id": "FQI-SRC-AP-9.3.8",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.L7",
+    "canonical_id": "FQI-SRC-AP-9.L7",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.L8",
+    "canonical_id": "FQI-SRC-AP-9.L8",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.3.13",
+    "canonical_id": "FQI-OSCILLATION-M-EVEN",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "same_formula_with_source_domains",
+    "witness": "同一闭式；保留两个来源域的析取，不取条件交集或笛卡尔积。"
+  },
+  {
+    "source_id": "AP-9.3.14",
+    "canonical_id": "FQI-OSCILLATION-M-ODD",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "same_formula_with_source_domains",
+    "witness": "同一闭式；保留两个来源域的析取，不取条件交集或笛卡尔积。"
+  },
+  {
+    "source_id": "AP-9.3.15",
+    "canonical_id": "FQI-OSCILLATION-P-EVEN",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "同一闭式；保留两个来源域的析取，不取条件交集或笛卡尔积。下指标 a−(2k+1)μ 与 b+(2k+1)μ 由上指标 a+b 的 Gaussian 对称互换。"
+  },
+  {
+    "source_id": "AP-9.3.16",
+    "canonical_id": "FQI-OSCILLATION-P-ODD",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "same_formula_with_source_domains",
+    "witness": "同一闭式；保留两个来源域的析取，不取条件交集或笛卡尔积。"
+  },
+  {
+    "source_id": "AP-9.3.17",
+    "canonical_id": "FQI-SRC-AP-9.3.17",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.3.18",
+    "canonical_id": "FQI-SRC-AP-9.3.18",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.3.19",
+    "canonical_id": "FQI-SRC-AP-9.3.19",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-9.3.20",
+    "canonical_id": "FQI-SRC-AP-9.3.20",
+    "family_id": "oscillation-partitions",
+    "source_family_id": "oscillation-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-11.2.2",
+    "canonical_id": "FQI-SRC-AP-11.2.2",
+    "family_id": "plane-partitions",
+    "source_family_id": "plane-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-11.2.8",
+    "canonical_id": "FQI-SRC-AP-11.2.8",
+    "family_id": "plane-partitions",
+    "source_family_id": "plane-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-4.2.COMPOSITIONS",
+    "canonical_id": "FQI-SRC-AP-4.2.COMPOSITIONS",
+    "family_id": "rectangle-partitions",
+    "source_family_id": "rectangle-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AP-13.E7",
+    "canonical_id": "FQI-SRC-AP-13.E7",
+    "family_id": "q-vandermonde",
+    "source_family_id": "q-vandermonde",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-2.23",
+    "canonical_id": "FQI-SRC-AQ-2.23",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-2.29",
+    "canonical_id": "FQI-SRC-AQ-2.29",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-2.35",
+    "canonical_id": "FQI-SRC-AQ-2.35",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-2.38",
+    "canonical_id": "FQI-SRC-AQ-2.38",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-2.39",
+    "canonical_id": "FQI-SRC-AQ-2.39",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-2.40",
+    "canonical_id": "FQI-SRC-AQ-2.40",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-2.41",
+    "canonical_id": "FQI-CHU-VANDERMONDE-Q",
+    "family_id": "q-vandermonde",
+    "source_family_id": "q-vandermonde",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "展开有限 2φ1，求和指标 j 不变。"
+  },
+  {
+    "source_id": "AQ-3.8",
+    "canonical_id": "FQI-PASCAL-Q-N-K",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "A→n，B→k。"
+  },
+  {
+    "source_id": "AQ-3.9",
+    "canonical_id": "FQI-PASCAL-Q-K",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "A→n，B→k，交换右侧两项次序。"
+  },
+  {
+    "source_id": "AQ-3.12",
+    "canonical_id": "FQI-SRC-AQ-3.12",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-3.17",
+    "canonical_id": "FQI-SRC-AQ-3.17",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-3.18",
+    "canonical_id": "FQI-SRC-AQ-3.18",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-3.23",
+    "canonical_id": "FQI-SRC-AQ-3.23",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-3.25",
+    "canonical_id": "FQI-PFAFF-SAALSCHUETZ",
+    "family_id": "saalschuetz",
+    "source_family_id": "saalschuetz",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "N→n；展开有限 3φ2。"
+  },
+  {
+    "source_id": "AQ-REF-BAILEY",
+    "canonical_id": "FQI-BAILEY-LEMMA",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AQ-3.35",
+    "canonical_id": "FQI-SRC-AQ-3.35",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-3.37",
+    "canonical_id": "FQI-SRC-AQ-3.37",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-3.40",
+    "canonical_id": "FQI-BAILEY-INVERSION",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AQ-3.42",
+    "canonical_id": "FQI-SRC-AQ-3.42",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-3.43",
+    "canonical_id": "FQI-SRC-AQ-3.43",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-3.48",
+    "canonical_id": "FQI-BAILEY-UNIT",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AQ-3.49",
+    "canonical_id": "FQI-WATSON-8PHI7",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "N→n；展开 W_8^[n] 与右侧 4φ3。"
+  },
+  {
+    "source_id": "AQ-REF-QDYSON",
+    "canonical_id": "FQI-Q-DYSON",
+    "family_id": "constant-term",
+    "source_family_id": "constant-term",
+    "relation_to_representative": "same_formula_with_source_domains",
+    "witness": "公式逐字相同；维数与各 a_i 的整数条件逐来源保留。"
+  },
+  {
+    "source_id": "AQ-4.24",
+    "canonical_id": "FQI-SRC-AQ-4.24",
+    "family_id": "dixon-watson-whipple",
+    "source_family_id": "dixon-watson-whipple",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-6.18",
+    "canonical_id": "FQI-SRC-AQ-6.18",
+    "family_id": "schur-partitions",
+    "source_family_id": "schur-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-6.19",
+    "canonical_id": "FQI-SRC-AQ-6.19",
+    "family_id": "schur-partitions",
+    "source_family_id": "schur-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-8.32",
+    "canonical_id": "FQI-SRC-AQ-8.32",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-8.36",
+    "canonical_id": "FQI-SCHUR-RR-FIRST",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "F_N(0)=D_N=Σ_j q^(j²)[N−j choose j]_q；n=N，Gaussian 对称将 floor((n−5j)/2) 换成 floor((n+5j+1)/2)。两边多余尾项均为0。"
+  },
+  {
+    "source_id": "AQ-8.37",
+    "canonical_id": "FQI-SCHUR-RR-SECOND",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "F_N(1)=E_(N−1)；n=N−1，λ=−j；floor((N+5j)/2)+1=floor((n+5j+3)/2)。零支撑调整求和界。"
+  },
+  {
+    "source_id": "AQ-8.44",
+    "canonical_id": "FQI-SRC-AQ-8.44",
+    "family_id": "hard-hexagon",
+    "source_family_id": "hard-hexagon",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-8.45",
+    "canonical_id": "FQI-SRC-AQ-8.45",
+    "family_id": "hard-hexagon",
+    "source_family_id": "hard-hexagon",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-REF-8.42",
+    "canonical_id": "FQI-SCHUR-EVEN-RECIPROCAL",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "N→m；F_(2N)(0)=D_(2N)；双边和 k→−k，再用 Gaussian 对称，得到两项指数 15k²−k、15k²−11k+2。"
+  },
+  {
+    "source_id": "AQ-8.46",
+    "canonical_id": "FQI-SRC-AQ-8.46",
+    "family_id": "hard-hexagon",
+    "source_family_id": "hard-hexagon",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-8.50",
+    "canonical_id": "FQI-SRC-AQ-8.50",
+    "family_id": "hard-hexagon",
+    "source_family_id": "hard-hexagon",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-8.52",
+    "canonical_id": "FQI-SRC-AQ-8.52",
+    "family_id": "hard-hexagon",
+    "source_family_id": "hard-hexagon",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-8.56",
+    "canonical_id": "FQI-SRC-AQ-8.56",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-9.5",
+    "canonical_id": "FQI-SRC-AQ-9.5",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-9.17",
+    "canonical_id": "FQI-SRC-AQ-9.17",
+    "family_id": "hard-hexagon",
+    "source_family_id": "hard-hexagon",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-9.26",
+    "canonical_id": "FQI-SRC-AQ-9.26",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-9.27",
+    "canonical_id": "FQI-SRC-AQ-9.27",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-10.1",
+    "canonical_id": "FQI-SRC-AQ-10.1",
+    "family_id": "lmw",
+    "source_family_id": "lmw",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-10.5",
+    "canonical_id": "FQI-SRC-AQ-10.5",
+    "family_id": "lmw",
+    "source_family_id": "lmw",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-10.12",
+    "canonical_id": "FQI-SRC-AQ-10.12",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-10.17",
+    "canonical_id": "FQI-GOLLNITZ-RECURRENCE",
+    "family_id": "gollnitz",
+    "source_family_id": "gollnitz",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "d_N(t)=G_N(t,q)，N=6n−a；χ(a)=1 对应 N≡2,4,5，其余三类为0。保留 AQ n≥2 与 Sills N≥7 的各自域。"
+  },
+  {
+    "source_id": "AQ-10.18",
+    "canonical_id": "FQI-GOLLNITZ-SHIFT",
+    "family_id": "gollnitz",
+    "source_family_id": "gollnitz",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AQ-10.21",
+    "canonical_id": "FQI-GOLLNITZ-ORDER4",
+    "family_id": "gollnitz",
+    "source_family_id": "gollnitz",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AQ-10.23",
+    "canonical_id": "FQI-GOLLNITZ-ELIMINATION",
+    "family_id": "gollnitz",
+    "source_family_id": "gollnitz",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "AQ-10.27",
+    "canonical_id": "FQI-SRC-AQ-10.27",
+    "family_id": "gollnitz",
+    "source_family_id": "gollnitz",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-10.30",
+    "canonical_id": "FQI-SRC-AQ-10.30",
+    "family_id": "coefficient-recurrences",
+    "source_family_id": "coefficient-recurrences",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-10.32",
+    "canonical_id": "FQI-SRC-AQ-10.32",
+    "family_id": "coefficient-recurrences",
+    "source_family_id": "coefficient-recurrences",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-10.7A",
+    "canonical_id": "FQI-SRC-AQ-10.7A",
+    "family_id": "coefficient-recurrences",
+    "source_family_id": "coefficient-recurrences",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-B.9",
+    "canonical_id": "FQI-SRC-AQ-B.9",
+    "family_id": "q-multinomial",
+    "source_family_id": "q-multinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-B.12",
+    "canonical_id": "FQI-SRC-AQ-B.12",
+    "family_id": "q-multinomial",
+    "source_family_id": "q-multinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "AQ-4.3",
+    "canonical_id": "FQI-SRC-AQ-4.3",
+    "family_id": "constant-term",
+    "source_family_id": "constant-term",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-2.1",
+    "canonical_id": "FQI-SRC-FINE-2.1",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-2.3",
+    "canonical_id": "FQI-SRC-FINE-2.3",
+    "family_id": "fine-coefficients",
+    "source_family_id": "fine-coefficients",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-4.coeff",
+    "canonical_id": "FQI-SRC-FINE-4.coeff",
+    "family_id": "fine-coefficients",
+    "source_family_id": "fine-coefficients",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-6.23",
+    "canonical_id": "FQI-FINITE-Q-BINOMIAL",
+    "family_id": "q-binomial",
+    "source_family_id": "q-binomial",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "z=tq；q≠0 时可逆代换；q=0 的原式单独按多项式解释。"
+  },
+  {
+    "source_id": "FINE-7.GH",
+    "canonical_id": "FQI-SRC-FINE-7.GH",
+    "family_id": "fine-coefficients",
+    "source_family_id": "fine-coefficients",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-15.2",
+    "canonical_id": "FQI-SRC-FINE-15.2",
+    "family_id": "fine-coefficients",
+    "source_family_id": "fine-coefficients",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-15.31",
+    "canonical_id": "FQI-SRC-FINE-15.31",
+    "family_id": "fine-coefficients",
+    "source_family_id": "fine-coefficients",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-15.41",
+    "canonical_id": "FQI-SRC-FINE-15.41",
+    "family_id": "fine-coefficients",
+    "source_family_id": "fine-coefficients",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-18.11",
+    "canonical_id": "FQI-POCHHAMMER-NEGATIVE",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "GR 的 a=Fine 的 aq；(−aq)^−n q^{n(n+1)/2}=(−1/a)^n q^{n(n−1)/2}。"
+  },
+  {
+    "source_id": "FINE-20.63b",
+    "canonical_id": "FQI-ROGERS-SZEGO-RECURRENCE",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "f_n(u)=H_n(u;q)，u→t；将后两项移到右侧。"
+  },
+  {
+    "source_id": "FINE-20.64b",
+    "canonical_id": "FQI-SRC-FINE-20.64b",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-20.65b",
+    "canonical_id": "FQI-SRC-FINE-20.65b",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-20.66b",
+    "canonical_id": "FQI-SRC-FINE-20.66b",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-20.67",
+    "canonical_id": "FQI-GAUSS-ALTERNATING",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "展开 f_N(−1)=Σ_j(−1)^j[N choose j]_q；按 N=2n、2n+1 分支。"
+  },
+  {
+    "source_id": "FINE-20.68",
+    "canonical_id": "FQI-ROGERS-SZEGO-SQRT",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "选定 u=q_Fine^(1/2)，底数 q_Fine=u²；H_n(u;u²)=(−u;u)_n。根分支随来源保留。"
+  },
+  {
+    "source_id": "FINE-20.69",
+    "canonical_id": "FQI-SRC-FINE-20.69",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-21.2",
+    "canonical_id": "FQI-SRC-FINE-21.2",
+    "family_id": "q-multinomial",
+    "source_family_id": "q-multinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-21.21",
+    "canonical_id": "FQI-SRC-FINE-21.21",
+    "family_id": "q-multinomial",
+    "source_family_id": "q-multinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-21.23",
+    "canonical_id": "FQI-SRC-FINE-21.23",
+    "family_id": "q-multinomial",
+    "source_family_id": "q-multinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-21.product",
+    "canonical_id": "FQI-SRC-FINE-21.product",
+    "family_id": "product-residues",
+    "source_family_id": "product-residues",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "FINE-25.shell",
+    "canonical_id": "FQI-SRC-FINE-25.shell",
+    "family_id": "partition-rank",
+    "source_family_id": "partition-rank",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-1.Dq",
+    "canonical_id": "FQI-DQ-MONOMIAL",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "定义 [n]_q 相同；n=0 另按0解释，不求值 x^−1。"
+  },
+  {
+    "source_id": "SILLS-1.Thm1.46",
+    "canonical_id": "FQI-CHU-VANDERMONDE-BALANCED",
+    "family_id": "q-vandermonde",
+    "source_family_id": "q-vandermonde",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "补上显式截断上限 n；参数及乘积完全一致。"
+  },
+  {
+    "source_id": "SILLS-1.Thm1.49",
+    "canonical_id": "FQI-PFAFF-SAALSCHUETZ",
+    "family_id": "saalschuetz",
+    "source_family_id": "saalschuetz",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "补显式截断上限 n。"
+  },
+  {
+    "source_id": "SILLS-1.Thm1.50",
+    "canonical_id": "FQI-TERMINATING-6PHI5",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "展开 W_6^[n]；此式是 6φ5，不能因名称 Jackson 而并入 8φ7。"
+  },
+  {
+    "source_id": "SILLS-1.49",
+    "canonical_id": "FQI-GAUSSIAN-SYMMETRY",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "same_formula_with_source_domains",
+    "witness": "逐项相同。"
+  },
+  {
+    "source_id": "SILLS-1.50",
+    "canonical_id": "FQI-PASCAL-Q-N-K",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "SILLS-1.51",
+    "canonical_id": "FQI-PASCAL-Q-K",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "SILLS-1.53",
+    "canonical_id": "FQI-GAUSSIAN-RECIPROCITY",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "SILLS-1.Rem1.54",
+    "canonical_id": "FQI-SUBSPACE-COUNT",
+    "family_id": "finite-fields",
+    "source_family_id": "finite-fields",
+    "relation_to_representative": "same_formula_with_source_domains",
+    "witness": "逐项相同。"
+  },
+  {
+    "source_id": "SILLS-1.Thm1.53",
+    "canonical_id": "FQI-RECTANGLE-PARTITIONS",
+    "family_id": "rectangle-partitions",
+    "source_family_id": "rectangle-partitions",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "n=k+ℓ；按分拆大小 r 分组；矩形共轭允许交换边长。"
+  },
+  {
+    "source_id": "SILLS-1.56",
+    "canonical_id": "FQI-FINITE-Q-BINOMIAL",
+    "family_id": "q-binomial",
+    "source_family_id": "q-binomial",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "SILLS-1.JacobiFinite",
+    "canonical_id": "FQI-SRC-SILLS-1.JacobiFinite",
+    "family_id": "finite-products",
+    "source_family_id": "finite-products",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-1.75",
+    "canonical_id": "FQI-SRC-SILLS-1.75",
+    "family_id": "finite-products",
+    "source_family_id": "finite-products",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-1.75-rec",
+    "canonical_id": "FQI-SRC-SILLS-1.75-rec",
+    "family_id": "finite-products",
+    "source_family_id": "finite-products",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-1.79",
+    "canonical_id": "FQI-SRC-SILLS-1.79",
+    "family_id": "coefficient-recurrences",
+    "source_family_id": "coefficient-recurrences",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-1.87",
+    "canonical_id": "FQI-SRC-SILLS-1.87",
+    "family_id": "q-trinomial",
+    "source_family_id": "q-trinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-1.90",
+    "canonical_id": "FQI-SRC-SILLS-1.90",
+    "family_id": "q-trinomial",
+    "source_family_id": "q-trinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-1.94-corrected",
+    "canonical_id": "FQI-SRC-SILLS-1.94-corrected",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-1.95",
+    "canonical_id": "FQI-SRC-SILLS-1.95",
+    "family_id": "terminating-series",
+    "source_family_id": "terminating-series",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-1.98",
+    "canonical_id": "FQI-WATSON-8PHI7",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "展开左侧 W_8^[n]；右侧上参数可交换次序。"
+  },
+  {
+    "source_id": "SILLS-1.99",
+    "canonical_id": "FQI-SRC-SILLS-1.99",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-1.104",
+    "canonical_id": "FQI-SEARS-4PHI3-II",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "GR 的 (a,b,c,d,e,f)=(Sills b,a,c,abc q^(1−n)/(de),d,e)；平衡条件 def=abc q^(1−n) 随代换保留。"
+  },
+  {
+    "source_id": "SILLS-1.ExDistinct",
+    "canonical_id": "FQI-SRC-SILLS-1.ExDistinct",
+    "family_id": "rectangle-partitions",
+    "source_family_id": "rectangle-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.9-corrected",
+    "canonical_id": "FQI-SRC-SILLS-2.9-corrected",
+    "family_id": "very-well-poised",
+    "source_family_id": "very-well-poised",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.30",
+    "canonical_id": "FQI-SRC-SILLS-2.30",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.31",
+    "canonical_id": "FQI-BAILEY-INVERSION",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "x→a，r→j；n=0 单列 α₀=β₀，约去 (1−a)(aq;q)_−1，避免伪奇点。"
+  },
+  {
+    "source_id": "SILLS-2.34",
+    "canonical_id": "FQI-BAILEY-LEMMA",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "x→a，左侧 j→r；把与求和指标无关的两个分母提出。"
+  },
+  {
+    "source_id": "SILLS-2.Pair112",
+    "canonical_id": "FQI-SRC-SILLS-2.Pair112",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.Pair122",
+    "canonical_id": "FQI-SRC-SILLS-2.Pair122",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.49",
+    "canonical_id": "FQI-POCHHAMMER-RESIDUES",
+    "family_id": "product-residues",
+    "source_family_id": "product-residues",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "Q→q，d→m，r→n。"
+  },
+  {
+    "source_id": "SILLS-2.RootFactor",
+    "canonical_id": "FQI-POCHHAMMER-ROOTS",
+    "family_id": "product-residues",
+    "source_family_id": "product-residues",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "z→a，Q→q，e→m，r→n；h=1..m 与 j=0..m−1 枚举同一单位根集合。"
+  },
+  {
+    "source_id": "SILLS-2.Lem2.31",
+    "canonical_id": "FQI-SRC-SILLS-2.Lem2.31",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.Ex2a",
+    "canonical_id": "FQI-BAILEY-UNIT",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "取定义 (d,e,k)=(1,1,1)，x→a；r≥1 时 (a;q)_r/(1−a)=(aq;q)_(r−1)，r=0 单列为1。"
+  },
+  {
+    "source_id": "SILLS-2.Ex2b",
+    "canonical_id": "FQI-SRC-SILLS-2.Ex2b",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.Ex2c",
+    "canonical_id": "FQI-SRC-SILLS-2.Ex2c",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.Ex2d",
+    "canonical_id": "FQI-SRC-SILLS-2.Ex2d",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.Ex2e",
+    "canonical_id": "FQI-SRC-SILLS-2.Ex2e",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.Ex2f",
+    "canonical_id": "FQI-SRC-SILLS-2.Ex2f",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.Ex7a-corrected",
+    "canonical_id": "FQI-SRC-SILLS-2.Ex7a-corrected",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.75",
+    "canonical_id": "FQI-SRC-SILLS-2.75",
+    "family_id": "q-trinomial",
+    "source_family_id": "q-trinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.76-78",
+    "canonical_id": "FQI-SRC-SILLS-2.76-78",
+    "family_id": "schur-partitions",
+    "source_family_id": "schur-partitions",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.82-83",
+    "canonical_id": "FQI-GOLLNITZ-RECURRENCE",
+    "family_id": "gollnitz",
+    "source_family_id": "gollnitz",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "SILLS-2.84",
+    "canonical_id": "FQI-GOLLNITZ-SHIFT",
+    "family_id": "gollnitz",
+    "source_family_id": "gollnitz",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "G_N(t,q)=d_N(t)，其余参数原样；两书采用修订后的较大部件约束及相同 t 权。"
+  },
+  {
+    "source_id": "SILLS-2.88",
+    "canonical_id": "FQI-GOLLNITZ-ORDER4",
+    "family_id": "gollnitz",
+    "source_family_id": "gollnitz",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "按本条 definitions 展开 F；把四项移到等号右侧；G_N=d_N，G_−1=1、G_−7=0。使用修订后 W 项负号。"
+  },
+  {
+    "source_id": "SILLS-2.90-91",
+    "canonical_id": "FQI-GOLLNITZ-ELIMINATION",
+    "family_id": "gollnitz",
+    "source_family_id": "gollnitz",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "G_N=d_N；全部系数逐项一致。"
+  },
+  {
+    "source_id": "SILLS-2.Lem2.53",
+    "canonical_id": "FQI-SRC-SILLS-2.Lem2.53",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-2.108",
+    "canonical_id": "FQI-SRC-SILLS-2.108",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-3.5-6",
+    "canonical_id": "FQI-SRC-SILLS-3.5-6",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-3.7",
+    "canonical_id": "FQI-SRC-SILLS-3.7",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-3.Lem3.3",
+    "canonical_id": "FQI-SRC-SILLS-3.Lem3.3",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.6",
+    "canonical_id": "FQI-SRC-SILLS-4.6",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.14",
+    "canonical_id": "FQI-SCHUR-RR-FIRST",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "SILLS-4.16",
+    "canonical_id": "FQI-SCHUR-RR-SECOND",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "SILLS-4.17",
+    "canonical_id": "FQI-SRC-SILLS-4.17",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.18",
+    "canonical_id": "FQI-SRC-SILLS-4.18",
+    "family_id": "q-trinomial",
+    "source_family_id": "q-trinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.19",
+    "canonical_id": "FQI-SRC-SILLS-4.19",
+    "family_id": "q-trinomial",
+    "source_family_id": "q-trinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.23",
+    "canonical_id": "FQI-SCHUR-EVEN-RECIPROCAL",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "SILLS-4.25",
+    "canonical_id": "FQI-SRC-SILLS-4.25",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.26-corrected",
+    "canonical_id": "FQI-SRC-SILLS-4.26-corrected",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.27-corrected",
+    "canonical_id": "FQI-SRC-SILLS-4.27-corrected",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.35",
+    "canonical_id": "FQI-SRC-SILLS-4.35",
+    "family_id": "bressoud",
+    "source_family_id": "bressoud",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.37",
+    "canonical_id": "FQI-SRC-SILLS-4.37",
+    "family_id": "bressoud",
+    "source_family_id": "bressoud",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.38",
+    "canonical_id": "FQI-SRC-SILLS-4.38",
+    "family_id": "bressoud",
+    "source_family_id": "bressoud",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.Sym",
+    "canonical_id": "FQI-SRC-SILLS-4.Sym",
+    "family_id": "bressoud",
+    "source_family_id": "bressoud",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.43",
+    "canonical_id": "FQI-SRC-SILLS-4.43",
+    "family_id": "bressoud",
+    "source_family_id": "bressoud",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.47",
+    "canonical_id": "FQI-SRC-SILLS-4.47",
+    "family_id": "mod8",
+    "source_family_id": "mod8",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.48",
+    "canonical_id": "FQI-SRC-SILLS-4.48",
+    "family_id": "q-trinomial",
+    "source_family_id": "q-trinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.49",
+    "canonical_id": "FQI-SRC-SILLS-4.49",
+    "family_id": "q-trinomial",
+    "source_family_id": "q-trinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.50",
+    "canonical_id": "FQI-SRC-SILLS-4.50",
+    "family_id": "q-trinomial",
+    "source_family_id": "q-trinomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.Mod8",
+    "canonical_id": "FQI-SRC-SILLS-4.Mod8",
+    "family_id": "mod8",
+    "source_family_id": "mod8",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.51",
+    "canonical_id": "FQI-SRC-SILLS-4.51",
+    "family_id": "borwein",
+    "source_family_id": "borwein",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.52",
+    "canonical_id": "FQI-SRC-SILLS-4.52",
+    "family_id": "borwein",
+    "source_family_id": "borwein",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.53",
+    "canonical_id": "FQI-SRC-SILLS-4.53",
+    "family_id": "borwein",
+    "source_family_id": "borwein",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.54",
+    "canonical_id": "FQI-SRC-SILLS-4.54",
+    "family_id": "borwein",
+    "source_family_id": "borwein",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.55",
+    "canonical_id": "FQI-SRC-SILLS-4.55",
+    "family_id": "borwein",
+    "source_family_id": "borwein",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.56",
+    "canonical_id": "FQI-SRC-SILLS-4.56",
+    "family_id": "borwein",
+    "source_family_id": "borwein",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-4.Ex3",
+    "canonical_id": "FQI-SRC-SILLS-4.Ex3",
+    "family_id": "borwein",
+    "source_family_id": "borwein",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-5.6-8",
+    "canonical_id": "FQI-SRC-SILLS-5.6-8",
+    "family_id": "schur-rr",
+    "source_family_id": "schur-rr",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "SILLS-6.Ex1-corrected",
+    "canonical_id": "FQI-SRC-SILLS-6.Ex1-corrected",
+    "family_id": "bailey",
+    "source_family_id": "bailey",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-1.10",
+    "canonical_id": "FQI-DQ-MONOMIAL",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "representative",
+    "witness": "代表式；保留本条来源域。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-1.11-12",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-1.11-12",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-1.13-14",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-1.13-14",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-1.15",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-1.15",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-3.5",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-3.5",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-3.6",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-3.6",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-3.9",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-3.9",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-3.10",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-3.10",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-3.11",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-3.11",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-3.12",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-3.12",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-4.1",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-4.1",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-4.3",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-4.3",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-4.4",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-4.4",
+    "family_id": "q-binomial",
+    "source_family_id": "q-binomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-5.1",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-5.1",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-5.5",
+    "canonical_id": "FQI-FINITE-Q-BINOMIAL",
+    "family_id": "q-binomial",
+    "source_family_id": "q-binomial",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "P_n(x,−a;q)=x^n(−a/x;q)_n；取 z=−a/x 后乘 x^n，x=0 由多项式恒等式延拓。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-5.7",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-5.7",
+    "family_id": "q-binomial",
+    "source_family_id": "q-binomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-5.8",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-5.8",
+    "family_id": "q-binomial",
+    "source_family_id": "q-binomial",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-6.1",
+    "canonical_id": "FQI-GAUSSIAN-SYMMETRY",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "j→k；越界采用普通 Gaussian 零延拓。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-6.2",
+    "canonical_id": "FQI-PASCAL-Q-K",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "j→k；注意本书称第一递推。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-6.3",
+    "canonical_id": "FQI-PASCAL-Q-N-K",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "j→k；注意本书称第二递推。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-6.reciprocity",
+    "canonical_id": "FQI-GAUSSIAN-RECIPROCITY",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "j→k；−j(n−j)=j(j−n)。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-6.5",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-6.5",
+    "family_id": "gaussian",
+    "source_family_id": "gaussian",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-7.1",
+    "canonical_id": "FQI-SUBSPACE-COUNT",
+    "family_id": "finite-fields",
+    "source_family_id": "finite-fields",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "j→k。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-7.2",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-7.2",
+    "family_id": "finite-fields",
+    "source_family_id": "finite-fields",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-7.6",
+    "canonical_id": "FQI-GAUSSIAN-VANDERMONDE",
+    "family_id": "q-vandermonde",
+    "source_family_id": "q-vandermonde",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "原 (m,n,k,j)→(n,m,h,k)，零支撑将 j=0..h 缩至有效区间。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-7.rank",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-7.rank",
+    "family_id": "finite-fields",
+    "source_family_id": "finite-fields",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-7.8",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-7.8",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-7.RogersSzego",
+    "canonical_id": "FQI-ROGERS-SZEGO-RECURRENCE",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "H_n(t)=H_n(t;q)；q^n−1=−(1−q^n)。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-7.14-15",
+    "canonical_id": "FQI-GAUSS-ALTERNATING",
+    "family_id": "rogers-szego",
+    "source_family_id": "rogers-szego",
+    "relation_to_representative": "equivalent_under_explicit_mapping",
+    "witness": "代表指标 m→n；两条奇偶分支相同。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-8.reciprocal",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-8.reciprocal",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-13.10",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-13.10",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-14.higher",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-14.higher",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-15.cancellation",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-15.cancellation",
+    "family_id": "pochhammer",
+    "source_family_id": "pochhammer",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-19.telescoping",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-19.telescoping",
+    "family_id": "q-calculus",
+    "source_family_id": "q-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.5",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.5",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.6",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.6",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.7",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.7",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.10",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.10",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.12",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.12",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.14",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.14",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.15",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.15",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.21",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.21",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.22",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.22",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.rootsum",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.rootsum",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  },
+  {
+    "source_id": "KAC-CHEUNG-26.23",
+    "canonical_id": "FQI-SRC-KAC-CHEUNG-26.23",
+    "family_id": "symmetric-calculus",
+    "source_family_id": "symmetric-calculus",
+    "relation_to_representative": "retained_statement",
+    "witness": "独立保留；未据名称或家族推断等价。"
+  }
+]

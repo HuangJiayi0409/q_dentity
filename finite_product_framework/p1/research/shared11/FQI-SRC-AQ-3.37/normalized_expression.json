@@ -1,0 +1,255 @@
+{
+  "args": [
+    {
+      "args": [
+        {
+          "args": [
+            {
+              "args": [
+                {
+                  "name": "n",
+                  "op": "var"
+                },
+                {
+                  "op": "nat",
+                  "value": 1
+                }
+              ],
+              "op": "HAdd.hAdd"
+            }
+          ],
+          "op": "Finset.range"
+        },
+        {
+          "body": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "op": "nat",
+                                "value": 1
+                              }
+                            ],
+                            "op": "Neg.neg"
+                          },
+                          {
+                            "name": "x",
+                            "op": "var"
+                          }
+                        ],
+                        "op": "HPow.hPow"
+                      },
+                      {
+                        "args": [
+                          {
+                            "name": "q",
+                            "op": "var"
+                          },
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "name": "x",
+                                    "op": "var"
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "name": "x",
+                                        "op": "var"
+                                      },
+                                      {
+                                        "op": "nat",
+                                        "value": 1
+                                      }
+                                    ],
+                                    "op": "HSub.hSub"
+                                  }
+                                ],
+                                "op": "HMul.hMul"
+                              },
+                              {
+                                "op": "nat",
+                                "value": 2
+                              }
+                            ],
+                            "op": "HDiv.hDiv"
+                          }
+                        ],
+                        "op": "HPow.hPow"
+                      }
+                    ],
+                    "op": "HMul.hMul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "nat",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "name": "q",
+                            "op": "var"
+                          },
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "op": "nat",
+                                    "value": 2
+                                  },
+                                  {
+                                    "name": "x",
+                                    "op": "var"
+                                  }
+                                ],
+                                "op": "HMul.hMul"
+                              },
+                              {
+                                "op": "nat",
+                                "value": 1
+                              }
+                            ],
+                            "op": "HAdd.hAdd"
+                          }
+                        ],
+                        "op": "HPow.hPow"
+                      }
+                    ],
+                    "op": "HSub.hSub"
+                  }
+                ],
+                "op": "HMul.hMul"
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "args": [
+                          {
+                            "op": "nat",
+                            "value": 1
+                          },
+                          {
+                            "name": "q",
+                            "op": "var"
+                          }
+                        ],
+                        "op": "HSub.hSub"
+                      },
+                      {
+                        "args": [
+                          {
+                            "name": "q",
+                            "op": "var"
+                          },
+                          {
+                            "name": "q",
+                            "op": "var"
+                          },
+                          {
+                            "args": [
+                              {
+                                "name": "n",
+                                "op": "var"
+                              },
+                              {
+                                "name": "x",
+                                "op": "var"
+                              }
+                            ],
+                            "op": "HSub.hSub"
+                          }
+                        ],
+                        "op": "FiniteQBenchmark.poch"
+                      }
+                    ],
+                    "op": "HMul.hMul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "args": [
+                          {
+                            "name": "q",
+                            "op": "var"
+                          },
+                          {
+                            "op": "nat",
+                            "value": 2
+                          }
+                        ],
+                        "op": "HPow.hPow"
+                      },
+                      {
+                        "name": "q",
+                        "op": "var"
+                      },
+                      {
+                        "args": [
+                          {
+                            "name": "n",
+                            "op": "var"
+                          },
+                          {
+                            "name": "x",
+                            "op": "var"
+                          }
+                        ],
+                        "op": "HAdd.hAdd"
+                      }
+                    ],
+                    "op": "FiniteQBenchmark.poch"
+                  }
+                ],
+                "op": "HMul.hMul"
+              }
+            ],
+            "op": "HDiv.hDiv"
+          },
+          "name": "x",
+          "op": "lambda"
+        }
+      ],
+      "op": "Finset.sum"
+    },
+    {
+      "args": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "op": "var"
+            },
+            {
+              "op": "nat",
+              "value": 0
+            }
+          ],
+          "op": "Eq"
+        },
+        {
+          "op": "nat",
+          "value": 1
+        },
+        {
+          "op": "nat",
+          "value": 0
+        }
+      ],
+      "op": "ite"
+    }
+  ],
+  "op": "Eq"
+}

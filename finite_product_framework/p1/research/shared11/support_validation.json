@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "lean": {
+    "exit_code": 0,
+    "output": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/SupportValidation.lean:42:6: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead\n\nHint: Replace the deprecated name:\n  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲\n'FiniteQP1.sum_bilateral_range' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteQP1.gaussianInt_centered' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "source_sha256": "89d6a7e022794c98493449ba458dd9d219ce16e6397e359c75a873d6f79bb04c",
+  "proof_sha256": "955237a184ed09249101be617f960b200a652e81872a387b5a00ce34e62f830e",
+  "original_train_proofs_claimed": 0
+}

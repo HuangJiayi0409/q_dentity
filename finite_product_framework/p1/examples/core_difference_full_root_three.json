@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "solver": "finite_difference_ring",
+  "input": {
+    "extensions": [],
+    "rhs_basis": [
+      "E"
+    ],
+    "algebraic_extensions": [
+      {
+        "kind": "root_unity",
+        "name": "E",
+        "order": 3
+      }
+    ]
+  }
+}

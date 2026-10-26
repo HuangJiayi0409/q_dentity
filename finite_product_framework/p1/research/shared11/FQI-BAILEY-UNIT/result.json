@@ -1,0 +1,19 @@
+{
+  "id": "FQI-BAILEY-UNIT",
+  "source": {
+    "identity_id": "FQI-BAILEY-UNIT",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity020.lean",
+    "sha256": "c9ff70f5bf2bf5d8733261930ecb4272ef3bdea4886fb44b63c93d51a4181133"
+  },
+  "native_status": "unsupported_structure",
+  "original_lean_proved": false,
+  "remaining_obligations": [
+    "命名定义已在Lean展开，仍需自动处理r=0与r>0分支及n=0目标",
+    "由动态原差分构造消去额外极点的通量表示，不能假设1-a*q^(2r)非零",
+    "验证原分母条件、q=0合法情形与两个端点，组装原式证明"
+  ],
+  "native_report": "FQI-BAILEY-UNIT/native.json",
+  "verified_preprocessing_steps": [
+    "unitBailey_definition_expanded_preserving_zero_branch"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "FQI-SRC-AP-3.E1",
+  "source": {
+    "identity_id": "FQI-SRC-AP-3.E1",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity277.lean",
+    "sha256": "fe84fa8f662ce0180e4ddb68ceb0a37a1fc2801d18b94764eb0fc9f03d837703"
+  },
+  "well_typed_original_goal": true,
+  "typecheck": {
+    "exit_code": 1,
+    "output": "P1_ELABORATED_GOAL: ∑ j ∈ Finset.Icc (-↑n) ↑n, q ^ (j * j).toNat * x ^ j * gaussianInt (q ^ 2) (2 * ↑n) (↑n + j) =\n  pochList [-1 / x * q, -x * q] (q ^ 2) n\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-AP-3.E1/Typecheck.lean:29:2: error: P1_TYPECHECK_ONLY\n"
+  },
+  "is_proof": false
+}

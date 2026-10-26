@@ -1,0 +1,27 @@
+{
+  "declarations_checked": 265,
+  "theorems_proved": 143,
+  "sorryAx": false,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "module_sha256": {
+    "lean/Benchmark/Definitions.lean": "a6361c499801dec2ead09a2ee65e1fc85ec5d029f065dc656eb239f6ea405621",
+    "lean/Benchmark/Auxiliary.lean": "43d0d24048f1d726bcd40e71a9db8ca5ca21c9e01cca66421f922ef035589c30",
+    "lean/Benchmark/Gaussian.lean": "2d4baad78917edeb734c4dfcfcc297c5143d1b1ee71914ea9cba9f3fd0f92ba3",
+    "lean/Benchmark/BatchDefinitions.lean": "bcf0b2cfc6b4cffd9cdf83942c3233491cda8848eb53f50f1c81c95a5874b80c",
+    "lean/Benchmark/BatchAuxiliary.lean": "1414a7b649237a13a10adb784236e6bdbc731704cb3b144d7b2d4af21bb73f0f",
+    "lean/Benchmark/InitialValues.lean": "1fb29252dbe5d26d3fb7cccf4ed0f408346f39441fc99f9b0ec2e1ceb9ff2d62",
+    "lean/Benchmark/Representation.lean": "c7bc4523490cdc557b6e8fec6db56ecd43f52d2ee1af94cbdf1f46732ac3f917",
+    "lean/Benchmark/Batch2Definitions.lean": "f5b7faa20e024e5b12548074a18db35a31b8a5613cabac02476ab4b7c49a6812",
+    "lean/Benchmark/Batch2Auxiliary.lean": "d878746612ded2d689c85014da5fabc7c60a00711042479fb1c757fb0f2676df",
+    "lean/Benchmark/Batch2Proofs.lean": "23000d980b15634511c601213a6d2751876a467cf93b2d2d1661060029a27797",
+    "lean/Benchmark/Batch3Definitions.lean": "dc5704d3d50a33ecca328d64d3c48f2827f9224d1b9773e0f221e61b35fa0a7f",
+    "lean/Benchmark/Batch3Proofs.lean": "0b631f07ee41306c639c410d1cda5aa50cac1c57691763f9101a0a7696090133",
+    "lean/Benchmark/Batch4Definitions.lean": "3277fd6edb7428873e4ae29f08fbe6d9e16bdbd1fb9f1bf3baf6c5ec5f983fd8",
+    "lean/Benchmark/Batch4Proofs.lean": "13ecce224a91202dd5766d72f4c34ee3019ad9b32d5b5490c167b9898c6c1882"
+  },
+  "log_sha256": "bf43e2ef1fb66f5fe09044199e9ab1ee11ebb461f1231cc0ca1aae8bfabdfd1c"
+}

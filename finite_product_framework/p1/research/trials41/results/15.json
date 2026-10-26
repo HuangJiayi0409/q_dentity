@@ -1,0 +1,87 @@
+{
+  "id": "FQI-SRC-GR2-3.10.5",
+  "branch": "main",
+  "F": "(q**(n - 1)*w/a)**k*Poch(a**2, q**2, k)*Poch(q**(-n), q, k)*Poch(-a*q**2, q**2, k)*Poch(a*q**2, q**2, k)*Poch(-a*q/w, q, k)/(Poch(-a, q**2, k)*Poch(a, q**2, k)*Poch(q**2, q**2, k)*Poch(w, q, k)*Poch(-a*q**(n + 1), q, k))",
+  "T": "Poch(-a*q, q, n)*Poch(w/(a*q), q, n)*Poch(a*q**2/w, q, n)/(Poch(-q, q, n)*Poch(w, q, n)*Poch(a*q/w, q, n))",
+  "lo": "0",
+  "hi": "n",
+  "route": "qwz",
+  "change": "identity",
+  "obligations": "Original parameter domain, boundary and initial values; no Lean representation proof yet.",
+  "source": {
+    "identity_id": "FQI-SRC-GR2-3.10.5",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity099.lean",
+    "sha256": "c8ebf47e56116676037811eeeb603e8b0fe158b89ec2ed6d5ce4fe63b4f82785"
+  },
+  "status": "timeout",
+  "stage": "q_gosper_construction",
+  "case_index": 15,
+  "lean_representation_verified": false,
+  "automatic_train_proof": false,
+  "input_origin": "explicit research transcription; not production Lean frontend",
+  "formal_domain": "Q(q, independent parameters); original singular values and parameter domains not discharged",
+  "mathematical_preconditions_status": "candidate transformations recorded; Lean equivalence/support proof pending",
+  "code_sha256": {
+    "inputs.py": "b65360f1d067870ed66e4a30dbf2c24d1b832479a1594ca04109b19b59bf464b",
+    "engine.py": "8192d5fac9b5840bbeea5d4554d1084e03faf43d93c6d5c38c5f1e1a789d9d1d",
+    "run_trials.py": "d899476a9a7d76a53dff1dfed4f802fcc4af1e5e677726b98695b26a59dbdbdb"
+  },
+  "budgets_seconds": {
+    "preparation": 60,
+    "construction": 30
+  },
+  "diagnostics": {
+    "sum_checks": [
+      {
+        "n": 0,
+        "lower": 0,
+        "upper": 0,
+        "equal": true
+      },
+      {
+        "n": 1,
+        "lower": 0,
+        "upper": 1,
+        "equal": true
+      },
+      {
+        "n": 2,
+        "lower": 0,
+        "upper": 2,
+        "equal": true
+      }
+    ],
+    "mismatches": [],
+    "skipped": [],
+    "independent_shift_checks": 6,
+    "sample_parameters": {
+      "q": "2/3",
+      "m": "2",
+      "u": "1",
+      "v": "2",
+      "a": "2/7",
+      "b": "3/11",
+      "c": "5/13",
+      "d": "7/17",
+      "e": "11/19",
+      "f": "13/23",
+      "t": "17/29",
+      "x": "19/31",
+      "z": "23/37",
+      "w": "29/41"
+    },
+    "interpretation": "exact finite diagnostics only; a mismatch needs original-source/domain review, not automatic rejection of the theorem"
+  },
+  "derived_shifts": {
+    "U": "(Q**2*X*a*q**2 - Q*X*a*q + Q*X*q - X)/(Q**2*X*a*q**2 - Q*X**2*a*q + Q*q - X)",
+    "V": "(-Q*X**7*a**5*q**5 - Q*X**6*a**4*q**4*w + Q*X**5*a**3*q**5 + Q*X**4*a**2*q**4*w + Q*X**3*a**3*q + Q*X**2*a**2*w - Q*X*a*q - Q*w + X**8*a**5*q**5 + X**7*a**4*q**4*w - X**6*a**3*q**5 - X**5*a**2*q**4*w - X**4*a**3*q - X**3*a**2*w + X**2*a*q + X*w)/(Q*X**8*a**4*q**4*w - Q*X**7*a**4*q**4 - Q*X**6*a**4*q**2*w + Q*X**5*a**4*q**2 - Q*X**4*a**2*q**4*w + Q*X**3*a**2*q**4 + Q*X**2*a**2*q**2*w - Q*X*a**2*q**2 + X**7*a**3*q**3*w - X**6*a**3*q**3 - X**5*a**3*q*w + X**4*a**3*q - X**3*a*q**3*w + X**2*a*q**3 + X*a*q*w - a*q)",
+    "c": "(Q**3*a**2*q**3*w - Q**2*a**3*q**4 + Q**2*a*q**2*w - Q**2*a*q*w**2 - Q*a**2*q**3 + Q*a**2*q**2*w - Q*w**2 + a*q*w)/(Q**3*a**2*q**3*w - Q**2*a**2*q**3 + Q**2*a**2*q**2*w - Q**2*a*q**2*w**2 - Q*a**2*q**2 + Q*a*q**2*w - Q*a*q*w**2 + a*q*w)"
+  },
+  "q_power_symbols": {
+    "X": "k",
+    "Q": "n"
+  },
+  "error": "stage wall-clock budget exhausted",
+  "elapsed_seconds": 30.427,
+  "source_unchanged": true
+}

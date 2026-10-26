@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "solver": "difference_equation",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": 1
+      }
+    ],
+    "rhs_basis": [
+      [
+        "add",
+        126,
+        [
+          "mul",
+          42,
+          [
+            "pow",
+            "H",
+            5
+          ]
+        ],
+        [
+          "mul",
+          210,
+          [
+            "pow",
+            "H",
+            4
+          ]
+        ],
+        [
+          "mul",
+          434,
+          "H"
+        ],
+        [
+          "mul",
+          490,
+          [
+            "pow",
+            "H",
+            3
+          ]
+        ],
+        [
+          "mul",
+          630,
+          [
+            "pow",
+            "H",
+            2
+          ]
+        ]
+      ]
+    ],
+    "operator": [
+      1,
+      -2,
+      1
+    ]
+  }
+}

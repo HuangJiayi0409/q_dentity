@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "status": "unsupported_structure",
+  "automatic_train_proofs": 0,
+  "complete_train_proofs": 0,
+  "test_files_read": 0,
+  "preset_proof_fallback": false,
+  "budget": {
+    "seconds": 30,
+    "max_unknowns": 10000
+  },
+  "lean_proof_generated": false,
+  "stages": [
+    "source_dependencies_verified_from_batch_snapshot",
+    "lean_goal_elaborated_and_exported"
+  ],
+  "source": {
+    "identity_id": "FQI-SRC-SILLS-2.Lem2.53",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity381.lean",
+    "sha256": "a1d23ff78afbc78618ee74dc7d1c98de6e2fcfea9bb0931099aeecf95915b277"
+  },
+  "dependencies": [
+    {
+      "path": "benchmark/lean/Benchmark/Definitions.lean",
+      "sha256": "a6361c499801dec2ead09a2ee65e1fc85ec5d029f065dc656eb239f6ea405621"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Auxiliary.lean",
+      "sha256": "43d0d24048f1d726bcd40e71a9db8ca5ca21c9e01cca66421f922ef035589c30"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Gaussian.lean",
+      "sha256": "2d4baad78917edeb734c4dfcfcc297c5143d1b1ee71914ea9cba9f3fd0f92ba3"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Batch5Definitions.lean",
+      "sha256": "f363f4f6b9e7c4676c1bbdfb587d90ae7362495f278730dd8e324f9bcb881775",
+      "loaded_declaration": "FiniteQBenchmark.kacPowerNat",
+      "declaration_sha256": "6ee4569f44becbd99178aeca336f0b1082ce1ed32442b52209c92732e8850fbd"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/BatchDefinitions.lean",
+      "sha256": "bcf0b2cfc6b4cffd9cdf83942c3233491cda8848eb53f50f1c81c95a5874b80c",
+      "loaded_declaration": "FiniteQBenchmark.regular",
+      "declaration_sha256": "ab9b2556267e2383cbad68dde811d3593ee4d50f80836147178234cf2e1ffa49"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Batch4Definitions.lean",
+      "sha256": "3277fd6edb7428873e4ae29f08fbe6d9e16bdbd1fb9f1bf3baf6c5ec5f983fd8",
+      "loaded_declaration": "FiniteQBenchmark.sillsAlpha",
+      "declaration_sha256": "6547421887599456b8e689e7d5c093f4b13dfbb6987f9bfde712cd08e73a703f"
+    }
+  ],
+  "error": "ValueError: unsupported_structure: first-order: unsupported_structure: Gaussian weight required; direct: unsupported_structure: direct branch needs n-independent summand",
+  "remaining_obligations": [
+    "Resolve unsupported_structure before continuing proof generation"
+  ]
+}

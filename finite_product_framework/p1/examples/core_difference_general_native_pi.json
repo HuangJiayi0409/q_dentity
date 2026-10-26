@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "solver": "difference_equation",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": 1
+      },
+      {
+        "name": "P",
+        "kind": "product",
+        "ratio": [
+          "add",
+          "H",
+          "Z"
+        ]
+      }
+    ],
+    "rhs_basis": [
+      [
+        "mul",
+        [
+          "pow",
+          [
+            "add",
+            "P",
+            [
+              "mul",
+              "P",
+              [
+                "pow",
+                "H",
+                2
+              ]
+            ],
+            [
+              "mul",
+              -1,
+              "H",
+              "P"
+            ]
+          ],
+          -1
+        ],
+        [
+          "add",
+          -2,
+          [
+            "mul",
+            -1,
+            "Z"
+          ],
+          [
+            "mul",
+            -1,
+            [
+              "pow",
+              "H",
+              2
+            ]
+          ],
+          [
+            "mul",
+            2,
+            "H"
+          ]
+        ]
+      ]
+    ],
+    "algebraic_extensions": [
+      {
+        "name": "Z",
+        "polynomial": [
+          "add",
+          1,
+          "Z",
+          [
+            "pow",
+            "Z",
+            2
+          ]
+        ],
+        "shift": "Z"
+      }
+    ],
+    "operator": [
+      -1,
+      1
+    ]
+  }
+}

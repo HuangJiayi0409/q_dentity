@@ -1,0 +1,20 @@
+{
+  "id": "FQI-CHU-VANDERMONDE-Q",
+  "status": "passed",
+  "lean": {
+    "exit_code": 0,
+    "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+  },
+  "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-CHU-VANDERMONDE-Q/LocalRelation.lean",
+  "proof_sha256": "42285fb42cab387c6556637b95ccb3612e2854187ad58522cabe779b747600e2",
+  "native_report_sha256": "d85336928a00a1c531186eff00d811860260a56ad815a645764a2023077e7b2c",
+  "scope": "local cleared rational identity only; not the original finite sum proof",
+  "automatic_train_proof": false,
+  "symbol_mapping": {
+    "Q": "v0",
+    "X": "v1",
+    "a": "v2",
+    "c": "v3",
+    "q": "v4"
+  }
+}

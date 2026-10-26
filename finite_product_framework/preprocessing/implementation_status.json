@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-19",
+  "status": "v3_targeted_validation_passed",
+  "scope": "method_neutral_explicit_structured_and_expanded_views",
+  "user_authorization": "用户要求按讨论方案修改预处理工程，随后明确要求继续",
+  "implemented_components": [
+    "current_train_source_and_dependency_snapshot",
+    "typed_lean_expression_wire_and_shared_dag",
+    "preserved_project_definition_catalog",
+    "explicit_bounded_normalization_rules",
+    "per_step_and_aggregate_equivalence_certificates",
+    "independent_original_context_replay_interface",
+    "prepare_and_run_cli_with_isolated_artifacts",
+    "compact_Lean_Python_wire_packet",
+    "content_addressed_cross_method_cache_with_lock_and_integrity",
+    "kernel_constant_signatures_and_application_roles",
+    "controlled_definition_unfolding",
+    "Nat_Icc_and_concrete_list_normalization",
+    "certified_pochhammer_shift_relation_catalog",
+    "structure_preserving_default_view",
+    "explicit_expanded_view_with_distinct_cache_key"
+  ],
+  "initial_build_only_history": {
+    "python_entry_runs": 0,
+    "test_runs": 0,
+    "lean_compilations": 0,
+    "new_benchmark_runs": 0,
+    "test_split_read": false
+  },
+  "existing_pipelines_modified": true,
+  "pipeline_change_scope": "explicit_view_transport_and_existing_recurrence_entry_extension",
+  "classifier_implemented": false,
+  "solver_specific_requests_implemented": false,
+  "acceptance_passed": true,
+  "acceptance_scope": "targeted_connection_checks_only_not_all_inputs",
+  "validation_record": "../generated/preprocessing_v3_recovery_20261019/validation.json",
+  "full_input_domain_validated": false,
+  "coverage_measured": false,
+  "known_scope_limits": [
+    "source_frontend_restricted_to_current_single_theorem_format",
+    "normalization_is_a_small_explicit_rule_set_not_a_complete_canonical_form",
+    "general_integer_interval_alignment_not_implemented",
+    "unknown_objects_preserved_not_claimed_solver_ready",
+    "conditional_rewrites_without_proof_are_skipped",
+    "method_frontends_keep_their_existing_mathematical_grammar",
+    "no_full_train_preprocessed_proof_rate_measured",
+    "cold_cache_dependency_compilation_and_per_method_build_copies_remain",
+    "logic_subgoal_dispatch_and_general_PiSigma_relations_not_implemented",
+    "no_automatic_view_selection_or_retry"
+  ],
+  "prior_validation_record": "../generated/preprocessing_connection_20261018/validation.json"
+}

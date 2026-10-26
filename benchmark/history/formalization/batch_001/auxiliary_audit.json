@@ -1,0 +1,20 @@
+{
+  "declarations_checked": 96,
+  "theorems_proved": 46,
+  "sorryAx": false,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "module_sha256": {
+    "lean/Benchmark/Definitions.lean": "a6361c499801dec2ead09a2ee65e1fc85ec5d029f065dc656eb239f6ea405621",
+    "lean/Benchmark/Auxiliary.lean": "43d0d24048f1d726bcd40e71a9db8ca5ca21c9e01cca66421f922ef035589c30",
+    "lean/Benchmark/Gaussian.lean": "2d4baad78917edeb734c4dfcfcc297c5143d1b1ee71914ea9cba9f3fd0f92ba3",
+    "lean/Benchmark/BatchDefinitions.lean": "bcf0b2cfc6b4cffd9cdf83942c3233491cda8848eb53f50f1c81c95a5874b80c",
+    "lean/Benchmark/BatchAuxiliary.lean": "1414a7b649237a13a10adb784236e6bdbc731704cb3b144d7b2d4af21bb73f0f",
+    "lean/Benchmark/InitialValues.lean": "1fb29252dbe5d26d3fb7cccf4ed0f408346f39441fc99f9b0ec2e1ceb9ff2d62",
+    "lean/Benchmark/Representation.lean": "c7bc4523490cdc557b6e8fec6db56ecd43f52d2ee1af94cbdf1f46732ac3f917"
+  },
+  "log_sha256": "a38b17f565b2af190640fed37a5da055af169a19d0a12b9ddf56b686998320dc"
+}

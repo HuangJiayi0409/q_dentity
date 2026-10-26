@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "solver": "q_gosper",
+  "input": {
+    "summand": ["mul", ["pow", "q", "k"], ["div", ["poch", "a", "q", "k"], ["poch", "q", "q", "k"]]]
+  }
+}

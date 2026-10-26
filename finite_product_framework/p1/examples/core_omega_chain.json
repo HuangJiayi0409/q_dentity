@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "solver": "rational_omega",
+  "input": {
+    "numerator": 1,
+    "denominator_monomials": [
+      [
+        "mul",
+        "L",
+        "x"
+      ],
+      [
+        "mul",
+        "M",
+        "y",
+        [
+          "pow",
+          "L",
+          -1
+        ]
+      ],
+      [
+        "mul",
+        "w",
+        [
+          "pow",
+          "M",
+          -1
+        ]
+      ]
+    ],
+    "grading": {
+      "y": 1,
+      "x": 1,
+      "w": 1
+    },
+    "eliminate": [
+      {
+        "variable": "L",
+        "operator": "ge"
+      },
+      {
+        "variable": "M",
+        "operator": "ge"
+      }
+    ]
+  }
+}

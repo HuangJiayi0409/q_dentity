@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "scope": [
+    "finite telescoping",
+    "recurrence uniqueness",
+    "coefficient convolution"
+  ],
+  "archived_files": 37,
+  "archive_hashes_verified": true,
+  "archive_original_paths_removed": true,
+  "active_python_reduction_references": 0,
+  "inactive_cli_rejected": true,
+  "unknown_api_branch_rejected": true,
+  "basic_tests": {
+    "count": 17,
+    "status": "passed",
+    "output": "test_budget_exhaustion_is_not_unsummability (__main__.InputDrivenTests) ... ok\ntest_changed_base_requires_different_search (__main__.InputDrivenTests) ... ok\ntest_metadata_does_not_select_mathematics (__main__.InputDrivenTests) ... ok\ntest_native_synthesis_does_not_use_archive (__main__.InputDrivenTests) ... ok\ntest_proof_hints_rejected (__main__.InputDrivenTests) ... ok\ntest_q_gosper_normal_form_and_residual (__main__.InputDrivenTests) ... ok\ntest_shifts_derived_and_changed_with_input (__main__.InputDrivenTests) ... ok\ntest_derived_degree_exceeds_old_budget (__main__.QGosperTests) ... ok\ntest_dispersion_beyond_old_radius (__main__.QGosperTests) ... ok\ntest_exact_q_power_recognition (__main__.QGosperTests) ... ok\ntest_generic_q_pochhammer_nonsummability (__main__.QGosperTests) ... ok\ntest_independently_constructed_rational_differences (__main__.QGosperTests) ... ok\ntest_laurent_negative_degrees (__main__.QGosperTests) ... ok\ntest_no_antidifference_is_decided_not_timed_out (__main__.QGosperTests) ... ok\ntest_q_pochhammer_example (__main__.QGosperTests) ... ok\ntest_unsupported_domains_are_not_negative_decisions (__main__.QGosperTests) ... ok\ntest_zero_wz_difference (__main__.QGosperTests) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 26.240s\n\nOK\n"
+  },
+  "native_smoke": {
+    "identity": "FQI-GAUSS-ALTERNATING",
+    "status": "proved",
+    "branch": "general_q_zeilberger",
+    "proof_sha256": "1c1558ed493fac72fa03f66f4e981694bd4c6e72010cdb5032d3882dc7e11c23",
+    "axioms": "'FiniteQBenchmark.Identity009.statement' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  },
+  "existing_p1_evidence_preserved": [
+    "FQI-FINITE-Q-BINOMIAL",
+    "FQI-GAUSS-ALTERNATING",
+    "FQI-CHU-VANDERMONDE-Q",
+    "FQI-SRC-AP-3.3.9",
+    "FQI-SRC-KAC-CHEUNG-4.4",
+    "FQI-SRC-AP-13.E3",
+    "FQI-SRC-GR2-1.Ex3i",
+    "FQI-SRC-GR2-1.Ex6iii",
+    "FQI-CHU-VANDERMONDE-BALANCED",
+    "FQI-SRC-GR2-II-34",
+    "FQI-SRC-GR2-7.Ex40",
+    "FQI-SRC-GR2-10.Ex18"
+  ],
+  "existing_p2_evidence_preserved": "proved",
+  "full_p1_check_rerun": false,
+  "catalog_sections": "passed",
+  "catalog_build": "FileNotFoundError: [Errno 2] No such file or directory: '/home/hjy/Project/finite_q_identity_catalog/round1_source_collection/metadata/pending16_resolutions.json'",
+  "catalog_validate": "ModuleNotFoundError: No module named 'validate_sills'",
+  "code_sha256": {
+    "finite_product_framework/p1/run.py": "206d8e9db488cde928a826ec080c98a315aa16be6ae653ffbbfd1dc84c222ccb",
+    "finite_product_framework/p1/check.py": "d45d34f1ff6bafbab74135039f173062b7db792b1164de1a17220157b8bb5e48",
+    "round2_identity_catalog/scripts/proof_algorithms.py": "29652d99bada09cbf5b88b5f79104928ea6a7f64c6152e708e5fe1271fcafb4c"
+  }
+}

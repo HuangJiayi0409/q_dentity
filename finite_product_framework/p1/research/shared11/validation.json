@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "source_hashes_checked": 11,
+  "new_original_proofs": 2,
+  "incomplete_but_Lean_preprocessed": 9,
+  "complete_train_proofs": 8,
+  "normalization_does_not_count_as_original_proof": true,
+  "code_hashes_checked": 10
+}

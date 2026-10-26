@@ -1,0 +1,17 @@
+{
+  "scope": "Repository catalog checks, separate from the symbolic trial audit",
+  "train_a_inventory_refresh": "passed",
+  "train_a_inventory_check": "passed",
+  "full_catalog_build": {
+    "status": "blocked_by_existing_missing_dependency",
+    "command": "python3 finite_q_identity_catalog/round2_identity_catalog/scripts/build_catalog.py",
+    "exit_code": 1,
+    "error": "FileNotFoundError: round1_source_collection/metadata/pending16_resolutions.json"
+  },
+  "full_catalog_validation": {
+    "status": "blocked_by_existing_missing_dependency",
+    "command": "python3 finite_q_identity_catalog/round2_identity_catalog/scripts/validate_catalog.py",
+    "exit_code": 1,
+    "error": "ModuleNotFoundError: No module named 'validate_sills'"
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "ht",
+    "type": {
+      "args": [
+        {
+          "args": [
+            {
+              "name": "t",
+              "op": "var"
+            },
+            {
+              "op": "nat",
+              "value": 2
+            }
+          ],
+          "op": "HPow.hPow"
+        },
+        {
+          "name": "q",
+          "op": "var"
+        }
+      ],
+      "op": "Eq"
+    }
+  }
+]

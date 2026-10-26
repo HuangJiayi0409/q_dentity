@@ -1,0 +1,12 @@
+{
+  "id": "FQI-CHU-VANDERMONDE-BALANCED",
+  "source": {
+    "identity_id": "FQI-CHU-VANDERMONDE-BALANCED",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity013.lean",
+    "sha256": "88ce8e4082af6f33dcf20bacef1e64cd6df41d4faf89b14ffcb96548014d3361"
+  },
+  "native_status": "proved",
+  "original_lean_proved": true,
+  "remaining_obligations": [],
+  "native_report": "FQI-CHU-VANDERMONDE-BALANCED/native.json"
+}

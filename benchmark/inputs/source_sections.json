@@ -1,0 +1,1786 @@
+{
+  "FQI-BAILEY-INVERSION": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "3920c6a4d397f8d5c8b80db57a1dfa6466934f11d3caca21b42363712ff1d8f2"
+  },
+  "FQI-BAILEY-LEMMA": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "ba116bc2785370826862e1e4a3fe1fc5fcf2b1369a782352cb3695d30d4fe682"
+  },
+  "FQI-BAILEY-UNIT": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "458198afae73e6251f16f62632ae5c57792dc0a2e254f4dc98e037dcd5da8bc6"
+  },
+  "FQI-CHU-VANDERMONDE-BALANCED": {
+    "source_md_path": "round2_identity_catalog/families/q-vandermonde.md",
+    "source_section_sha256": "d25eac65b82ba46e42fdcae5da330484a8862a61a5c9e88392c665e6166417ea"
+  },
+  "FQI-CHU-VANDERMONDE-Q": {
+    "source_md_path": "round2_identity_catalog/families/q-vandermonde.md",
+    "source_section_sha256": "cc927c94b583b09c0958dec097ab077273ec5f18123096942602d5a2874d509d"
+  },
+  "FQI-FINITE-Q-BINOMIAL": {
+    "source_md_path": "round2_identity_catalog/families/q-binomial.md",
+    "source_section_sha256": "87a3b2a2967175ece9cb84ba2e21de7acc22ea005c8d77d147ef68d3a1b71627"
+  },
+  "FQI-GAUSS-ALTERNATING": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "33cc56c90b305b82315e9831529755938fd76763bbe70c6e80037e135ccbb68a"
+  },
+  "FQI-GAUSSIAN-SYMMETRY": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "4bf8ab84ca084801a41d29f84e48fe661f50eeb2a39cb30d568089bacbe5e21c"
+  },
+  "FQI-GAUSSIAN-VANDERMONDE": {
+    "source_md_path": "round2_identity_catalog/families/q-vandermonde.md",
+    "source_section_sha256": "1593c24413ed648686262960577bae291754a2b6da25eb30077a6da6b48e3757"
+  },
+  "FQI-GOLLNITZ-ORDER4": {
+    "source_md_path": "round2_identity_catalog/families/gollnitz.md",
+    "source_section_sha256": "e9fb965bcb359afbe8b206c37e0d1bcde746b65a529d479766d308e8067d0f1b"
+  },
+  "FQI-GOLLNITZ-RECURRENCE": {
+    "source_md_path": "round2_identity_catalog/families/gollnitz.md",
+    "source_section_sha256": "eae4ccfbc0224d9952460e46f9dc924de5dc68e30a8785434289eab29d65577f"
+  },
+  "FQI-GOLLNITZ-SHIFT": {
+    "source_md_path": "round2_identity_catalog/families/gollnitz.md",
+    "source_section_sha256": "ca836af05be372f4ed9ea80d249d4d574a2a7c1c707f5f05db99ff2293e654c1"
+  },
+  "FQI-OSCILLATION-M-EVEN": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "cbcb064b1459ef3bee28cc6aded2f32db29c327aa4c288dc2f37f8f4070a0fe0"
+  },
+  "FQI-OSCILLATION-M-ODD": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "9a276a728ea69fb91d23a244aa38947cc60de1a0ca1ce7dbe3acb427c7a6e21f"
+  },
+  "FQI-OSCILLATION-P-EVEN": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "f3a31802a490a1d6bccffd6733a04d38d4d1c08c95106f25107f13c65b6aadd4"
+  },
+  "FQI-OSCILLATION-P-ODD": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "96205d3b08eb604e3476cf36dd0a80bba4400a8eedd241fe32e6ce5c8f61ad0e"
+  },
+  "FQI-PFAFF-SAALSCHUETZ": {
+    "source_md_path": "round2_identity_catalog/families/saalschuetz.md",
+    "source_section_sha256": "0c9880f1c9fc23a46d3d9fcf3cda0e06c883c5748c79fcaa43b20c1c9c8a0792"
+  },
+  "FQI-POCHHAMMER-NEGATIVE": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "73d0d2cc8a353e7c8905ac6d71fa7a6f21f289ee3115e3c5e82d7a85161350e3"
+  },
+  "FQI-POCHHAMMER-RESIDUES": {
+    "source_md_path": "round2_identity_catalog/families/product-residues.md",
+    "source_section_sha256": "5d5cc39a3bc1a311c67a2010526db0163f3bcce3ea9d9ea951b57c985c268156"
+  },
+  "FQI-POCHHAMMER-ROOTS": {
+    "source_md_path": "round2_identity_catalog/families/product-residues.md",
+    "source_section_sha256": "19dd2838d99e24dab806177a15b4b4a4c6ba22bd7e8997b78b3b4900ab98f535"
+  },
+  "FQI-Q-DYSON": {
+    "source_md_path": "round2_identity_catalog/families/constant-term.md",
+    "source_section_sha256": "86f3833fdd3a0070058dfe97ca13702ac2f953e64647a609cb381fca48456959"
+  },
+  "FQI-RECTANGLE-PARTITIONS": {
+    "source_md_path": "round2_identity_catalog/families/rectangle-partitions.md",
+    "source_section_sha256": "c343b99795dc545f622d62fe4a1d3dc801a0ba01685a3cb1703468f345c42c03"
+  },
+  "FQI-ROGERS-SZEGO-RECURRENCE": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "6b93e9e5ac0d8dfe303e8966621cdf58356f0405e14f5a1ea86955466c6f64fa"
+  },
+  "FQI-ROGERS-SZEGO-SQRT": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "b9409a5e9b3d39bc0141b5a57087e28ae92f5af10b60270d3bd812223dec01c1"
+  },
+  "FQI-SCHUR-EVEN-RECIPROCAL": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "765188174df273dc9ce176c5ff77a26ab6b0c362a6c0e9604b0885ce57245e76"
+  },
+  "FQI-SCHUR-RR-BUNDLE": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "69e3462ccb44db4be543400dd6ad3f876ec1ca18f9a7bbc40ba772934cb082a0"
+  },
+  "FQI-SCHUR-RR-FIRST": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "be94a04fb14775355302cb8a130d9447c4007b6396e13586d88d9cc3e610ce3d"
+  },
+  "FQI-SCHUR-RR-SECOND": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "fc2e84d8b55f44564c573561fc9fafe77c642e4ea55142f06fbfdd27e6f4ea7e"
+  },
+  "FQI-SEARS-4PHI3-II": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "606d95cac478fb30914887ae683538b547d36e595f406a60f21791691cab85a4"
+  },
+  "FQI-SRC-AP-11.2.1": {
+    "source_md_path": "round2_identity_catalog/families/plane-partitions.md",
+    "source_section_sha256": "7adbab925baa8bf3337a7e216acadbbb2eaf44460229af1f13378c7c6acb07dc"
+  },
+  "FQI-SRC-AP-11.2.2": {
+    "source_md_path": "round2_identity_catalog/families/plane-partitions.md",
+    "source_section_sha256": "3865614b6827bafd8a7062df1de13ad075dd35e17b6d20224abfd81810e62111"
+  },
+  "FQI-SRC-AP-11.2.4": {
+    "source_md_path": "round2_identity_catalog/families/plane-partitions.md",
+    "source_section_sha256": "595a414ffc1ea9aa2b4a396dca9e9894f9722f5b25f25c32a710367be92212f8"
+  },
+  "FQI-SRC-AP-11.2.8": {
+    "source_md_path": "round2_identity_catalog/families/plane-partitions.md",
+    "source_section_sha256": "851c59e508546a9561e5960ad47e3d96bc9f8df64b265a78ba4a13efb64ce588"
+  },
+  "FQI-SRC-AP-13.E3": {
+    "source_md_path": "round2_identity_catalog/families/q-binomial.md",
+    "source_section_sha256": "01dbe89f8afb7558adf3d10ddd80f439c8c950004af3d48697fa69996fb1073f"
+  },
+  "FQI-SRC-AP-13.E5": {
+    "source_md_path": "round2_identity_catalog/families/q-binomial.md",
+    "source_section_sha256": "1878b12b89aea8da15c05576c0ce34c3f83096f0c54b8a996437b2637b5d07c9"
+  },
+  "FQI-SRC-AP-3.3.1": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "f40bbae33078b8f354346d9e30e46cdec84939e08efce65bfc6a12030f59729a"
+  },
+  "FQI-SRC-AP-3.3.11": {
+    "source_md_path": "round2_identity_catalog/families/saalschuetz.md",
+    "source_section_sha256": "5b5fe53db2b9adcfd8f29778413a1d6b54bbfcc956dee2ad275c19e81d6df448"
+  },
+  "FQI-SRC-AP-3.3.14": {
+    "source_md_path": "round2_identity_catalog/families/saalschuetz.md",
+    "source_section_sha256": "e2c060a372a6c4b51939763b586cf2b98e6cedb8bb37d664d438d1eea0484fe3"
+  },
+  "FQI-SRC-AP-3.3.9": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "7920c943af939326584abca999de67dd06cc70558e15204061674b50e15ce8c1"
+  },
+  "FQI-SRC-AP-3.4.2": {
+    "source_md_path": "round2_identity_catalog/families/q-multinomial.md",
+    "source_section_sha256": "717a1c07127029dda9cb2059dbeae77e63a7fd18b54aaf8179ff883636a6d188"
+  },
+  "FQI-SRC-AP-3.4.4": {
+    "source_md_path": "round2_identity_catalog/families/q-multinomial.md",
+    "source_section_sha256": "2f283ec5cb518a3db17a1a365f6f0683ddf7962af1bc81b1d7c1207b4629299a"
+  },
+  "FQI-SRC-AP-3.5.MULTIPROD": {
+    "source_md_path": "round2_identity_catalog/families/q-multinomial.md",
+    "source_section_sha256": "93de07d71dcf9c48e2b41f2122f44dacf528101920ddbf2843a28d08250376ad"
+  },
+  "FQI-SRC-AP-3.E12a": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "74c99d7c9ecd3487c6db2d252087e993d8f12786ff66fbdadd0a15021e1842d2"
+  },
+  "FQI-SRC-AP-3.E12b": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "6eda43d6296631c674d656126d5af093a3bb66fbd38c68060eddda8be74c1701"
+  },
+  "FQI-SRC-AP-3.E7": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "9861e43b2bbc62dd6233a4ddc7b9636bab999ed23b66e62b692bb6758c553884"
+  },
+  "FQI-SRC-AP-4.2.COMPOSITIONS": {
+    "source_md_path": "round2_identity_catalog/families/rectangle-partitions.md",
+    "source_section_sha256": "cf52c634721482c79021121edde48dc70ca315cf740ea01ed3ced0bee3edc4ac"
+  },
+  "FQI-SRC-AP-9.3.17": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "b788ed61d9730cbde4f3495d7b976c4744c5ad73993c3dc27bf2751acc246742"
+  },
+  "FQI-SRC-AP-9.3.19": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "f55620f5828b4e89a5a2fd325df71aa31a870b4969db61369b6d2caa51c3c6f2"
+  },
+  "FQI-SRC-AP-9.3.20": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "3ff4d36f9d6c46cac4ce022f8f7451dc57919b0457662dc625828276813e5c11"
+  },
+  "FQI-SRC-AP-9.3.5": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "c48eea06ba90a3d9b3c4af4b3a1b67be703058a9eed6866a66c2631ebbadec30"
+  },
+  "FQI-SRC-AP-9.3.6": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "e6b34c1354d2708fbbbf18755aa3dc9d167ae96e9289aaa7e7891ea6825ca384"
+  },
+  "FQI-SRC-AP-9.3.7": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "290255e150517393a041c55a52ec776662d230ed886a735686cceecc397de117"
+  },
+  "FQI-SRC-AP-9.3.8": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "0b38c643c8f10c2f53fa15deedcf524c902209a84ad1e0b2ee5ff707eeb089e6"
+  },
+  "FQI-SRC-AP-9.E4b": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "d970854f64d292d7a313b5e68f6ad99d985be587b9c2c514d168311fc3f69a3d"
+  },
+  "FQI-SRC-AP-9.L7": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "f988ad4b7174850c4e779d53359f94cdea3f137835363e2443fb9ece17de2ad7"
+  },
+  "FQI-SRC-AP-9.L8": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "7643bc2ddb4d7cacdb4cb6be19bb685c8dc723eb0b1d5a73c4706f0587874926"
+  },
+  "FQI-SRC-AQ-10.1": {
+    "source_md_path": "round2_identity_catalog/families/lmw.md",
+    "source_section_sha256": "83900785820af317c19318e1adf90b28c5619bfec66a459701ef74ad3d25b36e"
+  },
+  "FQI-SRC-AQ-10.12": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "e5a38d331865e121eef16f8c82e2d07ee2fde264750f5f9d1e4fc05ce5da89f7"
+  },
+  "FQI-SRC-AQ-10.30": {
+    "source_md_path": "round2_identity_catalog/families/coefficient-recurrences.md",
+    "source_section_sha256": "2451e42cc00e6867c17fafce542ae4728666369b7da61385f56a6b2dad22f976"
+  },
+  "FQI-SRC-AQ-10.32": {
+    "source_md_path": "round2_identity_catalog/families/coefficient-recurrences.md",
+    "source_section_sha256": "183aa4ebef056c2328a39acf3ae3fac0fff4802cc61781b7eb21afa0086b6ef3"
+  },
+  "FQI-SRC-AQ-10.5": {
+    "source_md_path": "round2_identity_catalog/families/lmw.md",
+    "source_section_sha256": "a9b29f541886911514df7016b2905f6629bed6f438060abffbee7c79bdc24212"
+  },
+  "FQI-SRC-AQ-10.7A": {
+    "source_md_path": "round2_identity_catalog/families/coefficient-recurrences.md",
+    "source_section_sha256": "b98ef1b4e4094f5b6d201935d37c58d32f1600d43e6f8e766a5c17b3fcc2424e"
+  },
+  "FQI-SRC-AQ-2.23": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "8180ec0eef9d15ccac8d4cfa322d9d4c76422084a336451aa7cbdf88f59b3b0a"
+  },
+  "FQI-SRC-AQ-2.29": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "0ebeaef8e1ea55f19bc31e1314ffe328e2e039c08cb14331a6fb6b2b9c39d8bd"
+  },
+  "FQI-SRC-AQ-3.17": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "ddd291cb699dbc4e3ee1726bd1bc8f7c4f4611b960b68efdb137fa589eab32a1"
+  },
+  "FQI-SRC-AQ-3.18": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "e43777d89f46523411cd51b1af9686e28e44046fcf4e1d3991f21d764709cc82"
+  },
+  "FQI-SRC-AQ-3.23": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "10232d66d47240cb450bdaad2012409b2a8ce50cf6f35f1fd9674902679882e5"
+  },
+  "FQI-SRC-AQ-3.37": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "b9fc57a2b4d2831b12b9555d7c19a2f15b21a780f04902dc80b345af3df1d9b1"
+  },
+  "FQI-SRC-AQ-3.42": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "9712fa3b1dbd310eedadbbec9ac8330b734bbe63964018a513b612a1dd1ab0ce"
+  },
+  "FQI-SRC-AQ-3.43": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "78f0657116da932dd0601e59f7fcde6d9fc0f887ded38e8992b386605763cbe1"
+  },
+  "FQI-SRC-AQ-4.24": {
+    "source_md_path": "round2_identity_catalog/families/dixon-watson-whipple.md",
+    "source_section_sha256": "ee124822f06cf288f879ad77f1a1ffb71d3feabcdaf9acd81522336117de7ddd"
+  },
+  "FQI-SRC-AQ-4.3": {
+    "source_md_path": "round2_identity_catalog/families/constant-term.md",
+    "source_section_sha256": "bfd77f47e3115a811e0a4cb71329ed3b2e9f10eca00865736421a05c548ba369"
+  },
+  "FQI-SRC-AQ-6.18": {
+    "source_md_path": "round2_identity_catalog/families/schur-partitions.md",
+    "source_section_sha256": "c7eb5de52599b99b401c3a5a10558ed53a33ee22c45ef549542a5cee3e4fc97a"
+  },
+  "FQI-SRC-AQ-6.19": {
+    "source_md_path": "round2_identity_catalog/families/schur-partitions.md",
+    "source_section_sha256": "0cc7bed6b1abee188d63cbcfb810d3af4a44d2c6a6fea18a0caab36938fab3a2"
+  },
+  "FQI-SRC-AQ-8.32": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "067fe6a1e60ec44214273c97b7d4c30a74a85a197f9c2eb8cf4913ca2176d1e3"
+  },
+  "FQI-SRC-AQ-8.56": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "abd1e4b7c43300e153a2d69a0400bf68844d62d5ff8108cd20efd992a610788b"
+  },
+  "FQI-SRC-AQ-9.17": {
+    "source_md_path": "round2_identity_catalog/families/hard-hexagon.md",
+    "source_section_sha256": "ab4ae8f49e4bad085d58a7d7de46f117b5ca174cec5fcc4c9b492246f4c71dc2"
+  },
+  "FQI-SRC-AQ-9.27": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "1f5ace66f4eee91227fb2fb10eb5284a67ade2aac070d5ec8da5653ba13454aa"
+  },
+  "FQI-SRC-AQ-9.5": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "703b1b60334e96d14ba2ad0c5fd78048a6a7ff09e2156775c9824b7fba8e6905"
+  },
+  "FQI-SRC-AQ-B.12": {
+    "source_md_path": "round2_identity_catalog/families/q-multinomial.md",
+    "source_section_sha256": "11ee26e5a35ae4982e28db7921104ea1e6dd2303dac39f5d2036603d952bd5e3"
+  },
+  "FQI-SRC-AQ-B.9": {
+    "source_md_path": "round2_identity_catalog/families/q-multinomial.md",
+    "source_section_sha256": "af36a7c842ad9f5e3ab929075c965e54752b80d6fdc07c2ffa70f922d4c0d2c2"
+  },
+  "FQI-SRC-FINE-15.2": {
+    "source_md_path": "round2_identity_catalog/families/fine-coefficients.md",
+    "source_section_sha256": "0bd7e8f757fc7b21690adbf713a19c74faa207279b12603314d3e6e663eac58b"
+  },
+  "FQI-SRC-FINE-15.31": {
+    "source_md_path": "round2_identity_catalog/families/fine-coefficients.md",
+    "source_section_sha256": "406a6308a9b789a4f1272729eb228a5d2b683e63513dedd8ebab8b65ab860097"
+  },
+  "FQI-SRC-FINE-15.41": {
+    "source_md_path": "round2_identity_catalog/families/fine-coefficients.md",
+    "source_section_sha256": "cb0d78dd26aabb10bbfa6277d170e2d306f2dd53d188c8ea96135c648f9b8253"
+  },
+  "FQI-SRC-FINE-2.1": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "ca219e707740f7ae62d85553401ba5565ff0d7687df3478fdfa5c55dacbd7a5e"
+  },
+  "FQI-SRC-FINE-2.3": {
+    "source_md_path": "round2_identity_catalog/families/fine-coefficients.md",
+    "source_section_sha256": "6958c1c8f26c5abe9b08a43e1d459242d7b8f0fcbe78949fef445ba63a9084f4"
+  },
+  "FQI-SRC-FINE-20.64b": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "b7cb50612cc5ae5ab605f9e8ff5c75b6fed04670b198c84ac5623bc4abbde283"
+  },
+  "FQI-SRC-FINE-20.66b": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "a700a5eb489a54ae9f8079408dd060f565f72a2cff844865ee13bf7ce382d296"
+  },
+  "FQI-SRC-FINE-21.2": {
+    "source_md_path": "round2_identity_catalog/families/q-multinomial.md",
+    "source_section_sha256": "9879a4b80132dedfaa7547ae25d49b08ccc6720464bf9668cde44dedd49ea35f"
+  },
+  "FQI-SRC-FINE-21.21": {
+    "source_md_path": "round2_identity_catalog/families/q-multinomial.md",
+    "source_section_sha256": "db5df0a302c18f56a31b2e823c60c25da17469c24d3d53d484e0aba895b81a28"
+  },
+  "FQI-SRC-FINE-21.23": {
+    "source_md_path": "round2_identity_catalog/families/q-multinomial.md",
+    "source_section_sha256": "4d25b22cec72ee395c46aeebde410b70db8b2ee35e92141cea69b2aaab293d6c"
+  },
+  "FQI-SRC-FINE-21.product": {
+    "source_md_path": "round2_identity_catalog/families/product-residues.md",
+    "source_section_sha256": "3c4b7bf7035526aa79ace0b59c315d28d98aa2e2d0c414cf75eb42271dc4a6e4"
+  },
+  "FQI-SRC-FINE-4.coeff": {
+    "source_md_path": "round2_identity_catalog/families/fine-coefficients.md",
+    "source_section_sha256": "5b8440f6b2f9de0858aa472101b07903da308be58a2bb60eeb60a95765147622"
+  },
+  "FQI-SRC-FINE-7.GH": {
+    "source_md_path": "round2_identity_catalog/families/fine-coefficients.md",
+    "source_section_sha256": "8f19bd9ff2e44e6ce0739f47654b747efd5cb6427a9df6fe3493753c7ba6e635"
+  },
+  "FQI-SRC-GR2-1.2.26": {
+    "source_md_path": "round2_identity_catalog/families/coefficient-recurrences.md",
+    "source_section_sha256": "7122c5846aa591b5b14cb7b248dc9bdc1fcd9881519920cadea821bd00845bf6"
+  },
+  "FQI-SRC-GR2-1.2.47": {
+    "source_md_path": "round2_identity_catalog/families/q-numbers.md",
+    "source_section_sha256": "8a0eaf8b05c9b41690c63d57a20c5fa4ff41b8a1d9c9367a351bcbb9367cdcc5"
+  },
+  "FQI-SRC-GR2-1.2.55": {
+    "source_md_path": "round2_identity_catalog/families/q-numbers.md",
+    "source_section_sha256": "d54cca2a653830a14bbe5e2ddcb9ab4346bec3143c896fd9c61c4908898f045e"
+  },
+  "FQI-SRC-GR2-1.3.25": {
+    "source_md_path": "round2_identity_catalog/families/coefficient-recurrences.md",
+    "source_section_sha256": "8f78b1f59e6887b741a7f344f750071ac5bad66e104718eed710736022cdaa04"
+  },
+  "FQI-SRC-GR2-1.9.10": {
+    "source_md_path": "round2_identity_catalog/families/karlsson-minton.md",
+    "source_section_sha256": "0f4e083ee89c4d208905209a3dbde758b0c7a45d2096d88e1fee299ed8cb5494"
+  },
+  "FQI-SRC-GR2-1.9.11": {
+    "source_md_path": "round2_identity_catalog/families/karlsson-minton.md",
+    "source_section_sha256": "e01f25ceb23d33ea16028530d995d5f466aab5693eec4171233f4270f1efeeb8"
+  },
+  "FQI-SRC-GR2-1.9.12": {
+    "source_md_path": "round2_identity_catalog/families/karlsson-minton.md",
+    "source_section_sha256": "3d1b737d0a089ccf5612cfcf67b84e99750aa984708501a0951412716772540a"
+  },
+  "FQI-SRC-GR2-1.9.9-finite": {
+    "source_md_path": "round2_identity_catalog/families/karlsson-minton.md",
+    "source_section_sha256": "99f51810b341c366738071bc55119ca4ca83a476d29cd1b8513ad2c1638dfa97"
+  },
+  "FQI-SRC-GR2-1.Ex12iv": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "6feb8bc342a4354e4573bd976e01fb0603944eda1aed49f484d08bbe0864fe95"
+  },
+  "FQI-SRC-GR2-1.Ex15i": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "7d9a3dfd73c3d5825cd4304ea3ed9c983007f0de4bf35703385031b9775a18bf"
+  },
+  "FQI-SRC-GR2-1.Ex29": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "3d0f5b27cf60d7c323f92a2762f32bb30f3136de27655981376e5020321ebc73"
+  },
+  "FQI-SRC-GR2-1.Ex31-term": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "5dfa88b1d11a52343c8923ef1d605d3395eff78e940a9c934392baf23440724d"
+  },
+  "FQI-SRC-GR2-1.Ex33": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "57ac5eee3c0e625dfd74a0ef74b5c52a31630ba8b212673b1662c85607434d4a"
+  },
+  "FQI-SRC-GR2-1.Ex35": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "c8c10b3ea092ecc50101a06b8544db4b8ccde3494eb1f649ce33a3808f412446"
+  },
+  "FQI-SRC-GR2-1.Ex3i": {
+    "source_md_path": "round2_identity_catalog/families/q-vandermonde.md",
+    "source_section_sha256": "652df91d4be0d3d943f80940b97a8fba6ad16ab2fbb20aaf53b235401b4be20f"
+  },
+  "FQI-SRC-GR2-1.Ex3ii": {
+    "source_md_path": "round2_identity_catalog/families/q-multinomial.md",
+    "source_section_sha256": "958d4e15f2fdbddf1bb9e45b2e74070cbbe1bbd91c33217ca1823c3f697d71fb"
+  },
+  "FQI-SRC-GR2-1.Ex5": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "fe1357b8342a6903dde0a8c7d3e3027d1cbe47cfbff61dbf2d816f1c6204af41"
+  },
+  "FQI-SRC-GR2-1.Ex6iii": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "1b86962572900e79879ba185d6111cea676d22a338c003e7f37101a4b29dba14"
+  },
+  "FQI-SRC-GR2-10.Ex18": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "53f48927c3d95d533c5ce583303b41fa0f763ba3b4b1189eaffb5b1e58472040"
+  },
+  "FQI-SRC-GR2-11.6.21-p0": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "8a852daab7bb728e01811e7213d32c56771a3104281f3af7e6d5d6e1553d0d5e"
+  },
+  "FQI-SRC-GR2-11.6.5-p0": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "03961af606692db5cba231f5a1389d4af7767fab953a10aa7bb99defa1088919"
+  },
+  "FQI-SRC-GR2-11.6.6-p0": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "1c631e7b1b502018c7a8ef1322c37f797744523e76e1aed2e217caef37aa4220"
+  },
+  "FQI-SRC-GR2-11.7.8-p0": {
+    "source_md_path": "round2_identity_catalog/families/multivariate.md",
+    "source_section_sha256": "423a2f167f36ed7fb86d4af589be23b4cbd5fa1d20d45dbfa62b7caf88b4bb9a"
+  },
+  "FQI-SRC-GR2-11.Ex21-p0": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "1386af323303cd8ba4380ac12ddee13d2e65615d441572bdc2a5b19aca76ad83"
+  },
+  "FQI-SRC-GR2-11.Ex23ii": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "cb3b46ed26e7e74cb3ea7a627710dabdc6133910dfc8c68e6406ff45dd50572c"
+  },
+  "FQI-SRC-GR2-11.Ex24ii": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "0d6d9dd2d531c5efa9b9f086aae4b9a4d1cc163845b03912c4e7ce840a3a7208"
+  },
+  "FQI-SRC-GR2-11.Ex39-p0": {
+    "source_md_path": "round2_identity_catalog/families/multivariate.md",
+    "source_section_sha256": "f3188c1da6352dba8351dc5daf5dfbf65711f76501d9fc5ee658ed1c0226ef69"
+  },
+  "FQI-SRC-GR2-11.Ex40-p0": {
+    "source_md_path": "round2_identity_catalog/families/multivariate.md",
+    "source_section_sha256": "9763deca79fbeb4346fcab403be427299f3f5462ea0538f834ee211f48a57df0"
+  },
+  "FQI-SRC-GR2-2.10.8": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "466d2f13209cd8131691c72f0c45d3c0967d19c491f986bd7fc052cc5acc893b"
+  },
+  "FQI-SRC-GR2-2.2.2": {
+    "source_md_path": "round2_identity_catalog/families/finite-inversion.md",
+    "source_section_sha256": "fc493c0b7bf760b913bc8576cba3ab4cc3e7a9aef4f5405504a6b9b6cfb8db74"
+  },
+  "FQI-SRC-GR2-2.3.2": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "e703f3681518720c1fcb62edd8c3c9cabeffffe8e81088e94c7615ee5f316af1"
+  },
+  "FQI-SRC-GR2-2.3.4": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "b810cc06d64899106eea957dabb71b17adb6abe30d2198bcbeae243691bacace"
+  },
+  "FQI-SRC-GR2-2.7.5": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "dc4f45b325297798621a9907a67c573a09551bfaeb34a51a3956695a325186e6"
+  },
+  "FQI-SRC-GR2-2.8.2": {
+    "source_md_path": "round2_identity_catalog/families/finite-inversion.md",
+    "source_section_sha256": "a6414f37e0032bc520b7ef38a7fd56675f46e3ff6ed1ad044f9d0cfd956a0c20"
+  },
+  "FQI-SRC-GR2-2.Ex11": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "9c32931022deed2f1470437171b4e9e3795252f0f71aae0f8408de75bf66c7b8"
+  },
+  "FQI-SRC-GR2-2.Ex12": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "4d396219991bc69dbf080448f01bc48b14160e8fc449017267a7fe02abbb6d0c"
+  },
+  "FQI-SRC-GR2-2.Ex14i": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "ba31f2317b81f3f8ddcbc6c722896329edfb5b1b4271d73cd3bf9b95e55ae4be"
+  },
+  "FQI-SRC-GR2-2.Ex14ii": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "042748396b34cd623ab94751a34b492bd5faea0abf5da1f636994de2c8b88ed7"
+  },
+  "FQI-SRC-GR2-2.Ex20": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "2320f8408cbb559989bcd6ebdceed14344d23753a1914629aacb22b3ad9924ad"
+  },
+  "FQI-SRC-GR2-2.Ex27": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "dd84b004fc403411992c97643b5bbddf7a323d5184c9c0989f6926e43917da6a"
+  },
+  "FQI-SRC-GR2-2.Ex28": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "48788f3833b8f75269f16676d338fd90da669795a5bdb20b09aa96ac212f7230"
+  },
+  "FQI-SRC-GR2-2.Ex29": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "39998ef47bb814e6a8dab83da03c7ae47ed345afb698a143cd4db2c2ae199d02"
+  },
+  "FQI-SRC-GR2-2.Ex35i": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "156d92e2269c9312bbda24053442994605f1be7adb15f5762029e83bd158e580"
+  },
+  "FQI-SRC-GR2-2.Ex35ii": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "a29bb6995703d2a6c248c64082c2ab40cbe81054d821c9f3d77ca660a9659536"
+  },
+  "FQI-SRC-GR2-2.Ex36i": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "063d34a9eae5eefdb23eaf1685b9d5afa0eeea9e7ee23c78d58fa60be44bbd53"
+  },
+  "FQI-SRC-GR2-2.Ex36ii": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "8eed436bc71a11f12d947483e642ace0655f793145c3d89e131d6a7d6113274a"
+  },
+  "FQI-SRC-GR2-2.Ex36iii": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "4fa09d7cb8e2ac93a8c393e7a74b86fb4200f8752ead8c7d47abe7128c96f5f7"
+  },
+  "FQI-SRC-GR2-2.Ex5": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "2dd1bcaab7e1db2119c1808eaa299bd18567c4f5275a03e588ba09750bd89170"
+  },
+  "FQI-SRC-GR2-2.Ex6": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "e97b5dcc00cde4ead2f8de2da035615487be121b3195584fa51c553bb13214a4"
+  },
+  "FQI-SRC-GR2-2.Ex8": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "58e044869195584c287331c6f326f61285c851b2d545fe293a4cba532572a870"
+  },
+  "FQI-SRC-GR2-3.10.11": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "62083c44109651140905a954d8544552b766003317f759e3849a63b51a0aef7a"
+  },
+  "FQI-SRC-GR2-3.10.14": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "ca7fb610b1008f8c4ef5a6b65209c42c12995bf6f26bd1e92a53bf0ee5720659"
+  },
+  "FQI-SRC-GR2-3.10.15": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "e5050ae2c44e8f8a8f77cc0ba65392b25348d80b04313361a6a4ffbff5ca7b6b"
+  },
+  "FQI-SRC-GR2-3.10.3": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "f43f26bf881f118dfaead59e517fb975a016c5a5da18083cc3abdf4c5db2030c"
+  },
+  "FQI-SRC-GR2-3.10.5": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "c76009f4cf11a8946b0e66fb552728b2e357e00227b65332865640f05f46217c"
+  },
+  "FQI-SRC-GR2-3.10.7": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "54e5fa087af11232b5e50526b1d9431cfb5972a6599209d0865c3c027d7f1d1b"
+  },
+  "FQI-SRC-GR2-3.2.6": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "5b1ada993650bb636e5f0963bdb584ce7e6185e41b907d4b6f6bf628e5c9c029"
+  },
+  "FQI-SRC-GR2-3.6.10": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "731e3504ebfda4e9204e4b23f3104bed5dbab7caa9798236727f9b2ee59511c0"
+  },
+  "FQI-SRC-GR2-3.6.16": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "36839789d871e9f9181bfe303579fb4dbda9fa262d938e1de1bc9892763a22d7"
+  },
+  "FQI-SRC-GR2-3.6.18": {
+    "source_md_path": "round2_identity_catalog/families/finite-inversion.md",
+    "source_section_sha256": "797fb92179552598e43978985ee6e1d24c73bbcd62507858861e1ffedfb343d4"
+  },
+  "FQI-SRC-GR2-3.8.14": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "03eb7d4a385c865192c6a9487b7768f1a2350d75722ec6cbca11c68690047d01"
+  },
+  "FQI-SRC-GR2-3.9.5": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "63b22273cb90ed6f39d8db7244d8d7be3944627e9e56e788f3c9f98700986aa2"
+  },
+  "FQI-SRC-GR2-3.Ex13i": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "548d922720b502acb34d20ab036d2178e3530d4ec235f0e15f32e2013f868904"
+  },
+  "FQI-SRC-GR2-3.Ex13ii": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "1bd3e7d51f806ed6ff25309673525736e3fdb929af4d178927a2a0102131ab33"
+  },
+  "FQI-SRC-GR2-3.Ex21-mixed": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "4cf22c55dd293bc368d38774aad7dfc0bed2759b0006a6d6456f5f7b02c6351f"
+  },
+  "FQI-SRC-GR2-3.Ex21-quad": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "8875d1947c67a658c5f249b5fdf22e08f091968fdb369366d8f3adf0870153b3"
+  },
+  "FQI-SRC-GR2-3.Ex23": {
+    "source_md_path": "round2_identity_catalog/families/finite-inversion.md",
+    "source_section_sha256": "31d1923f20958f42714ab5c6a56813af4b6de6ae072838f922b074e40c996562"
+  },
+  "FQI-SRC-GR2-3.Ex3": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "813589221eea42e55b5b518a92cbb5860b9dcf5096186ecd3add9e0fa4b759f2"
+  },
+  "FQI-SRC-GR2-3.Ex31i": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "a9f2f1b0e4d91a04e1edc179a0158bc58c6857e2f7a56f1f06c4651e99a84a38"
+  },
+  "FQI-SRC-GR2-3.Ex31ii": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "27130be8c04747b58531f53af91c2fe4c69cb074794e69984b4d4195cda7aa25"
+  },
+  "FQI-SRC-GR2-3.Ex4-odd": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "14de38fa5ee6e26b58f48cbccbfc23360f2cf73d3aff71ac8a70ca9133b80537"
+  },
+  "FQI-SRC-GR2-3.Ex4-transform": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "87db63c654cea0196dd42f7313437f2655248acbac801454572269cfe570441b"
+  },
+  "FQI-SRC-GR2-5.Ex11": {
+    "source_md_path": "round2_identity_catalog/families/bilateral-series.md",
+    "source_section_sha256": "32c20b1f1f079ca33e3a5932fee9c153c92429143a5eb6a0c33e410d596486ef"
+  },
+  "FQI-SRC-GR2-5.Ex18iii": {
+    "source_md_path": "round2_identity_catalog/families/bilateral-series.md",
+    "source_section_sha256": "82ee82e07293e5ecd5b1874278acabefec7defb28899171a5a0f5a8ce435d55c"
+  },
+  "FQI-SRC-GR2-5.Ex18iv": {
+    "source_md_path": "round2_identity_catalog/families/bilateral-series.md",
+    "source_section_sha256": "805da783a7f730b553580a4147fdfa514bd5a54e8035c0971d04ea4c6b939c68"
+  },
+  "FQI-SRC-GR2-5.Ex19i": {
+    "source_md_path": "round2_identity_catalog/families/dixon-watson-whipple.md",
+    "source_section_sha256": "7869a22baed1b6ba18d8f352bb4e284e2f13b8721e05bcd6c0881bc378fc5719"
+  },
+  "FQI-SRC-GR2-5.Ex19ii": {
+    "source_md_path": "round2_identity_catalog/families/dixon-watson-whipple.md",
+    "source_section_sha256": "bcc1e8d1551831003e7785e6ff5279ec40d97555b8b96f70bd24e1197701a0b4"
+  },
+  "FQI-SRC-GR2-6.6.10": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "75087527313eb89da8c9b04e008b332bb300442e10992773d732119340dae903"
+  },
+  "FQI-SRC-GR2-6.Ex14": {
+    "source_md_path": "round2_identity_catalog/families/constant-term.md",
+    "source_section_sha256": "f3d590aa0f5aa02b3293c502b690c2d2e493bd89cd22b50e9e4b761040f6731f"
+  },
+  "FQI-SRC-GR2-7.2.12": {
+    "source_md_path": "round2_identity_catalog/families/q-racah.md",
+    "source_section_sha256": "9dce5a3bd685fec6da48455588db627bfe85b361e2fdd2fac4b6d8442f3d663a"
+  },
+  "FQI-SRC-GR2-7.2.18": {
+    "source_md_path": "round2_identity_catalog/families/q-racah.md",
+    "source_section_sha256": "0511fcad0c154374c701f803c2071355d8b03de85b88d31d8998f32c04b694a7"
+  },
+  "FQI-SRC-GR2-7.2.24": {
+    "source_md_path": "round2_identity_catalog/families/q-hahn.md",
+    "source_section_sha256": "efdc510fe44f67b31f16e1fb69556600e738c4dda1b49ece4f737174d972f708"
+  },
+  "FQI-SRC-GR2-7.3.17": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "9332b2583add4551e20c33f9657852bf73a8e9cbb31a058bb9f7252737103d0e"
+  },
+  "FQI-SRC-GR2-7.4.14": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "8f156ae6557f8132eb90527f1732e54c383992700de0dc449566074a918843bf"
+  },
+  "FQI-SRC-GR2-7.5.20": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "d06e20c71a3ad8da80d3f27b300ef64677a2e63e286809dbe8d57626fb0a6a8d"
+  },
+  "FQI-SRC-GR2-7.5.3": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "4d703c1025f701fc7ba6764216883ad787a801bad80a44c630de763df86706c4"
+  },
+  "FQI-SRC-GR2-7.5.35": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "9feb7ad0d1e42315fc9b3a9eaa8f71fa87fee2c7baebe6ddc7c6206f6db52457"
+  },
+  "FQI-SRC-GR2-7.5.36": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "e97b3881bf764ea9420dcc4c186ec92e7af3e7cc4dd72308a8a0243723ad5548"
+  },
+  "FQI-SRC-GR2-7.6.14": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "baa342120e5c55aa1dc0c59a2700f106c66af161839bd8bc9c1888af0722be09"
+  },
+  "FQI-SRC-GR2-7.6.2": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "31f1b4cca46e9660757aa702f8fe5db0bf36453e87b146945cc201793cad330a"
+  },
+  "FQI-SRC-GR2-7.6.8": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "2b87f8a33c715ecf744e00dfa0b07f536cd41a9cd928e860c16f0c99db74f2cf"
+  },
+  "FQI-SRC-GR2-7.7.6": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "cc0bb6e5b1840dad855b8eea411cf155c57fbd646d61fb601a0d11af786e47b9"
+  },
+  "FQI-SRC-GR2-7.7.7": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "c58a6c1b45bc12a0ce2814f3bf91518a38597388e04dd2b2c9a9515b4b2a2aa0"
+  },
+  "FQI-SRC-GR2-7.Ex10": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "0cfaabb151251314947f6719aba8d22a3db9f37beb4260afca003ff07bc0d1d7"
+  },
+  "FQI-SRC-GR2-7.Ex14": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "49e9c4163506c2ae38256dd8b2c1962878a9688204cb3c3645243aeca4d593bf"
+  },
+  "FQI-SRC-GR2-7.Ex19": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "125daf484b9d84029aa01335c8c85f3368a852540a1e1c146f65329c7cde3d24"
+  },
+  "FQI-SRC-GR2-7.Ex27": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "15f6c093a2c86678d133f305088097ad1007e73be52867b74930ca12b1b880f6"
+  },
+  "FQI-SRC-GR2-7.Ex37-finite": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "3d8ea3bd9cd8a399a6a84ef86026d3f9e84f27a572930fc36fd0dd396b05b282"
+  },
+  "FQI-SRC-GR2-7.Ex38": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "4a5556c23d0513fbfcd450dc3a04af4c4e6d5f435aa9f481c5b693aa554d7201"
+  },
+  "FQI-SRC-GR2-7.Ex40": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "1821bc43f9d71104ef4d66bfdeffbfa9ecab04b10166b8399ebc6e3d186cb780"
+  },
+  "FQI-SRC-GR2-7.Ex41": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "8c2ba7ec5a560f136634491679a1711b3e054745491505d64f60c872743baec9"
+  },
+  "FQI-SRC-GR2-7.Ex5": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "b77492bc23cd2301feb106a1dd751c5809a53ed049c4c32a107b3defc0152ccd"
+  },
+  "FQI-SRC-GR2-8.1.2": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "b66724b273acc94d889fdea10bef09a2a0e353a784c89b09fbc3836e23f05cfc"
+  },
+  "FQI-SRC-GR2-8.1.4": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "a37df9b88e1b5793b0dbe970fce66caa98ec08488fd65e75ded9f95feb5ed005"
+  },
+  "FQI-SRC-GR2-8.2.12": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "28813134481a77bf87c96941eba380afd56c5f60080780a420b9377516541513"
+  },
+  "FQI-SRC-GR2-8.2.5": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "1537d6b8847f2c26c392fec884b65f303f1a9057334453ec26f85d7905219bf9"
+  },
+  "FQI-SRC-GR2-8.3.3": {
+    "source_md_path": "round2_identity_catalog/families/q-hahn.md",
+    "source_section_sha256": "adae5257d5277a385438ba46932998e035c109be730f1d66db333d283d174ba5"
+  },
+  "FQI-SRC-GR2-8.4.7": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "a005ce6d127c4dec01520b8eb4bc4be1cafa533b035406fdb5e593d4b3085635"
+  },
+  "FQI-SRC-GR2-8.5.1": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "1a02640b13c378c30865a1ddd1714c40b71dcdf96ba16ffeb3d657850c56b529"
+  },
+  "FQI-SRC-GR2-8.7.13": {
+    "source_md_path": "round2_identity_catalog/families/q-racah.md",
+    "source_section_sha256": "3d124f61325d5dd0f4b1caf00b4642b7211ee7fd9425feb9d7c4fc3be6c20fc2"
+  },
+  "FQI-SRC-GR2-8.7.4": {
+    "source_md_path": "round2_identity_catalog/families/q-racah.md",
+    "source_section_sha256": "4806c13ae7fe33b2f75e16068833e93853daaa37c19d3440cebb5722dea277d0"
+  },
+  "FQI-SRC-GR2-8.7.6": {
+    "source_md_path": "round2_identity_catalog/families/q-racah.md",
+    "source_section_sha256": "75cbae1e331f2676755d9a556a1f19b531c92a1f401bc874a0c59135250e7422"
+  },
+  "FQI-SRC-GR2-8.7.9-finite": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "5653dfa4b54dab8a088a6022f239b1470c263a5ba9d6513898d146afcc4d7b16"
+  },
+  "FQI-SRC-GR2-8.8.15": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "08b780db204d67aa10b360aa6eea102f146078f3ebdbbbd3dff00b3135d7c685"
+  },
+  "FQI-SRC-GR2-8.9.1": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "665af38ece84cd8062493ea98fd1b33414a5dd53fa3a0cdff50065008ad6ac5d"
+  },
+  "FQI-SRC-GR2-8.9.5": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "3162a3e2eb7a6dca1f34a1ad56900665fa306d644fa7cfda58b6f5a827823f3c"
+  },
+  "FQI-SRC-GR2-8.9.8": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "29917ca0db4d36f508179dff6a094bb0e7b19fb7dc57f0e0776700ee28915d28"
+  },
+  "FQI-SRC-GR2-8.9.9": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "1700236effa272a30e68abb13af5160cdf535510d0bafd73cbb711c69da542f4"
+  },
+  "FQI-SRC-GR2-8.Ex15": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "e648a4965826f1e1cabbba5c3ab0fb1c46473225fc9487869a1e1c37912cf7cd"
+  },
+  "FQI-SRC-GR2-8.Ex17i": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "3f7efec2636087f718fbd5a804bc8ea28e5add7296358549c526ea00b145e996"
+  },
+  "FQI-SRC-GR2-8.Ex17ii": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "37bf4b3e4bf96b64eeb88fbbd654a1e720b03d1cb7601f6aca8bc0a8103f86e6"
+  },
+  "FQI-SRC-GR2-8.Ex1i": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "f53abfbb3469489bf9c3bb6b318faac11b18967367ad5d6d46f00899499af8ea"
+  },
+  "FQI-SRC-GR2-8.Ex2": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "7d9c6365859b1e21e69ae75759f9ea8c970804b629f410787eb27de08149a028"
+  },
+  "FQI-SRC-GR2-8.Ex20": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "0191710f3b35312736892ea905371a01fb62349224a62a48263ad8b969a3ddeb"
+  },
+  "FQI-SRC-GR2-8.Ex24": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "f8e3fde8c19dfa9b8a183307b403b68f1e9d1685131ed1fbb43b05f0a9326701"
+  },
+  "FQI-SRC-GR2-8.Ex26": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "d8575a513171f095a95fabefe4da28882ad2a6a85b0d1f819e6062167e65410b"
+  },
+  "FQI-SRC-GR2-8.Ex27": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "ed49d106179996cc8eb8f50fec911793220ea1b875ba580c3499f27ebc650b8b"
+  },
+  "FQI-SRC-GR2-8.Ex28": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "f52f8b08f2dae8c7a21047c87847327fb87ad2904af0174e409064f8f2cf1ebc"
+  },
+  "FQI-SRC-GR2-8.Ex4i": {
+    "source_md_path": "round2_identity_catalog/families/q-hahn.md",
+    "source_section_sha256": "29957d5917c6640aa4ffde42b4ad3c7d19c83f40e5b3d2d975ec4507601b5074"
+  },
+  "FQI-SRC-GR2-8.Ex4ii": {
+    "source_md_path": "round2_identity_catalog/families/q-hahn.md",
+    "source_section_sha256": "517201a3a83b1cff4780f26313c80c865aa488acf8baf81cd78b9214a9ad631e"
+  },
+  "FQI-SRC-GR2-8.Ex7i": {
+    "source_md_path": "round2_identity_catalog/families/q-hahn.md",
+    "source_section_sha256": "056cdfd375a2f5976b04e161c2a8905ef2a8ab25c9a387d241c255071d0a29a4"
+  },
+  "FQI-SRC-GR2-8.Ex8": {
+    "source_md_path": "round2_identity_catalog/families/q-racah.md",
+    "source_section_sha256": "30516172f43e426c257ea2681a00c58a180ce1e4b8c060a84c8e8afa51ae13d4"
+  },
+  "FQI-SRC-GR2-8.Ex9": {
+    "source_md_path": "round2_identity_catalog/families/q-racah.md",
+    "source_section_sha256": "700624ec32cb3886270586315dcb35ba5a41487f00166fdca764a38235026b68"
+  },
+  "FQI-SRC-GR2-9.2.2": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "ea75efb584cf52e06b7144ff8d41bfa83cde83c40b2927bf41f2ee2af12ef70c"
+  },
+  "FQI-SRC-GR2-9.Ex10ii": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "a6fc780e0a6b3ab2cab4b5a6a1e0c33ad2138b72343448c4df02192bc02819b8"
+  },
+  "FQI-SRC-GR2-9.Ex17i": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "1c4fc9001a28c2d16488ca46ccdcd10a117cfb1e473792756b4c9c1b5fe8be35"
+  },
+  "FQI-SRC-GR2-9.Ex17ii": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "4a3d07c3f7cfcf7e5e9048af990ec8ccae5e3912e2ad9331a1f398ce6bcb4a15"
+  },
+  "FQI-SRC-GR2-9.Ex4i": {
+    "source_md_path": "round2_identity_catalog/families/q-hahn.md",
+    "source_section_sha256": "9ee1df0d069b1e6aa8716ce4982eeda23619d1c60cb4d134244ef0e1c5e7e7e5"
+  },
+  "FQI-SRC-GR2-9.Ex5ii": {
+    "source_md_path": "round2_identity_catalog/families/q-hahn.md",
+    "source_section_sha256": "b48fae2c07dcf07b77976da7f37364e9672374880cca7079ace9a2a5a815e5ff"
+  },
+  "FQI-SRC-GR2-9.Ex7": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "1b7e2f08ca102c228eca4b53436230de1493573b7ef4e09a3fd849b44f90cbaa"
+  },
+  "FQI-SRC-GR2-I-03": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "dbd7cf8a46f7cc6c0cc95b668e41d7c5f1e57eb9a6de2b53f214bcf9c4b6a82e"
+  },
+  "FQI-SRC-GR2-I-08": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "1f04f4a88a53e4173f6ac4ed9ea779eae1244c3c53afe5d30d4638916a136f3d"
+  },
+  "FQI-SRC-GR2-I-09": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "b6997f0ffcda22459fbe2846c140d3ae5b7017af27e4526e003d21ade48616f8"
+  },
+  "FQI-SRC-GR2-I-10": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "11f7abcf7ef9c8f0b77a95ace42820ac68e4a3454ff91df4f2855e0354d43130"
+  },
+  "FQI-SRC-GR2-I-11": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "0884db2129f2924fc0601ab883b86931247a146c0a7f3cbfb476df4f85d32991"
+  },
+  "FQI-SRC-GR2-I-12": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "0a511f7e624b08564241f949927e5db5a97888db5b3335f881c61797065d6093"
+  },
+  "FQI-SRC-GR2-I-13": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "51b0814b241b6603a93c51bc7f3eeaf871cc502eec45de7d349d1f870dfc9b88"
+  },
+  "FQI-SRC-GR2-I-14": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "c673e144085b355edf3140e168c345af7d741f3618abede6961a44dbbe2bfded"
+  },
+  "FQI-SRC-GR2-I-15": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "fe2fa5d74902d99213983a86621bc6daaec8097ae6e8d6731a7ca5f28d83a405"
+  },
+  "FQI-SRC-GR2-I-16": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "048732849b8fb7692f404859013be2cbc9a319eaa6a416b9ec644dec985cf011"
+  },
+  "FQI-SRC-GR2-I-17": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "38e00fc17a59d630f9ece068d25947d7f6702ea37e3c8b502ab1e4b28c41b082"
+  },
+  "FQI-SRC-GR2-I-18": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "a68691b3b7b76ed98e75865900db6e42009bbdf4825a95bc59b4548a1df465f9"
+  },
+  "FQI-SRC-GR2-I-20": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "5eb1caf3b80f238e0ff772a5f58ea6c87ee179aaf4a36c70bf783a003a4b39aa"
+  },
+  "FQI-SRC-GR2-I-22": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "093a34074224387c450922abb2384081d52d1926ad32ad67f95d1deff71073fd"
+  },
+  "FQI-SRC-GR2-I-25": {
+    "source_md_path": "round2_identity_catalog/families/product-residues.md",
+    "source_section_sha256": "6216bd24198a92b0e127c94c1bf21454a1e8d4adc8d31f48e1ba5512430e3fff"
+  },
+  "FQI-SRC-GR2-I-26": {
+    "source_md_path": "round2_identity_catalog/families/product-residues.md",
+    "source_section_sha256": "1571174406596b7e8a7c21b76da2e80a4f3fce6836a283d896fed9bed69b1048"
+  },
+  "FQI-SRC-GR2-I-28": {
+    "source_md_path": "round2_identity_catalog/families/product-residues.md",
+    "source_section_sha256": "b2f83056352123ac79d330701ee683e3d3780ae9c45a55a5976d1b277fc15902"
+  },
+  "FQI-SRC-GR2-I-33": {
+    "source_md_path": "round2_identity_catalog/families/product-residues.md",
+    "source_section_sha256": "c4a294d97b5da3fc83c86a6a9d8ed98571cd49eec6ae8d9cab174d8c44529eab"
+  },
+  "FQI-SRC-GR2-I-42": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "8b7589404c1271a8fe16cfcec9eb6050e8a672e12421f6aa3afd322024cc3595"
+  },
+  "FQI-SRC-GR2-I-43": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "e6c3fbe9e8a00f734542ee381c7330bea15ff8a4b0a4e524c0eac2dad0318e28"
+  },
+  "FQI-SRC-GR2-I-46": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "c3ea419db1261dddd126068655b81c774a5d2acd5f4d8a3532d4eb6e1c7b0cd7"
+  },
+  "FQI-SRC-GR2-II-14": {
+    "source_md_path": "round2_identity_catalog/families/dixon-watson-whipple.md",
+    "source_section_sha256": "844693bdb377e5d03de1cd78a0a359fd2c124f4ea31ae941e612b166f4a83d81"
+  },
+  "FQI-SRC-GR2-II-15": {
+    "source_md_path": "round2_identity_catalog/families/dixon-watson-whipple.md",
+    "source_section_sha256": "8b26834ad0c60a3cfba5fd8027041f5df5fe4948ed7f3d811b0e4528e3e2714e"
+  },
+  "FQI-SRC-GR2-II-17": {
+    "source_md_path": "round2_identity_catalog/families/dixon-watson-whipple.md",
+    "source_section_sha256": "4a59a47c88bd5e35f0fc69d60b342cf40e4dd15c825256edcbfbe2ff441e0e5a"
+  },
+  "FQI-SRC-GR2-II-19": {
+    "source_md_path": "round2_identity_catalog/families/dixon-watson-whipple.md",
+    "source_section_sha256": "88e6d330b355c2f49a6e081b6c229686be9087de27425ba723061790e4c1d1f2"
+  },
+  "FQI-SRC-GR2-II-22": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "0cd5fb20a7d85503175c3f3469f57c48bd6f242a86a422b493c24d8534fcccb6"
+  },
+  "FQI-SRC-GR2-II-34": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "d2c903c2c6467bd855f9654a246dcd9eca270fd9c1f195754288fdcdb590789d"
+  },
+  "FQI-SRC-GR2-II-35": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "db73dfacd51a83d98b09f7a81cbf6bd1550c6c53abbc994d8cd86475591738e4"
+  },
+  "FQI-SRC-GR2-II-37": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "bc082586fba8ece898bf3ee7d6e6c3c87c5636cbbe524e8462d060592066e4aa"
+  },
+  "FQI-SRC-GR2-III-06": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "17fd1ab2d068be6ca693ed6a07f0cddaffd4f3f237a8675320c59380462e7943"
+  },
+  "FQI-SRC-GR2-III-07": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "956b4d51f111262953c7279d734049db5942b5c66d4b27b427a9baa0bf3b7f01"
+  },
+  "FQI-SRC-GR2-III-08": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "a39842ddb9d6dcca1cc61c020de041fa0afb24ecea2b262e5d63fc2ab2e723ff"
+  },
+  "FQI-SRC-GR2-III-12": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "476d6f0730345f6283fa69c41dbba7d27f76720e00de05a1e80003579e4ab727"
+  },
+  "FQI-SRC-GR2-III-13": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "684a4226e6ad61ae7cdd441b66ea73b3c49495e14ff2fe49262f8bdf5fef4035"
+  },
+  "FQI-SRC-GR2-III-15": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "35769bb19f4f2ce8e4b13e80bcdd7bee8844b1063bfd6fe4da8e27bd2e76a826"
+  },
+  "FQI-SRC-GR2-III-19": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "5315404927bfc84c37b0ba35137f664ea2390175b92caac3cc67982c510a7968"
+  },
+  "FQI-SRC-GR2-III-22": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "1fd9b493a3b3291d29321935bff67f2e862d92fca4ec95edc6e83d0f1c4f7cec"
+  },
+  "FQI-SRC-GR2-III-25": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "3304c8cf94068d5eec9583b52f6e8c91f3118465701563d728e14987f97fdc96"
+  },
+  "FQI-SRC-GR2-III-26": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "c34791f92520ea0175413885fda32594b388fb524cc1e29d15e6881bab1b4337"
+  },
+  "FQI-SRC-GR2-III-27": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "9d193e34bb27397ddc888bebeb6d20c669d4a08e6ff2520220b7b53b02d93c5b"
+  },
+  "FQI-SRC-GR2-III-28": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "1dffc3919f9d5bcbde62eed8409c2ecbc3acaf40dc5291cb13857d427645f278"
+  },
+  "FQI-SRC-KAC-CHEUNG-1.11-12": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "cf021cc9bfc45fff1ef14abc66bbb9434817071c436af113bac92ad5900d8ab9"
+  },
+  "FQI-SRC-KAC-CHEUNG-1.13-14": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "343923500963fbed2dad2901648f55091033620b8a9b8057fd7c872d11d9fd08"
+  },
+  "FQI-SRC-KAC-CHEUNG-1.15": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "30202b68dd2fc80e4272e7a4ad4e878972756a22ab8073d1f507b3b287676430"
+  },
+  "FQI-SRC-KAC-CHEUNG-13.10": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "745c187da916594304c0919c72ffb55ac7f597addb98a88357c42894a58924ba"
+  },
+  "FQI-SRC-KAC-CHEUNG-14.higher": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "ccecc8fe58840a62a3e8021beb3990bdf25f790f2bb35b74025f8ce530d4417d"
+  },
+  "FQI-SRC-KAC-CHEUNG-15.cancellation": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "71ed2d4679f51f73d4cab911605c46b474bcf286c7c9bb751cdd1fd9c01a7727"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.10": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "43fbc1b8b34f61174afe72eb90375a00d94104b3cc92b9e177f151ce653ffd83"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.12": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "ab98d02f25952bc4ac92f833f07f91427334eff5c29a04631440ab87acd91aed"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.14": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "740eda118c94be248eab5aff68fe2a8926d2b831044a5f9623282b3fff271cd3"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.15": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "440f2dd57c7250c88867979bd4095d6cc8e1a0220f3a60bfe76eacdac4de684e"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.21": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "914b8f98adbd1d0c713e2f69684938661b16b7a751d5f45fdfecad8bfccb2f86"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.22": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "520bbf79b6249ee131b8e7f5fa088a38c2fd7d8f8a0308d8ce1138ce292a3009"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.23": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "4345b1cf5514b2c39f78bb648d7b91e1b2a5b84c8571963ac101f4837a8a6d65"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.5": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "871d98d351b9ea11da95aa1546a62733e68680c57fd46e53f7f93934d376adb4"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.6": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "204b4ec91833dfa1b9720859083b5b52916d231148763a985871202874690bc0"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.7": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "784fa333fc5ed525ce1a370e8b53c14936db05478eda7b3b32682edb5ada35d1"
+  },
+  "FQI-SRC-KAC-CHEUNG-3.10": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "b64ecc987dbb8d5e071372f04ad9e068997e944acb6142bd7c5bda4065a4f1a3"
+  },
+  "FQI-SRC-KAC-CHEUNG-3.12": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "ae7dfc6e2330b8401723af37163c35f47dcdb2ca40c9258afcc7a42b2b676228"
+  },
+  "FQI-SRC-KAC-CHEUNG-3.5": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "6cb0380648906f51d697b89209cee2d81209436ff0be24abe007af21bc7bbddc"
+  },
+  "FQI-SRC-KAC-CHEUNG-3.6": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "4de807b043176b5ee49d8629e4d91f0db0ca0db2185b83b939ab382931baa677"
+  },
+  "FQI-SRC-KAC-CHEUNG-4.1": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "0b5de0509fe46a0bd27323e558ae50bff858dc106ff34614cf1e3bd4279f0372"
+  },
+  "FQI-SRC-KAC-CHEUNG-4.3": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "682d0ff70cc129cff01424158e7bb7a5bb1310451962f3d53b1742e50b8a7677"
+  },
+  "FQI-SRC-KAC-CHEUNG-4.4": {
+    "source_md_path": "round2_identity_catalog/families/q-binomial.md",
+    "source_section_sha256": "28c69981140e83fab9b3903a99cc8e3185e181ceb4c5e44654e51bbf72550494"
+  },
+  "FQI-SRC-KAC-CHEUNG-5.1": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "32559717ad24c0dc3997a080688e2b90aa3e605f193f73d03d61e64404976862"
+  },
+  "FQI-SRC-KAC-CHEUNG-5.7": {
+    "source_md_path": "round2_identity_catalog/families/q-binomial.md",
+    "source_section_sha256": "3ac45b3397e02ae8d43e16b620b22dda9bb7e83a3a176b889032328eea0d8cca"
+  },
+  "FQI-SRC-KAC-CHEUNG-7.2": {
+    "source_md_path": "round2_identity_catalog/families/finite-fields.md",
+    "source_section_sha256": "48ab2191c871c74414b8141a265cfb26e2b5ce595b7c073faef7db02087a51ee"
+  },
+  "FQI-SRC-KAC-CHEUNG-7.8": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "12c20aa15a49c476f2af003489a556e51850264a8cf39f0bf2054e76f5f5afbf"
+  },
+  "FQI-SRC-KAC-CHEUNG-7.rank": {
+    "source_md_path": "round2_identity_catalog/families/finite-fields.md",
+    "source_section_sha256": "808c83747f7d7a80d84266d88ab4eacdb8ab3e59a6abfeb60d5a5037ef4f00ea"
+  },
+  "FQI-SRC-SILLS-1.75": {
+    "source_md_path": "round2_identity_catalog/families/finite-products.md",
+    "source_section_sha256": "c96c477e0932f1af1b2545575d57fb330b01ca9c29b50cc70fbe8383880c176f"
+  },
+  "FQI-SRC-SILLS-1.75-rec": {
+    "source_md_path": "round2_identity_catalog/families/finite-products.md",
+    "source_section_sha256": "4cf8999025a78cc77fd7ca5da1d7b8e449a84143ba04d58809680ee2dddf56d3"
+  },
+  "FQI-SRC-SILLS-1.79": {
+    "source_md_path": "round2_identity_catalog/families/coefficient-recurrences.md",
+    "source_section_sha256": "b889fdbff08a4915a6380ebf17bdffec761f575a71c2ff4fbb3051a766ed6ef7"
+  },
+  "FQI-SRC-SILLS-1.87": {
+    "source_md_path": "round2_identity_catalog/families/q-trinomial.md",
+    "source_section_sha256": "1d116f716c374a49219ba65419f371ebdc6e0ea07ddf3faf80f15887f24a9fa8"
+  },
+  "FQI-SRC-SILLS-1.94-corrected": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "8a059f9e0370666515828277a4ba53f21e2ed58c0c790d308a283758e54241a3"
+  },
+  "FQI-SRC-SILLS-1.95": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "960ded99eb21d3b0b64d02f9c68fc8adb007ec97daede4fcf58639da0c2a31d5"
+  },
+  "FQI-SRC-SILLS-1.99": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "7de2f111ad7639a8acfb11a5f4f3fe569c22bb76484fcd8bcf9ec91e4df27349"
+  },
+  "FQI-SRC-SILLS-1.ExDistinct": {
+    "source_md_path": "round2_identity_catalog/families/rectangle-partitions.md",
+    "source_section_sha256": "6c9254e0be3cbf254fb8e98c684e21b05e059b0cc9ef42d6035dfd6cc33184d6"
+  },
+  "FQI-SRC-SILLS-2.30": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "5755591647c035b5769b5bbfef05b4e3caeb041e547ec1fb6a6ce4324d5cc0c9"
+  },
+  "FQI-SRC-SILLS-2.75": {
+    "source_md_path": "round2_identity_catalog/families/q-trinomial.md",
+    "source_section_sha256": "fb89061b67b8a22b641f91e2056540a2b1a55ea2a9bad05beb4eef7c42d922fd"
+  },
+  "FQI-SRC-SILLS-2.76-78": {
+    "source_md_path": "round2_identity_catalog/families/schur-partitions.md",
+    "source_section_sha256": "d147ca69cd4980ad5b9994b9df67b4e367d65ff07380ffdaaeb560fd0e0aca61"
+  },
+  "FQI-SRC-SILLS-2.9-corrected": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "9510a554a04aa577e41b7a6058f3c852d69db0869393628bbb4375d8dc20e85f"
+  },
+  "FQI-SRC-SILLS-2.Ex2b": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "089b46a765dd9f80d9264b275cb8e2ccf19a81a649059342579a4f0093b10e2c"
+  },
+  "FQI-SRC-SILLS-2.Ex2c": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "c2be04f3a114b226561c8b8ce57e5affa9dac39e0202b61a5640f072404f503f"
+  },
+  "FQI-SRC-SILLS-2.Ex2e": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "b62a09379547fe50f19b4798b48a49470e6d86e36d17153d2e82de7dd85ad43b"
+  },
+  "FQI-SRC-SILLS-2.Ex2f": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "d3a6dff0355c35a874382cca8b5af89b8fee65929458cb7dfac46c43d1c054c5"
+  },
+  "FQI-SRC-SILLS-2.Ex7a-corrected": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "1beb91087b96d0d35987c3e7e82ddab7c4834f977249ec97b28556449de71d17"
+  },
+  "FQI-SRC-SILLS-2.Lem2.53": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "6b130c15de670b587787cfb6aa5283387953bbac2fcad7bc2c94cdaa6f233edb"
+  },
+  "FQI-SRC-SILLS-2.Pair122": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "c3511a458df6d1d159e304938cfea98525dbd1792918c0d468826310c9f41983"
+  },
+  "FQI-SRC-SILLS-3.7": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "697cc72553676b7fd98752f8c1ef7fc3d6410eb844a2bdf16ea693bcdbbc844a"
+  },
+  "FQI-SRC-SILLS-3.Lem3.3": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "515a67f877a2b178c8905f737108c072d41c6d27946b7eab71551651de05527a"
+  },
+  "FQI-SRC-SILLS-4.17": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "2409d8981623f85b823519b6b0a18bf22ce323b82742bdd450453006a3b82130"
+  },
+  "FQI-SRC-SILLS-4.18": {
+    "source_md_path": "round2_identity_catalog/families/q-trinomial.md",
+    "source_section_sha256": "fe6061a24a88c61f38e44077544c8f497d04f2c4cbc2f60e47459274135052aa"
+  },
+  "FQI-SRC-SILLS-4.19": {
+    "source_md_path": "round2_identity_catalog/families/q-trinomial.md",
+    "source_section_sha256": "627d4d8e0d84760ea66e8494755109a1e275f1dacf319700092abe6bbb05cb9e"
+  },
+  "FQI-SRC-SILLS-4.26-corrected": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "fa97b03fd2d970858fb8a0b38210681497ae0176ea67f566c09d1c0645857160"
+  },
+  "FQI-SRC-SILLS-4.27-corrected": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "07e5fd0df632ba3a4090a88b71a0f293e4507419fd8d454e0a8e52dd2ae574e4"
+  },
+  "FQI-SRC-SILLS-4.35": {
+    "source_md_path": "round2_identity_catalog/families/bressoud.md",
+    "source_section_sha256": "866c9c17dd69abf81ac3fa95b641198b1573db117a7ab9515f736bb4d89e0217"
+  },
+  "FQI-SRC-SILLS-4.37": {
+    "source_md_path": "round2_identity_catalog/families/bressoud.md",
+    "source_section_sha256": "0fcc24a66b5551b707323775444881bd12f2fa9fc2fbd904bff5929571bd664c"
+  },
+  "FQI-SRC-SILLS-4.43": {
+    "source_md_path": "round2_identity_catalog/families/bressoud.md",
+    "source_section_sha256": "03e6773b55789923de7d5796df3ed82cee8c192b40e559cc60ddb534a8fdd3f9"
+  },
+  "FQI-SRC-SILLS-4.47": {
+    "source_md_path": "round2_identity_catalog/families/mod8.md",
+    "source_section_sha256": "7e34365708b7ab1b96d23f78ab329fb26f8dee0d2bc29ed98d059eb96bbe0cb1"
+  },
+  "FQI-SRC-SILLS-4.48": {
+    "source_md_path": "round2_identity_catalog/families/q-trinomial.md",
+    "source_section_sha256": "e27a5cc3428bcb471283104cc0bc15c70bdc88c37e764b89c487b5d72e3259db"
+  },
+  "FQI-SRC-SILLS-4.49": {
+    "source_md_path": "round2_identity_catalog/families/q-trinomial.md",
+    "source_section_sha256": "4433ac83ae9c11b20173dea0e58a73280792a69b7c6cf4fa77233095e0a1f627"
+  },
+  "FQI-SRC-SILLS-4.51": {
+    "source_md_path": "round2_identity_catalog/families/borwein.md",
+    "source_section_sha256": "f43e10fe05401f0e73613f0cf8602e26e56aba8aff703197e7461d7758478a3a"
+  },
+  "FQI-SRC-SILLS-4.52": {
+    "source_md_path": "round2_identity_catalog/families/borwein.md",
+    "source_section_sha256": "a26a66333b36f58c51f08f280b4ecda3e0bcc1c1e305a69ccebd190f191b6674"
+  },
+  "FQI-SRC-SILLS-4.54": {
+    "source_md_path": "round2_identity_catalog/families/borwein.md",
+    "source_section_sha256": "54d4267900852627aef16ffcbf500ac88fdfd8bfe3131e6c652728a157a28401"
+  },
+  "FQI-SRC-SILLS-4.55": {
+    "source_md_path": "round2_identity_catalog/families/borwein.md",
+    "source_section_sha256": "d92f948d7963ec72b1dea04211f86aedc512805d27e7a0ab5c4522592db2533c"
+  },
+  "FQI-SRC-SILLS-4.56": {
+    "source_md_path": "round2_identity_catalog/families/borwein.md",
+    "source_section_sha256": "50f091beb58f72f5ac624fb7c3dd4a4836633daf081b9c6eb052ec83e9b44ea7"
+  },
+  "FQI-SRC-SILLS-4.6": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "64739b80fa07ff53f12c21b1a2c5fc538e77863276eef4decb0450e55df25800"
+  },
+  "FQI-SRC-SILLS-4.Ex3": {
+    "source_md_path": "round2_identity_catalog/families/borwein.md",
+    "source_section_sha256": "99cf9ea46f663a4a2380dee1763f56724b409c5dc9b2b32b82ce5d0fa73d8d25"
+  },
+  "FQI-SRC-SILLS-4.Mod8": {
+    "source_md_path": "round2_identity_catalog/families/mod8.md",
+    "source_section_sha256": "5ed37a93bd579661c9bb8867a53d986b436451358a00ab40877593b8a90da0e3"
+  },
+  "FQI-SRC-SILLS-6.Ex1-corrected": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "82dfaf8e1270d2aa1a57c58a8b6b04c258f1a6bb449873147fecef1d4faa28a7"
+  },
+  "FQI-TERMINATING-6PHI5": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "ec6520ef71bf7837ba4822f29d52b9343d67802422707050440170eb115a37cf"
+  },
+  "FQI-WATSON-8PHI7": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "ba55ec3c30067e389dfad59a0a3a5a486921cdf5d9d669f745c8c013b8458c0a"
+  },
+  "FQI-CAYLEY": {
+    "source_md_path": "round2_identity_catalog/families/cayley.md",
+    "source_section_sha256": "0a7f05bae53acf24329c11a12b25d2de82eed0c26c3618587e5f8b0a8a49cbca"
+  },
+  "FQI-DQ-MONOMIAL": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "bf0bf1a8506f684f8856037a2aa88819bf3309936c48245cc92039f920c88acc"
+  },
+  "FQI-GAUSSIAN-RECIPROCITY": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "0fd90bd381baa67c7c2384168aa441d7e53e985ed749f2ce8dbceea91bc1f3a2"
+  },
+  "FQI-GOLLNITZ-ELIMINATION": {
+    "source_md_path": "round2_identity_catalog/families/gollnitz.md",
+    "source_section_sha256": "2090698ef9439fd38c7892bcfdf84939b0fb85b52bd8c01271ff2db5d63da983"
+  },
+  "FQI-PASCAL-Q-K": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "6d63d4ce7128916017f54d49f1007ca730fe65772105f54464625d5948c0b483"
+  },
+  "FQI-PASCAL-Q-N-K": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "1b7cda859e177295f21e792f2e79f900de03ab7242bf3b3dbff1ad9f1c1ad251"
+  },
+  "FQI-SRC-AP-11.2.10": {
+    "source_md_path": "round2_identity_catalog/families/plane-partitions.md",
+    "source_section_sha256": "1f6bc870b5512a8ae2f9608d086a5217b465b27334ce8ed5bdea4bac81c9868d"
+  },
+  "FQI-SRC-AP-11.2.9": {
+    "source_md_path": "round2_identity_catalog/families/plane-partitions.md",
+    "source_section_sha256": "482fb30589a69ba302e1ce12a2df9cf15cd2e0b0e65bdd1b3f76ad572728fc82"
+  },
+  "FQI-SRC-AP-13.E7": {
+    "source_md_path": "round2_identity_catalog/families/q-vandermonde.md",
+    "source_section_sha256": "27bbd77f908d6a70edab0b865a31775c5f5f53f9c298ab2b89148bedd670bca9"
+  },
+  "FQI-SRC-AP-3.2.7": {
+    "source_md_path": "round2_identity_catalog/families/rectangle-partitions.md",
+    "source_section_sha256": "aa26871fc9960b33d3d581addc5b9485723f7f5499c3885207bda09584da329b"
+  },
+  "FQI-SRC-AP-3.E1": {
+    "source_md_path": "round2_identity_catalog/families/finite-products.md",
+    "source_section_sha256": "0b4aec590799d416d74c18684282adbb29be55c62df4729a39f88812714079d5"
+  },
+  "FQI-SRC-AP-7.E11": {
+    "source_md_path": "round2_identity_catalog/families/gollnitz.md",
+    "source_section_sha256": "8413262eb08fe0b89f2397b0034e3a2418096811057adb4263acdbf4f5b44746"
+  },
+  "FQI-SRC-AP-9.3.18": {
+    "source_md_path": "round2_identity_catalog/families/oscillation-partitions.md",
+    "source_section_sha256": "6e6f6e0f64bb38e9d285ce4622bf926277585942f064efde5516569e942863cf"
+  },
+  "FQI-SRC-AQ-10.27": {
+    "source_md_path": "round2_identity_catalog/families/gollnitz.md",
+    "source_section_sha256": "79c741aeba7faeee48ee23c236971c2dee4a6bce6c2854fe57cd79bd49b81c07"
+  },
+  "FQI-SRC-AQ-2.35": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "9adb22bb3cfb533f0a634b1300d852838fab85a3b505e5d998c49fa0b9921c78"
+  },
+  "FQI-SRC-AQ-2.38": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "c307d7d4e2884725ee6793c159690028f8f4401aeca07781ff921f79fa20aada"
+  },
+  "FQI-SRC-AQ-2.39": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "22cfe3d9f7f01ff82c195dbf4613f3be6797226eba814eacac9b55e42171afef"
+  },
+  "FQI-SRC-AQ-2.40": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "cdeac23c7f8296d627890c80e5119bab64f2d33a77f3f791c4791240ce0ec4e0"
+  },
+  "FQI-SRC-AQ-3.12": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "c830bc18cf720da75179b954255f06054a6571f22bd19a7f60a1627973e03423"
+  },
+  "FQI-SRC-AQ-3.35": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "77f8f0c36aa09a8d687803bdd11159ff94566730da04856be211bfb934a95f0f"
+  },
+  "FQI-SRC-AQ-8.44": {
+    "source_md_path": "round2_identity_catalog/families/hard-hexagon.md",
+    "source_section_sha256": "3a1ae9569fb58f8852c6f8086cf768c7e14c0abe20ea91219270f834471f3792"
+  },
+  "FQI-SRC-AQ-8.45": {
+    "source_md_path": "round2_identity_catalog/families/hard-hexagon.md",
+    "source_section_sha256": "ce5ebbf97ff68125221e0af30c6e0f67b5bb9765dedfcda09b366f41eb10f196"
+  },
+  "FQI-SRC-AQ-8.46": {
+    "source_md_path": "round2_identity_catalog/families/hard-hexagon.md",
+    "source_section_sha256": "b8e08093d9dc2a939ae8177d8cb053f3964c7088dfb90ac81ec90650366c083c"
+  },
+  "FQI-SRC-AQ-8.50": {
+    "source_md_path": "round2_identity_catalog/families/hard-hexagon.md",
+    "source_section_sha256": "984795dd3c35314b1a729900233389df2d37a837553ee4f584dde4c58201887b"
+  },
+  "FQI-SRC-AQ-8.52": {
+    "source_md_path": "round2_identity_catalog/families/hard-hexagon.md",
+    "source_section_sha256": "b6b5468f47bee19e90b3d535f323e490e95cbd9b64dd877c4f753b9cfba24d79"
+  },
+  "FQI-SRC-AQ-9.26": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "10dfc348efb8bdd922b06821d172229c48bfe235add5508b2fe73e199731f464"
+  },
+  "FQI-SRC-FINE-20.65b": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "c71012edae40513517e3d251c932edb965bc98905c70b3503410157520f4add5"
+  },
+  "FQI-SRC-FINE-20.69": {
+    "source_md_path": "round2_identity_catalog/families/rogers-szego.md",
+    "source_section_sha256": "225c16aa1ed3131b13154a6edbf622477b4871842fffae169e30f0e6fbbdbaa9"
+  },
+  "FQI-SRC-FINE-25.shell": {
+    "source_md_path": "round2_identity_catalog/families/partition-rank.md",
+    "source_section_sha256": "23e004b5f9ea56b664591b79dc00afc792795b479711610bac03d60f7e5273db"
+  },
+  "FQI-SRC-GR2-1.Ex17": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "fdbd14b7b363319fd6565669abecfbec24ecc74a5ea65284f747a453dc93a2bc"
+  },
+  "FQI-SRC-GR2-1.Ex1ii": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "5beeb216a57b6e568d0b8de2b129b9e6e81460c40ed5bbbf1d395882cc374f7f"
+  },
+  "FQI-SRC-GR2-1.Ex31-monomial": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "ad0b537945fa298b3e6d0101fb2f3a9ceeee55cfe472c7182c560d2e0c190c52"
+  },
+  "FQI-SRC-GR2-1.Ex4ii": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "61180f44c06e630ad8ab2c786ae0071e394066ab3f3d3fd8c3bf99c6ff5653f7"
+  },
+  "FQI-SRC-GR2-1.Ex6i": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "dcbdbd3d6047e86d87f6a39ee50cf7f7db321fe44599e4be11b113f66dac8c29"
+  },
+  "FQI-SRC-GR2-11.7.1": {
+    "source_md_path": "round2_identity_catalog/families/multivariate.md",
+    "source_section_sha256": "b0857c25e29b4c32c3f9048ea38850d2024d4ce972e4808bb4243047e8fd1a34"
+  },
+  "FQI-SRC-GR2-11.Ex22-p0": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "9b3cba7d8b7f10b237cc728f39d0ac48af0a7bef730eb357ab7cc3fc5c6c31b4"
+  },
+  "FQI-SRC-GR2-11.Ex38-p0": {
+    "source_md_path": "round2_identity_catalog/families/multivariate.md",
+    "source_section_sha256": "405d2521d6e650627c752ef30d0553f8ad9968ee8dea59e01c2f8164e1d0ed1b"
+  },
+  "FQI-SRC-GR2-2.10.3": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "5dfea3b410b36961a2d9f8011c535625d7e8312c8c53d21c676fb259b337b817"
+  },
+  "FQI-SRC-GR2-2.2.4": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "89322a26ab1cfc43372ea2d7056fe9e3af7612574468f3e3ecd5ba08f3f0928f"
+  },
+  "FQI-SRC-GR2-2.Ex10": {
+    "source_md_path": "round2_identity_catalog/families/q-racah.md",
+    "source_section_sha256": "751d98e916737d4d73be0868715fd5e30a92b33b4c766fcc63aae599d392e168"
+  },
+  "FQI-SRC-GR2-2.Ex19": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "25cbca28217b13398745c4ba80e0373f9a71ac4b990b3c94f6ce3726ae67622a"
+  },
+  "FQI-SRC-GR2-2.Ex35iii": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "419a15d9ce5a904e0a21ee536145231f02c8ca223998d09045540fb9b9aff36b"
+  },
+  "FQI-SRC-GR2-3.10.16": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "e6981c83430c6f1bb6ef607de5dbfc8ec572435db67cfef61bd44f4221a2cbc5"
+  },
+  "FQI-SRC-GR2-3.10.6": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "163863d71f46dae85c44363d645faa2385357d5f2f064e963f52acf560a922f0"
+  },
+  "FQI-SRC-GR2-3.10.8": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "2c0df15409c183412502c83e39bcb6c51c20ccda3b647f3eb798f7cd53ab61ab"
+  },
+  "FQI-SRC-GR2-3.6.17": {
+    "source_md_path": "round2_identity_catalog/families/finite-inversion.md",
+    "source_section_sha256": "f69464a8ae377706b202ce7d06667c95537b4cf215c9f4ecac39b6f29b870b47"
+  },
+  "FQI-SRC-GR2-3.6.6": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "2696420a2a832d9f17ae9f7e6324c247ee643eb42c892e927881f93cfbf8c6bb"
+  },
+  "FQI-SRC-GR2-3.8.15": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "4c39092d66807a28890ae1095437c533ec4b4cbf83088918caa47bd1b186afe8"
+  },
+  "FQI-SRC-GR2-3.Ex12": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "166ee44c029e14da18b9a2f16bb076cf360b32b22986ff1474e8b412b708e854"
+  },
+  "FQI-SRC-GR2-3.Ex34": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "64f5f17bf676a7605a1d6dd5eb617474aa275432dd23611040621dc9a4a3d80f"
+  },
+  "FQI-SRC-GR2-7.2.1": {
+    "source_md_path": "round2_identity_catalog/families/q-racah.md",
+    "source_section_sha256": "38d4c3ed6b2d8d8b0c7e61057e3b848f98e767e97d0f404c21833deb29e7a1cc"
+  },
+  "FQI-SRC-GR2-7.2.22": {
+    "source_md_path": "round2_identity_catalog/families/q-hahn.md",
+    "source_section_sha256": "66571857981bd88ac6f596fa95a9a83bc90cb33c2df2ada847c5eb969962bdb6"
+  },
+  "FQI-SRC-GR2-7.3.6": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "b17ba1c74bc9691c606b9dfaee8ad541456dab3437fcdc4e2b62cc669c336c51"
+  },
+  "FQI-SRC-GR2-7.7.10": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "8d10cba237d295ddf72f15ffaa51f3a497eac41dd1bbfec476d68401d54f8f62"
+  },
+  "FQI-SRC-GR2-7.Ex11": {
+    "source_md_path": "round2_identity_catalog/families/q-krawtchouk.md",
+    "source_section_sha256": "fe69b2267041611545b1400717dd094b0fa67a6e2fbcf9d72867343aafbaf62c"
+  },
+  "FQI-SRC-GR2-7.Ex17": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "e28046db71279e695388bba2604bd0440b0c8728f6d46440f5db46b7088d345c"
+  },
+  "FQI-SRC-GR2-7.Ex32": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "ea68f990b0bb54eb1bb0137d3de609c57799438be6b65adbb00189922566df92"
+  },
+  "FQI-SRC-GR2-7.Ex8i": {
+    "source_md_path": "round2_identity_catalog/families/q-krawtchouk.md",
+    "source_section_sha256": "a31305e930c4ea6a90d3f91bc1c0bb9ff5dfa2e99ee42a6f43b27db6e0674392"
+  },
+  "FQI-SRC-GR2-7.Ex8ii": {
+    "source_md_path": "round2_identity_catalog/families/q-krawtchouk.md",
+    "source_section_sha256": "861f8443d2ff6419df6abf3b19eaed1d2af3a1260a88f97ed2e45ac063298053"
+  },
+  "FQI-SRC-GR2-8.2.6": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "24c1c500990e55e60460c2ac20e4ef7c36a36a90fccb57cccd42520fdd68146b"
+  },
+  "FQI-SRC-GR2-8.9.2": {
+    "source_md_path": "round2_identity_catalog/families/clausen.md",
+    "source_section_sha256": "9d15ac4a0c052e5161849184cb211eae382c477efce055820cccfd3defd4c253"
+  },
+  "FQI-SRC-GR2-8.Ex11": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "1dc9241ec8bcef96984da0e43a5e969ac15e118deccc5668e9e73c9250695b4c"
+  },
+  "FQI-SRC-GR2-8.Ex12": {
+    "source_md_path": "round2_identity_catalog/families/ultraspherical.md",
+    "source_section_sha256": "43b8f17b2f19313cb8a6e61d20c8063f16983445971dfaddf12ceca715ae48df"
+  },
+  "FQI-SRC-GR2-8.Ex16": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "235eafc2a62075026311adff02a028c3bc02025b3e95a0fccc639b87fb6aa7d5"
+  },
+  "FQI-SRC-GR2-8.Ex1ii": {
+    "source_md_path": "round2_identity_catalog/families/q-jacobi.md",
+    "source_section_sha256": "08fafd2df8fceb6c18cdf9d823eeb08d5e508bd9729c64b8605ccdbe9fb8f764"
+  },
+  "FQI-SRC-GR2-8.Ex21": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "42bfe22d1c545f1211a33aeb3cd68d7e752a8fa3ebb70ba8c6aff12589b94484"
+  },
+  "FQI-SRC-GR2-9.5.3-finite": {
+    "source_md_path": "round2_identity_catalog/families/askey-wilson.md",
+    "source_section_sha256": "06a54ca8ae2a2ba9d37c14094ff2b0febab83d251b915b7c15ae7d8f3962cba3"
+  },
+  "FQI-SRC-GR2-9.Ex4ii": {
+    "source_md_path": "round2_identity_catalog/families/q-hahn.md",
+    "source_section_sha256": "2b41f7154351bb2e0c61e71e61cff09dc44214e438692be92409cb05625888ea"
+  },
+  "FQI-SRC-GR2-9.Ex5i": {
+    "source_md_path": "round2_identity_catalog/families/q-hahn.md",
+    "source_section_sha256": "99a6188442bf687c3898ec083842128b9a7b669a6e9646186ac562ead8581840"
+  },
+  "FQI-SRC-GR2-I-07": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "7386b280ca50bce7e5224d8573b054a06c6b61afc11fb580e6f1e269812b7581"
+  },
+  "FQI-SRC-GR2-I-19": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "a73af67688b0db3a9c19308c4003d85dc1e17d08df21c70998a04e6ce2a580bc"
+  },
+  "FQI-SRC-GR2-I-21": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "7b388d641815649b0da161852b43507562b6eacc59f8ea1abc6f2739cec6973a"
+  },
+  "FQI-SRC-GR2-I-44": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "7672fc742e8b6b3123ac29dd22264ac81c359eef52805df284eaf28d7165926d"
+  },
+  "FQI-SRC-GR2-I-45": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "7f4707cbb1c27dfcb7e25136dc3ed1fa3688c426cddf06f697f1376878e59b25"
+  },
+  "FQI-SRC-GR2-I-47": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "de2242489ed772e945a03a7ef9a5b198a7ffc37163096a7b731cf7ad1120513d"
+  },
+  "FQI-SRC-GR2-II-36": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "f6cde490b6b65df9d492b6d5bfad22ea808f188c5ee3ee3aadce51ea32514f22"
+  },
+  "FQI-SRC-GR2-III-11": {
+    "source_md_path": "round2_identity_catalog/families/terminating-series.md",
+    "source_section_sha256": "036ccd324113b860a0da3b89a25b69601ce642269a40d2e4b65fcd33057853a4"
+  },
+  "FQI-SRC-GR2-III-14": {
+    "source_md_path": "round2_identity_catalog/families/very-well-poised.md",
+    "source_section_sha256": "58c4b7c5d5aabbf191d49d9cfde96035587af1231bceb13cde5ce9e44fe8e870"
+  },
+  "FQI-SRC-GR2-III-21": {
+    "source_md_path": "round2_identity_catalog/families/bibasic.md",
+    "source_section_sha256": "80779fac53fd32673fd74ecddd823d30cdb603ca7e5acb0e8069875df4dd148c"
+  },
+  "FQI-SRC-KAC-CHEUNG-19.telescoping": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "ff0b8105609d5fc2e7e22f56f1ff67d2b7521b1a6002cf8c12f16e5b4846b35b"
+  },
+  "FQI-SRC-KAC-CHEUNG-26.rootsum": {
+    "source_md_path": "round2_identity_catalog/families/symmetric-calculus.md",
+    "source_section_sha256": "90c5421d86c8ee5c14ee8f3e0c16bfa680659ee678e07c6ae5db8b60a005bdf4"
+  },
+  "FQI-SRC-KAC-CHEUNG-3.11": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "e1b887feb48b911d314a956893ad4d93cc59e047084bb00a30ddc2efaa574946"
+  },
+  "FQI-SRC-KAC-CHEUNG-3.9": {
+    "source_md_path": "round2_identity_catalog/families/pochhammer.md",
+    "source_section_sha256": "4b80a166a55a1f2b42f5bfe0122177cab069453e8ea771e0dc06f8e6ea237278"
+  },
+  "FQI-SRC-KAC-CHEUNG-5.8": {
+    "source_md_path": "round2_identity_catalog/families/q-binomial.md",
+    "source_section_sha256": "44c536e7301205492155f8f22c03a8a8605d5d07c594fd8adbea8a19ebd46204"
+  },
+  "FQI-SRC-KAC-CHEUNG-6.5": {
+    "source_md_path": "round2_identity_catalog/families/gaussian.md",
+    "source_section_sha256": "93d1095eca731bb6ad2c977609613a7218400184d75498772660f6e667c4ae50"
+  },
+  "FQI-SRC-KAC-CHEUNG-8.reciprocal": {
+    "source_md_path": "round2_identity_catalog/families/q-calculus.md",
+    "source_section_sha256": "e1ee04c4f9656886e938830f85ab2c5f2145e6aa8576d67a47fe2a4075941d90"
+  },
+  "FQI-SRC-SILLS-1.90": {
+    "source_md_path": "round2_identity_catalog/families/q-trinomial.md",
+    "source_section_sha256": "e4e9ce586e3688df12b4a576fc56e49efe5b9f70de19000181cd5a05017da468"
+  },
+  "FQI-SRC-SILLS-1.JacobiFinite": {
+    "source_md_path": "round2_identity_catalog/families/finite-products.md",
+    "source_section_sha256": "56701cbb224cb89cbe2aaff5cd56d9eb1c997d0cae8bd81a9633df2701078b88"
+  },
+  "FQI-SRC-SILLS-2.108": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "16932308abffd580759e8540d390b58d6662eeae91a4be536fd666346e343777"
+  },
+  "FQI-SRC-SILLS-2.Ex2d": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "2b5b8aabee3cb24de8c1faf117dfdc30ff0a1a9e5deeb5167129f86ffa0cbd76"
+  },
+  "FQI-SRC-SILLS-2.Lem2.31": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "3adfedd40166ec10c522a7b7fa7f684f110869e30b6061eb76fd71d7dc8c63fc"
+  },
+  "FQI-SRC-SILLS-2.Pair112": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "6bb0a6903eb270db38f93a0810d8a1829557c9c7f82dbf4c581f36f172d27d8b"
+  },
+  "FQI-SRC-SILLS-3.5-6": {
+    "source_md_path": "round2_identity_catalog/families/bailey.md",
+    "source_section_sha256": "576571f9ed33bdc35508af91188da9dba33027dadbaae708226315ef7010dfff"
+  },
+  "FQI-SRC-SILLS-4.25": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "6d01976cbf6588b7b36a721df36be2e9991b93e648c7fa1782bbc08b4c865620"
+  },
+  "FQI-SRC-SILLS-4.38": {
+    "source_md_path": "round2_identity_catalog/families/bressoud.md",
+    "source_section_sha256": "32567dc9ab7953928f9e38b9dea468e054bd75f99b001f5eb075ea5fe954250e"
+  },
+  "FQI-SRC-SILLS-4.50": {
+    "source_md_path": "round2_identity_catalog/families/q-trinomial.md",
+    "source_section_sha256": "5165250ded50127f552b79310f3188b8a12c229b6a2bf8b674cb90d6f2eb7746"
+  },
+  "FQI-SRC-SILLS-4.53": {
+    "source_md_path": "round2_identity_catalog/families/borwein.md",
+    "source_section_sha256": "56b81d32fc770fd1587c281092ad02164a0d49570efd4e27d7094f3d34e3ed25"
+  },
+  "FQI-SRC-SILLS-4.Sym": {
+    "source_md_path": "round2_identity_catalog/families/bressoud.md",
+    "source_section_sha256": "1bc8ebcf89af7a5405c985dbff385feb0c173381f409b62f5f72b72c08707dca"
+  },
+  "FQI-SRC-SILLS-5.6-8": {
+    "source_md_path": "round2_identity_catalog/families/schur-rr.md",
+    "source_section_sha256": "790f52db7eb45be2ae8f0424972aaa90aa7a6b10cf9ce04393379e008b1d86ff"
+  },
+  "FQI-SUBSPACE-COUNT": {
+    "source_md_path": "round2_identity_catalog/families/finite-fields.md",
+    "source_section_sha256": "59226bac29e1393765297b76562fc2723614360b2e5848536808260c068f3363"
+  }
+}

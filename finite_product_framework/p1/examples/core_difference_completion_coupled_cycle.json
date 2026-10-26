@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "solver": "difference_system",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": 1
+      }
+    ],
+    "rhs_basis": [
+      [
+        [
+          "mul",
+          [
+            "pow",
+            [
+              "add",
+              [
+                "pow",
+                "H",
+                2
+              ],
+              [
+                "mul",
+                2,
+                "H"
+              ]
+            ],
+            -1
+          ],
+          [
+            "add",
+            -2,
+            [
+              "mul",
+              -1,
+              "H"
+            ],
+            [
+              "mul",
+              "H",
+              "X",
+              "q"
+            ]
+          ]
+        ],
+        [
+          "mul",
+          [
+            "pow",
+            [
+              "add",
+              1,
+              "H"
+            ],
+            -1
+          ],
+          [
+            "add",
+            "H",
+            [
+              "mul",
+              -1,
+              "X"
+            ]
+          ]
+        ]
+      ]
+    ],
+    "matrix": [
+      [
+        0,
+        "H"
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  }
+}

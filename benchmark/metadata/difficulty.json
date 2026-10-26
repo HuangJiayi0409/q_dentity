@@ -1,0 +1,1792 @@
+{
+  "source": "benchmark_four_families/inputs/difficulty_trial_v2_annotations.json",
+  "version": "global_three_level_trial_v2",
+  "source_status": "revised_provisional_not_final",
+  "accepted_for_split": true,
+  "annotations": [
+    {
+      "id": "FQI-BAILEY-INVERSION",
+      "level": "中"
+    },
+    {
+      "id": "FQI-BAILEY-LEMMA",
+      "level": "中"
+    },
+    {
+      "id": "FQI-BAILEY-UNIT",
+      "level": "中"
+    },
+    {
+      "id": "FQI-CAYLEY",
+      "level": "中"
+    },
+    {
+      "id": "FQI-CHU-VANDERMONDE-BALANCED",
+      "level": "中"
+    },
+    {
+      "id": "FQI-CHU-VANDERMONDE-Q",
+      "level": "中"
+    },
+    {
+      "id": "FQI-DQ-MONOMIAL",
+      "level": "低"
+    },
+    {
+      "id": "FQI-FINITE-Q-BINOMIAL",
+      "level": "中"
+    },
+    {
+      "id": "FQI-GAUSS-ALTERNATING",
+      "level": "中"
+    },
+    {
+      "id": "FQI-GAUSSIAN-RECIPROCITY",
+      "level": "低"
+    },
+    {
+      "id": "FQI-GAUSSIAN-SYMMETRY",
+      "level": "低"
+    },
+    {
+      "id": "FQI-GAUSSIAN-VANDERMONDE",
+      "level": "中"
+    },
+    {
+      "id": "FQI-GOLLNITZ-ELIMINATION",
+      "level": "中"
+    },
+    {
+      "id": "FQI-GOLLNITZ-ORDER4",
+      "level": "中"
+    },
+    {
+      "id": "FQI-GOLLNITZ-RECURRENCE",
+      "level": "中"
+    },
+    {
+      "id": "FQI-GOLLNITZ-SHIFT",
+      "level": "高"
+    },
+    {
+      "id": "FQI-OSCILLATION-M-EVEN",
+      "level": "高"
+    },
+    {
+      "id": "FQI-OSCILLATION-M-ODD",
+      "level": "高"
+    },
+    {
+      "id": "FQI-OSCILLATION-P-EVEN",
+      "level": "高"
+    },
+    {
+      "id": "FQI-OSCILLATION-P-ODD",
+      "level": "高"
+    },
+    {
+      "id": "FQI-PASCAL-Q-K",
+      "level": "低"
+    },
+    {
+      "id": "FQI-PASCAL-Q-N-K",
+      "level": "低"
+    },
+    {
+      "id": "FQI-PFAFF-SAALSCHUETZ",
+      "level": "中"
+    },
+    {
+      "id": "FQI-POCHHAMMER-NEGATIVE",
+      "level": "低"
+    },
+    {
+      "id": "FQI-POCHHAMMER-RESIDUES",
+      "level": "低"
+    },
+    {
+      "id": "FQI-POCHHAMMER-ROOTS",
+      "level": "低"
+    },
+    {
+      "id": "FQI-Q-DYSON",
+      "level": "高"
+    },
+    {
+      "id": "FQI-RECTANGLE-PARTITIONS",
+      "level": "中"
+    },
+    {
+      "id": "FQI-ROGERS-SZEGO-RECURRENCE",
+      "level": "中"
+    },
+    {
+      "id": "FQI-ROGERS-SZEGO-SQRT",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SCHUR-EVEN-RECIPROCAL",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SCHUR-RR-BUNDLE",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SCHUR-RR-FIRST",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SCHUR-RR-SECOND",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SEARS-4PHI3-II",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-11.2.1",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-11.2.10",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AP-11.2.2",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-AP-11.2.4",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AP-11.2.8",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-11.2.9",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AP-13.E3",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-13.E5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-13.E7",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-3.2.7",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-3.3.1",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-AP-3.3.11",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-3.3.14",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-3.3.9",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-3.4.2",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-3.4.4",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AP-3.5.MULTIPROD",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-AP-3.E1",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-3.E12a",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-3.E12b",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-3.E7",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-4.2.COMPOSITIONS",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-AP-7.E11",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AP-9.3.17",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AP-9.3.18",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AP-9.3.19",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AP-9.3.20",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AP-9.3.5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-9.3.6",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-9.3.7",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-9.3.8",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-AP-9.E4b",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AP-9.L7",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-AP-9.L8",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-10.1",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-10.12",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-AQ-10.27",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-10.30",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-10.32",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-10.5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-10.7A",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-2.23",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-2.29",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-2.35",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-2.38",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-2.39",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-2.40",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.12",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.17",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.18",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.23",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.35",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.37",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.42",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.43",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-4.24",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-4.3",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AQ-6.18",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-6.19",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.32",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.44",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.45",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.46",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.50",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.52",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.56",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AQ-9.17",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-AQ-9.26",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-9.27",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-9.5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-AQ-B.12",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-AQ-B.9",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-FINE-15.2",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-FINE-15.31",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-FINE-15.41",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-FINE-2.1",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-FINE-2.3",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-FINE-20.64b",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-FINE-20.65b",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-FINE-20.66b",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-FINE-20.69",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-FINE-21.2",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-FINE-21.21",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-FINE-21.23",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-FINE-21.product",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-FINE-25.shell",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-FINE-4.coeff",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-FINE-7.GH",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.2.26",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.2.47",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.2.55",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.3.25",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.9.10",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.9.11",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.9.12",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.9.9-finite",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex12iv",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex15i",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex17",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex1ii",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex29",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex31-monomial",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex31-term",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex33",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex35",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex3i",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex3ii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex4ii",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex6i",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex6iii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-10.Ex18",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.6.21-p0",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.6.5-p0",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.6.6-p0",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.7.1",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.7.8-p0",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex21-p0",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex22-p0",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex23ii",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex24ii",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex38-p0",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex39-p0",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex40-p0",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.10.3",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.10.8",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.2.2",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.2.4",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.3.2",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.3.4",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.7.5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.8.2",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex10",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex11",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex12",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex14i",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex14ii",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex19",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex20",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex27",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex28",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex29",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex35i",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex35ii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex35iii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex36i",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex36ii",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex36iii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex6",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex8",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.11",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.14",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.15",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.16",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.3",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.6",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.7",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.8",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.2.6",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.6.10",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.6.16",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.6.17",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.6.18",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.6.6",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.8.14",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.8.15",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.9.5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex12",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex13i",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex13ii",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex21-mixed",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex21-quad",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex23",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex3",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex31i",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex31ii",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex34",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex4-odd",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex4-transform",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex11",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex18iii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex18iv",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex19i",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex19ii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-6.6.10",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-6.Ex14",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.2.1",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.2.12",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.2.18",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.2.22",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.2.24",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.3.17",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.3.6",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.4.14",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.5.20",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.5.3",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.5.35",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.5.36",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.6.14",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.6.2",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.6.8",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.7.10",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.7.6",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.7.7",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex10",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex11",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex14",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex17",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex19",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex27",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex32",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex37-finite",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex38",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex40",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex41",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex8i",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex8ii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.1.2",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.1.4",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.2.12",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.2.5",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.2.6",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.3.3",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.4.7",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.5.1",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.7.13",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.7.4",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.7.6",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.7.9-finite",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.8.15",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.9.1",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.9.2",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.9.5",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.9.8",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.9.9",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex11",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex12",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex15",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex16",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex17i",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex17ii",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex1i",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex1ii",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex2",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex20",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex21",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex24",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex26",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex27",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex28",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex4i",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex4ii",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex7i",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex8",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex9",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.2.2",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.5.3-finite",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex10ii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex17i",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex17ii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex4i",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex4ii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5i",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex7",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-03",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-07",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-08",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-09",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-10",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-11",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-12",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-13",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-14",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-15",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-16",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-17",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-18",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-19",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-20",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-21",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-22",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-25",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-26",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-28",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-33",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-42",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-43",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-44",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-45",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-46",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-I-47",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-14",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-15",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-17",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-19",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-22",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-34",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-35",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-36",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-37",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-06",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-07",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-08",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-11",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-12",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-13",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-14",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-15",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-19",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-21",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-22",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-25",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-26",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-27",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-28",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-1.11-12",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-1.13-14",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-1.15",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-13.10",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-14.higher",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-15.cancellation",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-19.telescoping",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.10",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.12",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.14",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.15",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.21",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.22",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.23",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.5",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.6",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.7",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-26.rootsum",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-3.10",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-3.11",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-3.12",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-3.5",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-3.6",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-3.9",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-4.1",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-4.3",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-4.4",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-5.1",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-5.7",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-5.8",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-6.5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-7.2",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-7.8",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-7.rank",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-8.reciprocal",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.75",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.75-rec",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.79",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.87",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.90",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.94-corrected",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.95",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.99",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.ExDistinct",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.JacobiFinite",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.108",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.30",
+      "level": "低"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.75",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.76-78",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.9-corrected",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex2b",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex2c",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex2d",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex2e",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex2f",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex7a-corrected",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.31",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.53",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Pair112",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Pair122",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-3.5-6",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-3.7",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-3.Lem3.3",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.17",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.18",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.19",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.25",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.26-corrected",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.27-corrected",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.35",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.37",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.38",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.43",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.47",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.48",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.49",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.50",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.51",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.52",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.53",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.54",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.55",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.56",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.6",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.Ex3",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.Mod8",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.Sym",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SRC-SILLS-5.6-8",
+      "level": "中"
+    },
+    {
+      "id": "FQI-SRC-SILLS-6.Ex1-corrected",
+      "level": "高"
+    },
+    {
+      "id": "FQI-SUBSPACE-COUNT",
+      "level": "中"
+    },
+    {
+      "id": "FQI-TERMINATING-6PHI5",
+      "level": "中"
+    },
+    {
+      "id": "FQI-WATSON-8PHI7",
+      "level": "中"
+    }
+  ]
+}

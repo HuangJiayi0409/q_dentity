@@ -1,0 +1,127 @@
+{
+  "id": "FQI-SRC-SILLS-2.Pair122",
+  "branch": "main",
+  "F": "(-1)**k*q**(3*k**2/2 - k/2)*x**k*(-q**(2*k)*x + 1)*Poch(x, q, k)/((1 - x)*Poch(q, q, k)*Poch(q**2, q**2, -k + n)*Poch(q**2*x**2, q**2, k + n))",
+  "T": "1/(Poch(q**2, q**2, n)*Poch(-q*x, q, 2*n))",
+  "lo": "0",
+  "hi": "n",
+  "route": "qwz",
+  "change": "d=1 removes divisibility restriction; keep r=0 quotient",
+  "obligations": "Original parameter domain, boundary and initial values; no Lean representation proof yet.",
+  "source": {
+    "identity_id": "FQI-SRC-SILLS-2.Pair122",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity371.lean",
+    "sha256": "8ccb3eda2edff1b4c51228065377e89b3de13ac135611f5feeb1c38568ba27c2"
+  },
+  "status": "constructed",
+  "stage": "finished",
+  "case_index": 41,
+  "lean_representation_verified": false,
+  "automatic_train_proof": false,
+  "input_origin": "explicit research transcription; not production Lean frontend",
+  "formal_domain": "Q(q, independent parameters); original singular values and parameter domains not discharged",
+  "mathematical_preconditions_status": "candidate transformations recorded; Lean equivalence/support proof pending",
+  "code_sha256": {
+    "inputs.py": "b65360f1d067870ed66e4a30dbf2c24d1b832479a1594ca04109b19b59bf464b",
+    "engine.py": "8192d5fac9b5840bbeea5d4554d1084e03faf43d93c6d5c38c5f1e1a789d9d1d",
+    "run_trials.py": "d899476a9a7d76a53dff1dfed4f802fcc4af1e5e677726b98695b26a59dbdbdb"
+  },
+  "budgets_seconds": {
+    "preparation": 60,
+    "construction": 30
+  },
+  "diagnostics": {
+    "sum_checks": [
+      {
+        "n": 0,
+        "lower": 0,
+        "upper": 0,
+        "equal": true
+      },
+      {
+        "n": 1,
+        "lower": 0,
+        "upper": 1,
+        "equal": true
+      },
+      {
+        "n": 2,
+        "lower": 0,
+        "upper": 2,
+        "equal": true
+      }
+    ],
+    "mismatches": [],
+    "skipped": [],
+    "independent_shift_checks": 6,
+    "sample_parameters": {
+      "q": "2/3",
+      "m": "2",
+      "u": "1",
+      "v": "2",
+      "a": "2/7",
+      "b": "3/11",
+      "c": "5/13",
+      "d": "7/17",
+      "e": "11/19",
+      "f": "13/23",
+      "t": "17/29",
+      "x": "19/31",
+      "z": "23/37",
+      "w": "29/41"
+    },
+    "interpretation": "exact finite diagnostics only; a mismatch needs original-source/domain review, not automatic rejection of the theorem"
+  },
+  "derived_shifts": {
+    "U": "X**2/(Q**4*X**2*q**4*x**2 - Q**2*X**4*q**2*x**2 - Q**2*q**2 + X**2)",
+    "V": "(-Q**2*X**4*q**3*x**3 + Q**2*X**3*q**3*x**2 + Q**2*X**2*q*x**2 - Q**2*X*q*x + X**6*q**3*x**3 - X**5*q**3*x**2 - X**4*q*x**2 + X**3*q*x)/(Q**2*X**5*q**3*x**3 - Q**2*X**4*q**2*x**3 - Q**2*X**3*q**3*x**2 + Q**2*X**2*q**2*x**2 - X**3*q*x + X**2*x + X*q - 1)",
+    "c": "-1/(Q**6*q**5*x**2 + Q**4*q**4*x - Q**4*q**3*x**2 + Q**4*q**3*x - Q**2*q**2*x + Q**2*q**2 - Q**2*q*x - 1)"
+  },
+  "q_power_symbols": {
+    "X": "k",
+    "Q": "n"
+  },
+  "construction": {
+    "algorithm": "q-Gosper",
+    "coefficient_domain": "QQ(Q,q,x)",
+    "down_ratio": "(-Q**6*X**6*q**8*x**5 + Q**6*X**5*q**9*x**4 + Q**6*X**4*q**8*x**4 - Q**6*X**3*q**9*x**3 + Q**4*X**8*q**4*x**5 - Q**4*X**7*q**5*x**4 - Q**4*X**6*q**7*x**5 - Q**4*X**6*q**7*x**4 + Q**4*X**6*q**6*x**5 - Q**4*X**6*q**6*x**4 - Q**4*X**6*q**4*x**4 + Q**4*X**5*q**8*x**4 + Q**4*X**5*q**8*x**3 - Q**4*X**5*q**7*x**4 + Q**4*X**5*q**7*x**3 + Q**4*X**5*q**5*x**3 + Q**4*X**4*q**7*x**4 + Q**4*X**4*q**7*x**3 - Q**4*X**4*q**6*x**4 + Q**4*X**4*q**6*x**3 - Q**4*X**3*q**8*x**3 - Q**4*X**3*q**8*x**2 + Q**4*X**3*q**7*x**3 - Q**4*X**3*q**7*x**2 + Q**2*X**8*q**5*x**5 + Q**2*X**8*q**3*x**5 + Q**2*X**8*q**3*x**4 - Q**2*X**8*q**2*x**5 + Q**2*X**8*q**2*x**4 - Q**2*X**7*q**6*x**4 - Q**2*X**7*q**4*x**4 - Q**2*X**7*q**4*x**3 + Q**2*X**7*q**3*x**4 - Q**2*X**7*q**3*x**3 - Q**2*X**6*q**5*x**3 + Q**2*X**6*q**4*x**4 - Q**2*X**6*q**3*x**4 - Q**2*X**6*q**3*x**3 + Q**2*X**6*q**2*x**4 - Q**2*X**6*q**2*x**3 + Q**2*X**5*q**6*x**2 - Q**2*X**5*q**5*x**3 + Q**2*X**5*q**4*x**3 + Q**2*X**5*q**4*x**2 - Q**2*X**5*q**3*x**3 + Q**2*X**5*q**3*x**2 + Q**2*X**4*q**5*x**2 - Q**2*X**4*q**4*x**3 - Q**2*X**3*q**6*x + Q**2*X**3*q**5*x**2 - Q**2*X**2*q**5*x**2 + Q**2*X*q**6*x - X**10*q*x**5 + X**9*q**2*x**4 + X**8*q*x**3 - X**8*x**4 - X**7*q**2*x**2 + X**7*q*x**3 - X**6*q*x**2 + X**6*x**3 + X**5*q**2*x - X**5*q*x**2 + X**4*q*x**2 - X**3*q**2*x)/(Q**6*X**7*q**7*x**5 - Q**6*X**6*q**7*x**5 - Q**6*X**5*q**9*x**4 + Q**6*X**4*q**9*x**4 + Q**4*X**7*q**6*x**5 + Q**4*X**7*q**6*x**4 - Q**4*X**7*q**5*x**5 + Q**4*X**7*q**5*x**4 - Q**4*X**6*q**6*x**5 - Q**4*X**6*q**6*x**4 + Q**4*X**6*q**5*x**5 - Q**4*X**6*q**5*x**4 - Q**4*X**5*q**8*x**4 - Q**4*X**5*q**8*x**3 + Q**4*X**5*q**7*x**4 - Q**4*X**5*q**7*x**3 - Q**4*X**5*q**5*x**3 + Q**4*X**4*q**8*x**4 + Q**4*X**4*q**8*x**3 - Q**4*X**4*q**7*x**4 + Q**4*X**4*q**7*x**3 + Q**4*X**4*q**5*x**3 + Q**4*X**3*q**7*x**2 - Q**4*X**2*q**7*x**2 - Q**2*X**9*q**2*x**5 + Q**2*X**8*q**2*x**5 + Q**2*X**7*q**4*x**3 - Q**2*X**7*q**3*x**4 - Q**2*X**6*q**4*x**3 + Q**2*X**6*q**3*x**4 - Q**2*X**5*q**6*x**2 + Q**2*X**5*q**5*x**3 - Q**2*X**5*q**4*x**3 - Q**2*X**5*q**4*x**2 + Q**2*X**5*q**3*x**3 - Q**2*X**5*q**3*x**2 + Q**2*X**4*q**6*x**2 - Q**2*X**4*q**5*x**3 + Q**2*X**4*q**4*x**3 + Q**2*X**4*q**4*x**2 - Q**2*X**4*q**3*x**3 + Q**2*X**4*q**3*x**2 + Q**2*X**3*q**8*x**2 + Q**2*X**3*q**6*x**2 + Q**2*X**3*q**6*x - Q**2*X**3*q**5*x**2 + Q**2*X**3*q**5*x - Q**2*X**2*q**8*x**2 - Q**2*X**2*q**6*x**2 - Q**2*X**2*q**6*x + Q**2*X**2*q**5*x**2 - Q**2*X**2*q**5*x + X**7*x**3 - X**6*x**3 - X**5*q**2*x + X**5*q*x**2 + X**4*q**2*x - X**4*q*x**2 + X**3*q**4 - X**3*q**3*x - X**2*q**4 + X**2*q**3*x - X*q**6 + q**6)",
+    "normal_form": {
+      "dispersion": [
+        1
+      ],
+      "updates": [
+        {
+          "shift": 1,
+          "factor": "X**6 + X**4*(-Q**4*q**4*x**2 - Q**2*q**3*x**2 - Q**2*q**3*x + Q**2*q**2*x**2 - Q**2*q**2*x - q + x)/(q*x**2) + X**2*(Q**4*q**4*x**2 + Q**2*q**3*x**2 + Q**2*q**3*x - Q**2*q**2*x**2 + Q**2*q**2*x + q - x)/(q*x**3) - 1/x**3"
+        }
+      ],
+      "P": "-Q**4*X**4*q**3 + Q**4*X**2*q**3/x - Q**2*X**4*q**2 - Q**2*X**4*q**2/x + Q**2*X**4*q - Q**2*X**4*q/x + Q**2*X**2*q**2/x + Q**2*X**2*q**2/x**2 - Q**2*X**2*q/x + Q**2*X**2*q/x**2 + X**6 - X**4/x**2 + X**4/(q*x) + X**2/x**3 - X**2/(q*x**2) - 1/x**3",
+      "A": "Q**2*X**2*q**5*x**5 - Q**2*X*q**6*x**4 - X**4*q*x**5 + X**3*q**2*x**4",
+      "B": "-Q**2*X**3*q**8*x**5 + Q**2*X**2*q**8*x**5 + X*q**6*x**3 - q**6*x**3",
+      "normal_form_residual": "0",
+      "remaining_dispersion": []
+    },
+    "laurent_bounds": {
+      "lower": 0,
+      "upper": 2,
+      "lower_resonance": null,
+      "upper_resonance": null,
+      "source": "q-Gosper Laurent leading/trailing coefficient bounds"
+    },
+    "linear_system": {
+      "unknowns": 3,
+      "equations": 7
+    },
+    "status": "constructed",
+    "laurent_solution": "(-Q**2*X*q**2*x - X**2*q*x - X*q - 1)/(q**6*x**6)",
+    "antidifference_ratio": "(-Q**4*X**4*q**4*x**3 + Q**4*X**3*q**4*x**3 - Q**2*X**5*q**2*x**3 - Q**2*X**4*q**3*x**2 + Q**2*X**4*q**2*x**3 + Q**2*X**2*q**3*x**2 + Q**2*X**2*q**2*x - Q**2*X*q**2*x + X**3*x + X**2*q - X**2*x - q)/(Q**4*X**4*q**4*x**3 - Q**4*X**2*q**4*x**2 + Q**2*X**4*q**3*x**3 + Q**2*X**4*q**3*x**2 - Q**2*X**4*q**2*x**3 + Q**2*X**4*q**2*x**2 - Q**2*X**2*q**3*x**2 - Q**2*X**2*q**3*x + Q**2*X**2*q**2*x**2 - Q**2*X**2*q**2*x - X**6*q*x**3 + X**4*q*x - X**4*x**2 - X**2*q + X**2*x + q)",
+    "rational_residual": "0",
+    "difference_over_summand": "(Q**6*X**2*q**5*x**2 + Q**4*X**2*q**4*x**2 + Q**4*X**2*q**4*x - Q**4*X**2*q**3*x**2 + Q**4*X**2*q**3*x - Q**2*X**4*q**2*x**2 - Q**2*X**2*q**2*x + Q**2*X**2*q**2 - Q**2*X**2*q*x - Q**2*q**2)/(Q**10*X**2*q**9*x**4 - Q**8*X**4*q**7*x**4 + Q**8*X**2*q**8*x**3 - Q**8*X**2*q**7*x**4 + Q**8*X**2*q**7*x**3 - Q**8*q**7*x**2 - Q**6*X**4*q**6*x**3 + Q**6*X**4*q**5*x**4 - Q**6*X**4*q**5*x**3 - Q**6*X**2*q**6*x**3 + Q**6*X**2*q**6*x**2 - Q**6*X**2*q**5*x**3 + Q**6*X**2*q**5*x**2 - Q**6*q**6*x + Q**6*q**5*x**2 - Q**6*q**5*x + Q**4*X**4*q**4*x**3 - Q**4*X**4*q**4*x**2 + Q**4*X**4*q**3*x**3 - Q**4*X**2*q**4*x**2 + Q**4*X**2*q**4*x - Q**4*X**2*q**3*x**2 + Q**4*X**2*q**3*x + Q**4*q**4*x - Q**4*q**4 + Q**4*q**3*x + Q**2*X**4*q**2*x**2 - Q**2*X**2*q**2*x + Q**2*X**2*q**2 - Q**2*X**2*q*x + Q**2*q**2 - X**2)",
+    "certificate": "(-Q**4*X**2*q**3*x + Q**4*X*q**3*x - Q**2*X**3*q*x - Q**2*X**2*q**2 + Q**2*X**2*q*x + Q**2*q**2)/(Q**8*X**2*q**7*x**3 - Q**8*q**7*x**2 - Q**6*X**4*q**5*x**3 + Q**6*X**2*q**6*x**2 - Q**6*X**2*q**5*x**3 + 2*Q**6*X**2*q**5*x**2 - Q**6*q**6*x + Q**6*q**5*x**2 - Q**6*q**5*x - Q**4*X**4*q**4*x**2 + Q**4*X**4*q**3*x**3 - Q**4*X**4*q**3*x**2 - Q**4*X**2*q**4*x**2 + 2*Q**4*X**2*q**4*x - 2*Q**4*X**2*q**3*x**2 + Q**4*X**2*q**3*x + Q**4*q**4*x - Q**4*q**4 + Q**4*q**3*x + Q**2*X**4*q**2*x**2 - Q**2*X**4*q**2*x + Q**2*X**4*q*x**2 - 2*Q**2*X**2*q**2*x + Q**2*X**2*q**2 - Q**2*X**2*q*x + Q**2*q**2 + X**4*x - X**2)",
+    "q_wz_residual": "0",
+    "sympy_version": "1.14.0",
+    "independent_qwz_residual": "0"
+  },
+  "elapsed_seconds": 21.872,
+  "source_unchanged": true
+}

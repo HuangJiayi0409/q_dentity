@@ -1,0 +1,4965 @@
+[
+  {
+    "id": "FQI-GAUSSIAN-SYMMETRY",
+    "name": "Gaussian 对称性",
+    "source_ids": [
+      "GR2-I-39",
+      "AP-3.3.2",
+      "SILLS-1.49",
+      "KAC-CHEUNG-6.1"
+    ],
+    "representative_source": "GR2-I-39",
+    "index": 1,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-PASCAL-Q-N-K",
+    "name": "Gaussian Pascal：权 q^(n−k)",
+    "source_ids": [
+      "SILLS-1.50",
+      "AP-3.3.3",
+      "AQ-3.8",
+      "KAC-CHEUNG-6.3"
+    ],
+    "representative_source": "SILLS-1.50",
+    "index": 2,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-PASCAL-Q-K",
+    "name": "Gaussian Pascal：权 q^k",
+    "source_ids": [
+      "SILLS-1.51",
+      "AP-3.3.4",
+      "AQ-3.9",
+      "KAC-CHEUNG-6.2"
+    ],
+    "representative_source": "SILLS-1.51",
+    "index": 3,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-GAUSSIAN-RECIPROCITY",
+    "name": "普通 Gaussian 倒底数",
+    "source_ids": [
+      "SILLS-1.53",
+      "KAC-CHEUNG-6.reciprocity",
+      "AP-3.5.RECIP"
+    ],
+    "representative_source": "SILLS-1.53",
+    "index": 4,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-FINITE-Q-BINOMIAL",
+    "name": "有限 q-二项式定理",
+    "source_ids": [
+      "SILLS-1.56",
+      "AP-3.3.6",
+      "FINE-6.23",
+      "GR2-II-04",
+      "KAC-CHEUNG-5.5"
+    ],
+    "representative_source": "SILLS-1.56",
+    "index": 5,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-RECTANGLE-PARTITIONS",
+    "name": "矩形分拆的 Gaussian 生成多项式",
+    "source_ids": [
+      "GR2-1.NoteEx2-partition",
+      "AP-3.2.1",
+      "SILLS-1.Thm1.53"
+    ],
+    "representative_source": "GR2-1.NoteEx2-partition",
+    "index": 6,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SUBSPACE-COUNT",
+    "name": "有限域子空间计数",
+    "source_ids": [
+      "GR2-1.NoteEx2-subspace",
+      "AP-13.T1",
+      "SILLS-1.Rem1.54",
+      "KAC-CHEUNG-7.1"
+    ],
+    "representative_source": "GR2-1.NoteEx2-subspace",
+    "index": 7,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-GAUSSIAN-VANDERMONDE",
+    "name": "Gaussian q-Vandermonde 卷积",
+    "source_ids": [
+      "AP-3.3.10",
+      "KAC-CHEUNG-7.6",
+      "AP-13.E6"
+    ],
+    "representative_source": "AP-3.3.10",
+    "index": 8,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-GAUSS-ALTERNATING",
+    "name": "Gauss 交错 Gaussian 奇偶求值",
+    "source_ids": [
+      "AP-3.3.8",
+      "FINE-20.67",
+      "KAC-CHEUNG-7.14-15"
+    ],
+    "representative_source": "AP-3.3.8",
+    "index": 9,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-ROGERS-SZEGO-RECURRENCE",
+    "name": "Rogers–Szegő 三项递推",
+    "source_ids": [
+      "AP-3.E6",
+      "FINE-20.63b",
+      "KAC-CHEUNG-7.RogersSzego"
+    ],
+    "representative_source": "AP-3.E6",
+    "index": 10,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-ROGERS-SZEGO-SQRT",
+    "name": "Rogers–Szegő 平方根特值",
+    "source_ids": [
+      "AP-3.E5",
+      "FINE-20.68"
+    ],
+    "representative_source": "AP-3.E5",
+    "index": 11,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-CHU-VANDERMONDE-Q",
+    "name": "q-Chu–Vandermonde：自变量 q",
+    "source_ids": [
+      "GR2-II-06",
+      "AQ-2.41"
+    ],
+    "representative_source": "GR2-II-06",
+    "index": 12,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-CHU-VANDERMONDE-BALANCED",
+    "name": "q-Chu–Vandermonde：自变量 cq^n/a",
+    "source_ids": [
+      "GR2-II-07",
+      "SILLS-1.Thm1.46"
+    ],
+    "representative_source": "GR2-II-07",
+    "index": 13,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-PFAFF-SAALSCHUETZ",
+    "name": "终止 q-Pfaff–Saalschütz",
+    "source_ids": [
+      "GR2-II-12",
+      "AP-3.3.12",
+      "AQ-3.25",
+      "SILLS-1.Thm1.49"
+    ],
+    "representative_source": "GR2-II-12",
+    "index": 14,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-TERMINATING-6PHI5",
+    "name": "终止 very-well-poised 6φ5",
+    "source_ids": [
+      "GR2-II-21",
+      "SILLS-1.Thm1.50"
+    ],
+    "representative_source": "GR2-II-21",
+    "index": 15,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-WATSON-8PHI7",
+    "name": "Watson 终止 8φ7→4φ3",
+    "source_ids": [
+      "GR2-III-18",
+      "AQ-3.49",
+      "SILLS-1.98"
+    ],
+    "representative_source": "GR2-III-18",
+    "index": 16,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SEARS-4PHI3-II",
+    "name": "Sears 平衡 4φ3 第二形式",
+    "source_ids": [
+      "GR2-III-16",
+      "SILLS-1.104"
+    ],
+    "representative_source": "GR2-III-16",
+    "index": 17,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-BAILEY-INVERSION",
+    "name": "有限 Bailey 反演",
+    "source_ids": [
+      "AQ-3.40",
+      "SILLS-2.31"
+    ],
+    "representative_source": "AQ-3.40",
+    "index": 18,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-BAILEY-LEMMA",
+    "name": "有限 Bailey 引理",
+    "source_ids": [
+      "AQ-REF-BAILEY",
+      "SILLS-2.34"
+    ],
+    "representative_source": "AQ-REF-BAILEY",
+    "index": 19,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-BAILEY-UNIT",
+    "name": "一般参数单位 Bailey 对",
+    "source_ids": [
+      "AQ-3.48",
+      "SILLS-2.Ex2a"
+    ],
+    "representative_source": "AQ-3.48",
+    "index": 20,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-Q-DYSON",
+    "name": "A 型 q-Dyson 常数项",
+    "source_ids": [
+      "GR2-2.NoteEx31",
+      "AQ-REF-QDYSON"
+    ],
+    "representative_source": "GR2-2.NoteEx31",
+    "index": 21,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-POCHHAMMER-NEGATIVE",
+    "name": "负整数长度 q-Pochhammer",
+    "source_ids": [
+      "GR2-I-02",
+      "FINE-18.11"
+    ],
+    "representative_source": "GR2-I-02",
+    "index": 22,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-POCHHAMMER-RESIDUES",
+    "name": "有限乘积按剩余类拆分",
+    "source_ids": [
+      "GR2-I-27",
+      "SILLS-2.49"
+    ],
+    "representative_source": "GR2-I-27",
+    "index": 23,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-POCHHAMMER-ROOTS",
+    "name": "单位根参数有限乘积分解",
+    "source_ids": [
+      "GR2-I-30",
+      "SILLS-2.RootFactor"
+    ],
+    "representative_source": "GR2-I-30",
+    "index": 24,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-DQ-MONOMIAL",
+    "name": "单项式的 Jackson q 导数",
+    "source_ids": [
+      "KAC-CHEUNG-1.10",
+      "SILLS-1.Dq"
+    ],
+    "representative_source": "KAC-CHEUNG-1.10",
+    "index": 25,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-GOLLNITZ-RECURRENCE",
+    "name": "Göllnitz 有界分拆递推",
+    "source_ids": [
+      "SILLS-2.82-83",
+      "AQ-10.17"
+    ],
+    "representative_source": "SILLS-2.82-83",
+    "index": 26,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-GOLLNITZ-SHIFT",
+    "name": "Göllnitz 参数移位",
+    "source_ids": [
+      "AQ-10.18",
+      "SILLS-2.84"
+    ],
+    "representative_source": "AQ-10.18",
+    "index": 27,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-GOLLNITZ-ORDER4",
+    "name": "Göllnitz 四阶递推",
+    "source_ids": [
+      "AQ-10.21",
+      "SILLS-2.88"
+    ],
+    "representative_source": "AQ-10.21",
+    "index": 28,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-GOLLNITZ-ELIMINATION",
+    "name": "Göllnitz 消元式",
+    "source_ids": [
+      "AQ-10.23",
+      "SILLS-2.90-91"
+    ],
+    "representative_source": "AQ-10.23",
+    "index": 29,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SCHUR-RR-BUNDLE",
+    "name": "Schur 两支有限 Rogers–Ramanujan",
+    "source_ids": [
+      "AP-3.E10",
+      "AP-9.E4a"
+    ],
+    "representative_source": "AP-3.E10",
+    "index": 30,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-CAYLEY",
+    "name": "Cayley 有限有理分解",
+    "source_ids": [
+      "AP-5.CAYLEY",
+      "AP-12.E1"
+    ],
+    "representative_source": "AP-5.CAYLEY",
+    "index": 31,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-OSCILLATION-M-EVEN",
+    "name": "振荡分拆闭式：M-EVEN",
+    "source_ids": [
+      "AP-9.3.9",
+      "AP-9.3.13"
+    ],
+    "representative_source": "AP-9.3.9",
+    "index": 32,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-OSCILLATION-M-ODD",
+    "name": "振荡分拆闭式：M-ODD",
+    "source_ids": [
+      "AP-9.3.10",
+      "AP-9.3.14"
+    ],
+    "representative_source": "AP-9.3.10",
+    "index": 33,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-OSCILLATION-P-EVEN",
+    "name": "振荡分拆闭式：P-EVEN",
+    "source_ids": [
+      "AP-9.3.11",
+      "AP-9.3.15"
+    ],
+    "representative_source": "AP-9.3.11",
+    "index": 34,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-OSCILLATION-P-ODD",
+    "name": "振荡分拆闭式：P-ODD",
+    "source_ids": [
+      "AP-9.3.12",
+      "AP-9.3.16"
+    ],
+    "representative_source": "AP-9.3.12",
+    "index": 35,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SCHUR-RR-FIRST",
+    "name": "Schur 第一有限 Rogers–Ramanujan",
+    "source_ids": [
+      "SILLS-4.14",
+      "AQ-8.36"
+    ],
+    "representative_source": "SILLS-4.14",
+    "index": 36,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SCHUR-RR-SECOND",
+    "name": "Schur 第二有限 Rogers–Ramanujan",
+    "source_ids": [
+      "SILLS-4.16",
+      "AQ-8.37"
+    ],
+    "representative_source": "SILLS-4.16",
+    "index": 37,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SCHUR-EVEN-RECIPROCAL",
+    "name": "Schur D 偶指标倒数的两种展开",
+    "source_ids": [
+      "SILLS-4.23",
+      "AQ-REF-8.42"
+    ],
+    "representative_source": "SILLS-4.23",
+    "index": 38,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.2.26",
+    "name": "有限超几何项的相邻项递推",
+    "source_ids": [
+      "GR2-1.2.26"
+    ],
+    "representative_source": "GR2-1.2.26",
+    "index": 39,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.2.47",
+    "name": "q 数阶乘与有限乘积转换",
+    "source_ids": [
+      "GR2-1.2.47"
+    ],
+    "representative_source": "GR2-1.2.47",
+    "index": 40,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.2.55",
+    "name": "对称 q 数阶乘转换",
+    "source_ids": [
+      "GR2-1.2.55"
+    ],
+    "representative_source": "GR2-1.2.55",
+    "index": 41,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.3.25",
+    "name": "对称 q 指数的有限系数递推",
+    "source_ids": [
+      "GR2-1.3.25"
+    ],
+    "representative_source": "GR2-1.3.25",
+    "index": 42,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.9.10",
+    "name": "终止 q-Karlsson–Minton 求和",
+    "source_ids": [
+      "GR2-1.9.10"
+    ],
+    "representative_source": "GR2-1.9.10",
+    "index": 43,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.9.11",
+    "name": "终止 q-Karlsson–Minton 消去",
+    "source_ids": [
+      "GR2-1.9.11"
+    ],
+    "representative_source": "GR2-1.9.11",
+    "index": 44,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.9.12",
+    "name": "单位自变量的终止 q-Karlsson–Minton",
+    "source_ids": [
+      "GR2-1.9.12"
+    ],
+    "representative_source": "GR2-1.9.12",
+    "index": 45,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.9.9-finite",
+    "name": "边界长度的 q-Karlsson–Minton 求值",
+    "source_ids": [
+      "GR2-1.9.9-finite"
+    ],
+    "representative_source": "GR2-1.9.9-finite",
+    "index": 46,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex1ii",
+    "name": "独立负移位的有限乘积",
+    "source_ids": [
+      "GR2-1.Ex1ii"
+    ],
+    "representative_source": "GR2-1.Ex1ii",
+    "index": 47,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex3i",
+    "name": "乘积参数的两种有限 q 卷积",
+    "source_ids": [
+      "GR2-1.Ex3i"
+    ],
+    "representative_source": "GR2-1.Ex3i",
+    "index": 48,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex3ii",
+    "name": "有限 q 多项式定理",
+    "source_ids": [
+      "GR2-1.Ex3ii"
+    ],
+    "representative_source": "GR2-1.Ex3ii",
+    "index": 49,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex4ii",
+    "name": "任意阶终止基本超几何和反向求和",
+    "source_ids": [
+      "GR2-1.Ex4ii"
+    ],
+    "representative_source": "GR2-1.Ex4ii",
+    "index": 50,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex5",
+    "name": "有限乘积的终止展开",
+    "source_ids": [
+      "GR2-1.Ex5"
+    ],
+    "representative_source": "GR2-1.Ex5",
+    "index": 51,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex6i",
+    "name": "双步长终止 2φ1 求和",
+    "source_ids": [
+      "GR2-1.Ex6i"
+    ],
+    "representative_source": "GR2-1.Ex6i",
+    "index": 52,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex6iii",
+    "name": "终止 2φ0 求值",
+    "source_ids": [
+      "GR2-1.Ex6iii"
+    ],
+    "representative_source": "GR2-1.Ex6iii",
+    "index": 53,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex12iv",
+    "name": "高阶 q-Leibniz 公式",
+    "source_ids": [
+      "GR2-1.Ex12iv"
+    ],
+    "representative_source": "GR2-1.Ex12iv",
+    "index": 54,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex15i",
+    "name": "Jackson 终止 2φ1 到 3φ2 变换",
+    "source_ids": [
+      "GR2-1.Ex15i"
+    ],
+    "representative_source": "GR2-1.Ex15i",
+    "index": 55,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex17",
+    "name": "Carlitz 有限变换",
+    "source_ids": [
+      "GR2-1.Ex17"
+    ],
+    "representative_source": "GR2-1.Ex17",
+    "index": 56,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex29",
+    "name": "连续 q 超球多项式的两种终止表示",
+    "source_ids": [
+      "GR2-1.Ex29"
+    ],
+    "representative_source": "GR2-1.Ex29",
+    "index": 57,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex31-monomial",
+    "name": "q 差分算子的单项式作用",
+    "source_ids": [
+      "GR2-1.Ex31-monomial"
+    ],
+    "representative_source": "GR2-1.Ex31-monomial",
+    "index": 58,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex31-term",
+    "name": "有限超几何项的算子关系",
+    "source_ids": [
+      "GR2-1.Ex31-term"
+    ],
+    "representative_source": "GR2-1.Ex31-term",
+    "index": 59,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex33",
+    "name": "小 q-Jacobi 多项式的有限连接公式",
+    "source_ids": [
+      "GR2-1.Ex33"
+    ],
+    "representative_source": "GR2-1.Ex33",
+    "index": 60,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-1.Ex35",
+    "name": "非交换有限 q 二项式的双底数表示",
+    "source_ids": [
+      "GR2-1.Ex35"
+    ],
+    "representative_source": "GR2-1.Ex35",
+    "index": 61,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.2.2",
+    "name": "Bailey 的有限序列双和展开",
+    "source_ids": [
+      "GR2-2.2.2"
+    ],
+    "representative_source": "GR2-2.2.2",
+    "index": 62,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.2.4",
+    "name": "终止基本超几何级数的降阶展开",
+    "source_ids": [
+      "GR2-2.2.4"
+    ],
+    "representative_source": "GR2-2.2.4",
+    "index": 63,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.3.2",
+    "name": "终止 Bailey–Daum 的有限积求值",
+    "source_ids": [
+      "GR2-2.3.2"
+    ],
+    "representative_source": "GR2-2.3.2",
+    "index": 64,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.3.4",
+    "name": "终止 very-well-poised 4φ3 消去",
+    "source_ids": [
+      "GR2-2.3.4"
+    ],
+    "representative_source": "GR2-2.3.4",
+    "index": 65,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.7.5",
+    "name": "Rogers–Ramanujan 证明中的有限变换",
+    "source_ids": [
+      "GR2-2.7.5"
+    ],
+    "representative_source": "GR2-2.7.5",
+    "index": 66,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.8.2",
+    "name": "Bailey 有限支持序列展开",
+    "source_ids": [
+      "GR2-2.8.2"
+    ],
+    "representative_source": "GR2-2.8.2",
+    "index": 67,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.10.3",
+    "name": "两侧终止的 Bailey 8φ7 变换",
+    "source_ids": [
+      "GR2-2.10.3"
+    ],
+    "representative_source": "GR2-2.10.3",
+    "index": 68,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.10.8",
+    "name": "迭代 Bailey 终止 10φ9 变换",
+    "source_ids": [
+      "GR2-2.10.8"
+    ],
+    "representative_source": "GR2-2.10.8",
+    "index": 69,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex5",
+    "name": "不定 very-well-poised 有限和",
+    "source_ids": [
+      "GR2-2.Ex5"
+    ],
+    "representative_source": "GR2-2.Ex5",
+    "index": 70,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex6",
+    "name": "终止 4φ3 的奇偶求和",
+    "source_ids": [
+      "GR2-2.Ex6"
+    ],
+    "representative_source": "GR2-2.Ex6",
+    "index": 71,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex10",
+    "name": "q-Racah 多项式反射变换",
+    "source_ids": [
+      "GR2-2.Ex10"
+    ],
+    "representative_source": "GR2-2.Ex10",
+    "index": 72,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex11",
+    "name": "Askey–Wilson 参数交换与奇偶关系",
+    "source_ids": [
+      "GR2-2.Ex11"
+    ],
+    "representative_source": "GR2-2.Ex11",
+    "index": 73,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex12",
+    "name": "成对参数的终止 10φ9 求和",
+    "source_ids": [
+      "GR2-2.Ex12"
+    ],
+    "representative_source": "GR2-2.Ex12",
+    "index": 74,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex8",
+    "name": "Andrews 终止奇偶求和",
+    "source_ids": [
+      "GR2-2.Ex8"
+    ],
+    "representative_source": "GR2-2.Ex8",
+    "index": 75,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex14i",
+    "name": "Bailey 的终止 4φ3 求和",
+    "source_ids": [
+      "GR2-2.Ex14i"
+    ],
+    "representative_source": "GR2-2.Ex14i",
+    "index": 76,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex14ii",
+    "name": "近良配6φ5到12φ11变换",
+    "source_ids": [
+      "GR2-2.Ex14ii"
+    ],
+    "representative_source": "GR2-2.Ex14ii",
+    "index": 77,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex19",
+    "name": "平衡终止 10φ9 的参数重排",
+    "source_ids": [
+      "GR2-2.Ex19"
+    ],
+    "representative_source": "GR2-2.Ex19",
+    "index": 78,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex20",
+    "name": "终止 10φ9 的有限 4φ3 展开",
+    "source_ids": [
+      "GR2-2.Ex20"
+    ],
+    "representative_source": "GR2-2.Ex20",
+    "index": 79,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex27",
+    "name": "平衡参数对的终止级数展开",
+    "source_ids": [
+      "GR2-2.Ex27"
+    ],
+    "representative_source": "GR2-2.Ex27",
+    "index": 80,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex28",
+    "name": "良配终止级数的有限展开",
+    "source_ids": [
+      "GR2-2.Ex28"
+    ],
+    "representative_source": "GR2-2.Ex28",
+    "index": 81,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex29",
+    "name": "终止级数的 q-Jacobi 型连接展开",
+    "source_ids": [
+      "GR2-2.Ex29"
+    ],
+    "representative_source": "GR2-2.Ex29",
+    "index": 82,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex35i",
+    "name": "终止3φ2有限卷积",
+    "source_ids": [
+      "GR2-2.Ex35i"
+    ],
+    "representative_source": "GR2-2.Ex35i",
+    "index": 83,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex35ii",
+    "name": "Gasper 离散分式积分的有限展开（二）",
+    "source_ids": [
+      "GR2-2.Ex35ii"
+    ],
+    "representative_source": "GR2-2.Ex35ii",
+    "index": 84,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex35iii",
+    "name": "Gasper 离散分式积分的有限展开（三）",
+    "source_ids": [
+      "GR2-2.Ex35iii"
+    ],
+    "representative_source": "GR2-2.Ex35iii",
+    "index": 85,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex36i",
+    "name": "平衡终止4φ3有限卷积",
+    "source_ids": [
+      "GR2-2.Ex36i"
+    ],
+    "representative_source": "GR2-2.Ex36i",
+    "index": 86,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex36ii",
+    "name": "平衡终止 4φ3 的双级数展开",
+    "source_ids": [
+      "GR2-2.Ex36ii"
+    ],
+    "representative_source": "GR2-2.Ex36ii",
+    "index": 87,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-2.Ex36iii",
+    "name": "任意阶终止级数的 Gasper 展开",
+    "source_ids": [
+      "GR2-2.Ex36iii"
+    ],
+    "representative_source": "GR2-2.Ex36iii",
+    "index": 88,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.2.6",
+    "name": "终止 type-II 3φ2 变换",
+    "source_ids": [
+      "GR2-3.2.6"
+    ],
+    "representative_source": "GR2-3.2.6",
+    "index": 89,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.6.6",
+    "name": "双底数乘积的差分",
+    "source_ids": [
+      "GR2-3.6.6"
+    ],
+    "representative_source": "GR2-3.6.6",
+    "index": 90,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.6.10",
+    "name": "四参数双底数乘积差分",
+    "source_ids": [
+      "GR2-3.6.10"
+    ],
+    "representative_source": "GR2-3.6.10",
+    "index": 91,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.6.16",
+    "name": "终止双底数求和与消去",
+    "source_ids": [
+      "GR2-3.6.16"
+    ],
+    "representative_source": "GR2-3.6.16",
+    "index": 92,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.6.17",
+    "name": "Bressoud–Gasper 双底数正交核",
+    "source_ids": [
+      "GR2-3.6.17"
+    ],
+    "representative_source": "GR2-3.6.17",
+    "index": 93,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.6.18",
+    "name": "双底数有限三角矩阵反演",
+    "source_ids": [
+      "GR2-3.6.18"
+    ],
+    "representative_source": "GR2-3.6.18",
+    "index": 94,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.8.14",
+    "name": "有限双底数和到二次 10φ9",
+    "source_ids": [
+      "GR2-3.8.14"
+    ],
+    "representative_source": "GR2-3.8.14",
+    "index": 95,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.8.15",
+    "name": "长度两倍的有限双底数二次变换",
+    "source_ids": [
+      "GR2-3.8.15"
+    ],
+    "representative_source": "GR2-3.8.15",
+    "index": 96,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.9.5",
+    "name": "终止多底数级数的有限展开",
+    "source_ids": [
+      "GR2-3.9.5"
+    ],
+    "representative_source": "GR2-3.9.5",
+    "index": 97,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.10.3",
+    "name": "Nassrallah–Rahman 有限二次变换",
+    "source_ids": [
+      "GR2-3.10.3"
+    ],
+    "representative_source": "GR2-3.10.3",
+    "index": 98,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.10.5",
+    "name": "有限双底数求和（一）",
+    "source_ids": [
+      "GR2-3.10.5"
+    ],
+    "representative_source": "GR2-3.10.5",
+    "index": 99,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.10.6",
+    "name": "有限双底数求和（二）",
+    "source_ids": [
+      "GR2-3.10.6"
+    ],
+    "representative_source": "GR2-3.10.6",
+    "index": 100,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.10.7",
+    "name": "有限双底数求和（三）",
+    "source_ids": [
+      "GR2-3.10.7"
+    ],
+    "representative_source": "GR2-3.10.7",
+    "index": 101,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.10.8",
+    "name": "有限双底数求和（四）",
+    "source_ids": [
+      "GR2-3.10.8"
+    ],
+    "representative_source": "GR2-3.10.8",
+    "index": 102,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.10.11",
+    "name": "终止 4φ3 的二次变换",
+    "source_ids": [
+      "GR2-3.10.11"
+    ],
+    "representative_source": "GR2-3.10.11",
+    "index": 103,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.10.14",
+    "name": "第二类有限双底数二次变换",
+    "source_ids": [
+      "GR2-3.10.14"
+    ],
+    "representative_source": "GR2-3.10.14",
+    "index": 104,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.10.15",
+    "name": "有限双底数到 10φ9 的变换（一）",
+    "source_ids": [
+      "GR2-3.10.15"
+    ],
+    "representative_source": "GR2-3.10.15",
+    "index": 105,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.10.16",
+    "name": "有限双底数到 10φ9 的变换（二）",
+    "source_ids": [
+      "GR2-3.10.16"
+    ],
+    "representative_source": "GR2-3.10.16",
+    "index": 106,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex3",
+    "name": "终止 3φ2 的二次变换",
+    "source_ids": [
+      "GR2-3.Ex3"
+    ],
+    "representative_source": "GR2-3.Ex3",
+    "index": 107,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex4-odd",
+    "name": "有限 3φ1 的奇数消去",
+    "source_ids": [
+      "GR2-3.Ex4-odd"
+    ],
+    "representative_source": "GR2-3.Ex4-odd",
+    "index": 108,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex4-transform",
+    "name": "终止 4φ3(q²) 到 4φ2(q)",
+    "source_ids": [
+      "GR2-3.Ex4-transform"
+    ],
+    "representative_source": "GR2-3.Ex4-transform",
+    "index": 109,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex12",
+    "name": "倒序型有限双底数二次变换",
+    "source_ids": [
+      "GR2-3.Ex12"
+    ],
+    "representative_source": "GR2-3.Ex12",
+    "index": 110,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex13i",
+    "name": "有限双底数到 10φ9 的变换（三）",
+    "source_ids": [
+      "GR2-3.Ex13i"
+    ],
+    "representative_source": "GR2-3.Ex13i",
+    "index": 111,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex13ii",
+    "name": "有限双底数到 10φ9 的变换（四）",
+    "source_ids": [
+      "GR2-3.Ex13ii"
+    ],
+    "representative_source": "GR2-3.Ex13ii",
+    "index": 112,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex21-mixed",
+    "name": "双底数与普通超几何的混合有限变换",
+    "source_ids": [
+      "GR2-3.Ex21-mixed"
+    ],
+    "representative_source": "GR2-3.Ex21-mixed",
+    "index": 113,
+    "primary_family": "G",
+    "legacy_primary_family": "B"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex21-quad",
+    "name": "四底数有限变换",
+    "source_ids": [
+      "GR2-3.Ex21-quad"
+    ],
+    "representative_source": "GR2-3.Ex21-quad",
+    "index": 114,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex23",
+    "name": "双底数 q-Lagrange 的有限系数反演",
+    "source_ids": [
+      "GR2-3.Ex23"
+    ],
+    "representative_source": "GR2-3.Ex23",
+    "index": 115,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex31i",
+    "name": "有限三次变换（一）",
+    "source_ids": [
+      "GR2-3.Ex31i"
+    ],
+    "representative_source": "GR2-3.Ex31i",
+    "index": 116,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex31ii",
+    "name": "有限三次变换（二）",
+    "source_ids": [
+      "GR2-3.Ex31ii"
+    ],
+    "representative_source": "GR2-3.Ex31ii",
+    "index": 117,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-3.Ex34",
+    "name": "二次底数的终止 4φ3 求和",
+    "source_ids": [
+      "GR2-3.Ex34"
+    ],
+    "representative_source": "GR2-3.Ex34",
+    "index": 118,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-5.Ex11",
+    "name": "双边终止 8ψ8 到 4ψ4",
+    "source_ids": [
+      "GR2-5.Ex11"
+    ],
+    "representative_source": "GR2-5.Ex11",
+    "index": 119,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-5.Ex18iii",
+    "name": "Bailey 有限双边 5ψ5 求和",
+    "source_ids": [
+      "GR2-5.Ex18iii"
+    ],
+    "representative_source": "GR2-5.Ex18iii",
+    "index": 120,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-5.Ex18iv",
+    "name": "Bailey 非对称长度的双边 5ψ5 求和",
+    "source_ids": [
+      "GR2-5.Ex18iv"
+    ],
+    "representative_source": "GR2-5.Ex18iv",
+    "index": 121,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-5.Ex19i",
+    "name": "Gaussian 立方的对称有限和",
+    "source_ids": [
+      "GR2-5.Ex19i"
+    ],
+    "representative_source": "GR2-5.Ex19i",
+    "index": 122,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-5.Ex19ii",
+    "name": "Gaussian 立方的奇数上指标有限和",
+    "source_ids": [
+      "GR2-5.Ex19ii"
+    ],
+    "representative_source": "GR2-5.Ex19ii",
+    "index": 123,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-6.6.10",
+    "name": "终止 8φ7 与有限部分和的变换",
+    "source_ids": [
+      "GR2-6.6.10"
+    ],
+    "representative_source": "GR2-6.6.10",
+    "index": 124,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-6.Ex14",
+    "name": "Askey 单变量有限常数项恒等式",
+    "source_ids": [
+      "GR2-6.Ex14"
+    ],
+    "representative_source": "GR2-6.Ex14",
+    "index": 125,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.2.1",
+    "name": "q-Racah 三项递推",
+    "source_ids": [
+      "GR2-7.2.1"
+    ],
+    "representative_source": "GR2-7.2.1",
+    "index": 126,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.2.12",
+    "name": "q-Racah 一阶差分",
+    "source_ids": [
+      "GR2-7.2.12"
+    ],
+    "representative_source": "GR2-7.2.12",
+    "index": 127,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.2.18",
+    "name": "q-Racah 有限正交及对偶正交",
+    "source_ids": [
+      "GR2-7.2.18"
+    ],
+    "representative_source": "GR2-7.2.18",
+    "index": 128,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.2.22",
+    "name": "q-Hahn 有限正交",
+    "source_ids": [
+      "GR2-7.2.22"
+    ],
+    "representative_source": "GR2-7.2.22",
+    "index": 129,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.2.24",
+    "name": "对偶 q-Hahn 有限正交",
+    "source_ids": [
+      "GR2-7.2.24"
+    ],
+    "representative_source": "GR2-7.2.24",
+    "index": 130,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.3.6",
+    "name": "小 q-Jacobi 三项递推",
+    "source_ids": [
+      "GR2-7.3.6"
+    ],
+    "representative_source": "GR2-7.3.6",
+    "index": 131,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.3.17",
+    "name": "双重有限和的正交消去",
+    "source_ids": [
+      "GR2-7.3.17"
+    ],
+    "representative_source": "GR2-7.3.17",
+    "index": 132,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.4.14",
+    "name": "连续 q-超球多项式的终止 4φ3 表示",
+    "source_ids": [
+      "GR2-7.4.14"
+    ],
+    "representative_source": "GR2-7.4.14",
+    "index": 133,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.5.3",
+    "name": "Askey–Wilson 三项递推",
+    "source_ids": [
+      "GR2-7.5.3"
+    ],
+    "representative_source": "GR2-7.5.3",
+    "index": 134,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.5.20",
+    "name": "Askey–Wilson 正交证明的有限消去式",
+    "source_ids": [
+      "GR2-7.5.20"
+    ],
+    "representative_source": "GR2-7.5.20",
+    "index": 135,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.5.35",
+    "name": "连续 q-超球偶数次数的二次变换",
+    "source_ids": [
+      "GR2-7.5.35"
+    ],
+    "representative_source": "GR2-7.5.35",
+    "index": 136,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.5.36",
+    "name": "连续 q-超球奇数次数的二次变换",
+    "source_ids": [
+      "GR2-7.5.36"
+    ],
+    "representative_source": "GR2-7.5.36",
+    "index": 137,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.6.2",
+    "name": "Askey–Wilson 有限连接公式",
+    "source_ids": [
+      "GR2-7.6.2"
+    ],
+    "representative_source": "GR2-7.6.2",
+    "index": 138,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.6.8",
+    "name": "Askey–Wilson 单参数连接系数求值",
+    "source_ids": [
+      "GR2-7.6.8"
+    ],
+    "representative_source": "GR2-7.6.8",
+    "index": 139,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.6.14",
+    "name": "Rogers 连续 q-超球连接公式",
+    "source_ids": [
+      "GR2-7.6.14"
+    ],
+    "representative_source": "GR2-7.6.14",
+    "index": 140,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.7.6",
+    "name": "Askey–Wilson 差分算子作用于有限积",
+    "source_ids": [
+      "GR2-7.7.6"
+    ],
+    "representative_source": "GR2-7.7.6",
+    "index": 141,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.7.10",
+    "name": "Askey–Wilson 有限差分方程",
+    "source_ids": [
+      "GR2-7.7.10"
+    ],
+    "representative_source": "GR2-7.7.10",
+    "index": 142,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.7.7",
+    "name": "Askey–Wilson 多项式降阶差分",
+    "source_ids": [
+      "GR2-7.7.7"
+    ],
+    "representative_source": "GR2-7.7.7",
+    "index": 143,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex5",
+    "name": "Askey–Wilson 终止平衡 4φ3 连续关系",
+    "source_ids": [
+      "GR2-7.Ex5"
+    ],
+    "representative_source": "GR2-7.Ex5",
+    "index": 144,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex8i",
+    "name": "q-Krawtchouk 有限正交（一）",
+    "source_ids": [
+      "GR2-7.Ex8i"
+    ],
+    "representative_source": "GR2-7.Ex8i",
+    "index": 145,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex8ii",
+    "name": "q-Krawtchouk 有限正交（二）",
+    "source_ids": [
+      "GR2-7.Ex8ii"
+    ],
+    "representative_source": "GR2-7.Ex8ii",
+    "index": 146,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex10",
+    "name": "大 q-Jacobi 三项递推",
+    "source_ids": [
+      "GR2-7.Ex10"
+    ],
+    "representative_source": "GR2-7.Ex10",
+    "index": 147,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex11",
+    "name": "仿射 q-Krawtchouk 有限正交",
+    "source_ids": [
+      "GR2-7.Ex11"
+    ],
+    "representative_source": "GR2-7.Ex11",
+    "index": 148,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex14",
+    "name": "连续 q-超球的 Chebyshev 边界",
+    "source_ids": [
+      "GR2-7.Ex14"
+    ],
+    "representative_source": "GR2-7.Ex14",
+    "index": 149,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex17",
+    "name": "连续 q-超球在零点的奇偶求值",
+    "source_ids": [
+      "GR2-7.Ex17"
+    ],
+    "representative_source": "GR2-7.Ex17",
+    "index": 150,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex19",
+    "name": "连续 q-超球的次数和参数递推",
+    "source_ids": [
+      "GR2-7.Ex19"
+    ],
+    "representative_source": "GR2-7.Ex19",
+    "index": 151,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex27",
+    "name": "Askey–Wilson 的四个三角多项式特例",
+    "source_ids": [
+      "GR2-7.Ex27"
+    ],
+    "representative_source": "GR2-7.Ex27",
+    "index": 152,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex32",
+    "name": "两种连续 q-Jacobi 的反射关系",
+    "source_ids": [
+      "GR2-7.Ex32"
+    ],
+    "representative_source": "GR2-7.Ex32",
+    "index": 153,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex37-finite",
+    "name": "加权有限多项式的 q 差分关系",
+    "source_ids": [
+      "GR2-7.Ex37-finite"
+    ],
+    "representative_source": "GR2-7.Ex37-finite",
+    "index": 154,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex38",
+    "name": "离散 q-Hermite 三项递推",
+    "source_ids": [
+      "GR2-7.Ex38"
+    ],
+    "representative_source": "GR2-7.Ex38",
+    "index": 155,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex40",
+    "name": "Rogers–Szegő 的有限 Turán 恒等式",
+    "source_ids": [
+      "GR2-7.Ex40"
+    ],
+    "representative_source": "GR2-7.Ex40",
+    "index": 156,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-7.Ex41",
+    "name": "小 q-Jacobi 的有限加法公式",
+    "source_ids": [
+      "GR2-7.Ex41"
+    ],
+    "representative_source": "GR2-7.Ex41",
+    "index": 157,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.1.2",
+    "name": "成对有限积的线性化",
+    "source_ids": [
+      "GR2-8.1.2"
+    ],
+    "representative_source": "GR2-8.1.2",
+    "index": 158,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.1.4",
+    "name": "任意序列的有限乘积展开",
+    "source_ids": [
+      "GR2-8.1.4"
+    ],
+    "representative_source": "GR2-8.1.4",
+    "index": 159,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.2.5",
+    "name": "两个平衡终止 4φ3 的一般乘积展开",
+    "source_ids": [
+      "GR2-8.2.5"
+    ],
+    "representative_source": "GR2-8.2.5",
+    "index": 160,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.2.6",
+    "name": "Bailey 型终止 4φ3 乘积公式",
+    "source_ids": [
+      "GR2-8.2.6"
+    ],
+    "representative_source": "GR2-8.2.6",
+    "index": 161,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.2.12",
+    "name": "Bateman 型终止乘积公式",
+    "source_ids": [
+      "GR2-8.2.12"
+    ],
+    "representative_source": "GR2-8.2.12",
+    "index": 162,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.3.3",
+    "name": "q-Hahn 多项式的 Watson 型乘积",
+    "source_ids": [
+      "GR2-8.3.3"
+    ],
+    "representative_source": "GR2-8.3.3",
+    "index": 163,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.4.7",
+    "name": "连续 q-超球多项式的有限双和乘积",
+    "source_ids": [
+      "GR2-8.4.7"
+    ],
+    "representative_source": "GR2-8.4.7",
+    "index": 164,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.5.1",
+    "name": "Rogers 连续 q-超球线性化公式",
+    "source_ids": [
+      "GR2-8.5.1"
+    ],
+    "representative_source": "GR2-8.5.1",
+    "index": 165,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.7.4",
+    "name": "q-Racah乘积双重展开修正式",
+    "source_ids": [
+      "GR2-8.7.4"
+    ],
+    "representative_source": "GR2-8.7.4",
+    "index": 166,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.7.6",
+    "name": "有限 q-Racah 离散核展开",
+    "source_ids": [
+      "GR2-8.7.6"
+    ],
+    "representative_source": "GR2-8.7.6",
+    "index": 167,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.7.9-finite",
+    "name": "终止良配 4φ3 的 2φ1 变换",
+    "source_ids": [
+      "GR2-8.7.9-finite"
+    ],
+    "representative_source": "GR2-8.7.9-finite",
+    "index": 168,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.7.13",
+    "name": "有限 q-Racah Poisson 核展开",
+    "source_ids": [
+      "GR2-8.7.13"
+    ],
+    "representative_source": "GR2-8.7.13",
+    "index": 169,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.8.15",
+    "name": "终止 q-Clausen 的多项式平方形式",
+    "source_ids": [
+      "GR2-8.8.15"
+    ],
+    "representative_source": "GR2-8.8.15",
+    "index": 170,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.9.1",
+    "name": "终止 5φ4 的有限乘积展开",
+    "source_ids": [
+      "GR2-8.9.1"
+    ],
+    "representative_source": "GR2-8.9.1",
+    "index": 171,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.9.2",
+    "name": "终止 5φ4 的有限平方和",
+    "source_ids": [
+      "GR2-8.9.2"
+    ],
+    "representative_source": "GR2-8.9.2",
+    "index": 172,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.9.5",
+    "name": "终止 6φ5 的奇偶平方和",
+    "source_ids": [
+      "GR2-8.9.5"
+    ],
+    "representative_source": "GR2-8.9.5",
+    "index": 173,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.9.8",
+    "name": "双连续 q-超球平方展开（修订）",
+    "source_ids": [
+      "GR2-8.9.8"
+    ],
+    "representative_source": "GR2-8.9.8",
+    "index": 174,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.9.9",
+    "name": "一般终止 6φ5 的有限平方展开",
+    "source_ids": [
+      "GR2-8.9.9"
+    ],
+    "representative_source": "GR2-8.9.9",
+    "index": 175,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex1i",
+    "name": "小 q-Jacobi 乘积的有限双和（一）",
+    "source_ids": [
+      "GR2-8.Ex1i"
+    ],
+    "representative_source": "GR2-8.Ex1i",
+    "index": 176,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex1ii",
+    "name": "小 q-Jacobi 乘积的有限三重和",
+    "source_ids": [
+      "GR2-8.Ex1ii"
+    ],
+    "representative_source": "GR2-8.Ex1ii",
+    "index": 177,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex2",
+    "name": "大 q-Jacobi 的有限乘积公式",
+    "source_ids": [
+      "GR2-8.Ex2"
+    ],
+    "representative_source": "GR2-8.Ex2",
+    "index": 178,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex4i",
+    "name": "q-Hahn 乘积的另一有限双和",
+    "source_ids": [
+      "GR2-8.Ex4i"
+    ],
+    "representative_source": "GR2-8.Ex4i",
+    "index": 179,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex4ii",
+    "name": "q-Hahn 乘积的有限三重和",
+    "source_ids": [
+      "GR2-8.Ex4ii"
+    ],
+    "representative_source": "GR2-8.Ex4ii",
+    "index": 180,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex7i",
+    "name": "q-Hahn 有限离散双线性核",
+    "source_ids": [
+      "GR2-8.Ex7i"
+    ],
+    "representative_source": "GR2-8.Ex7i",
+    "index": 181,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex8",
+    "name": "任意有限权序列的 q-Racah 双线性变换",
+    "source_ids": [
+      "GR2-8.Ex8"
+    ],
+    "representative_source": "GR2-8.Ex8",
+    "index": 182,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex11",
+    "name": "Askey–Wilson 的有限加法公式",
+    "source_ids": [
+      "GR2-8.Ex11"
+    ],
+    "representative_source": "GR2-8.Ex11",
+    "index": 183,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex12",
+    "name": "Rogers 线性化的逆公式",
+    "source_ids": [
+      "GR2-8.Ex12"
+    ],
+    "representative_source": "GR2-8.Ex12",
+    "index": 184,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex9",
+    "name": "q-Racah 有限双线性求值",
+    "source_ids": [
+      "GR2-8.Ex9"
+    ],
+    "representative_source": "GR2-8.Ex9",
+    "index": 185,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex15",
+    "name": "终止 4φ3 到 12W11 的变换",
+    "source_ids": [
+      "GR2-8.Ex15"
+    ],
+    "representative_source": "GR2-8.Ex15",
+    "index": 186,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex16",
+    "name": "终止 10W9 的 4φ3 表示",
+    "source_ids": [
+      "GR2-8.Ex16"
+    ],
+    "representative_source": "GR2-8.Ex16",
+    "index": 187,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex17i",
+    "name": "二次底数 q-Clausen 平方公式",
+    "source_ids": [
+      "GR2-8.Ex17i"
+    ],
+    "representative_source": "GR2-8.Ex17i",
+    "index": 188,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex17ii",
+    "name": "q² 底数的 Clausen 有限平方公式",
+    "source_ids": [
+      "GR2-8.Ex17ii"
+    ],
+    "representative_source": "GR2-8.Ex17ii",
+    "index": 189,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex20",
+    "name": "特殊 Askey–Wilson 的有限线性化",
+    "source_ids": [
+      "GR2-8.Ex20"
+    ],
+    "representative_source": "GR2-8.Ex20",
+    "index": 190,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex21",
+    "name": "Askey–Wilson 有限卷积恒等式",
+    "source_ids": [
+      "GR2-8.Ex21"
+    ],
+    "representative_source": "GR2-8.Ex21",
+    "index": 191,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex24",
+    "name": "连续 q-Jacobi 特例的有限线性化",
+    "source_ids": [
+      "GR2-8.Ex24"
+    ],
+    "representative_source": "GR2-8.Ex24",
+    "index": 192,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex26",
+    "name": "相伴 Askey–Wilson 的有限 10W9 展开",
+    "source_ids": [
+      "GR2-8.Ex26"
+    ],
+    "representative_source": "GR2-8.Ex26",
+    "index": 193,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex27",
+    "name": "相伴 Askey–Wilson 的双重有限和",
+    "source_ids": [
+      "GR2-8.Ex27"
+    ],
+    "representative_source": "GR2-8.Ex27",
+    "index": 194,
+    "primary_family": "G",
+    "legacy_primary_family": "B"
+  },
+  {
+    "id": "FQI-SRC-GR2-8.Ex28",
+    "name": "相伴连续 q-超球线性化公式",
+    "source_ids": [
+      "GR2-8.Ex28"
+    ],
+    "representative_source": "GR2-8.Ex28",
+    "index": 195,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-9.2.2",
+    "name": "小 q-Jacobi 的另一终止 2φ1 表示",
+    "source_ids": [
+      "GR2-9.2.2"
+    ],
+    "representative_source": "GR2-9.2.2",
+    "index": 196,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-9.5.3-finite",
+    "name": "有限支撑权序列的 Askey–Wilson 双线性变换",
+    "source_ids": [
+      "GR2-9.5.3-finite"
+    ],
+    "representative_source": "GR2-9.5.3-finite",
+    "index": 197,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-GR2-9.Ex4i",
+    "name": "q-Hahn 有限生成函数（一，原印）",
+    "source_ids": [
+      "GR2-9.Ex4i"
+    ],
+    "representative_source": "GR2-9.Ex4i",
+    "index": 198,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-9.Ex4ii",
+    "name": "q-Hahn 有限生成函数（二）",
+    "source_ids": [
+      "GR2-9.Ex4ii"
+    ],
+    "representative_source": "GR2-9.Ex4ii",
+    "index": 199,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-9.Ex5i",
+    "name": "对偶 q-Hahn 有限生成函数（一，定义核正）",
+    "source_ids": [
+      "GR2-9.Ex5i"
+    ],
+    "representative_source": "GR2-9.Ex5i",
+    "index": 200,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-9.Ex5ii",
+    "name": "对偶 q-Hahn 有限生成函数（二，定义核正）",
+    "source_ids": [
+      "GR2-9.Ex5ii"
+    ],
+    "representative_source": "GR2-9.Ex5ii",
+    "index": 201,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-9.Ex7",
+    "name": "相伴连续 q-超球的有限卷积",
+    "source_ids": [
+      "GR2-9.Ex7"
+    ],
+    "representative_source": "GR2-9.Ex7",
+    "index": 202,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-9.Ex10ii",
+    "name": "连续 q-Hermite 的底数平方变换",
+    "source_ids": [
+      "GR2-9.Ex10ii"
+    ],
+    "representative_source": "GR2-9.Ex10ii",
+    "index": 203,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-9.Ex17i",
+    "name": "终止 Askey–Wilson 双线性展开（修订）",
+    "source_ids": [
+      "GR2-9.Ex17i"
+    ],
+    "representative_source": "GR2-9.Ex17i",
+    "index": 204,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-9.Ex17ii",
+    "name": "连续 q-Jacobi 的有限连接公式（归一化核正）",
+    "source_ids": [
+      "GR2-9.Ex17ii"
+    ],
+    "representative_source": "GR2-9.Ex17ii",
+    "index": 205,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-10.Ex18",
+    "name": "终止 q-Kampé de Fériet 双重求和",
+    "source_ids": [
+      "GR2-10.Ex18"
+    ],
+    "representative_source": "GR2-10.Ex18",
+    "index": 206,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.6.5-p0",
+    "name": "Macdonald 有限乘积望远镜求和",
+    "source_ids": [
+      "GR2-11.6.5-p0"
+    ],
+    "representative_source": "GR2-11.6.5-p0",
+    "index": 207,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.6.6-p0",
+    "name": "多底数有限双边求和",
+    "source_ids": [
+      "GR2-11.6.6-p0"
+    ],
+    "representative_source": "GR2-11.6.6-p0",
+    "index": 208,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.6.21-p0",
+    "name": "有限支撑的多底数序列展开（修订）",
+    "source_ids": [
+      "GR2-11.6.21-p0"
+    ],
+    "representative_source": "GR2-11.6.21-p0",
+    "index": 209,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.7.1",
+    "name": "Milne 的多变量有限 q 求和",
+    "source_ids": [
+      "GR2-11.7.1"
+    ],
+    "representative_source": "GR2-11.7.1",
+    "index": 210,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.7.8-p0",
+    "name": "Milne 的 A 型多变量 Jackson 求和",
+    "source_ids": [
+      "GR2-11.7.8-p0"
+    ],
+    "representative_source": "GR2-11.7.8-p0",
+    "index": 211,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.Ex21-p0",
+    "name": "有限二次求和的两个基本超几何分支",
+    "source_ids": [
+      "GR2-11.Ex21-p0"
+    ],
+    "representative_source": "GR2-11.Ex21-p0",
+    "index": 212,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.Ex22-p0",
+    "name": "有限三次求和的基本超几何分支",
+    "source_ids": [
+      "GR2-11.Ex22-p0"
+    ],
+    "representative_source": "GR2-11.Ex22-p0",
+    "index": 213,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.Ex23ii",
+    "name": "12W11 到底数 q² 的 10W9 变换",
+    "source_ids": [
+      "GR2-11.Ex23ii"
+    ],
+    "representative_source": "GR2-11.Ex23ii",
+    "index": 214,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.Ex24ii",
+    "name": "底数 q² 的 12W11 到 10W9 变换",
+    "source_ids": [
+      "GR2-11.Ex24ii"
+    ],
+    "representative_source": "GR2-11.Ex24ii",
+    "index": 215,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.Ex38-p0",
+    "name": "D 型多变量有限 Jackson 求和",
+    "source_ids": [
+      "GR2-11.Ex38-p0"
+    ],
+    "representative_source": "GR2-11.Ex38-p0",
+    "index": 216,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.Ex39-p0",
+    "name": "D 型 Jackson 的有限单纯形变式（已注明修订）",
+    "source_ids": [
+      "GR2-11.Ex39-p0"
+    ],
+    "representative_source": "GR2-11.Ex39-p0",
+    "index": 217,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-11.Ex40-p0",
+    "name": "多变量终止 Bailey 变换",
+    "source_ids": [
+      "GR2-11.Ex40-p0"
+    ],
+    "representative_source": "GR2-11.Ex40-p0",
+    "index": 218,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-03",
+    "name": "q-Pochhammer 倒底数",
+    "source_ids": [
+      "GR2-I-03"
+    ],
+    "representative_source": "GR2-I-03",
+    "index": 219,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-07",
+    "name": "有限乘积反向排列",
+    "source_ids": [
+      "GR2-I-07"
+    ],
+    "representative_source": "GR2-I-07",
+    "index": 220,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-08",
+    "name": "负移位、非负长度的乘积",
+    "source_ids": [
+      "GR2-I-08"
+    ],
+    "representative_source": "GR2-I-08",
+    "index": 221,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-09",
+    "name": "负移位乘积之比",
+    "source_ids": [
+      "GR2-I-09"
+    ],
+    "representative_source": "GR2-I-09",
+    "index": 222,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-10",
+    "name": "长度 n−k 的反向改写",
+    "source_ids": [
+      "GR2-I-10"
+    ],
+    "representative_source": "GR2-I-10",
+    "index": 223,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-11",
+    "name": "互补长度乘积之比",
+    "source_ids": [
+      "GR2-I-11"
+    ],
+    "representative_source": "GR2-I-11",
+    "index": 224,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-12",
+    "name": "终止参数 q^{-n} 的乘积",
+    "source_ids": [
+      "GR2-I-12"
+    ],
+    "representative_source": "GR2-I-12",
+    "index": 225,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-13",
+    "name": "独立长度的负移位",
+    "source_ids": [
+      "GR2-I-13"
+    ],
+    "representative_source": "GR2-I-13",
+    "index": 226,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-14",
+    "name": "互补长度的负移位",
+    "source_ids": [
+      "GR2-I-14"
+    ],
+    "representative_source": "GR2-I-14",
+    "index": 227,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-15",
+    "name": "双倍负移位",
+    "source_ids": [
+      "GR2-I-15"
+    ],
+    "representative_source": "GR2-I-15",
+    "index": 228,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-16",
+    "name": "整数倍负移位",
+    "source_ids": [
+      "GR2-I-16"
+    ],
+    "representative_source": "GR2-I-16",
+    "index": 229,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-17",
+    "name": "有限乘积拼接",
+    "source_ids": [
+      "GR2-I-17"
+    ],
+    "representative_source": "GR2-I-17",
+    "index": 230,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-18",
+    "name": "交换两个移位长度",
+    "source_ids": [
+      "GR2-I-18"
+    ],
+    "representative_source": "GR2-I-18",
+    "index": 231,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-19",
+    "name": "整数倍长度的尾段",
+    "source_ids": [
+      "GR2-I-19"
+    ],
+    "representative_source": "GR2-I-19",
+    "index": 232,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-20",
+    "name": "从有限乘积截出尾段",
+    "source_ids": [
+      "GR2-I-20"
+    ],
+    "representative_source": "GR2-I-20",
+    "index": 233,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-21",
+    "name": "双倍移位与互补长度",
+    "source_ids": [
+      "GR2-I-21"
+    ],
+    "representative_source": "GR2-I-21",
+    "index": 234,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-22",
+    "name": "整数倍移位与互补长度",
+    "source_ids": [
+      "GR2-I-22"
+    ],
+    "representative_source": "GR2-I-22",
+    "index": 235,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-25",
+    "name": "按偶数和奇数位置拆分",
+    "source_ids": [
+      "GR2-I-25"
+    ],
+    "representative_source": "GR2-I-25",
+    "index": 236,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-26",
+    "name": "按模 3 拆分",
+    "source_ids": [
+      "GR2-I-26"
+    ],
+    "representative_source": "GR2-I-26",
+    "index": 237,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-28",
+    "name": "正负参数合并",
+    "source_ids": [
+      "GR2-I-28"
+    ],
+    "representative_source": "GR2-I-28",
+    "index": 238,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-33",
+    "name": "单位根参数的有限伸缩比",
+    "source_ids": [
+      "GR2-I-33"
+    ],
+    "representative_source": "GR2-I-33",
+    "index": 239,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-42",
+    "name": "Gaussian 的终止参数表示",
+    "source_ids": [
+      "GR2-I-42"
+    ],
+    "representative_source": "GR2-I-42",
+    "index": 240,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-43",
+    "name": "移位上指标的有限乘积",
+    "source_ids": [
+      "GR2-I-43"
+    ],
+    "representative_source": "GR2-I-43",
+    "index": 241,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-44",
+    "name": "Gaussian 负上指标转换",
+    "source_ids": [
+      "GR2-I-44"
+    ],
+    "representative_source": "GR2-I-44",
+    "index": 242,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-45",
+    "name": "一般上指标的两种 q-Pascal 递推",
+    "source_ids": [
+      "GR2-I-45"
+    ],
+    "representative_source": "GR2-I-45",
+    "index": 243,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-46",
+    "name": "移位上指标的互补下指标",
+    "source_ids": [
+      "GR2-I-46"
+    ],
+    "representative_source": "GR2-I-46",
+    "index": 244,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-I-47",
+    "name": "一般上指标的 Gaussian 倒底数",
+    "source_ids": [
+      "GR2-I-47"
+    ],
+    "representative_source": "GR2-I-47",
+    "index": 245,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-GR2-II-14",
+    "name": "终止 q-Dixon 的 4φ3 形式",
+    "source_ids": [
+      "GR2-II-14"
+    ],
+    "representative_source": "GR2-II-14",
+    "index": 246,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-II-15",
+    "name": "偶数终止长度的 q-Dixon 3φ2 求和",
+    "source_ids": [
+      "GR2-II-15"
+    ],
+    "representative_source": "GR2-II-15",
+    "index": 247,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-II-17",
+    "name": "终止 q-Watson 求和及奇偶消失",
+    "source_ids": [
+      "GR2-II-17"
+    ],
+    "representative_source": "GR2-II-17",
+    "index": 248,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-II-19",
+    "name": "终止 q-Whipple 的有限乘积形式",
+    "source_ids": [
+      "GR2-II-19"
+    ],
+    "representative_source": "GR2-II-19",
+    "index": 249,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-II-22",
+    "name": "Jackson 终止平衡 8φ7 求和",
+    "source_ids": [
+      "GR2-II-22"
+    ],
+    "representative_source": "GR2-II-22",
+    "index": 250,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-II-34",
+    "name": "Gosper 不定双底数有限求和",
+    "source_ids": [
+      "GR2-II-34"
+    ],
+    "representative_source": "GR2-II-34",
+    "index": 251,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-II-35",
+    "name": "Gosper 双底数求和扩展",
+    "source_ids": [
+      "GR2-II-35"
+    ],
+    "representative_source": "GR2-II-35",
+    "index": 252,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-II-36",
+    "name": "有限双边双底数求和",
+    "source_ids": [
+      "GR2-II-36"
+    ],
+    "representative_source": "GR2-II-36",
+    "index": 253,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-II-37",
+    "name": "双底数有限差分消去",
+    "source_ids": [
+      "GR2-II-37"
+    ],
+    "representative_source": "GR2-II-37",
+    "index": 254,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-06",
+    "name": "终止 2φ1 到 3φ2 变换（一）",
+    "source_ids": [
+      "GR2-III-06"
+    ],
+    "representative_source": "GR2-III-06",
+    "index": 255,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-07",
+    "name": "终止 2φ1 到 3φ2 变换（二）",
+    "source_ids": [
+      "GR2-III-07"
+    ],
+    "representative_source": "GR2-III-07",
+    "index": 256,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-08",
+    "name": "终止 2φ1 到 3φ1 变换（第二版原印）",
+    "source_ids": [
+      "GR2-III-08"
+    ],
+    "representative_source": "GR2-III-08",
+    "index": 257,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-11",
+    "name": "终止 3φ2 变换（一）",
+    "source_ids": [
+      "GR2-III-11"
+    ],
+    "representative_source": "GR2-III-11",
+    "index": 258,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-12",
+    "name": "第二版确认的终止 3φ2 变换",
+    "source_ids": [
+      "GR2-III-12"
+    ],
+    "representative_source": "GR2-III-12",
+    "index": 259,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-13",
+    "name": "终止 3φ2 变换（三）",
+    "source_ids": [
+      "GR2-III-13"
+    ],
+    "representative_source": "GR2-III-13",
+    "index": 260,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-14",
+    "name": "Sears–Carlitz 终止变换",
+    "source_ids": [
+      "GR2-III-14"
+    ],
+    "representative_source": "GR2-III-14",
+    "index": 261,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-15",
+    "name": "Sears 平衡终止 4φ3 变换",
+    "source_ids": [
+      "GR2-III-15"
+    ],
+    "representative_source": "GR2-III-15",
+    "index": 262,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-19",
+    "name": "终止平衡 4φ3 的 very-well-poised 反写",
+    "source_ids": [
+      "GR2-III-19"
+    ],
+    "representative_source": "GR2-III-19",
+    "index": 263,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-21",
+    "name": "Singh 有限二次变换",
+    "source_ids": [
+      "GR2-III-21"
+    ],
+    "representative_source": "GR2-III-21",
+    "index": 264,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-22",
+    "name": "终止 q-Clausen 平方公式",
+    "source_ids": [
+      "GR2-III-22"
+    ],
+    "representative_source": "GR2-III-22",
+    "index": 265,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-25",
+    "name": "近良配 5φ4 到 12φ11 变换",
+    "source_ids": [
+      "GR2-III-25"
+    ],
+    "representative_source": "GR2-III-25",
+    "index": 266,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-26",
+    "name": "终止近良配 5φ4 的半长度变换",
+    "source_ids": [
+      "GR2-III-26"
+    ],
+    "representative_source": "GR2-III-26",
+    "index": 267,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-27",
+    "name": "近良配 7φ6 到 12φ11 变换",
+    "source_ids": [
+      "GR2-III-27"
+    ],
+    "representative_source": "GR2-III-27",
+    "index": 268,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-GR2-III-28",
+    "name": "Bailey 终止 10φ9 变换",
+    "source_ids": [
+      "GR2-III-28"
+    ],
+    "representative_source": "GR2-III-28",
+    "index": 269,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AP-3.2.7",
+    "name": "受限分拆递推",
+    "source_ids": [
+      "AP-3.2.7"
+    ],
+    "representative_source": "AP-3.2.7",
+    "index": 270,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-3.3.1",
+    "name": "Gaussian 端点",
+    "source_ids": [
+      "AP-3.3.1"
+    ],
+    "representative_source": "AP-3.3.1",
+    "index": 271,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-AP-3.3.9",
+    "name": "Gaussian 加权 hockey-stick 求和",
+    "source_ids": [
+      "AP-3.3.9"
+    ],
+    "representative_source": "AP-3.3.9",
+    "index": 272,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AP-3.3.11",
+    "name": "三 Gaussian 的 q-Saalschütz 求和",
+    "source_ids": [
+      "AP-3.3.11"
+    ],
+    "representative_source": "AP-3.3.11",
+    "index": 273,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AP-3.3.14",
+    "name": "Saalschütz 的系数卷积形式",
+    "source_ids": [
+      "AP-3.3.14"
+    ],
+    "representative_source": "AP-3.3.14",
+    "index": 274,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AP-3.4.2",
+    "name": "逆序数的 q-多项系数生成式",
+    "source_ids": [
+      "AP-3.4.2"
+    ],
+    "representative_source": "AP-3.4.2",
+    "index": 275,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-3.4.4",
+    "name": "major index（原书 greater index）的 q-多项系数生成式",
+    "source_ids": [
+      "AP-3.4.4"
+    ],
+    "representative_source": "AP-3.4.4",
+    "index": 276,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-3.E1",
+    "name": "有限 Jacobi 三重积",
+    "source_ids": [
+      "AP-3.E1"
+    ],
+    "representative_source": "AP-3.E1",
+    "index": 277,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AP-3.E7",
+    "name": "Rogers–Szegő 线性化公式",
+    "source_ids": [
+      "AP-3.E7"
+    ],
+    "representative_source": "AP-3.E7",
+    "index": 278,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AP-3.E12a",
+    "name": "Schur 多项式倍指标恒等式",
+    "source_ids": [
+      "AP-3.E12a"
+    ],
+    "representative_source": "AP-3.E12a",
+    "index": 279,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AP-3.E12b",
+    "name": "Schur 多项式累加恒等式",
+    "source_ids": [
+      "AP-3.E12b"
+    ],
+    "representative_source": "AP-3.E12b",
+    "index": 280,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AP-7.E11",
+    "name": "有最大部分限制的 Göllnitz 型有限公式",
+    "source_ids": [
+      "AP-7.E11"
+    ],
+    "representative_source": "AP-7.E11",
+    "index": 281,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-AP-9.E4b",
+    "name": "有限 Euler 五边形型恒等式",
+    "source_ids": [
+      "AP-9.E4b"
+    ],
+    "representative_source": "AP-9.E4b",
+    "index": 282,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AP-11.2.1",
+    "name": "固定首列平面分拆的有限递推",
+    "source_ids": [
+      "AP-11.2.1"
+    ],
+    "representative_source": "AP-11.2.1",
+    "index": 283,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-AP-11.2.4",
+    "name": "Carlitz 固定首列行列式",
+    "source_ids": [
+      "AP-11.2.4"
+    ],
+    "representative_source": "AP-11.2.4",
+    "index": 284,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-AP-11.2.9",
+    "name": "盒内平面分拆行列式",
+    "source_ids": [
+      "AP-11.2.9"
+    ],
+    "representative_source": "AP-11.2.9",
+    "index": 285,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-AP-11.2.10",
+    "name": "MacMahon 盒内平面分拆有限乘积",
+    "source_ids": [
+      "AP-11.2.10"
+    ],
+    "representative_source": "AP-11.2.10",
+    "index": 286,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-AP-13.E3",
+    "name": "三变量 q-下降乘积卷积",
+    "source_ids": [
+      "AP-13.E3"
+    ],
+    "representative_source": "AP-13.E3",
+    "index": 287,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AP-13.E5",
+    "name": "q-下降阶乘基上的线性泛函",
+    "source_ids": [
+      "AP-13.E5"
+    ],
+    "representative_source": "AP-13.E5",
+    "index": 288,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-AP-3.5.MULTIPROD",
+    "name": "q-多项系数的 Gaussian 乘积分解",
+    "source_ids": [
+      "AP-3.5.MULTIPROD"
+    ],
+    "representative_source": "AP-3.5.MULTIPROD",
+    "index": 289,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-AP-9.3.5",
+    "name": "振荡分拆的M混合差分递推",
+    "source_ids": [
+      "AP-9.3.5"
+    ],
+    "representative_source": "AP-9.3.5",
+    "index": 290,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-9.3.6",
+    "name": "振荡分拆的P混合差分递推",
+    "source_ids": [
+      "AP-9.3.6"
+    ],
+    "representative_source": "AP-9.3.6",
+    "index": 291,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-9.3.7",
+    "name": "振荡阈值为零的初值",
+    "source_ids": [
+      "AP-9.3.7"
+    ],
+    "representative_source": "AP-9.3.7",
+    "index": 292,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-9.3.8",
+    "name": "空矩形的振荡初值",
+    "source_ids": [
+      "AP-9.3.8"
+    ],
+    "representative_source": "AP-9.3.8",
+    "index": 293,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-9.L7",
+    "name": "Gaussian 混合差分引理",
+    "source_ids": [
+      "AP-9.L7"
+    ],
+    "representative_source": "AP-9.L7",
+    "index": 294,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-AP-9.L8",
+    "name": "分拆筛辅助有限和的递推",
+    "source_ids": [
+      "AP-9.L8"
+    ],
+    "representative_source": "AP-9.L8",
+    "index": 295,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-9.3.17",
+    "name": "M振荡闭式的剩余参数域",
+    "source_ids": [
+      "AP-9.3.17"
+    ],
+    "representative_source": "AP-9.3.17",
+    "index": 296,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-9.3.18",
+    "name": "M振荡闭式的剩余参数域",
+    "source_ids": [
+      "AP-9.3.18"
+    ],
+    "representative_source": "AP-9.3.18",
+    "index": 297,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-9.3.19",
+    "name": "P振荡闭式的剩余参数域",
+    "source_ids": [
+      "AP-9.3.19"
+    ],
+    "representative_source": "AP-9.3.19",
+    "index": 298,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-9.3.20",
+    "name": "P振荡闭式的剩余参数域",
+    "source_ids": [
+      "AP-9.3.20"
+    ],
+    "representative_source": "AP-9.3.20",
+    "index": 299,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AP-11.2.2",
+    "name": "固定首列平面分拆的初值",
+    "source_ids": [
+      "AP-11.2.2"
+    ],
+    "representative_source": "AP-11.2.2",
+    "index": 300,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-AP-11.2.8",
+    "name": "固定首列与盒内平面分拆的有限求和关系",
+    "source_ids": [
+      "AP-11.2.8"
+    ],
+    "representative_source": "AP-11.2.8",
+    "index": 301,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-AP-4.2.COMPOSITIONS",
+    "name": "有界有序组成的有限生成多项式",
+    "source_ids": [
+      "AP-4.2.COMPOSITIONS"
+    ],
+    "representative_source": "AP-4.2.COMPOSITIONS",
+    "index": 302,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-AP-13.E7",
+    "name": "Bender广义q-Vandermonde卷积（修订）",
+    "source_ids": [
+      "AP-13.E7"
+    ],
+    "representative_source": "AP-13.E7",
+    "index": 303,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-AQ-2.23",
+    "name": "连续 q-Hermite 多项式递推",
+    "source_ids": [
+      "AQ-2.23"
+    ],
+    "representative_source": "AQ-2.23",
+    "index": 304,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AQ-2.29",
+    "name": "q-Hermite 的有限 Fourier 展开",
+    "source_ids": [
+      "AQ-2.29"
+    ],
+    "representative_source": "AQ-2.29",
+    "index": 305,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-2.35",
+    "name": "Rogers 连接系数的有限反演关系",
+    "source_ids": [
+      "AQ-2.35"
+    ],
+    "representative_source": "AQ-2.35",
+    "index": 306,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-2.38",
+    "name": "连接系数递推",
+    "source_ids": [
+      "AQ-2.38"
+    ],
+    "representative_source": "AQ-2.38",
+    "index": 307,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-AQ-2.39",
+    "name": "Rogers 连接系数乘积公式",
+    "source_ids": [
+      "AQ-2.39"
+    ],
+    "representative_source": "AQ-2.39",
+    "index": 308,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-2.40",
+    "name": "终止 Heine 变换的有限乘积形式",
+    "source_ids": [
+      "AQ-2.40"
+    ],
+    "representative_source": "AQ-2.40",
+    "index": 309,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-3.12",
+    "name": "Rogers 奇指标抵消和",
+    "source_ids": [
+      "AQ-3.12"
+    ],
+    "representative_source": "AQ-3.12",
+    "index": 310,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-3.17",
+    "name": "Rogers 有限交错和（奇上指标）",
+    "source_ids": [
+      "AQ-3.17"
+    ],
+    "representative_source": "AQ-3.17",
+    "index": 311,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-3.18",
+    "name": "Rogers 有限交错和（偶上指标）",
+    "source_ids": [
+      "AQ-3.18"
+    ],
+    "representative_source": "AQ-3.18",
+    "index": 312,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-3.23",
+    "name": "Bailey 转置求和（有限支持特化）",
+    "source_ids": [
+      "AQ-3.23"
+    ],
+    "representative_source": "AQ-3.23",
+    "index": 313,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-AQ-3.35",
+    "name": "Rogers–Ramanujan Bailey 对的有限等式",
+    "source_ids": [
+      "AQ-3.35"
+    ],
+    "representative_source": "AQ-3.35",
+    "index": 314,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-3.37",
+    "name": "a=q 的单位 Bailey 对",
+    "source_ids": [
+      "AQ-3.37"
+    ],
+    "representative_source": "AQ-3.37",
+    "index": 315,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-3.42",
+    "name": "Bailey 链逆变换（显式修订）",
+    "source_ids": [
+      "AQ-3.42"
+    ],
+    "representative_source": "AQ-3.42",
+    "index": 316,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-AQ-3.43",
+    "name": "有限 k 重 Bailey 链",
+    "source_ids": [
+      "AQ-3.43"
+    ],
+    "representative_source": "AQ-3.43",
+    "index": 317,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-AQ-4.24",
+    "name": "q-Dixon 三个 Gaussian 的交错求和",
+    "source_ids": [
+      "AQ-4.24"
+    ],
+    "representative_source": "AQ-4.24",
+    "index": 318,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-6.18",
+    "name": "Schur 辅助系数递推",
+    "source_ids": [
+      "AQ-6.18"
+    ],
+    "representative_source": "AQ-6.18",
+    "index": 319,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AQ-6.19",
+    "name": "Schur 辅助系数的有限乘积",
+    "source_ids": [
+      "AQ-6.19"
+    ],
+    "representative_source": "AQ-6.19",
+    "index": 320,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AQ-8.32",
+    "name": "硬六角 F 多项式递推",
+    "source_ids": [
+      "AQ-8.32"
+    ],
+    "representative_source": "AQ-8.32",
+    "index": 321,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AQ-8.44",
+    "name": "G_N(0) 的 Schur 型有限展开",
+    "source_ids": [
+      "AQ-8.44"
+    ],
+    "representative_source": "AQ-8.44",
+    "index": 322,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-8.45",
+    "name": "G_N(1) 的 Schur 型有限展开",
+    "source_ids": [
+      "AQ-8.45"
+    ],
+    "representative_source": "AQ-8.45",
+    "index": 323,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-8.46",
+    "name": "硬六角 G 多项式三阶递推",
+    "source_ids": [
+      "AQ-8.46"
+    ],
+    "representative_source": "AQ-8.46",
+    "index": 324,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AQ-8.50",
+    "name": "G 偶指标倒数多项式",
+    "source_ids": [
+      "AQ-8.50"
+    ],
+    "representative_source": "AQ-8.50",
+    "index": 325,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-8.52",
+    "name": "G 倒数多项式的两组差分展开",
+    "source_ids": [
+      "AQ-8.52"
+    ],
+    "representative_source": "AQ-8.52",
+    "index": 326,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-8.56",
+    "name": "Andrews–Baxter–Forrester 双端终止变换",
+    "source_ids": [
+      "AQ-8.56"
+    ],
+    "representative_source": "AQ-8.56",
+    "index": 327,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-9.5",
+    "name": "D 多项式的正项 Gaussian 展开",
+    "source_ids": [
+      "AQ-9.5"
+    ],
+    "representative_source": "AQ-9.5",
+    "index": 328,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-9.17",
+    "name": "G 多项式的有限系数展开（显式修订移位）",
+    "source_ids": [
+      "AQ-9.17"
+    ],
+    "representative_source": "AQ-9.17",
+    "index": 329,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-9.26",
+    "name": "D 奇指标倒数恒等式",
+    "source_ids": [
+      "AQ-9.26"
+    ],
+    "representative_source": "AQ-9.26",
+    "index": 330,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-9.27",
+    "name": "D 偶指标倒数恒等式",
+    "source_ids": [
+      "AQ-9.27"
+    ],
+    "representative_source": "AQ-9.27",
+    "index": 331,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-10.1",
+    "name": "Lusztig–Macdonald–Wall 多项式递推",
+    "source_ids": [
+      "AQ-10.1"
+    ],
+    "representative_source": "AQ-10.1",
+    "index": 332,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AQ-10.5",
+    "name": "LMW 的 Gaussian 展开（显式修订下标）",
+    "source_ids": [
+      "AQ-10.5"
+    ],
+    "representative_source": "AQ-10.5",
+    "index": 333,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-AQ-10.12",
+    "name": "Bailey 对逐项反求递推",
+    "source_ids": [
+      "AQ-10.12"
+    ],
+    "representative_source": "AQ-10.12",
+    "index": 334,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-AQ-10.27",
+    "name": "Göllnitz 递推算子的相容关系",
+    "source_ids": [
+      "AQ-10.27"
+    ],
+    "representative_source": "AQ-10.27",
+    "index": 335,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AQ-10.30",
+    "name": "Euler 乘积系数的有限递推",
+    "source_ids": [
+      "AQ-10.30"
+    ],
+    "representative_source": "AQ-10.30",
+    "index": 336,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-AQ-10.32",
+    "name": "Euler 乘积指数的有限反求",
+    "source_ids": [
+      "AQ-10.32"
+    ],
+    "representative_source": "AQ-10.32",
+    "index": 337,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-AQ-10.7A",
+    "name": "Rogers–Ramanujan 系数的递推与乘积",
+    "source_ids": [
+      "AQ-10.7A"
+    ],
+    "representative_source": "AQ-10.7A",
+    "index": 338,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AQ-B.9",
+    "name": "Rogers 对称齐次多项式的 q-差分",
+    "source_ids": [
+      "AQ-B.9"
+    ],
+    "representative_source": "AQ-B.9",
+    "index": 339,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-AQ-B.12",
+    "name": "Rogers 齐次展开系数递推",
+    "source_ids": [
+      "AQ-B.12"
+    ],
+    "representative_source": "AQ-B.12",
+    "index": 340,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-AQ-4.3",
+    "name": "Bn有限常数项恒等式（Conjecture4.3修订）",
+    "source_ids": [
+      "AQ-4.3"
+    ],
+    "representative_source": "AQ-4.3",
+    "index": 341,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-FINE-2.1",
+    "name": "q-Pochhammer 首项递推",
+    "source_ids": [
+      "FINE-2.1"
+    ],
+    "representative_source": "FINE-2.1",
+    "index": 342,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-FINE-2.3",
+    "name": "基本级数有限系数比递推",
+    "source_ids": [
+      "FINE-2.3"
+    ],
+    "representative_source": "FINE-2.3",
+    "index": 343,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-FINE-4.coeff",
+    "name": "基本级数有限系数差分",
+    "source_ids": [
+      "FINE-4.coeff"
+    ],
+    "representative_source": "FINE-4.coeff",
+    "index": 344,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-FINE-7.GH",
+    "name": "q-移位迭代的有限累积系数",
+    "source_ids": [
+      "FINE-7.GH"
+    ],
+    "representative_source": "FINE-7.GH",
+    "index": 345,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-FINE-15.2",
+    "name": "Fine 系数的有限卷积",
+    "source_ids": [
+      "FINE-15.2"
+    ],
+    "representative_source": "FINE-15.2",
+    "index": 346,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-FINE-15.31",
+    "name": "Fine 系数的一阶递推",
+    "source_ids": [
+      "FINE-15.31"
+    ],
+    "representative_source": "FINE-15.31",
+    "index": 347,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-FINE-15.41",
+    "name": "Fine 系数的第二有限展开",
+    "source_ids": [
+      "FINE-15.41"
+    ],
+    "representative_source": "FINE-15.41",
+    "index": 348,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-FINE-20.64b",
+    "name": "Rogers–Szegő q-移位递推",
+    "source_ids": [
+      "FINE-20.64b"
+    ],
+    "representative_source": "FINE-20.64b",
+    "index": 349,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-FINE-20.65b",
+    "name": "Rogers–Szegő 混合 q-移位递推",
+    "source_ids": [
+      "FINE-20.65b"
+    ],
+    "representative_source": "FINE-20.65b",
+    "index": 350,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-FINE-20.66b",
+    "name": "Rogers–Szegő 倒数变换",
+    "source_ids": [
+      "FINE-20.66b"
+    ],
+    "representative_source": "FINE-20.66b",
+    "index": 351,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-FINE-20.69",
+    "name": "Rogers–Szegő 在 q^{-1/2} 处的特殊值",
+    "source_ids": [
+      "FINE-20.69"
+    ],
+    "representative_source": "FINE-20.69",
+    "index": 352,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-FINE-21.2",
+    "name": "basic multinomial 的根单位筛选",
+    "source_ids": [
+      "FINE-21.2"
+    ],
+    "representative_source": "FINE-21.2",
+    "index": 353,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-FINE-21.21",
+    "name": "basic multinomial 的分数幂特化",
+    "source_ids": [
+      "FINE-21.21"
+    ],
+    "representative_source": "FINE-21.21",
+    "index": 354,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-FINE-21.23",
+    "name": "basic multinomial 的整除筛选",
+    "source_ids": [
+      "FINE-21.23"
+    ],
+    "representative_source": "FINE-21.23",
+    "index": 355,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-FINE-21.product",
+    "name": "根单位与分数底数的有限乘积重组",
+    "source_ids": [
+      "FINE-21.product"
+    ],
+    "representative_source": "FINE-21.product",
+    "index": 356,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-FINE-25.shell",
+    "name": "固定最大部件与 rank 的有限生成多项式",
+    "source_ids": [
+      "FINE-25.shell"
+    ],
+    "representative_source": "FINE-25.shell",
+    "index": 357,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-SILLS-1.JacobiFinite",
+    "name": "Jacobi 乘积证明中的有限双边二项式",
+    "source_ids": [
+      "SILLS-1.JacobiFinite"
+    ],
+    "representative_source": "SILLS-1.JacobiFinite",
+    "index": 358,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-1.75",
+    "name": "Paule 有限五重乘积恒等式",
+    "source_ids": [
+      "SILLS-1.75"
+    ],
+    "representative_source": "SILLS-1.75",
+    "index": 359,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-1.75-rec",
+    "name": "有限五重乘积和的一阶递推",
+    "source_ids": [
+      "SILLS-1.75-rec"
+    ],
+    "representative_source": "SILLS-1.75-rec",
+    "index": 360,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-1.79",
+    "name": "q-二项式级数的有限系数递推",
+    "source_ids": [
+      "SILLS-1.79"
+    ],
+    "representative_source": "SILLS-1.79",
+    "index": 361,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-SILLS-1.87",
+    "name": "Andrews–Baxter q-三项式递推",
+    "source_ids": [
+      "SILLS-1.87"
+    ],
+    "representative_source": "SILLS-1.87",
+    "index": 362,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-1.90",
+    "name": "q-三项式 Laurent 多项式递推",
+    "source_ids": [
+      "SILLS-1.90"
+    ],
+    "representative_source": "SILLS-1.90",
+    "index": 363,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-1.94-corrected",
+    "name": "Andrews 有限 Heine 变换",
+    "source_ids": [
+      "SILLS-1.94-corrected"
+    ],
+    "representative_source": "SILLS-1.94-corrected",
+    "index": 364,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-1.95",
+    "name": "有限 Heine 和的二阶递推",
+    "source_ids": [
+      "SILLS-1.95"
+    ],
+    "representative_source": "SILLS-1.95",
+    "index": 365,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-1.99",
+    "name": "Watson 终止和二阶递推",
+    "source_ids": [
+      "SILLS-1.99"
+    ],
+    "representative_source": "SILLS-1.99",
+    "index": 366,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-1.ExDistinct",
+    "name": "有界不同部件分拆的有限生成多项式",
+    "source_ids": [
+      "SILLS-1.ExDistinct"
+    ],
+    "representative_source": "SILLS-1.ExDistinct",
+    "index": 367,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.9-corrected",
+    "name": "Watson 极限的终止有限式",
+    "source_ids": [
+      "SILLS-2.9-corrected"
+    ],
+    "representative_source": "SILLS-2.9-corrected",
+    "index": 368,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.30",
+    "name": "Bailey 关系的终止超几何重写",
+    "source_ids": [
+      "SILLS-2.30"
+    ],
+    "representative_source": "SILLS-2.30",
+    "index": 369,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.Pair112",
+    "name": "基本 Bailey 有限和",
+    "source_ids": [
+      "SILLS-2.Pair112"
+    ],
+    "representative_source": "SILLS-2.Pair112",
+    "index": 370,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.Pair122",
+    "name": "二步长 Bailey 有限和",
+    "source_ids": [
+      "SILLS-2.Pair122"
+    ],
+    "representative_source": "SILLS-2.Pair122",
+    "index": 371,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.Lem2.31",
+    "name": "关于1的双边 Bailey 有限和",
+    "source_ids": [
+      "SILLS-2.Lem2.31"
+    ],
+    "representative_source": "SILLS-2.Lem2.31",
+    "index": 372,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.Ex2b",
+    "name": "二步长带符号 Bailey 有限和",
+    "source_ids": [
+      "SILLS-2.Ex2b"
+    ],
+    "representative_source": "SILLS-2.Ex2b",
+    "index": 373,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.Ex2c",
+    "name": "三步长 Bailey 有限和",
+    "source_ids": [
+      "SILLS-2.Ex2c"
+    ],
+    "representative_source": "SILLS-2.Ex2c",
+    "index": 374,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.Ex2d",
+    "name": "偶指标 Bailey 有限和 I",
+    "source_ids": [
+      "SILLS-2.Ex2d"
+    ],
+    "representative_source": "SILLS-2.Ex2d",
+    "index": 375,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.Ex2e",
+    "name": "偶指标 Bailey 有限和 II",
+    "source_ids": [
+      "SILLS-2.Ex2e"
+    ],
+    "representative_source": "SILLS-2.Ex2e",
+    "index": 376,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.Ex2f",
+    "name": "三倍指标 Bailey 有限和",
+    "source_ids": [
+      "SILLS-2.Ex2f"
+    ],
+    "representative_source": "SILLS-2.Ex2f",
+    "index": 377,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.Ex7a-corrected",
+    "name": "关于q的参数 Bailey 有限和",
+    "source_ids": [
+      "SILLS-2.Ex7a-corrected"
+    ],
+    "representative_source": "SILLS-2.Ex7a-corrected",
+    "index": 378,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.75",
+    "name": "Schur 有界分拆的有限 q-三项式恒等式",
+    "source_ids": [
+      "SILLS-2.75"
+    ],
+    "representative_source": "SILLS-2.75",
+    "index": 379,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.76-78",
+    "name": "Schur 有界分拆的三项耦合递推",
+    "source_ids": [
+      "SILLS-2.76-78"
+    ],
+    "representative_source": "SILLS-2.76-78",
+    "index": 380,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.Lem2.53",
+    "name": "半整数幂 Bailey 有限和",
+    "source_ids": [
+      "SILLS-2.Lem2.53"
+    ],
+    "representative_source": "SILLS-2.Lem2.53",
+    "index": 381,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-2.108",
+    "name": "Mock theta 相关的有限 Bailey 对",
+    "source_ids": [
+      "SILLS-2.108"
+    ],
+    "representative_source": "SILLS-2.108",
+    "index": 382,
+    "primary_family": "G",
+    "legacy_primary_family": "B"
+  },
+  {
+    "id": "FQI-SRC-SILLS-3.5-6",
+    "name": "Bailey 链第二步有限变换",
+    "source_ids": [
+      "SILLS-3.5-6"
+    ],
+    "representative_source": "SILLS-3.5-6",
+    "index": 383,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-3.7",
+    "name": "Bailey 链的有限双和",
+    "source_ids": [
+      "SILLS-3.7"
+    ],
+    "representative_source": "SILLS-3.7",
+    "index": 384,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-3.Lem3.3",
+    "name": "偶模数 Bailey 有限和",
+    "source_ids": [
+      "SILLS-3.Lem3.3"
+    ],
+    "representative_source": "SILLS-3.Lem3.3",
+    "index": 385,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.6",
+    "name": "第一 q-Fibonacci 多项式递推",
+    "source_ids": [
+      "SILLS-4.6"
+    ],
+    "representative_source": "SILLS-4.6",
+    "index": 386,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.17",
+    "name": "第二 q-Fibonacci 多项式递推",
+    "source_ids": [
+      "SILLS-4.17"
+    ],
+    "representative_source": "SILLS-4.17",
+    "index": 387,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.18",
+    "name": "D 多项式的 q-三项式展开",
+    "source_ids": [
+      "SILLS-4.18"
+    ],
+    "representative_source": "SILLS-4.18",
+    "index": 388,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.19",
+    "name": "E 多项式的 q-三项式展开",
+    "source_ids": [
+      "SILLS-4.19"
+    ],
+    "representative_source": "SILLS-4.19",
+    "index": 389,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.25",
+    "name": "奇数 D 多项式的倒数对偶",
+    "source_ids": [
+      "SILLS-4.25"
+    ],
+    "representative_source": "SILLS-4.25",
+    "index": 390,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.26-corrected",
+    "name": "偶数 E 多项式的倒数对偶",
+    "source_ids": [
+      "SILLS-4.26-corrected"
+    ],
+    "representative_source": "SILLS-4.26-corrected",
+    "index": 391,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.27-corrected",
+    "name": "奇数 E 多项式的倒数对偶",
+    "source_ids": [
+      "SILLS-4.27-corrected"
+    ],
+    "representative_source": "SILLS-4.27-corrected",
+    "index": 392,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.35",
+    "name": "Bressoud 多项式二阶递推",
+    "source_ids": [
+      "SILLS-4.35"
+    ],
+    "representative_source": "SILLS-4.35",
+    "index": 393,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.37",
+    "name": "Bressoud 第一有限 Rogers–Ramanujan 恒等式",
+    "source_ids": [
+      "SILLS-4.37"
+    ],
+    "representative_source": "SILLS-4.37",
+    "index": 394,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.38",
+    "name": "Bressoud 多项式的五阶递推",
+    "source_ids": [
+      "SILLS-4.38"
+    ],
+    "representative_source": "SILLS-4.38",
+    "index": 395,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.Sym",
+    "name": "Bressoud 双边和的对称化",
+    "source_ids": [
+      "SILLS-4.Sym"
+    ],
+    "representative_source": "SILLS-4.Sym",
+    "index": 396,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.43",
+    "name": "Bressoud 第二有限 Rogers–Ramanujan 恒等式",
+    "source_ids": [
+      "SILLS-4.43"
+    ],
+    "representative_source": "SILLS-4.43",
+    "index": 397,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.47",
+    "name": "Mod 8 的 q-Pell 多项式递推",
+    "source_ids": [
+      "SILLS-4.47"
+    ],
+    "representative_source": "SILLS-4.47",
+    "index": 398,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.48",
+    "name": "T₁ 与 T₀ 的 q-三项式递推",
+    "source_ids": [
+      "SILLS-4.48"
+    ],
+    "representative_source": "SILLS-4.48",
+    "index": 399,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.49",
+    "name": "T₀ 与 T₁ 的 q-三项式递推",
+    "source_ids": [
+      "SILLS-4.49"
+    ],
+    "representative_source": "SILLS-4.49",
+    "index": 400,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.50",
+    "name": "T₀、T₁ 的相邻指标关系",
+    "source_ids": [
+      "SILLS-4.50"
+    ],
+    "representative_source": "SILLS-4.50",
+    "index": 401,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.Mod8",
+    "name": "有限 Ramanujan–Slater Mod 8 恒等式",
+    "source_ids": [
+      "SILLS-4.Mod8"
+    ],
+    "representative_source": "SILLS-4.Mod8",
+    "index": 402,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.51",
+    "name": "Borwein A 多项式的 Gaussian 展开",
+    "source_ids": [
+      "SILLS-4.51"
+    ],
+    "representative_source": "SILLS-4.51",
+    "index": 403,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.52",
+    "name": "Borwein B 多项式的 Gaussian 展开",
+    "source_ids": [
+      "SILLS-4.52"
+    ],
+    "representative_source": "SILLS-4.52",
+    "index": 404,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.53",
+    "name": "Borwein C 多项式的 Gaussian 展开",
+    "source_ids": [
+      "SILLS-4.53"
+    ],
+    "representative_source": "SILLS-4.53",
+    "index": 405,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.54",
+    "name": "Borwein A 多项式的正向有限和",
+    "source_ids": [
+      "SILLS-4.54"
+    ],
+    "representative_source": "SILLS-4.54",
+    "index": 406,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.55",
+    "name": "Borwein B 多项式的正向有限和",
+    "source_ids": [
+      "SILLS-4.55"
+    ],
+    "representative_source": "SILLS-4.55",
+    "index": 407,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.56",
+    "name": "Borwein C 多项式的正向有限和",
+    "source_ids": [
+      "SILLS-4.56"
+    ],
+    "representative_source": "SILLS-4.56",
+    "index": 408,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-SILLS-4.Ex3",
+    "name": "Borwein 多项式的耦合递推",
+    "source_ids": [
+      "SILLS-4.Ex3"
+    ],
+    "representative_source": "SILLS-4.Ex3",
+    "index": 409,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-5.6-8",
+    "name": "Motivated proof 中的有限系数多项式递推",
+    "source_ids": [
+      "SILLS-5.6-8"
+    ],
+    "representative_source": "SILLS-5.6-8",
+    "index": 410,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-SILLS-6.Ex1-corrected",
+    "name": "Capparelli 相关的有限 Bailey 对",
+    "source_ids": [
+      "SILLS-6.Ex1-corrected"
+    ],
+    "representative_source": "SILLS-6.Ex1-corrected",
+    "index": 411,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-1.11-12",
+    "name": "q 导数乘法规则",
+    "source_ids": [
+      "KAC-CHEUNG-1.11-12"
+    ],
+    "representative_source": "KAC-CHEUNG-1.11-12",
+    "index": 412,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-1.13-14",
+    "name": "q 导数商法则",
+    "source_ids": [
+      "KAC-CHEUNG-1.13-14"
+    ],
+    "representative_source": "KAC-CHEUNG-1.13-14",
+    "index": 413,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-1.15",
+    "name": "幂代换的 q 链式规则",
+    "source_ids": [
+      "KAC-CHEUNG-1.15"
+    ],
+    "representative_source": "KAC-CHEUNG-1.15",
+    "index": 414,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-3.5",
+    "name": "有限 q 幂的降阶导数",
+    "source_ids": [
+      "KAC-CHEUNG-3.5"
+    ],
+    "representative_source": "KAC-CHEUNG-3.5",
+    "index": 415,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-3.6",
+    "name": "有限 q 幂的指标相加",
+    "source_ids": [
+      "KAC-CHEUNG-3.6"
+    ],
+    "representative_source": "KAC-CHEUNG-3.6",
+    "index": 416,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-3.9",
+    "name": "有限 q 幂的交换与倒序",
+    "source_ids": [
+      "KAC-CHEUNG-3.9"
+    ],
+    "representative_source": "KAC-CHEUNG-3.9",
+    "index": 417,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-3.10",
+    "name": "有限 q 幂倒数的导数",
+    "source_ids": [
+      "KAC-CHEUNG-3.10"
+    ],
+    "representative_source": "KAC-CHEUNG-3.10",
+    "index": 418,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-3.11",
+    "name": "第二变量的有限 q 幂导数",
+    "source_ids": [
+      "KAC-CHEUNG-3.11"
+    ],
+    "representative_source": "KAC-CHEUNG-3.11",
+    "index": 419,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-3.12",
+    "name": "第二变量的有限 q 幂倒数导数",
+    "source_ids": [
+      "KAC-CHEUNG-3.12"
+    ],
+    "representative_source": "KAC-CHEUNG-3.12",
+    "index": 420,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-4.1",
+    "name": "多项式的有限 q-Taylor 展开",
+    "source_ids": [
+      "KAC-CHEUNG-4.1"
+    ],
+    "representative_source": "KAC-CHEUNG-4.1",
+    "index": 421,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-4.3",
+    "name": "单项式的高阶 q 导数",
+    "source_ids": [
+      "KAC-CHEUNG-4.3"
+    ],
+    "representative_source": "KAC-CHEUNG-4.3",
+    "index": 422,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-4.4",
+    "name": "单项式的有限 q 幂展开",
+    "source_ids": [
+      "KAC-CHEUNG-4.4"
+    ],
+    "representative_source": "KAC-CHEUNG-4.4",
+    "index": 423,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-5.1",
+    "name": "有限 q 幂的高阶导数",
+    "source_ids": [
+      "KAC-CHEUNG-5.1"
+    ],
+    "representative_source": "KAC-CHEUNG-5.1",
+    "index": 424,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-5.7",
+    "name": "乘法算子和 q 移位的交换",
+    "source_ids": [
+      "KAC-CHEUNG-5.7"
+    ],
+    "representative_source": "KAC-CHEUNG-5.7",
+    "index": 425,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-5.8",
+    "name": "q 交换算子的有限二项式定理",
+    "source_ids": [
+      "KAC-CHEUNG-5.8"
+    ],
+    "representative_source": "KAC-CHEUNG-5.8",
+    "index": 426,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-6.5",
+    "name": "Gaussian 的加权子集表示",
+    "source_ids": [
+      "KAC-CHEUNG-6.5"
+    ],
+    "representative_source": "KAC-CHEUNG-6.5",
+    "index": 427,
+    "primary_family": "G",
+    "legacy_primary_family": "E"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-7.2",
+    "name": "有序线性无关向量组计数",
+    "source_ids": [
+      "KAC-CHEUNG-7.2"
+    ],
+    "representative_source": "KAC-CHEUNG-7.2",
+    "index": 428,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-7.rank",
+    "name": "有限域定秩矩阵计数",
+    "source_ids": [
+      "KAC-CHEUNG-7.rank"
+    ],
+    "representative_source": "KAC-CHEUNG-7.rank",
+    "index": 429,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-7.8",
+    "name": "Galois 数递推",
+    "source_ids": [
+      "KAC-CHEUNG-7.8"
+    ],
+    "representative_source": "KAC-CHEUNG-7.8",
+    "index": 430,
+    "primary_family": "C",
+    "legacy_primary_family": "C"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-8.reciprocal",
+    "name": "有限倒数乘积的高阶 q 导数",
+    "source_ids": [
+      "KAC-CHEUNG-8.reciprocal"
+    ],
+    "representative_source": "KAC-CHEUNG-8.reciprocal",
+    "index": 431,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-13.10",
+    "name": "倒底数有限乘积转换",
+    "source_ids": [
+      "KAC-CHEUNG-13.10"
+    ],
+    "representative_source": "KAC-CHEUNG-13.10",
+    "index": 432,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-14.higher",
+    "name": "第二变量有限 q 幂的高阶导数",
+    "source_ids": [
+      "KAC-CHEUNG-14.higher"
+    ],
+    "representative_source": "KAC-CHEUNG-14.higher",
+    "index": 433,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-15.cancellation",
+    "name": "双边求和证明中的有限乘积消去",
+    "source_ids": [
+      "KAC-CHEUNG-15.cancellation"
+    ],
+    "representative_source": "KAC-CHEUNG-15.cancellation",
+    "index": 434,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-19.telescoping",
+    "name": "Jackson 证明中的有限伸缩和",
+    "source_ids": [
+      "KAC-CHEUNG-19.telescoping"
+    ],
+    "representative_source": "KAC-CHEUNG-19.telescoping",
+    "index": 435,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.5",
+    "name": "对称 q 导数乘法规则",
+    "source_ids": [
+      "KAC-CHEUNG-26.5"
+    ],
+    "representative_source": "KAC-CHEUNG-26.5",
+    "index": 436,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.6",
+    "name": "对称 q 导数商法则",
+    "source_ids": [
+      "KAC-CHEUNG-26.6"
+    ],
+    "representative_source": "KAC-CHEUNG-26.6",
+    "index": 437,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.7",
+    "name": "对称 q 单项式导数",
+    "source_ids": [
+      "KAC-CHEUNG-26.7"
+    ],
+    "representative_source": "KAC-CHEUNG-26.7",
+    "index": 438,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.10",
+    "name": "对称有限 q 幂的降阶导数",
+    "source_ids": [
+      "KAC-CHEUNG-26.10"
+    ],
+    "representative_source": "KAC-CHEUNG-26.10",
+    "index": 439,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.12",
+    "name": "对称有限 q 二项式定理",
+    "source_ids": [
+      "KAC-CHEUNG-26.12"
+    ],
+    "representative_source": "KAC-CHEUNG-26.12",
+    "index": 440,
+    "primary_family": "A",
+    "legacy_primary_family": "A"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.14",
+    "name": "对称有限乘积的交换",
+    "source_ids": [
+      "KAC-CHEUNG-26.14"
+    ],
+    "representative_source": "KAC-CHEUNG-26.14",
+    "index": 441,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.15",
+    "name": "对称有限乘积倒数的导数",
+    "source_ids": [
+      "KAC-CHEUNG-26.15"
+    ],
+    "representative_source": "KAC-CHEUNG-26.15",
+    "index": 442,
+    "primary_family": "F",
+    "legacy_primary_family": "F"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.21",
+    "name": "一般量子 Taylor 多项式根和递推",
+    "source_ids": [
+      "KAC-CHEUNG-26.21"
+    ],
+    "representative_source": "KAC-CHEUNG-26.21",
+    "index": 443,
+    "primary_family": "G",
+    "legacy_primary_family": "B"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.22",
+    "name": "相同伸缩参数下的根和递推",
+    "source_ids": [
+      "KAC-CHEUNG-26.22"
+    ],
+    "representative_source": "KAC-CHEUNG-26.22",
+    "index": 444,
+    "primary_family": "G",
+    "legacy_primary_family": "B"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.rootsum",
+    "name": "相同平移参数的根和有限解",
+    "source_ids": [
+      "KAC-CHEUNG-26.rootsum"
+    ],
+    "representative_source": "KAC-CHEUNG-26.rootsum",
+    "index": 445,
+    "primary_family": "G",
+    "legacy_primary_family": "B"
+  },
+  {
+    "id": "FQI-SRC-KAC-CHEUNG-26.23",
+    "name": "对称q-Taylor基底的正确有限构造",
+    "source_ids": [
+      "KAC-CHEUNG-26.23"
+    ],
+    "representative_source": "KAC-CHEUNG-26.23",
+    "index": 446,
+    "primary_family": "G",
+    "legacy_primary_family": "D"
+  }
+]

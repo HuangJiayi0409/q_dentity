@@ -1,0 +1,14 @@
+{
+  "id": "FQI-SRC-SILLS-2.Pair122",
+  "source": {
+    "identity_id": "FQI-SRC-SILLS-2.Pair122",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity371.lean",
+    "sha256": "8ccb3eda2edff1b4c51228065377e89b3de13ac135611f5feeb1c38568ba27c2"
+  },
+  "well_typed_original_goal": true,
+  "typecheck": {
+    "exit_code": 1,
+    "output": "P1_ELABORATED_GOAL: ∑ r ∈ Finset.range (n + 1),\n    sillsAlpha x q 1 2 r / (pochList [q ^ 2] (q ^ 2) (n - r) * pochList [x ^ 2 * q ^ 2] (q ^ 2) (n + r)) =\n  1 / (pochList [q ^ 2] (q ^ 2) n * pochList [-x * q] q (2 * n))\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-2.Pair122/Typecheck.lean:31:2: error: P1_TYPECHECK_ONLY\n"
+  },
+  "is_proof": false
+}

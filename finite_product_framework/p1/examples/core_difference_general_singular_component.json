@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "solver": "difference_equation",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": 1
+      }
+    ],
+    "rhs_basis": [
+      1
+    ],
+    "algebraic_extensions": [
+      {
+        "name": "Z",
+        "polynomial": [
+          "mul",
+          [
+            "add",
+            1,
+            [
+              "pow",
+              "Z",
+              2
+            ]
+          ],
+          [
+            "add",
+            -1,
+            "Z"
+          ]
+        ],
+        "shift": "Z"
+      }
+    ],
+    "operator": [
+      [
+        "add",
+        -1,
+        "Z"
+      ],
+      [
+        "add",
+        1,
+        [
+          "mul",
+          -1,
+          "Z"
+        ]
+      ],
+      [
+        "add",
+        -1,
+        "Z"
+      ]
+    ]
+  }
+}

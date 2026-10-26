@@ -1,0 +1,27 @@
+from common import *
+a,b,c,d,q,z,w1,w2,t,s,rho,alpha,beta,v=vs('a b c d q z w1 w2 t s rho alpha beta v')
+S={};nz=lambda names:'(hnz : ∀ v ∈ ['+names+'], v ≠ 0)'
+def TK(U,V):
+ return SUM('j','min k (min m n)',lambda j:P([Q('-k'),Q('-m'),Q('-n'),U],'j')*P([Q('-m'),Q('-n')],'k-j')/P([q,V],'j')*Q('(2*k-m-n)*j-j*j'),lo='max (k-m) (k-n)')
+S[190]=statement('(a b z q : ℝ) (m n : ℕ)',AW(z,a,q/a,-b,-q/b,'m')*AW(z,a,q/a,-b,-q/b,'n'),SUM('k','2*min m n',lambda k:P([q],'2*m')*P([q],'2*n')*P([q],'m+n')/(P([q],'m')*P([q],'n')*P([q],'2*m+2*n'))*zp(b,'-k')*Q('(3*m+3*n+1)*k-3*(k*(k-1)/2)')*(1-Q('2*m+2*n+1-2*k'))/(1-Q('2*m+2*n+1-k'))*P([Q('-2*m-2*n'),-b*Q('-m-n')/a,-a*b*Q('-m-n-1')],'k')/P([q,Q('-2*m'),Q('-2*n'),Q('-m-n')],'k')*TK(-b*Q('m+n+1-k')/a,-b*Q('-m-n')/a)*TK(-a*b*Q('m+n-k'),-a*b*Q('-m-n-1'))*AW(z,a,q/a,-b,-q/b,'m+n-k')),'(ha : 0 < a) (hb : 0 < b) (hz : z ≠ 0)')
+S[191]=statement('(a b c s t w1 w2 q : K) (m n : ℕ)',SUM('k','m+n',lambda k:zp(b,'m-k')*e('(gaussian q (m+n) k)')*P([b*b],'n')*P([a*a*b*b*c*c*Q('m+n-1')],'k')*P([c*c],'m')/(P([c*c,b*b*c*c*Q('k-1')],'k')*P([b*b*c*c*Q('2*k')],'m+n-k'))*PH([Q('-k'),b*b*c*c*Q('k-1'),Q('-n'),a*a*b*b*Q('n-1')],[b*b,a*a*b*b*c*c*Q('m+n-1'),Q('-m-n')],'min k n')*AW(w2,b*w1,b/w1,c*s,c/s,'k')*AW(w1,a*t,a/t,b*c*s*Q('k'),b*c*Q('k')/s,'m+n-k')),AW(w1,a*t,a/t,b*w2,b/w2,'n')*AW(w2,a*b*t*Q('n'),a*b*Q('n')/t,c*s,c/s,'m'),nz('a,b,c,s,t,w1,w2'))
+def RJ(n):return PH([Q('-('+n+')'),a*b*Q(n),s*z,s/z],[a*s,-b*s,-q],n)
+S[192]=statement('(a b s z q : K) (m n : ℕ)',RJ('n')*RJ('n-m'),SUM('k','2*(n-m)',lambda k:P([a*b],'2*m')*P([a*b],'2*n-2*m')*P([q,-a*s,b*s,-a*b],'n')/(P([a*b*q],'2*n')*P([q,-a*s,b*s,-a*b],'m')*P([-q,a*s,-b*s,a*b],'n-m'))*(1-a*b*Q('2*m+2*k'))*P([a*b*Q('2*m'),-Q('m+1'),-b*s*Q('m'),a/b,a*a*b*b*Q('2*n'),Q('2*m-2*n')],'k')*Q('n-m')*zp(s,'k')*zp(a,'-k')/((1-a*b)*P([q,-a*b*Q('m'),-a*s*Q('m'),b*b*Q('2*m+1'),Q('2*m-2*n+1')/(a*b),a*b*Q('2*n+1')],'k'))*W(b*b*Q('2*m'),[b*b,b*b*Q('2*n+1'),Q('2*m-2*n+1')/(a*a),a*b*Q('2*m+k'),a*b*Q('2*m+k+1'),Q('1-k'),Q('-k')],'k/2',q*q,q*q)*RJ('m+k')),'(hmn : m ≤ n) (hs : s^2 = q) '+nz('a,b,z'))
+def ASSOC():
+ vv=rho*Q('j')
+ req=[f'∀ j < n, (1-a*b*c*d*({vv})^2/q)*(1-a*b*c*d*({vv})^2) ≠ 0',f'∀ j < n, (1-a*b*c*d*({vv})^2/q^2)*(1-a*b*c*d*({vv})^2/q) ≠ 0',f'∀ j < n, awAssocA a b c d q ({vv}) ≠ 0']
+ return E('(associatedAW z a b c d rho q n)',tuple(req))
+S[193]=statement('(z a b c d rho q : K) (n : ℕ)',ASSOC(),SUM('k','n',lambda k:P([Q('-n'),a*b*c*d*rho*rho*Q('n-1'),a*b*c*d*rho*rho/q,a*z,a/z],'k')*Q('k')/P([q,a*b*rho,a*c*rho,a*d*rho,a*b*c*d*rho/q],'k')*W(a*b*c*d*rho*rho*Q('k-2'),[rho,b*c*rho/q,b*d*rho/q,c*d*rho/q,Q('k+1'),a*b*c*d*rho*rho*Q('n+k-1'),Q('k-n')],'n-k',a*a)),nz('a,b,c,d,rho,z'))
+S[194]=statement('(z a b c d rho q : K) (n : ℕ)',ASSOC(),P([a*b*c*d*rho*rho/q,rho*q],'n')*zp(rho,'-n')/P([q,a*b*c*d*rho/q],'n')*SUM('k','n',lambda k:P([Q('-n'),a*b*c*d*rho*rho*Q('n-1'),a*rho*z,a*rho/z],'k')*Q('k')/P([rho*q,a*b*rho,a*c*rho,a*d*rho],'k')*SUM('j','k',lambda j:P([rho,a*b*rho/q,a*c*rho/q,a*d*rho/q],'j')*Q('j')/P([q,a*b*c*d*rho*rho/(q*q),a*rho*z,a*rho/z],'j'))),nz('a,b,c,d,rho,z'))
+def AU(n):
+ return E(f'(associatedUltra z alpha beta q ({n}))',(f'∀ j < ({n}), 1-alpha*beta*q^j ≠ 0',f'∀ j < ({n}), 1-alpha*q^(j+1) ≠ 0'))
+S[195]=statement('(z alpha beta q : K) (m n : ℕ)',AU('m')*AU('n'),SUM('k','min m n',lambda k:P([q],'m')*P([q],'n')*P([alpha*q],'m+n-2*k')*P([alpha*beta],'m-k')*P([alpha*beta],'n-k')*P([alpha*beta],'k')/(P([alpha*q],'m')*P([alpha*q],'n')*P([alpha*beta*beta],'m+n-2*k')*P([q],'m-k')*P([q],'n-k')*P([q],'k'))*P([alpha*beta*beta],'m+n-k')*P([Q('k-m-n')/alpha],'k')*zp(alpha,'k')*(1-alpha*beta*Q('m+n-2*k'))/(P([alpha*beta*q],'m+n-k')*P([Q('k-m-n')],'k')*(1-alpha*beta))*WAUTO(Q('k-m-n-1'),[Q('k-m-n')/(alpha*beta),Q('k-m-n')/(alpha*beta),alpha,alpha*beta*beta/q,Q('k-m'),Q('k-n'),Q('-k')],'k')*AU('m+n-2*k')),nz('alpha,beta,z'))
+x=e('x')
+S[196]=statement('(x a b q : K) (n : ℕ)',LJ(x,a,b,'n'),P([1/x],'n')/P([a*q],'n')*zp(-x,'n')*Q('-n*(n-1)/2')*PH([Q('-n'),b*x*q],[x*Q('1-n')],'n',a*Q('n+1')),'(hx : x ≠ 0)')
+def R(z,n):return PH([Q('-('+n+')'),a*b*c*d*Q('('+n+')-1'),a*z,a/z],[a*b,a*c,a*d],n)
+def NU():return P([b*c,a*d],'n')*zp(-a*d,'n')*Q('n*(n-1)/2')/P([a*b*c*d],'2*n')*SUM('j','N-n',lambda j:P([a*d*Q('n'),a*d*Q('n')],'j')/P([q,a*b*c*d*Q('2*n')],'j')*e('(weights (n+j))'))
+def KN():return (1-a*b*c*d*Q('2*n-1'))/(1-a*b*c*d/q)*P([a*b*c*d/q,a*b,a*c,a*d],'n')/P([q,b*c,b*d,c*d],'n')*zp(a,'-2*n')
+S[197]=statement('(z v a b c d q : K) (N : ℕ) (weights : ℕ → K)',SUM('n','N',lambda n:NU()*KN()*R(z,'n')*R(v,'n')),SUM('n','N',lambda n:P([d*z,d/z,d*v,d/v],'n')*e('(weights n)')/P([q,b*d,c*d,d/a],'n')*W(a*Q('-n')/d,[Q('1-n')/(b*d),Q('1-n')/(c*d),Q('-n'),a*z,a/z,a*v,a/v],'n',b*c*q/(a*d))),'(h_support : ∀ j, N < j → weights j = 0) '+nz('a,b,c,d,z,v'))
+S[198]=statement('(a b t q : K) (N x : ℕ)',SUM('n','N',lambda n:P([Q('-N')],'n')/P([q,b*q],'n')*HAHN('x',a,b,'N','n')*zp(t,'n')),PH([Q('x-N'),e(0)],[b*q],'N-x',t*Q('-x'))*PH([Q('-x')],[a*q],'x',a*q*t),'(hx : x ≤ N)')
+S[199]=statement('(a b t q : K) (N x : ℕ)',SUM('n','N',lambda n:P([a*q,Q('-N')],'n')/P([q],'n')*Q('-n*(n-1)/2')*HAHN('x',a,b,'N','n')*zp(t,'n')),PH([Q('-x'),b*Q('N-x+1')],[e(0)],'x',-a*t*Q('x-N+1'))*PH([Q('x-N'),a*Q('x+1')],[],'N-x',-t*Q('-x')),'(hx : x ≤ N)')
+S[200]=statement('(b c t q : K) (N x : ℕ)',SUM('n','N',lambda n:P([Q('-N')],'n')/P([q],'n')*PH([Q('-n'),Q('-x'),b*c*Q('x+1')],[Q('-N'),b*q],'min n x')*zp(t,'n')),PH([Q('-x'),Q('-x')/c],[b*q],'x',b*c*t*Q('x+1'))*P([t*Q('-N')],'N-x'),'(hx : x ≤ N) (hc : c ≠ 0)')

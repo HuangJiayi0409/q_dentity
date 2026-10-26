@@ -1,0 +1,3757 @@
+{
+  "date": "2026-09-21",
+  "legacy_project": "/home/hjy/Project/q-combinatorial_identity",
+  "scope": "finite_q main catalog only",
+  "counts": {
+    "existing_pipeline": 11,
+    "existing_lean": 12,
+    "reusable_components": 28,
+    "related_only": 7,
+    "not_matched": 388
+  },
+  "meaning": "Existing legacy implementation is not a new formal proof of the catalog entry in all source domains.",
+  "policy_sha256": "e76a3c6c0af3b1c3d6ecd18a446eb111c1bdcc8ceeba9537108ad3c7c7de97e0",
+  "audit_results": "reports/legacy_lean_audit/results.json",
+  "audit_results_sha256": "652c3a6f2ee0607f9d0fefa87eb6bebbd6a6297508f6d9e979c4b61d50f1bf1c",
+  "families": [
+    {
+      "family_id": "pochhammer",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 3,
+        "reusable_components": 21,
+        "related_only": 0,
+        "not_matched": 0
+      }
+    },
+    {
+      "family_id": "product-residues",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 7
+      }
+    },
+    {
+      "family_id": "q-numbers",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 2
+      }
+    },
+    {
+      "family_id": "gaussian",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 5,
+        "reusable_components": 1,
+        "related_only": 0,
+        "not_matched": 7
+      }
+    },
+    {
+      "family_id": "q-binomial",
+      "counts": {
+        "existing_pipeline": 1,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 5
+      }
+    },
+    {
+      "family_id": "q-multinomial",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 9
+      }
+    },
+    {
+      "family_id": "q-vandermonde",
+      "counts": {
+        "existing_pipeline": 3,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 2
+      }
+    },
+    {
+      "family_id": "saalschuetz",
+      "counts": {
+        "existing_pipeline": 1,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 2
+      }
+    },
+    {
+      "family_id": "dixon-watson-whipple",
+      "counts": {
+        "existing_pipeline": 1,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 6
+      }
+    },
+    {
+      "family_id": "very-well-poised",
+      "counts": {
+        "existing_pipeline": 3,
+        "existing_lean": 1,
+        "reusable_components": 1,
+        "related_only": 1,
+        "not_matched": 20
+      }
+    },
+    {
+      "family_id": "terminating-series",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 3,
+        "not_matched": 34
+      }
+    },
+    {
+      "family_id": "bibasic",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 36
+      }
+    },
+    {
+      "family_id": "karlsson-minton",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 4
+      }
+    },
+    {
+      "family_id": "bailey",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 1,
+        "related_only": 1,
+        "not_matched": 24
+      }
+    },
+    {
+      "family_id": "finite-inversion",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 5
+      }
+    },
+    {
+      "family_id": "constant-term",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 3
+      }
+    },
+    {
+      "family_id": "multivariate",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 5
+      }
+    },
+    {
+      "family_id": "rogers-szego",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 17
+      }
+    },
+    {
+      "family_id": "ultraspherical",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 14
+      }
+    },
+    {
+      "family_id": "askey-wilson",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 18
+      }
+    },
+    {
+      "family_id": "q-racah",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 9
+      }
+    },
+    {
+      "family_id": "q-hahn",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 10
+      }
+    },
+    {
+      "family_id": "q-jacobi",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 13
+      }
+    },
+    {
+      "family_id": "q-krawtchouk",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 3
+      }
+    },
+    {
+      "family_id": "clausen",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 11
+      }
+    },
+    {
+      "family_id": "schur-rr",
+      "counts": {
+        "existing_pipeline": 1,
+        "existing_lean": 3,
+        "reusable_components": 3,
+        "related_only": 0,
+        "not_matched": 11
+      }
+    },
+    {
+      "family_id": "bressoud",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 5
+      }
+    },
+    {
+      "family_id": "hard-hexagon",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 6
+      }
+    },
+    {
+      "family_id": "q-trinomial",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 8
+      }
+    },
+    {
+      "family_id": "gollnitz",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 6
+      }
+    },
+    {
+      "family_id": "schur-partitions",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 3
+      }
+    },
+    {
+      "family_id": "borwein",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 7
+      }
+    },
+    {
+      "family_id": "mod8",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 2
+      }
+    },
+    {
+      "family_id": "lmw",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 2
+      }
+    },
+    {
+      "family_id": "finite-products",
+      "counts": {
+        "existing_pipeline": 1,
+        "existing_lean": 0,
+        "reusable_components": 1,
+        "related_only": 2,
+        "not_matched": 0
+      }
+    },
+    {
+      "family_id": "rectangle-partitions",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 4
+      }
+    },
+    {
+      "family_id": "oscillation-partitions",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 14
+      }
+    },
+    {
+      "family_id": "plane-partitions",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 6
+      }
+    },
+    {
+      "family_id": "finite-fields",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 3
+      }
+    },
+    {
+      "family_id": "cayley",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 1
+      }
+    },
+    {
+      "family_id": "q-calculus",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 17
+      }
+    },
+    {
+      "family_id": "symmetric-calculus",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 11
+      }
+    },
+    {
+      "family_id": "coefficient-recurrences",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 6
+      }
+    },
+    {
+      "family_id": "fine-coefficients",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 6
+      }
+    },
+    {
+      "family_id": "partition-rank",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 1
+      }
+    },
+    {
+      "family_id": "bilateral-series",
+      "counts": {
+        "existing_pipeline": 0,
+        "existing_lean": 0,
+        "reusable_components": 0,
+        "related_only": 0,
+        "not_matched": 3
+      }
+    }
+  ],
+  "entries": [
+    {
+      "canonical_id": "FQI-GAUSSIAN-SYMMETRY",
+      "family_id": "gaussian",
+      "status": "existing_lean",
+      "evidence": [
+        "gaussian"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-PASCAL-Q-N-K",
+      "family_id": "gaussian",
+      "status": "existing_lean",
+      "evidence": [
+        "gaussian"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-PASCAL-Q-K",
+      "family_id": "gaussian",
+      "status": "existing_lean",
+      "evidence": [
+        "gaussian"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-GAUSSIAN-RECIPROCITY",
+      "family_id": "gaussian",
+      "status": "existing_lean",
+      "evidence": [
+        "gaussian"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-FINITE-Q-BINOMIAL",
+      "family_id": "q-binomial",
+      "status": "existing_pipeline",
+      "evidence": [
+        "binomial",
+        "binomial_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-RECTANGLE-PARTITIONS",
+      "family_id": "rectangle-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SUBSPACE-COUNT",
+      "family_id": "finite-fields",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-GAUSSIAN-VANDERMONDE",
+      "family_id": "q-vandermonde",
+      "status": "existing_pipeline",
+      "evidence": [
+        "vandermonde",
+        "vandermonde_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-GAUSS-ALTERNATING",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-ROGERS-SZEGO-RECURRENCE",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-ROGERS-SZEGO-SQRT",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-CHU-VANDERMONDE-Q",
+      "family_id": "q-vandermonde",
+      "status": "existing_pipeline",
+      "evidence": [
+        "chu_q",
+        "hypergeom_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-CHU-VANDERMONDE-BALANCED",
+      "family_id": "q-vandermonde",
+      "status": "existing_pipeline",
+      "evidence": [
+        "chu_balanced",
+        "hypergeom_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-PFAFF-SAALSCHUETZ",
+      "family_id": "saalschuetz",
+      "status": "existing_pipeline",
+      "evidence": [
+        "pfaff",
+        "hypergeom_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-TERMINATING-6PHI5",
+      "family_id": "very-well-poised",
+      "status": "existing_pipeline",
+      "evidence": [
+        "six_phi_five",
+        "hypergeom_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-WATSON-8PHI7",
+      "family_id": "very-well-poised",
+      "status": "existing_pipeline",
+      "evidence": [
+        "watson",
+        "watson_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SEARS-4PHI3-II",
+      "family_id": "very-well-poised",
+      "status": "related_only",
+      "evidence": [
+        "sears",
+        "sears_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-BAILEY-INVERSION",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-BAILEY-LEMMA",
+      "family_id": "bailey",
+      "status": "related_only",
+      "evidence": [
+        "weak_bailey",
+        "weak_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-BAILEY-UNIT",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-Q-DYSON",
+      "family_id": "constant-term",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-POCHHAMMER-NEGATIVE",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-POCHHAMMER-RESIDUES",
+      "family_id": "product-residues",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-POCHHAMMER-ROOTS",
+      "family_id": "product-residues",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-DQ-MONOMIAL",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-GOLLNITZ-RECURRENCE",
+      "family_id": "gollnitz",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-GOLLNITZ-SHIFT",
+      "family_id": "gollnitz",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-GOLLNITZ-ORDER4",
+      "family_id": "gollnitz",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-GOLLNITZ-ELIMINATION",
+      "family_id": "gollnitz",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SCHUR-RR-BUNDLE",
+      "family_id": "schur-rr",
+      "status": "reusable_components",
+      "evidence": [
+        "finite_rr",
+        "rr_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-CAYLEY",
+      "family_id": "cayley",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-OSCILLATION-M-EVEN",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-OSCILLATION-M-ODD",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-OSCILLATION-P-EVEN",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-OSCILLATION-P-ODD",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SCHUR-RR-FIRST",
+      "family_id": "schur-rr",
+      "status": "existing_pipeline",
+      "evidence": [
+        "finite_rr",
+        "rr_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SCHUR-RR-SECOND",
+      "family_id": "schur-rr",
+      "status": "existing_lean",
+      "evidence": [
+        "finite_rr",
+        "second_rr_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SCHUR-EVEN-RECIPROCAL",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.2.26",
+      "family_id": "coefficient-recurrences",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.2.47",
+      "family_id": "q-numbers",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.2.55",
+      "family_id": "q-numbers",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.3.25",
+      "family_id": "coefficient-recurrences",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.9.10",
+      "family_id": "karlsson-minton",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.9.11",
+      "family_id": "karlsson-minton",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.9.12",
+      "family_id": "karlsson-minton",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.9.9-finite",
+      "family_id": "karlsson-minton",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex1ii",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex3i",
+      "family_id": "q-vandermonde",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex3ii",
+      "family_id": "q-multinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex4ii",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex5",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex6i",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex6iii",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex12iv",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex15i",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex17",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex29",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex31-monomial",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex31-term",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex33",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-1.Ex35",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.2.2",
+      "family_id": "finite-inversion",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.2.4",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.3.2",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.3.4",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.7.5",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.8.2",
+      "family_id": "finite-inversion",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.10.3",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.10.8",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex5",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex6",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex10",
+      "family_id": "q-racah",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex11",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex12",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex8",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex14i",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex14ii",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex19",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex20",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex27",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex28",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex29",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex35i",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex35ii",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex35iii",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex36i",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex36ii",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-2.Ex36iii",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.2.6",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.6.6",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.6.10",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.6.16",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.6.17",
+      "family_id": "finite-inversion",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.6.18",
+      "family_id": "finite-inversion",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.8.14",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.8.15",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.9.5",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.10.3",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.10.5",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.10.6",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.10.7",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.10.8",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.10.11",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.10.14",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.10.15",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.10.16",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex3",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex4-odd",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex4-transform",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex12",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex13i",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex13ii",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex21-mixed",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex21-quad",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex23",
+      "family_id": "finite-inversion",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex31i",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex31ii",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-3.Ex34",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-5.Ex11",
+      "family_id": "bilateral-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-5.Ex18iii",
+      "family_id": "bilateral-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-5.Ex18iv",
+      "family_id": "bilateral-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-5.Ex19i",
+      "family_id": "dixon-watson-whipple",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-5.Ex19ii",
+      "family_id": "dixon-watson-whipple",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-6.6.10",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-6.Ex14",
+      "family_id": "constant-term",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.2.1",
+      "family_id": "q-racah",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.2.12",
+      "family_id": "q-racah",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.2.18",
+      "family_id": "q-racah",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.2.22",
+      "family_id": "q-hahn",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.2.24",
+      "family_id": "q-hahn",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.3.6",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.3.17",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.4.14",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.5.3",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.5.20",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.5.35",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.5.36",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.6.2",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.6.8",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.6.14",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.7.6",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.7.10",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.7.7",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex5",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex8i",
+      "family_id": "q-krawtchouk",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex8ii",
+      "family_id": "q-krawtchouk",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex10",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex11",
+      "family_id": "q-krawtchouk",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex14",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex17",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex19",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex27",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex32",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex37-finite",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex38",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex40",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-7.Ex41",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.1.2",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.1.4",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.2.5",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.2.6",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.2.12",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.3.3",
+      "family_id": "q-hahn",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.4.7",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.5.1",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.7.4",
+      "family_id": "q-racah",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.7.6",
+      "family_id": "q-racah",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.7.9-finite",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.7.13",
+      "family_id": "q-racah",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.8.15",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.9.1",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.9.2",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.9.5",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.9.8",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.9.9",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex1i",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex1ii",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex2",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex4i",
+      "family_id": "q-hahn",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex4ii",
+      "family_id": "q-hahn",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex7i",
+      "family_id": "q-hahn",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex8",
+      "family_id": "q-racah",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex11",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex12",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex9",
+      "family_id": "q-racah",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex15",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex16",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex17i",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex17ii",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex20",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex21",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex24",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex26",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex27",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-8.Ex28",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-9.2.2",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-9.5.3-finite",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-9.Ex4i",
+      "family_id": "q-hahn",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-9.Ex4ii",
+      "family_id": "q-hahn",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-9.Ex5i",
+      "family_id": "q-hahn",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-9.Ex5ii",
+      "family_id": "q-hahn",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-9.Ex7",
+      "family_id": "ultraspherical",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-9.Ex10ii",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-9.Ex17i",
+      "family_id": "askey-wilson",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-9.Ex17ii",
+      "family_id": "q-jacobi",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-10.Ex18",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.6.5-p0",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.6.6-p0",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.6.21-p0",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.7.1",
+      "family_id": "multivariate",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.7.8-p0",
+      "family_id": "multivariate",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.Ex21-p0",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.Ex22-p0",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.Ex23ii",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.Ex24ii",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.Ex38-p0",
+      "family_id": "multivariate",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.Ex39-p0",
+      "family_id": "multivariate",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-11.Ex40-p0",
+      "family_id": "multivariate",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-03",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-07",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-08",
+      "family_id": "pochhammer",
+      "status": "existing_lean",
+      "evidence": [
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-09",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-10",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-11",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-12",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-13",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-14",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-15",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-16",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-17",
+      "family_id": "pochhammer",
+      "status": "existing_lean",
+      "evidence": [
+        "pochhammer"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-18",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-19",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-20",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-21",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-22",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-25",
+      "family_id": "product-residues",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-26",
+      "family_id": "product-residues",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-28",
+      "family_id": "product-residues",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-33",
+      "family_id": "product-residues",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-42",
+      "family_id": "gaussian",
+      "status": "reusable_components",
+      "evidence": [
+        "gaussian",
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-43",
+      "family_id": "gaussian",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-44",
+      "family_id": "gaussian",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-45",
+      "family_id": "gaussian",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-46",
+      "family_id": "gaussian",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-I-47",
+      "family_id": "gaussian",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-II-14",
+      "family_id": "dixon-watson-whipple",
+      "status": "existing_pipeline",
+      "evidence": [
+        "dixon",
+        "hypergeom_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-II-15",
+      "family_id": "dixon-watson-whipple",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-II-17",
+      "family_id": "dixon-watson-whipple",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-II-19",
+      "family_id": "dixon-watson-whipple",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-II-22",
+      "family_id": "very-well-poised",
+      "status": "existing_lean",
+      "evidence": [
+        "jackson"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-II-34",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-II-35",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-II-36",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-II-37",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-06",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-07",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-08",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-11",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-12",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-13",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-14",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-15",
+      "family_id": "very-well-poised",
+      "status": "existing_pipeline",
+      "evidence": [
+        "sears",
+        "sears_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-19",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-21",
+      "family_id": "bibasic",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-22",
+      "family_id": "clausen",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-25",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-26",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-27",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-GR2-III-28",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.2.7",
+      "family_id": "rectangle-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.3.1",
+      "family_id": "gaussian",
+      "status": "existing_lean",
+      "evidence": [
+        "gaussian"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.3.9",
+      "family_id": "gaussian",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.3.11",
+      "family_id": "saalschuetz",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.3.14",
+      "family_id": "saalschuetz",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.4.2",
+      "family_id": "q-multinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.4.4",
+      "family_id": "q-multinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.E1",
+      "family_id": "finite-products",
+      "status": "reusable_components",
+      "evidence": [
+        "finite_jtp",
+        "jtp_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.E7",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.E12a",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.E12b",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-7.E11",
+      "family_id": "gollnitz",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.E4b",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-11.2.1",
+      "family_id": "plane-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-11.2.4",
+      "family_id": "plane-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-11.2.9",
+      "family_id": "plane-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-11.2.10",
+      "family_id": "plane-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-13.E3",
+      "family_id": "q-binomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-13.E5",
+      "family_id": "q-binomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-3.5.MULTIPROD",
+      "family_id": "q-multinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.3.5",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.3.6",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.3.7",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.3.8",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.L7",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.L8",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.3.17",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.3.18",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.3.19",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-9.3.20",
+      "family_id": "oscillation-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-11.2.2",
+      "family_id": "plane-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-11.2.8",
+      "family_id": "plane-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-4.2.COMPOSITIONS",
+      "family_id": "rectangle-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AP-13.E7",
+      "family_id": "q-vandermonde",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-2.23",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-2.29",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-2.35",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-2.38",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-2.39",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-2.40",
+      "family_id": "terminating-series",
+      "status": "related_only",
+      "evidence": [
+        "heine",
+        "heine_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-3.12",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-3.17",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-3.18",
+      "family_id": "terminating-series",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-3.23",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-3.35",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-3.37",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-3.42",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-3.43",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-4.24",
+      "family_id": "dixon-watson-whipple",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-6.18",
+      "family_id": "schur-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-6.19",
+      "family_id": "schur-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-8.32",
+      "family_id": "schur-rr",
+      "status": "reusable_components",
+      "evidence": [
+        "finite_rr"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-8.44",
+      "family_id": "hard-hexagon",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-8.45",
+      "family_id": "hard-hexagon",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-8.46",
+      "family_id": "hard-hexagon",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-8.50",
+      "family_id": "hard-hexagon",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-8.52",
+      "family_id": "hard-hexagon",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-8.56",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-9.5",
+      "family_id": "schur-rr",
+      "status": "reusable_components",
+      "evidence": [
+        "finite_rr"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-9.17",
+      "family_id": "hard-hexagon",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-9.26",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-9.27",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-10.1",
+      "family_id": "lmw",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-10.5",
+      "family_id": "lmw",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-10.12",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-10.27",
+      "family_id": "gollnitz",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-10.30",
+      "family_id": "coefficient-recurrences",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-10.32",
+      "family_id": "coefficient-recurrences",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-10.7A",
+      "family_id": "coefficient-recurrences",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-B.9",
+      "family_id": "q-multinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-B.12",
+      "family_id": "q-multinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-AQ-4.3",
+      "family_id": "constant-term",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-2.1",
+      "family_id": "pochhammer",
+      "status": "existing_lean",
+      "evidence": [
+        "pochhammer"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-2.3",
+      "family_id": "fine-coefficients",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-4.coeff",
+      "family_id": "fine-coefficients",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-7.GH",
+      "family_id": "fine-coefficients",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-15.2",
+      "family_id": "fine-coefficients",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-15.31",
+      "family_id": "fine-coefficients",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-15.41",
+      "family_id": "fine-coefficients",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-20.64b",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-20.65b",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-20.66b",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-20.69",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-21.2",
+      "family_id": "q-multinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-21.21",
+      "family_id": "q-multinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-21.23",
+      "family_id": "q-multinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-21.product",
+      "family_id": "product-residues",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-FINE-25.shell",
+      "family_id": "partition-rank",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-1.JacobiFinite",
+      "family_id": "finite-products",
+      "status": "existing_pipeline",
+      "evidence": [
+        "finite_jtp",
+        "jtp_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-1.75",
+      "family_id": "finite-products",
+      "status": "related_only",
+      "evidence": [
+        "quintuple"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-1.75-rec",
+      "family_id": "finite-products",
+      "status": "related_only",
+      "evidence": [
+        "quintuple"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-1.79",
+      "family_id": "coefficient-recurrences",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-1.87",
+      "family_id": "q-trinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-1.90",
+      "family_id": "q-trinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-1.94-corrected",
+      "family_id": "terminating-series",
+      "status": "related_only",
+      "evidence": [
+        "heine",
+        "heine_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-1.95",
+      "family_id": "terminating-series",
+      "status": "related_only",
+      "evidence": [
+        "heine",
+        "heine_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-1.99",
+      "family_id": "very-well-poised",
+      "status": "reusable_components",
+      "evidence": [
+        "watson",
+        "watson_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-1.ExDistinct",
+      "family_id": "rectangle-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.9-corrected",
+      "family_id": "very-well-poised",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.30",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.Pair112",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.Pair122",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.Lem2.31",
+      "family_id": "bailey",
+      "status": "reusable_components",
+      "evidence": [
+        "finite_jtp",
+        "jtp_emitter"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.Ex2b",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.Ex2c",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.Ex2d",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.Ex2e",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.Ex2f",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.Ex7a-corrected",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.75",
+      "family_id": "q-trinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.76-78",
+      "family_id": "schur-partitions",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.Lem2.53",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-2.108",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-3.5-6",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-3.7",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-3.Lem3.3",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.6",
+      "family_id": "schur-rr",
+      "status": "existing_lean",
+      "evidence": [
+        "finite_rr"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.17",
+      "family_id": "schur-rr",
+      "status": "existing_lean",
+      "evidence": [
+        "finite_rr"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.18",
+      "family_id": "q-trinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.19",
+      "family_id": "q-trinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.25",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.26-corrected",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.27-corrected",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.35",
+      "family_id": "bressoud",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.37",
+      "family_id": "bressoud",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.38",
+      "family_id": "bressoud",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.Sym",
+      "family_id": "bressoud",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.43",
+      "family_id": "bressoud",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.47",
+      "family_id": "mod8",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.48",
+      "family_id": "q-trinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.49",
+      "family_id": "q-trinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.50",
+      "family_id": "q-trinomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.Mod8",
+      "family_id": "mod8",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.51",
+      "family_id": "borwein",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.52",
+      "family_id": "borwein",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.53",
+      "family_id": "borwein",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.54",
+      "family_id": "borwein",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.55",
+      "family_id": "borwein",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.56",
+      "family_id": "borwein",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-4.Ex3",
+      "family_id": "borwein",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-5.6-8",
+      "family_id": "schur-rr",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-SILLS-6.Ex1-corrected",
+      "family_id": "bailey",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-1.11-12",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-1.13-14",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-1.15",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-3.5",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-3.6",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "pochhammer"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-3.9",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-3.10",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-3.11",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-3.12",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-4.1",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-4.3",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-4.4",
+      "family_id": "q-binomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-5.1",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-5.7",
+      "family_id": "q-binomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-5.8",
+      "family_id": "q-binomial",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-6.5",
+      "family_id": "gaussian",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-7.2",
+      "family_id": "finite-fields",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-7.rank",
+      "family_id": "finite-fields",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-7.8",
+      "family_id": "rogers-szego",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-8.reciprocal",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-13.10",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-14.higher",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-15.cancellation",
+      "family_id": "pochhammer",
+      "status": "reusable_components",
+      "evidence": [
+        "reflection"
+      ],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-19.telescoping",
+      "family_id": "q-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.5",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.6",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.7",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.10",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.12",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.14",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.15",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.21",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.22",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.rootsum",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    },
+    {
+      "canonical_id": "FQI-SRC-KAC-CHEUNG-26.23",
+      "family_id": "symmetric-calculus",
+      "status": "not_matched",
+      "evidence": [],
+      "catalog_formal_proof": false
+    }
+  ]
+}

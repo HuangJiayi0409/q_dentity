@@ -1,0 +1,14 @@
+{
+  "id": "FQI-BAILEY-UNIT",
+  "source": {
+    "identity_id": "FQI-BAILEY-UNIT",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity020.lean",
+    "sha256": "c9ff70f5bf2bf5d8733261930ecb4272ef3bdea4886fb44b63c93d51a4181133"
+  },
+  "well_typed_original_goal": true,
+  "typecheck": {
+    "exit_code": 1,
+    "output": "P1_ELABORATED_GOAL: ∑ r ∈ Finset.range (n + 1), unitBailey a q r / (poch q q (n - r) * poch (a * q) q (n + r)) =\n  if n = 0 then 1 else 0\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-BAILEY-UNIT/Typecheck.lean:29:2: error: P1_TYPECHECK_ONLY\n"
+  },
+  "is_proof": false
+}

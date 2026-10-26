@@ -1,0 +1,1365 @@
+[
+  {
+    "id": "pochhammer",
+    "name": "有限 q-Pochhammer 移位、拼接与反向",
+    "canonical_ids": [
+      "FQI-POCHHAMMER-NEGATIVE",
+      "FQI-SRC-GR2-1.Ex1ii",
+      "FQI-SRC-GR2-I-03",
+      "FQI-SRC-GR2-I-07",
+      "FQI-SRC-GR2-I-08",
+      "FQI-SRC-GR2-I-09",
+      "FQI-SRC-GR2-I-10",
+      "FQI-SRC-GR2-I-11",
+      "FQI-SRC-GR2-I-12",
+      "FQI-SRC-GR2-I-13",
+      "FQI-SRC-GR2-I-14",
+      "FQI-SRC-GR2-I-15",
+      "FQI-SRC-GR2-I-16",
+      "FQI-SRC-GR2-I-17",
+      "FQI-SRC-GR2-I-18",
+      "FQI-SRC-GR2-I-19",
+      "FQI-SRC-GR2-I-20",
+      "FQI-SRC-GR2-I-21",
+      "FQI-SRC-GR2-I-22",
+      "FQI-SRC-FINE-2.1",
+      "FQI-SRC-KAC-CHEUNG-3.6",
+      "FQI-SRC-KAC-CHEUNG-3.9",
+      "FQI-SRC-KAC-CHEUNG-13.10",
+      "FQI-SRC-KAC-CHEUNG-15.cancellation"
+    ],
+    "source_ids": [
+      "GR2-I-02",
+      "FINE-18.11",
+      "GR2-1.Ex1ii",
+      "GR2-I-03",
+      "GR2-I-07",
+      "GR2-I-08",
+      "GR2-I-09",
+      "GR2-I-10",
+      "GR2-I-11",
+      "GR2-I-12",
+      "GR2-I-13",
+      "GR2-I-14",
+      "GR2-I-15",
+      "GR2-I-16",
+      "GR2-I-17",
+      "GR2-I-18",
+      "GR2-I-19",
+      "GR2-I-20",
+      "GR2-I-21",
+      "GR2-I-22",
+      "FINE-2.1",
+      "KAC-CHEUNG-3.6",
+      "KAC-CHEUNG-3.9",
+      "KAC-CHEUNG-13.10",
+      "KAC-CHEUNG-15.cancellation"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "product-residues",
+    "name": "乘积步长、单位根与根参数分解",
+    "canonical_ids": [
+      "FQI-POCHHAMMER-RESIDUES",
+      "FQI-POCHHAMMER-ROOTS",
+      "FQI-SRC-GR2-I-25",
+      "FQI-SRC-GR2-I-26",
+      "FQI-SRC-GR2-I-28",
+      "FQI-SRC-GR2-I-33",
+      "FQI-SRC-FINE-21.product"
+    ],
+    "source_ids": [
+      "GR2-I-27",
+      "SILLS-2.49",
+      "GR2-I-30",
+      "SILLS-2.RootFactor",
+      "GR2-I-25",
+      "GR2-I-26",
+      "GR2-I-28",
+      "GR2-I-33",
+      "FINE-21.product"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "q-numbers",
+    "name": "q 数、阶乘与对称 q 数",
+    "canonical_ids": [
+      "FQI-SRC-GR2-1.2.47",
+      "FQI-SRC-GR2-1.2.55"
+    ],
+    "source_ids": [
+      "GR2-1.2.47",
+      "GR2-1.2.55"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "gaussian",
+    "name": "Gaussian 对称、递推与互反",
+    "canonical_ids": [
+      "FQI-GAUSSIAN-SYMMETRY",
+      "FQI-PASCAL-Q-N-K",
+      "FQI-PASCAL-Q-K",
+      "FQI-GAUSSIAN-RECIPROCITY",
+      "FQI-SRC-GR2-I-42",
+      "FQI-SRC-GR2-I-43",
+      "FQI-SRC-GR2-I-44",
+      "FQI-SRC-GR2-I-45",
+      "FQI-SRC-GR2-I-46",
+      "FQI-SRC-GR2-I-47",
+      "FQI-SRC-AP-3.3.1",
+      "FQI-SRC-AP-3.3.9",
+      "FQI-SRC-KAC-CHEUNG-6.5"
+    ],
+    "source_ids": [
+      "GR2-I-39",
+      "AP-3.3.2",
+      "SILLS-1.49",
+      "KAC-CHEUNG-6.1",
+      "SILLS-1.50",
+      "AP-3.3.3",
+      "AQ-3.8",
+      "KAC-CHEUNG-6.3",
+      "SILLS-1.51",
+      "AP-3.3.4",
+      "AQ-3.9",
+      "KAC-CHEUNG-6.2",
+      "SILLS-1.53",
+      "KAC-CHEUNG-6.reciprocity",
+      "AP-3.5.RECIP",
+      "GR2-I-42",
+      "GR2-I-43",
+      "GR2-I-44",
+      "GR2-I-45",
+      "GR2-I-46",
+      "GR2-I-47",
+      "AP-3.3.1",
+      "AP-3.3.9",
+      "KAC-CHEUNG-6.5"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "q-binomial",
+    "name": "有限 q-二项式及 q-交换二项式",
+    "canonical_ids": [
+      "FQI-FINITE-Q-BINOMIAL",
+      "FQI-SRC-AP-13.E3",
+      "FQI-SRC-AP-13.E5",
+      "FQI-SRC-KAC-CHEUNG-4.4",
+      "FQI-SRC-KAC-CHEUNG-5.7",
+      "FQI-SRC-KAC-CHEUNG-5.8"
+    ],
+    "source_ids": [
+      "SILLS-1.56",
+      "AP-3.3.6",
+      "FINE-6.23",
+      "GR2-II-04",
+      "KAC-CHEUNG-5.5",
+      "AP-13.E3",
+      "AP-13.E5",
+      "KAC-CHEUNG-4.4",
+      "KAC-CHEUNG-5.7",
+      "KAC-CHEUNG-5.8"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "q-multinomial",
+    "name": "q-多项式与多重集合统计",
+    "canonical_ids": [
+      "FQI-SRC-GR2-1.Ex3ii",
+      "FQI-SRC-AP-3.4.2",
+      "FQI-SRC-AP-3.4.4",
+      "FQI-SRC-AP-3.5.MULTIPROD",
+      "FQI-SRC-AQ-B.9",
+      "FQI-SRC-AQ-B.12",
+      "FQI-SRC-FINE-21.2",
+      "FQI-SRC-FINE-21.21",
+      "FQI-SRC-FINE-21.23"
+    ],
+    "source_ids": [
+      "GR2-1.Ex3ii",
+      "AP-3.4.2",
+      "AP-3.4.4",
+      "AP-3.5.MULTIPROD",
+      "AQ-B.9",
+      "AQ-B.12",
+      "FINE-21.2",
+      "FINE-21.21",
+      "FINE-21.23"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "q-vandermonde",
+    "name": "q-Chu–Vandermonde 与 Gaussian 卷积",
+    "canonical_ids": [
+      "FQI-GAUSSIAN-VANDERMONDE",
+      "FQI-CHU-VANDERMONDE-Q",
+      "FQI-CHU-VANDERMONDE-BALANCED",
+      "FQI-SRC-GR2-1.Ex3i",
+      "FQI-SRC-AP-13.E7"
+    ],
+    "source_ids": [
+      "AP-3.3.10",
+      "KAC-CHEUNG-7.6",
+      "AP-13.E6",
+      "GR2-II-06",
+      "AQ-2.41",
+      "GR2-II-07",
+      "SILLS-1.Thm1.46",
+      "GR2-1.Ex3i",
+      "AP-13.E7"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "saalschuetz",
+    "name": "q-Pfaff–Saalschütz 与系数卷积",
+    "canonical_ids": [
+      "FQI-PFAFF-SAALSCHUETZ",
+      "FQI-SRC-AP-3.3.11",
+      "FQI-SRC-AP-3.3.14"
+    ],
+    "source_ids": [
+      "GR2-II-12",
+      "AP-3.3.12",
+      "AQ-3.25",
+      "SILLS-1.Thm1.49",
+      "AP-3.3.11",
+      "AP-3.3.14"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "dixon-watson-whipple",
+    "name": "q-Dixon、q-Watson、q-Whipple 奇偶求和",
+    "canonical_ids": [
+      "FQI-SRC-GR2-5.Ex19i",
+      "FQI-SRC-GR2-5.Ex19ii",
+      "FQI-SRC-GR2-II-14",
+      "FQI-SRC-GR2-II-15",
+      "FQI-SRC-GR2-II-17",
+      "FQI-SRC-GR2-II-19",
+      "FQI-SRC-AQ-4.24"
+    ],
+    "source_ids": [
+      "GR2-5.Ex19i",
+      "GR2-5.Ex19ii",
+      "GR2-II-14",
+      "GR2-II-15",
+      "GR2-II-17",
+      "GR2-II-19",
+      "AQ-4.24"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "very-well-poised",
+    "name": "良配求和及 Watson、Sears、Bailey 变换",
+    "canonical_ids": [
+      "FQI-TERMINATING-6PHI5",
+      "FQI-WATSON-8PHI7",
+      "FQI-SEARS-4PHI3-II",
+      "FQI-SRC-GR2-2.3.4",
+      "FQI-SRC-GR2-2.10.3",
+      "FQI-SRC-GR2-2.10.8",
+      "FQI-SRC-GR2-2.Ex5",
+      "FQI-SRC-GR2-2.Ex12",
+      "FQI-SRC-GR2-2.Ex14ii",
+      "FQI-SRC-GR2-2.Ex19",
+      "FQI-SRC-GR2-2.Ex20",
+      "FQI-SRC-GR2-2.Ex28",
+      "FQI-SRC-GR2-6.6.10",
+      "FQI-SRC-GR2-8.7.9-finite",
+      "FQI-SRC-GR2-8.Ex15",
+      "FQI-SRC-GR2-8.Ex16",
+      "FQI-SRC-GR2-II-22",
+      "FQI-SRC-GR2-III-14",
+      "FQI-SRC-GR2-III-15",
+      "FQI-SRC-GR2-III-19",
+      "FQI-SRC-GR2-III-25",
+      "FQI-SRC-GR2-III-26",
+      "FQI-SRC-GR2-III-27",
+      "FQI-SRC-GR2-III-28",
+      "FQI-SRC-SILLS-1.99",
+      "FQI-SRC-SILLS-2.9-corrected"
+    ],
+    "source_ids": [
+      "GR2-II-21",
+      "SILLS-1.Thm1.50",
+      "GR2-III-18",
+      "AQ-3.49",
+      "SILLS-1.98",
+      "GR2-III-16",
+      "SILLS-1.104",
+      "GR2-2.3.4",
+      "GR2-2.10.3",
+      "GR2-2.10.8",
+      "GR2-2.Ex5",
+      "GR2-2.Ex12",
+      "GR2-2.Ex14ii",
+      "GR2-2.Ex19",
+      "GR2-2.Ex20",
+      "GR2-2.Ex28",
+      "GR2-6.6.10",
+      "GR2-8.7.9-finite",
+      "GR2-8.Ex15",
+      "GR2-8.Ex16",
+      "GR2-II-22",
+      "GR2-III-14",
+      "GR2-III-15",
+      "GR2-III-19",
+      "GR2-III-25",
+      "GR2-III-26",
+      "GR2-III-27",
+      "GR2-III-28",
+      "SILLS-1.99",
+      "SILLS-2.9-corrected"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "terminating-series",
+    "name": "终止单底数超几何展开与降阶",
+    "canonical_ids": [
+      "FQI-SRC-GR2-1.Ex4ii",
+      "FQI-SRC-GR2-1.Ex5",
+      "FQI-SRC-GR2-1.Ex6i",
+      "FQI-SRC-GR2-1.Ex6iii",
+      "FQI-SRC-GR2-1.Ex15i",
+      "FQI-SRC-GR2-1.Ex17",
+      "FQI-SRC-GR2-2.2.4",
+      "FQI-SRC-GR2-2.3.2",
+      "FQI-SRC-GR2-2.Ex6",
+      "FQI-SRC-GR2-2.Ex8",
+      "FQI-SRC-GR2-2.Ex14i",
+      "FQI-SRC-GR2-2.Ex27",
+      "FQI-SRC-GR2-2.Ex35i",
+      "FQI-SRC-GR2-2.Ex35ii",
+      "FQI-SRC-GR2-2.Ex35iii",
+      "FQI-SRC-GR2-2.Ex36i",
+      "FQI-SRC-GR2-2.Ex36ii",
+      "FQI-SRC-GR2-2.Ex36iii",
+      "FQI-SRC-GR2-3.2.6",
+      "FQI-SRC-GR2-3.Ex4-odd",
+      "FQI-SRC-GR2-3.Ex4-transform",
+      "FQI-SRC-GR2-3.Ex34",
+      "FQI-SRC-GR2-8.2.5",
+      "FQI-SRC-GR2-8.9.1",
+      "FQI-SRC-GR2-10.Ex18",
+      "FQI-SRC-GR2-III-06",
+      "FQI-SRC-GR2-III-07",
+      "FQI-SRC-GR2-III-08",
+      "FQI-SRC-GR2-III-11",
+      "FQI-SRC-GR2-III-12",
+      "FQI-SRC-GR2-III-13",
+      "FQI-SRC-AQ-2.40",
+      "FQI-SRC-AQ-3.12",
+      "FQI-SRC-AQ-3.17",
+      "FQI-SRC-AQ-3.18",
+      "FQI-SRC-SILLS-1.94-corrected",
+      "FQI-SRC-SILLS-1.95"
+    ],
+    "source_ids": [
+      "GR2-1.Ex4ii",
+      "GR2-1.Ex5",
+      "GR2-1.Ex6i",
+      "GR2-1.Ex6iii",
+      "GR2-1.Ex15i",
+      "GR2-1.Ex17",
+      "GR2-2.2.4",
+      "GR2-2.3.2",
+      "GR2-2.Ex6",
+      "GR2-2.Ex8",
+      "GR2-2.Ex14i",
+      "GR2-2.Ex27",
+      "GR2-2.Ex35i",
+      "GR2-2.Ex35ii",
+      "GR2-2.Ex35iii",
+      "GR2-2.Ex36i",
+      "GR2-2.Ex36ii",
+      "GR2-2.Ex36iii",
+      "GR2-3.2.6",
+      "GR2-3.Ex4-odd",
+      "GR2-3.Ex4-transform",
+      "GR2-3.Ex34",
+      "GR2-8.2.5",
+      "GR2-8.9.1",
+      "GR2-10.Ex18",
+      "GR2-III-06",
+      "GR2-III-07",
+      "GR2-III-08",
+      "GR2-III-11",
+      "GR2-III-12",
+      "GR2-III-13",
+      "AQ-2.40",
+      "AQ-3.12",
+      "AQ-3.17",
+      "AQ-3.18",
+      "SILLS-1.94-corrected",
+      "SILLS-1.95"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "bibasic",
+    "name": "双底数、多底数与二次/三次变换",
+    "canonical_ids": [
+      "FQI-SRC-GR2-1.Ex35",
+      "FQI-SRC-GR2-3.6.6",
+      "FQI-SRC-GR2-3.6.10",
+      "FQI-SRC-GR2-3.6.16",
+      "FQI-SRC-GR2-3.8.14",
+      "FQI-SRC-GR2-3.8.15",
+      "FQI-SRC-GR2-3.9.5",
+      "FQI-SRC-GR2-3.10.3",
+      "FQI-SRC-GR2-3.10.5",
+      "FQI-SRC-GR2-3.10.6",
+      "FQI-SRC-GR2-3.10.7",
+      "FQI-SRC-GR2-3.10.8",
+      "FQI-SRC-GR2-3.10.11",
+      "FQI-SRC-GR2-3.10.14",
+      "FQI-SRC-GR2-3.10.15",
+      "FQI-SRC-GR2-3.10.16",
+      "FQI-SRC-GR2-3.Ex3",
+      "FQI-SRC-GR2-3.Ex12",
+      "FQI-SRC-GR2-3.Ex13i",
+      "FQI-SRC-GR2-3.Ex13ii",
+      "FQI-SRC-GR2-3.Ex21-mixed",
+      "FQI-SRC-GR2-3.Ex21-quad",
+      "FQI-SRC-GR2-3.Ex31i",
+      "FQI-SRC-GR2-3.Ex31ii",
+      "FQI-SRC-GR2-11.6.5-p0",
+      "FQI-SRC-GR2-11.6.6-p0",
+      "FQI-SRC-GR2-11.6.21-p0",
+      "FQI-SRC-GR2-11.Ex21-p0",
+      "FQI-SRC-GR2-11.Ex22-p0",
+      "FQI-SRC-GR2-11.Ex23ii",
+      "FQI-SRC-GR2-11.Ex24ii",
+      "FQI-SRC-GR2-II-34",
+      "FQI-SRC-GR2-II-35",
+      "FQI-SRC-GR2-II-36",
+      "FQI-SRC-GR2-II-37",
+      "FQI-SRC-GR2-III-21"
+    ],
+    "source_ids": [
+      "GR2-1.Ex35",
+      "GR2-3.6.6",
+      "GR2-3.6.10",
+      "GR2-3.6.16",
+      "GR2-3.8.14",
+      "GR2-3.8.15",
+      "GR2-3.9.5",
+      "GR2-3.10.3",
+      "GR2-3.10.5",
+      "GR2-3.10.6",
+      "GR2-3.10.7",
+      "GR2-3.10.8",
+      "GR2-3.10.11",
+      "GR2-3.10.14",
+      "GR2-3.10.15",
+      "GR2-3.10.16",
+      "GR2-3.Ex3",
+      "GR2-3.Ex12",
+      "GR2-3.Ex13i",
+      "GR2-3.Ex13ii",
+      "GR2-3.Ex21-mixed",
+      "GR2-3.Ex21-quad",
+      "GR2-3.Ex31i",
+      "GR2-3.Ex31ii",
+      "GR2-11.6.5-p0",
+      "GR2-11.6.6-p0",
+      "GR2-11.6.21-p0",
+      "GR2-11.Ex21-p0",
+      "GR2-11.Ex22-p0",
+      "GR2-11.Ex23ii",
+      "GR2-11.Ex24ii",
+      "GR2-II-34",
+      "GR2-II-35",
+      "GR2-II-36",
+      "GR2-II-37",
+      "GR2-III-21"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "karlsson-minton",
+    "name": "q-Karlsson–Minton 消去与求值",
+    "canonical_ids": [
+      "FQI-SRC-GR2-1.9.10",
+      "FQI-SRC-GR2-1.9.11",
+      "FQI-SRC-GR2-1.9.12",
+      "FQI-SRC-GR2-1.9.9-finite"
+    ],
+    "source_ids": [
+      "GR2-1.9.10",
+      "GR2-1.9.11",
+      "GR2-1.9.12",
+      "GR2-1.9.9-finite"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "bailey",
+    "name": "Bailey 对、有限反演与链",
+    "canonical_ids": [
+      "FQI-BAILEY-INVERSION",
+      "FQI-BAILEY-LEMMA",
+      "FQI-BAILEY-UNIT",
+      "FQI-SRC-AQ-3.23",
+      "FQI-SRC-AQ-3.35",
+      "FQI-SRC-AQ-3.37",
+      "FQI-SRC-AQ-3.42",
+      "FQI-SRC-AQ-3.43",
+      "FQI-SRC-AQ-8.56",
+      "FQI-SRC-AQ-10.12",
+      "FQI-SRC-SILLS-2.30",
+      "FQI-SRC-SILLS-2.Pair112",
+      "FQI-SRC-SILLS-2.Pair122",
+      "FQI-SRC-SILLS-2.Lem2.31",
+      "FQI-SRC-SILLS-2.Ex2b",
+      "FQI-SRC-SILLS-2.Ex2c",
+      "FQI-SRC-SILLS-2.Ex2d",
+      "FQI-SRC-SILLS-2.Ex2e",
+      "FQI-SRC-SILLS-2.Ex2f",
+      "FQI-SRC-SILLS-2.Ex7a-corrected",
+      "FQI-SRC-SILLS-2.Lem2.53",
+      "FQI-SRC-SILLS-2.108",
+      "FQI-SRC-SILLS-3.5-6",
+      "FQI-SRC-SILLS-3.7",
+      "FQI-SRC-SILLS-3.Lem3.3",
+      "FQI-SRC-SILLS-6.Ex1-corrected"
+    ],
+    "source_ids": [
+      "AQ-3.40",
+      "SILLS-2.31",
+      "AQ-REF-BAILEY",
+      "SILLS-2.34",
+      "AQ-3.48",
+      "SILLS-2.Ex2a",
+      "AQ-3.23",
+      "AQ-3.35",
+      "AQ-3.37",
+      "AQ-3.42",
+      "AQ-3.43",
+      "AQ-8.56",
+      "AQ-10.12",
+      "SILLS-2.30",
+      "SILLS-2.Pair112",
+      "SILLS-2.Pair122",
+      "SILLS-2.Lem2.31",
+      "SILLS-2.Ex2b",
+      "SILLS-2.Ex2c",
+      "SILLS-2.Ex2d",
+      "SILLS-2.Ex2e",
+      "SILLS-2.Ex2f",
+      "SILLS-2.Ex7a-corrected",
+      "SILLS-2.Lem2.53",
+      "SILLS-2.108",
+      "SILLS-3.5-6",
+      "SILLS-3.7",
+      "SILLS-3.Lem3.3",
+      "SILLS-6.Ex1-corrected"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "finite-inversion",
+    "name": "有限序列、三角矩阵与 Lagrange 反演",
+    "canonical_ids": [
+      "FQI-SRC-GR2-2.2.2",
+      "FQI-SRC-GR2-2.8.2",
+      "FQI-SRC-GR2-3.6.17",
+      "FQI-SRC-GR2-3.6.18",
+      "FQI-SRC-GR2-3.Ex23"
+    ],
+    "source_ids": [
+      "GR2-2.2.2",
+      "GR2-2.8.2",
+      "GR2-3.6.17",
+      "GR2-3.6.18",
+      "GR2-3.Ex23"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "constant-term",
+    "name": "q-Dyson 与根系常数项",
+    "canonical_ids": [
+      "FQI-Q-DYSON",
+      "FQI-SRC-GR2-6.Ex14",
+      "FQI-SRC-AQ-4.3"
+    ],
+    "source_ids": [
+      "GR2-2.NoteEx31",
+      "AQ-REF-QDYSON",
+      "GR2-6.Ex14",
+      "AQ-4.3"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "multivariate",
+    "name": "多变量 A/D 型终止求和与变换",
+    "canonical_ids": [
+      "FQI-SRC-GR2-11.7.1",
+      "FQI-SRC-GR2-11.7.8-p0",
+      "FQI-SRC-GR2-11.Ex38-p0",
+      "FQI-SRC-GR2-11.Ex39-p0",
+      "FQI-SRC-GR2-11.Ex40-p0"
+    ],
+    "source_ids": [
+      "GR2-11.7.1",
+      "GR2-11.7.8-p0",
+      "GR2-11.Ex38-p0",
+      "GR2-11.Ex39-p0",
+      "GR2-11.Ex40-p0"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "rogers-szego",
+    "name": "Rogers–Szegő、q-Hermite 与连接系数",
+    "canonical_ids": [
+      "FQI-GAUSS-ALTERNATING",
+      "FQI-ROGERS-SZEGO-RECURRENCE",
+      "FQI-ROGERS-SZEGO-SQRT",
+      "FQI-SRC-GR2-7.Ex38",
+      "FQI-SRC-GR2-7.Ex40",
+      "FQI-SRC-GR2-9.Ex10ii",
+      "FQI-SRC-AP-3.E7",
+      "FQI-SRC-AQ-2.23",
+      "FQI-SRC-AQ-2.29",
+      "FQI-SRC-AQ-2.35",
+      "FQI-SRC-AQ-2.38",
+      "FQI-SRC-AQ-2.39",
+      "FQI-SRC-FINE-20.64b",
+      "FQI-SRC-FINE-20.65b",
+      "FQI-SRC-FINE-20.66b",
+      "FQI-SRC-FINE-20.69",
+      "FQI-SRC-KAC-CHEUNG-7.8"
+    ],
+    "source_ids": [
+      "AP-3.3.8",
+      "FINE-20.67",
+      "KAC-CHEUNG-7.14-15",
+      "AP-3.E6",
+      "FINE-20.63b",
+      "KAC-CHEUNG-7.RogersSzego",
+      "AP-3.E5",
+      "FINE-20.68",
+      "GR2-7.Ex38",
+      "GR2-7.Ex40",
+      "GR2-9.Ex10ii",
+      "AP-3.E7",
+      "AQ-2.23",
+      "AQ-2.29",
+      "AQ-2.35",
+      "AQ-2.38",
+      "AQ-2.39",
+      "FINE-20.64b",
+      "FINE-20.65b",
+      "FINE-20.66b",
+      "FINE-20.69",
+      "KAC-CHEUNG-7.8"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "ultraspherical",
+    "name": "连续 q-超球与 Rogers 线性化",
+    "canonical_ids": [
+      "FQI-SRC-GR2-1.Ex29",
+      "FQI-SRC-GR2-7.4.14",
+      "FQI-SRC-GR2-7.5.35",
+      "FQI-SRC-GR2-7.5.36",
+      "FQI-SRC-GR2-7.6.14",
+      "FQI-SRC-GR2-7.Ex14",
+      "FQI-SRC-GR2-7.Ex17",
+      "FQI-SRC-GR2-7.Ex19",
+      "FQI-SRC-GR2-8.4.7",
+      "FQI-SRC-GR2-8.5.1",
+      "FQI-SRC-GR2-8.9.8",
+      "FQI-SRC-GR2-8.Ex12",
+      "FQI-SRC-GR2-8.Ex28",
+      "FQI-SRC-GR2-9.Ex7"
+    ],
+    "source_ids": [
+      "GR2-1.Ex29",
+      "GR2-7.4.14",
+      "GR2-7.5.35",
+      "GR2-7.5.36",
+      "GR2-7.6.14",
+      "GR2-7.Ex14",
+      "GR2-7.Ex17",
+      "GR2-7.Ex19",
+      "GR2-8.4.7",
+      "GR2-8.5.1",
+      "GR2-8.9.8",
+      "GR2-8.Ex12",
+      "GR2-8.Ex28",
+      "GR2-9.Ex7"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "askey-wilson",
+    "name": "Askey–Wilson、相伴多项式及差分",
+    "canonical_ids": [
+      "FQI-SRC-GR2-2.Ex11",
+      "FQI-SRC-GR2-7.5.3",
+      "FQI-SRC-GR2-7.5.20",
+      "FQI-SRC-GR2-7.6.2",
+      "FQI-SRC-GR2-7.6.8",
+      "FQI-SRC-GR2-7.7.6",
+      "FQI-SRC-GR2-7.7.10",
+      "FQI-SRC-GR2-7.7.7",
+      "FQI-SRC-GR2-7.Ex5",
+      "FQI-SRC-GR2-7.Ex27",
+      "FQI-SRC-GR2-7.Ex37-finite",
+      "FQI-SRC-GR2-8.Ex11",
+      "FQI-SRC-GR2-8.Ex20",
+      "FQI-SRC-GR2-8.Ex21",
+      "FQI-SRC-GR2-8.Ex26",
+      "FQI-SRC-GR2-8.Ex27",
+      "FQI-SRC-GR2-9.5.3-finite",
+      "FQI-SRC-GR2-9.Ex17i"
+    ],
+    "source_ids": [
+      "GR2-2.Ex11",
+      "GR2-7.5.3",
+      "GR2-7.5.20",
+      "GR2-7.6.2",
+      "GR2-7.6.8",
+      "GR2-7.7.6",
+      "GR2-7.7.10",
+      "GR2-7.7.7",
+      "GR2-7.Ex5",
+      "GR2-7.Ex27",
+      "GR2-7.Ex37-finite",
+      "GR2-8.Ex11",
+      "GR2-8.Ex20",
+      "GR2-8.Ex21",
+      "GR2-8.Ex26",
+      "GR2-8.Ex27",
+      "GR2-9.5.3-finite",
+      "GR2-9.Ex17i"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "q-racah",
+    "name": "q-Racah 递推、正交与乘积核",
+    "canonical_ids": [
+      "FQI-SRC-GR2-2.Ex10",
+      "FQI-SRC-GR2-7.2.1",
+      "FQI-SRC-GR2-7.2.12",
+      "FQI-SRC-GR2-7.2.18",
+      "FQI-SRC-GR2-8.7.4",
+      "FQI-SRC-GR2-8.7.6",
+      "FQI-SRC-GR2-8.7.13",
+      "FQI-SRC-GR2-8.Ex8",
+      "FQI-SRC-GR2-8.Ex9"
+    ],
+    "source_ids": [
+      "GR2-2.Ex10",
+      "GR2-7.2.1",
+      "GR2-7.2.12",
+      "GR2-7.2.18",
+      "GR2-8.7.4",
+      "GR2-8.7.6",
+      "GR2-8.7.13",
+      "GR2-8.Ex8",
+      "GR2-8.Ex9"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "q-hahn",
+    "name": "q-Hahn 与对偶 q-Hahn",
+    "canonical_ids": [
+      "FQI-SRC-GR2-7.2.22",
+      "FQI-SRC-GR2-7.2.24",
+      "FQI-SRC-GR2-8.3.3",
+      "FQI-SRC-GR2-8.Ex4i",
+      "FQI-SRC-GR2-8.Ex4ii",
+      "FQI-SRC-GR2-8.Ex7i",
+      "FQI-SRC-GR2-9.Ex4i",
+      "FQI-SRC-GR2-9.Ex4ii",
+      "FQI-SRC-GR2-9.Ex5i",
+      "FQI-SRC-GR2-9.Ex5ii"
+    ],
+    "source_ids": [
+      "GR2-7.2.22",
+      "GR2-7.2.24",
+      "GR2-8.3.3",
+      "GR2-8.Ex4i",
+      "GR2-8.Ex4ii",
+      "GR2-8.Ex7i",
+      "GR2-9.Ex4i",
+      "GR2-9.Ex4ii",
+      "GR2-9.Ex5i",
+      "GR2-9.Ex5ii"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "q-jacobi",
+    "name": "小/大/连续 q-Jacobi",
+    "canonical_ids": [
+      "FQI-SRC-GR2-1.Ex33",
+      "FQI-SRC-GR2-2.Ex29",
+      "FQI-SRC-GR2-7.3.6",
+      "FQI-SRC-GR2-7.3.17",
+      "FQI-SRC-GR2-7.Ex10",
+      "FQI-SRC-GR2-7.Ex32",
+      "FQI-SRC-GR2-7.Ex41",
+      "FQI-SRC-GR2-8.Ex1i",
+      "FQI-SRC-GR2-8.Ex1ii",
+      "FQI-SRC-GR2-8.Ex2",
+      "FQI-SRC-GR2-8.Ex24",
+      "FQI-SRC-GR2-9.2.2",
+      "FQI-SRC-GR2-9.Ex17ii"
+    ],
+    "source_ids": [
+      "GR2-1.Ex33",
+      "GR2-2.Ex29",
+      "GR2-7.3.6",
+      "GR2-7.3.17",
+      "GR2-7.Ex10",
+      "GR2-7.Ex32",
+      "GR2-7.Ex41",
+      "GR2-8.Ex1i",
+      "GR2-8.Ex1ii",
+      "GR2-8.Ex2",
+      "GR2-8.Ex24",
+      "GR2-9.2.2",
+      "GR2-9.Ex17ii"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "q-krawtchouk",
+    "name": "q-Krawtchouk 有限正交",
+    "canonical_ids": [
+      "FQI-SRC-GR2-7.Ex8i",
+      "FQI-SRC-GR2-7.Ex8ii",
+      "FQI-SRC-GR2-7.Ex11"
+    ],
+    "source_ids": [
+      "GR2-7.Ex8i",
+      "GR2-7.Ex8ii",
+      "GR2-7.Ex11"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "clausen",
+    "name": "q-Clausen 与终止乘积/平方公式",
+    "canonical_ids": [
+      "FQI-SRC-GR2-8.1.2",
+      "FQI-SRC-GR2-8.1.4",
+      "FQI-SRC-GR2-8.2.6",
+      "FQI-SRC-GR2-8.2.12",
+      "FQI-SRC-GR2-8.8.15",
+      "FQI-SRC-GR2-8.9.2",
+      "FQI-SRC-GR2-8.9.5",
+      "FQI-SRC-GR2-8.9.9",
+      "FQI-SRC-GR2-8.Ex17i",
+      "FQI-SRC-GR2-8.Ex17ii",
+      "FQI-SRC-GR2-III-22"
+    ],
+    "source_ids": [
+      "GR2-8.1.2",
+      "GR2-8.1.4",
+      "GR2-8.2.6",
+      "GR2-8.2.12",
+      "GR2-8.8.15",
+      "GR2-8.9.2",
+      "GR2-8.9.5",
+      "GR2-8.9.9",
+      "GR2-8.Ex17i",
+      "GR2-8.Ex17ii",
+      "GR2-III-22"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "schur-rr",
+    "name": "Schur、q-Fibonacci 与有限 Rogers–Ramanujan",
+    "canonical_ids": [
+      "FQI-SCHUR-RR-BUNDLE",
+      "FQI-SCHUR-RR-FIRST",
+      "FQI-SCHUR-RR-SECOND",
+      "FQI-SCHUR-EVEN-RECIPROCAL",
+      "FQI-SRC-GR2-2.7.5",
+      "FQI-SRC-AP-3.E12a",
+      "FQI-SRC-AP-3.E12b",
+      "FQI-SRC-AP-9.E4b",
+      "FQI-SRC-AQ-8.32",
+      "FQI-SRC-AQ-9.5",
+      "FQI-SRC-AQ-9.26",
+      "FQI-SRC-AQ-9.27",
+      "FQI-SRC-SILLS-4.6",
+      "FQI-SRC-SILLS-4.17",
+      "FQI-SRC-SILLS-4.25",
+      "FQI-SRC-SILLS-4.26-corrected",
+      "FQI-SRC-SILLS-4.27-corrected",
+      "FQI-SRC-SILLS-5.6-8"
+    ],
+    "source_ids": [
+      "AP-3.E10",
+      "AP-9.E4a",
+      "SILLS-4.14",
+      "AQ-8.36",
+      "SILLS-4.16",
+      "AQ-8.37",
+      "SILLS-4.23",
+      "AQ-REF-8.42",
+      "GR2-2.7.5",
+      "AP-3.E12a",
+      "AP-3.E12b",
+      "AP-9.E4b",
+      "AQ-8.32",
+      "AQ-9.5",
+      "AQ-9.26",
+      "AQ-9.27",
+      "SILLS-4.6",
+      "SILLS-4.17",
+      "SILLS-4.25",
+      "SILLS-4.26-corrected",
+      "SILLS-4.27-corrected",
+      "SILLS-5.6-8"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "bressoud",
+    "name": "Bressoud 有限 Rogers–Ramanujan",
+    "canonical_ids": [
+      "FQI-SRC-SILLS-4.35",
+      "FQI-SRC-SILLS-4.37",
+      "FQI-SRC-SILLS-4.38",
+      "FQI-SRC-SILLS-4.Sym",
+      "FQI-SRC-SILLS-4.43"
+    ],
+    "source_ids": [
+      "SILLS-4.35",
+      "SILLS-4.37",
+      "SILLS-4.38",
+      "SILLS-4.Sym",
+      "SILLS-4.43"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "hard-hexagon",
+    "name": "硬六角 G 多项式",
+    "canonical_ids": [
+      "FQI-SRC-AQ-8.44",
+      "FQI-SRC-AQ-8.45",
+      "FQI-SRC-AQ-8.46",
+      "FQI-SRC-AQ-8.50",
+      "FQI-SRC-AQ-8.52",
+      "FQI-SRC-AQ-9.17"
+    ],
+    "source_ids": [
+      "AQ-8.44",
+      "AQ-8.45",
+      "AQ-8.46",
+      "AQ-8.50",
+      "AQ-8.52",
+      "AQ-9.17"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "q-trinomial",
+    "name": "Andrews–Baxter q-三项式",
+    "canonical_ids": [
+      "FQI-SRC-SILLS-1.87",
+      "FQI-SRC-SILLS-1.90",
+      "FQI-SRC-SILLS-2.75",
+      "FQI-SRC-SILLS-4.18",
+      "FQI-SRC-SILLS-4.19",
+      "FQI-SRC-SILLS-4.48",
+      "FQI-SRC-SILLS-4.49",
+      "FQI-SRC-SILLS-4.50"
+    ],
+    "source_ids": [
+      "SILLS-1.87",
+      "SILLS-1.90",
+      "SILLS-2.75",
+      "SILLS-4.18",
+      "SILLS-4.19",
+      "SILLS-4.48",
+      "SILLS-4.49",
+      "SILLS-4.50"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "gollnitz",
+    "name": "Göllnitz 有界分拆多项式",
+    "canonical_ids": [
+      "FQI-GOLLNITZ-RECURRENCE",
+      "FQI-GOLLNITZ-SHIFT",
+      "FQI-GOLLNITZ-ORDER4",
+      "FQI-GOLLNITZ-ELIMINATION",
+      "FQI-SRC-AP-7.E11",
+      "FQI-SRC-AQ-10.27"
+    ],
+    "source_ids": [
+      "SILLS-2.82-83",
+      "AQ-10.17",
+      "AQ-10.18",
+      "SILLS-2.84",
+      "AQ-10.21",
+      "SILLS-2.88",
+      "AQ-10.23",
+      "SILLS-2.90-91",
+      "AP-7.E11",
+      "AQ-10.27"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "schur-partitions",
+    "name": "Schur 有界分拆与模3递推",
+    "canonical_ids": [
+      "FQI-SRC-AQ-6.18",
+      "FQI-SRC-AQ-6.19",
+      "FQI-SRC-SILLS-2.76-78"
+    ],
+    "source_ids": [
+      "AQ-6.18",
+      "AQ-6.19",
+      "SILLS-2.76-78"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "borwein",
+    "name": "Borwein A/B/C 多项式",
+    "canonical_ids": [
+      "FQI-SRC-SILLS-4.51",
+      "FQI-SRC-SILLS-4.52",
+      "FQI-SRC-SILLS-4.53",
+      "FQI-SRC-SILLS-4.54",
+      "FQI-SRC-SILLS-4.55",
+      "FQI-SRC-SILLS-4.56",
+      "FQI-SRC-SILLS-4.Ex3"
+    ],
+    "source_ids": [
+      "SILLS-4.51",
+      "SILLS-4.52",
+      "SILLS-4.53",
+      "SILLS-4.54",
+      "SILLS-4.55",
+      "SILLS-4.56",
+      "SILLS-4.Ex3"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "mod8",
+    "name": "Mod 8、q-Pell 与 Ramanujan–Slater",
+    "canonical_ids": [
+      "FQI-SRC-SILLS-4.47",
+      "FQI-SRC-SILLS-4.Mod8"
+    ],
+    "source_ids": [
+      "SILLS-4.47",
+      "SILLS-4.Mod8"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "lmw",
+    "name": "Lusztig–Macdonald–Wall 多项式",
+    "canonical_ids": [
+      "FQI-SRC-AQ-10.1",
+      "FQI-SRC-AQ-10.5"
+    ],
+    "source_ids": [
+      "AQ-10.1",
+      "AQ-10.5"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "finite-products",
+    "name": "有限 Jacobi/五重乘积",
+    "canonical_ids": [
+      "FQI-SRC-AP-3.E1",
+      "FQI-SRC-SILLS-1.JacobiFinite",
+      "FQI-SRC-SILLS-1.75",
+      "FQI-SRC-SILLS-1.75-rec"
+    ],
+    "source_ids": [
+      "AP-3.E1",
+      "SILLS-1.JacobiFinite",
+      "SILLS-1.75",
+      "SILLS-1.75-rec"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "rectangle-partitions",
+    "name": "矩形分拆与有限生成多项式",
+    "canonical_ids": [
+      "FQI-RECTANGLE-PARTITIONS",
+      "FQI-SRC-AP-3.2.7",
+      "FQI-SRC-AP-4.2.COMPOSITIONS",
+      "FQI-SRC-SILLS-1.ExDistinct"
+    ],
+    "source_ids": [
+      "GR2-1.NoteEx2-partition",
+      "AP-3.2.1",
+      "SILLS-1.Thm1.53",
+      "AP-3.2.7",
+      "AP-4.2.COMPOSITIONS",
+      "SILLS-1.ExDistinct"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "oscillation-partitions",
+    "name": "振荡分拆与有限分拆筛",
+    "canonical_ids": [
+      "FQI-OSCILLATION-M-EVEN",
+      "FQI-OSCILLATION-M-ODD",
+      "FQI-OSCILLATION-P-EVEN",
+      "FQI-OSCILLATION-P-ODD",
+      "FQI-SRC-AP-9.3.5",
+      "FQI-SRC-AP-9.3.6",
+      "FQI-SRC-AP-9.3.7",
+      "FQI-SRC-AP-9.3.8",
+      "FQI-SRC-AP-9.L7",
+      "FQI-SRC-AP-9.L8",
+      "FQI-SRC-AP-9.3.17",
+      "FQI-SRC-AP-9.3.18",
+      "FQI-SRC-AP-9.3.19",
+      "FQI-SRC-AP-9.3.20"
+    ],
+    "source_ids": [
+      "AP-9.3.9",
+      "AP-9.3.13",
+      "AP-9.3.10",
+      "AP-9.3.14",
+      "AP-9.3.11",
+      "AP-9.3.15",
+      "AP-9.3.12",
+      "AP-9.3.16",
+      "AP-9.3.5",
+      "AP-9.3.6",
+      "AP-9.3.7",
+      "AP-9.3.8",
+      "AP-9.L7",
+      "AP-9.L8",
+      "AP-9.3.17",
+      "AP-9.3.18",
+      "AP-9.3.19",
+      "AP-9.3.20"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "plane-partitions",
+    "name": "平面分拆、行列式与盒内乘积",
+    "canonical_ids": [
+      "FQI-SRC-AP-11.2.1",
+      "FQI-SRC-AP-11.2.4",
+      "FQI-SRC-AP-11.2.9",
+      "FQI-SRC-AP-11.2.10",
+      "FQI-SRC-AP-11.2.2",
+      "FQI-SRC-AP-11.2.8"
+    ],
+    "source_ids": [
+      "AP-11.2.1",
+      "AP-11.2.4",
+      "AP-11.2.9",
+      "AP-11.2.10",
+      "AP-11.2.2",
+      "AP-11.2.8"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "finite-fields",
+    "name": "有限域子空间、向量组与矩阵计数",
+    "canonical_ids": [
+      "FQI-SUBSPACE-COUNT",
+      "FQI-SRC-KAC-CHEUNG-7.2",
+      "FQI-SRC-KAC-CHEUNG-7.rank"
+    ],
+    "source_ids": [
+      "GR2-1.NoteEx2-subspace",
+      "AP-13.T1",
+      "SILLS-1.Rem1.54",
+      "KAC-CHEUNG-7.1",
+      "KAC-CHEUNG-7.2",
+      "KAC-CHEUNG-7.rank"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "cayley",
+    "name": "Cayley 有限有理分解",
+    "canonical_ids": [
+      "FQI-CAYLEY"
+    ],
+    "source_ids": [
+      "AP-5.CAYLEY",
+      "AP-12.E1"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "q-calculus",
+    "name": "Jackson q 差分、有限 Taylor 与伸缩",
+    "canonical_ids": [
+      "FQI-DQ-MONOMIAL",
+      "FQI-SRC-GR2-1.Ex12iv",
+      "FQI-SRC-GR2-1.Ex31-monomial",
+      "FQI-SRC-GR2-1.Ex31-term",
+      "FQI-SRC-KAC-CHEUNG-1.11-12",
+      "FQI-SRC-KAC-CHEUNG-1.13-14",
+      "FQI-SRC-KAC-CHEUNG-1.15",
+      "FQI-SRC-KAC-CHEUNG-3.5",
+      "FQI-SRC-KAC-CHEUNG-3.10",
+      "FQI-SRC-KAC-CHEUNG-3.11",
+      "FQI-SRC-KAC-CHEUNG-3.12",
+      "FQI-SRC-KAC-CHEUNG-4.1",
+      "FQI-SRC-KAC-CHEUNG-4.3",
+      "FQI-SRC-KAC-CHEUNG-5.1",
+      "FQI-SRC-KAC-CHEUNG-8.reciprocal",
+      "FQI-SRC-KAC-CHEUNG-14.higher",
+      "FQI-SRC-KAC-CHEUNG-19.telescoping"
+    ],
+    "source_ids": [
+      "KAC-CHEUNG-1.10",
+      "SILLS-1.Dq",
+      "GR2-1.Ex12iv",
+      "GR2-1.Ex31-monomial",
+      "GR2-1.Ex31-term",
+      "KAC-CHEUNG-1.11-12",
+      "KAC-CHEUNG-1.13-14",
+      "KAC-CHEUNG-1.15",
+      "KAC-CHEUNG-3.5",
+      "KAC-CHEUNG-3.10",
+      "KAC-CHEUNG-3.11",
+      "KAC-CHEUNG-3.12",
+      "KAC-CHEUNG-4.1",
+      "KAC-CHEUNG-4.3",
+      "KAC-CHEUNG-5.1",
+      "KAC-CHEUNG-8.reciprocal",
+      "KAC-CHEUNG-14.higher",
+      "KAC-CHEUNG-19.telescoping"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "symmetric-calculus",
+    "name": "对称与一般量子差分、Taylor 基底",
+    "canonical_ids": [
+      "FQI-SRC-KAC-CHEUNG-26.5",
+      "FQI-SRC-KAC-CHEUNG-26.6",
+      "FQI-SRC-KAC-CHEUNG-26.7",
+      "FQI-SRC-KAC-CHEUNG-26.10",
+      "FQI-SRC-KAC-CHEUNG-26.12",
+      "FQI-SRC-KAC-CHEUNG-26.14",
+      "FQI-SRC-KAC-CHEUNG-26.15",
+      "FQI-SRC-KAC-CHEUNG-26.21",
+      "FQI-SRC-KAC-CHEUNG-26.22",
+      "FQI-SRC-KAC-CHEUNG-26.rootsum",
+      "FQI-SRC-KAC-CHEUNG-26.23"
+    ],
+    "source_ids": [
+      "KAC-CHEUNG-26.5",
+      "KAC-CHEUNG-26.6",
+      "KAC-CHEUNG-26.7",
+      "KAC-CHEUNG-26.10",
+      "KAC-CHEUNG-26.12",
+      "KAC-CHEUNG-26.14",
+      "KAC-CHEUNG-26.15",
+      "KAC-CHEUNG-26.21",
+      "KAC-CHEUNG-26.22",
+      "KAC-CHEUNG-26.rootsum",
+      "KAC-CHEUNG-26.23"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "coefficient-recurrences",
+    "name": "生成函数的有限系数递推与反求",
+    "canonical_ids": [
+      "FQI-SRC-GR2-1.2.26",
+      "FQI-SRC-GR2-1.3.25",
+      "FQI-SRC-AQ-10.30",
+      "FQI-SRC-AQ-10.32",
+      "FQI-SRC-AQ-10.7A",
+      "FQI-SRC-SILLS-1.79"
+    ],
+    "source_ids": [
+      "GR2-1.2.26",
+      "GR2-1.3.25",
+      "AQ-10.30",
+      "AQ-10.32",
+      "AQ-10.7A",
+      "SILLS-1.79"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "fine-coefficients",
+    "name": "Fine 基本级数的有限系数变换",
+    "canonical_ids": [
+      "FQI-SRC-FINE-2.3",
+      "FQI-SRC-FINE-4.coeff",
+      "FQI-SRC-FINE-7.GH",
+      "FQI-SRC-FINE-15.2",
+      "FQI-SRC-FINE-15.31",
+      "FQI-SRC-FINE-15.41"
+    ],
+    "source_ids": [
+      "FINE-2.3",
+      "FINE-4.coeff",
+      "FINE-7.GH",
+      "FINE-15.2",
+      "FINE-15.31",
+      "FINE-15.41"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "partition-rank",
+    "name": "分拆 rank、累计截面与同余",
+    "canonical_ids": [
+      "FQI-SRC-FINE-25.shell"
+    ],
+    "source_ids": [
+      "FINE-25.shell"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  },
+  {
+    "id": "bilateral-series",
+    "name": "双边终止基本超几何求和",
+    "canonical_ids": [
+      "FQI-SRC-GR2-5.Ex11",
+      "FQI-SRC-GR2-5.Ex18iii",
+      "FQI-SRC-GR2-5.Ex18iv"
+    ],
+    "source_ids": [
+      "GR2-5.Ex11",
+      "GR2-5.Ex18iii",
+      "GR2-5.Ex18iv"
+    ],
+    "relation_semantics": "shared_subject_not_equivalence"
+  }
+]

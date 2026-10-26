@@ -1,0 +1,14 @@
+{
+  "id": "FQI-SRC-SILLS-1.JacobiFinite",
+  "source": {
+    "identity_id": "FQI-SRC-SILLS-1.JacobiFinite",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity358.lean",
+    "sha256": "92fd6c5451f63dd6853839f64d39157ae6d36d8a15a7c5266939deb4a9acaccb"
+  },
+  "well_typed_original_goal": true,
+  "typecheck": {
+    "exit_code": 1,
+    "output": "P1_ELABORATED_GOAL: pochList [q / x, x] q m =\n  ∑ j ∈ Finset.Icc (-↑m) ↑m, (-1) ^ j * q ^ (j * (j - 1) / 2).toNat * x ^ j * gaussianInt q (2 * ↑m) (↑m + j)\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-1.JacobiFinite/Typecheck.lean:29:2: error: P1_TYPECHECK_ONLY\n"
+  },
+  "is_proof": false
+}

@@ -1,0 +1,833 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-13",
+  "mode": "static_source_audit_only",
+  "user_scope": "只审核，不运行 Train，不修改算法实现；批测需用户后续指令。",
+  "execution": {
+    "train_proof_runs": 0,
+    "lean_compilations": 0,
+    "algorithm_tests_run": 0,
+    "benchmark_test_files_read": 0,
+    "train_manifest_read_only": true
+  },
+  "criteria": [
+    "确切输入表示",
+    "可执行的精确符号构造/正规化/模板实例化",
+    "可描述的证明证书",
+    "原域和边界闭合出口",
+    "原声明 Lean 验证"
+  ],
+  "classification_note": "按运行时主要行为分类，不是数学门类，也不是可靠性等级；模板实例化和给定证书验证与自动发现分别标注。",
+  "counts": {
+    "computed_witness": 4,
+    "normalization_or_template": 5,
+    "mixed_certificate_verifier": 3
+  },
+  "methods": [
+    {
+      "method": "telescoping",
+      "name": "有限差分与望远镜求值",
+      "construction_mode": "computed_witness",
+      "symbolic_construction": "q-Gosper 计算移位正规形、Laurent 次数界及精确线性系统；双基分支计算二元移位因子轨道和 Laurent 矩形，再求反差分。",
+      "proof_certificate": "反差分有理比、局部差分关系、真实有限和端点及 Lean 原声明证明。",
+      "current_input_scope": "表达式前端受限；直接分支要求 range(n+1)、被加项不依赖 n、单 Gaussian 因子；形式域构造必须经原域 Lean 重建。",
+      "missing_capabilities": [
+        "一般输入识别及反差分表示桥接不完整",
+        "有反差分不保证当前 Lean 邻项表示可以重建",
+        "核心算法无解状态只针对特定反差分类，不是原恒等式不可证明"
+      ],
+      "module_recommendation": "可作为受限的符号证书构造器。",
+      "evidence": [
+        {
+          "path": "p1/qgosper.py",
+          "line": 116,
+          "symbol": "def antidifference"
+        },
+        {
+          "path": "p1/bibasic.py",
+          "line": 102,
+          "symbol": "def antidifference"
+        },
+        {
+          "path": "p1/direct.py",
+          "line": 13,
+          "symbol": "def frontend"
+        },
+        {
+          "path": "p1/direct.py",
+          "line": 87,
+          "symbol": "def construct"
+        },
+        {
+          "path": "p1/direct.py",
+          "line": 128,
+          "symbol": "def emit"
+        }
+      ]
+    },
+    {
+      "method": "recurrence",
+      "name": "递推关系与唯一性",
+      "construction_mode": "computed_witness",
+      "symbolic_construction": "目标引导 q-WZ 求见证；q-Zeilberger 联合求递推系数和见证；Ore 状态闭包/消元；多重和有界有理 ansatz 配合精确线性代数。",
+      "proof_certificate": "递推算子、求和方向见证、局部恒等式、边界、初值、目标满足同一递推及唯一性证明。",
+      "current_input_scope": "构造搜索阶数可配置；q-Zeilberger 原生 Lean 出口主要支持一/二阶特定形状；Ore 前端局限特定 Rogers–Szegő 对象及二次结构。",
+      "missing_capabilities": [
+        "不能将高阶符号构造成功等同于高阶原题证明",
+        "多重和分母/次数搜索不完备，当前未知数还受 256 的内部上限限制",
+        "一般对象闭包和边界处理有缺口"
+      ],
+      "module_recommendation": "可作为符号证书构造器；分别记录构造覆盖和原题出口覆盖。",
+      "evidence": [
+        {
+          "path": "p1/search.py",
+          "line": 6,
+          "symbol": "def search"
+        },
+        {
+          "path": "p1/zeilberger.py",
+          "line": 19,
+          "symbol": "def search"
+        },
+        {
+          "path": "p1/zeilberger_pipeline.py",
+          "line": 43,
+          "symbol": "if order != 2"
+        },
+        {
+          "path": "p1/ore.py",
+          "line": 96,
+          "symbol": "def forced_relation"
+        },
+        {
+          "path": "p1/ore_pipeline.py",
+          "line": 51,
+          "symbol": "def prepare"
+        },
+        {
+          "path": "p1/multisum.py",
+          "line": 227,
+          "symbol": "def search"
+        },
+        {
+          "path": "p1/exact_linear.py",
+          "line": 53,
+          "symbol": "def nullspace"
+        }
+      ]
+    },
+    {
+      "method": "coefficient",
+      "name": "系数展开与有限卷积",
+      "construction_mode": "normalization_or_template",
+      "symbolic_construction": "展开受支持的形式幂级数定义，用 Cauchy 系数规则与有限和合同降阶，SymPy 精确多项式正规化剩余项。",
+      "proof_certificate": "系数展开规则、有限求和一致性、逐项零残差与 Lean ring 重建。",
+      "current_input_scope": "fineA/eulerProductSeries/fineC 等已加载定义；和合同深度 1 至 4；逆元作为原子，不无条件约消。",
+      "missing_capabilities": [
+        "不是一般系数求值或任意卷积求解器",
+        "不能自动解决逐项正规化后仍剩余的求和恒等式"
+      ],
+      "module_recommendation": "可纳入，准确名称为受限系数展开与代数正规化。",
+      "evidence": [
+        {
+          "path": "p2/run.py",
+          "line": 94,
+          "symbol": "def preparation"
+        },
+        {
+          "path": "p2/run.py",
+          "line": 109,
+          "symbol": "def construct"
+        },
+        {
+          "path": "p2/run.py",
+          "line": 148,
+          "symbol": "def prove_source"
+        },
+        {
+          "path": "p2/lean/Coefficient.lean",
+          "line": 9,
+          "symbol": "theorem coeff_mul_range"
+        }
+      ]
+    },
+    {
+      "method": "product",
+      "name": "有限乘积与指标等价",
+      "construction_mode": "normalization_or_template",
+      "symbolic_construction": "根据乘积上界的加乘结构枚举拼接、分块、剩余类、反射重写；随后同域合并和逐因子精确正规化。",
+      "proof_certificate": "指标等价规则序列、方向及逐因子 Lean 等式。",
+      "current_input_scope": "自然数 range 乘积；排除有限和；最多两步指标重写，product_finish 使用有限深度。",
+      "missing_capabilities": [
+        "不搜索任意指标双射",
+        "一般有理乘积约消、整数区间与复杂乘积结构未实现"
+      ],
+      "module_recommendation": "可纳入，属于有界符号重写搜索。",
+      "evidence": [
+        {
+          "path": "product/pipeline.py",
+          "line": 105,
+          "symbol": "def plans"
+        },
+        {
+          "path": "product/pipeline.py",
+          "line": 153,
+          "symbol": "def script"
+        },
+        {
+          "path": "product/lean/Rules.lean",
+          "line": 26,
+          "symbol": "syntax \"product_finish\""
+        }
+      ]
+    },
+    {
+      "method": "interpolation",
+      "name": "插值、零点与有理函数主部",
+      "construction_mode": "computed_witness",
+      "symbolic_construction": "从算术 AST 选原子和固定次数界，计算保留其他参数的精确节点残差；SymPy apart 构造线性极点主部分解及多项式部分。",
+      "proof_certificate": "次数界、互异节点零值、完整主部/多项式部分与两侧重构桥接。",
+      "current_input_scope": "当前零点证书需要 CharZero；固定数值次数（默认 5，CLI 最大 12）；主部分支限分裂线性极点。",
+      "missing_capabilities": [
+        "没有符号次数/多变量稀疏网格算法",
+        "抽象为独立原子的表达式不会利用未知原子间的额外关系",
+        "原域不能证明新增分母非零时必须失败"
+      ],
+      "module_recommendation": "可作为符号证书构造器；不是数值采样证明。",
+      "evidence": [
+        {
+          "path": "interpolation/algebra.py",
+          "line": 53,
+          "symbol": "def zero_certificate"
+        },
+        {
+          "path": "interpolation/algebra.py",
+          "line": 95,
+          "symbol": "def partial_parts"
+        },
+        {
+          "path": "interpolation/algebra.py",
+          "line": 116,
+          "symbol": "def principal_certificate"
+        },
+        {
+          "path": "interpolation/pipeline.py",
+          "line": 105,
+          "symbol": "def prove_source"
+        },
+        {
+          "path": "interpolation/lean/Rules.lean",
+          "line": 9,
+          "symbol": "theorem zero_of_samples"
+        }
+      ]
+    },
+    {
+      "method": "noncommutative",
+      "name": "非交换算子等式",
+      "construction_mode": "normalization_or_template",
+      "symbolic_construction": "展开已有算子定义，规范化多项式复合/标量作用，用 noncomm_ring 和上下文等式重写有限非交换词。",
+      "proof_certificate": "保持乘法顺序的 Lean 规范化证明，证书记录输入表达式及脚本。",
+      "current_input_scope": "保守语法；显式幂不超过 12；拒绝任意 n 的幂、有限和及未知函数应用。",
+      "missing_capabilities": [
+        "无一般非交换 Gröbner 基或重写补全",
+        "无符号幂归纳和通用正规序展开"
+      ],
+      "module_recommendation": "可纳入，称为受限非交换词正规化器。",
+      "evidence": [
+        {
+          "path": "noncommutative/pipeline.py",
+          "line": 67,
+          "symbol": "def supported"
+        },
+        {
+          "path": "noncommutative/pipeline.py",
+          "line": 95,
+          "symbol": "def prove_source"
+        },
+        {
+          "path": "noncommutative/lean/Rules.lean",
+          "line": 7,
+          "symbol": "macro \"operator_words\""
+        }
+      ]
+    },
+    {
+      "method": "combinatorial",
+      "name": "加权双射与符号反转对合",
+      "construction_mode": "normalization_or_template",
+      "symbolic_construction": "根据对象表达式选择反射、子集插入/删除、元素 0 或 1 的切换模板；验证指标、权重及固定点。Gaussian 子集分支直接实例化已证表示规则。",
+      "proof_certificate": "映射模板、逆映射/对合、保域与权重关系、固定点义务及原题 Lean 证明。",
+      "current_input_scope": "自然区间、整数区间、幂集、固定基数子集等已知模板；不发现任意对象之间的映射。",
+      "missing_capabilities": [
+        "没有一般双射/对合综合算法",
+        "子集 Gaussian 分支的主要数学内容预先存在于规则库"
+      ],
+      "module_recommendation": "可作为模板驱动的符号组合变换；不能称为一般自动双射证明器。",
+      "evidence": [
+        {
+          "path": "combinatorial/pipeline.py",
+          "line": 24,
+          "symbol": "SCRIPTS="
+        },
+        {
+          "path": "combinatorial/pipeline.py",
+          "line": 41,
+          "symbol": "MAPS="
+        },
+        {
+          "path": "combinatorial/pipeline.py",
+          "line": 101,
+          "symbol": "def plans"
+        },
+        {
+          "path": "combinatorial/lean/Rules.lean",
+          "line": 47,
+          "symbol": "theorem cancel"
+        },
+        {
+          "path": "combinatorial/lean/Representation.lean",
+          "line": 17,
+          "symbol": "theorem geometric_subsets"
+        }
+      ]
+    },
+    {
+      "method": "difference_ring",
+      "name": "嵌套和积的差分环证明",
+      "construction_mode": "computed_witness",
+      "symbolic_construction": "提取真实和积塔，尝试局部移位或对目标等式归纳；SymPy 有序多项式除法计算移位残差对已知关系的乘子。",
+      "proof_certificate": "差分关系的多项式乘子、零余式、真实序列移位规则及初值；Lean linear_combination/ring 重建。",
+      "current_input_scope": "自然数前缀和积；最多尝试前四个自然数参数，最多 32 个原子及预算控制的次数/项数。",
+      "missing_capabilities": [
+        "目标提供待证不变量，不是自动发现任意不变量",
+        "没有完整 Karr/Sigma 参数化求解、分母界或常数域保持算法",
+        "s.reduced 是有序除法，不是完整 Gröbner 基补全"
+      ],
+      "module_recommendation": "可纳入，准确名称为目标引导的和积差分不变量约化。",
+      "evidence": [
+        {
+          "path": "difference_ring/pipeline.py",
+          "line": 70,
+          "symbol": "def tower"
+        },
+        {
+          "path": "difference_ring/pipeline.py",
+          "line": 88,
+          "symbol": "def plans"
+        },
+        {
+          "path": "difference_ring/pipeline.py",
+          "line": 104,
+          "symbol": "def prefix"
+        },
+        {
+          "path": "difference_ring/algebra.py",
+          "line": 39,
+          "symbol": "def reduce_goal"
+        },
+        {
+          "path": "difference_ring/lean/Rules.lean",
+          "line": 57,
+          "symbol": "macro \"dr_shift\""
+        }
+      ]
+    },
+    {
+      "method": "kernel_transform",
+      "name": "有限核变换与矩阵反演",
+      "construction_mode": "mixed_certificate_verifier",
+      "symbolic_construction": "三角支撑转置分支自动换序及代数整理；逆核/复合分支从目标匹配 A、B、C，并使用原假设或显式有限展开核验逐点核关系。",
+      "proof_certificate": "支撑转置和逐项等式，或已有核复合/逆核证书到序列作用的 Lean 证明。",
+      "current_input_scope": "已有有限求和表示；通用逆核定理支持符号指标，但自动核验局限现成条件或可展开有限实例。",
+      "missing_capabilities": [
+        "没有从 A 自动求出一般 q 超几何逆核 B 的算法",
+        "看到 Finset.sum 只意味着尝试入口，不能判定真正适用"
+      ],
+      "module_recommendation": "拆分标注：转置是符号变换器；一般逆核部分目前主要是条件证书验证器。",
+      "evidence": [
+        {
+          "path": "kernel_transform/pipeline.py",
+          "line": 3,
+          "symbol": "SPEC="
+        },
+        {
+          "path": "kernel_transform/lean/Rules.lean",
+          "line": 20,
+          "symbol": "theorem inverse_action"
+        },
+        {
+          "path": "kernel_transform/lean/Rules.lean",
+          "line": 41,
+          "symbol": "macro \"kernel_transpose\""
+        },
+        {
+          "path": "kernel_transform/lean/Rules.lean",
+          "line": 51,
+          "symbol": "macro \"kernel_inverse\""
+        }
+      ]
+    },
+    {
+      "method": "spectral",
+      "name": "有限谱正交证明",
+      "construction_mode": "mixed_certificate_verifier",
+      "symbolic_construction": "按类型枚举局部上下文中的算子、本征值及函数；使用已知平衡/本征关系，或通过显式有限求和与 ring 验证。",
+      "proof_certificate": "平衡关系、本征关系、谱分离；全族结论额外要求范数和本征值单射性证书。",
+      "current_input_scope": "原上下文提供可枚举的算子候选；全族分支主要用 assumption 闭合前提。",
+      "missing_capabilities": [
+        "不从 q-Hahn/q-Racah 等定义综合差分算子",
+        "不自动求本征值和范数",
+        "谱碰撞分支没有通用处理"
+      ],
+      "module_recommendation": "目前主要是带有限候选搜索的谱证书验证器，不能宣称通用自动谱证明构造。",
+      "evidence": [
+        {
+          "path": "spectral/pipeline.py",
+          "line": 3,
+          "symbol": "SPEC="
+        },
+        {
+          "path": "spectral/lean/Rules.lean",
+          "line": 50,
+          "symbol": "theorem orthogonal_family"
+        },
+        {
+          "path": "spectral/lean/Rules.lean",
+          "line": 67,
+          "symbol": "elab \"spectral_certificate\""
+        }
+      ]
+    },
+    {
+      "method": "determinant",
+      "name": "行列式结构证书",
+      "construction_mode": "mixed_certificate_verifier",
+      "symbolic_construction": "尝试已有 LU/三角证书；显式 Vandermonde、对角、乘积、转置或二阶结构以通用规则和 ring 计算。",
+      "proof_certificate": "LU 等式和三角条件，或结构公式实例化所得的 Lean 原目标证明。",
+      "current_input_scope": "目标已含 Matrix.det；LU 分支要求分解及三角条件可由 assumption 获取。",
+      "missing_capabilities": [
+        "不自动搜索一般 LU 分解",
+        "没有 holonomic 余子式或凝聚构造器",
+        "不自动构造组合枚举到行列式的桥接"
+      ],
+      "module_recommendation": "拆分标注：受支持结构可直接符号求值；一般 LU 分支目前是条件证书验证器。",
+      "evidence": [
+        {
+          "path": "determinant/pipeline.py",
+          "line": 3,
+          "symbol": "SPEC="
+        },
+        {
+          "path": "determinant/lean/Rules.lean",
+          "line": 9,
+          "symbol": "theorem factorization"
+        },
+        {
+          "path": "determinant/lean/Rules.lean",
+          "line": 16,
+          "symbol": "macro \"determinant_structure\""
+        }
+      ]
+    },
+    {
+      "method": "macmahon",
+      "name": "MacMahon 有限分拆分析",
+      "construction_mode": "normalization_or_template",
+      "symbolic_construction": "有限 Laurent 卷积后投影；对受支持约束实例化消元规则；矩形链实例化预先证明的头部消元、形式几何乘积和 Gaussian 系数规则。",
+      "proof_certificate": "Omega 编码桥接、有限投影或链消元求值规则及原目标 Lean 证明。",
+      "current_input_scope": "受支持有限投影/三角约束、矩形有序链；符号宽高由通用规则证明，不是逐尺寸枚举。",
+      "missing_capabilities": [
+        "无一般 CTEuclid/Elliott/Polyhedral Omega",
+        "无任意约束系统的自动编码和消元规则发现",
+        "矩形求值的核心数学证明在规则库，运行时主要匹配与实例化"
+      ],
+      "module_recommendation": "可作为受限 Omega/有序链求值模板；不能宣称通用 MacMahon 符号消元器。",
+      "evidence": [
+        {
+          "path": "macmahon/pipeline.py",
+          "line": 82,
+          "symbol": "def prove_source"
+        },
+        {
+          "path": "macmahon/lean/Rules.lean",
+          "line": 128,
+          "symbol": "macro \"macmahon_eliminate\""
+        },
+        {
+          "path": "macmahon/lean/Rules.lean",
+          "line": 197,
+          "symbol": "theorem rectangle_head_elimination"
+        },
+        {
+          "path": "macmahon/lean/Rules.lean",
+          "line": 305,
+          "symbol": "theorem omega_rectangle_evaluation"
+        },
+        {
+          "path": "macmahon/lean/Rules.lean",
+          "line": 313,
+          "symbol": "macro \"macmahon_chain\""
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "SCOPE",
+      "severity": "before_future_benchmark",
+      "finding": "三个旧统一入口仍只接纳历史 P1/P2 的 182 条 A 类名单，其他九类按全部 Train 成员资格接纳。P1 原生 load_target 还有 A 类限制；P2 原生 CLI 还有 62 条 P2 限制。",
+      "consequence": "入口范围拒绝必须记为 scope_blocked，不能记为数学方法范围外。当前仅审核，未放宽任何入口。",
+      "evidence": [
+        {
+          "path": "workflow/contracts.py",
+          "line": 26,
+          "symbol": "def snapshot"
+        },
+        {
+          "path": "p1/run.py",
+          "line": 18,
+          "symbol": "def load_target"
+        },
+        {
+          "path": "p2/run.py",
+          "line": 197,
+          "symbol": "def load_target"
+        }
+      ]
+    },
+    {
+      "id": "CLASSIFICATION",
+      "severity": "before_future_benchmark",
+      "finding": "engine.failure_stage 只有粗粒度表示/构造/验证；worker 将多种异常合并为 adapter_failed；最终没有计划时统一提示无支持表示。",
+      "consequence": "未来需要保留嵌套日志区分工程错误、依赖缺失、表示缺失、构造失败和超时，不能直接将顶层 unproved 当成范围外。",
+      "evidence": [
+        {
+          "path": "workflow/engine.py",
+          "line": 55,
+          "symbol": "def failure_stage"
+        },
+        {
+          "path": "workflow/engine.py",
+          "line": 125,
+          "symbol": "if report['status'] not in"
+        },
+        {
+          "path": "workflow/worker.py",
+          "line": 159,
+          "symbol": "except Exception as exc:result="
+        }
+      ]
+    },
+    {
+      "id": "ADMISSION",
+      "severity": "interpretation",
+      "finding": "核与谱的 supported 仅检查 Finset.sum；结构方法 elaborate 失败可能因为独立环境没有加载该对象定义。",
+      "consequence": "applicable 只是候选准入；准入失败也不是数学不适用的证据。",
+      "evidence": [
+        {
+          "path": "kernel_transform/pipeline.py",
+          "line": 4,
+          "symbol": "supported="
+        },
+        {
+          "path": "spectral/pipeline.py",
+          "line": 5,
+          "symbol": "supported="
+        },
+        {
+          "path": "workflow/structural.py",
+          "line": 40,
+          "symbol": "input representation could not"
+        }
+      ]
+    },
+    {
+      "id": "CONSTRUCTION_VS_REPLAY",
+      "severity": "interpretation",
+      "finding": "递推搜索支持的符号证书阶数/结构大于原生 Lean 重建出口。",
+      "consequence": "必须分开记录 constructed 和 proved；已构造但不能回到原域的题属重建/表示缺口。",
+      "evidence": [
+        {
+          "path": "p1/zeilberger.py",
+          "line": 19,
+          "symbol": "def search"
+        },
+        {
+          "path": "p1/zeilberger_pipeline.py",
+          "line": 43,
+          "symbol": "if order != 2"
+        },
+        {
+          "path": "p1/direct.py",
+          "line": 123,
+          "symbol": "status='domain_unresolved'"
+        }
+      ]
+    },
+    {
+      "id": "PREPROVED_TEMPLATES",
+      "severity": "interpretation",
+      "finding": "MacMahon 矩形链及 Gaussian 子集分支的主要求值结论预先在规则库证明，运行时匹配/实例化。",
+      "consequence": "证明可有效，但覆盖报告须标记 template_instantiation，不能当作现场发现新消元或双射。",
+      "evidence": [
+        {
+          "path": "macmahon/lean/Rules.lean",
+          "line": 305,
+          "symbol": "theorem omega_rectangle_evaluation"
+        },
+        {
+          "path": "combinatorial/pipeline.py",
+          "line": 25,
+          "symbol": "'geometric_subsets':"
+        }
+      ]
+    },
+    {
+      "id": "TRUST",
+      "severity": "positive_static_observation",
+      "finding": "正式独立入口固定方法，worker 对后端归属检查；accept_proof 检查原源哈希、证明位置/哈希、Lean 编译日志、原定理公理与声明上下文；结构分支另核验证书哈希。",
+      "consequence": "CAS 输出本身不作为证明。此次仅静态审阅接收契约，没有重新执行任何证明或独立重放历史证书。",
+      "evidence": [
+        {
+          "path": "workflow/worker.py",
+          "line": 87,
+          "symbol": "def execute"
+        },
+        {
+          "path": "workflow/contracts.py",
+          "line": 50,
+          "symbol": "def accept_proof"
+        }
+      ]
+    },
+    {
+      "id": "RULE_ENVIRONMENT",
+      "severity": "interpretation",
+      "finding": "P1 编译完整 Auxiliary/Gaussian 基础文件，包括 Gaussian 多项式到商的关系；其环境不应笼统描述为只有定义。",
+      "consequence": "未来基线应固定并列出全部共享引理；不能将共享已证引理的使用描述为零先验知识。",
+      "evidence": [
+        {
+          "path": "p1/lean_pipeline.py",
+          "line": 32,
+          "symbol": "def environment"
+        }
+      ]
+    }
+  ],
+  "evidence_manifest": [
+    {
+      "path": "combinatorial/lean/Representation.lean",
+      "sha256": "a058fa8cd12b7cda3ad6b92909d0a107b1b9afed4f95fd8b94435e06e48352bc"
+    },
+    {
+      "path": "combinatorial/lean/Rules.lean",
+      "sha256": "84f26d57d0c73e05f809d768d28721d37c5fae884fd24daf2a23784a20cef776"
+    },
+    {
+      "path": "combinatorial/pipeline.py",
+      "sha256": "282dc735144a6f2997d62ce9fe57f00eb1cdbe659709ead3760647133c5b1b0a"
+    },
+    {
+      "path": "determinant/lean/Rules.lean",
+      "sha256": "3c6de9b9e65c724bfb7ae9f70f29f49230401bff2880021444d56085044619a1"
+    },
+    {
+      "path": "determinant/pipeline.py",
+      "sha256": "9052e5c581dc3dc8d40fabdf8b1d2a4789f653eccf9f6738940a3559be29b87f"
+    },
+    {
+      "path": "difference_ring/algebra.py",
+      "sha256": "b2ee5722527775b910bedadb68293c2047d6118b5985fdf3c9f007987bc7257e"
+    },
+    {
+      "path": "difference_ring/lean/Rules.lean",
+      "sha256": "7bae5c63be2bb9c45d5da852d5abf48bf0a3f44529128fbbba6d667b6f11400e"
+    },
+    {
+      "path": "difference_ring/pipeline.py",
+      "sha256": "11ddac8072e23ab1d66e49e053cc2f575d494139fe5d7c76ba8b12518093b98b"
+    },
+    {
+      "path": "interpolation/algebra.py",
+      "sha256": "7d23ad238b712ad05e60b4da27e16e0efe88b70c2eb8a369f7f003f56cb85836"
+    },
+    {
+      "path": "interpolation/lean/Rules.lean",
+      "sha256": "ca4e70a3c1aeb4f0a6874384a4f593767e813472f79a2c81f592c2f9f28722c2"
+    },
+    {
+      "path": "interpolation/pipeline.py",
+      "sha256": "c3161b148b4144b3fc47931ab3a80c6eab9644acc0da6d57917a3aebb2c909aa"
+    },
+    {
+      "path": "kernel_transform/lean/Rules.lean",
+      "sha256": "e5bcb6d78debe346debae0d9004661f644ddf475df4d007e667a65fe255fdcad"
+    },
+    {
+      "path": "kernel_transform/pipeline.py",
+      "sha256": "4a44f5e50946f14f1f6d4bd194df98ac5fffd84ecd7d48329ca8f36e4c23f0c8"
+    },
+    {
+      "path": "macmahon/lean/Rules.lean",
+      "sha256": "c370836d77559026d2bd5207b77ee2a869286886fffffc1de372a6a2387c43a6"
+    },
+    {
+      "path": "macmahon/pipeline.py",
+      "sha256": "d03820e994e151ddf9fef3d7c952b7dcdf5c118fe054b5b189b23aafa470eb88"
+    },
+    {
+      "path": "noncommutative/lean/Rules.lean",
+      "sha256": "0e04309c49e918a6c27c1f5b2a96eed37e9a1d3601177d827f7636e48b41fe05"
+    },
+    {
+      "path": "noncommutative/pipeline.py",
+      "sha256": "295d44bfecbf99be780a5c64b4dd687f348b9c632ee8e138bb4e3e5747de5bcc"
+    },
+    {
+      "path": "p1/bibasic.py",
+      "sha256": "394a9f7310c4d71704d73c9cb7e9905fe1b8a8583843940dc3977ab9ebc31baf"
+    },
+    {
+      "path": "p1/direct.py",
+      "sha256": "adbaa43df2297617b05451e5a2475b21c9514910c187b0cedb6a6990a2630ea7"
+    },
+    {
+      "path": "p1/exact_linear.py",
+      "sha256": "570b6f2ae079f9bea7f8091e9b652540e5899faed336bf4d37381958b6c78e66"
+    },
+    {
+      "path": "p1/lean_pipeline.py",
+      "sha256": "67355205284ce39fdcfa96c1b4ae008063d4d7d9b75fa3cd9ec501a29c5c5dae"
+    },
+    {
+      "path": "p1/multisum.py",
+      "sha256": "706ace4a9af40c80c59dd61900f005fca524689c97864a85dc4d6751dfaaf756"
+    },
+    {
+      "path": "p1/ore.py",
+      "sha256": "c9ab484043f1f093375416b4a5beb6fbc423b4a60af269243bdee66027f39e1e"
+    },
+    {
+      "path": "p1/ore_pipeline.py",
+      "sha256": "a52737968c502bb832a532f6a19b699758eac94455329c645026d9fb4d5c5926"
+    },
+    {
+      "path": "p1/qgosper.py",
+      "sha256": "7d34191b02414c7f6ffd945b74fed43e2e8fe60c37c21be04e334b0b7877a028"
+    },
+    {
+      "path": "p1/run.py",
+      "sha256": "8c60d1c78127800cb934f0587becc9ac8628db3bcd5ead0c89fdf8dea67d44fc"
+    },
+    {
+      "path": "p1/search.py",
+      "sha256": "a8e11a7d4fa7e9433d2a1dbcf44ad621640016932cbbce992e5b103a828cd9a9"
+    },
+    {
+      "path": "p1/zeilberger.py",
+      "sha256": "a34f62a01110559464c83b4bb7426bdbfe7a4898bf948bff52307742cb827e07"
+    },
+    {
+      "path": "p1/zeilberger_pipeline.py",
+      "sha256": "84546caece0a6e22a6857c75ea3c28682f3eb8c016d472eb083ffa14b5455df8"
+    },
+    {
+      "path": "p2/lean/Coefficient.lean",
+      "sha256": "97607cc59f0f384182fc184c653da2fd9e966348676b6ad01486682579c0fb5c"
+    },
+    {
+      "path": "p2/run.py",
+      "sha256": "a5f88f74bbeba6e9a16d7277c2fdbbd9a6eb0083749d13fe4cf834b17c2dd361"
+    },
+    {
+      "path": "product/lean/Rules.lean",
+      "sha256": "47a8a5de7330db3ca068cb0f61bdd3019c6a7a0ed176ded73ac5dee0d7481c57"
+    },
+    {
+      "path": "product/pipeline.py",
+      "sha256": "36d225f9762b19750651fc3f4862bda64603d43cbcf88f4ba66c4cf64d644f27"
+    },
+    {
+      "path": "prove.py",
+      "sha256": "b84a5a77e8584f8923b3fc862026af847a60487b2f06027615e8032cff3444d2"
+    },
+    {
+      "path": "prove_coefficient.py",
+      "sha256": "f7d9a79337493535a06994987b34b235d1213f4b5c10d37ca80b0614940a948e"
+    },
+    {
+      "path": "prove_combinatorial.py",
+      "sha256": "75e36a7e49603035b972850160db97d320c28e415a15d7b3a78894d4672ec487"
+    },
+    {
+      "path": "prove_determinant.py",
+      "sha256": "d6ac030c780e222939c8972d994034237bf25aa18bc45726ec676d577a2b76e1"
+    },
+    {
+      "path": "prove_difference_ring.py",
+      "sha256": "b16771814f6ecb89fc61e0d049a7366034b27702fe205e61eafdc41f6d2115a1"
+    },
+    {
+      "path": "prove_interpolation.py",
+      "sha256": "5a1f43e2669ab3a578e435fee717becf8bdd86c204d8bd3be996c755652c0743"
+    },
+    {
+      "path": "prove_kernel_transform.py",
+      "sha256": "0fdba974024b6ea921814f36437d659f653287ce928c8208ed0cdd6768739d35"
+    },
+    {
+      "path": "prove_macmahon.py",
+      "sha256": "512f4c195683ee942aa69ab37443d62833602182e91482897c7be2c62dd65efd"
+    },
+    {
+      "path": "prove_noncommutative.py",
+      "sha256": "730ee42a840ce8660febed359652c1400529d19ee264e8c311a15ae8a97a797a"
+    },
+    {
+      "path": "prove_product.py",
+      "sha256": "e02b05118728f11a809c04b771a3955c7b6d5c9e1374eefdeac33d93ab6ea670"
+    },
+    {
+      "path": "prove_recurrence.py",
+      "sha256": "015121113bab9577bbfd1eca8207f097e7d6caa9d5cef6be13c8947d7dcaedb1"
+    },
+    {
+      "path": "prove_spectral.py",
+      "sha256": "6a10bc9171ffd77a767b43ebc051bc10b27de48dc0e9b0af523d93a9189a8741"
+    },
+    {
+      "path": "prove_telescoping.py",
+      "sha256": "adec748688638afdd6b7a226c623cf0e4f9c57710bb7808f556f3ab4d6ded0d4"
+    },
+    {
+      "path": "spectral/lean/Rules.lean",
+      "sha256": "92f23027543e98943f3d5c4194d58407bfbb264c6119dfe3420b5c45c37cb22f"
+    },
+    {
+      "path": "spectral/pipeline.py",
+      "sha256": "a7623860c63b1f9a86158cdf6edb5d2e29043955cbb3b56c009e37e165060b06"
+    },
+    {
+      "path": "workflow/contracts.py",
+      "sha256": "8c49a0b6976e1e51b2d232f4dc778d7911dccc5041238e8f1f468bc94c6746d5"
+    },
+    {
+      "path": "workflow/engine.py",
+      "sha256": "dc0d89f844f14f4b887c5e5de8aa938dfa788d284d87f39059c92ac13771a9a1"
+    },
+    {
+      "path": "workflow/structural.py",
+      "sha256": "07843eeedeba345dafff75592ac9df0833ff947a4f099cab14322862f9d7ea61"
+    },
+    {
+      "path": "workflow/worker.py",
+      "sha256": "47c9992143ddebf4a6147873721f197974ce32fd47d514171909c960bf02ddbe"
+    }
+  ],
+  "limitations": [
+    "源码审核不是算法完备性证明或程序无缺陷证明",
+    "没有新增 Train 覆盖结果，没有以历史成功产物替代此次测试",
+    "仅为审核保留所列文件哈希，不是将来全依赖基线快照"
+  ]
+}

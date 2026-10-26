@@ -1,0 +1,202 @@
+[
+  {
+    "source": "GR2-I-45",
+    "target": "SILLS-1.50",
+    "type": "specializes_to",
+    "witness": "α=n−1；取第二个等号。一般 α 的两式组合不并入单支普通 Pascal。",
+    "source_canonical": "FQI-SRC-GR2-I-45",
+    "target_canonical": "FQI-PASCAL-Q-N-K"
+  },
+  {
+    "source": "GR2-I-45",
+    "target": "SILLS-1.51",
+    "type": "specializes_to",
+    "witness": "α=n−1；取第一个等号。",
+    "source_canonical": "FQI-SRC-GR2-I-45",
+    "target_canonical": "FQI-PASCAL-Q-K"
+  },
+  {
+    "source": "GR2-I-47",
+    "target": "SILLS-1.53",
+    "type": "specializes_to",
+    "witness": "α=n≥0；一般上指标的定义域更广。",
+    "source_canonical": "FQI-SRC-GR2-I-47",
+    "target_canonical": "FQI-GAUSSIAN-RECIPROCITY"
+  },
+  {
+    "source": "SILLS-1.51",
+    "target": "AP-3.2.7",
+    "type": "specializes_to",
+    "witness": "n=N+M，k=M，G(N,M)=[N+M choose M]_q；原分拆递推限制 N,M≥1。",
+    "source_canonical": "FQI-PASCAL-Q-K",
+    "target_canonical": "FQI-SRC-AP-3.2.7"
+  },
+  {
+    "source": "GR2-I-27",
+    "target": "GR2-I-25",
+    "type": "specializes_to",
+    "witness": "m=2。",
+    "source_canonical": "FQI-POCHHAMMER-RESIDUES",
+    "target_canonical": "FQI-SRC-GR2-I-25"
+  },
+  {
+    "source": "GR2-I-27",
+    "target": "GR2-I-26",
+    "type": "specializes_to",
+    "witness": "m=3。",
+    "source_canonical": "FQI-POCHHAMMER-RESIDUES",
+    "target_canonical": "FQI-SRC-GR2-I-26"
+  },
+  {
+    "source": "GR2-I-30",
+    "target": "GR2-I-28",
+    "type": "specializes_to",
+    "witness": "m=2，ω₂=−1。",
+    "source_canonical": "FQI-POCHHAMMER-ROOTS",
+    "target_canonical": "FQI-SRC-GR2-I-28"
+  },
+  {
+    "source": "GR2-I-17",
+    "target": "FINE-2.1",
+    "type": "specializes_to",
+    "witness": "起始参数 aq，第一段长度1，第二段长度 n−1。",
+    "source_canonical": "FQI-SRC-GR2-I-17",
+    "target_canonical": "FQI-SRC-FINE-2.1"
+  },
+  {
+    "source": "AP-3.E6",
+    "target": "KAC-CHEUNG-7.8",
+    "type": "specializes_to",
+    "witness": "t=1，G_n=H_n(1;q)。",
+    "source_canonical": "FQI-ROGERS-SZEGO-RECURRENCE",
+    "target_canonical": "FQI-SRC-KAC-CHEUNG-7.8"
+  },
+  {
+    "source": "AQ-3.48",
+    "target": "AQ-3.37",
+    "type": "specializes_to",
+    "witness": "a=q，(q²;q)_(r−1)/(q;q)_r=1/(1−q)。",
+    "source_canonical": "FQI-BAILEY-UNIT",
+    "target_canonical": "FQI-SRC-AQ-3.37"
+  },
+  {
+    "source": "SILLS-2.Pair112",
+    "target": "AQ-3.35",
+    "type": "specializes_to",
+    "witness": "x=1，以 (1−xq^(2r))(x;q)_r/(1−x) 的约去形式解释；r≥1 时 α_r=(−1)^r q^{r(3r−1)/2}(1+q^r)。",
+    "source_canonical": "FQI-SRC-SILLS-2.Pair112",
+    "target_canonical": "FQI-SRC-AQ-3.35"
+  },
+  {
+    "source": "AP-3.E10",
+    "target": "SILLS-4.14",
+    "type": "contains_branch",
+    "witness": "a=0，AP n=Sills n−1；Sills n=0 为单列端点。",
+    "source_canonical": "FQI-SCHUR-RR-BUNDLE",
+    "target_canonical": "FQI-SCHUR-RR-FIRST"
+  },
+  {
+    "source": "AP-3.E10",
+    "target": "SILLS-4.16",
+    "type": "contains_branch",
+    "witness": "a=1，AP n=Sills n；h=−j。",
+    "source_canonical": "FQI-SCHUR-RR-BUNDLE",
+    "target_canonical": "FQI-SCHUR-RR-SECOND"
+  },
+  {
+    "source": "SILLS-4.23",
+    "target": "AQ-9.27",
+    "type": "contains_equality",
+    "witness": "取前一个等号，D 与 F(0) 相同；不删除 Sills 的第二种双边展开。",
+    "source_canonical": "FQI-SCHUR-EVEN-RECIPROCAL",
+    "target_canonical": "FQI-SRC-AQ-9.27"
+  },
+  {
+    "source": "SILLS-4.25",
+    "target": "AQ-9.26",
+    "type": "contains_equality",
+    "witness": "取前一个等号，m=N。",
+    "source_canonical": "FQI-SRC-SILLS-4.25",
+    "target_canonical": "FQI-SRC-AQ-9.26"
+  },
+  {
+    "source": "AQ-8.32",
+    "target": "SILLS-4.6",
+    "type": "contains_branch",
+    "witness": "σ=0，F_N(0)=D_N；Sills 含 N=0 初值。",
+    "source_canonical": "FQI-SRC-AQ-8.32",
+    "target_canonical": "FQI-SRC-SILLS-4.6"
+  },
+  {
+    "source": "AQ-8.32",
+    "target": "SILLS-4.17",
+    "type": "contains_branch",
+    "witness": "σ=1，F_N(1)=E_(N−1)；指标平移一位。",
+    "source_canonical": "FQI-SRC-AQ-8.32",
+    "target_canonical": "FQI-SRC-SILLS-4.17"
+  },
+  {
+    "source": "AP-3.E6",
+    "target": "AQ-2.23",
+    "type": "polynomial_change",
+    "witness": "A_r(x)=x^r H_r(x^−2;q)；三项递推乘以 x^r 并令 n=r−1，x≠0。",
+    "source_canonical": "FQI-ROGERS-SZEGO-RECURRENCE",
+    "target_canonical": "FQI-SRC-AQ-2.23"
+  },
+  {
+    "source": "AP-3.E1",
+    "target": "SILLS-1.JacobiFinite",
+    "type": "base_change",
+    "witness": "Sills 的 (q,x,m)=(AP q²,−AP q·AP x,AP n)；两积与每个求和项相等。保留不同底数/平方根域。",
+    "source_canonical": "FQI-SRC-AP-3.E1",
+    "target_canonical": "FQI-SRC-SILLS-1.JacobiFinite"
+  },
+  {
+    "source": "SILLS-2.Lem2.31",
+    "target": "SILLS-1.JacobiFinite",
+    "type": "reparameterization",
+    "witness": "令 Jacobi 的 x=−a√q；指数 j(j−1)/2+j/2=j²/2，平方根分支须一致。",
+    "source_canonical": "FQI-SRC-SILLS-2.Lem2.31",
+    "target_canonical": "FQI-SRC-SILLS-1.JacobiFinite"
+  },
+  {
+    "source": "GR2-I-03",
+    "target": "KAC-CHEUNG-13.10",
+    "type": "homogenization",
+    "witness": "GR 参数=1/a，乘 a^n；在 a≠0 推出，再按多项式延拓到 a=0。",
+    "source_canonical": "FQI-SRC-GR2-I-03",
+    "target_canonical": "FQI-SRC-KAC-CHEUNG-13.10"
+  },
+  {
+    "source": "AQ-3.40",
+    "target": "AQ-10.12",
+    "type": "inverse_recurrence",
+    "witness": "同一个 Bailey 下三角系统的显式逆与逐项回代，保留两种运算规则。",
+    "source_canonical": "FQI-BAILEY-INVERSION",
+    "target_canonical": "FQI-SRC-AQ-10.12"
+  },
+  {
+    "source": "AQ-REF-BAILEY",
+    "target": "AQ-3.42",
+    "type": "inverse_transform",
+    "witness": "Bailey 引理的逆三角变换；使用第一轮已修订的逆核。",
+    "source_canonical": "FQI-BAILEY-LEMMA",
+    "target_canonical": "FQI-SRC-AQ-3.42"
+  },
+  {
+    "source": "AQ-2.35",
+    "target": "AQ-2.38",
+    "type": "inverse_recurrence",
+    "witness": "分离 j=0 项；N=0 单列，得到同一逆核的递推，但保留两条不同操作陈述。",
+    "source_canonical": "FQI-SRC-AQ-2.35",
+    "target_canonical": "FQI-SRC-AQ-2.38"
+  },
+  {
+    "source": "AQ-10.30",
+    "target": "AQ-10.32",
+    "type": "inverse_recurrence",
+    "witness": "D_n 中分离 d=n，再分离卷积 j=n，解出 n a_n。",
+    "source_canonical": "FQI-SRC-AQ-10.30",
+    "target_canonical": "FQI-SRC-AQ-10.32"
+  }
+]

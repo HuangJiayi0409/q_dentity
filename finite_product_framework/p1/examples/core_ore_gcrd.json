@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "solver": "q_ore",
+  "input": {
+    "operation": "gcrd",
+    "a": [["neg", "Q"], ["sub", 1, ["mul", "q", ["pow", "Q", 2]]], "Q"],
+    "b": [["mul", -2, "Q"], ["sub", 2, ["mul", "q", "Q"]], 1]
+  }
+}

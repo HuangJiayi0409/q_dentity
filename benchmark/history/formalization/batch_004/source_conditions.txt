@@ -1,0 +1,616 @@
+
+301 FQI-SRC-AP-11.2.8
+k,r≥1，n≥0 为整数；末式在 Laurent 多项式环中解释。
+Definitions: π_r(n₁,…,n_k;q) 按体积计平面分拆：至多 k 行、r 列，第 i 行首项恰为 n_i（允许补零）。Π_{k,r}(n;q) 按体积计 k×r 矩形内、所有项≤n 的平面分拆。原书后者也用 π，此处改大写 Π 以区分。
+Notes: 
+Locator: p.183, (11.2.8) sources/ANDREWS-P/ch11.pdf
+
+302 FQI-SRC-AP-4.2.COMPOSITIONS
+N,M≥1 为整数；q 为形式变量。等式为整系数多项式恒等式，也可在任意复数 q（包括0、1及单位根）处求值。
+Definitions: c(N,M,n)=#{(a₁,…,a_M)∈{1,…,N}^M : a₁+⋯+a_M=n}，计数有序组成，不是无序分拆。
+Notes: 
+Locator: p.55, Theorem 4.2 证明，无编号等式 sources/ANDREWS-P/ch4.pdf
+
+303 FQI-SRC-AP-13.E7
+n≥0，N与a_i为整数，a_{i+1}−a_i∈{0,1} (1≤i<n)。a₀、a_{n+1}任意；q≠0，(q;q)_n≠0；n=0两边为1。允许负上指标，不能沿用仅非负Gaussian越界为零的规则。
+Definitions: 一般整数上指标 {v\brack k}_q=\prod_{i=0}^{k-1}(1-q^{v-i})/(q;q)_k；{v\brack0}_q=1，k<0时为0。
+Notes: 第二个Gaussian上指标 n−a_{k+1} 改为 N−a_{k+1}；a₀、a_{n+1}任意。 Evans (1978), Theorem1, equation(2), pp331–333, DOI10.1007/BF01818571。其证明明确说明两个端点不影响和：k=0时第一个Gaussian为1；k=n时第二个Gaussian和q幂为1。 原式与反例保留在 metadata/pending16_originals.json。
+Locator: pp.225–226, Chapter13 Example7 sources/ANDREWS-P/ch13.pdf
+
+304 FQI-SRC-AQ-2.23
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 r≥2，x≠0；\(A_r(x)=\sum_{j=0}^r{r\brack j}_q x^{r-2j}\)。
+Definitions: 
+Notes: 
+Locator: 印刷页 13；式 (2.23) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+305 FQI-SRC-AQ-2.29
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 r≥0；A 由 (2.23) 及其初值确定。
+Definitions: 
+Notes: 
+Locator: 印刷页 14；式 (2.29) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+306 FQI-SRC-AQ-2.35
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 r,N≥0；T 见 (2.39)。
+Definitions: 
+Notes: 
+Locator: 印刷页 14；式 (2.35) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+307 FQI-SRC-AQ-2.38
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 r≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 14；式 (2.38) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+308 FQI-SRC-AQ-2.39
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 r≥0；T 由 (2.38) 定义。
+Definitions: 
+Notes: 
+Locator: 印刷页 15；式 (2.39) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+309 FQI-SRC-AQ-2.40
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥0，q,c≠0。
+Definitions: 
+Notes: 
+Locator: 印刷页 15；式 (2.40) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+310 FQI-SRC-AQ-3.12
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 23；式 (3.12) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+311 FQI-SRC-AQ-3.17
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥1。
+Definitions: 
+Notes: 
+Locator: 印刷页 22,23；式 (3.17) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+312 FQI-SRC-AQ-3.18
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 23；式 (3.18) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+313 FQI-SRC-AQ-3.23
+N≥0；α、δ、u、v 为任意在交换环中取值的有限向量。
+Definitions: 
+Notes: 
+Locator: 印刷页 24；式 (3.23) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+314 FQI-SRC-AQ-3.35
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 28；式 (3.35) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+315 FQI-SRC-AQ-3.37
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 28；式 (3.37) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+316 FQI-SRC-AQ-3.42
+\(\beta_n=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(aq;q)_{n+r})\)；所有出现的有限分母非零。 q,a,ρ₁,ρ₂≠0；β′ 由 (3.30) 定义。
+Definitions: 
+Notes: 原印式下限 j=1 且多出 q^{n-j}；改为 j=0 并删除该因子。仅修改下限仍不能反演 (3.30)，详见来源疑点报告及卷积推导。
+Locator: 印刷页 29；式 (3.42) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+317 FQI-SRC-AQ-3.43
+\(\beta_n=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(aq;q)_{n+r})\)；所有出现的有限分母非零。 k≥1，N≥0；a,q,b_i,c_i≠0。
+Definitions: 
+Notes: 
+Locator: 印刷页 30；式 (3.43) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+318 FQI-SRC-AQ-4.24
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 a,b,c≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 38；式 (4.24) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+319 FQI-SRC-AQ-6.18
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 \(a_n=[x^n]G_0(x)/(x;q^3)_\infty\)，见 (6.15)–(6.17)。
+Definitions: 
+Notes: 只收录固定 n 的有限有理系数；无限 G₀ 不计作有限式。
+Locator: 印刷页 55；式 (6.18) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+320 FQI-SRC-AQ-6.19
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥0；a_n 由 (6.18) 的系数关系和 a₀=1 确定。
+Definitions: 
+Notes: 
+Locator: 印刷页 56；式 (6.19) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+321 FQI-SRC-AQ-8.32
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 N≥3，σ∈{0,1}；F 是 (8.31) 非相邻占据序列的权重和。
+Definitions: 
+Notes: 
+Locator: 印刷页 79；式 (8.32) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+322 FQI-SRC-AQ-8.44
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 N≥1；G 的递推与初值见 (8.46)–(8.49)；G 的式在 N=0 也成立。
+Definitions: 
+Notes: 
+Locator: 印刷页 80；式 (8.44) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+323 FQI-SRC-AQ-8.45
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 N≥1；G 的递推与初值见 (8.46)–(8.49)；G 的式在 N=0 也成立。
+Definitions: 
+Notes: 
+Locator: 印刷页 80；式 (8.45) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+324 FQI-SRC-AQ-8.46
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 N≥3，σ∈{0,1}。
+Definitions: 
+Notes: 
+Locator: 印刷页 81；式 (8.46) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+325 FQI-SRC-AQ-8.50
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 N≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 81；式 (8.50) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+326 FQI-SRC-AQ-8.52
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 N≥1。
+Definitions: 
+Notes: 
+Locator: 印刷页 81；式 (8.52) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+327 FQI-SRC-AQ-8.56
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 k≥2，N,R≥0；q,a,b_i,c_i≠0，a≠1；\(M_i=\sum_{j=1}^im_j\)；负长度定义 \((x;q)_{-s}=1/(xq^{-s};q)_s\)，这些倒数分母亦须非零。
+Definitions: 
+Notes: 
+Locator: 印刷页 83；式 (8.56) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+328 FQI-SRC-AQ-9.5
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 N≥0。
+Definitions: 
+Notes: p.89 正文称 D_n=F_{n+1}，与 (8.32)、(9.5) 不符；这里明确修订为 D_n=F_n（F₀=1）。p.92 的每个部件<n 与此一致。
+Locator: 印刷页 89；式 (9.5) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+329 FQI-SRC-AQ-9.17
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 N≥0；n=0 时第二 Gaussian 按 δ_{j,0} 解释。
+Definitions: 
+Notes: 
+Locator: 印刷页 90；式 (9.17) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+330 FQI-SRC-AQ-9.26
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 N≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 92；式 (9.26) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+331 FQI-SRC-AQ-9.27
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 N≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 92；式 (9.27) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+332 FQI-SRC-AQ-10.1
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥0；a,b 为自由参数。
+Definitions: 
+Notes: 
+Locator: 印刷页 95；式 (10.1) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+333 FQI-SRC-AQ-10.5
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥0；X 由 (10.1)–(10.2) 定义。
+Definitions: 
+Notes: 原印式在 n=1 已不成立；原印式及反例另存疑点报告。
+Locator: 印刷页 98；式 (10.5) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+334 FQI-SRC-AQ-10.12
+\(\beta_n=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(aq;q)_{n+r})\)；所有出现的有限分母非零。 n≥1。
+Definitions: 
+Notes: 
+Locator: 印刷页 99；式 (10.12) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+335 FQI-SRC-AQ-10.27
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥5；F 为 (10.22) 的五元线性算子；J_n=F(n,t;d_{6n-1},…,d_{6n-25})；G_n 由 (10.24) 给出。
+Definitions: 
+Notes: 算子定义在书籍说明中完整列出；可对任意输入序列检查，避免仅验证 0=0。
+Locator: 印刷页 103；式 (10.27) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+336 FQI-SRC-AQ-10.30
+n≥1；\(b_n=[q^n]\prod_{m=1}^{n}(1-q^m)^{-a_m}\)，a_m 为整数。
+Definitions: 
+Notes: 
+Locator: 印刷页 104,105；式 (10.30) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+337 FQI-SRC-AQ-10.32
+n≥1；a、b 与 (10.30) 相同。
+Definitions: 
+Notes: 
+Locator: 印刷页 105；式 (10.32) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+338 FQI-SRC-AQ-10.7A
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥1；a_n 是满足 f(z)=f(zq)+zqf(zq²)、f(0)=1 的形式幂级数的 z^n 系数。
+Definitions: 
+Notes: 
+Locator: 印刷页 106；式 (10.7A) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+339 FQI-SRC-AQ-B.9
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 n≥1；\(H_n=\sum_{r+s+t=n}\lambda^r\mu^s\nu^t/((q;q)_r(q;q)_s(q;q)_t)\)；x=0 以多项式延拓解释。
+Definitions: 
+Notes: 
+Locator: 印刷页 112,113；式 (B.9) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+340 FQI-SRC-AQ-B.12
+q 为形式变量（有理式在分母非零处解释）；所有长度、上指标为非负整数；Gaussian 越界为零。 r,s,t≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 112,113；式 (B.12) books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+341 FQI-SRC-AQ-4.3
+n≥1，a,b≥0为整数，q为形式变量；乘积商约去后为多项式。
+Definitions: 
+Notes: 右侧乘积下限 j=1 改为 j=0；取常数项的括号包住全部因子。 Bn 的 Macdonald 常数项恒等式：短正根e_i的重数a，长正根e_i±e_j的重数b。此处采用该已证明定理的有限整数重数版本，原书的历史标签仍为Conjecture4.3；一般根系定理由Cherednik (1995)证明，参见DLMF§17.14最后一段。n=1退化为q-Vandermonde的 (q;q)_{2a}/(q;q)_a²，强制包含j=0项。 原式与反例保留在 metadata/pending16_originals.json。
+Locator: p41, Conjecture4.3 books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+342 FQI-SRC-FINE-2.1
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。n≥1；分母不涉及。
+Definitions: 
+Notes: 
+Locator: 印刷页 1；式 (2.1) books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+343 FQI-SRC-FINE-2.3
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。n≥0；c_n=(aq;q)_n/(bq;q)_n；与§15的A_n不同。
+Definitions: 
+Notes: 
+Locator: 印刷页 2；式 (2.3) books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+344 FQI-SRC-FINE-4.coeff
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。n≥1；c_n=(aq;q)_n/(bq;q)_n；1−aq^n≠0。
+Definitions: 
+Notes: 
+Locator: 印刷页2；(4.2) 后、页末的无编号系数差分 books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+345 FQI-SRC-FINE-7.GH
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。n≥0，at≠0；L_j=bq^j/(bq^j−at)，M_j=(bq^j−a)t/((1−bq^{j+1})(bq^j−at))；H_{−1}=1,G_{−1}=0；H_n=M_nH_{n−1},G_n=G_{n−1}+L_nH_{n−1}。
+Definitions: 
+Notes: 
+Locator: 印刷页5；§7 开头、(7.1) 前的无编号 H_n、G_n books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+346 FQI-SRC-FINE-15.2
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。N≥0；A_N=[t^N](t;q)_\infty F(a,b;t)，F(a,b;t)=\sum_{j≥0}(aq;q)_jt^j/(bq;q)_j。A_0=1。这里只收录固定 N 的有限系数表达。
+Definitions: 
+Notes: 
+Locator: 印刷页 16；式 (15.2)；§15 A special development books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+347 FQI-SRC-FINE-15.31
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。n≥1，A_0=1；A_n 同 (15.2)。
+Definitions: 
+Notes: 
+Locator: 印刷页 17；式 (15.31) books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+348 FQI-SRC-FINE-15.41
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。N≥0，a≠0；A_N 同 (15.2)。
+Definitions: 
+Notes: 
+Locator: 印刷页 17；式 (15.41) books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+349 FQI-SRC-FINE-20.64b
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。n≥1；f_n 由 (20.6) 定义。
+Definitions: f_n(u)=\sum_{j=0}^n{n\brack j}_q u^j。
+Notes: 
+Locator: 印刷页 28；式 (20.64b)；A general transformation books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+350 FQI-SRC-FINE-20.65b
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。n≥1；f_n 由 (20.6) 定义。
+Definitions: f_n(u)=\sum_{j=0}^n{n\brack j}_q u^j。
+Notes: 
+Locator: 印刷页 28；式 (20.65b)；A general transformation books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+351 FQI-SRC-FINE-20.66b
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。n≥0；u≠0。
+Definitions: f_n(u)=\sum_{j=0}^n{n\brack j}_q u^j。
+Notes: 
+Locator: 印刷页 28；式 (20.66b)；A general transformation books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+352 FQI-SRC-FINE-20.69
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。n≥0；q≠0，选择同一平方根约定。
+Definitions: 
+Notes: 
+Locator: 印刷页 29；式 (20.69)；A general transformation books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+353 FQI-SRC-FINE-21.2
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。k≥1；s=0,1,…,k−1；n≥0。
+Definitions: Q_n(u_1,…,u_k)=\sum_{r_1+…+r_k=n,\,r_i≥0}(q;q)_n\prod_{i=1}^k u_i^{r_i}/(q;q)_{r_i}。
+Notes: 
+Locator: 印刷页 30；式 (21.2)；The basic multinomial books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+354 FQI-SRC-FINE-21.21
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。p≥1，n≥0 为整数；选择 q^{1/p}。
+Definitions: Q_n(u_1,…,u_k)=\sum_{r_1+…+r_k=n,\,r_i≥0}(q;q)_n\prod_{i=1}^k u_i^{r_i}/(q;q)_{r_i}。
+Notes: 
+Locator: 印刷页 30；式 (21.21)；The basic multinomial books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+355 FQI-SRC-FINE-21.23
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。k,p≥1；n,m≥0；选定 s=q^{1/p}，并解释 q^{k/p}=s^k。Q_m 的 kp 个参数为 u_{r,j}=s^{r-1}exp(2πij/k)，1≤r≤p、0≤j<k（原式 21.22）。
+Definitions: Q_n(u_1,…,u_k)=\sum_{r_1+…+r_k=n,\,r_i≥0}(q;q)_n\prod_{i=1}^k u_i^{r_i}/(q;q)_{r_i}。
+Notes: 
+Locator: 印刷页 30；式 (21.23)；The basic multinomial books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+356 FQI-SRC-FINE-21.product
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。n≥0，k,p≥1；a,s 为参数，所有幂使用同一 s。
+Definitions: 
+Notes: 
+Locator: 印刷页 31；(21.31) 之后、(21.32) 之前的无编号乘积 books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+357 FQI-SRC-FINE-25.shell
+q 为形式变量；数值代入要求所有实际分母非零，Gaussian 在奇点先作多项式延拓。空乘积为 1、空和为 0。L≥1，0≤r<L 为整数；λ 为非空分拆，ℓ(λ) 是部件数。左侧恰有 L−r 个正部件，且每个≤L。
+Definitions: 
+Notes: 
+Locator: 印刷页 52；(25.9) 前的 outside shell 论证及无编号 Gaussian 多项式 books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+358 FQI-SRC-SILLS-1.JacobiFinite
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。m≥0，x≠0。
+Definitions: 
+Notes: 有限 q-二项式的移指标形式，保留为原书显式有限双边式。
+Locator: 印刷页 36；1.JacobiFinite books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+359 FQI-SRC-SILLS-1.75
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0，x≠0。
+Definitions: 
+Notes: 
+Locator: 印刷页 39；1.75 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+360 FQI-SRC-SILLS-1.75-rec
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1，f_n是(1.75)左侧。
+Definitions: 
+Notes: 
+Locator: 印刷页 39；1.75-rec books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+361 FQI-SRC-SILLS-1.79
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1。
+Definitions: 
+Notes: 
+Locator: 印刷页 41；1.79 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+362 FQI-SRC-SILLS-1.87
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥2；n=1时最后项按0解释。
+Definitions: C_n(j;q)=\sum_{k=0}^nq^{k(k+j)}{n\brack k}_q{n-k\brack k+j}_q\quad\text{(1.86)}.
+Notes: 
+Locator: 印刷页 43；1.87 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+363 FQI-SRC-SILLS-1.90
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥2，x≠0；T₀=1，T₁=1+xq+x⁻¹q²。
+Definitions: \mathcal T_n(x,q)=\sum_{j=-n}^nx^jq^{j(3j-1)/2}C_n(j;q^3).
+Notes: (1.89) 的下标是 q³，不是 q-三项式的三次方。
+Locator: 印刷页 44；1.90 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+364 FQI-SRC-SILLS-1.94-corrected
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0，bt≠0。
+Definitions: 
+Notes: 原书右侧上参数印为 z；上下文及精确检验支持改为 t，显式修订。
+Locator: 印刷页 45；1.94-corrected books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+365 FQI-SRC-SILLS-1.95
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥2；f_n 是(1.94)左侧终止和。
+Definitions: 
+Notes: 
+Locator: 印刷页 45；1.95 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+366 FQI-SRC-SILLS-1.99
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥2；f_n 为(1.98)左侧终止和。
+Definitions: 
+Notes: 
+Locator: 印刷页 46；1.99 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+367 FQI-SRC-SILLS-1.ExDistinct
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。j≥0；Q计数恰有ℓ个不同正部件、各≤j、总和r的分拆。
+Definitions: 
+Notes: 
+Locator: 印刷页 51；1.ExDistinct books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+368 FQI-SRC-SILLS-2.9-corrected
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0。
+Definitions: 
+Notes: (2.9)左侧遗漏(a;q)_k；与同页(2.8)一致的显式修订。
+Locator: 印刷页 56；2.9-corrected books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+369 FQI-SRC-SILLS-2.30
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；(α,β) 是关于x的Bailey对。
+Definitions: 
+Notes: 
+Locator: 印刷页 60；2.30 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+370 FQI-SRC-SILLS-2.Pair112
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+
+\alpha^{(d,e,k)}_r(x^e,q^e)=\begin{cases}\displaystyle\frac{(-1)^s x^{(k-d)s}q^{d(2k-2d+1)s^2/2-ds/2}(1-xq^{2ds})(x;q^d)_s}{(1-x)(q^d;q^d)_s},&r=ds,\\0,&d\nmid r.\end{cases}
+Notes: 印刷页64的有序对先后次序与前文定义反置；按定义列出α与β。
+Locator: 印刷页 63；2.Pair112 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+371 FQI-SRC-SILLS-2.Pair122
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+
+\alpha^{(d,e,k)}_r(x^e,q^e)=\begin{cases}\displaystyle\frac{(-1)^s x^{(k-d)s}q^{d(2k-2d+1)s^2/2-ds/2}(1-xq^{2ds})(x;q^d)_s}{(1-x)(q^d;q^d)_s},&r=ds,\\0,&d\nmid r.\end{cases}
+Notes: 
+Locator: 印刷页 64；2.Pair122 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+372 FQI-SRC-SILLS-2.Lem2.31
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0，a≠0，选定√q；用q=t²解释。
+Definitions: 
+Notes: 将Lemma 2.31中的Bailey关系乘(q;q)₂ₙ并合并±r项。
+Locator: 印刷页 71；2.Lem2.31 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+373 FQI-SRC-SILLS-2.Ex2b
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+
+\alpha^{(d,e,k)}_r(x^e,q^e)=\begin{cases}\displaystyle\frac{(-1)^s x^{(k-d)s}q^{d(2k-2d+1)s^2/2-ds/2}(1-xq^{2ds})(x;q^d)_s}{(1-x)(q^d;q^d)_s},&r=ds,\\0,&d\nmid r.\end{cases}
+Notes: 
+Locator: 印刷页 72；2.Ex2b books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+374 FQI-SRC-SILLS-2.Ex2c
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+
+\alpha^{(d,e,k)}_r(x^e,q^e)=\begin{cases}\displaystyle\frac{(-1)^s x^{(k-d)s}q^{d(2k-2d+1)s^2/2-ds/2}(1-xq^{2ds})(x;q^d)_s}{(1-x)(q^d;q^d)_s},&r=ds,\\0,&d\nmid r.\end{cases}
+Notes: 
+Locator: 印刷页 72；2.Ex2c books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+375 FQI-SRC-SILLS-2.Ex2d
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+
+\alpha^{(d,e,k)}_r(x^e,q^e)=\begin{cases}\displaystyle\frac{(-1)^s x^{(k-d)s}q^{d(2k-2d+1)s^2/2-ds/2}(1-xq^{2ds})(x;q^d)_s}{(1-x)(q^d;q^d)_s},&r=ds,\\0,&d\nmid r.\end{cases}
+Notes: 
+Locator: 印刷页 72；2.Ex2d books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+376 FQI-SRC-SILLS-2.Ex2e
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+
+\alpha^{(d,e,k)}_r(x^e,q^e)=\begin{cases}\displaystyle\frac{(-1)^s x^{(k-d)s}q^{d(2k-2d+1)s^2/2-ds/2}(1-xq^{2ds})(x;q^d)_s}{(1-x)(q^d;q^d)_s},&r=ds,\\0,&d\nmid r.\end{cases}
+Notes: 
+Locator: 印刷页 72；2.Ex2e books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+377 FQI-SRC-SILLS-2.Ex2f
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+
+\alpha^{(d,e,k)}_r(x^e,q^e)=\begin{cases}\displaystyle\frac{(-1)^s x^{(k-d)s}q^{d(2k-2d+1)s^2/2-ds/2}(1-xq^{2ds})(x;q^d)_s}{(1-x)(q^d;q^d)_s},&r=ds,\\0,&d\nmid r.\end{cases}
+Notes: 
+Locator: 印刷页 72；2.Ex2f books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+378 FQI-SRC-SILLS-2.Ex7a-corrected
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+Notes: 原印指数为binom(r+2,2)，n=0即不等。显式修订为binom(r+1,2)。a≠0。
+Locator: 印刷页 74；2.Ex7a-corrected books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+379 FQI-SRC-SILLS-2.75
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0，x≠0，S₋₁=1。
+Definitions: S_N=\sum_\lambda x^{h(\lambda)}q^{|\lambda|}，λ为最大部件≤N、相邻差≥3、不能有相邻的3倍数的分拆；h=#(部件≡1 mod3)−#(部件≡2 mod3)。
+Notes: (2.72)中h≥0应为h∈Z；有限Laurent多项式。
+Locator: 印刷页 78；2.75 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+380 FQI-SRC-SILLS-2.76-78
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥2；小指标由S_N的分拆定义给出。
+Definitions: S_N见(2.75)。
+Notes: 
+Locator: 印刷页 78；2.76-78 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+381 FQI-SRC-SILLS-2.Lem2.53
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+Notes: 选定√q；以q=t²解释。
+Locator: 印刷页 88；2.Lem2.53 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+382 FQI-SRC-SILLS-2.108
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+Notes: 
+Locator: 印刷页 92；2.108 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+383 FQI-SRC-SILLS-3.5-6
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+
+\alpha^{(d,e,k)}_r(x^e,q^e)=\begin{cases}\displaystyle\frac{(-1)^s x^{(k-d)s}q^{d(2k-2d+1)s^2/2-ds/2}(1-xq^{2ds})(x;q^d)_s}{(1-x)(q^d;q^d)_s},&r=ds,\\0,&d\nmid r.\end{cases}
+Notes: ρ₁ρ₂≠0；是(2.34)在基本Bailey对上的书中显式实例。
+Locator: 印刷页 108；3.5-6 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+384 FQI-SRC-SILLS-3.7
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+Notes: 原(3.7)β的第一分母印为(q;q)_n；由(3.6)取极限应为(q;q)_j，显式修订。
+Locator: 印刷页 108；3.7 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+385 FQI-SRC-SILLS-3.Lem3.3
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+Notes: 原(3.14)遗漏q^{r²}；用(2.31)反演β并核对(3.15)后显式补入。
+Locator: 印刷页 109；3.Lem3.3 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+386 FQI-SRC-SILLS-4.6
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥2。
+Definitions: D_n=\sum_{j=0}^{\lfloor n/2\rfloor}q^{j^2}{n-j\brack j}_q.
+Notes: 
+Locator: 印刷页 118；4.6 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+387 FQI-SRC-SILLS-4.17
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥2；E_n见(4.16)。
+Definitions: 
+Notes: 
+Locator: 印刷页 123；4.17 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+388 FQI-SRC-SILLS-4.18
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；D_n见(4.8)，C_n见(1.86)。
+Definitions: 
+Notes: 
+Locator: 印刷页 124；4.18 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+389 FQI-SRC-SILLS-4.19
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1；E_n见(4.16)。
+Definitions: 
+Notes: 原(4.19)左侧为E_n；右侧对应E_{n−1}。修订指标，原n=0时右侧为0而E₀=1。
+Locator: 印刷页 124；4.19 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+390 FQI-SRC-SILLS-4.25
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。m≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 126；4.25 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+391 FQI-SRC-SILLS-4.26-corrected
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。m≥0。
+Definitions: 
+Notes: 原书第一项前因子印为q^{m²}；按deg E_{2m}=m(m+1)显式修订。中间与右侧不改。
+Locator: 印刷页 126；4.26-corrected books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+392 FQI-SRC-SILLS-4.27-corrected
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。m≥0。
+Definitions: 
+Notes: 原书第一项前因子印为q^{m²}；按deg E_{2m+1}=m(m+2)显式修订。中间与右侧不改。
+Locator: 印刷页 126；4.27-corrected books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+393 FQI-SRC-SILLS-4.35
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0。
+Definitions: B_n=\sum_{k=0}^nq^{k^2}{n\brack k}_q\quad\text{(4.32)}.
+Notes: 
+Locator: 印刷页 128；4.35 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+394 FQI-SRC-SILLS-4.37
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 128；4.37 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+395 FQI-SRC-SILLS-4.38
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；B_n见(4.32)/(4.37)。
+Definitions: 
+Notes: 原书高阶递推；直接用独立有限和核验，不以该递推定义B。
+Locator: 印刷页 129；4.38 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+396 FQI-SRC-SILLS-4.Sym
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 129；4.Sym books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+397 FQI-SRC-SILLS-4.43
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 133；4.43 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+398 FQI-SRC-SILLS-4.47
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥2。
+Definitions: P_n=\sum_{j=0}^n\sum_{k=0}^{\min(j,n-j)}q^{j^2+k^2}{j\brack k}_{q^2}{n-k\brack j}_{q^2}.
+Notes: 
+Locator: 印刷页 134；4.47 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+399 FQI-SRC-SILLS-4.48
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1。
+Definitions: 
+Notes: 
+Locator: 印刷页 135；4.48 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+
+400 FQI-SRC-SILLS-4.49
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1。
+Definitions: 
+Notes: 
+Locator: 印刷页 135；4.49 books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf

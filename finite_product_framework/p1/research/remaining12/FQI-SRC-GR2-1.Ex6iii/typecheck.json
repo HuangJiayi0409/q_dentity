@@ -1,0 +1,14 @@
+{
+  "id": "FQI-SRC-GR2-1.Ex6iii",
+  "source": {
+    "identity_id": "FQI-SRC-GR2-1.Ex6iii",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity053.lean",
+    "sha256": "d7cf234268f0fdff200f09611a3bfba0b0f4b8f1d61e1343b27512df4de5927c"
+  },
+  "well_typed_original_goal": true,
+  "typecheck": {
+    "exit_code": 1,
+    "output": "P1_ELABORATED_GOAL: phi [a, q ^ (-↑n)] [] q (q ^ n / a) n = a ^ (-↑n)\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-GR2-1.Ex6iii/Typecheck.lean:26:2: error: P1_TYPECHECK_ONLY\n"
+  },
+  "is_proof": false
+}

@@ -1,0 +1,79 @@
+import Benchmark.Gaussian
+import Mathlib.Tactic.LinearCombination
+import Mathlib.Data.Nat.Choose.Basic
+open FiniteQBenchmark
+namespace FiniteQP1
+variable {K : Type*} [Field K]
+
+theorem gaussian_pascal (q : K) (n k : ℕ) (hk : k ≤ n) :
+    gaussian q (n+1) (k+1) = gaussian q n (k+1) + q^(n-k)*gaussian q n k := by
+  induction n generalizing k with
+  | zero =>
+    have : k = 0 := by omega
+    subst k
+    simp [gaussian]
+  | succ n ih =>
+    by_cases he : k = n+1
+    · subst k
+      simp [gaussian_self, gaussian_above q (by omega : n+1 < n+1+1)]
+    · have hkn : k ≤ n := by omega
+      cases k with
+      | zero =>
+        have h := ih 0 (by omega)
+        simp only [Nat.sub_zero, gaussian_zero_right] at h ⊢
+        rw [gaussian, gaussian_zero_right]
+        rw [h, pow_succ]
+        simp only [gaussian, gaussian_zero_right, mul_one] at h
+        linear_combination h
+      | succ k =>
+        have h0 := ih k (by omega)
+        have h1 := ih (k+1) hkn
+        have hp : n-k = (n-(k+1))+1 := by omega
+        simp only [Nat.succ_sub_succ_eq_sub]
+        simp only [gaussian] at h0 h1 ⊢
+        rw [hp, pow_succ] at h0 ⊢
+        simp only [pow_succ] at h0 h1 ⊢
+        linear_combination h0 + (q^k*q*q) * h1
+end FiniteQP1
+namespace FiniteQP1
+variable {K : Type*} [Field K]
+
+def binomialWeight (q z : K) (k : ℕ) : K :=
+  (-1)^k*z^k*q^(k*(k-1)/2)
+
+def binomialTerm (q z : K) (n k : ℕ) : K :=
+  binomialWeight q z k * gaussian q n k
+
+def binomialFlux (q z : K) (n : ℕ) : ℕ → K
+  | 0 => 0
+  | k+1 => z*q^n*binomialTerm q z n k
+
+theorem weight_succ (q z : K) (k : ℕ) :
+    binomialWeight q z (k+1) = -z*q^k*binomialWeight q z k := by
+  simp only [binomialWeight, Nat.triangle_succ, pow_add, pow_succ]
+  ring
+
+theorem weight_shift (q z : K) (n k : ℕ) (hk : k ≤ n) :
+    binomialWeight q z (k+1)*q^(n-k) = -z*q^n*binomialWeight q z k := by
+  rw [weight_succ]
+  calc
+    _ = -z * (q^k*q^(n-k)) * binomialWeight q z k := by ring
+    _ = _ := by rw [← pow_add, Nat.add_sub_of_le hk]
+
+theorem binomial_local (q z : K) (n k : ℕ) (hk : k ∈ Finset.range (n+1)) :
+    binomialTerm q z (n+1) k - (1-z*q^n)*binomialTerm q z n k =
+      binomialFlux q z n (k+1) - binomialFlux q z n k := by
+  cases k with
+  | zero => simp [binomialTerm, binomialWeight, binomialFlux, gaussian_zero_right]
+  | succ k =>
+    have hkn : k ≤ n := by simp only [Finset.mem_range] at hk; omega
+    simp only [binomialTerm, binomialFlux, gaussian_pascal q n k hkn]
+    have h := weight_shift q z n k hkn
+    linear_combination gaussian q n k * h
+
+theorem binomial_boundary (q z : K) (n : ℕ) :
+    binomialFlux q z n (n+1) - binomialFlux q z n 0 +
+      binomialTerm q z (n+1) (n+1) = 0 := by
+  simp only [binomialFlux, binomialTerm, gaussian_self, mul_one, sub_zero, weight_succ]
+  ring
+end FiniteQP1

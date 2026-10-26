@@ -1,0 +1,52 @@
+{
+  "dependencies": [
+    {
+      "path": "benchmark/lean/Benchmark/Definitions.lean",
+      "sha256": "a6361c499801dec2ead09a2ee65e1fc85ec5d029f065dc656eb239f6ea405621"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Auxiliary.lean",
+      "sha256": "43d0d24048f1d726bcd40e71a9db8ca5ca21c9e01cca66421f922ef035589c30"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Gaussian.lean",
+      "sha256": "2d4baad78917edeb734c4dfcfcc297c5143d1b1ee71914ea9cba9f3fd0f92ba3"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Batch5Definitions.lean",
+      "sha256": "f363f4f6b9e7c4676c1bbdfb587d90ae7362495f278730dd8e324f9bcb881775",
+      "loaded_declaration": "FiniteQBenchmark.kacPowerNat",
+      "declaration_sha256": "6ee4569f44becbd99178aeca336f0b1082ce1ed32442b52209c92732e8850fbd"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/BatchDefinitions.lean",
+      "sha256": "bcf0b2cfc6b4cffd9cdf83942c3233491cda8848eb53f50f1c81c95a5874b80c",
+      "loaded_declaration": "FiniteQBenchmark.regular",
+      "declaration_sha256": "ab9b2556267e2383cbad68dde811d3593ee4d50f80836147178234cf2e1ffa49"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Batch4Definitions.lean",
+      "sha256": "3277fd6edb7428873e4ae29f08fbe6d9e16bdbd1fb9f1bf3baf6c5ec5f983fd8",
+      "loaded_declaration": "FiniteQBenchmark.sillsAlpha",
+      "declaration_sha256": "6547421887599456b8e689e7d5c093f4b13dfbb6987f9bfde712cd08e73a703f"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/shared/deps/Benchmark/Auxiliary.olean",
+      "sha256": "785c0ab829c1ea52afb76f18afca6659695dc1e49fcd2332f2a24ac953112546"
+    },
+    {
+      "path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/shared/deps/Benchmark/Definitions.olean",
+      "sha256": "e8d1bc1ea7bd12dcb5f4191f7a1dd8aab627558372bb9997da5ffade423cd7fe"
+    },
+    {
+      "path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/shared/deps/Benchmark/Gaussian.olean",
+      "sha256": "61e729e1d510f21f52d33134938e094eac0853ec887f731b243b12930427aaf0"
+    },
+    {
+      "path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/shared/deps/Benchmark/P1Atoms.olean",
+      "sha256": "5586732f093f595986dd2b0668be41d7b78151863fae1aef60c5c7d3104c39cb"
+    }
+  ]
+}

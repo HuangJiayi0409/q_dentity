@@ -1,0 +1,7 @@
+{
+  "upstream": "https://github.com/reduce-algebra/reduce-algebra/blob/master/packages/qsum/qsum.red",
+  "manual": "https://reduce-algebra.sourceforge.io/manual/manualse172.html",
+  "sha256": "a50088d08ebf95dd1076ad6bf5cbd6785be81d94123b447767b955c42be413e6",
+  "implementation_note": "Python implementation of QSUM q-Gosper normalization and Laurent bounds; REDUCE itself was not executed.",
+  "license": "../QSUM_LICENSE.txt"
+}

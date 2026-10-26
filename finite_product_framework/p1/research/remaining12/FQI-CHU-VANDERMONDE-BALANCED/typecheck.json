@@ -1,0 +1,14 @@
+{
+  "id": "FQI-CHU-VANDERMONDE-BALANCED",
+  "source": {
+    "identity_id": "FQI-CHU-VANDERMONDE-BALANCED",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity013.lean",
+    "sha256": "88ce8e4082af6f33dcf20bacef1e64cd6df41d4faf89b14ffcb96548014d3361"
+  },
+  "well_typed_original_goal": true,
+  "typecheck": {
+    "exit_code": 1,
+    "output": "P1_ELABORATED_GOAL: phi [a, q ^ (-↑n)] [c] q (c * q ^ n / a) n = poch (c / a) q n / poch c q n\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-CHU-VANDERMONDE-BALANCED/Typecheck.lean:28:2: error: P1_TYPECHECK_ONLY\n"
+  },
+  "is_proof": false
+}

@@ -1,0 +1,29 @@
+# Credentials and local environment
+API_*
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/
+.agents/
+.venv/
+venv/
+
+# Rebuildable dependencies and runtime outputs
+.lake/
+.tools/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+*.olean
+*.ilean
+*.log
+generated/
+
+# Out-of-scope bare-model experiments
+/finite_product_framework/batch/deepseek_single/
+/finite_product_framework/batch/gpt_time_matched/

@@ -1,0 +1,13 @@
+{
+  "scoped_generator_refresh": "passed",
+  "scoped_generator_check": "passed",
+  "full_catalog_build": {
+    "exit_code": 1,
+    "missing": "round1_source_collection/metadata/pending16_resolutions.json"
+  },
+  "full_catalog_validation": {
+    "exit_code": 1,
+    "missing_module": "validate_sills"
+  },
+  "full_catalog_validation_claimed": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FQI-SRC-SILLS-2.Pair122",
+  "status": "passed",
+  "lean": {
+    "exit_code": 0,
+    "output": "'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+  },
+  "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-2.Pair122/LocalRelation.lean",
+  "proof_sha256": "0edc625934b8a3516887710480f863b708ed16f1f010b460dfbda33f4aeefe13",
+  "native_report_sha256": "22bac59df9dba2db0c1993dfbee45acab690ebe64263393e08dc9fd025e6613d",
+  "scope": "local cleared rational identity only; not the original finite sum proof",
+  "automatic_train_proof": false,
+  "symbol_mapping": {
+    "Q": "v0",
+    "X": "v1",
+    "q": "v2",
+    "x": "v3"
+  }
+}

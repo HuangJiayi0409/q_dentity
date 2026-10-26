@@ -1,0 +1,19 @@
+{
+  "id": "FQI-SRC-AQ-3.37",
+  "source": {
+    "identity_id": "FQI-SRC-AQ-3.37",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity315.lean",
+    "sha256": "1d9d466eee5eb4798d3b4deace3d841b3345bd30029f06c40eb64b6d92cc34d2"
+  },
+  "native_status": "unsupported_structure",
+  "original_lean_proved": false,
+  "remaining_obligations": [
+    "列表已在Lean展开，仍需在原差分中消去1-q^(2r+1)的可去极点",
+    "使用原h_domain传递分母条件，保留q=0合法情形",
+    "自动组装n=0/n>0分段目标和求和端点"
+  ],
+  "native_report": "FQI-SRC-AQ-3.37/native.json",
+  "verified_preprocessing_steps": [
+    "explicit_Pochhammer_lists_expanded_in_Lean"
+  ]
+}

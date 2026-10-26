@@ -1,0 +1,19 @@
+{
+  "id": "FQI-SRC-GR2-1.Ex5",
+  "source": {
+    "identity_id": "FQI-SRC-GR2-1.Ex5",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity051.lean",
+    "sha256": "db6ff636c05fef41a7008ec6dae82f1221b2f211d8f20b77c49d246eccca5a16"
+  },
+  "native_status": "unsupported_structure",
+  "original_lean_proved": false,
+  "remaining_obligations": [
+    "列表已在Lean展开，仍需处理外部乘数与Poch(c*q^k,q,m)的乘积分段",
+    "处理随n变化的下参数和有限分母条件",
+    "连接动态证书、通量可去极点、移动边界与初值"
+  ],
+  "native_report": "FQI-SRC-GR2-1.Ex5/native.json",
+  "verified_preprocessing_steps": [
+    "explicit_Pochhammer_lists_expanded_in_Lean"
+  ]
+}

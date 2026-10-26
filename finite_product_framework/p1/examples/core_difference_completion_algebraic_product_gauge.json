@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "solver": "finite_difference_ring",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": 1
+      },
+      {
+        "name": "P",
+        "kind": "product",
+        "ratio": [
+          "mul",
+          [
+            "pow",
+            [
+              "add",
+              "H",
+              "Z"
+            ],
+            -1
+          ],
+          [
+            "add",
+            1,
+            "H",
+            "Z"
+          ]
+        ]
+      }
+    ],
+    "rhs_basis": [
+      [
+        "add",
+        [
+          "mul",
+          -1,
+          [
+            "pow",
+            "P",
+            -1
+          ]
+        ],
+        [
+          "mul",
+          [
+            "pow",
+            "P",
+            -1
+          ],
+          [
+            "pow",
+            [
+              "add",
+              1,
+              "H",
+              "Z"
+            ],
+            -1
+          ],
+          [
+            "add",
+            "H",
+            "Z"
+          ]
+        ]
+      ]
+    ],
+    "algebraic_extensions": [
+      {
+        "name": "Z",
+        "polynomial": [
+          "add",
+          1,
+          "Z",
+          [
+            "pow",
+            "Z",
+            2
+          ]
+        ],
+        "shift": "Z"
+      }
+    ]
+  }
+}

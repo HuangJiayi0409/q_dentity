@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "solver": "difference_ring",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": [
+          "pow",
+          [
+            "add",
+            1,
+            [
+              "mul",
+              -1,
+              "X"
+            ]
+          ],
+          -1
+        ]
+      }
+    ],
+    "rhs_basis": [
+      [
+        "mul",
+        2,
+        "H",
+        [
+          "pow",
+          [
+            "add",
+            1,
+            [
+              "mul",
+              -1,
+              "X"
+            ]
+          ],
+          -1
+        ]
+      ],
+      [
+        "pow",
+        [
+          "add",
+          1,
+          [
+            "mul",
+            -1,
+            "X"
+          ]
+        ],
+        -2
+      ]
+    ]
+  }
+}

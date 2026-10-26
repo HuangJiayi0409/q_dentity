@@ -1,0 +1,23 @@
+{
+  "identities_attempted": 41,
+  "subproblems_attempted": 50,
+  "identity_statuses": {
+    "all_local_certificates_constructed": 15,
+    "timeout": 24,
+    "no_antidifference_for_chosen_local_problems": 2
+  },
+  "subproblem_statuses": {
+    "constructed": 16,
+    "timeout": 32,
+    "no_q_hypergeometric_antidifference": 2
+  },
+  "excluded_deferred_identities": 8,
+  "excluded_existing_proved_identities": 2,
+  "new_lean_proofs": 0,
+  "interpretation": "Local formal certificates and diagnostic checks only; no proof of all original domain, boundaries, initial values or proposed transformations.",
+  "code_sha256": {
+    "inputs.py": "b65360f1d067870ed66e4a30dbf2c24d1b832479a1594ca04109b19b59bf464b",
+    "engine.py": "8192d5fac9b5840bbeea5d4554d1084e03faf43d93c6d5c38c5f1e1a789d9d1d",
+    "run_trials.py": "d899476a9a7d76a53dff1dfed4f802fcc4af1e5e677726b98695b26a59dbdbdb"
+  }
+}

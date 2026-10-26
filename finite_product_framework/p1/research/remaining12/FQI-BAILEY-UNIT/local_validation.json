@@ -1,0 +1,19 @@
+{
+  "id": "FQI-BAILEY-UNIT",
+  "status": "passed",
+  "lean": {
+    "exit_code": 0,
+    "output": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-BAILEY-UNIT/LocalRelation.lean:4:72: warning: Variable name `v3` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _v3\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n'FiniteQP1.native_local_relation' depends on axioms: [propext, Quot.sound]\n"
+  },
+  "source_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-BAILEY-UNIT/LocalRelation.lean",
+  "proof_sha256": "736674cd0c70318a55d7646feefb1faca5684ceb68cec94297f2b683d474d3cd",
+  "native_report_sha256": "70fe872469f4e05ed5eb18204ec9af46c1317432a9838d2d13d88cbf9bbe957a",
+  "scope": "local cleared rational identity only; not the original finite sum proof",
+  "automatic_train_proof": false,
+  "symbol_mapping": {
+    "Q": "v0",
+    "X": "v1",
+    "a": "v2",
+    "q": "v3"
+  }
+}

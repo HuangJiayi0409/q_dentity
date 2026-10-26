@@ -1,0 +1,15 @@
+{
+  "scoped_generator_refresh": "passed",
+  "scoped_generator_check": "passed",
+  "full_catalog_build": {
+    "status": "blocked_by_missing_existing_input",
+    "command": "python3 round2_identity_catalog/scripts/build_catalog.py",
+    "missing": "round1_source_collection/metadata/pending16_resolutions.json"
+  },
+  "full_catalog_validation": {
+    "status": "blocked_by_missing_existing_module",
+    "command": "python3 round2_identity_catalog/scripts/validate_catalog.py",
+    "missing": "validate_sills"
+  },
+  "full_catalog_validation_claimed": false
+}

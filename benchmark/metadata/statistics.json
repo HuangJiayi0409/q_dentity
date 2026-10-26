@@ -1,0 +1,51 @@
+{
+  "total": 446,
+  "train": 346,
+  "test": 100,
+  "seed": 20261018,
+  "sampling_attempt": 1,
+  "groups": 391,
+  "families": {
+    "A": {
+      "name": "超几何型有限求和",
+      "total": 253,
+      "train": 196,
+      "test": 57
+    },
+    "C": {
+      "name": "递推与差分关系",
+      "total": 67,
+      "train": 52,
+      "test": 15
+    },
+    "F": {
+      "name": "有限乘积与局部代数关系",
+      "total": 74,
+      "train": 58,
+      "test": 16
+    },
+    "G": {
+      "name": "差分域／环、参数关系与生成函数",
+      "total": 52,
+      "train": 40,
+      "test": 12
+    }
+  },
+  "difficulty": {
+    "低": {
+      "total": 84,
+      "train": 65,
+      "test": 19
+    },
+    "中": {
+      "total": 255,
+      "train": 201,
+      "test": 54
+    },
+    "高": {
+      "total": 107,
+      "train": 80,
+      "test": 27
+    }
+  }
+}

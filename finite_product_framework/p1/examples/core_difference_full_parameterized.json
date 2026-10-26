@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "solver": "difference_field",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": 1
+      }
+    ],
+    "rhs_basis": [
+      [
+        "pow",
+        "H",
+        -1
+      ],
+      [
+        "pow",
+        [
+          "add",
+          1,
+          "H"
+        ],
+        -1
+      ]
+    ]
+  }
+}

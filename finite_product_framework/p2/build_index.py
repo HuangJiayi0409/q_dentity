@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+"""Render the current P2 implementation status from actual verification reports."""
+import html
+import json
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+
+
+def main():
+    validation = json.loads((HERE/'validation.json').read_text())
+    native = json.loads((HERE/'generated/runs/FQI-SRC-FINE-15.2/report.json').read_text())
+    e = html.escape
+    rows = ''.join('<tr><td>'+e(item['name'])+'</td><td>'+e(item['status'])+'</td></tr>'
+                   for item in validation['checks'])
+    text = '''<!doctype html><html lang="zh"><meta charset="utf-8">
+<title>P2 有限展开与系数卷积 pipeline</title>
+<style>body{font:16px/1.75 system-ui;max-width:1050px;margin:40px auto;padding:20px}
+td,th{border:1px solid #ddd;padding:9px;vertical-align:top}table{border-collapse:collapse;width:100%}
+pre{background:#f4f5f6;padding:16px;overflow:auto}a{color:#185abd}</style>
+<h1>P2 有限展开与系数卷积 pipeline</h1>
+<p>本页是实现状态；<a href="research/index.html">62条初始方法调研</a>是历史候选分组，不是已证明覆盖。</p>
+<h2>已实现的分支</h2>
+<p>Cauchy系数展开与有限卷积正规化。读取原Lean目标和冻结表示定义，将乘积系数计算为有限卷积；
+逐层归约到通用求和项，导出Lean表达式，以SymPy进行精确多项式正规化，再生成Lean证明并审计公理。
+这是符号代数算法的首个受限分支；不是qFPS实现，不会自动搜索非平凡q求和核。</p>
+<pre>原train声明 → 原定义展开 → Cauchy系数公式 → 有限卷积
+→ 逐层求和项比较 → SymPy精确正规化 → Lean重放 → 原目标与公理审计</pre>
+<table><tr><th>记录项</th><th>实现与边界</th></tr>
+<tr><td>核心证明方法</td><td>精确系数提取、有限卷积、符号多项式正规形。</td></tr>
+<tr><td>适用条件</td><td>当前表示接口接收PowerSeries.mk乘积及已接入的Fine定义；
+展开后，两侧能通过同域有限和的逐项比较归约到环恒等式。默认最多尝试4层求和。
+仅原表P2主机制62条可由原题CLI入口加载，其他条目不能算本批覆盖。</td></tr>
+<tr><td>剩余能力</td><td>多项式/Laurent基底桥接、不同求和域重排、通用q卷积核求值、
+连接反演、任意列表归纳、正交范数、截断级数及单位根筛选尚未实现。
+普通基底或级数表示之外的输入返回未支持/未闭合；不表示数学上不能证明。</td></tr>
+<tr><td>CAS接入</td><td>实际调用SymPy，计算从Lean导出的左右项正规形及残差。
+逆元视为独立原子，不默认分母非零，不进行a/a=1式的非法约分。
+本分支不调用P1、Maple或Mathematica；后续非平凡核可增加P1接口。</td></tr>
+<tr><td>Lean验证</td><td>通用Cauchy引理、sum_congr逐层组装及ring重放；
+最终仅允许propext、Classical.choice、Quot.sound。原statement声明保留，
+依赖从冻结定义抽取，不导入Batch4Proofs或已完成目标证明。</td></tr></table>
+<h2>当前验收</h2>'''
+    text += '<p>原题状态：<b>'+e(native['status'])+'</b>；完整原train证明：<b>'+str(native['complete_train_proofs'])+'/62</b>。回归状态：<b>'+e(validation['status'])+'</b>。</p>'
+    text += '''<p>首例为FQI-SRC-FINE-15.2。它本身定义为幂级数乘积的系数，
+因此主要验收自动系数展开和完整证明链路；不能据此推断复杂q卷积核已能闭合。
+参数改名、去分母假设和任意函数三因子测试均不计为新增train条目。</p>
+<p><a href="generated/runs/FQI-SRC-FINE-15.2/Proof.lean">自动生成的原题证明</a> ·
+<a href="generated/runs/FQI-SRC-FINE-15.2/construction.json">实际符号计算结果</a> ·
+<a href="generated/runs/FQI-SRC-FINE-15.2/report.json">完整原题报告</a> ·
+<a href="validation.json">回归与反例验收</a></p><table><tr><th>检查</th><th>结果</th></tr>'''+rows+'''</table>
+<h2>运行</h2><p>在 /home/hjy/Project 下执行：</p>
+<pre>python3 finite_q_identity_catalog/finite_product_framework/p2/run.py --identity FQI-SRC-FINE-15.2
+python3 finite_q_identity_catalog/finite_product_framework/p2/check.py
+python3 finite_q_identity_catalog/finite_product_framework/p2/build_index.py</pre>
+<p>参数ID仅用于加载原声明，不选择预置答案；公共表示定义与通用数学引理是可复用基础设施。
+每次运行保存表达式、构造结果、完整证明、失败义务与原文件哈希。
+运行依赖项目已有Lean/mathlib和Python SymPy；不需要外部商业CAS。</p>
+<p>下一步：接入有限多项式表示和非平凡系数核，优先研究AP-3.E7或GR2-9.Ex5ii，
+保持本首例回归通过。未逐条运行剩余61条，因此本页不作其失败率统计。</p></html>'''
+    (HERE/'index.html').write_text(text)
+
+
+if __name__ == '__main__':
+    main()

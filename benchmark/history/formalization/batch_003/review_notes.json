@@ -1,0 +1,169 @@
+{
+  "batch": "batch_003",
+  "local_primary_sources": [
+    {
+      "path": "round2_identity_catalog/books/cambridge-core_basic-hypergeometric-series_9Oct2026/14.0_pp_259_281_Linear_and_bilinear_generating_functions_for_basic_orthogonal_polynomials.pdf",
+      "sha256": "6f2e470d8b37ef74f9396b620da67ca3930b1d6fe8e45e2173b9bd568144bebf"
+    },
+    {
+      "path": "round2_identity_catalog/books/cambridge-core_basic-hypergeometric-series_9Oct2026/19.0_pp_359_366_Selected_transformation_formulas.pdf",
+      "sha256": "0c78cacf536a572ce3c9b752c760eeb604cee808b348b60338b8e612892624c4"
+    },
+    {
+      "path": "round2_identity_catalog/books/cambridge-core_the-theory-of-partitions_9Oct2026/08.0_pp_33_53_Restricted_Partitions_and_Permutations.pdf",
+      "sha256": "b9da6ff59ce707db2aa45d6ab66a0cedb6f143abf484418e1872dad5d6555ace"
+    },
+    {
+      "path": "round2_identity_catalog/books/cambridge-core_the-theory-of-partitions_9Oct2026/12.0_pp_103_120_Identities_of_the_RogersRamanujan_Type.pdf",
+      "sha256": "f8ac65fd40f506be53396830d3b4a712165d4723cadc208f3fe616d4a8d42167"
+    },
+    {
+      "path": "round2_identity_catalog/books/cambridge-core_the-theory-of-partitions_9Oct2026/14.0_pp_139_158_Sieve_Methods_Related_to_Partitions.pdf",
+      "sha256": "7ca97dd93306ef6d5f9e77ca21f384116fc9bd74998325212ecae21109146146"
+    },
+    {
+      "path": "round2_identity_catalog/books/cambridge-core_the-theory-of-partitions_9Oct2026/16.0_pp_179_201_HigherDimensional_Partitions.pdf",
+      "sha256": "56b518f025cd52d2057ee5951c96b58244d66ef149cd6d8f2217d2bac7856518"
+    },
+    {
+      "path": "round2_identity_catalog/books/cambridge-core_the-theory-of-partitions_9Oct2026/18.0_pp_212_229_Partitions_in_Combinatorics.pdf",
+      "sha256": "fbeca16327c3b2e4ad2ad7d618080e5e45c9274f08abb3e1b9cc936d43eda835"
+    }
+  ],
+  "external_primary_sources": [
+    {
+      "url": "https://www.mat.univie.ac.at/~schlosse/pdf/GSpaper.pdf",
+      "locator": "p.16, (3.26)",
+      "identity_indices": [
+        209
+      ],
+      "checked": "formula and correction notice"
+    }
+  ],
+  "visual_checks": [
+    {
+      "source": "AP chapter 7",
+      "printed_page": 117,
+      "purpose": "Lambda generating function and smaller-part gap convention"
+    },
+    {
+      "source": "AP chapter 9",
+      "printed_page": 147,
+      "purpose": "definition of f and its finite geometric sums"
+    },
+    {
+      "source": "GR Appendix III",
+      "printed_page": 362,
+      "purpose": "paired square-root parameters of V for III.25–III.27"
+    }
+  ],
+  "translation_review": {
+    "201": "Ex.9.5 dual q-Hahn, matching Identity200, not section7.2 normalization",
+    "279-280": "AP D_n is schurD(n+1); negative endpoint explicitly one",
+    "281": "smaller-part gap convention and polynomial Lambda coefficient recurrence",
+    "283-286,300": "transpose array representation preserves weight and weak order"
+  },
+  "previous_registered_statements_verified_unchanged": 200,
+  "source_ids": [
+    "AP-11.2.1",
+    "AP-11.2.10",
+    "AP-11.2.2",
+    "AP-11.2.4",
+    "AP-11.2.9",
+    "AP-13.E3",
+    "AP-13.E5",
+    "AP-3.2.7",
+    "AP-3.3.1",
+    "AP-3.3.11",
+    "AP-3.3.14",
+    "AP-3.3.9",
+    "AP-3.4.2",
+    "AP-3.4.4",
+    "AP-3.5.MULTIPROD",
+    "AP-3.E1",
+    "AP-3.E12a",
+    "AP-3.E12b",
+    "AP-3.E7",
+    "AP-7.E11",
+    "AP-9.3.17",
+    "AP-9.3.18",
+    "AP-9.3.19",
+    "AP-9.3.20",
+    "AP-9.3.5",
+    "AP-9.3.6",
+    "AP-9.3.7",
+    "AP-9.3.8",
+    "AP-9.E4b",
+    "AP-9.L7",
+    "AP-9.L8",
+    "GR2-10.Ex18",
+    "GR2-11.6.21-p0",
+    "GR2-11.6.5-p0",
+    "GR2-11.6.6-p0",
+    "GR2-11.7.1",
+    "GR2-11.7.8-p0",
+    "GR2-11.Ex21-p0",
+    "GR2-11.Ex22-p0",
+    "GR2-11.Ex23ii",
+    "GR2-11.Ex24ii",
+    "GR2-11.Ex38-p0",
+    "GR2-11.Ex39-p0",
+    "GR2-11.Ex40-p0",
+    "GR2-9.Ex10ii",
+    "GR2-9.Ex17i",
+    "GR2-9.Ex17ii",
+    "GR2-9.Ex5ii",
+    "GR2-9.Ex7",
+    "GR2-I-03",
+    "GR2-I-07",
+    "GR2-I-08",
+    "GR2-I-09",
+    "GR2-I-10",
+    "GR2-I-11",
+    "GR2-I-12",
+    "GR2-I-13",
+    "GR2-I-14",
+    "GR2-I-15",
+    "GR2-I-16",
+    "GR2-I-17",
+    "GR2-I-18",
+    "GR2-I-19",
+    "GR2-I-20",
+    "GR2-I-21",
+    "GR2-I-22",
+    "GR2-I-25",
+    "GR2-I-26",
+    "GR2-I-28",
+    "GR2-I-33",
+    "GR2-I-42",
+    "GR2-I-43",
+    "GR2-I-44",
+    "GR2-I-45",
+    "GR2-I-46",
+    "GR2-I-47",
+    "GR2-II-14",
+    "GR2-II-15",
+    "GR2-II-17",
+    "GR2-II-19",
+    "GR2-II-22",
+    "GR2-II-34",
+    "GR2-II-35",
+    "GR2-II-36",
+    "GR2-II-37",
+    "GR2-III-06",
+    "GR2-III-07",
+    "GR2-III-08",
+    "GR2-III-11",
+    "GR2-III-12",
+    "GR2-III-13",
+    "GR2-III-14",
+    "GR2-III-15",
+    "GR2-III-19",
+    "GR2-III-21",
+    "GR2-III-22",
+    "GR2-III-25",
+    "GR2-III-26",
+    "GR2-III-27",
+    "GR2-III-28"
+  ]
+}

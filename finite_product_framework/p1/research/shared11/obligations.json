@@ -1,0 +1,13 @@
+{
+  "FQI-CHU-VANDERMONDE-Q": {"remaining":[]},
+  "FQI-CHU-VANDERMONDE-BALANCED": {"remaining":[]},
+  "FQI-BAILEY-UNIT": {"remaining":["命名定义已在Lean展开，仍需自动处理r=0与r>0分支及n=0目标", "由动态原差分构造消去额外极点的通量表示，不能假设1-a*q^(2r)非零", "验证原分母条件、q=0合法情形与两个端点，组装原式证明"]},
+  "FQI-SRC-GR2-1.Ex5": {"remaining":["列表已在Lean展开，仍需处理外部乘数与Poch(c*q^k,q,m)的乘积分段", "处理随n变化的下参数和有限分母条件", "连接动态证书、通量可去极点、移动边界与初值"]},
+  "FQI-SRC-AP-3.E1": {"remaining":["Icc已在原目标重编号；需把Gaussian整数指标桥接接入生成器，并处理平方指数toNat和整数幂", "处理原式允许的q=0情形", "验证上指标2*n的递推、两个移动端点及目标乘积递推"]},
+  "FQI-SRC-AQ-3.37": {"remaining":["列表已在Lean展开，仍需在原差分中消去1-q^(2r+1)的可去极点", "使用原h_domain传递分母条件，保留q=0合法情形", "自动组装n=0/n>0分段目标和求和端点"]},
+  "FQI-SRC-SILLS-1.JacobiFinite": {"remaining":["Icc与列表已在原目标重写；需连接Gaussian整数指标、三角指数toNat与整数幂的表示", "处理q=0和双边移动边界", "生成完整局部关系、初值与乘积目标递推证明"]},
+  "FQI-SRC-SILLS-2.Pair122": {"remaining":["sillsAlpha及整除分支已在Lean展开；仍需验证整数指数归一化与q/q^2相关基底移位", "由原h_domain传递分母条件并消去证书额外极点", "完成支撑、边界、初值和目标递推证明"]},
+  "FQI-SRC-SILLS-2.Lem2.31": {"remaining":["Icc重编号、列表展开与ht代换已在原目标执行；仍需连接Gaussian整数指标和平方指数toNat的表示", "保留t=0情形并处理双边移动端点", "生成完整局部关系、初值与目标递推证明"]},
+  "FQI-SRC-SILLS-2.Lem2.53": {"remaining":["列表展开与ht代换已在Lean执行；仍需桥接t/t^2的支撑内移位", "证明原分母条件并消去额外证书极点", "处理随n变化的参数域、端点、初值和目标递推"]},
+  "FQI-SRC-SILLS-3.Lem3.3": {"remaining":["列表已在Lean展开；仍需连接q/q^2相关基底及n-r自然数减法的移位证明", "推导原分母条件并消去通量中的可去极点", "生成支撑内局部关系、边界、初值及目标递推"]}
+}

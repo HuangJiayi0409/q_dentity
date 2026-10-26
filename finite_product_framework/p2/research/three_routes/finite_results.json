@@ -1,0 +1,364 @@
+{
+  "status": "passed",
+  "scope": "three P2 train inputs only",
+  "results": [
+    {
+      "id": "FQI-SRC-GR2-7.6.8",
+      "n": 0,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "alpha",
+        "z"
+      ],
+      "computed_coefficients": [
+        "1"
+      ],
+      "algorithm": "triangular Laurent coefficient elimination; not specialized AW paper algorithm"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.6.8",
+      "n": 1,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "alpha",
+        "z"
+      ],
+      "computed_coefficients": [
+        "11076/174965 - 143988*alpha/174965",
+        "5005/4999 - 78*alpha/4999"
+      ],
+      "algorithm": "triangular Laurent coefficient elimination; not specialized AW paper algorithm"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.6.8",
+      "n": 2,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "alpha",
+        "z"
+      ],
+      "computed_coefficients": [
+        "487639072024*alpha**2/1010624959575 - 18755348924*alpha/202124991915 + 1442719148/336874986525",
+        "264159844*alpha**2/17329618383 - 25445704973*alpha/17329618383 + 25399985/225059979",
+        "5408*alpha**2/75050007 - 1301300*alpha/75050007 + 25050025/25016669"
+      ],
+      "algorithm": "triangular Laurent coefficient elimination; not specialized AW paper algorithm"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.6.8",
+      "n": 3,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "alpha",
+        "z"
+      ],
+      "computed_coefficients": [
+        "-39927573177762736544*alpha**3/202699587788891164125 + 14588920968797922968*alpha**2/202699587788891164125 - 561112344953766268*alpha/67566529262963721375 + 2271709898598244/7507392140329302375",
+        "-410955520247828816*alpha**3/52145912180683750275 + 11882146628704050478*alpha**2/10429182436136750055 - 3804530154720376757*alpha/17381970726894583425 + 151980591807629/15049325304670635",
+        "-8413267587712*alpha**3/135514164844311165 + 3037310944369624*alpha**2/135514164844311165 - 1595664173283635*alpha/821297968753401 + 13626055377935/91255329861489",
+        "-8998912*alpha**3/91295879675909 + 6171285120*alpha**2/91295879675909 - 1336468933800*alpha/91295879675909 + 91398648466125/91295879675909"
+      ],
+      "algorithm": "triangular Laurent coefficient elimination; not specialized AW paper algorithm"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex33",
+      "n": 0,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "cc",
+        "t"
+      ],
+      "computed_coefficients": [
+        "1"
+      ],
+      "algorithm": "triangular basis inversion"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex33",
+      "n": 1,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "cc",
+        "t"
+      ],
+      "computed_coefficients": [
+        "(10562*cc - 858)/(12782*cc - 19173)",
+        "(2220*cc - 18315)/(12782*cc - 19173)"
+      ],
+      "algorithm": "triangular basis inversion"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex33",
+      "n": 2,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "cc",
+        "t"
+      ],
+      "computed_coefficients": [
+        "(718183976*cc**2 - 145834260*cc + 6965244)/(982526776*cc**2 - 3684475410*cc + 3316027869)",
+        "(754193200*cc**2 - 9393214050*cc + 743405850)/(2952079592*cc**2 - 11070298470*cc + 9963268623)",
+        "(120412800*cc**2 - 3725271000*cc + 27660137175)/(8876562904*cc**2 - 33287110890*cc + 29958399801)"
+      ],
+      "algorithm": "triangular basis inversion"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex33",
+      "n": 3,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "cc",
+        "t"
+      ],
+      "computed_coefficients": [
+        "(918812199046976*cc**3 - 354459131707824*cc**2 + 42321421554984*cc - 1576332230616)/(1361522724467136*cc**3 - 9700849411828344*cc**2 + 21826911176613774*cc - 15508594783383471)",
+        "(3664696989619840*cc**3 - 68755665532763880*cc**2 + 13580011439095860*cc - 639323975840220)/(12284878480695744*cc**3 - 87529759174957176*cc**2 + 196941958143653646*cc - 139932443944174959)",
+        "(974867273446400*cc**3 - 45316641215181600*cc**2 + 507419444726751150*cc - 39645883135945350)/(36964209319856192*cc**3 - 263369991403975368*cc**2 + 592582480658944578*cc - 421045446783986937)",
+        "(158598107136000*cc**3 - 13983892477632000*cc**2 + 389364006174066000*cc - 3423585488497626375)/(333524230972463168*cc**3 - 2376360145678800072*cc**2 + 5346810327777300162*cc - 3799049443420713273)"
+      ],
+      "algorithm": "triangular basis inversion"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex33",
+      "n": 4,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "cc",
+        "t"
+      ],
+      "computed_coefficients": [
+        "(21769037961712684045312*cc**4 - 14364255575227675328640*cc**3 + 3258484841101906649376*cc**2 - 303412758778736109360*cc + 9834393146386949712)/(33995305405948336192512*cc**4 - 414317784634995347346240*cc**3 + 1771208529314605109905176*cc**2 - 3146225677071995918910510*cc + 1960340614175628226398087)",
+        "(296937145659399509555200*cc**4 - 8380182662361421218964800*cc**3 + 3141194641614683644676400*cc**2 - 369565958260237116292200*cc + 13645220490611892725400)/(920831051582645230089216*cc**4 - 11222628441163488741712320*cc**3 + 47976736585973914370820168*cc**2 - 85221834725085242632377930*cc + 53099758559476189640173941)",
+        "(300101449092854845030400*cc**4 - 20948906949055201445472000*cc**3 + 353103452905494379128183000*cc**2 - 68842214029265516380183500*cc + 3215446287074312233328100)/(8315866559200805163795456*cc**4 - 101349623690259812933757120*cc**3 + 433269641275860700291811688*cc**2 - 769623704897910454465718130*cc + 479534769974851898551716681)",
+        "(3874321630639882240000*cc**4 - 512711783912343375360000*cc**3 + 21441100187922410955960000*cc**2 - 283932986056780556199453750*cc + 22037067124944649216188750)/(3574083013814784224162816*cc**4 - 43559136730867682731984320*cc**3 + 186215309524459343679232968*cc**2 - 330777194550026465746005930*cc + 206099636604247259426357541)",
+        "(721771829101854720000*cc**4 - 163286779228257484800000*cc**3 + 12957571338539863875840000*cc**2 - 427248209554897896465300000*cc + 4941495277529893603493135625)/(96707237226723634788563968*cc**4 - 1178619453700694298985623360*cc**3 + 5038598164570468128163539864*cc**2 - 8950141476539647332922077390*cc + 5576626612305472568974525143)"
+      ],
+      "algorithm": "triangular basis inversion"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 0,
+      "x": 0,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 1,
+      "x": 0,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 1,
+      "x": 1,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 2,
+      "x": 0,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 2,
+      "x": 1,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 2,
+      "x": 2,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 3,
+      "x": 0,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 3,
+      "x": 1,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 3,
+      "x": 2,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 3,
+      "x": 3,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 4,
+      "x": 0,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 4,
+      "x": 1,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 4,
+      "x": 2,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 4,
+      "x": 3,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 4,
+      "x": 4,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 5,
+      "x": 0,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 5,
+      "x": 1,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 5,
+      "x": 2,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 5,
+      "x": 3,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 5,
+      "x": 4,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex5ii",
+      "N": 5,
+      "x": 5,
+      "status": "fixed_degree_exact_match",
+      "free_parameters": [
+        "t"
+      ],
+      "algorithm": "exact coefficient expansion; not qFPS proof"
+    }
+  ],
+  "specialized_parameters": {
+    "q": "2/3",
+    "a": "1/13",
+    "b": "1/5",
+    "c": "2/7",
+    "d": "3/11"
+  },
+  "new_lean_proofs": 0,
+  "general_parameter_proofs": 0,
+  "limitations": [
+    "Explicit formula transcription has not been linked to Lean Expr",
+    "Fixed integer degrees and specialized parameters are diagnostic only",
+    "Free symbolic parameter results hold as rational functions away from poles",
+    "AW diagnostic uses triangular elimination, not the specialized operator algorithm"
+  ]
+}

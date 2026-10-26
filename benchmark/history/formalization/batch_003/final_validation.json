@@ -1,0 +1,20 @@
+{
+  "registered_statements": 300,
+  "rebuild_files_unchanged": 746,
+  "train_statements": 238,
+  "test_statements": 62,
+  "remaining": 146,
+  "split_validation": "passed",
+  "independent_exact_samples": 92,
+  "entry_modules_compiled": [
+    "Benchmark/Train.lean",
+    "Benchmark/Test.lean",
+    "Benchmark.lean"
+  ],
+  "batch_compilation": "100/100",
+  "shared_axiom_audit": {
+    "declarations": 184,
+    "theorems": 103,
+    "sorryAx": false
+  }
+}

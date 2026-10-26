@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "solver": "difference_field",
+  "input": {
+    "extensions": [
+      {
+        "name": "P",
+        "kind": "product",
+        "ratio": -1
+      },
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": 1
+      }
+    ],
+    "rhs_basis": [
+      [
+        "mul",
+        [
+          "pow",
+          [
+            "add",
+            [
+              "pow",
+              "H",
+              2
+            ],
+            [
+              "pow",
+              "H",
+              3
+            ],
+            [
+              "mul",
+              "H",
+              "P"
+            ],
+            [
+              "mul",
+              -1,
+              "H",
+              [
+                "pow",
+                "P",
+                2
+              ]
+            ]
+          ],
+          -1
+        ],
+        [
+          "add",
+          1,
+          "H",
+          [
+            "pow",
+            "H",
+            3
+          ],
+          [
+            "mul",
+            -1,
+            "P"
+          ],
+          [
+            "mul",
+            "H",
+            [
+              "pow",
+              "P",
+              2
+            ]
+          ],
+          [
+            "mul",
+            2,
+            "P",
+            [
+              "pow",
+              "H",
+              2
+            ]
+          ]
+        ]
+      ]
+    ],
+    "operator": [
+      [
+        "add",
+        "H",
+        "P"
+      ],
+      [
+        "pow",
+        "H",
+        -1
+      ]
+    ]
+  }
+}

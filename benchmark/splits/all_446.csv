@@ -1,0 +1,447 @@
+split,id,name,family_id,difficulty,group_id
+train,FQI-BAILEY-INVERSION,有限 Bailey 反演,G,中,group_8e6d410560b8
+train,FQI-BAILEY-LEMMA,有限 Bailey 引理,G,中,group_da144482e92d
+train,FQI-BAILEY-UNIT,一般参数单位 Bailey 对,A,中,group_f12e4f6b9578
+test,FQI-CAYLEY,Cayley 有限有理分解,G,中,group_911d580e9c37
+train,FQI-CHU-VANDERMONDE-BALANCED,q-Chu–Vandermonde：自变量 cq^n/a,A,中,group_50321daa1437
+train,FQI-CHU-VANDERMONDE-Q,q-Chu–Vandermonde：自变量 q,A,中,group_dc7455bb91d7
+test,FQI-DQ-MONOMIAL,单项式的 Jackson q 导数,F,低,group_9f1134c8ed79
+train,FQI-FINITE-Q-BINOMIAL,有限 q-二项式定理,A,中,group_9b278272ed7b
+train,FQI-GAUSS-ALTERNATING,Gauss 交错 Gaussian 奇偶求值,A,中,group_19b2630f8562
+test,FQI-GAUSSIAN-RECIPROCITY,普通 Gaussian 倒底数,F,低,group_11b853b1c4d5
+train,FQI-GAUSSIAN-SYMMETRY,Gaussian 对称性,F,低,group_e4152a71f707
+train,FQI-GAUSSIAN-VANDERMONDE,Gaussian q-Vandermonde 卷积,A,中,group_30786f512cb1
+test,FQI-GOLLNITZ-ELIMINATION,Göllnitz 消元式,C,中,group_a9d58073ce98
+train,FQI-GOLLNITZ-ORDER4,Göllnitz 四阶递推,C,中,group_df6278175d4d
+train,FQI-GOLLNITZ-RECURRENCE,Göllnitz 有界分拆递推,C,中,group_717e702c1c1b
+train,FQI-GOLLNITZ-SHIFT,Göllnitz 参数移位,C,高,group_f2b9a6c08673
+train,FQI-OSCILLATION-M-EVEN,振荡分拆闭式：M-EVEN,C,高,group_b7e078d3ef76
+train,FQI-OSCILLATION-M-ODD,振荡分拆闭式：M-ODD,C,高,group_b7e078d3ef76
+train,FQI-OSCILLATION-P-EVEN,振荡分拆闭式：P-EVEN,C,高,group_b7e078d3ef76
+train,FQI-OSCILLATION-P-ODD,振荡分拆闭式：P-ODD,C,高,group_b7e078d3ef76
+test,FQI-PASCAL-Q-K,Gaussian Pascal：权 q^k,F,低,group_2318b297e58a
+test,FQI-PASCAL-Q-N-K,Gaussian Pascal：权 q^(n−k),F,低,group_2318b297e58a
+train,FQI-PFAFF-SAALSCHUETZ,终止 q-Pfaff–Saalschütz,A,中,group_bf302f5e4146
+train,FQI-POCHHAMMER-NEGATIVE,负整数长度 q-Pochhammer,F,低,group_54b56021e5f5
+train,FQI-POCHHAMMER-RESIDUES,有限乘积按剩余类拆分,F,低,group_a6b04b94cb11
+train,FQI-POCHHAMMER-ROOTS,单位根参数有限乘积分解,F,低,group_c58775476836
+train,FQI-Q-DYSON,A 型 q-Dyson 常数项,G,高,group_2a19d9f6eb53
+train,FQI-RECTANGLE-PARTITIONS,矩形分拆的 Gaussian 生成多项式,G,中,group_0171ec2422d5
+train,FQI-ROGERS-SZEGO-RECURRENCE,Rogers–Szegő 三项递推,C,中,group_655c842d23c4
+train,FQI-ROGERS-SZEGO-SQRT,Rogers–Szegő 平方根特值,A,中,group_cdb5bf72530d
+train,FQI-SCHUR-EVEN-RECIPROCAL,Schur D 偶指标倒数的两种展开,A,中,group_e9da341cad22
+train,FQI-SCHUR-RR-BUNDLE,Schur 两支有限 Rogers–Ramanujan,A,中,group_a43351789b03
+train,FQI-SCHUR-RR-FIRST,Schur 第一有限 Rogers–Ramanujan,A,中,group_a43351789b03
+train,FQI-SCHUR-RR-SECOND,Schur 第二有限 Rogers–Ramanujan,A,中,group_a43351789b03
+train,FQI-SEARS-4PHI3-II,Sears 平衡 4φ3 第二形式,A,中,group_40a31b004b82
+train,FQI-SRC-AP-11.2.1,固定首列平面分拆的有限递推,G,中,group_c88b8173a670
+test,FQI-SRC-AP-11.2.10,MacMahon 盒内平面分拆有限乘积,G,高,group_a4b4ef3b9141
+train,FQI-SRC-AP-11.2.2,固定首列平面分拆的初值,G,低,group_dff2aa836922
+train,FQI-SRC-AP-11.2.4,Carlitz 固定首列行列式,G,高,group_c1f0de7847f0
+train,FQI-SRC-AP-11.2.8,固定首列与盒内平面分拆的有限求和关系,G,中,group_c1f0de7847f0
+test,FQI-SRC-AP-11.2.9,盒内平面分拆行列式,G,高,group_a4b4ef3b9141
+train,FQI-SRC-AP-13.E3,三变量 q-下降乘积卷积,A,中,group_20410c40986f
+train,FQI-SRC-AP-13.E5,q-下降阶乘基上的线性泛函,G,中,group_033aafd65a65
+test,FQI-SRC-AP-13.E7,Bender广义q-Vandermonde卷积（修订）,G,中,group_444dcae5c0bc
+test,FQI-SRC-AP-3.2.7,受限分拆递推,C,中,group_2318b297e58a
+train,FQI-SRC-AP-3.3.1,Gaussian 端点,F,低,group_d10fcea9191f
+train,FQI-SRC-AP-3.3.11,三 Gaussian 的 q-Saalschütz 求和,A,中,group_33a70e935d73
+train,FQI-SRC-AP-3.3.14,Saalschütz 的系数卷积形式,A,中,group_6135246bd6b2
+train,FQI-SRC-AP-3.3.9,Gaussian 加权 hockey-stick 求和,A,中,group_438f6ff4d370
+train,FQI-SRC-AP-3.4.2,逆序数的 q-多项系数生成式,C,中,group_e898c75abfa8
+train,FQI-SRC-AP-3.4.4,major index（原书 greater index）的 q-多项系数生成式,C,高,group_f198bf19aabe
+train,FQI-SRC-AP-3.5.MULTIPROD,q-多项系数的 Gaussian 乘积分解,F,低,group_07d3172c4850
+test,FQI-SRC-AP-3.E1,有限 Jacobi 三重积,A,中,group_58a0ee39d077
+train,FQI-SRC-AP-3.E12a,Schur 多项式倍指标恒等式,A,中,group_bcc08ab10019
+train,FQI-SRC-AP-3.E12b,Schur 多项式累加恒等式,A,中,group_f2fcc991f090
+train,FQI-SRC-AP-3.E7,Rogers–Szegő 线性化公式,A,中,group_9b26d2fff8e7
+train,FQI-SRC-AP-4.2.COMPOSITIONS,有界有序组成的有限生成多项式,G,低,group_618eb50447e4
+test,FQI-SRC-AP-7.E11,有最大部分限制的 Göllnitz 型有限公式,G,高,group_676c1e81ffc1
+train,FQI-SRC-AP-9.3.17,M振荡闭式的剩余参数域,C,高,group_b37792a23e8c
+test,FQI-SRC-AP-9.3.18,M振荡闭式的剩余参数域,C,高,group_ba783b65a24c
+train,FQI-SRC-AP-9.3.19,P振荡闭式的剩余参数域,C,高,group_cbe4e354da39
+train,FQI-SRC-AP-9.3.20,P振荡闭式的剩余参数域,C,高,group_d37ef7ce5ec2
+train,FQI-SRC-AP-9.3.5,振荡分拆的M混合差分递推,C,中,group_b7e078d3ef76
+train,FQI-SRC-AP-9.3.6,振荡分拆的P混合差分递推,C,中,group_b7e078d3ef76
+train,FQI-SRC-AP-9.3.7,振荡阈值为零的初值,C,中,group_b7e078d3ef76
+train,FQI-SRC-AP-9.3.8,空矩形的振荡初值,C,低,group_b7e078d3ef76
+train,FQI-SRC-AP-9.E4b,有限 Euler 五边形型恒等式,A,中,group_cdbe05b0cd67
+train,FQI-SRC-AP-9.L7,Gaussian 混合差分引理,F,低,group_8fb4307ab3ee
+train,FQI-SRC-AP-9.L8,分拆筛辅助有限和的递推,C,中,group_17cff3db8e9c
+train,FQI-SRC-AQ-10.1,Lusztig–Macdonald–Wall 多项式递推,C,中,group_f4e1f5f698af
+train,FQI-SRC-AQ-10.12,Bailey 对逐项反求递推,G,低,group_8e6d410560b8
+test,FQI-SRC-AQ-10.27,Göllnitz 递推算子的相容关系,C,中,group_9253a525c452
+train,FQI-SRC-AQ-10.30,Euler 乘积系数的有限递推,G,中,group_390e3633211a
+train,FQI-SRC-AQ-10.32,Euler 乘积指数的有限反求,G,中,group_390e3633211a
+train,FQI-SRC-AQ-10.5,LMW 的 Gaussian 展开（显式修订下标）,A,中,group_f4e1f5f698af
+train,FQI-SRC-AQ-10.7A,Rogers–Ramanujan 系数的递推与乘积,C,中,group_2ee91de07f4b
+train,FQI-SRC-AQ-2.23,连续 q-Hermite 多项式递推,C,中,group_655c842d23c4
+train,FQI-SRC-AQ-2.29,q-Hermite 的有限 Fourier 展开,A,中,group_10cab494dbf0
+test,FQI-SRC-AQ-2.35,Rogers 连接系数的有限反演关系,A,中,group_080d301b6d3f
+test,FQI-SRC-AQ-2.38,连接系数递推,G,中,group_080d301b6d3f
+test,FQI-SRC-AQ-2.39,Rogers 连接系数乘积公式,A,中,group_080d301b6d3f
+test,FQI-SRC-AQ-2.40,终止 Heine 变换的有限乘积形式,A,中,group_ff057577ee93
+test,FQI-SRC-AQ-3.12,Rogers 奇指标抵消和,A,低,group_b9fc0682fab9
+train,FQI-SRC-AQ-3.17,Rogers 有限交错和（奇上指标）,A,中,group_e7eece7dfbd8
+train,FQI-SRC-AQ-3.18,Rogers 有限交错和（偶上指标）,A,中,group_c3e292bf489e
+train,FQI-SRC-AQ-3.23,Bailey 转置求和（有限支持特化）,G,低,group_c3dd429f5b20
+test,FQI-SRC-AQ-3.35,Rogers–Ramanujan Bailey 对的有限等式,A,中,group_f1f68851bd08
+train,FQI-SRC-AQ-3.37,a=q 的单位 Bailey 对,A,中,group_f12e4f6b9578
+train,FQI-SRC-AQ-3.42,Bailey 链逆变换（显式修订）,G,中,group_da144482e92d
+train,FQI-SRC-AQ-3.43,有限 k 重 Bailey 链,G,中,group_abab39e2bba8
+train,FQI-SRC-AQ-4.24,q-Dixon 三个 Gaussian 的交错求和,A,中,group_7f32444ad0e8
+train,FQI-SRC-AQ-4.3,Bn有限常数项恒等式（Conjecture4.3修订）,G,高,group_e28518a6cd2a
+train,FQI-SRC-AQ-6.18,Schur 辅助系数递推,C,中,group_bd7a8e236639
+train,FQI-SRC-AQ-6.19,Schur 辅助系数的有限乘积,C,中,group_bd7a8e236639
+train,FQI-SRC-AQ-8.32,硬六角 F 多项式递推,C,中,group_2560c84f17c3
+test,FQI-SRC-AQ-8.44,G_N(0) 的 Schur 型有限展开,A,高,group_4ac9bb93373e
+test,FQI-SRC-AQ-8.45,G_N(1) 的 Schur 型有限展开,A,高,group_4ac9bb93373e
+test,FQI-SRC-AQ-8.46,硬六角 G 多项式三阶递推,C,中,group_4ac9bb93373e
+test,FQI-SRC-AQ-8.50,G 偶指标倒数多项式,A,高,group_4ac9bb93373e
+test,FQI-SRC-AQ-8.52,G 倒数多项式的两组差分展开,A,高,group_4ac9bb93373e
+train,FQI-SRC-AQ-8.56,Andrews–Baxter–Forrester 双端终止变换,A,高,group_8e112ffe3bb7
+train,FQI-SRC-AQ-9.17,G 多项式的有限系数展开（显式修订移位）,A,高,group_f1afe4081965
+test,FQI-SRC-AQ-9.26,D 奇指标倒数恒等式,A,中,group_02507a8b8207
+train,FQI-SRC-AQ-9.27,D 偶指标倒数恒等式,A,中,group_e9da341cad22
+train,FQI-SRC-AQ-9.5,D 多项式的正项 Gaussian 展开,A,中,group_df80ace2a6ee
+train,FQI-SRC-AQ-B.12,Rogers 齐次展开系数递推,F,低,group_6d3f4363e58c
+train,FQI-SRC-AQ-B.9,Rogers 对称齐次多项式的 q-差分,C,中,group_6cc2524d66cc
+train,FQI-SRC-FINE-15.2,Fine 系数的有限卷积,A,中,group_7552f7ddfb94
+train,FQI-SRC-FINE-15.31,Fine 系数的一阶递推,C,中,group_65ae6c99a8f8
+train,FQI-SRC-FINE-15.41,Fine 系数的第二有限展开,A,中,group_7f93f2db4137
+train,FQI-SRC-FINE-2.1,q-Pochhammer 首项递推,F,低,group_2e4f80ef830b
+train,FQI-SRC-FINE-2.3,基本级数有限系数比递推,F,低,group_713550a91b93
+train,FQI-SRC-FINE-20.64b,Rogers–Szegő q-移位递推,C,中,group_1fa21785f708
+test,FQI-SRC-FINE-20.65b,Rogers–Szegő 混合 q-移位递推,C,中,group_0ec17ce22360
+train,FQI-SRC-FINE-20.66b,Rogers–Szegő 倒数变换,A,低,group_58cec3914d9b
+test,FQI-SRC-FINE-20.69,Rogers–Szegő 在 q^{-1/2} 处的特殊值,A,低,group_baf96471a1d4
+train,FQI-SRC-FINE-21.2,basic multinomial 的根单位筛选,A,中,group_a2b3702fe3a5
+train,FQI-SRC-FINE-21.21,basic multinomial 的分数幂特化,A,中,group_d068c6b3334f
+train,FQI-SRC-FINE-21.23,basic multinomial 的整除筛选,A,中,group_8f1119d05361
+train,FQI-SRC-FINE-21.product,根单位与分数底数的有限乘积重组,F,低,group_c5aa8b06ff3a
+test,FQI-SRC-FINE-25.shell,固定最大部件与 rank 的有限生成多项式,G,中,group_dbc695adc6aa
+train,FQI-SRC-FINE-4.coeff,基本级数有限系数差分,F,低,group_0d3651db8098
+train,FQI-SRC-FINE-7.GH,q-移位迭代的有限累积系数,A,中,group_e87af881a068
+train,FQI-SRC-GR2-1.2.26,有限超几何项的相邻项递推,C,低,group_fe6fc117bdda
+train,FQI-SRC-GR2-1.2.47,q 数阶乘与有限乘积转换,F,低,group_ea82023442f6
+train,FQI-SRC-GR2-1.2.55,对称 q 数阶乘转换,F,低,group_2f7c5922c748
+train,FQI-SRC-GR2-1.3.25,对称 q 指数的有限系数递推,F,低,group_ead9f90ec587
+train,FQI-SRC-GR2-1.9.10,终止 q-Karlsson–Minton 求和,A,中,group_fc388a156ae5
+train,FQI-SRC-GR2-1.9.11,终止 q-Karlsson–Minton 消去,A,中,group_eb8e45201d5d
+train,FQI-SRC-GR2-1.9.12,单位自变量的终止 q-Karlsson–Minton,A,中,group_a114bedd7c6a
+train,FQI-SRC-GR2-1.9.9-finite,边界长度的 q-Karlsson–Minton 求值,A,中,group_ce84614c142d
+train,FQI-SRC-GR2-1.Ex12iv,高阶 q-Leibniz 公式,G,中,group_8bd63645d094
+train,FQI-SRC-GR2-1.Ex15i,Jackson 终止 2φ1 到 3φ2 变换,A,中,group_c4baefd683d1
+test,FQI-SRC-GR2-1.Ex17,Carlitz 有限变换,A,中,group_5ff0e78768bf
+test,FQI-SRC-GR2-1.Ex1ii,独立负移位的有限乘积,F,低,group_a27b4b1035c7
+train,FQI-SRC-GR2-1.Ex29,连续 q 超球多项式的两种终止表示,A,中,group_81cadb6429d9
+test,FQI-SRC-GR2-1.Ex31-monomial,q 差分算子的单项式作用,F,低,group_2a69275ff8d4
+train,FQI-SRC-GR2-1.Ex31-term,有限超几何项的算子关系,C,低,group_91f305fcb7a5
+train,FQI-SRC-GR2-1.Ex33,小 q-Jacobi 多项式的有限连接公式,A,中,group_5ca4d17507aa
+train,FQI-SRC-GR2-1.Ex35,非交换有限 q 二项式的双底数表示,C,中,group_04e0b5e193d5
+train,FQI-SRC-GR2-1.Ex3i,乘积参数的两种有限 q 卷积,A,中,group_62a60cba595e
+train,FQI-SRC-GR2-1.Ex3ii,有限 q 多项式定理,A,中,group_40bbee97ec72
+test,FQI-SRC-GR2-1.Ex4ii,任意阶终止基本超几何和反向求和,A,低,group_f4a098a641cb
+train,FQI-SRC-GR2-1.Ex5,有限乘积的终止展开,A,中,group_36b005dd3acb
+test,FQI-SRC-GR2-1.Ex6i,双步长终止 2φ1 求和,A,中,group_ee9164257282
+train,FQI-SRC-GR2-1.Ex6iii,终止 2φ0 求值,A,中,group_f28c82d7cd6e
+train,FQI-SRC-GR2-10.Ex18,终止 q-Kampé de Fériet 双重求和,A,高,group_023c37e33252
+train,FQI-SRC-GR2-11.6.21-p0,有限支撑的多底数序列展开（修订）,G,高,group_aa1dc459bca3
+train,FQI-SRC-GR2-11.6.5-p0,Macdonald 有限乘积望远镜求和,G,中,group_be53b989c4f7
+train,FQI-SRC-GR2-11.6.6-p0,多底数有限双边求和,A,中,group_338ecc5c8102
+test,FQI-SRC-GR2-11.7.1,Milne 的多变量有限 q 求和,A,高,group_989af7af09a1
+train,FQI-SRC-GR2-11.7.8-p0,Milne 的 A 型多变量 Jackson 求和,A,高,group_94b677fd6051
+train,FQI-SRC-GR2-11.Ex21-p0,有限二次求和的两个基本超几何分支,A,高,group_9fbe294292de
+test,FQI-SRC-GR2-11.Ex22-p0,有限三次求和的基本超几何分支,A,高,group_2b5cae6a9801
+train,FQI-SRC-GR2-11.Ex23ii,12W11 到底数 q² 的 10W9 变换,A,高,group_9263df9bfd94
+train,FQI-SRC-GR2-11.Ex24ii,底数 q² 的 12W11 到 10W9 变换,A,高,group_f17e918023e9
+test,FQI-SRC-GR2-11.Ex38-p0,D 型多变量有限 Jackson 求和,A,高,group_115b1968fe41
+train,FQI-SRC-GR2-11.Ex39-p0,D 型 Jackson 的有限单纯形变式（已注明修订）,A,高,group_a05da8e9c56d
+train,FQI-SRC-GR2-11.Ex40-p0,多变量终止 Bailey 变换,A,高,group_68dc0facfaf2
+test,FQI-SRC-GR2-2.10.3,两侧终止的 Bailey 8φ7 变换,A,中,group_14117b3eebf5
+train,FQI-SRC-GR2-2.10.8,迭代 Bailey 终止 10φ9 变换,A,中,group_0a9ba819c569
+train,FQI-SRC-GR2-2.2.2,Bailey 的有限序列双和展开,G,中,group_0947fcaee804
+test,FQI-SRC-GR2-2.2.4,终止基本超几何级数的降阶展开,A,中,group_bc4105720773
+train,FQI-SRC-GR2-2.3.2,终止 Bailey–Daum 的有限积求值,A,中,group_509241df724c
+train,FQI-SRC-GR2-2.3.4,终止 very-well-poised 4φ3 消去,A,中,group_3fe3fd9b8ea6
+train,FQI-SRC-GR2-2.7.5,Rogers–Ramanujan 证明中的有限变换,A,中,group_8e6b98263f46
+train,FQI-SRC-GR2-2.8.2,Bailey 有限支持序列展开,G,中,group_d6a66c2be858
+test,FQI-SRC-GR2-2.Ex10,q-Racah 多项式反射变换,A,中,group_cb0f4dfa16e2
+train,FQI-SRC-GR2-2.Ex11,Askey–Wilson 参数交换与奇偶关系,A,中,group_815459196fae
+train,FQI-SRC-GR2-2.Ex12,成对参数的终止 10φ9 求和,A,中,group_c45392b9cff8
+train,FQI-SRC-GR2-2.Ex14i,Bailey 的终止 4φ3 求和,A,中,group_760aeac31277
+train,FQI-SRC-GR2-2.Ex14ii,近良配6φ5到12φ11变换,A,高,group_eaf4f4facf79
+test,FQI-SRC-GR2-2.Ex19,平衡终止 10φ9 的参数重排,A,中,group_9f333255f017
+train,FQI-SRC-GR2-2.Ex20,终止 10φ9 的有限 4φ3 展开,A,中,group_03e6c0843518
+train,FQI-SRC-GR2-2.Ex27,平衡参数对的终止级数展开,A,中,group_8b9974b05d6a
+train,FQI-SRC-GR2-2.Ex28,良配终止级数的有限展开,A,中,group_5f53cc506385
+train,FQI-SRC-GR2-2.Ex29,终止级数的 q-Jacobi 型连接展开,A,中,group_c6c1059d4d75
+train,FQI-SRC-GR2-2.Ex35i,终止3φ2有限卷积,A,中,group_5c81ccf03768
+train,FQI-SRC-GR2-2.Ex35ii,Gasper 离散分式积分的有限展开（二）,A,中,group_e1b60fc30ef4
+test,FQI-SRC-GR2-2.Ex35iii,Gasper 离散分式积分的有限展开（三）,A,中,group_351d1fe6fea5
+train,FQI-SRC-GR2-2.Ex36i,平衡终止4φ3有限卷积,A,高,group_12dd240dbcf5
+train,FQI-SRC-GR2-2.Ex36ii,平衡终止 4φ3 的双级数展开,A,高,group_b8d264609870
+train,FQI-SRC-GR2-2.Ex36iii,任意阶终止级数的 Gasper 展开,A,中,group_21773225b4c3
+train,FQI-SRC-GR2-2.Ex5,不定 very-well-poised 有限和,A,中,group_455bfe315ea5
+train,FQI-SRC-GR2-2.Ex6,终止 4φ3 的奇偶求和,A,中,group_d462e243c0b5
+train,FQI-SRC-GR2-2.Ex8,Andrews 终止奇偶求和,A,中,group_9a5496a658fc
+train,FQI-SRC-GR2-3.10.11,终止 4φ3 的二次变换,A,高,group_d1b9257ab3cf
+train,FQI-SRC-GR2-3.10.14,第二类有限双底数二次变换,A,高,group_9e4bf30d238f
+train,FQI-SRC-GR2-3.10.15,有限双底数到 10φ9 的变换（一）,A,高,group_8f25619f3724
+test,FQI-SRC-GR2-3.10.16,有限双底数到 10φ9 的变换（二）,A,高,group_647c80be8ea8
+train,FQI-SRC-GR2-3.10.3,Nassrallah–Rahman 有限二次变换,A,高,group_d401e64bc98a
+train,FQI-SRC-GR2-3.10.5,有限双底数求和（一）,A,中,group_b2cc10b3e41b
+test,FQI-SRC-GR2-3.10.6,有限双底数求和（二）,A,中,group_ff96a566f08b
+train,FQI-SRC-GR2-3.10.7,有限双底数求和（三）,A,中,group_29860cd27418
+test,FQI-SRC-GR2-3.10.8,有限双底数求和（四）,A,中,group_62f707813616
+train,FQI-SRC-GR2-3.2.6,终止 type-II 3φ2 变换,A,中,group_ca4193421573
+train,FQI-SRC-GR2-3.6.10,四参数双底数乘积差分,F,低,group_4603820ee579
+train,FQI-SRC-GR2-3.6.16,终止双底数求和与消去,A,中,group_bea60c9b615e
+test,FQI-SRC-GR2-3.6.17,Bressoud–Gasper 双底数正交核,A,中,group_2bc0f7d7cc32
+train,FQI-SRC-GR2-3.6.18,双底数有限三角矩阵反演,A,中,group_84572b83b3de
+test,FQI-SRC-GR2-3.6.6,双底数乘积的差分,F,低,group_1530391df55a
+train,FQI-SRC-GR2-3.8.14,有限双底数和到二次 10φ9,A,高,group_00ad767601e6
+test,FQI-SRC-GR2-3.8.15,长度两倍的有限双底数二次变换,A,高,group_df000f2668f9
+train,FQI-SRC-GR2-3.9.5,终止多底数级数的有限展开,A,中,group_560d331de526
+test,FQI-SRC-GR2-3.Ex12,倒序型有限双底数二次变换,A,高,group_5d5ab3791771
+train,FQI-SRC-GR2-3.Ex13i,有限双底数到 10φ9 的变换（三）,A,高,group_151b5e66d17a
+train,FQI-SRC-GR2-3.Ex13ii,有限双底数到 10φ9 的变换（四）,A,高,group_aa6a67fd866e
+train,FQI-SRC-GR2-3.Ex21-mixed,双底数与普通超几何的混合有限变换,G,中,group_e578deaa12ca
+train,FQI-SRC-GR2-3.Ex21-quad,四底数有限变换,A,中,group_4ed5f97b6a3f
+train,FQI-SRC-GR2-3.Ex23,双底数 q-Lagrange 的有限系数反演,G,中,group_84572b83b3de
+train,FQI-SRC-GR2-3.Ex3,终止 3φ2 的二次变换,A,高,group_e06cbd143382
+train,FQI-SRC-GR2-3.Ex31i,有限三次变换（一）,A,高,group_f1b482263ef6
+train,FQI-SRC-GR2-3.Ex31ii,有限三次变换（二）,A,高,group_f58865b9ee74
+test,FQI-SRC-GR2-3.Ex34,二次底数的终止 4φ3 求和,A,中,group_6a73e72f2608
+train,FQI-SRC-GR2-3.Ex4-odd,有限 3φ1 的奇数消去,A,中,group_9be47f3887b0
+train,FQI-SRC-GR2-3.Ex4-transform,终止 4φ3(q²) 到 4φ2(q),A,高,group_56bc5fc28573
+train,FQI-SRC-GR2-5.Ex11,双边终止 8ψ8 到 4ψ4,A,高,group_7a6d557b1f0a
+train,FQI-SRC-GR2-5.Ex18iii,Bailey 有限双边 5ψ5 求和,A,中,group_02cc1aabb0c9
+train,FQI-SRC-GR2-5.Ex18iv,Bailey 非对称长度的双边 5ψ5 求和,A,中,group_0315094daab9
+train,FQI-SRC-GR2-5.Ex19i,Gaussian 立方的对称有限和,A,中,group_0a3b293318d2
+train,FQI-SRC-GR2-5.Ex19ii,Gaussian 立方的奇数上指标有限和,A,中,group_fd32d547559d
+train,FQI-SRC-GR2-6.6.10,终止 8φ7 与有限部分和的变换,A,高,group_c11f824abfff
+train,FQI-SRC-GR2-6.Ex14,Askey 单变量有限常数项恒等式,G,中,group_9dd0aa155d35
+test,FQI-SRC-GR2-7.2.1,q-Racah 三项递推,C,中,group_94572d7e9e04
+train,FQI-SRC-GR2-7.2.12,q-Racah 一阶差分,A,中,group_032f985020cb
+train,FQI-SRC-GR2-7.2.18,q-Racah 有限正交及对偶正交,A,中,group_5a62f1197cb0
+test,FQI-SRC-GR2-7.2.22,q-Hahn 有限正交,A,中,group_06bb88762003
+train,FQI-SRC-GR2-7.2.24,对偶 q-Hahn 有限正交,A,中,group_f6a835a7094b
+train,FQI-SRC-GR2-7.3.17,双重有限和的正交消去,A,中,group_2f05bc7832af
+test,FQI-SRC-GR2-7.3.6,小 q-Jacobi 三项递推,C,中,group_c18b1b7f9ec8
+train,FQI-SRC-GR2-7.4.14,连续 q-超球多项式的终止 4φ3 表示,A,中,group_67d2c14f5747
+train,FQI-SRC-GR2-7.5.20,Askey–Wilson 正交证明的有限消去式,A,中,group_740b93196e15
+train,FQI-SRC-GR2-7.5.3,Askey–Wilson 三项递推,C,中,group_65feba8c7863
+train,FQI-SRC-GR2-7.5.35,连续 q-超球偶数次数的二次变换,A,中,group_3cfcae5596b3
+train,FQI-SRC-GR2-7.5.36,连续 q-超球奇数次数的二次变换,A,中,group_c6a99b6701e1
+train,FQI-SRC-GR2-7.6.14,Rogers 连续 q-超球连接公式,A,中,group_4d7502b3c40a
+train,FQI-SRC-GR2-7.6.2,Askey–Wilson 有限连接公式,A,中,group_b4b94c0ac46e
+train,FQI-SRC-GR2-7.6.8,Askey–Wilson 单参数连接系数求值,A,中,group_dfd1e04c0f6f
+test,FQI-SRC-GR2-7.7.10,Askey–Wilson 有限差分方程,C,中,group_b5e122dc39f1
+train,FQI-SRC-GR2-7.7.6,Askey–Wilson 差分算子作用于有限积,F,低,group_f77775761c76
+train,FQI-SRC-GR2-7.7.7,Askey–Wilson 多项式降阶差分,C,中,group_33685f023e58
+train,FQI-SRC-GR2-7.Ex10,大 q-Jacobi 三项递推,C,中,group_9ff134071fca
+test,FQI-SRC-GR2-7.Ex11,仿射 q-Krawtchouk 有限正交,A,中,group_eeab32e01d91
+train,FQI-SRC-GR2-7.Ex14,连续 q-超球的 Chebyshev 边界,A,中,group_261734b7fb6f
+test,FQI-SRC-GR2-7.Ex17,连续 q-超球在零点的奇偶求值,A,中,group_e87b23890515
+train,FQI-SRC-GR2-7.Ex19,连续 q-超球的次数和参数递推,C,中,group_07f56e6b69ab
+train,FQI-SRC-GR2-7.Ex27,Askey–Wilson 的四个三角多项式特例,A,中,group_95f6982b0211
+test,FQI-SRC-GR2-7.Ex32,两种连续 q-Jacobi 的反射关系,A,中,group_8167f258ec26
+train,FQI-SRC-GR2-7.Ex37-finite,加权有限多项式的 q 差分关系,C,中,group_610752627d46
+train,FQI-SRC-GR2-7.Ex38,离散 q-Hermite 三项递推,C,中,group_04b8cbca3363
+train,FQI-SRC-GR2-7.Ex40,Rogers–Szegő 的有限 Turán 恒等式,A,中,group_dabb00f3cdb8
+train,FQI-SRC-GR2-7.Ex41,小 q-Jacobi 的有限加法公式,A,高,group_12ef6afb8a09
+train,FQI-SRC-GR2-7.Ex5,Askey–Wilson 终止平衡 4φ3 连续关系,C,中,group_745f091c1c06
+test,FQI-SRC-GR2-7.Ex8i,q-Krawtchouk 有限正交（一）,A,中,group_c7f5d8c07745
+test,FQI-SRC-GR2-7.Ex8ii,q-Krawtchouk 有限正交（二）,A,中,group_16dafcbc4fd4
+train,FQI-SRC-GR2-8.1.2,成对有限积的线性化,A,中,group_6b3cd6f5b16d
+train,FQI-SRC-GR2-8.1.4,任意序列的有限乘积展开,G,中,group_1b493942de43
+train,FQI-SRC-GR2-8.2.12,Bateman 型终止乘积公式,A,高,group_a296ae0a0155
+train,FQI-SRC-GR2-8.2.5,两个平衡终止 4φ3 的一般乘积展开,A,高,group_32f08b934a81
+test,FQI-SRC-GR2-8.2.6,Bailey 型终止 4φ3 乘积公式,A,高,group_db327331ef88
+train,FQI-SRC-GR2-8.3.3,q-Hahn 多项式的 Watson 型乘积,A,高,group_3781094eeeae
+train,FQI-SRC-GR2-8.4.7,连续 q-超球多项式的有限双和乘积,A,高,group_766d70b5748c
+train,FQI-SRC-GR2-8.5.1,Rogers 连续 q-超球线性化公式,A,高,group_426908b9ab4c
+train,FQI-SRC-GR2-8.7.13,有限 q-Racah Poisson 核展开,A,高,group_0b05562b9338
+train,FQI-SRC-GR2-8.7.4,q-Racah乘积双重展开修正式,A,高,group_0b05562b9338
+train,FQI-SRC-GR2-8.7.6,有限 q-Racah 离散核展开,A,高,group_0b05562b9338
+train,FQI-SRC-GR2-8.7.9-finite,终止良配 4φ3 的 2φ1 变换,A,中,group_2ade9fb75fdc
+train,FQI-SRC-GR2-8.8.15,终止 q-Clausen 的多项式平方形式,A,高,group_2e97ff637a02
+train,FQI-SRC-GR2-8.9.1,终止 5φ4 的有限乘积展开,A,高,group_92fb9ea36a05
+test,FQI-SRC-GR2-8.9.2,终止 5φ4 的有限平方和,A,高,group_e781b5272ea6
+train,FQI-SRC-GR2-8.9.5,终止 6φ5 的奇偶平方和,A,高,group_098a3ce7788a
+train,FQI-SRC-GR2-8.9.8,双连续 q-超球平方展开（修订）,A,高,group_a2cdca5b4598
+train,FQI-SRC-GR2-8.9.9,一般终止 6φ5 的有限平方展开,A,高,group_0bda207a8ac3
+test,FQI-SRC-GR2-8.Ex11,Askey–Wilson 的有限加法公式,A,高,group_ddc08654eff5
+test,FQI-SRC-GR2-8.Ex12,Rogers 线性化的逆公式,A,高,group_ef73e79b9003
+train,FQI-SRC-GR2-8.Ex15,终止 4φ3 到 12W11 的变换,A,高,group_e113093fe54f
+test,FQI-SRC-GR2-8.Ex16,终止 10W9 的 4φ3 表示,A,高,group_32bf7f3f0310
+train,FQI-SRC-GR2-8.Ex17i,二次底数 q-Clausen 平方公式,A,高,group_04c26a9a5f12
+train,FQI-SRC-GR2-8.Ex17ii,q² 底数的 Clausen 有限平方公式,A,高,group_b56911d5e9f2
+train,FQI-SRC-GR2-8.Ex1i,小 q-Jacobi 乘积的有限双和（一）,A,高,group_bf1aa2f48d4c
+test,FQI-SRC-GR2-8.Ex1ii,小 q-Jacobi 乘积的有限三重和,A,高,group_0f412bd641e3
+train,FQI-SRC-GR2-8.Ex2,大 q-Jacobi 的有限乘积公式,A,高,group_d93808caafd9
+train,FQI-SRC-GR2-8.Ex20,特殊 Askey–Wilson 的有限线性化,A,高,group_9ce3fad7554d
+test,FQI-SRC-GR2-8.Ex21,Askey–Wilson 有限卷积恒等式,A,高,group_fd1022f491b9
+train,FQI-SRC-GR2-8.Ex24,连续 q-Jacobi 特例的有限线性化,A,高,group_b5c99c9cf360
+train,FQI-SRC-GR2-8.Ex26,相伴 Askey–Wilson 的有限 10W9 展开,A,高,group_9579d3d1e85f
+train,FQI-SRC-GR2-8.Ex27,相伴 Askey–Wilson 的双重有限和,G,高,group_bb6fe97075f3
+train,FQI-SRC-GR2-8.Ex28,相伴连续 q-超球线性化公式,A,高,group_07f56e6b69ab
+train,FQI-SRC-GR2-8.Ex4i,q-Hahn 乘积的另一有限双和,A,高,group_7a2d92f9d0bf
+train,FQI-SRC-GR2-8.Ex4ii,q-Hahn 乘积的有限三重和,A,高,group_c8ab8ec7faa3
+train,FQI-SRC-GR2-8.Ex7i,q-Hahn 有限离散双线性核,A,高,group_8d27a45565dc
+train,FQI-SRC-GR2-8.Ex8,任意有限权序列的 q-Racah 双线性变换,G,高,group_0b05562b9338
+train,FQI-SRC-GR2-8.Ex9,q-Racah 有限双线性求值,A,高,group_0b05562b9338
+train,FQI-SRC-GR2-9.2.2,小 q-Jacobi 的另一终止 2φ1 表示,A,中,group_699bbec6015d
+test,FQI-SRC-GR2-9.5.3-finite,有限支撑权序列的 Askey–Wilson 双线性变换,G,高,group_09c300c87f17
+train,FQI-SRC-GR2-9.Ex10ii,连续 q-Hermite 的底数平方变换,A,中,group_c966bee45068
+train,FQI-SRC-GR2-9.Ex17i,终止 Askey–Wilson 双线性展开（修订）,A,高,group_2dc2bcdf55de
+train,FQI-SRC-GR2-9.Ex17ii,连续 q-Jacobi 的有限连接公式（归一化核正）,A,中,group_01b6e7df8d7f
+train,FQI-SRC-GR2-9.Ex4i,q-Hahn 有限生成函数（一，原印）,A,中,group_e546304d454f
+test,FQI-SRC-GR2-9.Ex4ii,q-Hahn 有限生成函数（二）,A,中,group_b497ae8bfadb
+test,FQI-SRC-GR2-9.Ex5i,对偶 q-Hahn 有限生成函数（一，定义核正）,A,中,group_41cb087b0ead
+train,FQI-SRC-GR2-9.Ex5ii,对偶 q-Hahn 有限生成函数（二，定义核正）,A,中,group_41a91e4596f8
+train,FQI-SRC-GR2-9.Ex7,相伴连续 q-超球的有限卷积,A,中,group_07f56e6b69ab
+train,FQI-SRC-GR2-I-03,q-Pochhammer 倒底数,F,低,group_2bec1917309b
+test,FQI-SRC-GR2-I-07,有限乘积反向排列,F,低,group_b8df917f7c5c
+train,FQI-SRC-GR2-I-08,负移位、非负长度的乘积,F,低,group_29656143da9a
+train,FQI-SRC-GR2-I-09,负移位乘积之比,F,低,group_7f55bf304908
+train,FQI-SRC-GR2-I-10,长度 n−k 的反向改写,F,低,group_b7564053710c
+train,FQI-SRC-GR2-I-11,互补长度乘积之比,F,低,group_db40172adb98
+train,FQI-SRC-GR2-I-12,终止参数 q^{-n} 的乘积,F,低,group_c07fd743b942
+train,FQI-SRC-GR2-I-13,独立长度的负移位,F,低,group_06742bf39de2
+train,FQI-SRC-GR2-I-14,互补长度的负移位,F,低,group_9dd9d4bc790c
+train,FQI-SRC-GR2-I-15,双倍负移位,F,低,group_b49f0a145a30
+train,FQI-SRC-GR2-I-16,整数倍负移位,F,低,group_2d6d6e2a48d0
+train,FQI-SRC-GR2-I-17,有限乘积拼接,F,低,group_2e4f80ef830b
+train,FQI-SRC-GR2-I-18,交换两个移位长度,F,低,group_c5cde83c8fe8
+test,FQI-SRC-GR2-I-19,整数倍长度的尾段,F,低,group_9d8745bd3a10
+train,FQI-SRC-GR2-I-20,从有限乘积截出尾段,F,低,group_9410356f024c
+test,FQI-SRC-GR2-I-21,双倍移位与互补长度,F,低,group_b45b95c9577d
+train,FQI-SRC-GR2-I-22,整数倍移位与互补长度,F,低,group_2f486f7872e0
+train,FQI-SRC-GR2-I-25,按偶数和奇数位置拆分,F,低,group_a6b04b94cb11
+train,FQI-SRC-GR2-I-26,按模 3 拆分,F,低,group_a6b04b94cb11
+train,FQI-SRC-GR2-I-28,正负参数合并,F,低,group_c58775476836
+train,FQI-SRC-GR2-I-33,单位根参数的有限伸缩比,F,低,group_a003e74663f6
+train,FQI-SRC-GR2-I-42,Gaussian 的终止参数表示,F,低,group_b15be2d944bc
+train,FQI-SRC-GR2-I-43,移位上指标的有限乘积,F,低,group_f9abfc134dae
+test,FQI-SRC-GR2-I-44,Gaussian 负上指标转换,F,低,group_54a65516ed80
+test,FQI-SRC-GR2-I-45,一般上指标的两种 q-Pascal 递推,F,低,group_2318b297e58a
+train,FQI-SRC-GR2-I-46,移位上指标的互补下指标,F,低,group_689af5d3d62a
+test,FQI-SRC-GR2-I-47,一般上指标的 Gaussian 倒底数,F,低,group_11b853b1c4d5
+train,FQI-SRC-GR2-II-14,终止 q-Dixon 的 4φ3 形式,A,中,group_11de513669c7
+train,FQI-SRC-GR2-II-15,偶数终止长度的 q-Dixon 3φ2 求和,A,中,group_884d4a5d919a
+train,FQI-SRC-GR2-II-17,终止 q-Watson 求和及奇偶消失,A,中,group_ab41634cda5c
+train,FQI-SRC-GR2-II-19,终止 q-Whipple 的有限乘积形式,A,中,group_9c3ebcaacb7d
+train,FQI-SRC-GR2-II-22,Jackson 终止平衡 8φ7 求和,A,中,group_2a9eafdb78c2
+train,FQI-SRC-GR2-II-34,Gosper 不定双底数有限求和,A,中,group_805c1973e17c
+train,FQI-SRC-GR2-II-35,Gosper 双底数求和扩展,A,中,group_d1569ad21cea
+test,FQI-SRC-GR2-II-36,有限双边双底数求和,A,中,group_823b6f73089b
+train,FQI-SRC-GR2-II-37,双底数有限差分消去,G,中,group_2994e1294f6c
+train,FQI-SRC-GR2-III-06,终止 2φ1 到 3φ2 变换（一）,A,中,group_6d7850f3aeeb
+train,FQI-SRC-GR2-III-07,终止 2φ1 到 3φ2 变换（二）,A,中,group_e0330a59d0e0
+train,FQI-SRC-GR2-III-08,终止 2φ1 到 3φ1 变换（第二版原印）,A,中,group_2a836878196b
+test,FQI-SRC-GR2-III-11,终止 3φ2 变换（一）,A,中,group_97d6d23e375a
+train,FQI-SRC-GR2-III-12,第二版确认的终止 3φ2 变换,A,中,group_b513f42c319c
+train,FQI-SRC-GR2-III-13,终止 3φ2 变换（三）,A,中,group_586b6bef2004
+test,FQI-SRC-GR2-III-14,Sears–Carlitz 终止变换,A,高,group_2d06d27323c0
+train,FQI-SRC-GR2-III-15,Sears 平衡终止 4φ3 变换,A,中,group_41d198ad481b
+train,FQI-SRC-GR2-III-19,终止平衡 4φ3 的 very-well-poised 反写,A,中,group_19a2c956caeb
+test,FQI-SRC-GR2-III-21,Singh 有限二次变换,A,高,group_c402b93e4e66
+train,FQI-SRC-GR2-III-22,终止 q-Clausen 平方公式,A,高,group_2dae3d97464c
+train,FQI-SRC-GR2-III-25,近良配 5φ4 到 12φ11 变换,A,中,group_d3f8f825e2f6
+train,FQI-SRC-GR2-III-26,终止近良配 5φ4 的半长度变换,A,中,group_c8ff76db702c
+train,FQI-SRC-GR2-III-27,近良配 7φ6 到 12φ11 变换,A,中,group_18116fa0fe35
+train,FQI-SRC-GR2-III-28,Bailey 终止 10φ9 变换,A,中,group_ca7b783ee3b2
+train,FQI-SRC-KAC-CHEUNG-1.11-12,q 导数乘法规则,F,低,group_083e8c6a63b8
+train,FQI-SRC-KAC-CHEUNG-1.13-14,q 导数商法则,F,低,group_25965ab0e16b
+train,FQI-SRC-KAC-CHEUNG-1.15,幂代换的 q 链式规则,F,低,group_8998ea16d66a
+train,FQI-SRC-KAC-CHEUNG-13.10,倒底数有限乘积转换,F,低,group_2bec1917309b
+train,FQI-SRC-KAC-CHEUNG-14.higher,第二变量有限 q 幂的高阶导数,F,中,group_3b069b354822
+train,FQI-SRC-KAC-CHEUNG-15.cancellation,双边求和证明中的有限乘积消去,F,低,group_96d0cf89f264
+test,FQI-SRC-KAC-CHEUNG-19.telescoping,Jackson 证明中的有限伸缩和,A,低,group_435ba484e25c
+train,FQI-SRC-KAC-CHEUNG-26.10,对称有限 q 幂的降阶导数,F,低,group_d2f8bf2c5692
+train,FQI-SRC-KAC-CHEUNG-26.12,对称有限 q 二项式定理,A,中,group_1579ef2a4177
+train,FQI-SRC-KAC-CHEUNG-26.14,对称有限乘积的交换,F,低,group_5a483de36f96
+train,FQI-SRC-KAC-CHEUNG-26.15,对称有限乘积倒数的导数,F,低,group_e9b4d7018e8e
+train,FQI-SRC-KAC-CHEUNG-26.21,一般量子 Taylor 多项式根和递推,G,中,group_0d66c2c661b7
+train,FQI-SRC-KAC-CHEUNG-26.22,相同伸缩参数下的根和递推,G,中,group_6c7073b0248c
+train,FQI-SRC-KAC-CHEUNG-26.23,对称q-Taylor基底的正确有限构造,G,中,group_183ad055ccf6
+train,FQI-SRC-KAC-CHEUNG-26.5,对称 q 导数乘法规则,F,低,group_3e85948be43a
+train,FQI-SRC-KAC-CHEUNG-26.6,对称 q 导数商法则,F,低,group_937c35c1d3a7
+train,FQI-SRC-KAC-CHEUNG-26.7,对称 q 单项式导数,F,低,group_54fe0955e82a
+test,FQI-SRC-KAC-CHEUNG-26.rootsum,相同平移参数的根和有限解,G,中,group_8c6ef7616be1
+train,FQI-SRC-KAC-CHEUNG-3.10,有限 q 幂倒数的导数,F,低,group_53c02f8d7878
+test,FQI-SRC-KAC-CHEUNG-3.11,第二变量的有限 q 幂导数,F,低,group_afca850867fe
+train,FQI-SRC-KAC-CHEUNG-3.12,第二变量的有限 q 幂倒数导数,F,低,group_6bbe32e741f9
+train,FQI-SRC-KAC-CHEUNG-3.5,有限 q 幂的降阶导数,F,低,group_b92587c06c5e
+train,FQI-SRC-KAC-CHEUNG-3.6,有限 q 幂的指标相加,F,低,group_19fb6fe05e1e
+test,FQI-SRC-KAC-CHEUNG-3.9,有限 q 幂的交换与倒序,F,低,group_126df210d4a2
+train,FQI-SRC-KAC-CHEUNG-4.1,多项式的有限 q-Taylor 展开,G,中,group_d94b27261233
+train,FQI-SRC-KAC-CHEUNG-4.3,单项式的高阶 q 导数,F,中,group_633efd3b4a21
+train,FQI-SRC-KAC-CHEUNG-4.4,单项式的有限 q 幂展开,A,中,group_cc102801dc6c
+train,FQI-SRC-KAC-CHEUNG-5.1,有限 q 幂的高阶导数,F,中,group_cd3afb02b78f
+train,FQI-SRC-KAC-CHEUNG-5.7,乘法算子和 q 移位的交换,F,低,group_a95872221d75
+test,FQI-SRC-KAC-CHEUNG-5.8,q 交换算子的有限二项式定理,C,中,group_9a26c63fb223
+test,FQI-SRC-KAC-CHEUNG-6.5,Gaussian 的加权子集表示,G,中,group_13ec759f3292
+train,FQI-SRC-KAC-CHEUNG-7.2,有序线性无关向量组计数,C,中,group_4dc15e350cac
+train,FQI-SRC-KAC-CHEUNG-7.8,Galois 数递推,C,中,group_655c842d23c4
+train,FQI-SRC-KAC-CHEUNG-7.rank,有限域定秩矩阵计数,C,中,group_2581d363527a
+test,FQI-SRC-KAC-CHEUNG-8.reciprocal,有限倒数乘积的高阶 q 导数,F,中,group_91d911b256f1
+train,FQI-SRC-SILLS-1.75,Paule 有限五重乘积恒等式,A,高,group_49245ff87388
+train,FQI-SRC-SILLS-1.75-rec,有限五重乘积和的一阶递推,C,中,group_b47f0eba2cc2
+train,FQI-SRC-SILLS-1.79,q-二项式级数的有限系数递推,F,低,group_5ed27e3f35b6
+train,FQI-SRC-SILLS-1.87,Andrews–Baxter q-三项式递推,C,中,group_2560c84f17c3
+test,FQI-SRC-SILLS-1.90,q-三项式 Laurent 多项式递推,C,中,group_8183a504264d
+train,FQI-SRC-SILLS-1.94-corrected,Andrews 有限 Heine 变换,A,中,group_d93faf21d133
+train,FQI-SRC-SILLS-1.95,有限 Heine 和的二阶递推,C,中,group_d93faf21d133
+train,FQI-SRC-SILLS-1.99,Watson 终止和二阶递推,C,中,group_580db7a603fd
+train,FQI-SRC-SILLS-1.ExDistinct,有界不同部件分拆的有限生成多项式,G,低,group_d8f93eaa5e2d
+test,FQI-SRC-SILLS-1.JacobiFinite,Jacobi 乘积证明中的有限双边二项式,A,中,group_58a0ee39d077
+test,FQI-SRC-SILLS-2.108,Mock theta 相关的有限 Bailey 对,G,高,group_51ab8d0ecadf
+train,FQI-SRC-SILLS-2.30,Bailey 关系的终止超几何重写,G,低,group_b3c14a97f572
+train,FQI-SRC-SILLS-2.75,Schur 有界分拆的有限 q-三项式恒等式,A,高,group_2560c84f17c3
+train,FQI-SRC-SILLS-2.76-78,Schur 有界分拆的三项耦合递推,C,中,group_2560c84f17c3
+train,FQI-SRC-SILLS-2.9-corrected,Watson 极限的终止有限式,A,中,group_dc2a84ddb26e
+train,FQI-SRC-SILLS-2.Ex2b,二步长带符号 Bailey 有限和,A,中,group_ad2ae4303d10
+train,FQI-SRC-SILLS-2.Ex2c,三步长 Bailey 有限和,A,中,group_95dc36ca9294
+test,FQI-SRC-SILLS-2.Ex2d,偶指标 Bailey 有限和 I,A,中,group_26d8e4cdaf5d
+train,FQI-SRC-SILLS-2.Ex2e,偶指标 Bailey 有限和 II,A,中,group_387a82b91031
+train,FQI-SRC-SILLS-2.Ex2f,三倍指标 Bailey 有限和,A,中,group_1c02f2221507
+train,FQI-SRC-SILLS-2.Ex7a-corrected,关于q的参数 Bailey 有限和,A,中,group_3a7f2a3ec3d0
+test,FQI-SRC-SILLS-2.Lem2.31,关于1的双边 Bailey 有限和,A,中,group_58a0ee39d077
+train,FQI-SRC-SILLS-2.Lem2.53,半整数幂 Bailey 有限和,A,中,group_b85aafddad85
+test,FQI-SRC-SILLS-2.Pair112,基本 Bailey 有限和,A,中,group_f1f68851bd08
+train,FQI-SRC-SILLS-2.Pair122,二步长 Bailey 有限和,A,中,group_9ff732bc93d7
+test,FQI-SRC-SILLS-3.5-6,Bailey 链第二步有限变换,A,中,group_63f98e83f082
+train,FQI-SRC-SILLS-3.7,Bailey 链的有限双和,A,中,group_1b86de227d05
+train,FQI-SRC-SILLS-3.Lem3.3,偶模数 Bailey 有限和,A,中,group_0fe082f003c1
+train,FQI-SRC-SILLS-4.17,第二 q-Fibonacci 多项式递推,C,中,group_2560c84f17c3
+train,FQI-SRC-SILLS-4.18,D 多项式的 q-三项式展开,A,高,group_2560c84f17c3
+train,FQI-SRC-SILLS-4.19,E 多项式的 q-三项式展开,A,高,group_2560c84f17c3
+test,FQI-SRC-SILLS-4.25,奇数 D 多项式的倒数对偶,A,中,group_02507a8b8207
+train,FQI-SRC-SILLS-4.26-corrected,偶数 E 多项式的倒数对偶,A,中,group_9d8722c2a70a
+train,FQI-SRC-SILLS-4.27-corrected,奇数 E 多项式的倒数对偶,A,中,group_d618db2f183e
+train,FQI-SRC-SILLS-4.35,Bressoud 多项式二阶递推,C,中,group_8e1d8e09d699
+train,FQI-SRC-SILLS-4.37,Bressoud 第一有限 Rogers–Ramanujan 恒等式,A,高,group_28c98ebe2365
+test,FQI-SRC-SILLS-4.38,Bressoud 多项式的五阶递推,C,高,group_b085965e1418
+train,FQI-SRC-SILLS-4.43,Bressoud 第二有限 Rogers–Ramanujan 恒等式,A,高,group_8b52e6a2140e
+train,FQI-SRC-SILLS-4.47,Mod 8 的 q-Pell 多项式递推,C,中,group_eb3e7cbf7e27
+train,FQI-SRC-SILLS-4.48,T₁ 与 T₀ 的 q-三项式递推,C,中,group_09f7c35126fa
+train,FQI-SRC-SILLS-4.49,T₀ 与 T₁ 的 q-三项式递推,C,中,group_b7de3612eef2
+test,FQI-SRC-SILLS-4.50,T₀、T₁ 的相邻指标关系,C,中,group_5ffcb5cdc386
+train,FQI-SRC-SILLS-4.51,Borwein A 多项式的 Gaussian 展开,G,中,group_26a4efc46e36
+train,FQI-SRC-SILLS-4.52,Borwein B 多项式的 Gaussian 展开,G,中,group_2c2325610fbb
+test,FQI-SRC-SILLS-4.53,Borwein C 多项式的 Gaussian 展开,G,中,group_e685e9ecd5c6
+train,FQI-SRC-SILLS-4.54,Borwein A 多项式的正向有限和,G,高,group_d0ecca71c827
+train,FQI-SRC-SILLS-4.55,Borwein B 多项式的正向有限和,G,高,group_f23412780001
+train,FQI-SRC-SILLS-4.56,Borwein C 多项式的正向有限和,G,高,group_2e233656233d
+train,FQI-SRC-SILLS-4.6,第一 q-Fibonacci 多项式递推,C,中,group_2560c84f17c3
+train,FQI-SRC-SILLS-4.Ex3,Borwein 多项式的耦合递推,C,中,group_209aedefd7ba
+train,FQI-SRC-SILLS-4.Mod8,有限 Ramanujan–Slater Mod 8 恒等式,A,高,group_c15112e659a6
+test,FQI-SRC-SILLS-4.Sym,Bressoud 双边和的对称化,A,高,group_9bbcc4da8485
+test,FQI-SRC-SILLS-5.6-8,Motivated proof 中的有限系数多项式递推,C,中,group_f932fa73955e
+train,FQI-SRC-SILLS-6.Ex1-corrected,Capparelli 相关的有限 Bailey 对,A,高,group_4febfc584248
+test,FQI-SUBSPACE-COUNT,有限域子空间计数,C,中,group_ceb528e75a3c
+train,FQI-TERMINATING-6PHI5,终止 very-well-poised 6φ5,A,中,group_821189acc93e
+train,FQI-WATSON-8PHI7,Watson 终止 8φ7→4φ3,A,中,group_580db7a603fd

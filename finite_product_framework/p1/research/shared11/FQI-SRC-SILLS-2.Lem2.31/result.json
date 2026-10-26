@@ -1,0 +1,22 @@
+{
+  "id": "FQI-SRC-SILLS-2.Lem2.31",
+  "source": {
+    "identity_id": "FQI-SRC-SILLS-2.Lem2.31",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity372.lean",
+    "sha256": "eb182312af3a567ee3ac9598194a608c81f75e4b95440d41dcadc8d87b9e8198"
+  },
+  "native_status": "unsupported_structure",
+  "original_lean_proved": false,
+  "remaining_obligations": [
+    "Icc重编号、列表展开与ht代换已在原目标执行；仍需连接Gaussian整数指标和平方指数toNat的表示",
+    "保留t=0情形并处理双边移动端点",
+    "生成完整局部关系、初值与目标递推证明"
+  ],
+  "native_report": "FQI-SRC-SILLS-2.Lem2.31/native.json",
+  "verified_preprocessing_steps": [
+    "bilateral_interval_reindexed_with_both_endpoints",
+    "explicit_Pochhammer_lists_expanded_in_Lean",
+    "parameter_power_equality_rewritten_in_Lean"
+  ],
+  "support_normalization": "original goal reindexed by Lean; not a full proof"
+}

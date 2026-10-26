@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>P2三路线实际试验</title>
+<style>body{font:16px/1.7 system-ui;max-width:1100px;margin:40px auto;padding:20px}td,th{border:1px solid #ddd;padding:10px}table{border-collapse:collapse}pre{white-space:pre-wrap;background:#f5f5f5;padding:16px}</style>
+<h1>P2三路线实际试验 · 2026-10-13</h1>
+<p><b>本轮新增原train完整证明0条，新增泛参数证明0条。</b>固定次数/部分参数特化实验用于选择研发路线，不计入Lean覆盖。</p>
+<table><tr><th>原train公式</th><th>实际试验与结果</th><th>尚缺能力</th></tr>
+<tr><td>GR2-7.6.8</td><td>n=0..3，保留alpha及Laurent变量z；从两组AW定义做三角消元，独立计算连接系数，与目标系数逐个精确相等。</td><td>这采用三角消元，不是已实现论文的AW分差算子算法。符号n、全参数域、归一化与Lean桥接仍未完成。</td></tr>
+<tr><td>GR2-1.Ex33</td><td>n=0..4，保留一侧参数c及变量t；从小q-Jacobi定义计算基底反演，连接系数与原目标一致。</td><td>固定维数成功不证明泛n。下一步需通用反演系数或系数核及完整原域证明。</td></tr>
+<tr><td>GR2-9.Ex5ii</td><td>N=0..5、全部0≤x≤N共21组，保留t，有限定义展开后系数精确一致。qFPS实际原输入构造失败。</td><td>qFPS的qshift内部选择器报错；有限终止定义与工具qPhi的对应、函数方程、初值和Lean输出仍未接通。</td></tr></table>
+<p>所有试验均为精确代数而非浮点抽样；仍固定了q=2/3及若干参数。符号参数结果是有理函数域上的等式，未处理原Lean允许的全部退化参数。三条输入来自显式转写，未做Lean Expr自动提取。每个比较还验证了目标加1后不成立。</p>
+<h2>工具实际状态</h2><p>作者qFPS源码已下载，原版权标注保留，未修改。Maple 2024.2成功加载，并计算了小q-Jacobi的符号递推。直接处理生成函数与AW原始表达式失败；内部诊断定位到qshift选择器错误，不将该错误解释为数学算法不适用。</p>
+<p>建议先推进基底反演，再扩展符号n的通用核；AW可先复用此入口，专门算子算法另需实现。当前P2运行分支与P1均未改动。</p>
+<p><a href="finite_trials.py">有限次数试验代码</a> · <a href="finite_results.json">30组精确结果</a> · <a href="qfps_probe.mpl">Maple试验脚本</a> · <a href="inputs.json">原声明快照</a> · <a href="summary.json">验证与文件哈希</a></p>
+<h2>Maple原始日志</h2><pre>P2_QFPS_LOADED
+VERSION `Maple 2024.2, X86 64 LINUX, Oct 29 2024, Build ID 1872373`
+SANITY_RE q^n*(q*t-1)*F(t)+(-t*(q^n)^2*q^2*a*b+q^n*a-t*q+q^n)*Sq[t](F(t))+q^n*a*(b*q^2*t-1)*Sq[t,t](F(t)) = 0
+GF_INPUT qphihypergeom([q^(x-N), b*q^(x+1)],[q^(-N)/c],t*q^(-x),q)*qpochhammer(b*c*q*t,q,x)
+GF_ERROR [qHolonomicRE, &quot;no q-recurrence equation could be found&quot;]
+GENERIC_ERROR [qshift, &quot;improper op or subscript selector&quot;]
+AW_RAW_ERROR [qHolonomicRE, &quot;no q-recurrence equation could be found&quot;]
+P2_QFPS_FINISHED
+</pre></html>

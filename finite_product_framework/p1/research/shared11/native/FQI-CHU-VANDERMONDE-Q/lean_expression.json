@@ -1,0 +1,142 @@
+{
+  "args": [
+    {
+      "args": [
+        {
+          "args": [
+            {
+              "name": "a",
+              "op": "var"
+            },
+            {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "q",
+                      "op": "var"
+                    },
+                    {
+                      "args": [
+                        {
+                          "args": [
+                            {
+                              "name": "n",
+                              "op": "var"
+                            }
+                          ],
+                          "op": "Nat.cast"
+                        }
+                      ],
+                      "op": "Neg.neg"
+                    }
+                  ],
+                  "op": "HPow.hPow"
+                },
+                {
+                  "args": [],
+                  "op": "List.nil"
+                }
+              ],
+              "op": "List.cons"
+            }
+          ],
+          "op": "List.cons"
+        },
+        {
+          "args": [
+            {
+              "name": "c",
+              "op": "var"
+            },
+            {
+              "args": [],
+              "op": "List.nil"
+            }
+          ],
+          "op": "List.cons"
+        },
+        {
+          "name": "q",
+          "op": "var"
+        },
+        {
+          "name": "q",
+          "op": "var"
+        },
+        {
+          "name": "n",
+          "op": "var"
+        }
+      ],
+      "op": "FiniteQBenchmark.phi"
+    },
+    {
+      "args": [
+        {
+          "args": [
+            {
+              "args": [
+                {
+                  "name": "a",
+                  "op": "var"
+                },
+                {
+                  "name": "n",
+                  "op": "var"
+                }
+              ],
+              "op": "HPow.hPow"
+            },
+            {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "c",
+                      "op": "var"
+                    },
+                    {
+                      "name": "a",
+                      "op": "var"
+                    }
+                  ],
+                  "op": "HDiv.hDiv"
+                },
+                {
+                  "name": "q",
+                  "op": "var"
+                },
+                {
+                  "name": "n",
+                  "op": "var"
+                }
+              ],
+              "op": "FiniteQBenchmark.poch"
+            }
+          ],
+          "op": "HMul.hMul"
+        },
+        {
+          "args": [
+            {
+              "name": "c",
+              "op": "var"
+            },
+            {
+              "name": "q",
+              "op": "var"
+            },
+            {
+              "name": "n",
+              "op": "var"
+            }
+          ],
+          "op": "FiniteQBenchmark.poch"
+        }
+      ],
+      "op": "HDiv.hDiv"
+    }
+  ],
+  "op": "Eq"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "solver": "q_zeilberger_joint",
+  "input": {"components": [
+    {"summand": ["mul", ["gaussian", "q", "n", "k"], ["pow", 2, "k"], ["pow", "q", ["div", ["mul", "k", ["sub", "k", 1]], 2]]]},
+    {"summand": ["mul", ["gaussian", "q", "n", "k"], ["pow", 3, "k"], ["pow", "q", ["div", ["mul", "k", ["sub", "k", 1]], 2]]]}
+  ]}
+}

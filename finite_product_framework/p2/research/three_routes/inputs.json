@@ -1,0 +1,23 @@
+[
+  {
+    "id": "FQI-SRC-GR2-1.Ex33",
+    "lean_path": "benchmark/lean/Benchmark/Statements/Train/Identity060.lean",
+    "lean_sha256": "43be87e898bf12ee847653159ae7d8e2710bada6725206c25a4baf28f4c464dc",
+    "lean_statement": "theorem statement (a b c d q x : K) (n : ℕ) (hq : regular q)\n (hl : phiDefined [c*q] q n)\n (hp : ∀ k ≤ n, phiDefined [a*q] q k)\n (hc : ∀ k ≤ n, pochList [q,c*q,a*b*q^(k+1)] q k ≠ 0 ∧\n phiDefined [c*q^(k+1),a*b*q^(2*k+2)] q (n-k)) :\n littleJacobi x c d q n = ∑ k ∈ Finset.range (n+1),\n ((-1)^k*q^(k*(k+1)/2)*pochList [q^(-(n : ℤ)),a*q,c*d*q^(n+1)] q k /\n pochList [q,c*q,a*b*q^(k+1)] q k *\n phi [q^((k : ℤ)-n),c*d*q^(n+k+1),a*q^(k+1)]\n [c*q^(k+1),a*b*q^(2*k+2)] q q (n-k))*littleJacobi x a b q k",
+    "formula_latex": "p_n(x;c,d;q)=\\sum_{k=0}^n A_{k,n}p_k(x;a,b;q),\\quad A_{k,n}=\\frac{(-1)^kq^{k(k+1)/2}(q^{-n},aq,cdq^{n+1};q)_k}{(q,cq,abq^{k+1};q)_k}{}_3\\phi_2^{[n-k]}\\!\\left[\\begin{matrix}q^{k-n},cdq^{n+k+1},aq^{k+1}\\\\cq^{k+1},abq^{2k+2}\\end{matrix};q,q\\right]."
+  },
+  {
+    "id": "FQI-SRC-GR2-7.6.8",
+    "lean_path": "benchmark/lean/Benchmark/Statements/Train/Identity139.lean",
+    "lean_sha256": "726d6c626f435c015c2376341306dd71a79d084de4abae2761f9f168bc066374",
+    "lean_statement": "theorem statement (z alpha a b c d q : K) (n : ℕ)\n (hbase : regular q) (hnz : ∀ v ∈ [a,alpha,z], v ≠ 0)\n (h_domain : z ≠ 0 ∧\n    phiDefined [(alpha * b),(alpha * c),(alpha * d)] q (n) ∧\n    alpha ≠ 0 ∧\n    ∀ k ∈ Finset.range (n+1), (a ≠ 0 ∧\n    (((pochList [q,(b * c),(b * d),(c * d)] q (k)) * (pochList [((((a * b) * c) * d) * (q^(((k : ℤ)-1) : ℤ)))] q (k))) * (pochList [q,((((a * b) * c) * d) * (q^((2*(k : ℤ)) : ℤ)))] q (n-k))) ≠ 0 ∧\n    z ≠ 0 ∧\n    phiDefined [(a * b),(a * c),(a * d)] q (k))) :\n (askeyWilson (z) (alpha) (b) (c) (d) (q) (n)) = (∑ k ∈ Finset.range (n+1), ((((((pochList [(alpha / a)] q (n-k)) * (pochList [((((alpha * b) * c) * d) * (q^(((n : ℤ)-1) : ℤ)))] q (k))) * (pochList [q,(b * c),(b * d),(c * d)] q (n))) * (a^(((n : ℤ)-(k : ℤ)) : ℤ))) / (((pochList [q,(b * c),(b * d),(c * d)] q (k)) * (pochList [((((a * b) * c) * d) * (q^(((k : ℤ)-1) : ℤ)))] q (k))) * (pochList [q,((((a * b) * c) * d) * (q^((2*(k : ℤ)) : ℤ)))] q (n-k)))) * (askeyWilson (z) (a) (b) (c) (d) (q) (k))))",
+    "formula_latex": "P_n(z;\\alpha,b,c,d)=\\sum_{k=0}^n\\frac{(\\alpha/a;q)_{n-k}(\\alpha bcdq^{n-1};q)_k(q,bc,bd,cd;q)_na^{n-k}}{(q,bc,bd,cd;q)_k(abcdq^{k-1};q)_k(q,abcdq^{2k};q)_{n-k}}P_k(z;a,b,c,d)."
+  },
+  {
+    "id": "FQI-SRC-GR2-9.Ex5ii",
+    "lean_path": "benchmark/lean/Benchmark/Statements/Train/Identity201.lean",
+    "lean_sha256": "6c7e7ae10cc2295b1b7a5359b2d1a343b7efe4e4141a93f6138d6fd740d1200e",
+    "lean_statement": "theorem statement (b c t q : K) (N x : ℕ)\n (hbase : regular q) (hx : x ≤ N) (hc : c ≠ 0)\n (h_domain : ∀ n ∈ Finset.range (N+1), (c ≠ 0 ∧\n    (pochList [q,((q^((-(N : ℤ)) : ℤ)) / c)] q (n)) ≠ 0 ∧\n    phiDefined [(q^((-(N : ℤ)) : ℤ)),(b * q)] q (min n x)) ∧\n    c ≠ 0 ∧\n    phiDefined [((q^((-(N : ℤ)) : ℤ)) / c)] q (N-x)) :\n (∑ n ∈ Finset.range (N+1), ((((pochList [(q^((-(N : ℤ)) : ℤ)),(b * q)] q (n)) / (pochList [q,((q^((-(N : ℤ)) : ℤ)) / c)] q (n))) * (phi [(q^((-(n : ℤ)) : ℤ)),(q^((-(x : ℤ)) : ℤ)),((b * c) * (q^(((x : ℤ)+1) : ℤ)))] [(q^((-(N : ℤ)) : ℤ)),(b * q)] q q (min n x))) * (t^n))) = ((phi [(q^(((x : ℤ)-(N : ℤ)) : ℤ)),(b * (q^(((x : ℤ)+1) : ℤ)))] [((q^((-(N : ℤ)) : ℤ)) / c)] q (t * (q^((-(x : ℤ)) : ℤ))) (N-x)) * (pochList [(((b * c) * q) * t)] q (x)))",
+    "formula_latex": "\\sum_{n=0}^N\\frac{(q^{-N},bq;q)_n}{(q,c^{-1}q^{-N};q)_n}D_n(x;b,c,N)t^n={}_2\\phi_1^{[N-x]}(q^{x-N},bq^{x+1};c^{-1}q^{-N};q,tq^{-x})(bcqt;q)_x."
+  }
+]

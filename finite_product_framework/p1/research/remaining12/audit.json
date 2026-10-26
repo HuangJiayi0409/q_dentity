@@ -1,0 +1,185 @@
+{
+  "records": [
+    {
+      "id": "FQI-CHU-VANDERMONDE-Q",
+      "source": {
+        "identity_id": "FQI-CHU-VANDERMONDE-Q",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity012.lean",
+        "sha256": "de9763fcd57e8cbcac60204818afc35d76206e420d1e8b625a8ce9901e614fe6"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: phi [a, q ^ (-↑n)] [c] q q n = a ^ n * poch (c / a) q n / poch c q n\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-CHU-VANDERMONDE-Q/Typecheck.lean:28:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    },
+    {
+      "id": "FQI-CHU-VANDERMONDE-BALANCED",
+      "source": {
+        "identity_id": "FQI-CHU-VANDERMONDE-BALANCED",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity013.lean",
+        "sha256": "88ce8e4082af6f33dcf20bacef1e64cd6df41d4faf89b14ffcb96548014d3361"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: phi [a, q ^ (-↑n)] [c] q (c * q ^ n / a) n = poch (c / a) q n / poch c q n\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-CHU-VANDERMONDE-BALANCED/Typecheck.lean:28:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    },
+    {
+      "id": "FQI-BAILEY-UNIT",
+      "source": {
+        "identity_id": "FQI-BAILEY-UNIT",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity020.lean",
+        "sha256": "c9ff70f5bf2bf5d8733261930ecb4272ef3bdea4886fb44b63c93d51a4181133"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: ∑ r ∈ Finset.range (n + 1), unitBailey a q r / (poch q q (n - r) * poch (a * q) q (n + r)) =\n  if n = 0 then 1 else 0\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-BAILEY-UNIT/Typecheck.lean:29:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex5",
+      "source": {
+        "identity_id": "FQI-SRC-GR2-1.Ex5",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity051.lean",
+        "sha256": "db6ff636c05fef41a7008ec6dae82f1221b2f211d8f20b77c49d246eccca5a16"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: pochList [c, b * q ^ n] q m / poch b q m =\n  poch (b / c) q n / poch b q n *\n    ∑ k ∈ Finset.range (n + 1),\n      pochList [q ^ (-↑n), c] q k / pochList [q, c * q ^ (1 - ↑n) / b] q k * q ^ k * poch (c * q ^ k) q m\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-GR2-1.Ex5/Typecheck.lean:30:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex6iii",
+      "source": {
+        "identity_id": "FQI-SRC-GR2-1.Ex6iii",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity053.lean",
+        "sha256": "d7cf234268f0fdff200f09611a3bfba0b0f4b8f1d61e1343b27512df4de5927c"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: phi [a, q ^ (-↑n)] [] q (q ^ n / a) n = a ^ (-↑n)\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-GR2-1.Ex6iii/Typecheck.lean:26:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "proved"
+    },
+    {
+      "id": "FQI-SRC-AP-3.E1",
+      "source": {
+        "identity_id": "FQI-SRC-AP-3.E1",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity277.lean",
+        "sha256": "fe84fa8f662ce0180e4ddb68ceb0a37a1fc2801d18b94764eb0fc9f03d837703"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: ∑ j ∈ Finset.Icc (-↑n) ↑n, q ^ (j * j).toNat * x ^ j * gaussianInt (q ^ 2) (2 * ↑n) (↑n + j) =\n  pochList [-1 / x * q, -x * q] (q ^ 2) n\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-AP-3.E1/Typecheck.lean:29:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.37",
+      "source": {
+        "identity_id": "FQI-SRC-AQ-3.37",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity315.lean",
+        "sha256": "1d9d466eee5eb4798d3b4deace3d841b3345bd30029f06c40eb64b6d92cc34d2"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: ∑ r ∈ Finset.range (n + 1),\n    (-1) ^ r * q ^ (r * (r - 1) / 2) * (1 - q ^ (2 * r + 1)) /\n      ((1 - q) * pochList [q] q (n - r) * pochList [q ^ 2] q (n + r)) =\n  if n = 0 then 1 else 0\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-AQ-3.37/Typecheck.lean:29:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.JacobiFinite",
+      "source": {
+        "identity_id": "FQI-SRC-SILLS-1.JacobiFinite",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity358.lean",
+        "sha256": "92fd6c5451f63dd6853839f64d39157ae6d36d8a15a7c5266939deb4a9acaccb"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: pochList [q / x, x] q m =\n  ∑ j ∈ Finset.Icc (-↑m) ↑m, (-1) ^ j * q ^ (j * (j - 1) / 2).toNat * x ^ j * gaussianInt q (2 * ↑m) (↑m + j)\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-1.JacobiFinite/Typecheck.lean:29:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Pair122",
+      "source": {
+        "identity_id": "FQI-SRC-SILLS-2.Pair122",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity371.lean",
+        "sha256": "8ccb3eda2edff1b4c51228065377e89b3de13ac135611f5feeb1c38568ba27c2"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: ∑ r ∈ Finset.range (n + 1),\n    sillsAlpha x q 1 2 r / (pochList [q ^ 2] (q ^ 2) (n - r) * pochList [x ^ 2 * q ^ 2] (q ^ 2) (n + r)) =\n  1 / (pochList [q ^ 2] (q ^ 2) n * pochList [-x * q] q (2 * n))\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-2.Pair122/Typecheck.lean:31:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.31",
+      "source": {
+        "identity_id": "FQI-SRC-SILLS-2.Lem2.31",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity372.lean",
+        "sha256": "eb182312af3a567ee3ac9598194a608c81f75e4b95440d41dcadc8d87b9e8198"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: ∑ r ∈ Finset.Icc (-↑n) ↑n, gaussianInt q (2 * ↑n) (↑n + r) * (a ^ r * t ^ (r * r).toNat) =\n  pochList [-a * t, -t / a] q n\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-2.Lem2.31/Typecheck.lean:29:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.53",
+      "source": {
+        "identity_id": "FQI-SRC-SILLS-2.Lem2.53",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity381.lean",
+        "sha256": "a1d23ff78afbc78618ee74dc7d1c98de6e2fcfea9bb0931099aeecf95915b277"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: ∑ r ∈ Finset.range (n + 1),\n    t ^ (2 * r * r + r) * (1 + t ^ (2 * r + 1)) / (1 + t) / (pochList [q] q (n - r) * pochList [q * q] q (n + r)) =\n  1 / (pochList [t ^ 3] q n * pochList [q] q n)\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-2.Lem2.53/Typecheck.lean:31:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    },
+    {
+      "id": "FQI-SRC-SILLS-3.Lem3.3",
+      "source": {
+        "identity_id": "FQI-SRC-SILLS-3.Lem3.3",
+        "path": "benchmark/lean/Benchmark/Statements/Train/Identity385.lean",
+        "sha256": "88e2944c1019d5a6535a449d273e475f4b68b3df9e9b4a0980c6272d5d503fba"
+      },
+      "well_typed_original_goal": true,
+      "typecheck": {
+        "exit_code": 1,
+        "output": "P1_ELABORATED_GOAL: ∑ r ∈ Finset.range (n + 1),\n    (-1) ^ r * q ^ (r * r) * (1 - x * q ^ (2 * r)) * pochList [x ^ 2] (q ^ 2) r /\n        ((1 - x) * pochList [q ^ 2] (q ^ 2) r) /\n      (pochList [q] q (n - r) * pochList [x * q] q (n + r)) =\n  1 / pochList [q ^ 2] (q ^ 2) n\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-3.Lem3.3/Typecheck.lean:31:2: error: P1_TYPECHECK_ONLY\n"
+      },
+      "is_proof": false,
+      "native_status": "unsupported_structure"
+    }
+  ],
+  "complete_proofs": 1
+}

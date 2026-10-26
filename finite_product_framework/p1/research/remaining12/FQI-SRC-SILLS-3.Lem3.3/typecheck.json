@@ -1,0 +1,14 @@
+{
+  "id": "FQI-SRC-SILLS-3.Lem3.3",
+  "source": {
+    "identity_id": "FQI-SRC-SILLS-3.Lem3.3",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity385.lean",
+    "sha256": "88e2944c1019d5a6535a449d273e475f4b68b3df9e9b4a0980c6272d5d503fba"
+  },
+  "well_typed_original_goal": true,
+  "typecheck": {
+    "exit_code": 1,
+    "output": "P1_ELABORATED_GOAL: ∑ r ∈ Finset.range (n + 1),\n    (-1) ^ r * q ^ (r * r) * (1 - x * q ^ (2 * r)) * pochList [x ^ 2] (q ^ 2) r /\n        ((1 - x) * pochList [q ^ 2] (q ^ 2) r) /\n      (pochList [q] q (n - r) * pochList [x * q] q (n + r)) =\n  1 / pochList [q ^ 2] (q ^ 2) n\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-SILLS-3.Lem3.3/Typecheck.lean:31:2: error: P1_TYPECHECK_ONLY\n"
+  },
+  "is_proof": false
+}

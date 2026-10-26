@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "solver": "difference_equation",
+  "input": {
+    "extensions": [
+      {
+        "name": "P",
+        "kind": "product",
+        "ratio": [
+          "add",
+          1,
+          "Z"
+        ]
+      }
+    ],
+    "rhs_basis": [
+      [
+        "mul",
+        [
+          "pow",
+          "P",
+          -1
+        ],
+        [
+          "add",
+          -2,
+          "Z",
+          [
+            "mul",
+            "Z",
+            [
+              "pow",
+              "P",
+              2
+            ]
+          ]
+        ]
+      ]
+    ],
+    "algebraic_extensions": [
+      {
+        "name": "Z",
+        "polynomial": [
+          "add",
+          -2,
+          [
+            "pow",
+            "Z",
+            2
+          ]
+        ],
+        "shift": "Z"
+      }
+    ],
+    "operator": [
+      -1,
+      1
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "methods": {
+    "G": {
+      "name": "q-Gosper有限求值",
+      "kind": "算法路线",
+      "tools": "qZeil/qTelescope；REDUCE QSUM",
+      "core_proof_method": "核规范化→构造原差分→有限望远镜→端点→目标比较",
+      "applicability_conditions": "单基超几何项，指定系数域内存在可搜索的超几何原差分",
+      "cas_entry": "计算k方向有理项比并求原差分；记录失败/超时",
+      "remaining_obligations": "移位比推导、零项、实际分母和两端可定义性",
+      "lean_verification": "验证原差分恒等式，应用有限望远镜，完成端点代数",
+      "references": [
+        "https://www.risc.jku.at/publications/download/risc_117/Paule_Riese.pdf",
+        "https://reduce-algebra.sourceforge.io/manual/manual.pdf"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "W": {
+      "name": "目标引导q-WZ／一阶递推",
+      "kind": "证明流程",
+      "tools": "qZeil/qTelescope；QSUM",
+      "core_proof_method": "目标移位比→相邻n关系→望远镜→边界→初值→归纳",
+      "applicability_conditions": "目标有可表达的移位比，并找到足够的一阶关系；非所有超几何和满足",
+      "cas_entry": "优先使用未归一化关系，搜索相邻差的原差分",
+      "remaining_obligations": "长度移位的域传递、右端零值、尾项、推进系数",
+      "lean_verification": "证明相邻关系和边界，应用带条件归纳",
+      "references": [
+        "https://www.risc.jku.at/publications/download/risc_117/Paule_Riese.pdf"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "Z": {
+      "name": "一般q-Zeilberger递推证明",
+      "kind": "算法路线",
+      "tools": "qZeil；QSUM；约化型后端另验收",
+      "core_proof_method": "核有理化→适用性检查→递推搜索→求和边界→目标同递推→初值→唯一性",
+      "applicability_conditions": "对求和指标与递推指标有合适的有理移位表示；需检查存在性及可求阶数",
+      "cas_entry": "计算递推与局部关系，记录搜索阶数/时间",
+      "remaining_obligations": "非齐次修正、最高阶系数奇点、足够初值、原假设域",
+      "lean_verification": "有限求和推导真实递推，再验证目标和唯一性",
+      "references": [
+        "https://www.risc.jku.at/publications/download/risc_117/Paule_Riese.pdf",
+        "https://reduce-algebra.sourceforge.io/manual/manual.pdf",
+        "https://arxiv.org/abs/math/0410222",
+        "https://arxiv.org/abs/2501.03837"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "T": {
+      "name": "双侧有限和递推比较",
+      "kind": "证明流程",
+      "tools": "qZeil/QSUM；必要时HolonomicFunctions",
+      "core_proof_method": "分别展开两侧→递推→前因子变换→公共递推→同非齐次项及初值→等式",
+      "applicability_conditions": "两侧可获得足够递推；前因子与终止约束均可追踪",
+      "cas_entry": "左右分别搜索，必要时求公共算子",
+      "remaining_obligations": "两侧真实支撑、前因子零行、平衡条件、初值",
+      "lean_verification": "证明左右真实递推与初值，依唯一性组合",
+      "references": [
+        "https://www.risc.jku.at/publications/download/risc_117/Paule_Riese.pdf",
+        "https://risc.jku.at/sw/holonomicfunctions/"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "M": {
+      "name": "多重q求和",
+      "kind": "算法路线",
+      "tools": "qMultiSum；适用时HolonomicFunctions",
+      "core_proof_method": "展开隐含有限和→多指标核→多移位关系→边界→外参数递推→目标比较",
+      "applicability_conditions": "固定有限维数的可接受q超几何核；具体proper/支撑条件待查",
+      "cas_entry": "qMultiSum寻找多移位关系，或逐层消去",
+      "remaining_obligations": "所有边界面、角点、受约束求和域、零项保护、递推初值",
+      "lean_verification": "多重有限和换序/重编号，再递推唯一性",
+      "references": [
+        "https://www.risc.jku.at/publications/download/risc_427/qmultisum.pdf",
+        "https://risc.jku.at/sw/holonomicfunctions/"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "B": {
+      "name": "双底数Gosper",
+      "kind": "算法路线",
+      "tools": "Bibasic Telescope（当前部署未验收）",
+      "core_proof_method": "独立p,q表示→双基原差分→望远镜→端点比较",
+      "applicability_conditions": "核比可在p^k,q^k的有理函数结构表达且属于算法可求类",
+      "cas_entry": "按公开算法搜索双基原差分；先核对工具可获取性",
+      "remaining_obligations": "基数关系、混合零因子、端点与分母；不扩称任意多基",
+      "lean_verification": "验证双基移位恒等式并有限求和",
+      "references": [
+        "https://www.risc.jku.at/publications/download/risc_210/bibasic.pdf"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "X": {
+      "name": "多基和积表示及望远镜",
+      "kind": "待细化路线",
+      "tools": "目标引导精确代数；Sigma为待验候选",
+      "core_proof_method": "列出所有基数及关系→合适差分表示→原差分/参数递推→边界→目标",
+      "applicability_conditions": "不能自动从两基推广到多基；需合法差分扩张或可直接验证的目标原差分",
+      "cas_entry": "试目标乘积差分；再评估Sigma能否表达并求解",
+      "remaining_obligations": "常数域/扩张合法性、多基关系、参数范围、可行性尚未证明",
+      "lean_verification": "分步证明表示桥接和差分关系，不信任外部答案",
+      "references": [
+        "https://www1.risc.jku.at/sw/sigma/",
+        "https://www.risc.jku.at/publications/download/risc_210/bibasic.pdf"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "N": {
+      "name": "任意维数／列表的统一归纳",
+      "kind": "结构路线",
+      "tools": "一维核用qZeil；固定维qMultiSum仅辅助",
+      "core_proof_method": "确定维数归纳→拆分有限域/列表→一维或低维核→归纳→全体参数",
+      "applicability_conditions": "目标量化任意维数、任意列表或链长；必须找到统一分解",
+      "cas_entry": "搜索基础核和归纳步的标量关系，不把固定维实验当泛维证明",
+      "remaining_obligations": "维数递减、空列表、d=1、跨维平衡关系及求和域分解",
+      "lean_verification": "Fin/列表归纳、有限和重排与已证核组合",
+      "references": [
+        "https://www.risc.jku.at/publications/download/risc_117/Paule_Riese.pdf",
+        "https://www.risc.jku.at/publications/download/risc_427/qmultisum.pdf"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "C": {
+      "name": "有限系数比较／卷积核归约",
+      "kind": "结构路线",
+      "tools": "自建变换器；局部核用qZeil/QSUM/qMultiSum",
+      "core_proof_method": "有限展开→选基底/总指标→换序→系数核恒等式→逐系数→原式",
+      "applicability_conditions": "存在明确有限次数、Laurent支撑或可抽出的公共输入因子",
+      "cas_entry": "求每个符号系数对应的通用核，不只展开几个固定n",
+      "remaining_obligations": "基底独立性、次数界、所有索引及局部核通用证明",
+      "lean_verification": "有限和分配律与系数等同性；核由已有证明流程完成",
+      "references": [
+        "https://www.risc.jku.at/publications/download/risc_117/Paule_Riese.pdf",
+        "https://www.risc.jku.at/publications/download/risc_427/qmultisum.pdf"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "R": {
+      "name": "定义递推与目标递推比较",
+      "kind": "证明流程",
+      "tools": "自建递推接口；qZeil/qMultiSum/HolonomicFunctions按需",
+      "core_proof_method": "读取定义→证明或取得对象递推→候选表达递推→系数比较→初值→归纳",
+      "applicability_conditions": "对象有可推导的有效递推及初值；递推必须来自实际定义，不能假定未证闭式",
+      "cas_entry": "为显式和侧求递推，或辅助规范化递推系数",
+      "remaining_obligations": "从有限和/递归定义导出对象关系、负索引、递推奇点、共同阶数和全部初值",
+      "lean_verification": "先证明定义递推，再递推唯一性；避免用目标循环证明",
+      "references": [
+        "https://www.risc.jku.at/publications/download/risc_117/Paule_Riese.pdf",
+        "https://risc.jku.at/sw/holonomicfunctions/"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "V": {
+      "name": "反向求和／对称配对",
+      "kind": "结构路线",
+      "tools": "自建有限和重编号；精确代数辅助",
+      "core_proof_method": "确定索引双射→逐项乘积反向/对称→端点→和等式",
+      "applicability_conditions": "存在明确区间双射或配对；需要实际逐项验证",
+      "cas_entry": "计算变换后项比或代数残差，不假设对称性成立",
+      "remaining_obligations": "负索引、区间保持、固定点、相位及特殊参数",
+      "lean_verification": "Finset求和双射、逐项恒等式和边界",
+      "references": [],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "A": {
+      "name": "定义展开与直接有限代数",
+      "kind": "结构路线",
+      "tools": "通常无需外部CAS；必要时精确有理化简",
+      "core_proof_method": "展开定义→移位/消因子→有限望远镜或逐项代数→组装",
+      "applicability_conditions": "例如任意函数Jackson差分，不要求超几何项比",
+      "cas_entry": "无需强行调用CAS；仅辅助算式整理",
+      "remaining_obligations": "分母非零、原函数值任意性、原假设保持",
+      "lean_verification": "使用有限和望远镜与域代数定理",
+      "references": [],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "AL": {
+      "name": "Abel有限分部求和",
+      "kind": "结构路线",
+      "tools": "自建Abel组合器；双基原差分后端",
+      "core_proof_method": "两组累积积→验证差分→有限分部求和→端点→核交换",
+      "applicability_conditions": "必须明确两组原差分/累积因子；四基输入不靠单基猜测",
+      "cas_entry": "由目标端点或Bibasic构造局部差分，计算组合核",
+      "remaining_obligations": "离散乘积分部公式、全部端点及K/T/R对应",
+      "lean_verification": "先证局部差分再套有限Abel定理",
+      "references": [
+        "https://www.risc.jku.at/publications/download/risc_210/bibasic.pdf"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "H": {
+      "name": "q-holonomic闭包及消元",
+      "kind": "条件性备选",
+      "tools": "HolonomicFunctions",
+      "core_proof_method": "构造各对象湮灭关系→和/积闭包→消元→边界→递推比较",
+      "applicability_conditions": "需有效且足够的对象算子描述；不能仅凭多项式名字认定",
+      "cas_entry": "闭包、Ore消元或creative telescoping",
+      "remaining_obligations": "算子作用于真实对象的证明、初值、奇点、边界",
+      "lean_verification": "逐步验证算子关系并组合为原等式",
+      "references": [
+        "https://risc.jku.at/sw/holonomicfunctions/"
+      ],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "LIMIT": {
+      "name": "有限和中的可去奇点与极限桥接",
+      "kind": "附加证明阶段",
+      "tools": "精确代数消因子；Lean极限定理",
+      "core_proof_method": "找出可去因子→穿孔邻域恒等式→有限和极限→目标值",
+      "applicability_conditions": "原statement确含参数极限；该阶段不单独证明其余合取",
+      "cas_entry": "辅助因子化，不把数值极限当证明",
+      "remaining_obligations": "邻域分母非零、连续性、有限和极限、与原表达式一致",
+      "lean_verification": "证明每项极限并用有限和极限及已证有限求值",
+      "references": [],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "算法包参考文献仅支持对应计算机制；完整组合流程及Lean路线为项目拟议设计"
+    },
+    "K": {
+      "name": "组合定义到符号求和的桥接",
+      "kind": "附加结构路线",
+      "tools": "组合分解在Lean完成；显式和侧可用qZeil",
+      "core_proof_method": "拆分有限组合对象→加权计数递推或双射→显式和同递推→初值→目标",
+      "applicability_conditions": "原对象是组合集合加权和；需可证明的分解/双射",
+      "cas_entry": "对象桥接无需CAS；为显式Gaussian和侧计算递推",
+      "remaining_obligations": "集合双射/不交分解、权重保持、空集合和小长度初值",
+      "lean_verification": "Finset集合重编号与加权和分解，再归纳或递推唯一性",
+      "references": [],
+      "status": "候选流程；本表未执行工具试验",
+      "reference_scope": "根据实际Lean定义提出的项目路线，尚未证明"
+    }
+  }
+}

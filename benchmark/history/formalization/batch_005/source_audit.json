@@ -1,0 +1,2498 @@
+[
+  {
+    "index": 401,
+    "id": "FQI-SRC-SILLS-4.50",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity401.lean",
+    "lean_sha256": "888ee1c1d376398d956a716ea8114ba1a84856b217ad4b82119eb2ae3b05020b",
+    "md_path": "formulas/train/FQI-SRC-SILLS-4.50.md",
+    "md_sha256": "7d1154a33517c4766f69833907f186fd1c06ab5c22d52ba1667c52e20d607cee",
+    "formula_latex_sha256": "875a694e63f2e7cc30a93ce49396b0ac1356cc9f7bac641dba1164723dedefca",
+    "representative_source": "SILLS-4.50",
+    "source_records": [
+      {
+        "id": "SILLS-4.50",
+        "name": "T₀、T₁ 的相邻指标关系",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 135；4.50",
+        "source_pages": [
+          135
+        ],
+        "pdf_pages": [
+          160
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "T_1(n,j;q)-q^{n-j}T_0(n,j;q)-T_1(n,j+1;q)+q^{n+j+1}T_0(n,j+1;q)=0.",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0。",
+        "finiteness_type": "finite_recurrence_or_rewrite",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 360,
+        "source_issues": []
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 402,
+    "id": "FQI-SRC-SILLS-4.Mod8",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity402.lean",
+    "lean_sha256": "36755b7ae7fbb2b4db4499cfcc1136cd9d16d5da31e5a47ed1a9e62f93aa070b",
+    "md_path": "formulas/train/FQI-SRC-SILLS-4.Mod8.md",
+    "md_sha256": "491f567b55b94f57ec011e8b9685de5508481b5ed02a697f6b3eb79d7e74bd27",
+    "formula_latex_sha256": "5a5bbcebf43d15f880c9bc4eb7f3974e21b57681e3dc1e70949753109a2a9c5b",
+    "representative_source": "SILLS-4.Mod8",
+    "source_records": [
+      {
+        "id": "SILLS-4.Mod8",
+        "name": "有限 Ramanujan–Slater Mod 8 恒等式",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 135；4.Mod8",
+        "source_pages": [
+          135
+        ],
+        "pdf_pages": [
+          160
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\sum_{j=0}^n\\sum_{k=0}^{\\min(j,n-j)}q^{j^2+k^2}{j\\brack k}_{q^2}{n-k\\brack j}_{q^2}=\\sum_{j=-n-1}^{n+1}(-1)^jq^{4j^2+j}\\bigl(T_0(n,4j;q)+T_0(n,4j+1;q)\\bigr).",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；T₀见辅助定义。",
+        "finiteness_type": "finite_sum_or_product_identity",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 30,
+        "source_issues": []
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 403,
+    "id": "FQI-SRC-SILLS-4.51",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity403.lean",
+    "lean_sha256": "bb8941f11c9b6bc9b38c1d4f49c54f0bbfd7e3f559df347dde48a9d539397a80",
+    "md_path": "formulas/train/FQI-SRC-SILLS-4.51.md",
+    "md_sha256": "0890ff4c2ee6367c8330ea5b22ac9efca679e1619efa61fdc5a1c7ba2d8d0589",
+    "formula_latex_sha256": "34dec0989d5892c499834eb5b05d26c8ed3619e1768c80040c35fdf52d8c3e62",
+    "representative_source": "SILLS-4.51",
+    "source_records": [
+      {
+        "id": "SILLS-4.51",
+        "name": "Borwein A 多项式的 Gaussian 展开",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 136；4.51",
+        "source_pages": [
+          136
+        ],
+        "pdf_pages": [
+          161
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\mathsf A_n(q)=\\sum_{j=-n-1}^{n+1}(-1)^jq^{j(9j+1)/2}{2n\\brack n+3j+0}_q.",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；\\mathsf A,B,C 由(q;q³)_n(q²;q³)_n=A_n(q³)−qB_n(q³)−q²C_n(q³)定义；区别于§4.3的B_n。",
+        "finiteness_type": "finite_sum_or_product_identity",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 30,
+        "source_issues": []
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 404,
+    "id": "FQI-SRC-SILLS-4.52",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity404.lean",
+    "lean_sha256": "767a4646ebaccae277c0000e145467b6ac1506ea5b2e69412df077488b705aea",
+    "md_path": "formulas/train/FQI-SRC-SILLS-4.52.md",
+    "md_sha256": "627d3d091aa53a68fc5984871f8ce200726456881ceb35189259cc2a7bff6185",
+    "formula_latex_sha256": "7b7ea91a362ac1560bcb12ce3570e3fe94700fe7b547812f9c667bf368bbe6e6",
+    "representative_source": "SILLS-4.52",
+    "source_records": [
+      {
+        "id": "SILLS-4.52",
+        "name": "Borwein B 多项式的 Gaussian 展开",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 136；4.52",
+        "source_pages": [
+          136
+        ],
+        "pdf_pages": [
+          161
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\mathsf B_n(q)=\\sum_{j=-n-1}^{n+1}(-1)^jq^{j(9j-5)/2}{2n\\brack n+3j-1}_q.",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；\\mathsf A,B,C 由(q;q³)_n(q²;q³)_n=A_n(q³)−qB_n(q³)−q²C_n(q³)定义；区别于§4.3的B_n。",
+        "finiteness_type": "finite_sum_or_product_identity",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 30,
+        "source_issues": []
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 405,
+    "id": "FQI-SRC-SILLS-4.53",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity405.lean",
+    "lean_sha256": "31cca6abdb3a94e3583a7de1cd02f503eb6b3cc7089e393c2298c0a94eed2a47",
+    "md_path": "formulas/train/FQI-SRC-SILLS-4.53.md",
+    "md_sha256": "d2b5bf7487b8d39cf1c34743a2b2f3fc4ddf90a2bf225d0f2bf732bc2ef94891",
+    "formula_latex_sha256": "c33e2bee9141eb4d44cad32c270ca72492c702bb211d4e6f02ec5dc0afdf803e",
+    "representative_source": "SILLS-4.53",
+    "source_records": [
+      {
+        "id": "SILLS-4.53",
+        "name": "Borwein C 多项式的 Gaussian 展开",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 136；4.53",
+        "source_pages": [
+          136
+        ],
+        "pdf_pages": [
+          161
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\mathsf C_n(q)=\\sum_{j=-n-1}^{n+1}(-1)^jq^{j(9j+7)/2}{2n\\brack n+3j+1}_q.",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；\\mathsf A,B,C 由(q;q³)_n(q²;q³)_n=A_n(q³)−qB_n(q³)−q²C_n(q³)定义；区别于§4.3的B_n。",
+        "finiteness_type": "finite_sum_or_product_identity",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 30,
+        "source_issues": []
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 406,
+    "id": "FQI-SRC-SILLS-4.54",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity406.lean",
+    "lean_sha256": "cd380efdba7cb0b393b2f36d1b9ffad952f0f3e96edb931caceb520f194d90a5",
+    "md_path": "formulas/train/FQI-SRC-SILLS-4.54.md",
+    "md_sha256": "0abe904b36277955063d322a3e2c1ba79fff60ae840dd9a9a2ffa43cd771a3e5",
+    "formula_latex_sha256": "8ed5d4a9a84f5424e93681143b113cc11abe4950410ea7bb6c2d9a3939747a55",
+    "representative_source": "SILLS-4.54",
+    "source_records": [
+      {
+        "id": "SILLS-4.54",
+        "name": "Borwein A 多项式的正向有限和",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 136；4.54",
+        "source_pages": [
+          136
+        ],
+        "pdf_pages": [
+          161
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\mathsf A_n(q)=\\sum_{j=0}^{\\lfloor n/3\\rfloor}\\frac{(q^3;q^3)_{n-j-1}(1-q^{2n})(q;q)_{3j}q^{3j^2}}{(q;q)_{n-3j}(q^3;q^3)_{2j}(q^3;q^3)_j}.",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1；n=0另设A₀=1。",
+        "finiteness_type": "finite_sum_or_product_identity",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 27,
+        "source_issues": []
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 407,
+    "id": "FQI-SRC-SILLS-4.55",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity407.lean",
+    "lean_sha256": "17c121b38cac49042b4f0ac07ae64985538960f65489d61d42311b228a85df68",
+    "md_path": "formulas/train/FQI-SRC-SILLS-4.55.md",
+    "md_sha256": "584f4ea9d270bd21e3391dee317b753cc66c217f8f9e2e0cf0339d09976bf8eb",
+    "formula_latex_sha256": "9a9305112aa64aadbefad55d2ce8d6282d8266cbbc26cf34b30428383d71fc14",
+    "representative_source": "SILLS-4.55",
+    "source_records": [
+      {
+        "id": "SILLS-4.55",
+        "name": "Borwein B 多项式的正向有限和",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 136；4.55",
+        "source_pages": [
+          136
+        ],
+        "pdf_pages": [
+          161
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\mathsf B_n(q)=\\sum_{j=0}^{\\lfloor(n-1)/3\\rfloor}\\frac{(q^3;q^3)_{n-j-1}(1-q^{3j+2}-q^{n+3j+2}+q^{n+1})(q;q)_{3j}q^{3j^2+3j}}{(q;q)_{n-3j-1}(q^3;q^3)_{2j+1}(q^3;q^3)_j}.",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1；B₀=0。",
+        "finiteness_type": "finite_sum_or_product_identity",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 27,
+        "source_issues": []
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 408,
+    "id": "FQI-SRC-SILLS-4.56",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity408.lean",
+    "lean_sha256": "e6cf80d7a39e3c9c138c2ec6dea5a0f3595c3c18e41a4cc4aee4dbb1eb406483",
+    "md_path": "formulas/train/FQI-SRC-SILLS-4.56.md",
+    "md_sha256": "592907cb2e2368b15a01d2cd29066e84aa1e5f5f59c9c677578651d1e1148152",
+    "formula_latex_sha256": "c109bb7cb8c8b603dc70bfea91164cf4efb54bb5b9d99180934c718c5715b9a5",
+    "representative_source": "SILLS-4.56",
+    "source_records": [
+      {
+        "id": "SILLS-4.56",
+        "name": "Borwein C 多项式的正向有限和",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 136；4.56",
+        "source_pages": [
+          136
+        ],
+        "pdf_pages": [
+          161
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\mathsf C_n(q)=\\sum_{j=0}^{\\lfloor(n-1)/3\\rfloor}\\frac{(q^3;q^3)_{n-j-1}(1-q^{3j+1}-q^{n+3j+2}+q^n)(q;q)_{3j}q^{3j^2+3j}}{(q;q)_{n-3j-1}(q^3;q^3)_{2j+1}(q^3;q^3)_j}.",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1；C₀=0。",
+        "finiteness_type": "finite_sum_or_product_identity",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 27,
+        "source_issues": []
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 409,
+    "id": "FQI-SRC-SILLS-4.Ex3",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity409.lean",
+    "lean_sha256": "d829d0cd5acdec633a8a7b9c36f4758a046ee3ecc8e2cf3b7b5891586d2a4199",
+    "md_path": "formulas/test/FQI-SRC-SILLS-4.Ex3.md",
+    "md_sha256": "b5e2ec4aafd1ec249fd98d0d9901cbf7b6d28900ecc252f2ae931e64df3fe1fa",
+    "formula_latex_sha256": "edf0c144c02923e51d751f186edf8509a2ebb3b67bb97dd46e734d5ac0a349c2",
+    "representative_source": "SILLS-4.Ex3",
+    "source_records": [
+      {
+        "id": "SILLS-4.Ex3",
+        "name": "Borwein 多项式的耦合递推",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 137；4.Ex3",
+        "source_pages": [
+          137
+        ],
+        "pdf_pages": [
+          162
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\begin{aligned}\\mathsf A_n&=(1+q^{2n-1})\\mathsf A_{n-1}+q^n(\\mathsf B_{n-1}+\\mathsf C_{n-1}),\\\\\\mathsf B_n&=(1+q^{2n-1})\\mathsf B_{n-1}+q^{n-1}\\mathsf A_{n-1}-q^n\\mathsf C_{n-1},\\\\\\mathsf C_n&=(1+q^{2n-1})\\mathsf C_{n-1}+q^{n-1}(\\mathsf A_{n-1}-\\mathsf B_{n-1}).\\end{aligned}",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1；A₀=1，B₀=C₀=0。",
+        "finiteness_type": "finite_recurrence_or_rewrite",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 81,
+        "source_issues": []
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 410,
+    "id": "FQI-SRC-SILLS-5.6-8",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity410.lean",
+    "lean_sha256": "3b704937794eaea09592147c415a28cd5ce05505d7f2bcf8e18f026e8a005049",
+    "md_path": "formulas/train/FQI-SRC-SILLS-5.6-8.md",
+    "md_sha256": "86fbb3a63e595a19c5c9d7fb91288f56577a6c6b197dd7b56daa5b3b61a452c5",
+    "formula_latex_sha256": "44ce104c5690d39de9d14f2f2bb129e704d00b8cfda844d2c5d4677363deed24",
+    "representative_source": "SILLS-5.6-8",
+    "source_records": [
+      {
+        "id": "SILLS-5.6-8",
+        "name": "Motivated proof 中的有限系数多项式递推",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 142；5.6-8",
+        "source_pages": [
+          142
+        ],
+        "pdf_pages": [
+          167
+        ],
+        "source_category": "Chapter 5",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "A_{i+1}=A_i+B_i,\\quad B_{i+1}=q^iA_i,\\quad A_3=1,\\ B_3=0;\\qquad A_{i+1}=A_i+q^{i-1}A_{i-1}\\ (i\\ge4).",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。耦合递推i≥3；A₄=1。",
+        "finiteness_type": "finite_recurrence_or_rewrite",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "等价地A_i为从{3,…,i−2}选取互不相邻整数的q权之和，B_i=q^{i−1}A_{i−1}（i≥4）；这个有限集合解释用于独立核验。",
+        "notes": "",
+        "aliases": [
+          "印刷页144–145：初值A₂=1,A₃=1+q的变体为A_{i+1}=D_i"
+        ],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 78,
+        "source_issues": []
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 411,
+    "id": "FQI-SRC-SILLS-6.Ex1-corrected",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity411.lean",
+    "lean_sha256": "c833cbba9c0bfe0a7bcb4ba4651ef0e83f6a7bd7af49da40a63298158dc3a987",
+    "md_path": "formulas/train/FQI-SRC-SILLS-6.Ex1-corrected.md",
+    "md_sha256": "26b158ff71f15f4d589ad6f83033372e5cd2aeb742167de8cb583fd012754b4a",
+    "formula_latex_sha256": "549275676d68fc40a5e869bcdf32605331c7df1fea6d3cc6be4a32f60dff8e92",
+    "representative_source": "SILLS-6.Ex1-corrected",
+    "source_records": [
+      {
+        "id": "SILLS-6.Ex1-corrected",
+        "name": "Capparelli 相关的有限 Bailey 对",
+        "source_book": "SILLS",
+        "source_edition": "CRC Press, 2018；用户提供259页扫描本",
+        "source_file": "books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "source_locator": "印刷页 162；6.Ex1-corrected",
+        "source_pages": [
+          162
+        ],
+        "pdf_pages": [
+          187
+        ],
+        "source_category": "Chapter 6",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\mathcal B_n[\\alpha;1,q]=(-1;q^3)_n/((q;q)_{2n}(-1;q)_n),\\qquad \\alpha_n=\\begin{cases}1,&n=0,\\\\-q^{(9r^2+9r+2)/2},&n=3r+1,\\\\-q^{(9r^2-9r+2)/2},&n=3r-1,\\\\q^{3r(3r-1)/2}(1+q^{3r}),&n=3r>0,\\end{cases}",
+        "conditions": "整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。",
+        "finiteness_type": "terminating_basic_hypergeometric_identity",
+        "finiteness_reason": "固定非负整数参数后仅有有限个非零求和项或有限长度乘积。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "\\mathcal B_n[\\alpha;x,q]:=\\sum_{r=0}^n\\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).",
+        "notes": "原印n=3r−1的指数常数为−2，改为+2；n=3r指数缺r因子。两处修订以Bailey反演和精确检验核对。",
+        "aliases": [],
+        "transcription_changes": [
+          "统一 Gaussian 与 q-Pochhammer 记号；双边和按 Gaussian/q-三项式的有限支撑解释。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "validation_report": "reports/SILLS_validation.json",
+        "notation_file": "records/SILLS_supplement.md",
+        "validation_checks": 30,
+        "source_issues": [
+          "SILLS-ISSUE-21",
+          "SILLS-ISSUE-22"
+        ],
+        "source_corrections": [
+          {
+            "locator": "§6.4 习题1",
+            "original": "n=3r−1分支的指数常数为−2，应为+2。",
+            "resolution": "分支分别修订，并用Bailey反演及有限和检查。",
+            "status": "explicit_correction"
+          },
+          {
+            "locator": "§6.4 习题1",
+            "original": "n=3r分支指数3(3r−1)/2遗漏r，应为3r(3r−1)/2。",
+            "resolution": "分支分别修订，并用Bailey反演及有限和检查。",
+            "status": "explicit_correction"
+          }
+        ]
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 412,
+    "id": "FQI-SRC-KAC-CHEUNG-1.11-12",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity412.lean",
+    "lean_sha256": "ed9645bcaa056c444c245889f7a8ecf35a76d04265b03523c4d670b0faab6b8a",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-1.11-12.md",
+    "md_sha256": "53001b6dc7067864506f730949007eedcc76e1adb7249b715ae8abc88d7f04a0",
+    "formula_latex_sha256": "1dfdcba8bffc1d914727f5ca3d04cbe80bd619a97e435ba0fbe2dbfe79303063",
+    "representative_source": "KAC-CHEUNG-1.11-12",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-1.11-12",
+        "name": "q 导数乘法规则",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 3；1.11-12",
+        "source_pages": [
+          3
+        ],
+        "pdf_pages": [
+          13
+        ],
+        "source_category": "Chapter 1",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_q(fg)(x)=f(qx)D_qg(x)+g(x)D_qf(x)=f(x)D_qg(x)+g(qx)D_qf(x).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。f,g为多项式或有理函数，所需点处有定义；x≠0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 192
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 413,
+    "id": "FQI-SRC-KAC-CHEUNG-1.13-14",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity413.lean",
+    "lean_sha256": "1c91d9e0fbc4872b7e6a05f7072e7cb454eafc20fb162fed06cf3c3bd91e8da4",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-1.13-14.md",
+    "md_sha256": "e30cb0f357288150c3af989fcedd493550af2884bf5bcb4e5470188cee598d18",
+    "formula_latex_sha256": "f3f5c92bede0950e8ecbbb7117125120f61af16d5f64156dbbe495f32cf8330b",
+    "representative_source": "KAC-CHEUNG-1.13-14",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-1.13-14",
+        "name": "q 导数商法则",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 3；1.13-14",
+        "source_pages": [
+          3
+        ],
+        "pdf_pages": [
+          13
+        ],
+        "source_category": "Chapter 1",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_q(f/g)(x)=\\frac{g(x)D_qf(x)-f(x)D_qg(x)}{g(x)g(qx)}=\\frac{g(qx)D_qf(x)-f(qx)D_qg(x)}{g(x)g(qx)}.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。f,g为多项式或有理函数；xg(x)g(qx)≠0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 192
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 414,
+    "id": "FQI-SRC-KAC-CHEUNG-1.15",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity414.lean",
+    "lean_sha256": "be5c84fb4d2a41e3b4b3f0a2bd6161f825cdb7a9073b4518e8cd20ce841a8122",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-1.15.md",
+    "md_sha256": "dec1b85ee7da7e435531a115bfb4619430202484b157612b1436f335cace09db",
+    "formula_latex_sha256": "e90932341fe3d5813e99518a4ba221d1b304967002867b663efa25f386eba746",
+    "representative_source": "KAC-CHEUNG-1.15",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-1.15",
+        "name": "幂代换的 q 链式规则",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 4；1.15",
+        "source_pages": [
+          4
+        ],
+        "pdf_pages": [
+          14
+        ],
+        "source_category": "Chapter 1",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_q(f\\circ u)(x)=(D_{q^\\beta}f)(u(x))D_qu(x),\\qquad u(x)=\\alpha x^\\beta.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。β为非零整数，αx≠0，q^β≠1；f为有理函数。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "原书允许一般幂；本表明确限制整数幂，保持有限有理式。",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 160
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 415,
+    "id": "FQI-SRC-KAC-CHEUNG-3.5",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity415.lean",
+    "lean_sha256": "dd6253dee4bf287ec2c80d5faa9e330c95779f741e1654a7f24f653819eca66b",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-3.5.md",
+    "md_sha256": "eedf151ca95312ae76aee9dec6c8a3447622de6e42a78f6e2173bd24f9d890e8",
+    "formula_latex_sha256": "bd6cd818b896ecb27a490a59280167fdc1ec02578ce17443ca91ae0d847de7c9",
+    "representative_source": "KAC-CHEUNG-3.5",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-3.5",
+        "name": "有限 q 幂的降阶导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 8；3.5",
+        "source_pages": [
+          8
+        ],
+        "pdf_pages": [
+          18
+        ],
+        "source_category": "Chapter 3",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_qP_n(x,a;q)=[n]_qP_{n-1}(x,a;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n∈Z；n=0右侧为0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [
+          "Proposition 3.3，p10",
+          "附录p106第三行的整数阶情形"
+        ],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 64
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 416,
+    "id": "FQI-SRC-KAC-CHEUNG-3.6",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity416.lean",
+    "lean_sha256": "d7a444d7b3cc52cf434c83e5cb05750858c58d03b9b8623437edc8f7a6141039",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-3.6.md",
+    "md_sha256": "aa145a2c8c5b62a1a0d25c667d9e97d58357169f923a1513da655e52d808b29f",
+    "formula_latex_sha256": "e847a4f7bccb31f89c4b5dd8e77736d17916be0fe2553996ed86b0d0b4717b14",
+    "representative_source": "KAC-CHEUNG-3.6",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-3.6",
+        "name": "有限 q 幂的指标相加",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 8；3.6",
+        "source_pages": [
+          8
+        ],
+        "pdf_pages": [
+          18
+        ],
+        "source_category": "Chapter 3",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "P_{m+n}(x,a;q)=P_m(x,a;q)P_n(x,q^ma;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。m,n∈Z。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [
+          "Proposition 3.2，p9",
+          "(14.2)的整数参数情形"
+        ],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 400
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 417,
+    "id": "FQI-SRC-KAC-CHEUNG-3.9",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity417.lean",
+    "lean_sha256": "573fba4692ed49a92da8ed8c57668dd2f0411fa65b27d9773bad89d72ff3442f",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-3.9.md",
+    "md_sha256": "8b3e9da18de089494fde84554c5eb02734886c9df3d6d85d486e2688747b9411",
+    "formula_latex_sha256": "c7123e7e48e8dbc90bb1bc606d444cf392001507abde18198b5d09c1b9d57c93",
+    "representative_source": "KAC-CHEUNG-3.9",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-3.9",
+        "name": "有限 q 幂的交换与倒序",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 11；3.9",
+        "source_pages": [
+          11
+        ],
+        "pdf_pages": [
+          21
+        ],
+        "source_category": "Chapter 3",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "P_n(a,x;q)=(-1)^nq^{n(n-1)/2}P_n(x,q^{1-n}a;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n∈Z。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 40
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 418,
+    "id": "FQI-SRC-KAC-CHEUNG-3.10",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity418.lean",
+    "lean_sha256": "cf9936793065dec5dc30f6be9d2a4cefd93061037c2fc966c6651830ad8b6776",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-3.10.md",
+    "md_sha256": "7f624685ec351dc21544701df63c73a8a7e41c3429249ad96630389d682ffdbb",
+    "formula_latex_sha256": "d09d4a6a60dd4455679caf2c4f296e6e8c1c9ca4eff777cf90b566edec877d11",
+    "representative_source": "KAC-CHEUNG-3.10",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-3.10",
+        "name": "有限 q 幂倒数的导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 11；3.10",
+        "source_pages": [
+          11
+        ],
+        "pdf_pages": [
+          21
+        ],
+        "source_category": "Chapter 3",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_q\\frac1{P_n(x,a;q)}=[-n]_qP_{-n-1}(x,q^na;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n∈Z。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "附录p106第五行原印分母多出q因子；作为本式反写时显式修正，见辅助说明。",
+        "aliases": [
+          "附录p106第五行，经移位及因子修订改写"
+        ],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 64
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 419,
+    "id": "FQI-SRC-KAC-CHEUNG-3.11",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity419.lean",
+    "lean_sha256": "a21320a06bbddda02b77d0d910a22a90ecd6b035ce2571769dc1e156c748a837",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-3.11.md",
+    "md_sha256": "9970ded3925c3d80da7e2330c99a480ed02656ff51d6c666ccc8829060f6672f",
+    "formula_latex_sha256": "44044eed95b5922689d0a9c7ce6d0ea3eedf503cefa30d548b42ca90daa7b30c",
+    "representative_source": "KAC-CHEUNG-3.11",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-3.11",
+        "name": "第二变量的有限 q 幂导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 11；3.11",
+        "source_pages": [
+          11
+        ],
+        "pdf_pages": [
+          21
+        ],
+        "source_category": "Chapter 3",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_{q,x}P_n(a,x;q)=-[n]_qP_{n-1}(a,qx;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n∈Z。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [
+          "(14.3)的整数阶情形",
+          "附录p106第四行，原印反导数缺负号"
+        ],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 64
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 420,
+    "id": "FQI-SRC-KAC-CHEUNG-3.12",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity420.lean",
+    "lean_sha256": "40c402d600dccadcefab6a45cc3a6dce4e6ffb46aeaa2df203605eeecc085d43",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-3.12.md",
+    "md_sha256": "f42783aefd89e7d94a10da5b3aad6766538068bd254b28a40b0dfc25c5de8053",
+    "formula_latex_sha256": "40e06ab17a0dc2f7e8d73afb635726444dfed32219eae95e504a3b43b32d11ba",
+    "representative_source": "KAC-CHEUNG-3.12",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-3.12",
+        "name": "第二变量的有限 q 幂倒数导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 11；3.12",
+        "source_pages": [
+          11
+        ],
+        "pdf_pages": [
+          21
+        ],
+        "source_category": "Chapter 3",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_{q,x}\\frac1{P_n(a,x;q)}=\\frac{[n]_q}{P_{n+1}(a,x;q)}.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n∈Z。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "最终编号式正确；上方推导有q指数笔误，见来源疑点。",
+        "aliases": [
+          "附录p106第六行，经指标移位"
+        ],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 64
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 421,
+    "id": "FQI-SRC-KAC-CHEUNG-4.1",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity421.lean",
+    "lean_sha256": "806c8e72154a825e7c5020f5b94b24c1b0e75bb2227e4ee2ab5849a00736adc5",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-4.1.md",
+    "md_sha256": "38dd086c9a77f56ec30692614ca170780e57246fd22075cee40668b5b348c8db",
+    "formula_latex_sha256": "c67ad44c4d00bcf8134c0d4cd903d9e5ff19251d4bb8acc43630318338446284",
+    "representative_source": "KAC-CHEUNG-4.1",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-4.1",
+        "name": "多项式的有限 q-Taylor 展开",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 12；4.1",
+        "source_pages": [
+          12
+        ],
+        "pdf_pages": [
+          22
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "f(x)=\\sum_{j=0}^N\\frac{(D_q^jf)(c)}{[j]_q!}P_j(x,c;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。deg f≤N，N≥0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [
+          "Theorem 4.1",
+          "(20.4)对次数≤N多项式的零余项情形"
+        ],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 48
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 422,
+    "id": "FQI-SRC-KAC-CHEUNG-4.3",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity422.lean",
+    "lean_sha256": "bbf8206757f7b5bb3ffb88ee6a691b1743f2b3aff0813f1ce5190686fdf58c64",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-4.3.md",
+    "md_sha256": "0d0c291101c6062617c3f7bc8c047847fd4eb7fb8d58f8f42863d7b145d63c40",
+    "formula_latex_sha256": "c1ece9fa61b488769a1c8935cd08a8902510707f00f6eafca500b28ae2ead8fc",
+    "representative_source": "KAC-CHEUNG-4.3",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-4.3",
+        "name": "单项式的高阶 q 导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 12；4.3",
+        "source_pages": [
+          12
+        ],
+        "pdf_pages": [
+          22
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_q^jx^n=\\begin{cases}\\dfrac{[n]_q!}{[n-j]_q!}x^{n-j},&0\\le j\\le n,\\\\0,&j>n.\\end{cases}",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n,j≥0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "这里取(4.2)末式的一般x形式；(4.3)为x=1的特例。",
+        "aliases": [
+          "(4.2)推导末式"
+        ],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 108
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 423,
+    "id": "FQI-SRC-KAC-CHEUNG-4.4",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity423.lean",
+    "lean_sha256": "bbe18b576d6f34ad973468533c3bbeed89b6b8e67db62f55c5630461b23ebf77",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-4.4.md",
+    "md_sha256": "e483075ad2b43a8ec0cc7b3d448f921d137f2d9266b781b5ba9584b46d27ad72",
+    "formula_latex_sha256": "532be8863382429b4af4a59371b0dd3eb4ca43a7f8ca02d1bb868e542dd29317",
+    "representative_source": "KAC-CHEUNG-4.4",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-4.4",
+        "name": "单项式的有限 q 幂展开",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 12；4.4",
+        "source_pages": [
+          12
+        ],
+        "pdf_pages": [
+          22
+        ],
+        "source_category": "Chapter 4",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "x^n=\\sum_{j=0}^n{n\\brack j}_qP_j(x,1;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 32
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 424,
+    "id": "FQI-SRC-KAC-CHEUNG-5.1",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity424.lean",
+    "lean_sha256": "87a6a06115b2f7110ace72ba54e2306bc621f07cbb8b230262858bca8efaaa04",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-5.1.md",
+    "md_sha256": "d2e3230b8f00a2ea1bf7db8e08a19a8f1593f0f9f9c1415c16fa9c4783956ac6",
+    "formula_latex_sha256": "c504eab10597e2c628c3ea0eff102a63a17289ead6e8bdc4472fcb5a958b7393",
+    "representative_source": "KAC-CHEUNG-5.1",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-5.1",
+        "name": "有限 q 幂的高阶导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 14；5.1",
+        "source_pages": [
+          14
+        ],
+        "pdf_pages": [
+          24
+        ],
+        "source_category": "Chapter 5",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_q^jP_n(x,-a;q)=\\frac{[n]_q!}{[n-j]_q!}P_{n-j}(x,-a;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。0≤j≤n。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [
+          "(5.2)是x=0的特例"
+        ],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 84
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 425,
+    "id": "FQI-SRC-KAC-CHEUNG-5.7",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity425.lean",
+    "lean_sha256": "fa7bfbfae1de6d6fdeaefd41e14a56f2cd236cd0158676f2ceb79418f84bb22c",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-5.7.md",
+    "md_sha256": "a8096d1127e79f98b155d9cff8e7a029a5ad2515073bfbf4569310f8fa09e6d3",
+    "formula_latex_sha256": "762e424efdfdb0c43359745e0dc5ebb33ce2ecff95d534c213fc66ef6db2cc36",
+    "representative_source": "KAC-CHEUNG-5.7",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-5.7",
+        "name": "乘法算子和 q 移位的交换",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 15；5.7",
+        "source_pages": [
+          15
+        ],
+        "pdf_pages": [
+          25
+        ],
+        "source_category": "Chapter 5",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "M_qX=qXM_q,\\qquad (Xf)(x)=xf(x),\\quad(M_qf)(x)=f(qx).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。作用于多项式。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 96
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 426,
+    "id": "FQI-SRC-KAC-CHEUNG-5.8",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity426.lean",
+    "lean_sha256": "2d61847641ef82466e7fdb8726ea2fa48df24770a9dd556d8cdc617847af56c6",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-5.8.md",
+    "md_sha256": "25eb6ae71caad99f4b6f2f92f8cc8f587007939357c10e57b084c4a71b03e38b",
+    "formula_latex_sha256": "9442c87e31f4b4045ad6b8992d28b485cb6bab85639e96c64e7e9bd53473a81f",
+    "representative_source": "KAC-CHEUNG-5.8",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-5.8",
+        "name": "q 交换算子的有限二项式定理",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 15；5.8",
+        "source_pages": [
+          15
+        ],
+        "pdf_pages": [
+          25
+        ],
+        "source_category": "Chapter 5",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "(X+Y)^n=\\sum_{j=0}^n{n\\brack j}_qX^jY^{n-j},\\qquad YX=qXY.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥0；含单位元的结合代数。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "原书Theorem5.1；验证用有限矩阵直接乘方。",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 32
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 427,
+    "id": "FQI-SRC-KAC-CHEUNG-6.5",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity427.lean",
+    "lean_sha256": "1c85eb9e4c70451d14dce7cee816d800ea9d7adae9718f4d8a668c8d25aebe55",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-6.5.md",
+    "md_sha256": "eebf8a55ab834e25af28c51cfb19450a5761d489acb2d8d692e4cdf00598ff9f",
+    "formula_latex_sha256": "d6049ee593578e008d4975aae442b630e73376d17c5c1ac9dc6f693a30b433fb",
+    "representative_source": "KAC-CHEUNG-6.5",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-6.5",
+        "name": "Gaussian 的加权子集表示",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 19；6.5",
+        "source_pages": [
+          19
+        ],
+        "pdf_pages": [
+          29
+        ],
+        "source_category": "Chapter 6",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "{n\\brack j}_q=\\sum_{\\substack{S\\subseteq\\{1,\\ldots,n\\}\\\\|S|=j}}q^{\\sum_{s\\in S}s-j(j+1)/2}.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥0，0≤j≤n。",
+        "finiteness_type": "finite_sum",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 144
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 428,
+    "id": "FQI-SRC-KAC-CHEUNG-7.2",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity428.lean",
+    "lean_sha256": "e54ce18dbb9da80a1e52d8f78abe2013491ca194e42c61caad3218f1fba32c25",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-7.2.md",
+    "md_sha256": "3b7e3293678217b57889929ad33d4a39e5f12764007c999600945b8f2ebe501f",
+    "formula_latex_sha256": "7a07ba876e79953799a636e9c006bdb3e5272d27bf5cc0f13d6ac00719d255d4",
+    "representative_source": "KAC-CHEUNG-7.2",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-7.2",
+        "name": "有序线性无关向量组计数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 22；7.2",
+        "source_pages": [
+          22
+        ],
+        "pdf_pages": [
+          32
+        ],
+        "source_category": "Chapter 7",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\#\\{(v_1,\\ldots,v_j)\\in(\\mathbb F_q^n)^j:\\operatorname{rank}(v_1,\\ldots,v_j)=j\\}=\\prod_{i=0}^{j-1}(q^n-q^i).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q为素数幂；0≤j≤n。",
+        "finiteness_type": "finite_enumeration",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 10
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 429,
+    "id": "FQI-SRC-KAC-CHEUNG-7.rank",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity429.lean",
+    "lean_sha256": "28f0e0b0363c0f8c4da1e4ff07a94555cef8ab26a7d11ff17770215c1481f7f8",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-7.rank.md",
+    "md_sha256": "8db95b4cca6fda4b5b9ce247bbbe0a313148c89aad5c82b6cfecd640182d1bf6",
+    "formula_latex_sha256": "a73b5d63e42efb83c6a5ea426eaf081a4bbacd4e8d03d7e679e7dcfa3f5f8782",
+    "representative_source": "KAC-CHEUNG-7.rank",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-7.rank",
+        "name": "有限域定秩矩阵计数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 25；7.rank",
+        "source_pages": [
+          25
+        ],
+        "pdf_pages": [
+          35
+        ],
+        "source_category": "Chapter 7",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\#\\{A\\in\\mathbb F_q^{m\\times n}:\\operatorname{rank}A=j\\}={n\\brack j}_q{m\\brack j}_q\\prod_{i=0}^{j-1}(q^j-q^i)={n\\brack j}_q\\prod_{i=0}^{j-1}(q^m-q^i).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q为素数幂；0≤j≤min(m,n)。",
+        "finiteness_type": "finite_enumeration",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "p24–25无编号Exercise答案；证明应选择核和像，再选商空间到像的同构，见疑点说明。",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 60
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 430,
+    "id": "FQI-SRC-KAC-CHEUNG-7.8",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity430.lean",
+    "lean_sha256": "55b8c7566b852cf6541aba10fef7a050a2fedc316d9dc2d9881454d6236b1e1f",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-7.8.md",
+    "md_sha256": "684872b12c67ea1b50098f02fe14d4901dd6b699900ea8143227450da4456d8c",
+    "formula_latex_sha256": "fcfd093342a6946d1b15ac20fcb827dc9b2c954afeaa855ca686eef528fcbc39",
+    "representative_source": "KAC-CHEUNG-7.8",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-7.8",
+        "name": "Galois 数递推",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 25；7.8",
+        "source_pages": [
+          25
+        ],
+        "pdf_pages": [
+          35
+        ],
+        "source_category": "Chapter 7",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "G_{n+1}=2G_n+(q^n-1)G_{n-1},\\quad G_0=1,\\quad G_1=2.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥1。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "G_n=\\sum_{j=0}^n{n\\brack j}_q\\quad\\text{(7.7)}.",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 28
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 431,
+    "id": "FQI-SRC-KAC-CHEUNG-8.reciprocal",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity431.lean",
+    "lean_sha256": "cfe693a3ff46f74c730223bb941154af2a988c7616f0f878641e17900335bb66",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-8.reciprocal.md",
+    "md_sha256": "6af6ce7d04a46ef49c51fb07df3534f0f651e48b73ecf227554f565de87cc520",
+    "formula_latex_sha256": "e96f8211e4b3606244b7cf075770e736757308795948f7a0a1f39354e635e319",
+    "representative_source": "KAC-CHEUNG-8.reciprocal",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-8.reciprocal",
+        "name": "有限倒数乘积的高阶 q 导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 28；8.reciprocal",
+        "source_pages": [
+          28
+        ],
+        "pdf_pages": [
+          38
+        ],
+        "source_category": "Chapter 8",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_q^j\\frac1{P_n(1,x;q)}=\\frac{\\prod_{r=0}^{j-1}[n+r]_q}{P_{n+j}(1,x;q)}.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥1，j≥0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [
+          "(14.5)/(14.6)的整数阶情形"
+        ],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 100
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 432,
+    "id": "FQI-SRC-KAC-CHEUNG-13.10",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity432.lean",
+    "lean_sha256": "4196e9fb48eeeabfc09a829a48f65e4a8a7e8b9ebecd57b58a8555f98160152d",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-13.10.md",
+    "md_sha256": "362cf390f4900a0f299c87732891d1622b49733a62ce63cd60a8e8e406f1c6eb",
+    "formula_latex_sha256": "b3a9b6bd3d53a22c9e6f0a3cb4d48b3112eebdca1240f023fc0d8d56a0341f86",
+    "representative_source": "KAC-CHEUNG-13.10",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-13.10",
+        "name": "倒底数有限乘积转换",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 44；13.10",
+        "source_pages": [
+          44
+        ],
+        "pdf_pages": [
+          54
+        ],
+        "source_category": "Chapter 13",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\prod_{j=0}^{n-1}(a-q^{-j})=(-1)^nq^{-n(n-1)/2}(a;q)_n.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥0。",
+        "finiteness_type": "finite_product",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 32
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 433,
+    "id": "FQI-SRC-KAC-CHEUNG-14.higher",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity433.lean",
+    "lean_sha256": "56b6e7e56488a831ea405bc9810702caf0042787e7307f6a513fb7bfe2739640",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-14.higher.md",
+    "md_sha256": "40602066f983257d1d2b8e469d04c8b78833a94e2dd44e79038b736fa92f01b0",
+    "formula_latex_sha256": "aa313b88b1bde2d34e4c938b3851b45af788f35d134a5e5563edd0859be2c357",
+    "representative_source": "KAC-CHEUNG-14.higher",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-14.higher",
+        "name": "第二变量有限 q 幂的高阶导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 48；14.higher",
+        "source_pages": [
+          48
+        ],
+        "pdf_pages": [
+          58
+        ],
+        "source_category": "Chapter 14",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "D_q^jP_n(1,-x;q)=q^{j(j-1)/2}\\frac{[n]_q!}{[n-j]_q!}P_{n-j}(1,-q^jx;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。0≤j≤n。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "p48无编号的一般α公式限制为α=n≥0；明确的整数阶特化。",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 84
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 434,
+    "id": "FQI-SRC-KAC-CHEUNG-15.cancellation",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity434.lean",
+    "lean_sha256": "93f4f45a1162b9e199fcd1e2cabd620e2d5272b9ed09e7acaffc44ba03070bf2",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-15.cancellation.md",
+    "md_sha256": "b37b912679e4aa27e83fdf17c1326ca55141cc81f2208ff9c49cc01806a4a136",
+    "formula_latex_sha256": "8ae71158766212841d807e625595c9abd4d1433206facac19af4f3a07fb8d3fd",
+    "representative_source": "KAC-CHEUNG-15.cancellation",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-15.cancellation",
+        "name": "双边求和证明中的有限乘积消去",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 53；15.cancellation",
+        "source_pages": [
+          53
+        ],
+        "pdf_pages": [
+          63
+        ],
+        "source_category": "Chapter 15",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\frac{(q/(ax);q)_{M-1}x^{M-1}}{(q^{1-M}ax;q)_{M-1}}=(-1)^{M-1}q^{M(M-1)/2}a^{1-M}.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。M≥1，ax≠0。",
+        "finiteness_type": "finite_product",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "原书以正整数m记M；仅收证明中的有限部分，不收无限双边求和。",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 32
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 435,
+    "id": "FQI-SRC-KAC-CHEUNG-19.telescoping",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity435.lean",
+    "lean_sha256": "03d4be135bea43331bde5a5174a2080fe832c68ab13800e2541b8a1edeb1e946",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-19.telescoping.md",
+    "md_sha256": "2f482c1efe02a8c4cd088b9c36d343cd9d5023ee16cb642deb4a709cc1394194",
+    "formula_latex_sha256": "e4e25ed7feca690e5ac10379f7e2375655226388ef101a448028f031a8c7ced9",
+    "representative_source": "KAC-CHEUNG-19.telescoping",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-19.telescoping",
+        "name": "Jackson 证明中的有限伸缩和",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 69；19.telescoping",
+        "source_pages": [
+          69
+        ],
+        "pdf_pages": [
+          79
+        ],
+        "source_category": "Chapter 19",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "(1-q)x\\sum_{j=0}^Nq^j(D_qF)(q^jx)=F(x)-F(q^{N+1}x).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。N≥0，x≠0；F为多项式或有理函数，在所需点有定义。",
+        "finiteness_type": "finite_sum",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [
+          "p69无编号",
+          "(19.11)为单个q格点区间的积分对应"
+        ],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 96
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 436,
+    "id": "FQI-SRC-KAC-CHEUNG-26.5",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity436.lean",
+    "lean_sha256": "f0ef49f527012c9b1f733176a398a573b8a33bc61ad7f7b703043f9926acce44",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-26.5.md",
+    "md_sha256": "1926247200c8e7005dba29fd07d341817842f393a60038d1f3a7b8635e6d06b2",
+    "formula_latex_sha256": "cc7d927ddb55bfe2f0b3cd10857ecc797bb81a38e2837583125085fd0aac6ca3",
+    "representative_source": "KAC-CHEUNG-26.5",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.5",
+        "name": "对称 q 导数乘法规则",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 99；26.5",
+        "source_pages": [
+          99
+        ],
+        "pdf_pages": [
+          109
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\widetilde D_q(fg)(x)=f(qx)\\widetilde D_qg(x)+g(q^{-1}x)\\widetilde D_qf(x)=f(q^{-1}x)\\widetilde D_qg(x)+g(qx)\\widetilde D_qf(x).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1；f,g为有理函数，x≠0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 192
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 437,
+    "id": "FQI-SRC-KAC-CHEUNG-26.6",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity437.lean",
+    "lean_sha256": "a78e9f5958a256bee26aa2a6b5cb53660ee868e21b805daa38bd4aca47230551",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-26.6.md",
+    "md_sha256": "0a2b2edb3e2c52b575cc15618d656d88f6d064356f5a7733b7467c19ad37bee6",
+    "formula_latex_sha256": "ec580889a7bd243388f39f7a98bfec604a6a837628cebc37808266d4f268fbaa",
+    "representative_source": "KAC-CHEUNG-26.6",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.6",
+        "name": "对称 q 导数商法则",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 99；26.6",
+        "source_pages": [
+          99
+        ],
+        "pdf_pages": [
+          109
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\widetilde D_q(f/g)(x)=\\frac{g(q^{-1}x)\\widetilde D_qf(x)-f(q^{-1}x)\\widetilde D_qg(x)}{g(qx)g(q^{-1}x)}=\\frac{g(qx)\\widetilde D_qf(x)-f(qx)\\widetilde D_qg(x)}{g(qx)g(q^{-1}x)}.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1；f,g为有理函数，xg(qx)g(q^{-1}x)≠0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 192
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 438,
+    "id": "FQI-SRC-KAC-CHEUNG-26.7",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity438.lean",
+    "lean_sha256": "8c597b9bcfa53cd50d5cb4184ccec2d85f9b4ef3581d15b38ea9e6232e15316f",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-26.7.md",
+    "md_sha256": "39f07635dca6dfba20765941d1b9e0a8f8776ce2c8cb46d70ab0a7fed06d3931",
+    "formula_latex_sha256": "2a34811838e4c9c6f6c0e84947715558fd6e25e15a5554f6baa678f0f51f9941",
+    "representative_source": "KAC-CHEUNG-26.7",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.7",
+        "name": "对称 q 单项式导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 100；26.7",
+        "source_pages": [
+          100
+        ],
+        "pdf_pages": [
+          110
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\widetilde D_qx^n=\\langle n\\rangle_qx^{n-1}.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1，n≥0；n=0按0解释。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 32
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 439,
+    "id": "FQI-SRC-KAC-CHEUNG-26.10",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity439.lean",
+    "lean_sha256": "ca9768d9f9fa720a80c8ad5bfd1a1789aeee766e3a65c732949de605ba13cb5f",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-26.10.md",
+    "md_sha256": "b98af43afec35aaf15e37ff4df55c1d6943e757d67d5036f9127d600c6d9f0a8",
+    "formula_latex_sha256": "d06cd33bfc254e7bf8a02719c6d81d2bde8373cec782a4b72bfd737bb5110978",
+    "representative_source": "KAC-CHEUNG-26.10",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.10",
+        "name": "对称有限 q 幂的降阶导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 100；26.10",
+        "source_pages": [
+          100
+        ],
+        "pdf_pages": [
+          110
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\widetilde D_qS_n(x,a;q)=\\langle n\\rangle_qS_{n-1}(x,a;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1，n≥1。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 28
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 440,
+    "id": "FQI-SRC-KAC-CHEUNG-26.12",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity440.lean",
+    "lean_sha256": "6e8ea0bc1dd67c5182e9d4db5c5f25c60fc5dc6004379ebfda7d82bb873d42c3",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-26.12.md",
+    "md_sha256": "6cc9929168613cd01c9218c0241245ad29c8dce743488f59e2d26f5f0feee580",
+    "formula_latex_sha256": "7700e27701246c6af209a26facf1b8625b43b0f8e3843cb1986a62326bf2a981",
+    "representative_source": "KAC-CHEUNG-26.12",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.12",
+        "name": "对称有限 q 二项式定理",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 100；26.12",
+        "source_pages": [
+          100
+        ],
+        "pdf_pages": [
+          110
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "S_n(x,-a;q)=\\sum_{j=0}^n\\left\\langle{n\\atop j}\\right\\rangle_q a^{n-j}x^j.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1，n≥0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 32
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 441,
+    "id": "FQI-SRC-KAC-CHEUNG-26.14",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity441.lean",
+    "lean_sha256": "9c1038cc250f3a297a2a6cd7a94172be60248f790c9a436408219e1a71a1fdd1",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-26.14.md",
+    "md_sha256": "98623e0373a455cf5ead28477333e29f3f081078bb45becfcf0bbe466e223652",
+    "formula_latex_sha256": "974ccae9a29205b1a83bc6bf8c07cbef985b0332a454b05d1ebaefc6015980d4",
+    "representative_source": "KAC-CHEUNG-26.14",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.14",
+        "name": "对称有限乘积的交换",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 101；26.14",
+        "source_pages": [
+          101
+        ],
+        "pdf_pages": [
+          111
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "S_n(1,x;q)=(-1)^nS_n(x,1;q).",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 32
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 442,
+    "id": "FQI-SRC-KAC-CHEUNG-26.15",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity442.lean",
+    "lean_sha256": "e0715b3e23cae502cbd9b1ee9c6969811bdd6c92f262fd4d3f52ffef2da581be",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-26.15.md",
+    "md_sha256": "aeb116dffcd66f13c66efb26f2e51b5c7f68c8081e02a7fd0529d512a5e640d4",
+    "formula_latex_sha256": "16a9c412692f3056a1eba6e1ddb34f3d60613ae28b255cd640f6a7b2ca325796",
+    "representative_source": "KAC-CHEUNG-26.15",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.15",
+        "name": "对称有限乘积倒数的导数",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 101；26.15",
+        "source_pages": [
+          101
+        ],
+        "pdf_pages": [
+          111
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "\\widetilde D_q\\frac1{S_n(1,x;q)}=\\frac{\\langle n\\rangle_q}{S_{n+1}(1,x;q)}.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1，n≥0。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 32
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 443,
+    "id": "FQI-SRC-KAC-CHEUNG-26.21",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity443.lean",
+    "lean_sha256": "748b62f9da473cd3a11aee6612bca7cc5d61b4a226e17449476f7cbe764c1037",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-26.21.md",
+    "md_sha256": "46b6ecd9fa706022811d9a8e79bc51539bee641bea62dfaf31de3c51f2497496",
+    "formula_latex_sha256": "a6442e0540ee23d86f8d8467297fed44850ba0f51ccf7cdd61e3f49575fc25a6",
+    "representative_source": "KAC-CHEUNG-26.21",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.21",
+        "name": "一般量子 Taylor 多项式根和递推",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 103；26.21",
+        "source_pages": [
+          103
+        ],
+        "pdf_pages": [
+          113
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "s_n=\\frac{[n]_{q,r}}{[n-1]_{q,r}}s_{n-1}+\\frac{n(q^{n-1}h-r^{n-1}h^{\\prime})-[n]_{q,r}(h-h^{\\prime})}{q^{n-1}-r^{n-1}}.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥2；q≠r，q^{n−1}≠r^{n−1}；所用[k]_{q,r}非零。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "一般量子差分、根和s_n及非嵌套Taylor基底T_n的定义见辅助说明。",
+        "notes": "原q′统一写r；仅保留各次多项式的根和关系，不能据此假设各次根嵌套。",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 15
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 444,
+    "id": "FQI-SRC-KAC-CHEUNG-26.22",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity444.lean",
+    "lean_sha256": "190be649f6680771500603d634befe01833ee6092f9bbdaf1902abdc82979d67",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-26.22.md",
+    "md_sha256": "f90ef151b153d43559fc33affd06948d1e5520e08c20fa2a6e60de6a81b09aea",
+    "formula_latex_sha256": "9f5804ed38c8f87fc636f0f7d384f70566fe84f65e009341b5db68c5df533ab7",
+    "representative_source": "KAC-CHEUNG-26.22",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.22",
+        "name": "相同伸缩参数下的根和递推",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 103；26.22",
+        "source_pages": [
+          103
+        ],
+        "pdf_pages": [
+          113
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "s_n=\\frac{nq}{n-1}s_{n-1}+\\frac{n(h+h^{\\prime})}{2}.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥2；r=q≠0，h≠h′。",
+        "finiteness_type": "finite_polynomial",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "s_n为一般量子Taylor多项式T_n的根和；见辅助说明。",
+        "notes": "",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 5
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 445,
+    "id": "FQI-SRC-KAC-CHEUNG-26.rootsum",
+    "split": "test",
+    "lean_path": "lean/Benchmark/Statements/Test/Identity445.lean",
+    "lean_sha256": "be5f5c1af7dfec9e57fe8fa537c1a732425bbce5fdb3a52cf493bb2d2a1a3997",
+    "md_path": "formulas/test/FQI-SRC-KAC-CHEUNG-26.rootsum.md",
+    "md_sha256": "daa62f15760749569e84feca0034884fb692c4555a21f2800eeb837053bb8eb3",
+    "formula_latex_sha256": "aa12aca12a80193e1d90ba5b82e745eb81f730cb76e2ce24d679ecd6e88eac38",
+    "representative_source": "KAC-CHEUNG-26.rootsum",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.rootsum",
+        "name": "相同平移参数的根和有限解",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "印刷页 103；26.rootsum",
+        "source_pages": [
+          103
+        ],
+        "pdf_pages": [
+          113
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "s_n=(a-h)[n]_{q,r}+h[n]_{q,r}\\sum_{j=1}^n\\frac{j}{[j]_{q,r}},\\qquad s_1=a.",
+        "conditions": "空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥1；h′=h，q≠r；所用[j]_{q,r}非零。",
+        "finiteness_type": "finite_sum",
+        "finiteness_reason": "有限阶差分、有限次数多项式、有限长度乘积/有理式或有界求和；不使用无穷截断作为有限恒等式。",
+        "record_role": "identity",
+        "scope_class": "finite_q",
+        "definitions": "s_n为一般量子Taylor多项式T_n的根和；见辅助说明。",
+        "notes": "p103无编号有限和；只解释为根和，不接受随后a_n=s_n−s_{n−1}是新根的推断。",
+        "aliases": [],
+        "transcription_changes": [
+          "统一q数、Gaussian及有限q幂记号；书中相同公式的重排和特例合并。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "validation_checks": 12
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  },
+  {
+    "index": 446,
+    "id": "FQI-SRC-KAC-CHEUNG-26.23",
+    "split": "train",
+    "lean_path": "lean/Benchmark/Statements/Train/Identity446.lean",
+    "lean_sha256": "0efbddf3beaa53b05cf73df2b6ef2f16b017e2bd54ec2cf11d8206d6b087e17c",
+    "md_path": "formulas/train/FQI-SRC-KAC-CHEUNG-26.23.md",
+    "md_sha256": "36f27958b9c410edf5901d9ea7e18136c6ad4359d78a3e6fa0eae925eb88fd78",
+    "formula_latex_sha256": "6c35f79753963201460a500eec5d4a95c96f08193ac732562509d0aea673b225",
+    "representative_source": "KAC-CHEUNG-26.23",
+    "source_records": [
+      {
+        "id": "KAC-CHEUNG-26.23",
+        "name": "对称q-Taylor基底的正确有限构造",
+        "source_book": "KAC-CHEUNG",
+        "source_edition": "Springer, 2002；用户提供121页扫描本",
+        "source_file": "books/Quantum Calculus.pdf",
+        "source_locator": "p104, (26.23)的替代构造；边界见p103",
+        "source_pages": [
+          104
+        ],
+        "pdf_pages": [
+          114
+        ],
+        "source_category": "Chapter 26",
+        "source_category_status": "primary_text_checked",
+        "source_access": "direct_book_transcription",
+        "original_book_checked": true,
+        "visual_source_checked": true,
+        "book_verification_status": "primary_text_checked",
+        "formula_latex": "T_0(x)=1,\\qquad T_n(x)=\\frac{x^n}{\\langle n\\rangle_q!}-\\sum_{k=0}^{n-1}\\frac{a^{n-k}}{\\langle n-k\\rangle_q!}T_k(x),\\qquad\\widetilde D_qT_n=T_{n-1},\\quad T_n(a)=0\\ (n\\ge1).",
+        "conditions": "n≥0；d_j=⟨j⟩_q=(q^j−q^{-j})/(q−q^{-1})，d₀!=1，d_j!=∏_{i=1}^j d_i；q≠0,±1且d_1,…,d_n≠0。D̃_qf=(f(qx)−f(q^{-1}x))/((q−q^{-1})x)，x=0按多项式延拓。",
+        "finiteness_type": "finite_transformation",
+        "finiteness_reason": "固定整数次数后仅作有限乘积、有限求和或有限Laurent多项式常数项。",
+        "record_role": "rewrite_rule",
+        "scope_class": "finite_q",
+        "definitions": "",
+        "notes": "撤去错误的嵌套根乘积，用唯一满足降阶与T_n(a)=0的有限三角递推替代。 设 d_j=⟨j⟩_q，d_j!=∏_{i=1}^j d_i。T₀=1，T_n=x^n/d_n!−Σ_{k=0}^{n−1}a^{n−k}T_k/d_{n−k}!。在截断多项式环中，ΣT_n t^n=(Σx^n t^n/d_n!)/(Σa^n t^n/d_n!)；对x取对称q导数即乘t，置x=a得1，故降阶和边界均成立。首项非零又保证唯一性。此为有推导的替代基底，非声称原乘积只错一个字符。 原式与反例保留在 metadata/pending16_originals.json。",
+        "aliases": [],
+        "transcription_changes": [
+          "撤去错误的嵌套根乘积，用唯一满足降阶与T_n(a)=0的有限三角递推替代。"
+        ],
+        "verification_status": "exact_sample_checked",
+        "lean_status": "not_formalized",
+        "second_round_relation": "尚未跨来源去重",
+        "notation_file": "records/KAC_CHEUNG_supplement.md",
+        "validation_report": "reports/KAC_CHEUNG_validation.json",
+        "correction_report": "reports/pending16_corrections.md",
+        "correction_original_id": "KAC-CHEUNG-26.23",
+        "correction_basis": "设 d_j=⟨j⟩_q，d_j!=∏_{i=1}^j d_i。T₀=1，T_n=x^n/d_n!−Σ_{k=0}^{n−1}a^{n−k}T_k/d_{n−k}!。在截断多项式环中，ΣT_n t^n=(Σx^n t^n/d_n!)/(Σa^n t^n/d_n!)；对x取对称q导数即乘t，置x=a得1，故降阶和边界均成立。首项非零又保证唯一性。此为有推导的替代基底，非声称原乘积只错一个字符。",
+        "validation_checks": 162
+      }
+    ],
+    "verification": "explicit_statement_typechecked_target_proof_deferred",
+    "interpretation_notes": "README.md#原书核对与形式化约定"
+  }
+]

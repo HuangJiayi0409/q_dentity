@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "solver": "difference_ring",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": "X"
+      }
+    ],
+    "rhs_basis": [
+      "H"
+    ]
+  }
+}

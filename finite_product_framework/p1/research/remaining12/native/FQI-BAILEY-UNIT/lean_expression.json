@@ -1,0 +1,146 @@
+{
+  "args": [
+    {
+      "args": [
+        {
+          "args": [
+            {
+              "args": [
+                {
+                  "name": "n",
+                  "op": "var"
+                },
+                {
+                  "op": "nat",
+                  "value": 1
+                }
+              ],
+              "op": "HAdd.hAdd"
+            }
+          ],
+          "op": "Finset.range"
+        },
+        {
+          "body": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "name": "a",
+                    "op": "var"
+                  },
+                  {
+                    "name": "q",
+                    "op": "var"
+                  },
+                  {
+                    "name": "r",
+                    "op": "var"
+                  }
+                ],
+                "op": "FiniteQBenchmark.unitBailey"
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "name": "q",
+                        "op": "var"
+                      },
+                      {
+                        "name": "q",
+                        "op": "var"
+                      },
+                      {
+                        "args": [
+                          {
+                            "name": "n",
+                            "op": "var"
+                          },
+                          {
+                            "name": "r",
+                            "op": "var"
+                          }
+                        ],
+                        "op": "HSub.hSub"
+                      }
+                    ],
+                    "op": "FiniteQBenchmark.poch"
+                  },
+                  {
+                    "args": [
+                      {
+                        "args": [
+                          {
+                            "name": "a",
+                            "op": "var"
+                          },
+                          {
+                            "name": "q",
+                            "op": "var"
+                          }
+                        ],
+                        "op": "HMul.hMul"
+                      },
+                      {
+                        "name": "q",
+                        "op": "var"
+                      },
+                      {
+                        "args": [
+                          {
+                            "name": "n",
+                            "op": "var"
+                          },
+                          {
+                            "name": "r",
+                            "op": "var"
+                          }
+                        ],
+                        "op": "HAdd.hAdd"
+                      }
+                    ],
+                    "op": "FiniteQBenchmark.poch"
+                  }
+                ],
+                "op": "HMul.hMul"
+              }
+            ],
+            "op": "HDiv.hDiv"
+          },
+          "name": "r",
+          "op": "lambda"
+        }
+      ],
+      "op": "Finset.sum"
+    },
+    {
+      "args": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "op": "var"
+            },
+            {
+              "op": "nat",
+              "value": 0
+            }
+          ],
+          "op": "Eq"
+        },
+        {
+          "op": "nat",
+          "value": 1
+        },
+        {
+          "op": "nat",
+          "value": 0
+        }
+      ],
+      "op": "ite"
+    }
+  ],
+  "op": "Eq"
+}

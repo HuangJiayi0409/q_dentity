@@ -1,0 +1,1337 @@
+{
+  "schema_version": 1,
+  "kind": "contract_to_implementation_review",
+  "created_at": "2026-10-21T11:12:13.185389+08:00",
+  "contract": {
+    "path": "finite_product_framework/research/method_scope_contracts_20261021.md",
+    "sha256": "64e6e8532e517f8a131bb89fcb533f0e5f8f3d93da97a1223f0a0d5d9e608e0d"
+  },
+  "report": {
+    "path": "finite_product_framework/research/method_implementation_audit_20261021.md",
+    "sha256": "d27a6f9ce3f31c647ed487245e0de3f7e00c51086f0247b65f57eb7e7a305884"
+  },
+  "status": "review_recorded_with_open_gaps",
+  "method_count": 12,
+  "method_clause_count": 48,
+  "common_clause_count": 6,
+  "methods": [
+    {
+      "method": "telescoping",
+      "contract_section": "4.1",
+      "production_route": "worker → p1.run → direct/general_summation or bibasic_pipeline",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "partial_with_reproduced_defect",
+          "finding": "有限区间和与双基语法存在；通用基角色受变量名 q 影响。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p1/general_summation.py",
+              "line": 45,
+              "anchor": "def frontend(",
+              "excerpt": "def frontend(raw, identity, mode='recurrence'):",
+              "sha256": "db1ddf517d40960bb17b63f9c1efc87769701c664b21db03723fb312c24f7e50"
+            },
+            {
+              "path": "finite_product_framework/p1/source_ir.py",
+              "line": 96,
+              "anchor": "base='q' if 'q' in variables",
+              "excerpt": "        base='q' if 'q' in variables else next(iter(bases),None)",
+              "sha256": "c9b8ea02e9ef2f0960e9ce1253c84275ebda8de8be3b91ae62742ce859c311c6"
+            },
+            {
+              "path": "finite_product_framework/p1/bibasic_pipeline.py",
+              "line": 26,
+              "anchor": "def frontend(",
+              "excerpt": "def frontend(raw,identity):",
+              "sha256": "ad91c9bde44b39d318caa7a0dd73bbf88d4f224ec4f3d0cc95edb54158f5b5df"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "present_in_subclass",
+          "finding": "实际 Gosper 构造与局部验证；直接分支另限单分量、恰一个求和侧。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p1/qgosper.py",
+              "line": 126,
+              "anchor": "def antidifference(",
+              "excerpt": "def antidifference(down_ratio, x, q, budget=Budget()):",
+              "sha256": "ec3f0329814251c701221d82af6d117424597e9d48a45afd73227169e384f70d"
+            },
+            {
+              "path": "finite_product_framework/p1/general_summation.py",
+              "line": 177,
+              "anchor": "direct antiderivative needs one component",
+              "excerpt": "                raise ValueError('unsupported_structure: direct antiderivative needs one component')",
+              "sha256": "db1ddf517d40960bb17b63f9c1efc87769701c664b21db03723fb312c24f7e50"
+            },
+            {
+              "path": "finite_product_framework/p1/general_summation.py",
+              "line": 190,
+              "anchor": "direct endpoint comparison needs one sum",
+              "excerpt": "            raise ValueError('unsupported_structure: direct endpoint comparison needs one sum')",
+              "sha256": "db1ddf517d40960bb17b63f9c1efc87769701c664b21db03723fb312c24f7e50"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "partial",
+          "finding": "局部关系及真实端点留作 Lean 义务；一般原域和结构定义运输未完整实现。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p1/general_sum_emit.py",
+              "line": 102,
+              "anchor": "if model['mode']=='general_telescoping':",
+              "excerpt": "    if model['mode']=='general_telescoping':",
+              "sha256": "62f7e8a388cd7c9e1a130dbbfcf51af904db1e62858ba5300aee028179d0f181"
+            },
+            {
+              "path": "finite_product_framework/p1/bibasic_pipeline.py",
+              "line": 64,
+              "anchor": "def representation(",
+              "excerpt": "def representation(model,construction):",
+              "sha256": "ad91c9bde44b39d318caa7a0dd73bbf88d4f224ec4f3d0cc95edb54158f5b5df"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "present_in_subclass",
+          "finding": "调用原声明验证；结构化定义只有递推分派，直接分支明确拒绝。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p1/general_sum_emit.py",
+              "line": 95,
+              "anchor": "proof_representation_gap: structured sum definition",
+              "excerpt": "        raise ValueError('proof_representation_gap: structured sum definition requires a proved source-domain bridge; local certificate only')",
+              "sha256": "62f7e8a388cd7c9e1a130dbbfcf51af904db1e62858ba5300aee028179d0f181"
+            },
+            {
+              "path": "finite_product_framework/p1/general_summation.py",
+              "line": 226,
+              "anchor": "return verify_proof(",
+              "excerpt": "        return verify_proof(source,proof,plan,work,env,extra_rules=(",
+              "sha256": "db1ddf517d40960bb17b63f9c1efc87769701c664b21db03723fb312c24f7e50"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "single_base_detection_changes_under_scalar_renaming"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "recurrence",
+      "contract_section": "4.2",
+      "production_route": "worker → p1.run → Zeilberger/Ore/multisum → method emitters",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "partial_with_reproduced_defect",
+          "finding": "单重/多重/已定义对象有各自语法；基角色及核心/出口范围未统一。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p1/source_ir.py",
+              "line": 96,
+              "anchor": "base='q' if 'q' in variables",
+              "excerpt": "        base='q' if 'q' in variables else next(iter(bases),None)",
+              "sha256": "c9b8ea02e9ef2f0960e9ce1253c84275ebda8de8be3b91ae62742ce859c311c6"
+            },
+            {
+              "path": "finite_product_framework/p1/multisum_pipeline.py",
+              "line": 9,
+              "anchor": "def frontend(",
+              "excerpt": "def frontend(raw,identity):",
+              "sha256": "b7f88bba345ea98af0187ca9f8eb3e9abda7eeaf25bff3bdb0028282857f6157"
+            },
+            {
+              "path": "finite_product_framework/p1/parameter_relation.py",
+              "line": 104,
+              "anchor": "def prepare_shift(",
+              "excerpt": "def prepare_shift(raw,identity,work,env):",
+              "sha256": "5b2808fdc76ee98903c745d313a8ca238c98021f30c32aa6b437fa664fd0b405"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "present_in_subclass",
+          "finding": "相容移位检查、逐阶求解、联合构造和公左倍式提升存在；阶数受预算约束。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p1/zeilberger.py",
+              "line": 37,
+              "anchor": "compatibility = s.cancel(",
+              "excerpt": "    compatibility = s.cancel(n_shift*k_shift.subs(Q, q*Q)-k_shift*n_shift.subs(X, q*X))",
+              "sha256": "81b5f7262fb9e4d154f78e673502158d7fe8301af2659d4277efd5f62239f7a9"
+            },
+            {
+              "path": "finite_product_framework/p1/zeilberger.py",
+              "line": 73,
+              "anchor": "'reason': 'no relation found through max_order",
+              "excerpt": "            'reason': 'no relation found through max_order; not an impossibility result',",
+              "sha256": "81b5f7262fb9e4d154f78e673502158d7fe8301af2659d4277efd5f62239f7a9"
+            },
+            {
+              "path": "finite_product_framework/p1/general_summation.py",
+              "line": 104,
+              "anchor": "def lift(",
+              "excerpt": "def lift(coefficients, certificates, components, multiplier):",
+              "sha256": "db1ddf517d40960bb17b63f9c1efc87769701c664b21db03723fb312c24f7e50"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "partial",
+          "finding": "移动尾项、全部初值和奇异义务有规则；一般奇异分支构造缺失。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p1/lean/GeneralSumRules.lean",
+              "line": 38,
+              "anchor": "theorem recurrence_unique",
+              "excerpt": "theorem recurrence_unique (S T : ℕ → K) (c : ℕ → ℕ → K)",
+              "sha256": "595c97dc0f8c67402d84ef135314768f59f6b1742f58ea3114db1c8d0f929267"
+            },
+            {
+              "path": "finite_product_framework/p1/general_sum_emit.py",
+              "line": 159,
+              "anchor": "have gsNonzero",
+              "excerpt": "    have gsNonzero : gsC gsN {r} ≠ 0 := by",
+              "sha256": "62f7e8a388cd7c9e1a130dbbfcf51af904db1e62858ba5300aee028179d0f181"
+            },
+            {
+              "path": "finite_product_framework/p1/poch_recurrence_emit.py",
+              "line": 304,
+              "anchor": "have hnz : psC",
+              "excerpt": "    have hnz : psC gsN {r} ≠ 0 := by",
+              "sha256": "5ea4a165200bcb3a29d66233421caef03a6dd0639617a6f3dad4de57f2040fc4"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "partial",
+          "finding": "单重有限阶出口存在；多重限二维单纯形一阶首一，旧 Ore 与参数出口另有限制。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p1/multisum_lean.py",
+              "line": 16,
+              "anchor": "first triangular emitter requires dimension two",
+              "excerpt": "            raise ValueError('representation_gap: first triangular emitter requires dimension two and order one')",
+              "sha256": "0538b2f983f7473316df82d2462fc9c2b360d9d76b699a578a2153421fa9bef9"
+            },
+            {
+              "path": "finite_product_framework/p1/ore_pipeline.py",
+              "line": 175,
+              "anchor": "current native Ore exit needs second-order",
+              "excerpt": "    if z['order']!=2 or rel['order']!=1:raise ValueError('representation_gap: current native Ore exit needs second-order object and first-order forced relation')",
+              "sha256": "918aaa8e3ff0c566cd10e495e56009bd7538fe1a5c16bdca22a641a4cd6f9781"
+            },
+            {
+              "path": "finite_product_framework/p1/parameter_relation.py",
+              "line": 173,
+              "anchor": "native closure order must be one to four",
+              "excerpt": "    if not 1<=order<=4:raise ValueError('parameter_relation: native closure order must be one to four')",
+              "sha256": "5b2808fdc76ee98903c745d313a8ca238c98021f30c32aa6b437fa664fd0b405"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "single_base_detection_changes_under_scalar_renaming",
+        "multisum_exit_dimension_order_domain_limits"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "coefficient",
+      "contract_section": "4.3",
+      "production_route": "worker.prepare(p2) → p2.run.prove_source → coeff rules + ring",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "partial",
+          "finding": "指定定义展开和深度 1–4 的导出探测；缺统一系数表达式语法。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/workflow/worker.py",
+              "line": 52,
+              "anchor": "for depth in range(1,5):",
+              "excerpt": "        for depth in range(1,5):",
+              "sha256": "12b8c00ab0811f0f7dc4bb3cb6ce62519efa761095181b4e34d5bf6d92960e64"
+            },
+            {
+              "path": "finite_product_framework/p2/run.py",
+              "line": 102,
+              "anchor": "def preparation(",
+              "excerpt": "def preparation(reverse=False, depth=1):",
+              "sha256": "ed80e74cce4b47a631c5a438bd6c2564526934c2876603f16c82cf2cc3d449f7"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "present_in_subclass",
+          "finding": "Cauchy 展开和精确多项式正规化；逆式按独立原子保留。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p2/run.py",
+              "line": 117,
+              "anchor": "def construct(",
+              "excerpt": "def construct(raw):",
+              "sha256": "ed80e74cce4b47a631c5a438bd6c2564526934c2876603f16c82cf2cc3d449f7"
+            },
+            {
+              "path": "finite_product_framework/p2/lean/Coefficient.lean",
+              "line": 9,
+              "anchor": "theorem coeff_mul_range",
+              "excerpt": "theorem coeff_mul_range {R : Type*} [Semiring R] (f g : PowerSeries R) (n : ℕ) :",
+              "sha256": "97607cc59f0f384182fc184c653da2fd9e966348676b6ad01486682579c0fb5c"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "present_in_subclass",
+          "finding": "有限同余与系数规则承载表示；不作无条件逆元约消。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p2/run.py",
+              "line": 120,
+              "anchor": "Inverse expressions are independent atoms",
+              "excerpt": "    Inverse expressions are independent atoms, not rational-function variables:",
+              "sha256": "ed80e74cce4b47a631c5a438bd6c2564526934c2876603f16c82cf2cc3d449f7"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "partial",
+          "finding": "已生成原声明 ring 验证；更广系数对象和非平凡余式未接通。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/p2/run.py",
+              "line": 156,
+              "anchor": "def prove_source(",
+              "excerpt": "def prove_source(source, work, env, *, max_depth=4):",
+              "sha256": "ed80e74cce4b47a631c5a438bd6c2564526934c2876603f16c82cf2cc3d449f7"
+            },
+            {
+              "path": "finite_product_framework/p2/run.py",
+              "line": 201,
+              "anchor": "'status': 'unsupported_or_unclosed_structure'",
+              "excerpt": "    return {'status': 'unsupported_or_unclosed_structure', 'attempts': attempts,",
+              "sha256": "ed80e74cce4b47a631c5a438bd6c2564526934c2876603f16c82cf2cc3d449f7"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "coefficient_inverse_atoms_are_not_cancelled"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "product",
+      "contract_section": "4.4",
+      "production_route": "worker → product.pipeline.plans/prove_source",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "present_in_subclass",
+          "finding": "Eq、至少一个有限乘积、range 域以及无求和的检查存在。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/product/pipeline.py",
+              "line": 113,
+              "anchor": "def plans(",
+              "excerpt": "def plans(raw):",
+              "sha256": "14df43245c1808b873d25e68755db49a95782149200010e0487712c68e2384d3"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "bounded_search",
+          "finding": "规则组合深度最多两步，另有固定收尾预算；不是所有重排的判定算法。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/product/pipeline.py",
+              "line": 142,
+              "anchor": "for first in (available if bound_operations>1 else []):",
+              "excerpt": "    for first in (available if bound_operations>1 else []):",
+              "sha256": "14df43245c1808b873d25e68755db49a95782149200010e0487712c68e2384d3"
+            },
+            {
+              "path": "finite_product_framework/product/pipeline.py",
+              "line": 172,
+              "anchor": "'  all_goals product_finish 8'",
+              "excerpt": "    lines += ['  all_goals '+SMALL,'  all_goals '+FUSE,'  all_goals product_finish 8','  done']",
+              "sha256": "14df43245c1808b873d25e68755db49a95782149200010e0487712c68e2384d3"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "present_in_subclass",
+          "finding": "规则由 Lean 证明，首项拆分证明非空；原参数与单位根条件留在原上下文。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/product/pipeline.py",
+              "line": 170,
+              "anchor": "if rule=='head':theorem+=' _ _ (by omega)'",
+              "excerpt": "        if rule=='head':theorem+=' _ _ (by omega)'",
+              "sha256": "14df43245c1808b873d25e68755db49a95782149200010e0487712c68e2384d3"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "present_in_subclass",
+          "finding": "重算候选、验证原声明并绑定证书；所有候选不成功不宣称不可证明。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/product/pipeline.py",
+              "line": 181,
+              "anchor": "if data['plans']!=plans(data['expression'])",
+              "excerpt": "    if data['plans']!=plans(data['expression']):raise ValueError('analysis plan changed')",
+              "sha256": "14df43245c1808b873d25e68755db49a95782149200010e0487712c68e2384d3"
+            },
+            {
+              "path": "finite_product_framework/product/pipeline.py",
+              "line": 176,
+              "anchor": "def prove_source(",
+              "excerpt": "def prove_source(text, source, work, env, data, budget):",
+              "sha256": "14df43245c1808b873d25e68755db49a95782149200010e0487712c68e2384d3"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "product_sum_guard"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "interpolation",
+      "contract_section": "4.5",
+      "production_route": "worker → interpolation.prepare/prove_source → algebra + zero_of_samples",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "partial",
+          "finding": "标量导出只是候选，次数、可清分母及分裂极点多在构造时检查。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/interpolation/pipeline.py",
+              "line": 81,
+              "anchor": "def prepare(",
+              "excerpt": "def prepare(source,work):",
+              "sha256": "05b43d87bc688df6bb12339cd1584ce0413f5318bff3560df010890adc09893e"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "present_in_subclass",
+          "finding": "固定数值次数的精确节点与线性极点主部构造；非符号次数算法。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/interpolation/algebra.py",
+              "line": 53,
+              "anchor": "def zero_certificate(",
+              "excerpt": "def zero_certificate(goal,max_degree):",
+              "sha256": "7d23ad238b712ad05e60b4da27e16e0efe88b70c2eb8a369f7f003f56cb85836"
+            },
+            {
+              "path": "finite_product_framework/interpolation/algebra.py",
+              "line": 95,
+              "anchor": "def partial_parts(",
+              "excerpt": "def partial_parts(expression,variable):",
+              "sha256": "7d23ad238b712ad05e60b4da27e16e0efe88b70c2eb8a369f7f003f56cb85836"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "present_in_subclass",
+          "finding": "节点互异、次数界、原域清分母与两侧重建均有义务。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/interpolation/lean/Rules.lean",
+              "line": 9,
+              "anchor": "theorem zero_of_samples",
+              "excerpt": "theorem zero_of_samples {K : Type*} [CommRing K] [IsDomain K] [CharZero K]",
+              "sha256": "ca4e70a3c1aeb4f0a6874384a4f593767e813472f79a2c81f592c2f9f28722c2"
+            },
+            {
+              "path": "finite_product_framework/interpolation/pipeline.py",
+              "line": 111,
+              "anchor": "def prove_source(",
+              "excerpt": "def prove_source(text,source,work,env,data,budget,backend):",
+              "sha256": "05b43d87bc688df6bb12339cd1584ce0413f5318bff3560df010890adc09893e"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "present_in_subclass",
+          "finding": "支持域内重建原声明；符号次数、多变量与一般极点扩展未实现。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/interpolation/algebra.py",
+              "line": 105,
+              "anchor": "principal parts require split linear poles",
+              "excerpt": "            raise ValueError('principal parts require split linear poles in this version')",
+              "sha256": "7d23ad238b712ad05e60b4da27e16e0efe88b70c2eb8a369f7f003f56cb85836"
+            },
+            {
+              "path": "finite_product_framework/interpolation/pipeline.py",
+              "line": 155,
+              "anchor": "'domain_policy':'No new assumptions",
+              "excerpt": "                'domain_policy':'No new assumptions; all denominators and CharZero discharged in original context'})",
+              "sha256": "05b43d87bc688df6bb12339cd1584ce0413f5318bff3560df010890adc09893e"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "interpolation_numeric_degree_and_split_poles"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "noncommutative",
+      "contract_section": "4.6",
+      "production_route": "worker → noncommutative.pipeline → operator_words",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "present_in_subclass",
+          "finding": "有限词语法、显式幂≤12；符号幂和任意应用拒绝。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/noncommutative/pipeline.py",
+              "line": 73,
+              "anchor": "def supported(",
+              "excerpt": "def supported(raw):",
+              "sha256": "8492d72e51db5503adf94086b4bfebc6f666c0655ac1036a05426231654c2bdb"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "template_rewriting",
+          "finding": "定义展开、局部关系改写与非交换/加法正规化；不认证一般关系系统完备性。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/noncommutative/lean/Rules.lean",
+              "line": 7,
+              "anchor": "macro \"operator_words\"",
+              "excerpt": "macro \"operator_words\" : tactic => `(tactic|",
+              "sha256": "0e04309c49e918a6c27c1f5b2a96eed37e9a1d3601177d827f7636e48b41fe05"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "present_in_subclass",
+          "finding": "真实算子定义与局部关系参与 Lean 重建；无任意换序假设。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/noncommutative/pipeline.py",
+              "line": 16,
+              "anchor": "EXPAND = 'try simp only",
+              "excerpt": "EXPAND = 'try simp only [FiniteQBenchmark.kacX, FiniteQBenchmark.kacM]'",
+              "sha256": "8492d72e51db5503adf94086b4bfebc6f666c0655ac1036a05426231654c2bdb"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "present_in_subclass",
+          "finding": "有限词目标的原声明编译和证书存在；符号幂归纳未实现。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/noncommutative/pipeline.py",
+              "line": 101,
+              "anchor": "def prove_source(",
+              "excerpt": "def prove_source(text,source,work,env,data,budget):",
+              "sha256": "8492d72e51db5503adf94086b4bfebc6f666c0655ac1036a05426231654c2bdb"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "noncommutative_power_boundary"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "combinatorial",
+      "contract_section": "4.7",
+      "production_route": "worker → combinatorial.plans → map templates and Lean obligations",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "partial",
+          "finding": "特定对象模板；sum=0 与 0=sum 的等价方向产生不同计划。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/combinatorial/pipeline.py",
+              "line": 107,
+              "anchor": "def plans(",
+              "excerpt": "def plans(raw):",
+              "sha256": "3d9631c33e901fa32c363f7d5945889f7debdf777a4ce4a102ae7a87c4b2c252"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "template_search",
+          "finding": "反射、0/1 切换、子集插入删除；无一般映射发现。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/combinatorial/pipeline.py",
+              "line": 41,
+              "anchor": "MAPS={",
+              "excerpt": "MAPS={",
+              "sha256": "3d9631c33e901fa32c363f7d5945889f7debdf777a4ce4a102ae7a87c4b2c252"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "present_in_subclass",
+          "finding": "域、逆关系、权重与固定点必须证明。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/combinatorial/lean/Rules.lean",
+              "line": 47,
+              "anchor": "theorem cancel ",
+              "excerpt": "theorem cancel {α R : Type*} [AddCommGroup R] (s : Finset α) (w : α → R) (f : α → α)",
+              "sha256": "84f26d57d0c73e05f809d768d28721d37c5fae884fd24daf2a23784a20cef776"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "present_in_subclass",
+          "finding": "模板义务闭合后编译原声明并接收；模板外失败不意味不存在双射。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/combinatorial/pipeline.py",
+              "line": 137,
+              "anchor": "def prove_source(",
+              "excerpt": "def prove_source(text,source,work,env,data,budget,backend):",
+              "sha256": "3d9631c33e901fa32c363f7d5945889f7debdf777a4ce4a102ae7a87c4b2c252"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "combinatorial_plan_orientation_asymmetry"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "difference_ring",
+      "contract_section": "4.8",
+      "production_route": "worker → difference_ring.pipeline → local_shift/invariant → algebra.reduce_goal",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "partial",
+          "finding": "前缀和积/Poch 语法及最多四个归纳指标；未认证一般差分塔。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/difference_ring/pipeline.py",
+              "line": 76,
+              "anchor": "def tower(",
+              "excerpt": "def tower(raw):",
+              "sha256": "a4c36ec0063ddb0c60c371f6b3d9a2cb5cba2ff318c2ecdf10c16f9eb3e6711d"
+            },
+            {
+              "path": "finite_product_framework/difference_ring/pipeline.py",
+              "line": 94,
+              "anchor": "def plans(",
+              "excerpt": "def plans(raw):",
+              "sha256": "a4c36ec0063ddb0c60c371f6b3d9a2cb5cba2ff318c2ecdf10c16f9eb3e6711d"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "partial_core_not_connected",
+          "finding": "生产入口为有序多项式约化；强 ΠΣ/PLDE 核心存在于独立 core 接口。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/difference_ring/algebra.py",
+              "line": 54,
+              "anchor": "else:quotients,remainder=s.reduced(",
+              "excerpt": "    else:quotients,remainder=s.reduced(difference,[relations[i] for i in active],*variables)",
+              "sha256": "b2ee5722527775b910bedadb68293c2047d6118b5985fdf3c9f007987bc7257e"
+            },
+            {
+              "path": "finite_product_framework/p1/core.py",
+              "line": 88,
+              "anchor": "if solver == 'difference_equation':",
+              "excerpt": "    if solver == 'difference_equation':",
+              "sha256": "9465d5b7c62b6cdc7543001d2ec22af8c4f8dfabeb1eff5c879aeb488a87b25e"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "partial",
+          "finding": "局部求值和初值由展开/归纳证明；强塔求值、常数域、特化桥未接通。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/difference_ring/pipeline.py",
+              "line": 110,
+              "anchor": "def prefix(",
+              "excerpt": "def prefix(plan):",
+              "sha256": "a4c36ec0063ddb0c60c371f6b3d9a2cb5cba2ff318c2ecdf10c16f9eb3e6711d"
+            },
+            {
+              "path": "finite_product_framework/p1/qpisigma.py",
+              "line": 616,
+              "anchor": "obligations='source evaluation, initial values, singular specializations",
+              "excerpt": "                    obligations='source evaluation, initial values, singular specializations and Lean remain external'))",
+              "sha256": "8a6ba5a361386d8dc15649cc71aac7db55582dd0b8a00e73fae78e674a2bd86d"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "partial",
+          "finding": "现有局部与不变量证明出口存在；不能据此声称高阶核心已可证明原题。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/difference_ring/pipeline.py",
+              "line": 121,
+              "anchor": "def prove_source(",
+              "excerpt": "def prove_source(text,source,work,env,data,budget):",
+              "sha256": "a4c36ec0063ddb0c60c371f6b3d9a2cb5cba2ff318c2ecdf10c16f9eb3e6711d"
+            },
+            {
+              "path": "finite_product_framework/workflow/worker.py",
+              "line": 145,
+              "anchor": "from difference_ring.pipeline import prove_source",
+              "excerpt": "        from difference_ring.pipeline import prove_source",
+              "sha256": "12b8c00ab0811f0f7dc4bb3cb6ce62519efa761095181b4e34d5bf6d92960e64"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "difference_ordered_reduction_and_index_limit"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "kernel_transform",
+      "contract_section": "4.9",
+      "production_route": "worker → matrix_synthesis → kernel construct / triangular transpose",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "partial",
+          "finding": "初始只检查求和常量，具体 1–5 阶与作用结构在导出阶段检查。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/kernel_transform/pipeline.py",
+              "line": 5,
+              "anchor": "supported=lambda r:'Finset.sum'",
+              "excerpt": " supported=lambda r:'Finset.sum' in r['constants'],",
+              "sha256": "c20b0ea015197369eb8c17a88fed34d6b03f8be70fc79ac3b7a29f8555e34138"
+            },
+            {
+              "path": "finite_product_framework/workflow/MatrixExport.lean",
+              "line": 17,
+              "anchor": "private def size ",
+              "excerpt": "private def size (ty : Expr) : MetaM Nat := do",
+              "sha256": "6feab5d60c7d08f3c79d3035adf36ca2a0d14ba877ab0dfe3fa3710cd2fdf232"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "present_in_subclass",
+          "finding": "从输入独立计算逆或复合；目标核不参与逆发现。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/kernel_transform/construct.py",
+              "line": 6,
+              "anchor": "def construct(",
+              "excerpt": "def construct(raw):",
+              "sha256": "540849b13ede87181005af73c61c205b7cb7f0fb23f151b3fe286da329bcd06d"
+            },
+            {
+              "path": "finite_product_framework/kernel_transform/construct.py",
+              "line": 41,
+              "anchor": "def composition(",
+              "excerpt": "def composition(raw, codec, a):",
+              "sha256": "540849b13ede87181005af73c61c205b7cb7f0fb23f151b3fe286da329bcd06d"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "present_in_subclass",
+          "finding": "原域分母、核关系、作用与三角支撑在 Lean 内验证。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/kernel_transform/lean/Rules.lean",
+              "line": 20,
+              "anchor": "theorem inverse_action",
+              "excerpt": "theorem inverse_action {R I : Type*} [CommRing R] [Fintype I] [DecidableEq I]",
+              "sha256": "e5bcb6d78debe346debae0d9004661f644ddf475df4d007e667a65fe255fdcad"
+            },
+            {
+              "path": "finite_product_framework/kernel_transform/lean/Rules.lean",
+              "line": 11,
+              "anchor": "theorem transpose_triangle",
+              "excerpt": "theorem transpose_triangle {R : Type*} [AddCommMonoid R] (N : ℕ) (f : ℕ → ℕ → R) :",
+              "sha256": "e5bcb6d78debe346debae0d9004661f644ddf475df4d007e667a65fe255fdcad"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "present_in_subclass",
+          "finding": "有限具体矩阵/三角模板出口存在；一般符号阶数核发现未实现。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/workflow/matrix_synthesis.py",
+              "line": 28,
+              "anchor": "def prove_source(",
+              "excerpt": "def prove_source(text, source, work, env, data, budget, spec, constructor):",
+              "sha256": "44ad50bc64c866db61e22aef30f5e3d7a4531bef35aecc8a92f05fca63f08a97"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "matrix_admission_predicates_are_coarse",
+        "three_matrix_methods_compute_witnesses"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "spectral",
+      "contract_section": "4.10",
+      "production_route": "worker → matrix_synthesis → spectral.construct",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "partial",
+          "finding": "粗筛求和后才导出具体 1–5 维加权配对。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/spectral/pipeline.py",
+              "line": 6,
+              "anchor": "supported=lambda r:'Finset.sum'",
+              "excerpt": " supported=lambda r:'Finset.sum' in r['constants'],",
+              "sha256": "7885cc25588d240f033afae75be057ab82694e2b9a68c0a2c96bd1dbe2577b56"
+            },
+            {
+              "path": "finite_product_framework/workflow/MatrixExport.lean",
+              "line": 17,
+              "anchor": "private def size ",
+              "excerpt": "private def size (ty : Expr) : MetaM Nat := do",
+              "sha256": "6feab5d60c7d08f3c79d3035adf36ca2a0d14ba877ab0dfe3fa3710cd2fdf232"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "present_in_subclass",
+          "finding": "精确解 Af=0、Ag=g、WA=AᵀW；不保证整族分离算子存在。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/spectral/construct.py",
+              "line": 18,
+              "anchor": "equations = list(a*f)",
+              "excerpt": "    equations = list(a*f) + list(a*g-g) + [weighted[i,j]-weighted[j,i]",
+              "sha256": "b4327ae2db0cad16025c39469e09486301292141adaca15df04fa9c005a6bded"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "partial",
+          "finding": "有限矩阵自伴、本征与分离条件已留证；差分算子边界和范数构造未实现。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/spectral/lean/Rules.lean",
+              "line": 28,
+              "anchor": "theorem orthogonal ",
+              "excerpt": "theorem orthogonal {K I : Type*} [Field K] [Fintype I]",
+              "sha256": "92f23027543e98943f3d5c4194d58407bfbb264c6119dfe3420b5c45c37cb22f"
+            },
+            {
+              "path": "finite_product_framework/spectral/lean/Rules.lean",
+              "line": 50,
+              "anchor": "theorem orthogonal_family",
+              "excerpt": "theorem orthogonal_family {K I J : Type*} [Field K] [Fintype I] [DecidableEq J]",
+              "sha256": "92f23027543e98943f3d5c4194d58407bfbb264c6119dfe3420b5c45c37cb22f"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "present_in_subclass",
+          "finding": "具体有限维交叉项出口存在，不是整族正交/范数证明器。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/spectral/construct.py",
+              "line": 36,
+              "anchor": "apply FiniteQSpectral.orthogonal",
+              "excerpt": "  apply FiniteQSpectral.orthogonal ({ws}) synthOperator ({fs}) ({gs}) (0 : {ty}) 1",
+              "sha256": "b4327ae2db0cad16025c39469e09486301292141adaca15df04fa9c005a6bded"
+            },
+            {
+              "path": "finite_product_framework/workflow/matrix_synthesis.py",
+              "line": 28,
+              "anchor": "def prove_source(",
+              "excerpt": "def prove_source(text, source, work, env, data, budget, spec, constructor):",
+              "sha256": "44ad50bc64c866db61e22aef30f5e3d7a4531bef35aecc8a92f05fca63f08a97"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "matrix_admission_predicates_are_coarse",
+        "three_matrix_methods_compute_witnesses"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "determinant",
+      "contract_section": "4.11",
+      "production_route": "worker → matrix_synthesis → determinant construct / structure rules",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "partial",
+          "finding": "初始 det 粗筛，具体矩阵维数随后检查。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/determinant/pipeline.py",
+              "line": 6,
+              "anchor": "supported=lambda r:'Matrix.det'",
+              "excerpt": " supported=lambda r:'Matrix.det' in r['constants'],",
+              "sha256": "17632c6bb2788af7f4e0de8295bf9387079253def8d23f37a82eb4ec320d1ed4"
+            },
+            {
+              "path": "finite_product_framework/workflow/MatrixExport.lean",
+              "line": 17,
+              "anchor": "private def size ",
+              "excerpt": "private def size (ty : Expr) : MetaM Nat := do",
+              "sha256": "6feab5d60c7d08f3c79d3035adf36ca2a0d14ba877ab0dfe3fa3710cd2fdf232"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "present_in_subclass",
+          "finding": "独立 PLU/Berkowitz 和无除法重建计划；一般符号阶数发现未实现。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/determinant/construct.py",
+              "line": 17,
+              "anchor": "def construct(",
+              "excerpt": "def construct(raw):",
+              "sha256": "ef52b528c930fd90392815baa7b21d62c5897a1e0d6bea9f42d5b634810c2c35"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "present_in_subclass",
+          "finding": "置换、分解、主元条件与原域分母由 Lean 验证。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/determinant/construct.py",
+              "line": 40,
+              "anchor": "have synthFactor",
+              "excerpt": "  have synthFactor : synthP * ({matrix}) = synthL * synthU := by",
+              "sha256": "ef52b528c930fd90392815baa7b21d62c5897a1e0d6bea9f42d5b634810c2c35"
+            },
+            {
+              "path": "finite_product_framework/determinant/construct.py",
+              "line": 70,
+              "anchor": "plan='constructed_division_free_determinant'",
+              "excerpt": "    result.append(dict(plan='constructed_division_free_determinant',proof_script=direct,",
+              "sha256": "ef52b528c930fd90392815baa7b21d62c5897a1e0d6bea9f42d5b634810c2c35"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "present_in_subclass",
+          "finding": "具体 1–5 阶及结构规则；对象到行列式桥、一般 n 出口仍缺。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/workflow/matrix_synthesis.py",
+              "line": 28,
+              "anchor": "def prove_source(",
+              "excerpt": "def prove_source(text, source, work, env, data, budget, spec, constructor):",
+              "sha256": "44ad50bc64c866db61e22aef30f5e3d7a4531bef35aecc8a92f05fca63f08a97"
+            },
+            {
+              "path": "finite_product_framework/determinant/lean/Rules.lean",
+              "line": 17,
+              "anchor": "macro \"determinant_evaluate\"",
+              "excerpt": "macro \"determinant_evaluate\" : tactic => `(tactic| (",
+              "sha256": "1485d2fc235199c67e850274eef639033a9abe99c1e69c9962a9f1e6d7e6c0a4"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "matrix_admission_predicates_are_coarse",
+        "three_matrix_methods_compute_witnesses"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    },
+    {
+      "method": "macmahon",
+      "contract_section": "4.12",
+      "production_route": "worker → macmahon.pipeline → finite/chain templates; rational core separate",
+      "clauses": [
+        {
+          "clause": "admission",
+          "status": "partial",
+          "finding": "原题入口匹配有限 Ω/链对象常量；强核心单独检查 Elliott 分次输入。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/macmahon/pipeline.py",
+              "line": 12,
+              "anchor": "supported=lambda r: any(",
+              "excerpt": " supported=lambda r: any(c in r['constants'] for c in (",
+              "sha256": "75953db3da7daf3f2b3008e8e8397ee17cc88e1ece833ef7b22757469f09c21d"
+            },
+            {
+              "path": "finite_product_framework/p1/qomega.py",
+              "line": 30,
+              "anchor": "def prepare(",
+              "excerpt": "def prepare(data, budget, parse):",
+              "sha256": "1665dbe5371efa711aea2d24d31252d5ce9ac1b5814daea9e85c23a535b7109c"
+            }
+          ]
+        },
+        {
+          "clause": "construction",
+          "status": "partial_core_not_connected",
+          "finding": "有限/链模板实际存在；有理多变量核心和仿射适配器另存。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/macmahon/pipeline.py",
+              "line": 25,
+              "anchor": "plans=[('chain_geometric_elimination'",
+              "excerpt": " plans=[('chain_geometric_elimination','  macmahon_chain\\n  done'),",
+              "sha256": "75953db3da7daf3f2b3008e8e8397ee17cc88e1ece833ef7b22757469f09c21d"
+            },
+            {
+              "path": "finite_product_framework/p1/core.py",
+              "line": 85,
+              "anchor": "if solver == 'rational_omega':",
+              "excerpt": "    if solver == 'rational_omega':",
+              "sha256": "9465d5b7c62b6cdc7543001d2ec22af8c4f8dfabeb1eff5c879aeb488a87b25e"
+            }
+          ]
+        },
+        {
+          "clause": "domain_and_boundary",
+          "status": "partial",
+          "finding": "模板编码/投影规则存在；一般编码、展开和系数语义 Lean 桥未接通。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/macmahon/adapter.py",
+              "line": 268,
+              "anchor": "original_identity_proved=False",
+              "excerpt": "        original_identity_proved=False,remaining_obligations=['Lean source parsing/encoding bridge','target comparison','parameter specialization'])",
+              "sha256": "fbe6f9ac7f966d790ad540c08fe250fcf28c292d9bc03c57d030eca91cb0b1ee"
+            },
+            {
+              "path": "finite_product_framework/macmahon/lean/Rules.lean",
+              "line": 48,
+              "anchor": "theorem eliminate_pair",
+              "excerpt": "theorem eliminate_pair (s t : Finset ℕ) (a b c : ℤ) (u v : ℕ → R) :",
+              "sha256": "c370836d77559026d2bd5207b77ee2a869286886fffffc1de372a6a2387c43a6"
+            }
+          ]
+        },
+        {
+          "clause": "original_proof_exit",
+          "status": "partial",
+          "finding": "模板原题可走统一接收；一般有理核心返回值不能当完整原题证明。",
+          "evidence": [
+            {
+              "path": "finite_product_framework/macmahon/pipeline.py",
+              "line": 85,
+              "anchor": "def prove_source(",
+              "excerpt": "def prove_source(text,source,work,env,data,budget):",
+              "sha256": "75953db3da7daf3f2b3008e8e8397ee17cc88e1ece833ef7b22757469f09c21d"
+            },
+            {
+              "path": "finite_product_framework/macmahon/adapter.py",
+              "line": 272,
+              "anchor": "def reconstruct(",
+              "excerpt": "def reconstruct(outputs,binding):",
+              "sha256": "fbe6f9ac7f966d790ad540c08fe250fcf28c292d9bc03c57d030eca91cb0b1ee"
+            }
+          ]
+        }
+      ],
+      "local_observations": [
+        "rational_omega_core_local_construction"
+      ],
+      "end_to_end_validation_this_audit": "not_run",
+      "complete_algorithm_correctness_this_audit": "not_reproved"
+    }
+  ],
+  "common_clauses": [
+    {
+      "clause": "original_statement_acceptance",
+      "status": "present",
+      "finding": "检查原声明、证书/证明哈希、依赖、公理和未闭合义务；本轮未跑 Lean 重验。",
+      "evidence": [
+        {
+          "path": "finite_product_framework/workflow/contracts.py",
+          "line": 53,
+          "anchor": "def accept_proof(",
+          "excerpt": "def accept_proof(report,source,attempt_dir):",
+          "sha256": "9b627021455d3005c3310c2520ec728aa53d4fc43512a76a4a4834fbce2ec678"
+        },
+        {
+          "path": "finite_product_framework/workflow/engine.py",
+          "line": 231,
+          "anchor": "try:artifact=accept_proof(",
+          "excerpt": "                try:artifact=accept_proof(result,source,directory)",
+          "sha256": "822754ac49b09866316f536207a24f2a69ffae46b3210b7de15f4bd5db8c509a"
+        }
+      ]
+    },
+    {
+      "clause": "uniform_admission_schema",
+      "status": "partial",
+      "finding": "没有统一公开并认证基/维数/支撑/出口条件，当前候选为 bool applicable。",
+      "evidence": [
+        {
+          "path": "finite_product_framework/workflow/engine.py",
+          "line": 206,
+          "anchor": "if candidate['applicable'] and BACKENDS[name]==method:",
+          "excerpt": "                if candidate['applicable'] and BACKENDS[name]==method:",
+          "sha256": "822754ac49b09866316f536207a24f2a69ffae46b3210b7de15f4bd5db8c509a"
+        },
+        {
+          "path": "finite_product_framework/workflow/structural.py",
+          "line": 47,
+          "anchor": "raw=json.loads(lines[0]);ok=spec['supported'](raw)",
+          "excerpt": "    raw=json.loads(lines[0]);ok=spec['supported'](raw)",
+          "sha256": "1167d560264633dc071bf278bd783ec3809a6658bf131ed40edfecf01b0d8db7"
+        }
+      ]
+    },
+    {
+      "clause": "failure_semantics",
+      "status": "reproduced_defect",
+      "finding": "分析错误/超时仍可汇总为没有支持的表示；子记录保留原状态。",
+      "evidence": [
+        {
+          "path": "finite_product_framework/workflow/engine.py",
+          "line": 202,
+          "anchor": "report['analysis'].append(",
+          "excerpt": "            report['analysis'].append({'kind':kind,'status':result['status'],'result':str(directory/'result.json')})",
+          "sha256": "822754ac49b09866316f536207a24f2a69ffae46b3210b7de15f4bd5db8c509a"
+        },
+        {
+          "path": "finite_product_framework/workflow/engine.py",
+          "line": 246,
+          "anchor": "report['remaining_obligations']=(['No supported representation found;",
+          "excerpt": "            report['remaining_obligations']=(['No supported representation found; see analysis diagnostics'] if not report['plan'] else",
+          "sha256": "822754ac49b09866316f536207a24f2a69ffae46b3210b7de15f4bd5db8c509a"
+        }
+      ]
+    },
+    {
+      "clause": "budget_vs_domain",
+      "status": "partial",
+      "finding": "部分阶数/次数公开为预算；维数/词幂/模板深度分散硬编码。",
+      "evidence": [
+        {
+          "path": "finite_product_framework/workflow/engine.py",
+          "line": 13,
+          "anchor": "class Budget:",
+          "excerpt": "class Budget:",
+          "sha256": "822754ac49b09866316f536207a24f2a69ffae46b3210b7de15f4bd5db8c509a"
+        },
+        {
+          "path": "finite_product_framework/workflow/MatrixExport.lean",
+          "line": 22,
+          "anchor": "unless 0 < n && n ≤ 5",
+          "excerpt": "  unless 0 < n && n ≤ 5 do throwError \"SYNTHESIS_UNSUPPORTED: dimension must be 1..5\"",
+          "sha256": "6feab5d60c7d08f3c79d3035adf36ca2a0d14ba877ab0dfe3fa3710cd2fdf232"
+        }
+      ]
+    },
+    {
+      "clause": "data_scope_vs_math_scope",
+      "status": "separate_but_not_unified",
+      "finding": "无预处理前三方法仍有历史成员限制；不能解释为数学限制。",
+      "evidence": [
+        {
+          "path": "finite_product_framework/workflow/contracts.py",
+          "line": 26,
+          "anchor": "def snapshot(",
+          "excerpt": "def snapshot(identity,work,method=None,*,preprocess=False):",
+          "sha256": "9b627021455d3005c3310c2520ec728aa53d4fc43512a76a4a4834fbce2ec678"
+        }
+      ]
+    },
+    {
+      "clause": "class_level_validation",
+      "status": "not_revalidated",
+      "finding": "已有专项测试源码，本轮仅 13 项局部观察，未重跑原题/Lean 或证明核心完备性。",
+      "evidence": [
+        {
+          "path": "finite_product_framework/p1/test_multisum.py",
+          "line": 58,
+          "anchor": "def test_three_dimensional_search(",
+          "excerpt": "    def test_three_dimensional_search(self):",
+          "sha256": "1faa1f47bac6a1fd49595389a8ddc4d9f287c526485e6fc41f9a7c0a04390d51"
+        },
+        {
+          "path": "finite_product_framework/p1/test_bibasic.py",
+          "line": 15,
+          "anchor": "def main(",
+          "excerpt": "def main():",
+          "sha256": "9c5ba264508bdee28c6ad9bda8826eed8e98364e9abe156ba426871a586d17bf"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "kind": "implementation_defect",
+      "priority": "first",
+      "methods": [
+        "telescoping",
+        "recurrence"
+      ],
+      "summary": "基角色依赖普通参数是否名为 q，局部改名破坏结构不变性。",
+      "observation": "single_base_detection_changes_under_scalar_renaming",
+      "remedy": "按原子语义识别基和关系，添加改名及变量角色冲突回归。"
+    },
+    {
+      "id": "F02",
+      "kind": "diagnostic_defect",
+      "priority": "first",
+      "methods": "all",
+      "summary": "分析超时或 adapter_failed 被顶层描述成无支持表示；子记录仍保留故障。",
+      "observation": "analysis_timeout_aggregated_as_no_representation",
+      "remedy": "传播阶段故障，将明确超范围、未知、超时和运行错误分开。"
+    },
+    {
+      "id": "F03",
+      "kind": "contract_alignment_gap",
+      "priority": "next",
+      "methods": [
+        "kernel_transform",
+        "spectral",
+        "determinant",
+        "macmahon"
+      ],
+      "summary": "粗筛谓词与完整准入共用 applicable，维数/目标形状检查延后。",
+      "observation": "matrix_admission_predicates_are_coarse",
+      "remedy": "区分候选、核心域认证和出口可用性。"
+    },
+    {
+      "id": "F04",
+      "kind": "proof_exit_gap",
+      "priority": "class_level",
+      "methods": [
+        "recurrence"
+      ],
+      "summary": "多重核心比二维单纯形一阶首一的完整出口宽。",
+      "observation": "multisum_exit_dimension_order_domain_limits",
+      "remedy": "逐域/阶数补向量通量、所有边界面、移动域和初始数据运输。"
+    },
+    {
+      "id": "F05",
+      "kind": "core_integration_gap",
+      "priority": "class_level",
+      "methods": [
+        "difference_ring",
+        "macmahon"
+      ],
+      "summary": "强 ΠΣ 与有理 Ω 核心未贯通对应的生产原题入口。",
+      "observation": "rational_omega_core_local_construction",
+      "remedy": "建立源式语义桥、调用核心并重建完整 Lean 原声明。"
+    },
+    {
+      "id": "F06",
+      "kind": "proof_obligation_construction_gap",
+      "priority": "class_level",
+      "methods": [
+        "recurrence"
+      ],
+      "summary": "唯一性定理允许奇异位置义务，但生成器通常仅尝试证明首项非零。",
+      "observation": null,
+      "remedy": "构造参数/指标奇异分支或替代传播关系，保留全部初值。"
+    }
+  ],
+  "local_probe_result": {
+    "path": "finite_product_framework/generated/method_contract_audit_20261021/probe_results.json",
+    "sha256": "387022b24229fdf24b85a56afad18fec51352d111fae27c988681103feafab01",
+    "observations": 13,
+    "unexpected": 0
+  },
+  "audit_validation": {
+    "status": "passed",
+    "method_registry_matches": true,
+    "code_evidence_anchors_unique": true,
+    "local_links_checked": 60,
+    "preexisting_files_compared": 348,
+    "preexisting_files_changed": [],
+    "source_manifest": {
+      "path": "finite_product_framework/generated/method_contract_audit_20261021/source_manifest_before.json",
+      "sha256": "97cbd9d258578d6ce984ace2c18a603ec93dfc29a24cbf03838b0dccc4de97da"
+    }
+  },
+  "source_scope": "framework sources/documents outside generated/archive/tool/cache/deferred directories",
+  "activity": {
+    "implementation_changes": 0,
+    "lean_runs": 0,
+    "train_runs": 0,
+    "test_identity_reads": 0,
+    "model_api_calls": 0
+  },
+  "limitations": [
+    "No end-to-end Lean rerun or Train coverage measurement.",
+    "Observed rejected inputs do not prove mathematical unprovability.",
+    "Static evidence and local probes do not establish full algorithmic completeness.",
+    "First two engine observations inject stage outcomes; they do not simulate a real timeout duration.",
+    "Contract aspirational domains and existing subclass guarantees are evaluated separately."
+  ]
+}

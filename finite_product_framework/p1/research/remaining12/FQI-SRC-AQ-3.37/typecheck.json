@@ -1,0 +1,14 @@
+{
+  "id": "FQI-SRC-AQ-3.37",
+  "source": {
+    "identity_id": "FQI-SRC-AQ-3.37",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity315.lean",
+    "sha256": "1d9d466eee5eb4798d3b4deace3d841b3345bd30029f06c40eb64b6d92cc34d2"
+  },
+  "well_typed_original_goal": true,
+  "typecheck": {
+    "exit_code": 1,
+    "output": "P1_ELABORATED_GOAL: ∑ r ∈ Finset.range (n + 1),\n    (-1) ^ r * q ^ (r * (r - 1) / 2) * (1 - q ^ (2 * r + 1)) /\n      ((1 - q) * pochList [q] q (n - r) * pochList [q ^ 2] q (n + r)) =\n  if n = 0 then 1 else 0\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/remaining12/FQI-SRC-AQ-3.37/Typecheck.lean:29:2: error: P1_TYPECHECK_ONLY\n"
+  },
+  "is_proof": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "source_id": "FQI-FINITE-Q-BINOMIAL",
+  "summand": ["mul",
+    ["pow", -1, "k"],
+    ["pow", "z", "k"],
+    ["pow", "q", ["div", ["mul", "k", ["sub", "k", 1]], 2]],
+    ["gaussian", "q", "n", "k"]
+  ],
+  "target": ["poch", "z", "q", "n"]
+}

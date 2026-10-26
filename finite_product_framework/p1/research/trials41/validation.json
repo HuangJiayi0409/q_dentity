@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "identities": 41,
+  "subproblems": 50,
+  "groups": {
+    "prioritize_symbolic_trial": {
+      "all_local_certificates_constructed": 9,
+      "timeout": 9
+    },
+    "conditional_candidate": {
+      "all_local_certificates_constructed": 6,
+      "timeout": 15,
+      "no_antidifference_for_chosen_local_problems": 2
+    }
+  },
+  "independent_local_residuals": 16,
+  "exact_finite_diagnostic_checks": 150,
+  "independent_shift_diagnostic_checks": 288,
+  "production_code_unchanged": true,
+  "automatic_train_proofs": 2,
+  "new_lean_proofs": 0,
+  "limitations": "Research transcriptions and transformations remain unproved; finite diagnostics are not general proofs. Thirty-second construction budgets, four concurrent workers.",
+  "check_code_sha256": "7f4b359038e4c84e905d454ab0f59116dbf7d96b601a47eeea481f77079f0f73",
+  "summary_sha256": "fd505305aa318650d89738c3dcd9220d1b9d1daee8320b65c488c58fda965f33"
+}

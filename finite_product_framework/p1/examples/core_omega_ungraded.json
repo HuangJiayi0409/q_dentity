@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "solver": "rational_omega",
+  "input": {
+    "numerator": 1,
+    "denominator_monomials": [
+      "L"
+    ],
+    "grading": {
+      "x": 1
+    },
+    "eliminate": [
+      {
+        "variable": "L",
+        "operator": "ge"
+      }
+    ]
+  }
+}

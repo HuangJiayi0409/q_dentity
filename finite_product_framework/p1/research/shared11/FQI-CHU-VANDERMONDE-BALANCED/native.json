@@ -1,0 +1,207 @@
+{
+  "schema_version": 2,
+  "status": "proved",
+  "automatic_train_proofs": 1,
+  "complete_train_proofs": 1,
+  "test_files_read": 0,
+  "preset_proof_fallback": false,
+  "budget": {
+    "seconds": 30,
+    "max_unknowns": 10000
+  },
+  "lean_proof_generated": true,
+  "stages": [
+    "source_dependencies_verified_from_batch_snapshot",
+    "lean_goal_elaborated_and_exported",
+    "q_gosper_certificate_constructed",
+    "original_target_change_verified",
+    "local_boundary_initial_target_verified",
+    "kernel_and_axiom_audit_passed"
+  ],
+  "source": {
+    "identity_id": "FQI-CHU-VANDERMONDE-BALANCED",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity013.lean",
+    "sha256": "88ce8e4082af6f33dcf20bacef1e64cd6df41d4faf89b14ffcb96548014d3361"
+  },
+  "dependencies": [
+    {
+      "path": "benchmark/lean/Benchmark/Definitions.lean",
+      "sha256": "a6361c499801dec2ead09a2ee65e1fc85ec5d029f065dc656eb239f6ea405621"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Auxiliary.lean",
+      "sha256": "43d0d24048f1d726bcd40e71a9db8ca5ca21c9e01cca66421f922ef035589c30"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Gaussian.lean",
+      "sha256": "2d4baad78917edeb734c4dfcfcc297c5143d1b1ee71914ea9cba9f3fd0f92ba3"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Batch5Definitions.lean",
+      "sha256": "f363f4f6b9e7c4676c1bbdfb587d90ae7362495f278730dd8e324f9bcb881775",
+      "loaded_declaration": "FiniteQBenchmark.kacPowerNat",
+      "declaration_sha256": "6ee4569f44becbd99178aeca336f0b1082ce1ed32442b52209c92732e8850fbd"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/BatchDefinitions.lean",
+      "sha256": "bcf0b2cfc6b4cffd9cdf83942c3233491cda8848eb53f50f1c81c95a5874b80c",
+      "loaded_declaration": "FiniteQBenchmark.regular",
+      "declaration_sha256": "ab9b2556267e2383cbad68dde811d3593ee4d50f80836147178234cf2e1ffa49"
+    },
+    {
+      "path": "benchmark/lean/Benchmark/Batch4Definitions.lean",
+      "sha256": "3277fd6edb7428873e4ae29f08fbe6d9e16bdbd1fb9f1bf3baf6c5ec5f983fd8",
+      "loaded_declaration": "FiniteQBenchmark.sillsAlpha",
+      "declaration_sha256": "6547421887599456b8e689e7d5c093f4b13dfbb6987f9bfde712cd08e73a703f"
+    }
+  ],
+  "branch": "target_first_order",
+  "input_formula": {
+    "schema_version": 1,
+    "source_id": "FQI-CHU-VANDERMONDE-BALANCED",
+    "summand": [
+      "mul",
+      [
+        "mul",
+        [
+          "mul",
+          [
+            "mul",
+            [
+              "gaussian",
+              "q",
+              "n",
+              "k"
+            ],
+            [
+              "pow",
+              [
+                "mul",
+                -1,
+                "p3"
+              ],
+              "k"
+            ]
+          ],
+          [
+            "pow",
+            "q",
+            [
+              "div",
+              [
+                "mul",
+                "k",
+                [
+                  "sub",
+                  "k",
+                  1
+                ]
+              ],
+              2
+            ]
+          ]
+        ],
+        [
+          "poch",
+          "p4",
+          "q",
+          "k"
+        ]
+      ],
+      [
+        "poch",
+        [
+          "mul",
+          [
+            "mul",
+            "p4",
+            "p3"
+          ],
+          [
+            "pow",
+            "q",
+            "k"
+          ]
+        ],
+        "q",
+        [
+          "sub",
+          "n",
+          "k"
+        ]
+      ]
+    ],
+    "target": [
+      "poch",
+      "p3",
+      "q",
+      "n"
+    ]
+  },
+  "representation_status": "extracted_from_Lean_Expr; final change checks original target",
+  "shifts": {
+    "n_shift": "(-Q**2*X*p3*p4*q + Q*X*p3*p4 + Q*X*q - X)/(Q*q - X)",
+    "k_shift": "(-Q*X*p3*p4 + Q*p3 + X**2*p3*p4 - X*p3)/(X**2*p3*p4*q - X*p3*p4 - X*q + 1)",
+    "target_coefficient": "-Q*p3 + 1"
+  },
+  "construction": {
+    "algorithm": "q-Gosper",
+    "coefficient_domain": "QQ(Q,p3,p4,q)",
+    "down_ratio": "(-Q**2*X**2*p3**2*p4**2*q**3 + Q**2*X*p3**2*p4*q**4 + Q**2*X*p3**2*p4*q**3 - Q**2*p3**2*q**4 + Q*X**3*p3**2*p4**2*q + Q*X**2*p3**2*p4**2*q**2 - 2*Q*X**2*p3**2*p4*q**2 - Q*X**2*p3**2*p4*q + Q*X**2*p3*p4*q**3 - Q*X*p3**2*p4*q**3 + Q*X*p3**2*q**3 + Q*X*p3**2*q**2 - Q*X*p3*p4*q**3 - Q*X*p3*q**4 + Q*p3*q**4 - X**3*p3**2*p4**2 + X**3*p3**2*p4 - X**3*p3*p4*q + X**2*p3**2*p4*q - X**2*p3**2*q + X**2*p3*p4*q + X**2*p3*q**2 - X*p3*q**2)/(Q*X**3*p3**2*p4**2*q**2 - Q*X**2*p3**2*p4**2*q**2 - Q*X**2*p3**2*p4*q**3 - Q*X**2*p3*p4*q**3 + Q*X*p3**2*p4*q**3 + Q*X*p3*p4*q**3 + Q*X*p3*q**4 - Q*p3*q**4 - X**3*p3**2*p4**2*q + X**3*p3**2*p4*q - X**3*p3*p4*q**2 + X**2*p3**2*p4**2*q - X**2*p3**2*p4*q + X**2*p3*p4*q**3 + 2*X**2*p3*p4*q**2 - X**2*p3*q**2 + X**2*q**3 - X*p3*p4*q**3 - X*p3*p4*q**2 + X*p3*q**2 - X*q**4 - X*q**3 + q**4)",
+    "normal_form": {
+      "dispersion": [
+        1
+      ],
+      "updates": [
+        {
+          "shift": 1,
+          "factor": "X + (-Q*p3*q + q)/(Q*p3*p4*q - p3*p4 + p3 - q)"
+        }
+      ],
+      "P": "-Q*p3*q/(Q*p3*p4*q - p3*p4 + p3 - q) + X + q/(Q*p3*p4*q - p3*p4 + p3 - q)",
+      "A": "-Q**2*X*p3**2*p4**2*q**3 + Q**2*p3**2*p4*q**4 + Q*X**2*p3**2*p4**2*q + Q*X*p3**2*p4**2*q**2 - 2*Q*X*p3**2*p4*q**2 + Q*X*p3*p4*q**3 - Q*p3**2*p4*q**3 + Q*p3**2*q**3 - Q*p3*q**4 - X**2*p3**2*p4**2 + X**2*p3**2*p4 - X**2*p3*p4*q + X*p3**2*p4*q - X*p3**2*q + X*p3*q**2",
+      "B": "Q*X**2*p3**2*p4**2*q**3 - Q*X*p3**2*p4**2*q**3 - Q*X*p3*p4*q**4 + Q*p3*p4*q**4 - X**2*p3**2*p4**2*q**2 + X**2*p3**2*p4*q**2 - X**2*p3*p4*q**3 + X*p3**2*p4**2*q**2 - X*p3**2*p4*q**2 + 2*X*p3*p4*q**3 - X*p3*q**3 + X*q**4 - p3*p4*q**3 + p3*q**3 - q**4",
+      "normal_form_residual": "0",
+      "remaining_dispersion": []
+    },
+    "laurent_bounds": {
+      "lower": 0,
+      "upper": 0,
+      "lower_resonance": null,
+      "upper_resonance": 0,
+      "source": "q-Gosper Laurent leading/trailing coefficient bounds"
+    },
+    "linear_system": {
+      "unknowns": 1,
+      "equations": 2
+    },
+    "status": "constructed",
+    "laurent_solution": "-1/(Q**2*p3**2*p4**2*q**4 - 2*Q*p3**2*p4**2*q**3 + 2*Q*p3**2*p4*q**3 - 2*Q*p3*p4*q**4 + p3**2*p4**2*q**2 - 2*p3**2*p4*q**2 + p3**2*q**2 + 2*p3*p4*q**3 - 2*p3*q**3 + q**4)",
+    "antidifference_ratio": "(-X**2*p3*p4 + X*p3*p4 + X*q - q)/(Q*X*p3*p4*q - Q*p3*q - X*p3*p4 + X*p3 - X*q + q)",
+    "rational_residual": "0",
+    "difference_over_summand": "(-Q**2*X*p3*p4*q + Q**2*p3*q + Q*X*p3*p4 - Q*X*p3 + Q*X*q - Q*q)/(Q*q - X)",
+    "certificate": "(Q*X**2*p3*p4 - Q*X*p3*p4 - Q*X*q + Q*q)/(Q*q - X)",
+    "q_wz_residual": "0",
+    "sympy_version": "1.14.0"
+  },
+  "verification": {
+    "status": "proved",
+    "plan": {
+      "shift": 1,
+      "multiplier": "-Q*X*p3*p4 + Q*p3",
+      "certificate": "(Q*X**2*p3*p4 - Q*X*p3*p4 - Q*X*q + Q*q)/(Q*q - X)",
+      "target_coefficient": "-Q*p3 + 1",
+      "flux_origin": "q-Gosper certificate multiplied by actual backward term ratio",
+      "boundary_requirement": "derived homogeneous target requires boundary correction zero; checked in Lean"
+    },
+    "lean": {
+      "exit_code": 0,
+      "output": "'FiniteQP1.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteQP1.growing_sum_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteQP1.first_order_unique' does not depend on any axioms\n'FiniteQP1.prove_growing_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:218:31: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead\n\nHint: Replace the deprecated name:\n  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:242:6: warning: Unused tactic linter: `ring` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:242:6: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:253:8: warning: Unused tactic linter: `ring` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:253:8: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:290:6: warning: Unused tactic linter: `ring` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:290:6: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:401:35: warning: This simp argument is unused:\n  Nat.triangle_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Nat.sub_zero]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:402:33: warning: This simp argument is unused:\n  FiniteQP1.fall_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [gaussian_zero_right, FiniteQP1.fall_succ, poch_succ, pow_add]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:402:54: warning: This simp argument is unused:\n  FiniteQP1.fall_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp [gaussian_zero_right, FiniteQP1.fall_zero, poch_succ, pow_add]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:403:19: warning: This simp argument is unused:\n  pow_add\n\nHint: Omit it from the simp argument list.\n  [apply] simp [gaussian_zero_right, FiniteQP1.fall_zero, FiniteQP1.fall_succ, poch_succ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:410:20: warning: This simp argument is unused:\n  Nat.triangle_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [pow_add, pow_succ, FiniteQP1.fall_succ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:410:58: warning: This simp argument is unused:\n  FiniteQP1.fall_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Nat.triangle_succ, pow_add, pow_succ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:415:30: warning: This simp argument is unused:\n  FiniteQP1.fall_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [gaussian, pow_succ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:420:13: warning: This simp argument is unused:\n  FiniteQP1.fall_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [FiniteQP1.gaussian_pascal, gaussian_self, gaussian_above, FiniteQP1.fall_succ, poch_succ,\n    Nat.triangle_succ, pow_succ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:420:34: warning: This simp argument is unused:\n  FiniteQP1.fall_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp [FiniteQP1.gaussian_pascal, gaussian_self, gaussian_above, FiniteQP1.fall_zero, poch_succ,\n    Nat.triangle_succ, pow_succ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:420:66: warning: This simp argument is unused:\n  Nat.triangle_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp [FiniteQP1.gaussian_pascal, gaussian_self, gaussian_above, FiniteQP1.fall_zero, FiniteQP1.fall_succ,\n    poch_succ, pow_succ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:432:36: warning: This simp argument is unused:\n  Nat.triangle_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [poch_succ, pow_succ, pow_add, hp]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:436:25: warning: This simp argument is unused:\n  Nat.succ_sub_succ_eq_sub\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [hlen, poch_succ, pow_succ, pow_add, hp] at hadj\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:450:6: warning: This simp argument is unused:\n  FiniteQP1.fall_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [gaussian_self, Nat.triangle_succ, pow_add, pow_succ, mul_one, sub_zero, FiniteQP1.fall_zero,\n    Nat.sub_self, poch_zero, poch_succ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:450:27: warning: This simp argument is unused:\n  FiniteQP1.fall_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [gaussian_self, Nat.triangle_succ, pow_add, pow_succ, mul_one, sub_zero, FiniteQP1.fall_succ,\n    Nat.sub_self, poch_zero, poch_succ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:452:64: warning: This simp argument is unused:\n  FiniteQP1.fall_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp [p1F, p1T, gaussian_zero_right, FiniteQBenchmark.poch]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:455:15: warning: This simp argument is unused:\n  Nat.triangle_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [poch_succ, FiniteQP1.fall_succ, pow_succ, pow_add]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:455:45: warning: This simp argument is unused:\n  FiniteQP1.fall_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Nat.triangle_succ, poch_succ, pow_succ, pow_add]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:455:66: warning: This simp argument is unused:\n  pow_succ\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Nat.triangle_succ, poch_succ, FiniteQP1.fall_succ, pow_add]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:455:76: warning: This simp argument is unused:\n  pow_add\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Nat.triangle_succ, poch_succ, FiniteQP1.fall_succ, pow_succ]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:440:13: warning: Unused tactic linter: `(\n  rw [FiniteQP1.gaussian_pascal q p1n p1k hle]\n  simp only [Nat.succ_sub_succ_eq_sub, hlen, FiniteQP1.fall_succ, poch_succ, pow_succ, hp]\n  ring)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:444:13: warning: Unused tactic linter: `(\n  simp only [gaussian, Nat.succ_sub_succ_eq_sub, hlen, FiniteQP1.fall_succ, poch_succ, pow_succ, hp]\n  ring)` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:440:13: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:444:13: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:403:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean:421:11: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n'FiniteQBenchmark.Identity013.statement' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    "proof_file": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/research/shared11/native/FQI-CHU-VANDERMONDE-BALANCED/Proof.lean",
+    "proof_sha256": "f4b0417e43e33e11b3e916e7cf9cc57100e234b67453674cda34c0f13e69b610",
+    "original_declaration_preserved": true,
+    "theorem": "FiniteQBenchmark.Identity013.statement"
+  },
+  "remaining_obligations": []
+}

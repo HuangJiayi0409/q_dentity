@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "solver": "q_zeilberger_joint",
+  "input": {"components": [
+    {"n_shift": 2, "k_shift": "q"},
+    {"n_shift": 3, "k_shift": ["pow", "q", 2]}
+  ]}
+}

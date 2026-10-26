@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "scope": "P1 shared assembly and explicit finite q-binomial pilot",
+  "status": "passed",
+  "train_cases_checked": [
+    "FQI-FINITE-Q-BINOMIAL",
+    "FQI-GAUSS-ALTERNATING",
+    "FQI-CHU-VANDERMONDE-Q",
+    "FQI-SRC-KAC-CHEUNG-19.telescoping"
+  ],
+  "test_files_read": 0,
+  "cas_trials_run": 1,
+  "complete_train_proofs": 1,
+  "automatic_statement_parser": "not_implemented",
+  "proof_generator": "explicit finite q-binomial adapter",
+  "shared_lean_sha256": "53449894363ebefc4e75e77e29701bd0c276420e45493234d993a8a15ee8ad06",
+  "lean": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/generated/FiniteQBinomial.lean"
+    ],
+    "exit_code": 0,
+    "output": "'FiniteQP1.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteQP1.growing_sum_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteQP1.first_order_unique' does not depend on any axioms\n'FiniteQP1.prove_growing_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteQBenchmark.Identity005.statement' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "verified_shared_theorems": [
+    "telescope",
+    "growing_sum_recurrence",
+    "first_order_unique",
+    "prove_growing_sum"
+  ],
+  "proved_train_ids": [
+    "FQI-FINITE-Q-BINOMIAL"
+  ],
+  "run_report_sha256": "9445d4bc113be0411029c3bf31e7c8b86973f45fed801f746b9f467dd4078561"
+}

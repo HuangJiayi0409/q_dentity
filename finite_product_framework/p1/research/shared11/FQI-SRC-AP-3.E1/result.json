@@ -1,0 +1,21 @@
+{
+  "id": "FQI-SRC-AP-3.E1",
+  "source": {
+    "identity_id": "FQI-SRC-AP-3.E1",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity277.lean",
+    "sha256": "fe84fa8f662ce0180e4ddb68ceb0a37a1fc2801d18b94764eb0fc9f03d837703"
+  },
+  "native_status": "unsupported_structure",
+  "original_lean_proved": false,
+  "remaining_obligations": [
+    "Icc已在原目标重编号；需把Gaussian整数指标桥接接入生成器，并处理平方指数toNat和整数幂",
+    "处理原式允许的q=0情形",
+    "验证上指标2*n的递推、两个移动端点及目标乘积递推"
+  ],
+  "native_report": "FQI-SRC-AP-3.E1/native.json",
+  "verified_preprocessing_steps": [
+    "bilateral_interval_reindexed_with_both_endpoints",
+    "explicit_Pochhammer_lists_expanded_in_Lean"
+  ],
+  "support_normalization": "original goal reindexed by Lean; not a full proof"
+}

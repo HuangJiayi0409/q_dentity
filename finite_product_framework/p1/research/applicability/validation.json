@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "reviewed": 51,
+  "categories": {
+    "already_verified": 2,
+    "prioritize_symbolic_trial": 18,
+    "conditional_candidate": 23,
+    "defer_from_current_routes": 8
+  },
+  "source_hashes_checked": 51,
+  "shared_definition_hashes_checked": 4,
+  "independent_symbolic_residuals_checked": 4,
+  "exact_finite_diagnostics_per_probe": 16,
+  "production_code_unchanged": true,
+  "automatic_train_proofs": 2,
+  "new_lean_proofs": 0,
+  "probe_ids": [
+    "FQI-CHU-VANDERMONDE-BALANCED",
+    "FQI-CHU-VANDERMONDE-Q",
+    "FQI-SRC-GR2-1.Ex6iii",
+    "FQI-SRC-KAC-CHEUNG-4.4"
+  ],
+  "review_builder_sha256": "970d09161012caefc31741d86b0873d51926e8aa83e59bb17e044946178ab4de",
+  "probe_code_sha256": "9ead7cfd54285d4eca896f82724a16c5729e43cc7a268ee60432c86d1a0912c6"
+}

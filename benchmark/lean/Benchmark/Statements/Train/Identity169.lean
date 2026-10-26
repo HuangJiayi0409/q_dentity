@@ -1,0 +1,41 @@
+import Benchmark.Batch2Proofs
+
+open scoped BigOperators
+open FiniteQBenchmark
+set_option autoImplicit false
+set_option linter.unusedVariables false
+
+/- FQI-SRC-GR2-8.7.13 — 有限 q-Racah Poisson 核展开
+Original representative source: GR2-8.7.13
+Frozen statement: formulas/train/FQI-SRC-GR2-8.7.13.md
+Source formula:
+\sum_{n=0}^Nt^nh_nW_n(x;a,b,c,N)W_n(y;\alpha,ab/\alpha,\gamma,M)=h_0\sum_{r=0}^x\sum_{s=0}^{N-x}\frac{(abq^2;q)_{2r+2s}}{(abq^{N+2};q)_{r+s}}H_{r,s}A_{r,s}C_{r,s}(-t)^{r+s}q^{(r+s)(2N-r-s+1)/2},\quad C_{r,s}=\sum_{j=0}^{N-r-s}\frac{1-\lambda q^{2j}}{1-\lambda}\frac{(\lambda,q^{r+s-N};q)_j}{(q,abq^{N+r+s+2};q)_j}(tq^{N-r-s})^j,\quad\lambda=abq^{2r+2s+1}.
+Only this target theorem's proof is deferred. Shared auxiliary results are proved.
+-/
+namespace FiniteQBenchmark.Identity169
+variable {K : Type*} [Field K]
+attribute [local instance] Classical.propDecidable
+
+theorem statement (a b c alpha gamma t q : K) (N M x y : ℕ)
+ (hbase : regular q) (hNM : N ≤ M) (hx : x ≤ N) (hy : y ≤ M) (hnz : ∀ v ∈ [a,b,c,alpha,gamma], v ≠ 0)
+ (h_domain : ∀ n ∈ Finset.range (N+1), (c ≠ 0 ∧
+    (pochList [(((a * b) * q) * q),(1 / c)] q (N)) ≠ 0 ∧
+    ((pochList [q,(b * q),((a * q) / c),((a * b) * (q^(((N : ℤ)+2) : ℤ)))] q (n)) * (1 - ((a * b) * q))) ≠ 0 ∧
+    phiDefined [(a * q),(q^((-((N : ℤ))) : ℤ)),((b * c) * q)] q (min (n) (x)) ∧
+    alpha ≠ 0 ∧
+    phiDefined [(alpha * q),(q^((-((M : ℤ))) : ℤ)),((((a * b) / alpha) * gamma) * q)] q (min (n) (y))) ∧
+    c ≠ 0 ∧
+    (pochList [(((a * b) * q) * q),(1 / c)] q (N)) ≠ 0 ∧
+    ((pochList [q,(b * q),((a * q) / c),((a * b) * (q^(((N : ℤ)+2) : ℤ)))] q (0)) * (1 - ((a * b) * q))) ≠ 0 ∧
+    ∀ r ∈ Finset.range (min x y+1), (∀ s ∈ Finset.range (N-x+1), ((pochList [((a * b) * (q^(((N : ℤ)+2) : ℤ)))] q (r+s)) ≠ 0 ∧
+    c ≠ 0 ∧
+    alpha ≠ 0 ∧
+    (((pochList [q,(alpha * q),(q^((-((M : ℤ))) : ℤ)),((((a * b) * gamma) * q) / alpha),(c * (q^((1-((s : ℤ))) : ℤ)))] q (r)) * (pochList [q,(b * q),((a * q) / c)] q (s))) * (1 - (c * (q^((-((s : ℤ))) : ℤ))))) ≠ 0 ∧
+    (((((pochList [(((a * b) * q) * q)] q (2*r+2*s)) / (pochList [((a * b) * (q^(((N : ℤ)+2) : ℤ)))] q (r+s))) * (((((pochList [(q^((-((x : ℤ))) : ℤ)),(c * (q^((((x : ℤ))-((N : ℤ))) : ℤ))),(q^((-((y : ℤ))) : ℤ)),(gamma * (q^((((y : ℤ))-((M : ℤ))) : ℤ)))] q (r)) * (pochList [(q^((((x : ℤ))-((N : ℤ))) : ℤ)),((q^((-((x : ℤ))) : ℤ)) / c)] q (s))) * (1 - (c * (q^((((r : ℤ))-((s : ℤ))) : ℤ))))) * (q^((-((r : ℤ))*((s : ℤ))) : ℤ))) / (((pochList [q,(alpha * q),(q^((-((M : ℤ))) : ℤ)),((((a * b) * gamma) * q) / alpha),(c * (q^((1-((s : ℤ))) : ℤ)))] q (r)) * (pochList [q,(b * q),((a * q) / c)] q (s))) * (1 - (c * (q^((-((s : ℤ))) : ℤ))))))) * ((-t)^(((r : ℤ)+(s : ℤ)) : ℤ))) * (q^((((r : ℤ)+(s : ℤ))*(2*(N : ℤ)-(r : ℤ)-(s : ℤ)+1)/2) : ℤ))) ≠ 0 → (alpha ≠ 0) ∧
+    (((((pochList [(((a * b) * q) * q)] q (2*r+2*s)) / (pochList [((a * b) * (q^(((N : ℤ)+2) : ℤ)))] q (r+s))) * (((((pochList [(q^((-((x : ℤ))) : ℤ)),(c * (q^((((x : ℤ))-((N : ℤ))) : ℤ))),(q^((-((y : ℤ))) : ℤ)),(gamma * (q^((((y : ℤ))-((M : ℤ))) : ℤ)))] q (r)) * (pochList [(q^((((x : ℤ))-((N : ℤ))) : ℤ)),((q^((-((x : ℤ))) : ℤ)) / c)] q (s))) * (1 - (c * (q^((((r : ℤ))-((s : ℤ))) : ℤ))))) * (q^((-((r : ℤ))*((s : ℤ))) : ℤ))) / (((pochList [q,(alpha * q),(q^((-((M : ℤ))) : ℤ)),((((a * b) * gamma) * q) / alpha),(c * (q^((1-((s : ℤ))) : ℤ)))] q (r)) * (pochList [q,(b * q),((a * q) / c)] q (s))) * (1 - (c * (q^((-((s : ℤ))) : ℤ))))))) * ((-t)^(((r : ℤ)+(s : ℤ)) : ℤ))) * (q^((((r : ℤ)+(s : ℤ))*(2*(N : ℤ)-(r : ℤ)-(s : ℤ)+1)/2) : ℤ))) ≠ 0 → (phiDefined [(alpha * (q^((((r : ℤ))+1) : ℤ))),(q^((((r : ℤ))-((M : ℤ))) : ℤ)),((((a * b) * gamma) * (q^((((r : ℤ))+1) : ℤ))) / alpha),(c * (q^((1+((r : ℤ))-((s : ℤ))) : ℤ)))] q (s)) ∧
+    (((((pochList [(((a * b) * q) * q)] q (2*r+2*s)) / (pochList [((a * b) * (q^(((N : ℤ)+2) : ℤ)))] q (r+s))) * (((((pochList [(q^((-((x : ℤ))) : ℤ)),(c * (q^((((x : ℤ))-((N : ℤ))) : ℤ))),(q^((-((y : ℤ))) : ℤ)),(gamma * (q^((((y : ℤ))-((M : ℤ))) : ℤ)))] q (r)) * (pochList [(q^((((x : ℤ))-((N : ℤ))) : ℤ)),((q^((-((x : ℤ))) : ℤ)) / c)] q (s))) * (1 - (c * (q^((((r : ℤ))-((s : ℤ))) : ℤ))))) * (q^((-((r : ℤ))*((s : ℤ))) : ℤ))) / (((pochList [q,(alpha * q),(q^((-((M : ℤ))) : ℤ)),((((a * b) * gamma) * q) / alpha),(c * (q^((1-((s : ℤ))) : ℤ)))] q (r)) * (pochList [q,(b * q),((a * q) / c)] q (s))) * (1 - (c * (q^((-((s : ℤ))) : ℤ))))))) * ((-t)^(((r : ℤ)+(s : ℤ)) : ℤ))) * (q^((((r : ℤ)+(s : ℤ))*(2*(N : ℤ)-(r : ℤ)-(s : ℤ)+1)/2) : ℤ))) ≠ 0 → (∀ j ∈ Finset.range (N-r-s+1), ((1 - ((a * b) * (q^((2*(r : ℤ)+2*(s : ℤ)+1) : ℤ)))) ≠ 0 ∧
+    (pochList [q,((a * b) * (q^(((N : ℤ)+(r : ℤ)+(s : ℤ)+2) : ℤ)))] q (j)) ≠ 0))))) :
+ (∑ n ∈ Finset.range (N+1), ((((t^(((n : ℤ)) : ℤ)) * (((((((pochList [(b * q),((a * q) / c)] q (N)) / (pochList [(((a * b) * q) * q),(1 / c)] q (N))) * (pochList [((a * b) * q),(a * q),((b * c) * q),(q^((-((N : ℤ))) : ℤ))] q (n))) * (1 - ((a * b) * (q^((2*((n : ℤ))+1) : ℤ))))) * (q^((((N : ℤ))*((n : ℤ))) : ℤ))) * (c^((-((n : ℤ))) : ℤ))) / ((pochList [q,(b * q),((a * q) / c),((a * b) * (q^(((N : ℤ)+2) : ℤ)))] q (n)) * (1 - ((a * b) * q))))) * (phi [(q^((-((n : ℤ))) : ℤ)),((a * b) * (q^(((n : ℤ)+1) : ℤ))),(q^((-((x : ℤ))) : ℤ)),(c * (q^(((x : ℤ)-((N : ℤ))) : ℤ)))] [(a * q),(q^((-((N : ℤ))) : ℤ)),((b * c) * q)] q q (min (n) (x)))) * (phi [(q^((-((n : ℤ))) : ℤ)),((alpha * ((a * b) / alpha)) * (q^(((n : ℤ)+1) : ℤ))),(q^((-((y : ℤ))) : ℤ)),(gamma * (q^(((y : ℤ)-((M : ℤ))) : ℤ)))] [(alpha * q),(q^((-((M : ℤ))) : ℤ)),((((a * b) / alpha) * gamma) * q)] q q (min (n) (y))))) = ((((((((pochList [(b * q),((a * q) / c)] q (N)) / (pochList [(((a * b) * q) * q),(1 / c)] q (N))) * (pochList [((a * b) * q),(a * q),((b * c) * q),(q^((-((N : ℤ))) : ℤ))] q (0))) * (1 - ((a * b) * (q^((2*(0)+1) : ℤ))))) * (q^((((N : ℤ))*(0)) : ℤ))) * (c^((-(0)) : ℤ))) / ((pochList [q,(b * q),((a * q) / c),((a * b) * (q^(((N : ℤ)+2) : ℤ)))] q (0)) * (1 - ((a * b) * q)))) * (∑ r ∈ Finset.range (min x y+1), (∑ s ∈ Finset.range (N-x+1), (if (((((pochList [(((a * b) * q) * q)] q (2*r+2*s)) / (pochList [((a * b) * (q^(((N : ℤ)+2) : ℤ)))] q (r+s))) * (((((pochList [(q^((-((x : ℤ))) : ℤ)),(c * (q^((((x : ℤ))-((N : ℤ))) : ℤ))),(q^((-((y : ℤ))) : ℤ)),(gamma * (q^((((y : ℤ))-((M : ℤ))) : ℤ)))] q (r)) * (pochList [(q^((((x : ℤ))-((N : ℤ))) : ℤ)),((q^((-((x : ℤ))) : ℤ)) / c)] q (s))) * (1 - (c * (q^((((r : ℤ))-((s : ℤ))) : ℤ))))) * (q^((-((r : ℤ))*((s : ℤ))) : ℤ))) / (((pochList [q,(alpha * q),(q^((-((M : ℤ))) : ℤ)),((((a * b) * gamma) * q) / alpha),(c * (q^((1-((s : ℤ))) : ℤ)))] q (r)) * (pochList [q,(b * q),((a * q) / c)] q (s))) * (1 - (c * (q^((-((s : ℤ))) : ℤ))))))) * ((-t)^(((r : ℤ)+(s : ℤ)) : ℤ))) * (q^((((r : ℤ)+(s : ℤ))*(2*(N : ℤ)-(r : ℤ)-(s : ℤ)+1)/2) : ℤ))) = 0 then 0 else (((((pochList [(((a * b) * q) * q)] q (2*r+2*s)) / (pochList [((a * b) * (q^(((N : ℤ)+2) : ℤ)))] q (r+s))) * (((((pochList [(q^((-((x : ℤ))) : ℤ)),(c * (q^((((x : ℤ))-((N : ℤ))) : ℤ))),(q^((-((y : ℤ))) : ℤ)),(gamma * (q^((((y : ℤ))-((M : ℤ))) : ℤ)))] q (r)) * (pochList [(q^((((x : ℤ))-((N : ℤ))) : ℤ)),((q^((-((x : ℤ))) : ℤ)) / c)] q (s))) * (1 - (c * (q^((((r : ℤ))-((s : ℤ))) : ℤ))))) * (q^((-((r : ℤ))*((s : ℤ))) : ℤ))) / (((pochList [q,(alpha * q),(q^((-((M : ℤ))) : ℤ)),((((a * b) * gamma) * q) / alpha),(c * (q^((1-((s : ℤ))) : ℤ)))] q (r)) * (pochList [q,(b * q),((a * q) / c)] q (s))) * (1 - (c * (q^((-((s : ℤ))) : ℤ))))))) * ((-t)^(((r : ℤ)+(s : ℤ)) : ℤ))) * (q^((((r : ℤ)+(s : ℤ))*(2*(N : ℤ)-(r : ℤ)-(s : ℤ)+1)/2) : ℤ)))*((phi [(q^((-((s : ℤ))) : ℤ)),(q^((((r : ℤ))-((y : ℤ))) : ℤ)),(gamma * (q^((((r : ℤ))+((y : ℤ))-((M : ℤ))) : ℤ))),(a * (q^((((r : ℤ))+1) : ℤ))),((b * c) * (q^((((r : ℤ))+1) : ℤ)))] [(alpha * (q^((((r : ℤ))+1) : ℤ))),(q^((((r : ℤ))-((M : ℤ))) : ℤ)),((((a * b) * gamma) * (q^((((r : ℤ))+1) : ℤ))) / alpha),(c * (q^((1+((r : ℤ))-((s : ℤ))) : ℤ)))] q q (s)) * (∑ j ∈ Finset.range (N-r-s+1), (((((1 - (((a * b) * (q^((2*(r : ℤ)+2*(s : ℤ)+1) : ℤ))) * (q^((2*(j : ℤ)) : ℤ)))) / (1 - ((a * b) * (q^((2*(r : ℤ)+2*(s : ℤ)+1) : ℤ))))) * (pochList [((a * b) * (q^((2*(r : ℤ)+2*(s : ℤ)+1) : ℤ))),(q^(((r : ℤ)+(s : ℤ)-(N : ℤ)) : ℤ))] q (j))) / (pochList [q,((a * b) * (q^(((N : ℤ)+(r : ℤ)+(s : ℤ)+2) : ℤ)))] q (j))) * ((t * (q^(((N : ℤ)-(r : ℤ)-(s : ℤ)) : ℤ)))^(((j : ℤ)) : ℤ))))))))) := by
+  sorry
+
+end FiniteQBenchmark.Identity169

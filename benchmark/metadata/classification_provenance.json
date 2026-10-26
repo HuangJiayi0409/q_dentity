@@ -1,0 +1,21 @@
+{
+  "status": "reconstructed_build_inputs_not_original_six_family_file",
+  "family_assignment_source": "previous benchmark train/test manifests",
+  "supplementary_fields_source": "round2_identity_catalog/data/catalog.json",
+  "group_source": "existing benchmark metadata/groups.json",
+  "original_six_family_directory_missing": true,
+  "four_family_migration": {
+    "date": "2026-10-18",
+    "mapping": {
+      "A": "A",
+      "B": "G",
+      "C": "C",
+      "D": "G",
+      "E": "G",
+      "F": "F"
+    },
+    "history": "benchmark/metadata/history/six_family_20261018",
+    "membership": "train/test membership preserved",
+    "formula_snapshot_headers": "Original six-family headers retained as frozen provenance; current labels are in classification.json and split manifests."
+  }
+}

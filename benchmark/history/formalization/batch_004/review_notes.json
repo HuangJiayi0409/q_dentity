@@ -1,0 +1,29 @@
+{
+  "batch": "batch_004",
+  "local_primary_sources": [
+    {
+      "path": "round2_identity_catalog/books/q-Series Their Development and Application in Analysis, Number Theory, Combinatorics, Physics and Computer Algebra (Cbms… (George E. Andrews) (z-library.sk, 1lib.sk, z-lib.sk) (1).pdf",
+      "sha256": "5aecfdf0a25b10224861545d416b86a49ffb398d6b53c7fc9486d209c0b5d5d3",
+      "reviewed_locations": "13–15、24–30、55–56、78–79、103"
+    },
+    {
+      "path": "round2_identity_catalog/books/Basic Hypergeometric Series and Applications (Nathan J. Fine) (z-library.sk, 1lib.sk, z-lib.sk) (1).pdf",
+      "sha256": "efcc611caf2e577cf732f3dd70e24b87adcae27b8ec2347d90d1a7c1e6192575",
+      "reviewed_locations": "§7、§§14–15、§§20–21"
+    },
+    {
+      "path": "round2_identity_catalog/books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk) (1).pdf",
+      "sha256": "76982ed239041e5383c2db345c2610378e8da17c801b1980aa82ced1077a634a",
+      "reviewed_locations": "44–46、123、134–135（扫描页图像）"
+    }
+  ],
+  "source_policy": "Frozen catalog statements and recorded corrections; historical validation is not rerun in full.",
+  "notes": [
+    "Negative integer upper Gaussian is a product quotient, not zero extension.",
+    "AQ D is unshifted, unlike AP D in batch 003.",
+    "G0 and Fine A are constructed by coefficient equations and genuine series multiplication.",
+    "Sills scanned definitions of T0/T1, Heine/Watson f and P were inspected as images.",
+    "AQ (10.22) operator coefficients checked from page image; (10.27) is stated for arbitrary d.",
+    "Explicitly preserve actual denominator domains and compatible root parameters."
+  ]
+}

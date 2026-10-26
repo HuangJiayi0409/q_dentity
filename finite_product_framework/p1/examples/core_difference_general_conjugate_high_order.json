@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "solver": "difference_equation",
+  "input": {
+    "extensions": [
+      {
+        "name": "H",
+        "kind": "sum",
+        "increment": 1
+      },
+      {
+        "name": "P",
+        "kind": "product",
+        "ratio": [
+          "add",
+          "H",
+          "Z"
+        ]
+      }
+    ],
+    "rhs_basis": [
+      [
+        "mul",
+        [
+          "pow",
+          [
+            "add",
+            [
+              "mul",
+              2,
+              "P"
+            ],
+            [
+              "mul",
+              "P",
+              [
+                "pow",
+                "H",
+                4
+              ]
+            ],
+            [
+              "mul",
+              -4,
+              "H",
+              "P"
+            ],
+            [
+              "mul",
+              -3,
+              "P",
+              [
+                "pow",
+                "H",
+                2
+              ]
+            ],
+            [
+              "mul",
+              2,
+              "P",
+              [
+                "pow",
+                "H",
+                3
+              ]
+            ]
+          ],
+          -1
+        ],
+        [
+          "add",
+          [
+            "pow",
+            "H",
+            4
+          ],
+          [
+            "mul",
+            -1,
+            "H"
+          ],
+          [
+            "mul",
+            -6,
+            [
+              "pow",
+              "H",
+              2
+            ]
+          ],
+          [
+            "mul",
+            -3,
+            "Z"
+          ],
+          [
+            "mul",
+            2,
+            "Z",
+            [
+              "pow",
+              "H",
+              2
+            ]
+          ],
+          [
+            "mul",
+            4,
+            "H",
+            "Z"
+          ]
+        ]
+      ]
+    ],
+    "algebraic_extensions": [
+      {
+        "name": "Z",
+        "polynomial": [
+          "add",
+          -2,
+          [
+            "pow",
+            "Z",
+            2
+          ]
+        ],
+        "shift": [
+          "mul",
+          -1,
+          "Z"
+        ]
+      }
+    ],
+    "operator": [
+      1,
+      -2,
+      1
+    ]
+  }
+}

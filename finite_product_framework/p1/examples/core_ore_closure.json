@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "solver": "q_ore",
+  "input": {
+    "operation": "closure",
+    "sequences": {"f": [["neg", "Q"], 1], "g": [["neg", "a"], 1]},
+    "observable": ["add", 1, ["seq", "f", 0], ["pow", ["seq", "g", 0], 2]]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "round": 2,
+  "status": "partitioned_conservative_pass",
+  "library": "main",
+  "scope": "finite_q",
+  "source_count": 503,
+  "canonical_statement_count": 446,
+  "family_count": 46,
+  "merged_group_count": 38,
+  "cross_book_merged_groups": 32,
+  "redundant_source_statements_removed": 57,
+  "directed_relation_count": 25,
+  "source_counts_by_book": {
+    "GR2": 245,
+    "ANDREWS_P": 59,
+    "ANDREWS_Q": 54,
+    "FINE": 21,
+    "SILLS": 79,
+    "KAC_CHEUNG": 45
+  },
+  "source_scopes": {
+    "finite_q": 503
+  },
+  "canonical_scopes": {
+    "finite_q": 446
+  },
+  "source_roles": {
+    "rewrite_rule": 169,
+    "identity": 334
+  },
+  "resolved_correction_links": 16,
+  "unassigned_sources": 0,
+  "minimal_mother_identity_count": null,
+  "total_source_count": 604,
+  "total_canonical_statement_count": 547,
+  "total_family_count": 50,
+  "companion_catalog": "round2_identity_catalog/applications/data/catalog.json",
+  "path_semantics": "source_file and definition_files are project-root-relative; notation_context.standard and conditions.common_rules are round2-root-relative",
+  "limitation": "主库与应用库按已有范围标记分离；保留全部来源与原有归并依据，不声称最小母式数或全参数证明。",
+  "source_manifest": {
+    "round1_source_collection/metadata/pending16_resolutions.json": "f80ff671a8341e00c6e79c67cbdf6171b653afbe0f1cf9d104727e242c2f0d5d",
+    "round1_source_collection/metadata/visual_audit_20260921.json": "a15e94ef241a938dc39514757cc77d4edc67732a14082005b5983754ef068510",
+    "round1_source_collection/records/GR2.json": "1d0e4e4e1116e67406ee8fec9ff0a8b5505b405dfc18cee469fc87c4194e204d",
+    "round1_source_collection/records/GR2_supplement.md": "568afe17f77b01ff06c4f2f476a97c7299a8a77b11c4cc58bfa64144cceeb767",
+    "round1_source_collection/books/GR.md": "8c32d2a07425b0d8cd72a2ad3bcc5526a403a164b1d40a458c914a857ee14ebe",
+    "round1_source_collection/records/ANDREWS_P.json": "a989df8c6e205496947b2a13df8b6ffe1b3bc79727bc80abe11d52e07b1e7862",
+    "round1_source_collection/records/ANDREWS_P_supplement.md": "c23af2cb4932dfead2eee699302da02df92d75c0515993043a93db91938a7cbe",
+    "round1_source_collection/books/ANDREWS_P.md": "c9068632d7174f99fbbaac3311190081e03da1ded455a164b1eab4296862d227",
+    "round1_source_collection/records/ANDREWS_Q.json": "823fbe89e699e8ab1873145ecd74287cc504d6c9ceb3c3e171e43e39dd61a35b",
+    "round1_source_collection/records/ANDREWS_Q_supplement.md": "af50afaf5a9b7011b2fa36aeb9b0f2dbbe933fea7c7d5db9d6bb4658249b1fc5",
+    "round1_source_collection/books/ANDREWS_Q.md": "429b4dbc97bd9ab49c2bf4767f44ef4b15497bf8e605494cc162c14b01288f51",
+    "round1_source_collection/records/FINE.json": "94adc3e780e045c4c7d4c908e14e16758997665fb277e7b067c91c366a097ece",
+    "round1_source_collection/records/FINE_supplement.md": "2a561fc5b0710ddb17bbf570160106318b3d04c85171ebe0fc6ca79164d204b5",
+    "round1_source_collection/books/FINE.md": "1075b1c4f7e6509ed55f59c1204931d96685ef9a78d2d586ba0e7600090d64ef",
+    "round1_source_collection/records/SILLS.json": "410d7240d07f0832206531e70f46d3cb5d23a2a664583a0adcdaf4d172dfe762",
+    "round1_source_collection/records/SILLS_supplement.md": "1b4e69deb9ba8e579a487c7b0a2eae6612e53c08dfbe429a6fc06e603297b090",
+    "round1_source_collection/books/SILLS.md": "ff8a8b8e17f6a0719aa2e5d8a40b915f3e63deea54266e91f21db804fcc13646",
+    "round1_source_collection/records/KAC_CHEUNG.json": "622f23b62377591a9d6541bcef94a1f168fcdead7ce23baa1df004cf1ffd4103",
+    "round1_source_collection/records/KAC_CHEUNG_supplement.md": "35ef3a136f6bd42edad79715ef0f01348c3b416952049a7ec3a0b398e00d322c",
+    "round1_source_collection/books/KAC_CHEUNG.md": "9057de15d986e0a0e89ceb5dcc50865dd358b039dba73a567fb21a56f90958d1"
+  }
+}

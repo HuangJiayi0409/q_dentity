@@ -1,0 +1,24 @@
+{
+  "batch": "batch_005",
+  "local_primary_sources": [
+    {
+      "path": "round2_identity_catalog/books/Quantum Calculus (Victor Kac, Pokman Cheung) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "sha256": "0207f1ed141e26f2e86a7e9fe22860cf2eefdd51b1067bbf7dd1ce675c860670",
+      "reviewed_locations": "pp.9,99–104; extracted Chapter 26 text and inspected PDF pp.19,113,114 as images"
+    },
+    {
+      "path": "round2_identity_catalog/books/An Invitation to the Rogers-Ramanujan Identities (Andrew V. Sills) (z-library.sk, 1lib.sk, z-lib.sk) (1).pdf",
+      "sha256": "76982ed239041e5383c2db345c2610378e8da17c801b1980aa82ced1077a634a",
+      "reviewed_locations": "pp.136,142; PDF pp.161,167 inspected as images"
+    }
+  ],
+  "notes": [
+    "Borwein components extracted from original polynomial coefficients by residue class; reconstruction proved.",
+    "All signed P_n indices retained; negative branch is the shifted reciprocal from (3.7).",
+    "Finite-field counts use actual independent tuples and matrix ranks.",
+    "General Taylor statements quantify polynomial families with source difference/degree/boundary conditions.",
+    "Root sums are actual complex multiset root sums; Vieta bridge fully proved.",
+    "The corrected triangular construction replaces (26.23), as already documented in frozen catalog.",
+    "267 independent exact checks; historical source validation fields are preserved, not all rerun."
+  ]
+}

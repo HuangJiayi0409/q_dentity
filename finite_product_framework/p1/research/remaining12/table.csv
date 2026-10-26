@@ -1,0 +1,13 @@
+identity,route,local Lean,original Lean,remaining obligations
+FQI-CHU-VANDERMONDE-Q,qwz,passed,unsupported_structure,用 phiDefined [c] q n 推出支撑内各个 Poch 分母非零；证明终止上参数和 Gaussian 表示的转换；原假设不要求全局 regular q；把 q-WZ 通量中的可去极点消去，并处理随 n 变化的分母条件；生成求和、边界、初值及原目标递推的完整 Lean 证明
+FQI-CHU-VANDERMONDE-BALANCED,qwz,passed,unsupported_structure,"将 phiDefined 的有限支撑非零假设传给公共终止上参数桥接；清除下参数 Poch(c,q,n) 后生成移位起点 Poch(c*q^k,q,n-k) 的 Lean 规则；验证目标可能为零时的递推比较，不除以目标值；生成完整边界、初值与求和证明"
+FQI-BAILEY-UNIT,direct,passed,unsupported_structure,把 unitBailey 的 r=0 分支与 r>0 分支分别桥接到原定义；证书的 1-a*q^(2r) 因子不由原假设保证非零，必须在通量中消去；分别证明 n=0 初值、n>0 的两个端点及 q=0 可能情形；由直接 q-Gosper 的原差分组装原分段目标
+FQI-SRC-GR2-1.Ex5,qwz,passed,unsupported_structure,"证明 pochList、外部乘数和含 m 的移位起点 Poch(c*q^k,q,m) 转换；为依赖 n 的下参数 c*q^(1-n)/b 传递 phiDefined 条件；处理原假设未排除的分子零值与证书可去极点；生成参数 m 保持任意时的递推、移动边界与初值证明"
+FQI-SRC-GR2-1.Ex6iii,qwz,passed,proved,
+FQI-SRC-AP-3.E1,qwz,passed,unsupported_structure,证明 Int.Icc 双边求和到可验证支撑的重编号；桥接 gaussianInt 与自然数 Gaussian，验证 j*j 的 toNat；原声明允许 q=0，不能直接使用搜索中的负幂商表示；验证两侧移动边界、初值及步长为二的 Gaussian 上指标变化
+FQI-SRC-AQ-3.37,direct,passed,unsupported_structure,把 pochList 单元素和 (1-q) 分母桥接到原式；在原差分中消去 1-q^(2r+1) 可去极点，不增加非零假设；从原 h_domain 证明实际使用的分母非零；保留 q=0 的合法情形；单独验证 n=0、n>0 和求和端点，组装分段目标
+FQI-SRC-SILLS-1.JacobiFinite,qwz,passed,unsupported_structure,验证反向等式及 Int.Icc 支撑重编号；证明整数 (-1)^j、x^j、三角数 toNat 和 gaussianInt 的表示；分开处理 q=0 与形式有理函数搜索所用非零域；生成双边望远镜、移动端点与目标乘积递推证明
+FQI-SRC-SILLS-2.Pair122,qwz,passed,unsupported_structure,从原定义证明 sillsAlpha x q 1 2 r 的整除分支和自然数指数化简；桥接 q 与 q^2 两种 Poch 基底的移位关系；由 h_domain 推导分母条件，并在通量中消去未获非零保证的证书因子；验证 n 依赖域、上下边界、初值和目标递推
+FQI-SRC-SILLS-2.Lem2.31,qwz,passed,unsupported_structure,在 Lean 使用 ht:t^2=q；研究输入已作代换但这不算表示证明；验证整数双边支撑、平方指数 toNat 与 gaussianInt；原式允许 t=0，必须保留该情形；完成双边移动边界、初值及目标乘积递推证明
+FQI-SRC-SILLS-2.Lem2.53,qwz,passed,unsupported_structure,证明 ht:t^2=q 代换和 pochList 到 Poch 的表示转换；对 t 与 t^2 建立实际支撑内的移位及分母规则；消去证书额外极点，不把其全部非零作为新假设；处理 n 依赖域、端点与初值，组装目标递推
+FQI-SRC-SILLS-3.Lem3.3,qwz,passed,unsupported_structure,桥接 q、q^2 基底与自然数 n-r 的截断减法；从 h_domain 推导各个 Poch 和 1-x 分母条件；在通量中消去未被原假设排除的证书极点；生成原目标递推、实际支撑内的局部关系、边界与初值证明

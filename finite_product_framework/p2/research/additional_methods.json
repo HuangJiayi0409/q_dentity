@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-13",
+  "scope": "既有P2主机制62条train；本轮仅调研",
+  "status": "候选流程，未工具试跑，未新增Lean证明",
+  "assignment_note": "例题匹配是依据实际结构的工程推断，不是论文或工具对本批原statement的已证覆盖；不提供成功概率或覆盖条数",
+  "routes": [
+    {
+      "name": "AW连接与线性化系数算法",
+      "core_proof_method": "适配基底与分差算子→构造展开系数递推→q-Petkovšek求解→初值/归一化→重组多项式等式",
+      "applicability_conditions": "Askey–Wilson及可合法特化的多项式；所需非退化条件须从原声明推出",
+      "remaining_obligations": "基底桥接、算子作用证明、系数递推、解的完整性与初值、退化参数",
+      "cas_entry": "qFPS.mpl中的q-Petkovšek后端有公开包入口；论文外层预处理仍需集成，未核验独立一键包",
+      "lean_verification": "Lean证明算子与基底关系、递推及唯一性，再生成原等式",
+      "example_ids": [
+        "FQI-SRC-GR2-7.6.8",
+        "FQI-SRC-GR2-7.6.2",
+        "FQI-SRC-GR2-7.6.14",
+        "FQI-SRC-GR2-8.5.1"
+      ],
+      "references": [
+        "https://www.mathematik.uni-kassel.de/~koepf/Publikationen/Askey-Wilson%20JSC7863.pdf",
+        "https://hypergeometric-summation.org/"
+      ],
+      "priority_and_overlap": "优先；与qFPS共享递推求解后端，不独立累计底层算法数"
+    },
+    {
+      "name": "q-FPS系数构造算法",
+      "core_proof_method": "函数q方程→指定基底系数递推→求q超几何解→确定初值→比较目标展开",
+      "applicability_conditions": "可取得q-holonomic表示且系数解在算法可处理类内；单项式或受支持q基底",
+      "remaining_obligations": "实际输入表示、原Field域与论文特征零形式q域桥接、初值和奇点",
+      "cas_entry": "Maple qFPS；官网列出包及正交多项式示例；本轮未成功获取源文件内容或运行",
+      "lean_verification": "验证函数方程转系数递推及初值，以系数相等恢复原目标",
+      "example_ids": [
+        "FQI-SRC-GR2-9.Ex4i",
+        "FQI-SRC-GR2-9.Ex4ii",
+        "FQI-SRC-GR2-9.Ex5ii"
+      ],
+      "references": [
+        "https://www.hypergeometric-summation.org/SprengerKoepf2011.pdf",
+        "https://hypergeometric-summation.org/"
+      ],
+      "priority_and_overlap": "优先；与P1递推能力交叉，但入口是展开系数构造"
+    },
+    {
+      "name": "基底反演与连接系数卷积算法",
+      "core_proof_method": "从定义求基底展开矩阵→计算/证明三角反演→卷积构造连接系数→与目标系数比较→重组",
+      "applicability_conditions": "有限次数多项式序列与合法基底；反演对角非零",
+      "remaining_obligations": "通用反演系数、任意n、目标系数核求值、退化参数",
+      "cas_entry": "Chaggara–Mabrouk论文给出系统方法；尚未核实可直接调用的配套完整软件；可用精确CAS实现",
+      "lean_verification": "有限三角和、逆关系与系数比较；禁止固定n矩阵计算替代泛n证明",
+      "example_ids": [
+        "FQI-SRC-GR2-1.Ex33",
+        "FQI-SRC-GR2-2.Ex29",
+        "FQI-SRC-GR2-7.6.2"
+      ],
+      "references": [
+        "https://arxiv.org/pdf/1601.06122"
+      ],
+      "priority_and_overlap": "优先；更贴近P2，工具需自行集成"
+    },
+    {
+      "name": "q-holonomic闭包与消元",
+      "core_proof_method": "基本对象算子→乘积/平方/替换闭包→求和消元→两边共同关系→边界初值唯一性",
+      "applicability_conditions": "存在有效有限算子表示；所需终止和参数关系可追踪",
+      "remaining_obligations": "原定义算子、真实有限域边界、非齐次项、足够初值、递推奇点",
+      "cas_entry": "Mathematica HolonomicFunctions；单变量序列/级数可评估qGeneratingFunctions",
+      "lean_verification": "逐步验证算子闭包与消元，原参数域递推/初值组装",
+      "example_ids": [
+        "FQI-SRC-GR2-8.8.15",
+        "FQI-SRC-GR2-III-22",
+        "FQI-SRC-GR2-7.2.22",
+        "FQI-SRC-AP-3.E7"
+      ],
+      "references": [
+        "https://www1.risc.jku.at/sw/holonomicfunctions/",
+        "https://www3.risc.jku.at/publications/download/risc_3934/hf.pdf",
+        "https://risc.jku.at/sw/qgeneratingfunctions/"
+      ],
+      "priority_and_overlap": "已有工具；主体与P1 Ore/递推路线重叠，作为替代路线或共用后端"
+    },
+    {
+      "name": "多重q超几何求和算法",
+      "core_proof_method": "展开隐藏级数→固定维q超几何核→多移位关系→边界与外参数递推→目标初值比较",
+      "applicability_conditions": "适用的q-proper超几何多指标核；固定有限维；必须核对支撑",
+      "remaining_obligations": "各边界面、零项、min/max、原域分母；任意链长另需归纳",
+      "cas_entry": "Mathematica qMultiSum；也可作为P2抽出低维核的求值器",
+      "lean_verification": "验证多指标局部关系、有限域边界及递推唯一性",
+      "example_ids": [
+        "FQI-SRC-GR2-2.Ex20",
+        "FQI-SRC-GR2-2.Ex35iii",
+        "FQI-SRC-GR2-8.2.6",
+        "FQI-SRC-GR2-7.2.22"
+      ],
+      "references": [
+        "https://www1.risc.jku.at/sw/qmultisum/",
+        "https://www.risc.jku.at/publications/download/risc_427/qmultisum.pdf"
+      ],
+      "priority_and_overlap": "已有工具；与P1多重望远镜共用，不新增主机制"
+    },
+    {
+      "name": "差分域/环嵌套和求值",
+      "core_proof_method": "建立合法差分表示→由内向外求和/构造递推并解嵌套和→比较两侧→边界初值",
+      "applicability_conditions": "可在支持的差分域/环中表示的嵌套和与q乘积；不能仅凭多重和外观判定",
+      "remaining_obligations": "差分扩张合法性、表示能力、嵌套深度、原边界及参数条件",
+      "cas_entry": "Sigma + EvaluateMultiSums；官方明确支持尝试自动化多和求值",
+      "lean_verification": "验证每层差分/递推及定义桥接，完整有限求和组装",
+      "example_ids": [
+        "FQI-SRC-GR2-2.Ex20",
+        "FQI-SRC-GR2-2.Ex35iii"
+      ],
+      "references": [
+        "https://risc.jku.at/sw/evaluatemultisums/"
+      ],
+      "priority_and_overlap": "较低优先级：仅适用性试验候选，尚无本批成功证据"
+    }
+  ]
+}

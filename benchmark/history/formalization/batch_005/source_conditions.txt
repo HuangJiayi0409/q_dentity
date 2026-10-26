@@ -1,0 +1,275 @@
+401 FQI-SRC-SILLS-4.50
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 135；4.50
+
+402 FQI-SRC-SILLS-4.Mod8
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；T₀见辅助定义。
+Definitions: 
+Notes: 
+Locator: 印刷页 135；4.Mod8
+
+403 FQI-SRC-SILLS-4.51
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；\mathsf A,B,C 由(q;q³)_n(q²;q³)_n=A_n(q³)−qB_n(q³)−q²C_n(q³)定义；区别于§4.3的B_n。
+Definitions: 
+Notes: 
+Locator: 印刷页 136；4.51
+
+404 FQI-SRC-SILLS-4.52
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；\mathsf A,B,C 由(q;q³)_n(q²;q³)_n=A_n(q³)−qB_n(q³)−q²C_n(q³)定义；区别于§4.3的B_n。
+Definitions: 
+Notes: 
+Locator: 印刷页 136；4.52
+
+405 FQI-SRC-SILLS-4.53
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；\mathsf A,B,C 由(q;q³)_n(q²;q³)_n=A_n(q³)−qB_n(q³)−q²C_n(q³)定义；区别于§4.3的B_n。
+Definitions: 
+Notes: 
+Locator: 印刷页 136；4.53
+
+406 FQI-SRC-SILLS-4.54
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1；n=0另设A₀=1。
+Definitions: 
+Notes: 
+Locator: 印刷页 136；4.54
+
+407 FQI-SRC-SILLS-4.55
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1；B₀=0。
+Definitions: 
+Notes: 
+Locator: 印刷页 136；4.55
+
+408 FQI-SRC-SILLS-4.56
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1；C₀=0。
+Definitions: 
+Notes: 
+Locator: 印刷页 136；4.56
+
+409 FQI-SRC-SILLS-4.Ex3
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥1；A₀=1，B₀=C₀=0。
+Definitions: 
+Notes: 
+Locator: 印刷页 137；4.Ex3
+
+410 FQI-SRC-SILLS-5.6-8
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。耦合递推i≥3；A₄=1。
+Definitions: 等价地A_i为从{3,…,i−2}选取互不相邻整数的q权之和，B_i=q^{i−1}A_{i−1}（i≥4）；这个有限集合解释用于独立核验。
+Notes: 
+Locator: 印刷页 142；5.6-8
+
+411 FQI-SRC-SILLS-6.Ex1-corrected
+整数指标；q 为形式变量或使实际分母非零的数。空积为1；Gaussian在0≤k≤n之外为0；有负幂时q≠0。n≥0；所有分母非零。
+Definitions: \mathcal B_n[\alpha;x,q]:=\sum_{r=0}^n\alpha_r/((q;q)_{n-r}(xq;q)_{n+r}).
+Notes: 原印n=3r−1的指数常数为−2，改为+2；n=3r指数缺r因子。两处修订以Bailey反演和精确检验核对。
+Locator: 印刷页 162；6.Ex1-corrected
+
+412 FQI-SRC-KAC-CHEUNG-1.11-12
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。f,g为多项式或有理函数，所需点处有定义；x≠0。
+Definitions: 
+Notes: 
+Locator: 印刷页 3；1.11-12
+
+413 FQI-SRC-KAC-CHEUNG-1.13-14
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。f,g为多项式或有理函数；xg(x)g(qx)≠0。
+Definitions: 
+Notes: 
+Locator: 印刷页 3；1.13-14
+
+414 FQI-SRC-KAC-CHEUNG-1.15
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。β为非零整数，αx≠0，q^β≠1；f为有理函数。
+Definitions: 
+Notes: 原书允许一般幂；本表明确限制整数幂，保持有限有理式。
+Locator: 印刷页 4；1.15
+
+415 FQI-SRC-KAC-CHEUNG-3.5
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n∈Z；n=0右侧为0。
+Definitions: 
+Notes: 
+Locator: 印刷页 8；3.5
+
+416 FQI-SRC-KAC-CHEUNG-3.6
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。m,n∈Z。
+Definitions: 
+Notes: 
+Locator: 印刷页 8；3.6
+
+417 FQI-SRC-KAC-CHEUNG-3.9
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n∈Z。
+Definitions: 
+Notes: 
+Locator: 印刷页 11；3.9
+
+418 FQI-SRC-KAC-CHEUNG-3.10
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n∈Z。
+Definitions: 
+Notes: 附录p106第五行原印分母多出q因子；作为本式反写时显式修正，见辅助说明。
+Locator: 印刷页 11；3.10
+
+419 FQI-SRC-KAC-CHEUNG-3.11
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n∈Z。
+Definitions: 
+Notes: 
+Locator: 印刷页 11；3.11
+
+420 FQI-SRC-KAC-CHEUNG-3.12
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n∈Z。
+Definitions: 
+Notes: 最终编号式正确；上方推导有q指数笔误，见来源疑点。
+Locator: 印刷页 11；3.12
+
+421 FQI-SRC-KAC-CHEUNG-4.1
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。deg f≤N，N≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 12；4.1
+
+422 FQI-SRC-KAC-CHEUNG-4.3
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n,j≥0。
+Definitions: 
+Notes: 这里取(4.2)末式的一般x形式；(4.3)为x=1的特例。
+Locator: 印刷页 12；4.3
+
+423 FQI-SRC-KAC-CHEUNG-4.4
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 12；4.4
+
+424 FQI-SRC-KAC-CHEUNG-5.1
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。0≤j≤n。
+Definitions: 
+Notes: 
+Locator: 印刷页 14；5.1
+
+425 FQI-SRC-KAC-CHEUNG-5.7
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。作用于多项式。
+Definitions: 
+Notes: 
+Locator: 印刷页 15；5.7
+
+426 FQI-SRC-KAC-CHEUNG-5.8
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥0；含单位元的结合代数。
+Definitions: 
+Notes: 原书Theorem5.1；验证用有限矩阵直接乘方。
+Locator: 印刷页 15；5.8
+
+427 FQI-SRC-KAC-CHEUNG-6.5
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥0，0≤j≤n。
+Definitions: 
+Notes: 
+Locator: 印刷页 19；6.5
+
+428 FQI-SRC-KAC-CHEUNG-7.2
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q为素数幂；0≤j≤n。
+Definitions: 
+Notes: 
+Locator: 印刷页 22；7.2
+
+429 FQI-SRC-KAC-CHEUNG-7.rank
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q为素数幂；0≤j≤min(m,n)。
+Definitions: 
+Notes: p24–25无编号Exercise答案；证明应选择核和像，再选商空间到像的同构，见疑点说明。
+Locator: 印刷页 25；7.rank
+
+430 FQI-SRC-KAC-CHEUNG-7.8
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥1。
+Definitions: G_n=\sum_{j=0}^n{n\brack j}_q\quad\text{(7.7)}.
+Notes: 
+Locator: 印刷页 25；7.8
+
+431 FQI-SRC-KAC-CHEUNG-8.reciprocal
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥1，j≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 28；8.reciprocal
+
+432 FQI-SRC-KAC-CHEUNG-13.10
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 44；13.10
+
+433 FQI-SRC-KAC-CHEUNG-14.higher
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。0≤j≤n。
+Definitions: 
+Notes: p48无编号的一般α公式限制为α=n≥0；明确的整数阶特化。
+Locator: 印刷页 48；14.higher
+
+434 FQI-SRC-KAC-CHEUNG-15.cancellation
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。M≥1，ax≠0。
+Definitions: 
+Notes: 原书以正整数m记M；仅收证明中的有限部分，不收无限双边求和。
+Locator: 印刷页 53；15.cancellation
+
+435 FQI-SRC-KAC-CHEUNG-19.telescoping
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。N≥0，x≠0；F为多项式或有理函数，在所需点有定义。
+Definitions: 
+Notes: 
+Locator: 印刷页 69；19.telescoping
+
+436 FQI-SRC-KAC-CHEUNG-26.5
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1；f,g为有理函数，x≠0。
+Definitions: 
+Notes: 
+Locator: 印刷页 99；26.5
+
+437 FQI-SRC-KAC-CHEUNG-26.6
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1；f,g为有理函数，xg(qx)g(q^{-1}x)≠0。
+Definitions: 
+Notes: 
+Locator: 印刷页 99；26.6
+
+438 FQI-SRC-KAC-CHEUNG-26.7
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1，n≥0；n=0按0解释。
+Definitions: 
+Notes: 
+Locator: 印刷页 100；26.7
+
+439 FQI-SRC-KAC-CHEUNG-26.10
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1，n≥1。
+Definitions: 
+Notes: 
+Locator: 印刷页 100；26.10
+
+440 FQI-SRC-KAC-CHEUNG-26.12
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1，n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 100；26.12
+
+441 FQI-SRC-KAC-CHEUNG-26.14
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 101；26.14
+
+442 FQI-SRC-KAC-CHEUNG-26.15
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。q²≠1，n≥0。
+Definitions: 
+Notes: 
+Locator: 印刷页 101；26.15
+
+443 FQI-SRC-KAC-CHEUNG-26.21
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥2；q≠r，q^{n−1}≠r^{n−1}；所用[k]_{q,r}非零。
+Definitions: 一般量子差分、根和s_n及非嵌套Taylor基底T_n的定义见辅助说明。
+Notes: 原q′统一写r；仅保留各次多项式的根和关系，不能据此假设各次根嵌套。
+Locator: 印刷页 103；26.21
+
+444 FQI-SRC-KAC-CHEUNG-26.22
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥2；r=q≠0，h≠h′。
+Definitions: s_n为一般量子Taylor多项式T_n的根和；见辅助说明。
+Notes: 
+Locator: 印刷页 103；26.22
+
+445 FQI-SRC-KAC-CHEUNG-26.rootsum
+空积为1；整数指标；q≠0,1，所有实际分母非零。多项式恒等式可在约分后延拓。n≥1；h′=h，q≠r；所用[j]_{q,r}非零。
+Definitions: s_n为一般量子Taylor多项式T_n的根和；见辅助说明。
+Notes: p103无编号有限和；只解释为根和，不接受随后a_n=s_n−s_{n−1}是新根的推断。
+Locator: 印刷页 103；26.rootsum
+
+446 FQI-SRC-KAC-CHEUNG-26.23
+n≥0；d_j=⟨j⟩_q=(q^j−q^{-j})/(q−q^{-1})，d₀!=1，d_j!=∏_{i=1}^j d_i；q≠0,±1且d_1,…,d_n≠0。D̃_qf=(f(qx)−f(q^{-1}x))/((q−q^{-1})x)，x=0按多项式延拓。
+Definitions: 
+Notes: 撤去错误的嵌套根乘积，用唯一满足降阶与T_n(a)=0的有限三角递推替代。 设 d_j=⟨j⟩_q，d_j!=∏_{i=1}^j d_i。T₀=1，T_n=x^n/d_n!−Σ_{k=0}^{n−1}a^{n−k}T_k/d_{n−k}!。在截断多项式环中，ΣT_n t^n=(Σx^n t^n/d_n!)/(Σa^n t^n/d_n!)；对x取对称q导数即乘t，置x=a得1，故降阶和边界均成立。首项非零又保证唯一性。此为有推导的替代基底，非声称原乘积只错一个字符。 原式与反例保留在 metadata/pending16_originals.json。
+Locator: p104, (26.23)的替代构造；边界见p103

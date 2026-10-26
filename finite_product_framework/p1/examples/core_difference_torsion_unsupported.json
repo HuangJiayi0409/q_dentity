@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "solver": "difference_ring",
+  "input": {
+    "extensions": [
+      {
+        "name": "P",
+        "kind": "product",
+        "ratio": -1
+      }
+    ],
+    "rhs_basis": [
+      "P"
+    ]
+  }
+}

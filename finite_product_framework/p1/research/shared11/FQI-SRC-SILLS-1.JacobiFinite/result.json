@@ -1,0 +1,21 @@
+{
+  "id": "FQI-SRC-SILLS-1.JacobiFinite",
+  "source": {
+    "identity_id": "FQI-SRC-SILLS-1.JacobiFinite",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity358.lean",
+    "sha256": "92fd6c5451f63dd6853839f64d39157ae6d36d8a15a7c5266939deb4a9acaccb"
+  },
+  "native_status": "unsupported_structure",
+  "original_lean_proved": false,
+  "remaining_obligations": [
+    "Icc与列表已在原目标重写；需连接Gaussian整数指标、三角指数toNat与整数幂的表示",
+    "处理q=0和双边移动边界",
+    "生成完整局部关系、初值与乘积目标递推证明"
+  ],
+  "native_report": "FQI-SRC-SILLS-1.JacobiFinite/native.json",
+  "verified_preprocessing_steps": [
+    "bilateral_interval_reindexed_with_both_endpoints",
+    "explicit_Pochhammer_lists_expanded_in_Lean"
+  ],
+  "support_normalization": "original goal reindexed by Lean; not a full proof"
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "solver": "q_zeilberger",
+  "input": {
+    "summand": ["mul", ["gaussian", "q", "n", "k"], ["pow", "z", "k"], ["pow", "q", ["div", ["mul", "k", ["sub", "k", 1]], 2]]]
+  }
+}

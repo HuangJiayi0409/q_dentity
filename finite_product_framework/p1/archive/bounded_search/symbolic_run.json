@@ -1,0 +1,184 @@
+{
+  "schema_version": 2,
+  "status": "constructed_not_proved",
+  "automatic_train_proofs": 0,
+  "complete_train_proofs": 0,
+  "test_files_read": 0,
+  "preset_proof_fallback": false,
+  "budget": {
+    "max_degree": 6,
+    "shift_radius": 1,
+    "max_denominator_power": 2,
+    "max_attempts": 100,
+    "seconds": 30
+  },
+  "lean_proof_generated": false,
+  "source": {
+    "identity_id": "FQI-FINITE-Q-BINOMIAL",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity005.lean",
+    "sha256": "4963bc05a9be240c2bcf2a3b74efad216ea9678eeb596f0067c3dd3b54f95108"
+  },
+  "input_formula": {
+    "schema_version": 1,
+    "source_id": "FQI-FINITE-Q-BINOMIAL",
+    "summand": [
+      "mul",
+      [
+        "pow",
+        -1,
+        "k"
+      ],
+      [
+        "pow",
+        "z",
+        "k"
+      ],
+      [
+        "pow",
+        "q",
+        [
+          "div",
+          [
+            "mul",
+            "k",
+            [
+              "sub",
+              "k",
+              1
+            ]
+          ],
+          2
+        ]
+      ],
+      [
+        "gaussian",
+        "q",
+        "n",
+        "k"
+      ]
+    ],
+    "target": [
+      "poch",
+      "z",
+      "q",
+      "n"
+    ]
+  },
+  "representation_status": "unverified_formula_transcription",
+  "shifts": {
+    "n_shift": "(Q*X*q - X)/(Q*q - X)",
+    "k_shift": "(-Q*z + X*z)/(X*q - 1)",
+    "target_coefficient": "-Q*z + 1"
+  },
+  "construction": {
+    "status": "constructed",
+    "certificate": "(-Q*X*q + Q*q)/(Q*q - X)",
+    "rational_residual": "0",
+    "attempts": [
+      {
+        "degree": 0,
+        "denominator": "1",
+        "origin": "polynomial search"
+      },
+      {
+        "degree": 0,
+        "denominator": "-Q*q + X",
+        "origin": "equation factor 0, shift 0"
+      },
+      {
+        "degree": 0,
+        "denominator": "-Q + X",
+        "origin": "equation factor 1, shift 0"
+      },
+      {
+        "degree": 0,
+        "denominator": "X - 1/q",
+        "origin": "equation factor 2, shift 0"
+      },
+      {
+        "degree": 0,
+        "denominator": "-Q*q**2 + X",
+        "origin": "equation factor 0, shift -1"
+      },
+      {
+        "degree": 0,
+        "denominator": "X - 1",
+        "origin": "equation factor 2, shift -1"
+      },
+      {
+        "degree": 0,
+        "denominator": "-Q/q + X",
+        "origin": "equation factor 1, shift 1"
+      },
+      {
+        "degree": 0,
+        "denominator": "X - 1/q**2",
+        "origin": "equation factor 2, shift 1"
+      },
+      {
+        "degree": 0,
+        "denominator": "-Q**4/q + X**7 + X**6*(-Q*q**2 - Q*q - Q - Q/q - 1 - 1/q - 1/q**2) + X**5*(Q**2*q**3 + Q**2*q**2 + 2*Q**2*q + Q**2 + Q**2/q + Q*q**2 + 2*Q*q + 3*Q + 3*Q/q + 2*Q/q**2 + Q/q**3 + 1/q + q**(-2) + q**(-3)) + X**4*(-Q**3*q**3 - Q**3*q**2 - Q**3*q - Q**3 - Q**2*q**3 - 2*Q**2*q**2 - 4*Q**2*q - 4*Q**2 - 4*Q**2/q - 2*Q**2/q**2 - Q**2/q**3 - Q*q - 2*Q - 3*Q/q - 3*Q/q**2 - 2*Q/q**3 - Q/q**4 - 1/q**3) + X**3*(Q**4*q**2 + Q**3*q**3 + 2*Q**3*q**2 + 3*Q**3*q + 3*Q**3 + 2*Q**3/q + Q**3/q**2 + Q**2*q**2 + 2*Q**2*q + 4*Q**2 + 4*Q**2/q + 4*Q**2/q**2 + 2*Q**2/q**3 + Q**2/q**4 + Q/q + Q/q**2 + Q/q**3 + Q/q**4) + X**2*(-Q**4*q**2 - Q**4*q - Q**4 - Q**3*q**2 - 2*Q**3*q - 3*Q**3 - 3*Q**3/q - 2*Q**3/q**2 - Q**3/q**3 - Q**2 - Q**2/q - 2*Q**2/q**2 - Q**2/q**3 - Q**2/q**4) + X*(Q**4*q + Q**4 + Q**4/q + Q**3 + Q**3/q + Q**3/q**2 + Q**3/q**3)",
+        "origin": "lcm of equation-derived candidates"
+      },
+      {
+        "degree": 0,
+        "denominator": "Q**2*q**2 - 2*Q*X*q + X**2",
+        "origin": "power 2 of equation factor 0, shift 0"
+      },
+      {
+        "degree": 0,
+        "denominator": "Q**2 - 2*Q*X + X**2",
+        "origin": "power 2 of equation factor 1, shift 0"
+      },
+      {
+        "degree": 0,
+        "denominator": "X**2 - 2*X/q + q**(-2)",
+        "origin": "power 2 of equation factor 2, shift 0"
+      },
+      {
+        "degree": 0,
+        "denominator": "Q**2*q**4 - 2*Q*X*q**2 + X**2",
+        "origin": "power 2 of equation factor 0, shift -1"
+      },
+      {
+        "degree": 0,
+        "denominator": "X**2 - 2*X + 1",
+        "origin": "power 2 of equation factor 2, shift -1"
+      },
+      {
+        "degree": 0,
+        "denominator": "Q**2/q**2 - 2*Q*X/q + X**2",
+        "origin": "power 2 of equation factor 1, shift 1"
+      },
+      {
+        "degree": 0,
+        "denominator": "X**2 - 2*X/q**2 + q**(-4)",
+        "origin": "power 2 of equation factor 2, shift 1"
+      },
+      {
+        "degree": 1,
+        "denominator": "1",
+        "origin": "polynomial search"
+      },
+      {
+        "degree": 1,
+        "denominator": "-Q*q + X",
+        "origin": "equation factor 0, shift 0"
+      }
+    ],
+    "equations": [
+      "-Q*q**3 + Q*q**2*z + a1*q**2 - a1*q*z",
+      "-Q**2*q**3*z + Q*a1*q**2*z + Q*q**3 + Q*q**2 - Q*q*z + a0*q**2 - a0*z - a1*q",
+      "Q**2*q**2*z + Q*a0*q*z - Q*q**2 - a0*q"
+    ],
+    "algorithm": "equation-derived bounded rational search",
+    "full_q_gosper": false,
+    "sympy_version": "1.14.0"
+  },
+  "remaining_obligations": [
+    "Lean expression extraction and proof of symbolic representation equivalence",
+    "Local relation proof under original hypotheses, including singular parameters",
+    "Input-derived support, boundary corrections, initial values and target recurrence proofs",
+    "Generic Lean proof emission and original theorem kernel verification"
+  ]
+}

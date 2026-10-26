@@ -1,0 +1,2627 @@
+{
+  "schema_version": 1,
+  "scope": "existing P1 primary allocation within A-family train only",
+  "source": "finite_product_framework/research/train_a_methods/plans.json",
+  "source_sha256": "ac055d2a3fa195fac9c1d7e552130f64bd624756b9a37562fee303bdbd1a6baf",
+  "meaning": "Candidate allocation, not disjoint mathematical applicability or proof coverage. W/G retained for context.",
+  "new_backend_implementations": 0,
+  "new_train_proofs": 0,
+  "main_component_counts": {
+    "A": 1,
+    "AL": 1,
+    "B": 3,
+    "G": 5,
+    "M": 2,
+    "R": 14,
+    "T": 53,
+    "W": 31,
+    "X": 1,
+    "Z": 9
+  },
+  "entries": [
+    {
+      "id": "FQI-FINITE-Q-BINOMIAL",
+      "main_component": "W",
+      "assignment_basis": "Gaussian核乘几何项与二次指数，右端为长度n的Pochhammer",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：保留原statement允许的q=0及单位根；乘积右端零值不能直接除",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "2185be3158a557027d0998f2aad7cbc95ad12528b36cca1aba1d7bbd6de75995",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-GAUSS-ALTERNATING",
+      "main_component": "Z",
+      "assignment_basis": "交错Gaussian和；偶数有乘积、奇数为零",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：按m=2h与2h+1分支；先试步长2递推或反射消去",
+      "component_roles": [
+        {
+          "component_id": "Z",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "V",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "aa1cbe50bf6d7f2b1fc348f6fa26ba303a85d0d520301693483f531a87ab0f3b",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-CHU-VANDERMONDE-Q",
+      "main_component": "W",
+      "assignment_basis": "上参数q^(-n)，固定两上参数；右端为乘积商",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：核对n移位后的phiDefined条件及a与右端零值",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "c42ed74079faac133d651ed609408faa8246f9fd4f2e5b704f3791daa7ea88ca",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-CHU-VANDERMONDE-BALANCED",
+      "main_component": "W",
+      "assignment_basis": "自变量cq^n/a随长度移动，项比仍可经移位有理化",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：与自变量q版本分别计算移位比，勿直接复用证书",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "5c1308bf721e9608c13af3f92f5b2dca35f8055121546aba1b6086714cdc9898",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-TERMINATING-6PHI5",
+      "main_component": "W",
+      "assignment_basis": "展开wellPoised得到单重Pochhammer核",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：核对wellPoised与Raw版本及a=1的处理差异",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "e9e1f9da02af43108565a6d38dde7a9d99baa27869090c2db98af8f5bd1888ca",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-WATSON-8PHI7",
+      "main_component": "T",
+      "assignment_basis": "两侧独立单和；前因子依赖n",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：构造双侧递推或已证核变换链；平衡与非齐次边界须保留",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "4d95c38d06f8650b86c932fa51b813c62089ea8471cefccfbd716276c9ad6a1a",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SEARS-4PHI3-II",
+      "main_component": "T",
+      "assignment_basis": "两侧终止单和；def=abcq^(1-n)",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：选递推变量时保持平衡约束；第二形式前因子零值单列",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "53962124c8dadecdfc9e99078e0dc23c870e36d8b079b04cc56bcb0b1baced8d",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-BAILEY-UNIT",
+      "main_component": "G",
+      "assignment_basis": "r=0专门定义，r≥1为显式超几何项",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：拆首项及n=0，不能以右端归一化",
+      "component_roles": [
+        {
+          "component_id": "G",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "53cbdf9e768fdc1abea1f2fd18acd595dcca784d81b4da17dbefea35695d8530",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SCHUR-EVEN-RECIPROCAL",
+      "main_component": "T",
+      "assignment_basis": "schurD定义本身为Gaussian有限和；Lean要求两个等式合取",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先展开schurD并倒底数逐项变换；再证明双边差和，若用递推须先从定义导出",
+      "component_roles": [
+        {
+          "component_id": "V",
+          "role": "required_stage",
+          "mechanism_id": "P3",
+          "reason": "本条先用反向/拆项整理输入；该操作不能单独闭合整个目标，后续仍需所选差分/递推分支。"
+        },
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "R",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "17f794eff66681c5e503ec1a1aa736b939d34853bc526d851cd186d6841ac688",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex3i",
+      "main_component": "W",
+      "assignment_basis": "两核由k与n-k、a与b的关系连接",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：Lean为合取；先证一卷积再严格重编号另一式",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        },
+        {
+          "component_id": "V",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "75dbae08faff50731a8dc61b16e37ba21b0b898610e29f43fa33f018c05796d7",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex6i",
+      "main_component": "Z",
+      "assignment_basis": "终止上界floor(n/2)，q^(-n)与q^(1-n)成对",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：按n奇偶重参数化，证明两支重组",
+      "component_roles": [
+        {
+          "component_id": "Z",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "W",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "fa6f2e1378d92f513f2d1da060dbb234f701c7f22d1f7ec37b219fc042e31c4b",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex6iii",
+      "main_component": "W",
+      "assignment_basis": "phi定义带额外相位，与2φ1不同",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：保留2φ0的负相位与a非零，避免套错标准核",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "8d4ce536b9e6983ac53977d5fc63fdc00d300fe05319514eeb648fd77a618c2a",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex15i",
+      "main_component": "T",
+      "assignment_basis": "右端有零上参数，两个单和",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：核对phi相位约定、z非零及前因子零行",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "055d2b75b9c0aa906892858e0a3ed6f9611b04b46407d256887f2c4e03edbf39",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-1.Ex17",
+      "main_component": "T",
+      "assignment_basis": "右侧分母含1-aq^(n-k)，可倒序或构造递推",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：记录该因子所有实际非零条件，处理反向边界",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "G",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "2c15d347e6263dbc159fd63376436d6c082c43f1aefe014756ba264acde7eddf",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.3.2",
+      "main_component": "Z",
+      "assignment_basis": "右端含floor与ceil，单基相关步长",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：分m奇偶建立可推进递推，比较初值",
+      "component_roles": [
+        {
+          "component_id": "Z",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "W",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "0b55203fe904354537af37e0c0733be0cbbfb5c83626802a25e476c5b851c511",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.7.5",
+      "main_component": "T",
+      "assignment_basis": "两核均显式，左含q^(2k²)",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：不假设右端可直接积化，双侧比较需处理a=0等原域",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "97cef6dc3875fd0653524f9345df249ddc39c0bbb900936f250f2b190908cee3",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.10.3",
+      "main_component": "T",
+      "assignment_basis": "参数λ=qa²/(bcd)，依赖同一长度",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：维护λ定义及两侧wellPoised条件",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "ac73d1c244791a49d2d52b62a917b1d0d5d02bacb8c5b10a03ce316dc0f08ab4",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.10.8",
+      "main_component": "T",
+      "assignment_basis": "参数及前因子随n移动；两侧单和",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：检查每一步参数替换的平衡与分母，不预设固定低阶",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "4a02c24863b16d45395212b47e2f394df3f1c22f5dd7e0cd635f1ec7c5849adc",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex5",
+      "main_component": "G",
+      "assignment_basis": "上参数不含q^(-n)，n主要作为截断端点",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先试原差分端点求值；不能把尾端自动当零",
+      "component_roles": [
+        {
+          "component_id": "G",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "W",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "87974490b7d09f75895eda452b39236118a0f2ae0da7d329dd093146d561b710",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex6",
+      "main_component": "Z",
+      "assignment_basis": "奇支为0，偶支为混合步长乘积",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：步长2递推及两个起始值；核反射是备选",
+      "component_roles": [
+        {
+          "component_id": "Z",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "V",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "19b43bf13c2929398cfc66729316ef7e803df8469e35c89c8a68093205f80804",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex10",
+      "main_component": "T",
+      "assignment_basis": "定义为两个参数变换后的4φ3；t↦q^N/t",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：展开qRacah并核对n≤N与t非零",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "caf050301661ce04de4883da17362079c3829339092435ea381bd7a56315f2ac",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex11",
+      "main_component": "T",
+      "assignment_basis": "参数交换需变换；同时变号可能直接逐项化简",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：将两个结论分开选路线，不把整个合取当一个求和值",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "A",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "e33cbf42c30e5573a0c45b00fe351c54161ee1d14118d4598233655a0f92fb6c",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex12",
+      "main_component": "W",
+      "assignment_basis": "同一k中出现q与q²的Pochhammer",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：用x=q^k统一移位，先检查成对参数因子消去",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "f28bd5d9e82851be690bf581238deb77319ed2f1ce89b809c989cc440ccf67b9",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex14i",
+      "main_component": "W",
+      "assignment_basis": "s²与qs/s构成局部因子，右端乘积商",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：s等特殊值按原phiDefined，不额外排除",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "5841afadca6fa2c8f3580f27ccb03a41ee541d441fff16213d3391ee05e0d7af",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex14ii",
+      "main_component": "T",
+      "assignment_basis": "右侧含(q²)-因子及λ约束",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：展开右核并在同一基数下比较递推",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "290ace5b5f37547a1a4b8711baa3656cba0a9b193459a112aeb6b4ad8d6fa4f5",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-2.Ex19",
+      "main_component": "T",
+      "assignment_basis": "长度相关平衡约束和wellPoised核",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：选择保持平衡的移位路线；记录前因子奇点",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "31ed5feafb2656cecac647336a1028edd0e923e7dc20a3d22d7a27ca219f4f5a",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.2.6",
+      "main_component": "T",
+      "assignment_basis": "上参数q^(-n),aq^n成对，前因子随n变化",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：对两个长度参数因子同时移位，验证端点",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "d7df7114d69dbb37a857ff6693a7359cf7ab7e775959887490329259092723b3",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.6.17",
+      "main_component": "B",
+      "assignment_basis": "p^kq^k与p^kq^(-k)并存，右端δn0",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先试双基原差分；n=0和零右端分开",
+      "component_roles": [
+        {
+          "component_id": "B",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "X",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "90fc23831885892d6ee10e41b1d8d75796a7d246b714cf8c0faccf47cd86b546",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.8.14",
+      "main_component": "T",
+      "assignment_basis": "同一k含q和q²；上界n",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：检查q^(-2n)在两种基数下的移位和实际截断",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "a4b6d725cfce638ee37b22b9714945feed348d512de6b2f99326a2ad2a2897d4",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.8.15",
+      "main_component": "T",
+      "assignment_basis": "两侧不同支撑，不是同一截断区间",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：构造n移位并显式处理2n上界增加的两个点",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "0389fc30243d2c1982576badcd74260c34a633dc6e11014739f3aaf4a90fe4be",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.3",
+      "main_component": "T",
+      "assignment_basis": "命名为双底数但实际底数为q²,q",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：统一x=q^k后构造双侧递推，保留w非零",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "fd44bd6885468f3dae5b6b257d55c2175fe4a78c2008a4be323610c2c9e8e837",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.5",
+      "main_component": "W",
+      "assignment_basis": "bibasicPhi实际是q²,q相关基数",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：展开Phi的精确相位及分母，核对n=0",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "0f93e2d47f31464de657624c8c594652c76c8b2c094b5ff2e385a8ac287c2787",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.6",
+      "main_component": "W",
+      "assignment_basis": "底参数b²q^(1-n)与上参数同时移动",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：零分子不代表中间商可定义，逐层检查",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "e872a15efa93d62b34696fbb9c948da2481e8b75048bdc4f2333424c44361ce6",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.8",
+      "main_component": "W",
+      "assignment_basis": "q^(-n)核和q²乘积相结合",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：计算本式独立移位比，不沿用相似求和值",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "f6b0cf6e60f5df758653152315f74df90988c0ba075e03642c0806afde117436",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.11",
+      "main_component": "T",
+      "assignment_basis": "两侧长度n而底数分别q和q²",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：在基础q变量中统一两侧移位",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "d664858a06f559eb1cfd641be81db331197db2bdaba093261c850e2db94ba171",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.14",
+      "main_component": "T",
+      "assignment_basis": "两侧均单和，乘积前因子不消除右和",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：优先双侧递推，外分母与内phiDefined都保留",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "9bb4930e57e356d55bc4e08e3fc8d5c1ee88e9cd736fe8de23c642cb0e7a0afd",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.10.16",
+      "main_component": "T",
+      "assignment_basis": "λ由a,b,c,d,q定义，右端底数q²",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：保持λ约束；额外参数平方关系须代入",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "e4ca644e49a45b9f20a119c50c2270b5cf721212d6302fcae38261cf1cf2becf",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex3",
+      "main_component": "T",
+      "assignment_basis": "成对参数a,q/a与右侧c/a,ac/q",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：直接比较两种底数表达，先规范化q^(-2n)",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "0fc1b0ec4e472d196dd947b179910074d740f27d5f194342753bdf121eb29f1b",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex4-transform",
+      "main_component": "T",
+      "assignment_basis": "左上界n/2且右phi阶差不同",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：拆n奇偶并核对右侧额外相位",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "b1487b8a8993dd3a5a7712c2d1ef8d82c3e7e122d5b2adc9251e45ed5eaa9f45",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex12",
+      "main_component": "T",
+      "assignment_basis": "参数q^(-2n),-q^(2-n)与半长度右和",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先检查倒序恒等式，再奇偶两支递推",
+      "component_roles": [
+        {
+          "component_id": "V",
+          "role": "required_stage",
+          "mechanism_id": "P3",
+          "reason": "本条先用反向/拆项整理输入；该操作不能单独闭合整个目标，后续仍需所选差分/递推分支。"
+        },
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "4cae6ace687168b5153e3006c915d0785b105ccebaee6fd692350f48c59a7550",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex13ii",
+      "main_component": "T",
+      "assignment_basis": "前因子另含1-λq^(2n-1)/a",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：记录该因子零值，不能归一化后丢失分支",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "adff4d76fe04da4b6a65df2d9b92f41a649b8e5ff47efb864ac4b566b36bb2d9",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex21-quad",
+      "main_component": "AL",
+      "assignment_basis": "左右交换K与R；K,T提供两套累积核候选",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先验证K与T的原差分关系再做Abel分部求和，四基工具未验收",
+      "component_roles": [
+        {
+          "component_id": "AL",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "X",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "e2ab9f440b6bfc7c5ad669ca962f18ef7241f66e7f1b15d77ec5b67e2fafbed6",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex31i",
+      "main_component": "T",
+      "assignment_basis": "核含长度2k的q积与q³积",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：拆分2k移位增量，同一q基有理化后双侧比较",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "61e3429c425f1566d3216eff9e4c1e4f647f7d50149fe09a74748297319b2c7c",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-3.Ex34",
+      "main_component": "W",
+      "assignment_basis": "参数cq^(-n),cq^(1-n)成对",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：按n移位核对混合步长，无需独立双基算法",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "2dc89f849245bebfaba4453d806f318116ec1e174a71ba98abb32620f0364e4c",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex11",
+      "main_component": "T",
+      "assignment_basis": "求和范围[-n,n]，负指标Pochhammer",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先平移到非负指标，验证负指标定义和两端",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "V",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "7cce82a3bba2e0bb1bdbbfc9e5d54970c64b91d04c591bbbd54c237fbbd09311",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex18iii",
+      "main_component": "W",
+      "assignment_basis": "bcde=q^(n+1)，负下界-n",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：用保持平衡的参数化，检查双端移位",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "V",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "2a44664989150f8c62c207bf3e4c9b8da1449888145400c21fe13b86c940a5e8",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex18iv",
+      "main_component": "W",
+      "assignment_basis": "范围[-n-1,n]，平衡指数n+3",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：与对称版本分开处理多出的端点及初值",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "V",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "881f2540668bf5f4f0ccd156cb12754215a7aa7113c86f43d5bea31eee6ebc02",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex19i",
+      "main_component": "W",
+      "assignment_basis": "立方仍是单核乘积，指数为整值二次式",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：处理k负值、Gaussian支持和乘积商域",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "1b8c9dfd53e51dbc34007223afb1823cffbd6342069560bd7e2cac8a63bf07a5",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-5.Ex19ii",
+      "main_component": "W",
+      "assignment_basis": "范围[-n-1,n]，上指标2n+1",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：端点两项与奇长度初值单独计算",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "c555b905110d5da0f0cec5c9bec0e58bd4c60883674ae0874a56bdaf7f0c1bd0",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-6.6.10",
+      "main_component": "T",
+      "assignment_basis": "右核未必自然终止，m是截断端点",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：递推必须保留非零尾端与前因子",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "2e41931bd2a7e724c12d112a0fce70fd68e77f845f1b74bdf558cf09a16d01c2",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.2.12",
+      "main_component": "G",
+      "assignment_basis": "R_n-R_(n-1)可展开为相似项组合",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：比较系数或参数化望远镜，先核对n≥1",
+      "component_roles": [
+        {
+          "component_id": "G",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "A",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "53334c7832b7e60c61b6771680a25e3f7b256ddb141e5ff048f837b0c0fc88a4",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.5.35",
+      "main_component": "T",
+      "assignment_basis": "C_(2n)有限展开与长度n的4φ3比较",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：把s视为满足平方关系的参数，保留非零条件",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "07a881d2e646c7e1a7c46d7bffcf1a00b77e699d448d67626bd923758f178126",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.5.36",
+      "main_component": "T",
+      "assignment_basis": "C_(2n+1)与(z+z^-1)/2前因子",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：不可除去可能为零的z+z^-1；处理特征及2的可逆性",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "477886353d0757eae96fc581fb9f84db93c4eefca9550c7ac257605bf7ad16ff",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex32",
+      "main_component": "T",
+      "assignment_basis": "对象定义为终止4φ3，参数交换与变号",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：分别展开J与K并核对前因子(-A/B)^n",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "V",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "8cdcef1237ef76846506f97fc98a069334f73545ed496c59fd8b8f41180d2a1f",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-7.Ex40",
+      "main_component": "R",
+      "assignment_basis": "Rogers–Szegő平方不是超几何单项",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先用对象递推导出差积递推，再累加；备选展开多重和",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "H",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "M",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "39bb5a2a94155071f79c439b74ea0955b3411197b48684df5832b5e1716a6f4d",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.1.2",
+      "main_component": "W",
+      "assignment_basis": "求和m从max(j,k)到j+k，积长随m",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：分j≤k等区域或平移下界；选外参j/k作递推",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "cb4b6af02e6c3d12b367d1d86402063881e5dd985169f8762bf2c22d3d520c86",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.7.9-finite",
+      "main_component": "T",
+      "assignment_basis": "右上界max(0,n-1)，n=0特殊",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：单列n=0后比较两側不同支撑",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "G",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "6dc7075fce326d32bb1de0df08096ed1b2d3024c2530795db84fe8750112d455",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex15",
+      "main_component": "T",
+      "assignment_basis": "两侧单和，根参数成对",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先成对消根再递推；同时保持b=q^(-n)",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "78f665af665c4d2bb0a0cdf274cfe24e1d9c01ea931f321cc731788066f920f4",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex26",
+      "main_component": "R",
+      "assignment_basis": "Lean左侧associatedAW，右外k与W_(n-k)",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：读取定义递推并证明右侧满足；不能假设左是单超几何项",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "M",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "H",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "3000596976bd8f1b7b1aa0d42eb5b8bc56b06426db1bc12124103831d4f2e15b",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-8.Ex28",
+      "main_component": "R",
+      "assignment_basis": "L_k含10W9，三个相伴对象需定义桥接",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先核对相伴递推/有限表示再选系数路线",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        },
+        {
+          "component_id": "M",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "H",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "29dfd3922f5d44e397ade0d1f643c77beeb1856c698d65d93508cf338e374f09",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.2.2",
+      "main_component": "T",
+      "assignment_basis": "对象展开为单和，右带长度n乘积",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：x非零与前因子零值，原对象定义参数顺序核对",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "6696ab2727abce96f3fa03f2bf2ff2a912a017ff5b4d788801378e8ef907df2e",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex7",
+      "main_component": "R",
+      "assignment_basis": "外k含(1-α)/(1-αq^k)，两C对象",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先证明相伴定义递推或比较Laurent系数；α=1需按域核对",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        },
+        {
+          "component_id": "M",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "26677f5bb56a43afb4e5c4effd29fa09d9be78b86b4b8738d2509c44cf7770f6",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-9.Ex10ii",
+      "main_component": "T",
+      "assignment_basis": "左为q²基单和，右AW隐藏q基单和",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先化简零参数，建立s²=q的同基桥接",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "f39f6e746c5787c7c950fa5b222ba31d6d1016a21893427d6205d6f47c058cef",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-10.Ex18",
+      "main_component": "M",
+      "assignment_basis": "j,k≥0且j+k≤n，显式Pochhammer双核",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：逐指标计算项比；先试内核消去再多变量递推",
+      "component_roles": [
+        {
+          "component_id": "M",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "c285cc35bc773d9bd921e0442ff65bbf795cf0e429534b13091b95313b0e9322",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.6.6-p0",
+      "main_component": "X",
+      "assignment_basis": "右侧两个乘积明显对应上、下端候选",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：用目标端点反推原差分并验恒等式；不能用双基包默认覆盖",
+      "component_roles": [
+        {
+          "component_id": "X",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "AL",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "5e28a21954c0edf5c94b028e6035441fcfbed8f71f28b23309edf511db5cd751",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex21-p0",
+      "main_component": "W",
+      "assignment_basis": "Lean显式给出bcd=aq、ef=a²q^(2n+1)及b=a或e=a两分支",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：分别代入b=a及e=a，保持两条平衡约束，检查简化后终止核",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "3e138e33f7e908fd5b3f7736aa94e81a0d415da02883e69cb222a064e96e365a",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex23ii",
+      "main_component": "T",
+      "assignment_basis": "正负成对参数与λ=bcd/(aq)",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：成对乘积转q²后比较递推；前因子定义域核对",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "3128f93a9aba68be1881c662ba7ec53e8209cbb363c1b5332ac19adc1d6a48ea",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-11.Ex24ii",
+      "main_component": "T",
+      "assignment_basis": "n/2截断、μ²=λ²q/a",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：拆n奇偶并消除成对根参数",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "54ad91a732ff6153d2197a2ad59dde21c0408a8be77888a390ef43c9b58504f0",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-17",
+      "main_component": "Z",
+      "assignment_basis": "奇支零，偶支q²乘积",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：验证Lean根参数约束，步长2与两支初值",
+      "component_roles": [
+        {
+          "component_id": "Z",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "V",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "ebb4af47e8caeb9ea3f982f494e4d222b7aa79eb1d7dd20bc4ac387e4f7f7fcf",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-19",
+      "main_component": "Z",
+      "assignment_basis": "ceil(n/2)和ε控制右端长度",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：分n模2，避免在未分支表达式上错误移位",
+      "component_roles": [
+        {
+          "component_id": "Z",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "W",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "7550ede47916d7e505d6182eb6607364e5bf64b5b015281cf4e4e4eda6986ea2",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-22",
+      "main_component": "W",
+      "assignment_basis": "wellPoised单和和四因子乘积商",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：选择保持平衡的n移位，尾部零分子单列",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "48b2dafe40d7e339e07168a02025629d5377718ecc680ad735e5a5a85cafdeef",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-34",
+      "main_component": "B",
+      "assignment_basis": "两个独立Pochhammer基数，n仅为截断",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：Bibasic原差分或由右端构造差分；不调用单基Gosper直输",
+      "component_roles": [
+        {
+          "component_id": "B",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "AL",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "541a4656791662cca88a2821fbf3ce5b4a2e479b222cb4bebe04c14ce8dc905b",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-II-35",
+      "main_component": "B",
+      "assignment_basis": "两个混合线性因子及两组基数积",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：验证候选乘积端点差，分母与k=0单列",
+      "component_roles": [
+        {
+          "component_id": "B",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "AL",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "c380a9322d5431c7885d98aa7ab69be0ebbe310e56ee8181c4180ce144c33d14",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-07",
+      "main_component": "T",
+      "assignment_basis": "右上参数含bzq^(-n)/c，底参数0",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：核对标准phi约定与前因子零值",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "8b4fe35122c3540c014dd350e3cfb31185d29891fe12d69016084c3915ac13e8",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-08",
+      "main_component": "T",
+      "assignment_basis": "右级数阶差改变，含q/z",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：保留3φ1相位和z非零；按冻结原印statement验证",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "cb7f646c349438a182c1f5d4013ac7ba0839fe33db1345129f3080a291c812c6",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-11",
+      "main_component": "T",
+      "assignment_basis": "前因子(de/bc;q)_n与(bc/d)^n",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：双侧递推或已证变换链；参数条件逐步传递",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "dba1c691dbb79829191eb6e80d6304d8edd6d8077ca6bc32027c46e6aa436f13",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-12",
+      "main_component": "T",
+      "assignment_basis": "右自变量bq/e，参数cq^(1-n)/e",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：不能用第一变换证书直接套；独立核对移位",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "bc393139404c038f4a16e3b85335a177db0671b5b0c8c81ae1d32ec9f00dd672",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-14",
+      "main_component": "T",
+      "assignment_basis": "右含(a;q)_(2k)，a=q^(-n)",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：分奇偶、核对2k移位与额外分母az,q/z",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "29387c90a2bb2d31396a361c91f9e1290d5f475ae37bddada6041ee1c891f8a6",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-15",
+      "main_component": "T",
+      "assignment_basis": "右参数d/b,d/c与移动底参数",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：保持def=abcq^(1-n)及前因子共轭",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "8652b3cd441651e918bee83d756128bba9c253a7b87d3e5179d400b067a21afd",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-21",
+      "main_component": "T",
+      "assignment_basis": "Lean L,R分别满足terminatesAt",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：分终止上参数来源并建立截断关系后才能试递推",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "97a9411bb03e38700193955db248f885731eba2e732803c81d9a6502bfcaef10",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-GR2-III-27",
+      "main_component": "T",
+      "assignment_basis": "V_n需展开为成对步长核",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：核对V定义、λ关系及额外前因子零行",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "d1693c56ffc41baddcf317d40f5c2ff4cec02f5a28d2ef53560ab6fb27427631",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AP-3.3.9",
+      "main_component": "G",
+      "assignment_basis": "q^j×Gaussian(m+j,m)，上界n",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：尝试Pascal导出的原差分；保留q=0多项式域",
+      "component_roles": [
+        {
+          "component_id": "G",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "W",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "99220ff14c0f98901536fde2ac5a4b40bb808ab1aaea7a3f0f972fdea69efadd",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AP-3.3.11",
+      "main_component": "W",
+      "assignment_basis": "核有min(M-m,N)及第三Gaussian支持",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先分支处理Nat截断减法与有效支持，不直接阶乘商越界",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "00564e6783550583ce0fe3bddf0d50f334e35d9b94a6adb713e09b73799fe380",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AP-3.3.14",
+      "main_component": "W",
+      "assignment_basis": "j与N-j的Pochhammer卷积，右闭式",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：平移/拼接识别核；参数为零按原域处理",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "a1ba07ce61213a38c850f4babb792e43c88da737cf4be10f9ed868b9572eaa99",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AP-3.E12a",
+      "main_component": "R",
+      "assignment_basis": "schurDInt负值分支明确，非负j映射schurD(j+1)，后者是有限和",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先证明整数对象的移位/递推；n-1-j可能为-1，注意索引额外+1",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "M",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "0c9410ee7c4e8027c5352f0362aa78245a403ea348684a8a71f6f862674fbd64",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AP-9.E4b",
+      "main_component": "Z",
+      "assignment_basis": "Gaussian下指标floor((n+1-3h)/2)",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：按n,h剩余类去掉floor，保留整数除法与支持",
+      "component_roles": [
+        {
+          "component_id": "Z",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "V",
+          "role": "conditional_stage",
+          "mechanism_id": "P3",
+          "reason": "按实际需要展开定义、反向或局部化简；未断言它单独证明整个目标。"
+        }
+      ],
+      "formula_sha256": "241786e6ff614d810775013646b7d28078d5118810c8d5f6cf40504076c4e906",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-2.39",
+      "main_component": "R",
+      "assignment_basis": "T(r,N)对象由定义给定，闭式只在偶正指标",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：三子目标分别处理；用候选闭式满足定义递归及初值",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "G",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "73974db398d43b19e0b1f03fef40714e4c223958822da528eeade9644b6df9b7",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-2.40",
+      "main_component": "T",
+      "assignment_basis": "两边单和，右含(zq^(j-n);q)_(n-j)",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先乘积拼接有理化，再比较递推或系数",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "8f8e08303905f0c89b40af2a6c4181f797a389f5e685e112f11fd9c1df5c7519",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.17",
+      "main_component": "W",
+      "assignment_basis": "区间[-n,n-1]，Gaussian上指标2n-1",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：n=0及负索引约定核对，双端修正",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "ae94d99a3b96bf8e02a26231f903f052e458b30b20fa11a56d5e79b45fe9e546",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.18",
+      "main_component": "W",
+      "assignment_basis": "区间[-n,n]，右为(q^(n+1);q)_n",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：保留边界零项，生成n方向递推",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "29e1477bc6e62366fafb5524bdaadd15e847a1d44988d7ad49689f76e569e782",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-3.37",
+      "main_component": "G",
+      "assignment_basis": "显式单核，δn0",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：优先原差分，不能除去零右端；n=0独立",
+      "component_roles": [
+        {
+          "component_id": "G",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "5693ae5424e06dd365392ae4a16433bfca340149208fe09a2f6d887ff90a7726",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-4.24",
+      "main_component": "W",
+      "assignment_basis": "min(a,b,c)决定双边支持",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：选一个参数递推并按有效支持处理；多项式域延拓独立",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "cd9b8e8a4792bba34a5952dcb1f38c0be89b85c51d11316c5ae55144be0bb74b",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.44",
+      "main_component": "R",
+      "assignment_basis": "Lean aqG false，整数除法/2与toNat指数",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：按剩余类正规化并证明和满足G递推",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "37c1cd19c06249c93c2d3010523252150aa83757d8459eaeae3ffbdfcd30dcaa",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.45",
+      "main_component": "R",
+      "assignment_basis": "aqG true，Gaussian下指标多出1",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：不能只复用上一式初值；检查负整数除法",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "389bf179f4b0864cc4c7162430bcecfdfa39e422bf6379267fc764864d95c948",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.50",
+      "main_component": "R",
+      "assignment_basis": "单个求和项是两个Gaussian之差",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：拆成两超几何核再线性组合；倒底数桥接",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "T",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "746effacc5df157f617fe32ad404fe8cd929ea27bc43bd3df4ef94433090e242",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-8.52",
+      "main_component": "R",
+      "assignment_basis": "两重线性组合而非嵌套和；上指标2N-1",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先Pascal重组或公共递推，核对N=0下指标语义",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "T",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "08b5b743019ff14921ac18ca0b5e9826211878d2de11e3099866f8b80f29ce5b",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-9.5",
+      "main_component": "R",
+      "assignment_basis": "aqF是无相邻占位子集的加权和；schurD定义即目标Gaussian和",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：证明占位集合按末位分解的递推或按基数双射；仅符号单和算法不足以连接aqF",
+      "component_roles": [
+        {
+          "component_id": "K",
+          "role": "required_stage",
+          "mechanism_id": null,
+          "reason": "原目标含组合定义，需要先桥接为求和/递推。"
+        },
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "internal_call",
+          "mechanism_id": "P1",
+          "reason": "为Gaussian和侧生成递推，组合侧仍需K桥接；两侧交给R比较。"
+        }
+      ],
+      "formula_sha256": "ad56136468ce7caf0a110390da03e04a7d478f541f1e86a495d768dfb6c2f648",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-9.17",
+      "main_component": "R",
+      "assignment_basis": "3n+2j≤N+1，n=0有Kronecker特别定义",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先分n=0再核对双核移位及对象递推",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "M",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "471670a48d81fea4dd1b6a927f6f2f4d93830b4a39125bdb82644cf29576053f",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-AQ-10.5",
+      "main_component": "R",
+      "assignment_basis": "Lean aqX(2n-1)，外j≤n/2",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：读取aqX递推，核对n=0及负对象索引",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "967e1e8877c0497cbefc5f7b9505f7930ca06ec577cf29a6b2a9f78b7db8956d",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-FINE-7.GH",
+      "main_component": "R",
+      "assignment_basis": "Lean fineHG返回一对，H乘积与G单和",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：对两分量联立归纳，先核对n+1索引和递推分母",
+      "component_roles": [
+        {
+          "component_id": "R",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "G",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "e37d9295d730ac846d49a2e3d744160132d3d9e9d8efda2fa97b7a504f1f21cb",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-FINE-15.41",
+      "main_component": "T",
+      "assignment_basis": "前因子(-a)^Nq^(N(N+1)/2)/(bq;q)_N",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：与已证fineA表示比较，a^-j及a非零保留",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "R",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "1a8f02f71b8a131de8dd21cd72947e881f16a28af0410597e7f1e1026c6d94d3",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.75",
+      "main_component": "W",
+      "assignment_basis": "双边核含长度n±k积与1-x²q^(2k+1)",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：零点分支与两端分母，先试目标一阶关系",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "70bccdc7ec55e4230adf32a7466441bb305a9c93a8d53f49c46eaa0719a3aa74",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-1.94-corrected",
+      "main_component": "T",
+      "assignment_basis": "两3φ2乘积前因子，两个移动底参数",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：逐侧保持终止与实际分母条件",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "c8a03d4f0891b619b73127d78945e0f11a42d7f27c5b10efcfab560ecffba62c",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.9-corrected",
+      "main_component": "T",
+      "assignment_basis": "两显式单和，左二次指数4 binom(k,2)",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：直接有限核比较，不用无限极限作为默认步骤",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "df81ccf16d6b04adeaa30fc5f0096c4421ff498b8611580a0b6428d0b27b225e",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Pair122",
+      "main_component": "W",
+      "assignment_basis": "Lean sillsAlpha x q 1 2，分母底数q²",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：展开alpha，核对r=0及整值指数，再统一q基",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "8e9a184d827023ba8197110790875804eee1c3b3d8f03465243dc3a0ef65609f",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex2c",
+      "main_component": "W",
+      "assignment_basis": "sillsAlpha x q 1 2与q³分母",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：展开alpha并核对混合步长比值，不当独立多基",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "712c585c6d2548e8d6ead61608d27daab014dd8cbad995ca0185c67862cb3dd6",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex2f",
+      "main_component": "Z",
+      "assignment_basis": "sillsAlpha x q 3 4在非3倍指标为零",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：令r=3j，n按模3处理移动floor上界",
+      "component_roles": [
+        {
+          "component_id": "Z",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "W",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "d004e82089695bbf125f0a8c7cd8020c075efbf989dc6fd735cdb19f6f44bc1e",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Ex7a-corrected",
+      "main_component": "W",
+      "assignment_basis": "a^(r+1)+a^(-r)不是单超几何项",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：拆成两个和或双边对称化，a非零与端点核对",
+      "component_roles": [
+        {
+          "component_id": "V",
+          "role": "required_stage",
+          "mechanism_id": "P3",
+          "reason": "本条先用反向/拆项整理输入；该操作不能单独闭合整个目标，后续仍需所选差分/递推分支。"
+        },
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "1b7f329b3894b0808984afa1ca51fa72f0e38bc4d91fe9f4f992743154c8449c",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-2.Lem2.53",
+      "main_component": "W",
+      "assignment_basis": "Lean核为t^(2r²+r)(1+t^(2r+1))/(1+t)，右含(t³;q)_n",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：按t作统一基数，t²=q代回；1+t的非零由实际假设推导",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "df8f20e063b93ab107159b225836ee0927ed9dceb345049a691ef995642f1c8a",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-3.5-6",
+      "main_component": "T",
+      "assignment_basis": "展开alpha后左、右各一和，无需按标题当多和",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：核对sillsAlpha定义及ρ1ρ2分母；可用核变换组合",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "365e959d9d7713ed5dbd1d5298775936ae5c14c916dd54a611eb20435a70de2f",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-3.7",
+      "main_component": "T",
+      "assignment_basis": "冻结Lean左r和、右j和；标题“双和”不是嵌套",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：双侧递推优先，保留x=1的原域约束",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "c66393234ff9306f6434718c5941a1acf0789f29949321bcab1c459a6f7ce042",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-3.Lem3.3",
+      "main_component": "W",
+      "assignment_basis": "alpha混合q,q²及二次指数",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：展开Bailey分母并在q^r中有理化",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "Z",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "49fbce0e18bc10a051eff65be9c5f7ec4d9ab6ad2a55e9db00da486e3e63b53e",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.25",
+      "main_component": "T",
+      "assignment_basis": "schurD先定义为有限和，Lean另要求正项和等于双边两核差",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先倒底数逐项证明第一等式，再双侧递推或变换证明第二等式",
+      "component_roles": [
+        {
+          "component_id": "V",
+          "role": "required_stage",
+          "mechanism_id": "P3",
+          "reason": "本条先用反向/拆项整理输入；该操作不能单独闭合整个目标，后续仍需所选差分/递推分支。"
+        },
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "R",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "5b1931455eba154d61e4a87115326c3d1b92e372dd7fe029bd4ba7120f0e8a87",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.37",
+      "main_component": "T",
+      "assignment_basis": "右Gaussian下指标n+2k，双边交错核",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：拆支撑并比较n递推，整数指数非负桥接",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "R",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "14cf74f24da7d021dc14f346f97494f1ceeddb5e6013aaa3dac5f3646945c0cc",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.Sym",
+      "main_component": "T",
+      "assignment_basis": "sillsB定义为正项单和，而目标是双边和的对称平均",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先证明正项和到未平均双边和的变换，再k↦-k配对；单独配对不能证明原目标",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "V",
+          "role": "required_stage",
+          "mechanism_id": "P3",
+          "reason": "sillsB是正项和，先证明到双边和的变换，再以反射配对完成对称平均。"
+        }
+      ],
+      "formula_sha256": "baaed8f342e89e78fd4285b9a8df774dc967ae084466d0754e25753441a9dc3b",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.43",
+      "main_component": "T",
+      "assignment_basis": "右上指标2n+1、下指标n+2k+1",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：与第一式分开端点与初值，核对奇移位",
+      "component_roles": [
+        {
+          "component_id": "T",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "R",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "b3b18a9d078b842b0d88913893f6b76ad49bbe3d536659f8aae1c5899350b251",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-4.Mod8",
+      "main_component": "M",
+      "assignment_basis": "T_0本身含有限和；Lean包装sillsP/sillsT01",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：展开两包装后统计真实维数及剩余类，再多重递推",
+      "component_roles": [
+        {
+          "component_id": "M",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "R",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "491f567b55b94f57ec011e8b9685de5508481b5ed02a697f6b3eb79d7e74bd27",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-SILLS-6.Ex1-corrected",
+      "main_component": "Z",
+      "assignment_basis": "alpha按0,3r,3r±1分段",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：拆成三个剩余类和及首项，公共递推重组",
+      "component_roles": [
+        {
+          "component_id": "Z",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "M",
+          "role": "alternative_branch",
+          "mechanism_id": "P1",
+          "reason": "仍在同一差分/递推主流程内，改变构造算法或递推来源；不是新增独立主机制。"
+        }
+      ],
+      "formula_sha256": "26b158ff71f15f4d589ad6f83033372e5cd2aeb742167de8cb583fd012754b4a",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-4.4",
+      "main_component": "W",
+      "assignment_basis": "Gaussian×P_j(x,1;q)，P_j是有限积",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：先展开kacPowerNat并尝试无参数除法的递推",
+      "component_roles": [
+        {
+          "component_id": "W",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        },
+        {
+          "component_id": "C",
+          "role": "alternative_pipeline",
+          "mechanism_id": "P2",
+          "reason": "若能找到合适有限展开与核归约，可用逐系数/卷积证明替代当前主流程。"
+        }
+      ],
+      "formula_sha256": "e483075ad2b43a8ec0cc7b3d448f921d137f2d9266b781b5ba9584b46d27ad72",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    },
+    {
+      "id": "FQI-SRC-KAC-CHEUNG-19.telescoping",
+      "main_component": "A",
+      "assignment_basis": "Lean量化任意F；不能假定F(q^j x)超几何",
+      "first_action": "按当前主机制和组件角色试验，不再按旧有序标签盲试。本条待核：展开jackson消去(1-q)q^j x后有限望远镜",
+      "component_roles": [
+        {
+          "component_id": "A",
+          "role": "main_branch",
+          "mechanism_id": "P1",
+          "reason": "承担当前候选计划的主要数学构造；首选依据见该条结构分析，尚未实验。"
+        }
+      ],
+      "formula_sha256": "2f482c1efe02a8c4cd088b9c36d343cd9d5023ee16cb642deb4a709cc1394194",
+      "status": "inherited_candidate_not_new_applicability_verification"
+    }
+  ]
+}

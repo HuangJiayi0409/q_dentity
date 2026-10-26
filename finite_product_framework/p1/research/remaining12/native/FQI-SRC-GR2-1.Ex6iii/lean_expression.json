@@ -1,0 +1,108 @@
+{
+  "args": [
+    {
+      "args": [
+        {
+          "args": [
+            {
+              "name": "a",
+              "op": "var"
+            },
+            {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "q",
+                      "op": "var"
+                    },
+                    {
+                      "args": [
+                        {
+                          "args": [
+                            {
+                              "name": "n",
+                              "op": "var"
+                            }
+                          ],
+                          "op": "Nat.cast"
+                        }
+                      ],
+                      "op": "Neg.neg"
+                    }
+                  ],
+                  "op": "HPow.hPow"
+                },
+                {
+                  "args": [],
+                  "op": "List.nil"
+                }
+              ],
+              "op": "List.cons"
+            }
+          ],
+          "op": "List.cons"
+        },
+        {
+          "args": [],
+          "op": "List.nil"
+        },
+        {
+          "name": "q",
+          "op": "var"
+        },
+        {
+          "args": [
+            {
+              "args": [
+                {
+                  "name": "q",
+                  "op": "var"
+                },
+                {
+                  "name": "n",
+                  "op": "var"
+                }
+              ],
+              "op": "HPow.hPow"
+            },
+            {
+              "name": "a",
+              "op": "var"
+            }
+          ],
+          "op": "HDiv.hDiv"
+        },
+        {
+          "name": "n",
+          "op": "var"
+        }
+      ],
+      "op": "FiniteQBenchmark.phi"
+    },
+    {
+      "args": [
+        {
+          "name": "a",
+          "op": "var"
+        },
+        {
+          "args": [
+            {
+              "args": [
+                {
+                  "name": "n",
+                  "op": "var"
+                }
+              ],
+              "op": "Nat.cast"
+            }
+          ],
+          "op": "Neg.neg"
+        }
+      ],
+      "op": "HPow.hPow"
+    }
+  ],
+  "op": "Eq"
+}
