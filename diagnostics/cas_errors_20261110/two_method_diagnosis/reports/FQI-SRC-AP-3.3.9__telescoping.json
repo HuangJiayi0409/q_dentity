@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "status": "proved",
+  "identity": "FQI-SRC-AP-3.3.9",
+  "method_request": "telescoping",
+  "budget": {
+    "seconds": 900,
+    "attempt_seconds": 600,
+    "analysis_seconds": 120,
+    "preprocessing_seconds": 600,
+    "selection_seconds": 10,
+    "symbolic_seconds": 240,
+    "max_order": 4,
+    "max_unknowns": 10000,
+    "max_degree": 5,
+    "laurent_floor": -1
+  },
+  "work_directory": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-AP-3.3.9/attempts/ad9847eb20ed4960931da981f130b419",
+  "source": {
+    "identity": "FQI-SRC-AP-3.3.9",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity272.lean",
+    "sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+    "snapshot": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-AP-3.3.9/attempts/ad9847eb20ed4960931da981f130b419/source.lean",
+    "theorem": "FiniteQBenchmark.Identity272.statement",
+    "scope": "current Train; verified shared preprocessing",
+    "preprocessing": {
+      "directory": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569",
+      "status": "verified_unchanged",
+      "files": [
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/request.json",
+          "sha256": "b0f676023ebbaf9244a7d9a65821cb587f49aa29b785e56f93e0434aafcf3f7a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/standard.json",
+          "sha256": "89712d714baec64c8d749f8da322f437cf4bea929c650ccd082883c85a9ecd5b"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/bundle.json",
+          "sha256": "367916c9d13e65688e11864e00f857b5e85b0f0f3e143e2536e468396db553d0"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/original.lean",
+          "sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Auxiliary.olean",
+          "sha256": "785c0ab829c1ea52afb76f18afca6659695dc1e49fcd2332f2a24ac953112546"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Batch2Auxiliary.olean",
+          "sha256": "d456bfb0e84324fdd1703a175b959668d3ed068744614b700f113f4770800b2a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Batch2Definitions.olean",
+          "sha256": "abe911308dedc35e82506404ee357b0d2f3171290b286e49b60e544c6412fcb6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Batch2Proofs.olean",
+          "sha256": "13493bcf902df6baebaa0b1c01c85ad8b36ce21f06a7075fada6e1ef51f49d72"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Batch3Definitions.olean",
+          "sha256": "73675d38037616d27ead9ac48a7ebc60edb8b09eea55f661365c71fb602f4227"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Batch3Proofs.olean",
+          "sha256": "fea601643964709367f72dc5e4556af9cf40facb877cdb43491832f37cfb9716"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Batch4Definitions.olean",
+          "sha256": "80c37b8aedf56deedfb6d0cc4f55aacda617949b947e2db6d0738599ea5ecb60"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Batch4Proofs.olean",
+          "sha256": "af086eedc44766a478237a8959f518829d9593a6518f1ecdc5097a665274b7ae"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Batch5Definitions.olean",
+          "sha256": "7980bcd75f0da4b7041759e68aeebb2fc77f99526a078800ea9e5444820db19a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/BatchAuxiliary.olean",
+          "sha256": "02268f2ecaeb505801cf39938c02e671019f6cc962bd7eb9c41e150148aad7c6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/BatchDefinitions.olean",
+          "sha256": "dbd97a7a3015d0c7e9405e7397bd11327d15bae70be0c3a2541e20792e9ec058"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Definitions.olean",
+          "sha256": "e8d1bc1ea7bd12dcb5f4191f7a1dd8aab627558372bb9997da5ffade423cd7fe"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Gaussian.olean",
+          "sha256": "953ccc669977abf0e82c85f6febb1fe8e9b68b13ac907b21ba4e637cf6bbf78e"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/InitialValues.olean",
+          "sha256": "bdb8818f5a58df7a5c528c3be7ce59078be83ce2b0768c9799f9726d7144af3a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/Benchmark/Representation.olean",
+          "sha256": "403fccb4ee9750eaa91e7b440902c9f97b8ea0893814d7cd45e36f705859cea6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/FiniteQPreprocess/Export.olean",
+          "sha256": "c82b2e88a6c12db488db272db31ccbf2a8dd9b0c20c5f701cc4df549631f3f4d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/FiniteQPreprocess/Rules.olean",
+          "sha256": "a575e571b3630c5716fd54615f54f6184301eb9ccb61b5151005eb48f7121217"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b3a5849e148c997f45f488917c73ca18c29441fb0798da68429c3ebefab02569/build/FiniteQPreprocess/Wire.olean",
+          "sha256": "b61263a3505a4744c31f1c62f66732a6dd5ab9c6b37dd8d3cdf8812faef8360d"
+        }
+      ]
+    }
+  },
+  "analysis": [
+    {
+      "kind": "p1",
+      "status": "analyzed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-AP-3.3.9/attempts/ad9847eb20ed4960931da981f130b419/analysis/p1/result.json"
+    }
+  ],
+  "plan": [
+    {
+      "backend": "direct_q_gosper",
+      "method": "telescoping",
+      "environment": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-AP-3.3.9/attempts/ad9847eb20ed4960931da981f130b419/analysis/p1/environment.json",
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "direct_q_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "one entire finite range sum against scalar; multiplicative q-hypergeometric term",
+          "bases": "one structural base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions, then original-domain obligations",
+          "order": 0,
+          "proof_exit_scope": "native explicit sums; structured definitions need a source bridge",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "backend": "direct_q_gosper",
+      "method": "telescoping",
+      "status": "proved",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-AP-3.3.9/attempts/ad9847eb20ed4960931da981f130b419/attempts/00_direct_q_gosper/result.json",
+      "failure_stage": null,
+      "error": null,
+      "remaining_obligations": []
+    }
+  ],
+  "events": [
+    {
+      "stage": "snapshot",
+      "status": "passed",
+      "elapsed_seconds": 0.01
+    },
+    {
+      "stage": "preprocessing",
+      "status": "verified_unchanged",
+      "elapsed_seconds": 0.321
+    },
+    {
+      "stage": "analysis",
+      "status": "analyzed",
+      "elapsed_seconds": 17.563,
+      "adapter": "p1"
+    },
+    {
+      "stage": "planning",
+      "status": "completed",
+      "elapsed_seconds": 17.563,
+      "candidate_count": 1
+    },
+    {
+      "stage": "attempt",
+      "status": "started",
+      "elapsed_seconds": 17.612,
+      "backend": "direct_q_gosper"
+    },
+    {
+      "stage": "kernel_acceptance",
+      "status": "passed",
+      "elapsed_seconds": 38.723
+    },
+    {
+      "stage": "finished",
+      "status": "proved",
+      "elapsed_seconds": 38.724
+    }
+  ],
+  "automatic_train_proofs": 1,
+  "test_files_read": 0,
+  "remaining_obligations": [],
+  "new_unique_train_proofs": "not_counted_by_individual_run",
+  "unknown_policy": "mark",
+  "preprocessing": {
+    "status": "verified_unchanged",
+    "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-AP-3.3.9/attempts/ad9847eb20ed4960931da981f130b419/preprocessing/result.json",
+    "normalization_view": "structured",
+    "cache_hit": true,
+    "reused_from_parent": false,
+    "wall_seconds": 0.2168552930234
+  },
+  "admission": [
+    {
+      "backend": "direct_q_gosper",
+      "applicable": true,
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "direct_q_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "one entire finite range sum against scalar; multiplicative q-hypergeometric term",
+          "bases": "one structural base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions, then original-domain obligations",
+          "order": 0,
+          "proof_exit_scope": "native explicit sums; structured definitions need a source bridge",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "bibasic_gosper",
+      "applicable": false,
+      "reason": "unsupported_structure: exactly two distinct base variables required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "bibasic_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "explicit finite sum, summand independent of outer index",
+          "bases": "two independent bases",
+          "summation_dimension": 1,
+          "coefficient_domain": "rational bivariate shift field; specialize in Lean",
+          "order": 0,
+          "proof_exit_scope": "restricted bibasic native grammar and endpoints",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: exactly two distinct base variables required",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "selected_method": "telescoping",
+  "selected_backend": "direct_q_gosper",
+  "proof": {
+    "proof_file": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-AP-3.3.9/attempts/ad9847eb20ed4960931da981f130b419/attempts/00_direct_q_gosper/FQI-SRC-AP-3.3.9/Proof.lean",
+    "proof_sha256": "e424020e3216a096d8f5c019737faeace3677fa835548381df723ce1f5380e73",
+    "theorem": "FiniteQBenchmark.Identity272.statement",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "original_declaration_preserved": true
+  },
+  "elapsed_seconds": 38.724
+}

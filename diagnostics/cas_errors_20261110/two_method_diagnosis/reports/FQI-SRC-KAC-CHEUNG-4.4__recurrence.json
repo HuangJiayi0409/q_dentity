@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "status": "proved",
+  "identity": "FQI-SRC-KAC-CHEUNG-4.4",
+  "method_request": "recurrence",
+  "budget": {
+    "seconds": 900,
+    "attempt_seconds": 600,
+    "analysis_seconds": 120,
+    "preprocessing_seconds": 600,
+    "selection_seconds": 10,
+    "symbolic_seconds": 240,
+    "max_order": 4,
+    "max_unknowns": 10000,
+    "max_degree": 5,
+    "laurent_floor": -1
+  },
+  "work_directory": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-KAC-CHEUNG-4.4/attempts/025bc82bbbb247e2b3cf2ff46c2f67a2",
+  "source": {
+    "identity": "FQI-SRC-KAC-CHEUNG-4.4",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity423.lean",
+    "sha256": "bbe18b576d6f34ad973468533c3bbeed89b6b8e67db62f55c5630461b23ebf77",
+    "snapshot": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-KAC-CHEUNG-4.4/attempts/025bc82bbbb247e2b3cf2ff46c2f67a2/source.lean",
+    "theorem": "FiniteQBenchmark.Identity423.statement",
+    "scope": "current Train; verified shared preprocessing",
+    "preprocessing": {
+      "directory": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4",
+      "status": "verified_unchanged",
+      "files": [
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/request.json",
+          "sha256": "d2f0ea1d46f2b383adaf56cc6442467ef4c74e719ebdea8a46fa8b8c104f0cc3"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/standard.json",
+          "sha256": "102ca85fdf930b0df8d866d7a7d4e1a6dd5ef327c02cb673365bee9de8465e1f"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/bundle.json",
+          "sha256": "68b5f12e4670c141a2c346e7b10b6d2c2ddde5f67780faea391ff82570b37bf6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/original.lean",
+          "sha256": "bbe18b576d6f34ad973468533c3bbeed89b6b8e67db62f55c5630461b23ebf77"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Auxiliary.olean",
+          "sha256": "785c0ab829c1ea52afb76f18afca6659695dc1e49fcd2332f2a24ac953112546"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Batch2Auxiliary.olean",
+          "sha256": "722e5b2b1f2206ac6838b98b1ed27bf3f797c87e0947c351be9fd2e377a7c4ba"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Batch2Definitions.olean",
+          "sha256": "abe911308dedc35e82506404ee357b0d2f3171290b286e49b60e544c6412fcb6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Batch2Proofs.olean",
+          "sha256": "81029907c50e124fcb38676e37f9d5b153f03be5a30c869e4e3e2c650c88199a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Batch3Definitions.olean",
+          "sha256": "93cfa5743341c3552f627303fb13e23d77b18aa22dd3babccf539e525c129857"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Batch3Proofs.olean",
+          "sha256": "fea601643964709367f72dc5e4556af9cf40facb877cdb43491832f37cfb9716"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Batch4Definitions.olean",
+          "sha256": "bd0046c720bde252bb2ae143ab6a8671a138ac2d7c6c46cb21ece1acca043648"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Batch4Proofs.olean",
+          "sha256": "3d066c55a519dccd7852ea0f0ad951e769564ce7571b8d98521f86824b9b55db"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Batch5Definitions.olean",
+          "sha256": "7980bcd75f0da4b7041759e68aeebb2fc77f99526a078800ea9e5444820db19a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Batch5Proofs.olean",
+          "sha256": "abb736dac207bc7ecb39db09624cb44100c07b876b5e0e0d209ea1263df7c329"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/BatchAuxiliary.olean",
+          "sha256": "02268f2ecaeb505801cf39938c02e671019f6cc962bd7eb9c41e150148aad7c6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/BatchDefinitions.olean",
+          "sha256": "dbd97a7a3015d0c7e9405e7397bd11327d15bae70be0c3a2541e20792e9ec058"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Definitions.olean",
+          "sha256": "e8d1bc1ea7bd12dcb5f4191f7a1dd8aab627558372bb9997da5ffade423cd7fe"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Gaussian.olean",
+          "sha256": "f711f893b4fb145cd43ece623e765b8386736036a2c0c4602d56ea4f4c1d2b85"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/InitialValues.olean",
+          "sha256": "33156916169676d9507177af566e282d091343190358b767889e2ae8f59fdc78"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/Benchmark/Representation.olean",
+          "sha256": "48f00440bb45fddd3743f9f64cd221ecd35d0f66d10e4b7ed60f11e6e519deea"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/FiniteQPreprocess/Export.olean",
+          "sha256": "c82b2e88a6c12db488db272db31ccbf2a8dd9b0c20c5f701cc4df549631f3f4d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/FiniteQPreprocess/Rules.olean",
+          "sha256": "a575e571b3630c5716fd54615f54f6184301eb9ccb61b5151005eb48f7121217"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/707e822da4c7e307b9b2f516d3254271fe47bdd7f550480d04bb6072e485b7c4/build/FiniteQPreprocess/Wire.olean",
+          "sha256": "b61263a3505a4744c31f1c62f66732a6dd5ab9c6b37dd8d3cdf8812faef8360d"
+        }
+      ]
+    }
+  },
+  "analysis": [
+    {
+      "kind": "p1",
+      "status": "analyzed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-KAC-CHEUNG-4.4/attempts/025bc82bbbb247e2b3cf2ff46c2f67a2/analysis/p1/result.json"
+    }
+  ],
+  "plan": [
+    {
+      "backend": "target_first_order",
+      "method": "recurrence",
+      "environment": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-KAC-CHEUNG-4.4/attempts/025bc82bbbb247e2b3cf2ff46c2f67a2/analysis/p1/environment.json",
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "target_first_order",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "native finite q-hypergeometric sum and target ratio",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal field with explicit specialization",
+          "order": 1,
+          "proof_exit_scope": "native first-order recurrence and initial value",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "general_q_zeilberger",
+      "method": "recurrence",
+      "environment": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-KAC-CHEUNG-4.4/attempts/025bc82bbbb247e2b3cf2ff46c2f67a2/analysis/p1/environment.json",
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "general_q_zeilberger",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "whole-side sums or registered structured sums; affine natural prefix",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions and original-domain specialization",
+          "order": "budget.max_order",
+          "proof_exit_scope": "finite-order common recurrence, moving tails, initials and singular-index obligations",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "backend": "target_first_order",
+      "method": "recurrence",
+      "status": "proved",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-KAC-CHEUNG-4.4/attempts/025bc82bbbb247e2b3cf2ff46c2f67a2/attempts/00_target_first_order/result.json",
+      "failure_stage": null,
+      "error": null,
+      "remaining_obligations": []
+    }
+  ],
+  "events": [
+    {
+      "stage": "snapshot",
+      "status": "passed",
+      "elapsed_seconds": 0.003
+    },
+    {
+      "stage": "preprocessing",
+      "status": "verified_unchanged",
+      "elapsed_seconds": 0.308
+    },
+    {
+      "stage": "analysis",
+      "status": "analyzed",
+      "elapsed_seconds": 17.26,
+      "adapter": "p1"
+    },
+    {
+      "stage": "planning",
+      "status": "completed",
+      "elapsed_seconds": 17.261,
+      "candidate_count": 2
+    },
+    {
+      "stage": "attempt",
+      "status": "started",
+      "elapsed_seconds": 17.314,
+      "backend": "target_first_order"
+    },
+    {
+      "stage": "kernel_acceptance",
+      "status": "passed",
+      "elapsed_seconds": 39.744
+    },
+    {
+      "stage": "finished",
+      "status": "proved",
+      "elapsed_seconds": 39.745
+    }
+  ],
+  "automatic_train_proofs": 1,
+  "test_files_read": 0,
+  "remaining_obligations": [],
+  "new_unique_train_proofs": "not_counted_by_individual_run",
+  "unknown_policy": "mark",
+  "preprocessing": {
+    "status": "verified_unchanged",
+    "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-KAC-CHEUNG-4.4/attempts/025bc82bbbb247e2b3cf2ff46c2f67a2/preprocessing/result.json",
+    "normalization_view": "structured",
+    "cache_hit": true,
+    "reused_from_parent": false,
+    "wall_seconds": 0.21587341802660376
+  },
+  "admission": [
+    {
+      "backend": "target_first_order",
+      "applicable": true,
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "target_first_order",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "native finite q-hypergeometric sum and target ratio",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal field with explicit specialization",
+          "order": 1,
+          "proof_exit_scope": "native first-order recurrence and initial value",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "general_q_zeilberger",
+      "applicable": true,
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "general_q_zeilberger",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "whole-side sums or registered structured sums; affine natural prefix",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions and original-domain specialization",
+          "order": "budget.max_order",
+          "proof_exit_scope": "finite-order common recurrence, moving tails, initials and singular-index obligations",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "ore_closure",
+      "applicable": false,
+      "reason": "unsupported_structure: one defined-sequence observable and one finite sum required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "ore_closure",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "registered defined sequences with certified recurrences",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "q-Ore rational coefficient field",
+          "order": "bounded closure search",
+          "proof_exit_scope": "native second-order objects / first-order forcing; parameter-instance branch orders 1..4",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: one defined-sequence observable and one finite sum required",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "multisum",
+      "applicable": false,
+      "reason": "unsupported_structure: at least two distinct sum indices required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "multisum",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "nested affine range sums over boxes or simplices",
+          "bases": "one base",
+          "summation_dimension": "finite, at least 2",
+          "coefficient_domain": "formal rational multishifts; original support still required",
+          "order": "budget.max_order",
+          "proof_exit_scope": "2D simplex, order 1 monic, multiplicative Pochhammer kernel with lengths i,j,i+j and domain hypotheses",
+          "implementation_limits": {
+            "native_dimension": 2,
+            "native_domains": [
+              "simplex"
+            ],
+            "native_order": 1
+          },
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: at least two distinct sum indices required",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "selected_method": "recurrence",
+  "selected_backend": "target_first_order",
+  "proof": {
+    "proof_file": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-KAC-CHEUNG-4.4/attempts/025bc82bbbb247e2b3cf2ff46c2f67a2/attempts/00_target_first_order/FQI-SRC-KAC-CHEUNG-4.4/Proof.lean",
+    "proof_sha256": "f345bef611e19dfd4cd91cbc71c54cc937f2f290206decb4fb0041fc651e4cae",
+    "theorem": "FiniteQBenchmark.Identity423.statement",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "original_declaration_preserved": true
+  },
+  "elapsed_seconds": 39.745
+}

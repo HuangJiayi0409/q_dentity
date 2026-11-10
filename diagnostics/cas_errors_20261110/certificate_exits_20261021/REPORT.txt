@@ -1,0 +1,53 @@
+两方法证书到完整原声明出口改进（2026-10-21）
+
+最终固定五题：1/5 完整原题通过；此前这五个题目-方法配对均未证明。
+只统计 final_isolated/ 的单独完整一轮。不是全Train重测，不改写23/346、34/346或31/346历史成绩。
+最终复测墙钟 610.808 秒，2 个并行任务；每题指定原方法，structured 公共预处理，无分类器。
+总预算900秒、单尝试600秒、符号构造240秒。双基证明内部心跳由100万调为400万，单次Lean180秒上限不变。
+
+逐题结果：
+FQI-SRC-AP-3.3.14 | recurrence | pipeline_incomplete -> unproved | 48.933秒
+  general_q_zeilberger: constructed=constructed, Lean候选生成=True, status=lean_failed
+  unsolved goals
+  unsolved goals
+FQI-SRC-GR2-3.Ex4-odd | recurrence | pipeline_incomplete -> unproved | 610.735秒
+  general_q_zeilberger: constructed=None, Lean候选生成=None, status=timeout
+  attempt wall-clock budget exhausted
+  超时前候选Proof.lean已落盘，未作成功接收。
+FQI-SRC-GR2-II-35 | telescoping | lean_failed -> proved | 118.798秒
+  bibasic_gosper: constructed=constructed, Lean候选生成=True, status=proved
+FQI-SRC-SILLS-3.7 | recurrence | pipeline_incomplete -> unproved | 94.936秒
+  general_q_zeilberger: constructed=constructed, Lean候选生成=True, status=lean_failed
+  unsolved goals
+  unsolved goals
+  unsolved goals
+  unsolved goals
+FQI-SRC-SILLS-3.Lem3.3 | recurrence | pipeline_incomplete -> unproved | 42.550秒
+  general_q_zeilberger: constructed=constructed, Lean候选生成=True, status=lean_failed
+  unsolved goals
+  unsolved goals
+  unsolved goals
+
+实际实现：
+递推法保留原始求和项的自然数截断、整数除法和幂指数类型；精确匹配多个加减分量的来源，再乘计算出的有理证书。补齐乘积列表的原式连接，以及常数右端的域类型约束。
+双基望远镜从原有限域条件提取分母/后继因子非零事实，处理已有regular条件、倒数幂和乘积参数顺序，证明产品移位后抽象重复原子，再用有证据的清分母和环运算验证差分。保留初值和完整端点验证。
+未改符号证书搜索内核、没有题号分派、没有借用其他方法核心；同方法打印工具与Mathlib基础证明工具复用明确。
+
+当前限制：
+四个递推样本的证书打印障碍已越过，但候选Lean证明不等于完整证明。一般互补长度移位、整数值指数差分、证书可去极点和原有限域/端点义务仍未补齐。未为通过样本而增加q≠0或其他原题没有的假设。
+双基法仍受现有有限乘积原差分表示范围限制，不代表任意多基或依赖上界的双基递推已完成。
+
+回归与原题审计：
+13项Python回归通过，并在公共库更新后的当前工作区再次通过。17项原出口回归通过；最终修改影响到的标量出口以零目标、二阶、三阶、移动上界四项重新检查。
+新增源式保留检查：整数值指数、截断乘积长度两项完整正例；错误原式与篡改证书四项拒绝。双基改名正例、错误端点、缺失有限分母条件及篡改证书四项通过。各套包含复查，不简单相加为独立测试总数。
+旧成功题GR2-II-34在本轮双基代码下重新通过原声明、依赖排除和公理审计。合成变体不计Train成功。
+最终1份成功证明重新通过独立原题审计；1045份隔离输入、690份冻结依赖及本轮三个改动文件的冻结哈希核对通过。当前工作区的并行追加修改另行披露，不假定整个活跃源码仍等于冻结版。
+
+隔离及失败记录：
+根目录final/为首轮五题测试，暴露零右端类型问题后不作为最终成绩；结果完整保留。final_revision/因并行工作区新增math_library而在旧清单复制时漏依赖，五题分析失败，单列为工程失败，不计能力成绩。
+最终final_isolated/使用本轮最初完整冻结快照，只覆盖本次三个改动文件。原缓存逐项哈希验证后复用；方法证书及证明重新计算。其他工作区修改保留，不在本轮能力归因内。
+最终冻结后，工作区general_sum_emit.py又追加了整数指数类型标注的三行处理。本轮实现仍完整保留；该并行追加不纳入本轮冻结成绩，详细差异见audit.json的live_source_comparison。
+开发过程重放、失败和超时均保留；未读取Test、未调用API，未合并各轮较好结果。
+
+证据：final_isolated/retest_summary.json、per_sample.csv、comparison.json、audit.json；regression_summary.json；before/、after/、changes.diff。
+方法范围：../../p1/CERTIFICATE_EXITS.txt。

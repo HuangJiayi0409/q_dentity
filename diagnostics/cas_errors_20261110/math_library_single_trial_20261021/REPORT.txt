@@ -1,0 +1,59 @@
+数学工具库：一道真实 Train 题的配对实验（2026-10-21）
+
+结论
+工具库解除了一个实际输入适配阻塞，但本题尚未获得完整证明。
+关闭库的表达式接入口：analysis_failed，无法读取 baileySum。
+启用库的表达式接入口：表达式读取成功、baileySum 可展开为有限和，最终 unproved。
+两组均无可执行计划、均未开始符号证书搜索、完整原题证明数均为 0。
+因此本实验支持“工具库改善了该题的输入解释”，不支持“已提高完整解题率”。
+
+选题和控制
+题号：FQI-SRC-AQ-3.42，Bailey 链逆变换（显式修订）。
+原题：benchmark/lean/Benchmark/Statements/Train/Identity316.lean。
+原声明 SHA256：6065812ad7e9ecb4393a789c3afa1b6a36d4a6a6fc18dfdff3f3641900e3cca1。
+选择理由：34/346 历史轮中此题明确在 baileySum a q alpha n 的导出阶段失败，而该
+对象已在首版工具库中注册。运行前写入 selection.json，运行后未更换题目。
+
+方法固定为 telescoping（direct_q_gosper 和 bibasic_gosper 两个现有入口）。
+双方使用同一当前源码隔离副本、同一 verified structured 预处理产物、同一原声明。
+预算均为原默认：总 900 秒、分析 120 秒、每尝试 600 秒、符号计算 240 秒。
+基线没有回滚到整套历史实现；它只通过独立测试入口停用库生成的表达式提取扩展。
+开启组使用现有生产入口。extractor_only.diff 记录唯一区别，audit.py 检查开启组的
+提取代码恰好等于给关闭组添加库扩展后的代码。
+719 份隔离源码、67 份预处理缓存文件逐项核验，旧实验记录保持原样。
+
+实际结果
+阶段                         关闭接入口                  启用接入口
+读取原目标表达式             失败：不支持 baileySum      成功
+取得 baileySum 的有限和表示   未到达                     成功，baileySum_sum 规则
+方法可执行计划               0                          0
+符号证书尝试                 0                          0
+完整原声明 Lean 证明         未证明                     未证明
+墙钟                         12.353 秒                  12.399 秒
+配对实验总墙钟 25.025 秒；耗时包含环境与适配，不代表证书搜索性能。
+
+工具库实际提供的含义
+baileySum(a,q,alpha,n) = sum_{j=0}^n alpha(j) /
+  (poch(q,q,n-j) * poch(a*q,q,n+j))。
+库保留任意序列 alpha，不猜测它的取值或递推。
+实际生成的表达式及引理来源保存在 library_lhs_view.json；该表达式的定义等式在
+ActualBaileyView.lean 中经 Lean 验证，公理仅 propext、Classical.choice、Quot.sound。
+这是局部定义解释的验证，不是原题右边复杂嵌套求和恒等式的证明。
+
+当前剩余阻塞
+direct_q_gosper：unsupported exported node: math_library.apply。
+  含义是已经表示出了 alpha(j)，但现有核心转换器不能处理一般任意序列应用，无法
+  为其建立所需的符号移位表示；不是工具库不知道 baileySum 的定义。
+bibasic_gosper：first bibasic emitter needs n-independent term。
+  当前双基出口要求求和项不依赖外部规模 n，本题不满足其实现范围。
+不能从这些错误推断原题数学上不可证明，也不能直接给 alpha 增添原题没有的条件。
+后续若要闭合此题，还需任意序列线性表示、嵌套有限和及相应原声明出口的支持。
+
+记录
+summary.json 为配对结果，audit.json 为原声明/源码/缓存/预算/提取差异的复核。
+library_entry_disabled/ 与 library_entry_enabled/ 保留完整运行证据。
+check_interpretation.py 的额外打印器只用于核对局部定义，没有接入两组求解器。
+最初该局部检查器误要求零公理；Lean 编译本已通过，随后按项目允许的三项公理
+修正验收并复核，初版检查器及日志保留，配对实验未重复、未改写。
+未修改生产算法、未调用 API、未读取 Test、未启动全 Train 批测。
+本次新增完整原题证明 0；历史 34/346 不变。

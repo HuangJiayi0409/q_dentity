@@ -1,0 +1,252 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 2281,
+    "sha256": "3d5866e0242077aa57e1a45fe486df3a9c291dd41ff9cd106e78bc92e961dc53"
+  },
+  {
+    "path": "certificate_exits_20261021/REPORT.txt",
+    "bytes": 4691,
+    "sha256": "fb9e59068681d2cb7a6787ad2c933f68fae9bbbc2a59d2b47bde4a4e7532f7ac"
+  },
+  {
+    "path": "certificate_exits_20261021/debug34.output",
+    "bytes": 35920,
+    "sha256": "ab81c07c01214e2fe66bb3946cd4270686dceae2829b98446438f79acf743afa"
+  },
+  {
+    "path": "certificate_exits_20261021/debug34_norm.output",
+    "bytes": 35152,
+    "sha256": "345f09e7d69d0dae230422d03835c2adf9b92976a2a9fa9ba3dc020bdbddd25e"
+  },
+  {
+    "path": "math_library_single_trial_20261021/REPORT.txt",
+    "bytes": 4123,
+    "sha256": "2570e1eec5c35701621974ee62f092aeea1a18f26ac406275649f1b5e7146b7b"
+  },
+  {
+    "path": "recurrence_closure_20261021/REPORT.txt",
+    "bytes": 3640,
+    "sha256": "6404caf054b67816c003556b93418258fde4bac9eb10bc766525a2246f1a78ef"
+  },
+  {
+    "path": "train_all_methods_20261021_24/REPORT.txt",
+    "bytes": 542,
+    "sha256": "ca3b44a3507fd22dd241407b65d9c57a515fb6c9aec810eb8eec16418725bbbf"
+  },
+  {
+    "path": "train_all_methods_20261021_24/per_method.csv",
+    "bytes": 1277676,
+    "sha256": "59f3785661c09e753aeba224ff9f827fbceb4ee14bde20e2824fa69386e41cbc"
+  },
+  {
+    "path": "train_all_methods_20261021_24/summary.json",
+    "bytes": 3405,
+    "sha256": "f884157412028ecc210389e2034c367498ee7ed2db7d5ff2aa3515d2ca617dfc"
+  },
+  {
+    "path": "two_method_diagnosis/index.json",
+    "bytes": 9439,
+    "sha256": "6413fa27cba4ae7c7b40cfbb61847ebc7063cc85aab2111e56acc961513e8c70"
+  },
+  {
+    "path": "two_method_diagnosis/per_sample_diagnosis.csv",
+    "bytes": 24998,
+    "sha256": "52431cb0cbbc747a06d2d78933a8dbd2dbb779b33be889de55c6662f2fdb5e6f"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-BAILEY-UNIT__telescoping.json",
+    "bytes": 11584,
+    "sha256": "6195fdb2262cba2c5c8080bd9761e0b565e84d22b29208bcfbeca582151b4d42"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-FINITE-Q-BINOMIAL__recurrence.json",
+    "bytes": 18207,
+    "sha256": "7dbe24be6f441ba41b0be0fc5aa5f4c79312da886fd478bfd923d6a9ed4208c9"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-AP-3.3.9__telescoping.json",
+    "bytes": 14115,
+    "sha256": "eb1b8f0ccc3c27d4eceffccdaf76a177c3ff2ae77ca6e257914c6239039ed984"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-AP-3.E12a__recurrence.json",
+    "bytes": 9344,
+    "sha256": "053332d97e3cc164e64f44139f69c040723b743e1401b27b7fb1bfc197d6862e"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-AQ-2.23__recurrence.json",
+    "bytes": 9324,
+    "sha256": "356385d2dfcb2dd370e50fd3385699622a440cb9ffa0368f1a9915e9cc314f3d"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-AQ-3.37__telescoping.json",
+    "bytes": 11540,
+    "sha256": "981f5892fe51819392b050a1c1235b0cedeea3506763888a8e8d6e33796a9e9c"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-AQ-8.32__recurrence.json",
+    "bytes": 9322,
+    "sha256": "913662a1591c14c5048e5378b4e18fe18cd8fd74ce78ba020543d2b8eea3878d"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-AQ-9.17__recurrence.json",
+    "bytes": 9322,
+    "sha256": "9831c8caa43ddee17d64b2217b8c551c4cd461a38e1aae27b5dd15cd0f4d48ca"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-1.3.25__recurrence.json",
+    "bytes": 9359,
+    "sha256": "5a5d2fff51aad84b00f39428057d2808f5bb0cd5e3bde1332d0fd02b726f9fc6"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-10.Ex18__recurrence.json",
+    "bytes": 16721,
+    "sha256": "8b5fcde0485eaaa49d81002839532fc9095f6562b1a42eda2b20576c1053864a"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-11.6.5-p0__telescoping.json",
+    "bytes": 9357,
+    "sha256": "117cbb983562e3d27ca3b2dbe161dbbf20db940ffb987f88ca759e8b6e44aa7b"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-11.6.6-p0__telescoping.json",
+    "bytes": 9396,
+    "sha256": "3efedea7ebbe147f8678798d7739ec074d485ff9da47acb09d52d2de787ae6fb"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-11.Ex24ii__recurrence.json",
+    "bytes": 9498,
+    "sha256": "6d805165b629b6d0c9ec8530699c328613561c72744673dbb4bd2946fa62b0d3"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-2.3.2__recurrence.json",
+    "bytes": 16440,
+    "sha256": "39b59fb75493abc3d4fd0ac30bb655f622434d8640a5e40d627f62dc46fe8ab5"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-2.3.4__telescoping.json",
+    "bytes": 11550,
+    "sha256": "126f29b22186cc474cbf444504a698065b885476b3ef248797015220520953c2"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-2.Ex11__recurrence.json",
+    "bytes": 9355,
+    "sha256": "359d21d0ad211427ae2b0666b033e57d32273a3b0d431e817bf4e0cab45ce328"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-2.Ex14i__recurrence.json",
+    "bytes": 16458,
+    "sha256": "446ffaa1c50d3861d9aa594a2efc6c4be0c2368930aa31d09090115d4d197229"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-2.Ex5__telescoping.json",
+    "bytes": 9372,
+    "sha256": "ef46a2976117e9fcf8bc2e62e38a2a1267197b8042af7052352a2ec91bbe7e44"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-3.10.5__recurrence.json",
+    "bytes": 9470,
+    "sha256": "8b45ebf982f8a54a713415af6287cc7b9525868db61f1994bdb8aea0337b0877"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-3.8.14__recurrence.json",
+    "bytes": 9482,
+    "sha256": "7fdf25cd82bc5ecd627b4bca2abd59c51cef09e26f8ab2b0e59e184a606fa4bf"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-5.Ex19i__recurrence.json",
+    "bytes": 14152,
+    "sha256": "f074f515e72f646b273cceafe87640b56f602d25c89752ea94964be88cddc5b3"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-7.4.14__recurrence.json",
+    "bytes": 9358,
+    "sha256": "1dc6db3e6040bdfc99e3d27c2506b32eb6d3e4c3335dac84dda1ebfc9786108a"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-II-19__recurrence.json",
+    "bytes": 14075,
+    "sha256": "c267beda7fabdb433be44519d82b62ffb9db6c9d418f6116008e9a45e1589934"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-II-34__telescoping.json",
+    "bytes": 14062,
+    "sha256": "340f20faa9685a59c40f38747686237cfd070400c2fcc84f552b3484424257fd"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-II-35__telescoping.json",
+    "bytes": 13740,
+    "sha256": "7ef15db282835a28aac1e7c4267a1013cfe3d1420e3cfdd459cd51b4aa363922"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-III-25__recurrence.json",
+    "bytes": 14153,
+    "sha256": "696575d7b9d38c1d0b34dbd35b3fba1064ceb263ecec77cc77cc390f84ed0f89"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-GR2-III-27__recurrence.json",
+    "bytes": 14154,
+    "sha256": "0d13a9ff6189ac3b05b286db4df73be3b7a66815be02c623a23407287dd0898c"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-KAC-CHEUNG-26.22__recurrence.json",
+    "bytes": 9676,
+    "sha256": "b38d3f59f136d73dae1e3f89a1f47b6710f552ba0d740c06a2dfab483fe07f3d"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-KAC-CHEUNG-4.4__recurrence.json",
+    "bytes": 18505,
+    "sha256": "6680fd1ec4fa96525ccbf8cda5211e2c4a7d43091b71da0dca23b0243e18548b"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-SILLS-2.Ex2c__recurrence.json",
+    "bytes": 14201,
+    "sha256": "6788b15af9138e1f95dca684bed38d784c75e3eea6235de6174e667ed37bd203"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-SILLS-2.Ex2e__recurrence.json",
+    "bytes": 14201,
+    "sha256": "b6b60530cc0538f47cf1f331a6531ca3f6edb8ae07dcbfc1659ac11854f22fa4"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-SILLS-2.Ex7a-corrected__recurrence.json",
+    "bytes": 16629,
+    "sha256": "5a1f90e0181543093473821b886b6ab3df33e8243db57c71931ce994ae726d9e"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-SILLS-2.Lem2.53__recurrence.json",
+    "bytes": 16573,
+    "sha256": "5523cd16de6deff54425f52018bc26c3982715765818d7786f69d02f10e6f287"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.18__recurrence.json",
+    "bytes": 9337,
+    "sha256": "1c7b6ed9718b4b8fbf098eade0f9c3c5587d029f1e6363a614f4362dd43b5ef0"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.19__recurrence.json",
+    "bytes": 9346,
+    "sha256": "5538c1779dc0e1f48269fbc2250e6f50675182e5335dabc34bb1aff33a8a23bd"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.26-corrected__recurrence.json",
+    "bytes": 9421,
+    "sha256": "28b214c7fc2b0ed77cf26ba0643dbccd5cd31d608f1f7284a47b8d3bff42e9fa"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.52__recurrence.json",
+    "bytes": 9628,
+    "sha256": "210c61048e3b418a51f297c6e8b347a68296494d3d323d10b134d7b3eeef4c4f"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.55__recurrence.json",
+    "bytes": 9632,
+    "sha256": "208b272970a8edf2380e1c2ae730c0f55d1a75d8fdbf00fd652752b1582ee1b0"
+  },
+  {
+    "path": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.Mod8__recurrence.json",
+    "bytes": 9640,
+    "sha256": "37d3a428283f6991fcaa44d5edac4329c4768a01c6689870fcf944d02fcb07ba"
+  }
+]

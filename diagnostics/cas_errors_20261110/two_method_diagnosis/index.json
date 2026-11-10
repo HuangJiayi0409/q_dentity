@@ -1,0 +1,275 @@
+[
+  {
+    "identity": "FQI-BAILEY-UNIT",
+    "method": "telescoping",
+    "status": "unproved",
+    "blocker": "Converter 不接收 unitBailey",
+    "report": "two_method_diagnosis/reports/FQI-BAILEY-UNIT__telescoping.json"
+  },
+  {
+    "identity": "FQI-SRC-AP-3.3.9",
+    "method": "telescoping",
+    "status": "proved",
+    "blocker": "direct_q_gosper 完整原题通过",
+    "report": "two_method_diagnosis/reports/FQI-SRC-AP-3.3.9__telescoping.json"
+  },
+  {
+    "identity": "FQI-SRC-AQ-3.37",
+    "method": "telescoping",
+    "status": "unproved",
+    "blocker": "Converter 不接收目标中的 ite",
+    "report": "two_method_diagnosis/reports/FQI-SRC-AQ-3.37__telescoping.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-11.6.5-p0",
+    "method": "telescoping",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收任意函数应用 a k",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-11.6.5-p0__telescoping.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-11.6.6-p0",
+    "method": "telescoping",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 pochListInt",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-11.6.6-p0__telescoping.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-2.3.4",
+    "method": "telescoping",
+    "status": "unproved",
+    "blocker": "Converter 不接收目标中的 ite",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-2.3.4__telescoping.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-2.Ex5",
+    "method": "telescoping",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 wellPoisedRaw",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-2.Ex5__telescoping.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-II-34",
+    "method": "telescoping",
+    "status": "proved",
+    "blocker": "bibasic_gosper 完整原题通过",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-II-34__telescoping.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-II-35",
+    "method": "telescoping",
+    "status": "unproved",
+    "blocker": "双基证书已构造，原题 Lean 重建失败",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-II-35__telescoping.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-2.Ex14i",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "general_q_zeilberger 符号工作进程超时",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-2.Ex14i__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-AQ-8.32",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 aqF",
+    "report": "two_method_diagnosis/reports/FQI-SRC-AQ-8.32__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-AQ-9.17",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 aqG",
+    "report": "two_method_diagnosis/reports/FQI-SRC-AQ-9.17__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-KAC-CHEUNG-26.22",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 quantumRootSum",
+    "report": "two_method_diagnosis/reports/FQI-SRC-KAC-CHEUNG-26.22__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-SILLS-4.Mod8",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 sillsP",
+    "report": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.Mod8__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-SILLS-4.26-corrected",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 schurE q⁻¹ (2*m)",
+    "report": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.26-corrected__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-AP-3.E12a",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 schurDInt",
+    "report": "two_method_diagnosis/reports/FQI-SRC-AP-3.E12a__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-II-19",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "Converter 不接收 HMod.hMod",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-II-19__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-III-27",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "Converter 不接收前因子内部的 Finset.sum",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-III-27__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-2.3.2",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "representation_gap: nonlinear shift exponent",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-2.3.2__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-10.Ex18",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "multisum 精确系数复杂度预算耗尽，python-flint 不可用",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-10.Ex18__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-SILLS-2.Lem2.53",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "representation_gap: not a single-base rational shift",
+    "report": "two_method_diagnosis/reports/FQI-SRC-SILLS-2.Lem2.53__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-SILLS-4.55",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 borweinB",
+    "report": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.55__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-SILLS-2.Ex2c",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "Converter 不接收 sillsAlpha",
+    "report": "two_method_diagnosis/reports/FQI-SRC-SILLS-2.Ex2c__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-2.Ex11",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 askeyWilson",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-2.Ex11__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-7.4.14",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 ultraspherical",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-7.4.14__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-SILLS-4.19",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 schurE",
+    "report": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.19__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-SILLS-2.Ex2e",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "Converter 不接收 sillsAlpha",
+    "report": "two_method_diagnosis/reports/FQI-SRC-SILLS-2.Ex2e__recurrence.json"
+  },
+  {
+    "identity": "FQI-FINITE-Q-BINOMIAL",
+    "method": "recurrence",
+    "status": "proved",
+    "blocker": "target_first_order 完整原题通过",
+    "report": "two_method_diagnosis/reports/FQI-FINITE-Q-BINOMIAL__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-KAC-CHEUNG-4.4",
+    "method": "recurrence",
+    "status": "proved",
+    "blocker": "target_first_order 完整原题通过",
+    "report": "two_method_diagnosis/reports/FQI-SRC-KAC-CHEUNG-4.4__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-III-25",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "Converter 不接收前因子内部的 Finset.sum",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-III-25__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-SILLS-4.18",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 schurD",
+    "report": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.18__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-AQ-2.23",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 aqHermite",
+    "report": "two_method_diagnosis/reports/FQI-SRC-AQ-2.23__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-3.10.5",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 bibasicPhi",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-3.10.5__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-3.8.14",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 wellPoisedRaw",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-3.8.14__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-SILLS-2.Ex7a-corrected",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "representation_gap: not a single-base rational shift",
+    "report": "two_method_diagnosis/reports/FQI-SRC-SILLS-2.Ex7a-corrected__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-SILLS-4.52",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 borweinB",
+    "report": "two_method_diagnosis/reports/FQI-SRC-SILLS-4.52__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-5.Ex19i",
+    "method": "recurrence",
+    "status": "unproved",
+    "blocker": "Converter 不接收 gaussianInt",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-5.Ex19i__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-1.3.25",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 PowerSeries.coeff",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-1.3.25__recurrence.json"
+  },
+  {
+    "identity": "FQI-SRC-GR2-11.Ex24ii",
+    "method": "recurrence",
+    "status": "analysis_failed",
+    "blocker": "P1 Export 不接收 wellPoisedRaw",
+    "report": "two_method_diagnosis/reports/FQI-SRC-GR2-11.Ex24ii__recurrence.json"
+  }
+]

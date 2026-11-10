@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "status": "proved",
+  "identity": "FQI-FINITE-Q-BINOMIAL",
+  "method_request": "recurrence",
+  "budget": {
+    "seconds": 900,
+    "attempt_seconds": 600,
+    "analysis_seconds": 120,
+    "preprocessing_seconds": 600,
+    "selection_seconds": 10,
+    "symbolic_seconds": 240,
+    "max_order": 4,
+    "max_unknowns": 10000,
+    "max_degree": 5,
+    "laurent_floor": -1
+  },
+  "work_directory": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-FINITE-Q-BINOMIAL/attempts/03a2bf4b9b4249de8d693c64821afb07",
+  "source": {
+    "identity": "FQI-FINITE-Q-BINOMIAL",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity005.lean",
+    "sha256": "4963bc05a9be240c2bcf2a3b74efad216ea9678eeb596f0067c3dd3b54f95108",
+    "snapshot": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-FINITE-Q-BINOMIAL/attempts/03a2bf4b9b4249de8d693c64821afb07/source.lean",
+    "theorem": "FiniteQBenchmark.Identity005.statement",
+    "scope": "current Train; verified shared preprocessing",
+    "preprocessing": {
+      "directory": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594",
+      "status": "verified_unchanged",
+      "files": [
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/request.json",
+          "sha256": "aefda6ef87700f8b9b0b1fc183e0c6afb39123786ae6275ebe5381ce4658370b"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/standard.json",
+          "sha256": "45c230ac1161ec74d4b3bfbeb2f852bca4762c7b79c013d17a61daadd86bc561"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/bundle.json",
+          "sha256": "9124b89a8afce903824569237a2837aa982fb2f0ccec81e5493f38c4c959dafd"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/original.lean",
+          "sha256": "4963bc05a9be240c2bcf2a3b74efad216ea9678eeb596f0067c3dd3b54f95108"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Auxiliary.olean",
+          "sha256": "785c0ab829c1ea52afb76f18afca6659695dc1e49fcd2332f2a24ac953112546"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Batch2Auxiliary.olean",
+          "sha256": "0bba43f865e058eb2fae9cd858e41cca124307144fe28d8b6355e1a5d4fa84c3"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Batch2Definitions.olean",
+          "sha256": "abe911308dedc35e82506404ee357b0d2f3171290b286e49b60e544c6412fcb6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Batch2Proofs.olean",
+          "sha256": "057bfc6b060dc843a054397abfbd1dad771a87e13dc1843effa27126cea28117"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Batch3Definitions.olean",
+          "sha256": "928da20ffbd470c5bd76f86714ba9c7b977c1920eefb5991f44570bfa8a50fba"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Batch3Proofs.olean",
+          "sha256": "fea601643964709367f72dc5e4556af9cf40facb877cdb43491832f37cfb9716"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Batch4Definitions.olean",
+          "sha256": "1f7340cac02d58ba2cd987f507423f7dd759102349fe713e20cff48e992df75f"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Batch4Proofs.olean",
+          "sha256": "0db0e714e71695502848fb4b43a1b1958ac25bdbbba383bc81eab09d2fe789ad"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Batch5Definitions.olean",
+          "sha256": "7980bcd75f0da4b7041759e68aeebb2fc77f99526a078800ea9e5444820db19a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/BatchAuxiliary.olean",
+          "sha256": "02268f2ecaeb505801cf39938c02e671019f6cc962bd7eb9c41e150148aad7c6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/BatchDefinitions.olean",
+          "sha256": "dbd97a7a3015d0c7e9405e7397bd11327d15bae70be0c3a2541e20792e9ec058"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Definitions.olean",
+          "sha256": "e8d1bc1ea7bd12dcb5f4191f7a1dd8aab627558372bb9997da5ffade423cd7fe"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Gaussian.olean",
+          "sha256": "208a9e736946941753ffeb3454487fe40c5312633c5af3f2177d6d9e9d53cca1"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/InitialValues.olean",
+          "sha256": "31a50eb5c57aacb105834b4f5c3ab4f90da8d1a3e7033e75aab78de0d28e5d8a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/Benchmark/Representation.olean",
+          "sha256": "01f0721a6782eefec629dce3581cc166bb0b252494c534843b9013b5f1386538"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/FiniteQPreprocess/Export.olean",
+          "sha256": "c82b2e88a6c12db488db272db31ccbf2a8dd9b0c20c5f701cc4df549631f3f4d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/FiniteQPreprocess/Rules.olean",
+          "sha256": "a575e571b3630c5716fd54615f54f6184301eb9ccb61b5151005eb48f7121217"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/844b1a0c4a93111d6f4453996e55544392314686153f16815d7a8879b53e4594/build/FiniteQPreprocess/Wire.olean",
+          "sha256": "b61263a3505a4744c31f1c62f66732a6dd5ab9c6b37dd8d3cdf8812faef8360d"
+        }
+      ]
+    }
+  },
+  "analysis": [
+    {
+      "kind": "p1",
+      "status": "analyzed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-FINITE-Q-BINOMIAL/attempts/03a2bf4b9b4249de8d693c64821afb07/analysis/p1/result.json"
+    }
+  ],
+  "plan": [
+    {
+      "backend": "target_first_order",
+      "method": "recurrence",
+      "environment": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-FINITE-Q-BINOMIAL/attempts/03a2bf4b9b4249de8d693c64821afb07/analysis/p1/environment.json",
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "target_first_order",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "native finite q-hypergeometric sum and target ratio",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal field with explicit specialization",
+          "order": 1,
+          "proof_exit_scope": "native first-order recurrence and initial value",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "general_q_zeilberger",
+      "method": "recurrence",
+      "environment": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-FINITE-Q-BINOMIAL/attempts/03a2bf4b9b4249de8d693c64821afb07/analysis/p1/environment.json",
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "general_q_zeilberger",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "whole-side sums or registered structured sums; affine natural prefix",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions and original-domain specialization",
+          "order": "budget.max_order",
+          "proof_exit_scope": "finite-order common recurrence, moving tails, initials and singular-index obligations",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "backend": "target_first_order",
+      "method": "recurrence",
+      "status": "proved",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-FINITE-Q-BINOMIAL/attempts/03a2bf4b9b4249de8d693c64821afb07/attempts/00_target_first_order/result.json",
+      "failure_stage": null,
+      "error": null,
+      "remaining_obligations": []
+    }
+  ],
+  "events": [
+    {
+      "stage": "snapshot",
+      "status": "passed",
+      "elapsed_seconds": 0.005
+    },
+    {
+      "stage": "preprocessing",
+      "status": "verified_unchanged",
+      "elapsed_seconds": 0.265
+    },
+    {
+      "stage": "analysis",
+      "status": "analyzed",
+      "elapsed_seconds": 16.558,
+      "adapter": "p1"
+    },
+    {
+      "stage": "planning",
+      "status": "completed",
+      "elapsed_seconds": 16.559,
+      "candidate_count": 2
+    },
+    {
+      "stage": "attempt",
+      "status": "started",
+      "elapsed_seconds": 16.609,
+      "backend": "target_first_order"
+    },
+    {
+      "stage": "kernel_acceptance",
+      "status": "passed",
+      "elapsed_seconds": 38.22
+    },
+    {
+      "stage": "finished",
+      "status": "proved",
+      "elapsed_seconds": 38.221
+    }
+  ],
+  "automatic_train_proofs": 1,
+  "test_files_read": 0,
+  "remaining_obligations": [],
+  "new_unique_train_proofs": "not_counted_by_individual_run",
+  "unknown_policy": "mark",
+  "preprocessing": {
+    "status": "verified_unchanged",
+    "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-FINITE-Q-BINOMIAL/attempts/03a2bf4b9b4249de8d693c64821afb07/preprocessing/result.json",
+    "normalization_view": "structured",
+    "cache_hit": true,
+    "reused_from_parent": false,
+    "wall_seconds": 0.16678007296286523
+  },
+  "admission": [
+    {
+      "backend": "target_first_order",
+      "applicable": true,
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "target_first_order",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "native finite q-hypergeometric sum and target ratio",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal field with explicit specialization",
+          "order": 1,
+          "proof_exit_scope": "native first-order recurrence and initial value",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "general_q_zeilberger",
+      "applicable": true,
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "general_q_zeilberger",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "whole-side sums or registered structured sums; affine natural prefix",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions and original-domain specialization",
+          "order": "budget.max_order",
+          "proof_exit_scope": "finite-order common recurrence, moving tails, initials and singular-index obligations",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "ore_closure",
+      "applicable": false,
+      "reason": "unsupported_structure: one defined-sequence observable and one finite sum required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "ore_closure",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "registered defined sequences with certified recurrences",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "q-Ore rational coefficient field",
+          "order": "bounded closure search",
+          "proof_exit_scope": "native second-order objects / first-order forcing; parameter-instance branch orders 1..4",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: one defined-sequence observable and one finite sum required",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "multisum",
+      "applicable": false,
+      "reason": "unsupported_structure: at least two distinct sum indices required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "multisum",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "nested affine range sums over boxes or simplices",
+          "bases": "one base",
+          "summation_dimension": "finite, at least 2",
+          "coefficient_domain": "formal rational multishifts; original support still required",
+          "order": "budget.max_order",
+          "proof_exit_scope": "2D simplex, order 1 monic, multiplicative Pochhammer kernel with lengths i,j,i+j and domain hypotheses",
+          "implementation_limits": {
+            "native_dimension": 2,
+            "native_domains": [
+              "simplex"
+            ],
+            "native_order": 1
+          },
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: at least two distinct sum indices required",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "selected_method": "recurrence",
+  "selected_backend": "target_first_order",
+  "proof": {
+    "proof_file": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-FINITE-Q-BINOMIAL/attempts/03a2bf4b9b4249de8d693c64821afb07/attempts/00_target_first_order/FQI-FINITE-Q-BINOMIAL/Proof.lean",
+    "proof_sha256": "9de4db7d76ef17795cad4cf7360d4f76f4e11e46480d5acab0eef1fa398d6fda",
+    "theorem": "FiniteQBenchmark.Identity005.statement",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "original_declaration_preserved": true
+  },
+  "elapsed_seconds": 38.221
+}
