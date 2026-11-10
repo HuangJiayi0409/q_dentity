@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "status": "unproved",
+  "identity": "FQI-SRC-SILLS-2.Ex2e",
+  "method_request": "recurrence",
+  "budget": {
+    "seconds": 900,
+    "attempt_seconds": 600,
+    "analysis_seconds": 120,
+    "preprocessing_seconds": 600,
+    "selection_seconds": 10,
+    "symbolic_seconds": 240,
+    "max_order": 4,
+    "max_unknowns": 10000,
+    "max_degree": 5,
+    "laurent_floor": -1
+  },
+  "work_directory": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-SILLS-2.Ex2e/attempts/c989e90be5ee49838d600839b8e007de",
+  "source": {
+    "identity": "FQI-SRC-SILLS-2.Ex2e",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity376.lean",
+    "sha256": "e8b51faf4929022ff6d205aa8fdb5759d91c7610023e362f793879db0cf1e283",
+    "snapshot": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-SILLS-2.Ex2e/attempts/c989e90be5ee49838d600839b8e007de/source.lean",
+    "theorem": "FiniteQBenchmark.Identity376.statement",
+    "scope": "current Train; verified shared preprocessing",
+    "preprocessing": {
+      "directory": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3",
+      "status": "verified_normalized",
+      "files": [
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/request.json",
+          "sha256": "31cacc24d9d5d968b2c30ccaa742cdf39aae87326682e1c52c9fa20343cc7e6d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/standard.json",
+          "sha256": "acdcb9007cdb32c71b9cd306772390f7bc9967414b46a95c12e9b96c2c2070e4"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/bundle.json",
+          "sha256": "86dcbe75027773d2f88b0b8dffb062c37d67088b7818c59e4b8b4e91c1091595"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/original.lean",
+          "sha256": "e8b51faf4929022ff6d205aa8fdb5759d91c7610023e362f793879db0cf1e283"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Auxiliary.olean",
+          "sha256": "785c0ab829c1ea52afb76f18afca6659695dc1e49fcd2332f2a24ac953112546"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Batch2Auxiliary.olean",
+          "sha256": "b5a7970aeebab8248979f01094d2b42a0491eff08808cac2a8fc7571154a7b48"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Batch2Definitions.olean",
+          "sha256": "abe911308dedc35e82506404ee357b0d2f3171290b286e49b60e544c6412fcb6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Batch2Proofs.olean",
+          "sha256": "64e7c3b90db14802c5785563dc52d8978700aec01b9a326a3756010dd3acae9a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Batch3Definitions.olean",
+          "sha256": "cb2f5fe566c25a5137bc7ec993d4c92481d8a8568c6dc94a3e331f71816e7123"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Batch3Proofs.olean",
+          "sha256": "fea601643964709367f72dc5e4556af9cf40facb877cdb43491832f37cfb9716"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Batch4Definitions.olean",
+          "sha256": "44a37ccf09c85398ae6963240960bcc861ec2900ee7452f05f52c65119f9105e"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Batch4Proofs.olean",
+          "sha256": "97fd72b9d36ae6ba68373078a8fb0af098ec09aa874acb6be4e379138e44735f"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Batch5Definitions.olean",
+          "sha256": "7980bcd75f0da4b7041759e68aeebb2fc77f99526a078800ea9e5444820db19a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/BatchAuxiliary.olean",
+          "sha256": "02268f2ecaeb505801cf39938c02e671019f6cc962bd7eb9c41e150148aad7c6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/BatchDefinitions.olean",
+          "sha256": "dbd97a7a3015d0c7e9405e7397bd11327d15bae70be0c3a2541e20792e9ec058"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Definitions.olean",
+          "sha256": "e8d1bc1ea7bd12dcb5f4191f7a1dd8aab627558372bb9997da5ffade423cd7fe"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Gaussian.olean",
+          "sha256": "8ade4143cc2b140c4af1af41e892589fd5cf10e864c7206bddc05f10b08c21c3"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/InitialValues.olean",
+          "sha256": "5e8df48c1ec50cc5d9ea1254546b8cbddacd6e73053a75307f1bf59c533ebbd6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/Benchmark/Representation.olean",
+          "sha256": "5b836c5f543bb7e22bc77b84312e7747165f0fba9e7a02793bd46a0b9a7e740a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/FiniteQPreprocess/Export.olean",
+          "sha256": "c82b2e88a6c12db488db272db31ccbf2a8dd9b0c20c5f701cc4df549631f3f4d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/FiniteQPreprocess/Rules.olean",
+          "sha256": "a575e571b3630c5716fd54615f54f6184301eb9ccb61b5151005eb48f7121217"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/92042ad6da83f23309e4993e0a23fdc26839e1f7d5c663a54674cab930c5a9d3/build/FiniteQPreprocess/Wire.olean",
+          "sha256": "b61263a3505a4744c31f1c62f66732a6dd5ab9c6b37dd8d3cdf8812faef8360d"
+        }
+      ]
+    }
+  },
+  "analysis": [
+    {
+      "kind": "p1",
+      "status": "analyzed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-SILLS-2.Ex2e/attempts/c989e90be5ee49838d600839b8e007de/analysis/p1/result.json"
+    }
+  ],
+  "plan": [],
+  "attempts": [],
+  "events": [
+    {
+      "stage": "snapshot",
+      "status": "passed",
+      "elapsed_seconds": 0.005
+    },
+    {
+      "stage": "preprocessing",
+      "status": "verified_normalized",
+      "elapsed_seconds": 0.311
+    },
+    {
+      "stage": "analysis",
+      "status": "analyzed",
+      "elapsed_seconds": 18.347,
+      "adapter": "p1"
+    },
+    {
+      "stage": "planning",
+      "status": "completed",
+      "elapsed_seconds": 18.347,
+      "candidate_count": 0
+    },
+    {
+      "stage": "finished",
+      "status": "unproved",
+      "elapsed_seconds": 18.348
+    }
+  ],
+  "automatic_train_proofs": 0,
+  "test_files_read": 0,
+  "remaining_obligations": [
+    "No executable candidate was established; see admission checks and unresolved obligations"
+  ],
+  "new_unique_train_proofs": "not_counted_by_individual_run",
+  "unknown_policy": "mark",
+  "preprocessing": {
+    "status": "verified_normalized",
+    "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-SILLS-2.Ex2e/attempts/c989e90be5ee49838d600839b8e007de/preprocessing/result.json",
+    "normalization_view": "structured",
+    "cache_hit": true,
+    "reused_from_parent": false,
+    "wall_seconds": 0.21638086391612887
+  },
+  "admission": [
+    {
+      "backend": "target_first_order",
+      "applicable": false,
+      "reason": "unsupported_structure: Gaussian weight required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "target_first_order",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "native finite q-hypergeometric sum and target ratio",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal field with explicit specialization",
+          "order": 1,
+          "proof_exit_scope": "native first-order recurrence and initial value",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: Gaussian weight required",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "general_q_zeilberger",
+      "applicable": false,
+      "reason": "unsupported exported node: FiniteQBenchmark.sillsAlpha",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "general_q_zeilberger",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "whole-side sums or registered structured sums; affine natural prefix",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions and original-domain specialization",
+          "order": "budget.max_order",
+          "proof_exit_scope": "finite-order common recurrence, moving tails, initials and singular-index obligations",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported exported node: FiniteQBenchmark.sillsAlpha",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "ore_closure",
+      "applicable": false,
+      "reason": "unsupported_structure: one defined-sequence observable and one finite sum required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "ore_closure",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "registered defined sequences with certified recurrences",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "q-Ore rational coefficient field",
+          "order": "bounded closure search",
+          "proof_exit_scope": "native second-order objects / first-order forcing; parameter-instance branch orders 1..4",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: one defined-sequence observable and one finite sum required",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "multisum",
+      "applicable": false,
+      "reason": "unsupported_structure: at least two distinct sum indices required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "multisum",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "nested affine range sums over boxes or simplices",
+          "bases": "one base",
+          "summation_dimension": "finite, at least 2",
+          "coefficient_domain": "formal rational multishifts; original support still required",
+          "order": "budget.max_order",
+          "proof_exit_scope": "2D simplex, order 1 monic, multiplicative Pochhammer kernel with lengths i,j,i+j and domain hypotheses",
+          "implementation_limits": {
+            "native_dimension": 2,
+            "native_domains": [
+              "simplex"
+            ],
+            "native_order": 1
+          },
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: at least two distinct sum indices required",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "applicability_status": "outside_current_implementation",
+  "elapsed_seconds": 18.348
+}

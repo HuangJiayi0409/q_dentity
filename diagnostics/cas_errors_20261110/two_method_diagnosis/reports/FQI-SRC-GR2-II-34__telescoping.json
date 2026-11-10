@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "status": "proved",
+  "identity": "FQI-SRC-GR2-II-34",
+  "method_request": "telescoping",
+  "budget": {
+    "seconds": 900,
+    "attempt_seconds": 600,
+    "analysis_seconds": 120,
+    "preprocessing_seconds": 600,
+    "selection_seconds": 10,
+    "symbolic_seconds": 240,
+    "max_order": 4,
+    "max_unknowns": 10000,
+    "max_degree": 5,
+    "laurent_floor": -1
+  },
+  "work_directory": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-34/attempts/b56e4e0c95e8433481f862ce98816422",
+  "source": {
+    "identity": "FQI-SRC-GR2-II-34",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity251.lean",
+    "sha256": "d438c0c112e2e7df60eefd8a6c808e943caa9588aa3b09f0337e75d3421a3f07",
+    "snapshot": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-34/attempts/b56e4e0c95e8433481f862ce98816422/source.lean",
+    "theorem": "FiniteQBenchmark.Identity251.statement",
+    "scope": "current Train; verified shared preprocessing",
+    "preprocessing": {
+      "directory": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c",
+      "status": "verified_normalized",
+      "files": [
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/request.json",
+          "sha256": "af821e6581a08d6bc9e975cceabe120118725ac48ab72dfb0a8dc7fdca0ffb15"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/standard.json",
+          "sha256": "db0eac0d82994d99b042019f5aa60e396206b300e84d1821cd5dcc7ec0ad2ad6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/bundle.json",
+          "sha256": "1cf433805b9eaf6f6dcccf202b3ac2e5808251411ff4a6649ae5505397eb6d26"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/original.lean",
+          "sha256": "d438c0c112e2e7df60eefd8a6c808e943caa9588aa3b09f0337e75d3421a3f07"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Auxiliary.olean",
+          "sha256": "785c0ab829c1ea52afb76f18afca6659695dc1e49fcd2332f2a24ac953112546"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Batch2Auxiliary.olean",
+          "sha256": "d3703530f15858ec87fb246347069880fca369434e529d271f0002e1b38b11ac"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Batch2Definitions.olean",
+          "sha256": "abe911308dedc35e82506404ee357b0d2f3171290b286e49b60e544c6412fcb6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Batch2Proofs.olean",
+          "sha256": "3f43443e7be836d339714b31173028275c6083f8130e6afec64b3fbbbc8139d7"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Batch3Definitions.olean",
+          "sha256": "200a97398cc81a6af41bc8cd75eb8b0358f3a534257e46b137b7fd0c33db7dc9"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Batch3Proofs.olean",
+          "sha256": "fea601643964709367f72dc5e4556af9cf40facb877cdb43491832f37cfb9716"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Batch4Definitions.olean",
+          "sha256": "f361ab3a6d4256dd8e386adeaaca3b90a7b88c2bbd41082cf4ece9f7b25832c2"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Batch4Proofs.olean",
+          "sha256": "fe8c1e8809b33a329c354669111c0bf85f7146c98d911128ceffd21a566e84c5"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Batch5Definitions.olean",
+          "sha256": "7980bcd75f0da4b7041759e68aeebb2fc77f99526a078800ea9e5444820db19a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/BatchAuxiliary.olean",
+          "sha256": "02268f2ecaeb505801cf39938c02e671019f6cc962bd7eb9c41e150148aad7c6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/BatchDefinitions.olean",
+          "sha256": "dbd97a7a3015d0c7e9405e7397bd11327d15bae70be0c3a2541e20792e9ec058"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Definitions.olean",
+          "sha256": "e8d1bc1ea7bd12dcb5f4191f7a1dd8aab627558372bb9997da5ffade423cd7fe"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Gaussian.olean",
+          "sha256": "ceb97dbc9bda6655461bf02e9e2b46085d565f3a81ef4f1609f9f78f78693b58"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/InitialValues.olean",
+          "sha256": "5e73d6167606e27f0891a04016edf790183ad65784c8d7e7dafb45fdf912be13"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/Benchmark/Representation.olean",
+          "sha256": "905e2aa24830d03e25df254dbfb6c17a5c06f5ff6d7a3ebfa4c5410e6c4f49cf"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/FiniteQPreprocess/Export.olean",
+          "sha256": "c82b2e88a6c12db488db272db31ccbf2a8dd9b0c20c5f701cc4df549631f3f4d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/FiniteQPreprocess/Rules.olean",
+          "sha256": "a575e571b3630c5716fd54615f54f6184301eb9ccb61b5151005eb48f7121217"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/2c21e432792dba202df1d4a0d35427d3b9af4f96ac5cb72f56119f501660a54c/build/FiniteQPreprocess/Wire.olean",
+          "sha256": "b61263a3505a4744c31f1c62f66732a6dd5ab9c6b37dd8d3cdf8812faef8360d"
+        }
+      ]
+    }
+  },
+  "analysis": [
+    {
+      "kind": "p1",
+      "status": "analyzed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-34/attempts/b56e4e0c95e8433481f862ce98816422/analysis/p1/result.json"
+    }
+  ],
+  "plan": [
+    {
+      "backend": "bibasic_gosper",
+      "method": "telescoping",
+      "environment": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-34/attempts/b56e4e0c95e8433481f862ce98816422/analysis/p1/environment.json",
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "bibasic_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "explicit finite sum, summand independent of outer index",
+          "bases": "two independent bases",
+          "summation_dimension": 1,
+          "coefficient_domain": "rational bivariate shift field; specialize in Lean",
+          "order": 0,
+          "proof_exit_scope": "restricted bibasic native grammar and endpoints",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "backend": "bibasic_gosper",
+      "method": "telescoping",
+      "status": "proved",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-34/attempts/b56e4e0c95e8433481f862ce98816422/attempts/00_bibasic_gosper/result.json",
+      "failure_stage": null,
+      "error": null,
+      "remaining_obligations": []
+    }
+  ],
+  "events": [
+    {
+      "stage": "snapshot",
+      "status": "passed",
+      "elapsed_seconds": 0.008
+    },
+    {
+      "stage": "preprocessing",
+      "status": "verified_normalized",
+      "elapsed_seconds": 0.272
+    },
+    {
+      "stage": "analysis",
+      "status": "analyzed",
+      "elapsed_seconds": 18.122,
+      "adapter": "p1"
+    },
+    {
+      "stage": "planning",
+      "status": "completed",
+      "elapsed_seconds": 18.122,
+      "candidate_count": 1
+    },
+    {
+      "stage": "attempt",
+      "status": "started",
+      "elapsed_seconds": 18.175,
+      "backend": "bibasic_gosper"
+    },
+    {
+      "stage": "kernel_acceptance",
+      "status": "passed",
+      "elapsed_seconds": 97.158
+    },
+    {
+      "stage": "finished",
+      "status": "proved",
+      "elapsed_seconds": 97.158
+    }
+  ],
+  "automatic_train_proofs": 1,
+  "test_files_read": 0,
+  "remaining_obligations": [],
+  "new_unique_train_proofs": "not_counted_by_individual_run",
+  "unknown_policy": "mark",
+  "preprocessing": {
+    "status": "verified_normalized",
+    "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-34/attempts/b56e4e0c95e8433481f862ce98816422/preprocessing/result.json",
+    "normalization_view": "structured",
+    "cache_hit": true,
+    "reused_from_parent": false,
+    "wall_seconds": 0.16632620303425938
+  },
+  "admission": [
+    {
+      "backend": "direct_q_gosper",
+      "applicable": false,
+      "reason": "multiple independent bases require a multibase backend: p, q",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "direct_q_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "one entire finite range sum against scalar; multiplicative q-hypergeometric term",
+          "bases": "one structural base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions, then original-domain obligations",
+          "order": 0,
+          "proof_exit_scope": "native explicit sums; structured definitions need a source bridge",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "multiple independent bases require a multibase backend: p, q",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "bibasic_gosper",
+      "applicable": true,
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "bibasic_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "explicit finite sum, summand independent of outer index",
+          "bases": "two independent bases",
+          "summation_dimension": 1,
+          "coefficient_domain": "rational bivariate shift field; specialize in Lean",
+          "order": 0,
+          "proof_exit_scope": "restricted bibasic native grammar and endpoints",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "selected_method": "telescoping",
+  "selected_backend": "bibasic_gosper",
+  "proof": {
+    "proof_file": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-34/attempts/b56e4e0c95e8433481f862ce98816422/attempts/00_bibasic_gosper/FQI-SRC-GR2-II-34/Proof.lean",
+    "proof_sha256": "da04216014972fdc07160066bb9386fa959f6d88c03b3c1e4e1aa57cb4699cc5",
+    "theorem": "FiniteQBenchmark.Identity251.statement",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "original_declaration_preserved": true
+  },
+  "elapsed_seconds": 97.158
+}

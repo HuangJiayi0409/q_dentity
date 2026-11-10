@@ -1,0 +1,694 @@
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:68:37: warning: Variable name `hr` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hr
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'FiniteQP1.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteQP1.growing_sum_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteQP1.first_order_unique' does not depend on any axioms
+'FiniteQP1.higher_order_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteQP1.sum_zero_extend' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteQP1.telescoper_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteQP1.prove_growing_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:288:31: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:312:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:312:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:323:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:323:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:360:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:360:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:514:4: error: unsolved goals
+case step
+K : Type u_1
+inst✝ : Field K
+a c p q : K
+n : ℕ
+hbase : regular q
+hp : regular p
+hc : c ≠ 0
+bbDomain :
+  (1 - a ≠ 0 ∧ c ≠ 0 ∧ poch q q 0 ≠ 0 ∧ poch (a * (p * c⁻¹)) p 0 ≠ 0) ∧
+    c ≠ 0 ∧ poch q q n ≠ 0 ∧ poch (a * (p * c⁻¹)) p n ≠ 0
+h_domain :
+  ∀ k < n + 1,
+    (1 - a ≠ 0 ∧ c ≠ 0 ∧ poch q q k ≠ 0 ∧ poch (a * p / c) p k ≠ 0) ∧ c ≠ 0 ∧ poch q q n ≠ 0 ∧ poch (a * p / c) p n ≠ 0
+hzero : 0 < n + 1
+this✝² : p ≠ 0
+this✝¹ : q ≠ 0
+this✝ : 1 - a ≠ 0
+this : c ≠ 0
+bbk : ℕ
+hj : bbk < n
+hj0 : bbk < n + 1
+hj1 : bbk + 1 < n + 1
+bbDomain_2 :
+  (1 - a ≠ 0 ∧ c ≠ 0 ∧ poch q q (bbk + 1) ≠ 0 ∧ poch (a * (p * c⁻¹)) p (bbk + 1) ≠ 0) ∧
+    c ≠ 0 ∧ poch q q n ≠ 0 ∧ poch (a * (p * c⁻¹)) p n ≠ 0
+bbden0_1 : poch (p * a * c⁻¹) p (bbk + 1) ≠ 0
+bbden1_1 : poch q q (bbk + 1) ≠ 0
+bbarg : a * p = p * a
+bbarg_ : c * q = q * c
+bbProduct : K
+bbProductEq : poch (p * a) p bbk = bbProduct
+bbProduct_ : K
+bbProductEq_ : poch (p * a * c⁻¹) p bbk = bbProduct_
+bbden0_0 : bbProduct_ ≠ 0
+bbProduct__ : K
+bbProductEq__ : poch (q * c) q bbk = bbProduct__
+bbProduct___ : K
+bbProductEq___ : poch q q bbk = bbProduct___
+bbDomain_1 :
+  (1 - a ≠ 0 ∧ c ≠ 0 ∧ bbProduct___ ≠ 0 ∧ poch (a * (p * c⁻¹)) p bbk ≠ 0) ∧
+    c ≠ 0 ∧ poch q q n ≠ 0 ∧ poch (a * (p * c⁻¹)) p n ≠ 0
+bbden1_0 : bbProduct___ ≠ 0
+bbPower : K
+bbPowerEq : p ^ bbk = bbPower
+bbfactor0 : c - p * bbPower * a ≠ 0 ∧ c ≠ 0
+bbPowerNe : bbPower ≠ 0
+bbPower_ : K
+bbPowerEq_ : q ^ bbk = bbPower_
+bbfactor1 : 1 - q * bbPower_ ≠ 0
+bbPowerNe_ : bbPower_ ≠ 0
+⊢ (1 / c) ^ bbk * (1 - a * q * bbPower_ * p * bbPower) * bbProduct * (1 - c) * bbProduct__ / (c - a * p * bbPower) =
+    (1 / c) ^ bbk * bbProduct * bbProduct__ *
+      ((1 - a * p * bbPower) * (1 - c * q * bbPower_) / (c - a * p * bbPower) - (1 - q * bbPower_))
+case step
+K : Type u_1
+inst✝ : Field K
+a c p q : K
+n : ℕ
+hbase : regular q
+hp : regular p
+hc : c ≠ 0
+bbDomain :
+  (1 - a ≠ 0 ∧ c ≠ 0 ∧ poch q q 0 ≠ 0 ∧ poch (a * (p * c⁻¹)) p 0 ≠ 0) ∧
+    c ≠ 0 ∧ poch q q n ≠ 0 ∧ poch (a * (p * c⁻¹)) p n ≠ 0
+h_domain :
+  ∀ k < n + 1,
+    (1 - a ≠ 0 ∧ c ≠ 0 ∧ poch q q k ≠ 0 ∧ poch (a * p / c) p k ≠ 0) ∧ c ≠ 0 ∧ poch q q n ≠ 0 ∧ poch (a * p / c) p n ≠ 0
+hzero : 0 < n + 1
+this✝² : p ≠ 0
+this✝¹ : q ≠ 0
+this✝ : 1 - a ≠ 0
+this : c ≠ 0
+bbk : ℕ
+hj : bbk < n
+hj0 : bbk < n + 1
+hj1 : bbk + 1 < n + 1
+bbDomain_2 :
+  (1 - a ≠ 0 ∧ c ≠ 0 ∧ poch q q (bbk + 1) ≠ 0 ∧ poch (a * (p * c⁻¹)) p (bbk + 1) ≠ 0) ∧
+    c ≠ 0 ∧ poch q q n ≠ 0 ∧ poch (a * (p * c⁻¹)) p n ≠ 0
+bbden0_1 : poch (p * a * c⁻¹) p (bbk + 1) ≠ 0
+bbden1_1 : poch q q (bbk + 1) ≠ 0
+bbarg : a * p = p * a
+bbarg_ : c * q = q * c
+bbProduct : K
+bbProductEq : poch (p * a) p bbk = bbProduct
+bbProduct_ : K
+bbProductEq_ : poch (p * a * c⁻¹) p bbk = bbProduct_
+bbden0_0 : bbProduct_ ≠ 0
+bbProduct__ : K
+bbProductEq__ : poch (q * c) q bbk = bbProduct__
+bbProduct___ : K
+bbProductEq___ : poch q q bbk = bbProduct___
+bbDomain_1 :
+  (1 - a ≠ 0 ∧ c ≠ 0 ∧ bbProduct___ ≠ 0 ∧ poch (a * (p * c⁻¹)) p bbk ≠ 0) ∧
+    c ≠ 0 ∧ poch q q n ≠ 0 ∧ poch (a * (p * c⁻¹)) p n ≠ 0
+bbden1_0 : bbProduct___ ≠ 0
+bbPower : K
+bbPowerEq : p ^ bbk = bbPower
+bbfactor0 : c - p * bbPower * a ≠ 0 ∧ c ≠ 0
+bbPowerNe : bbPower ≠ 0
+bbPower_ : K
+bbPowerEq_ : q ^ bbk = bbPower_
+bbfactor1 : 1 - q * bbPower_ ≠ 0
+bbPowerNe_ : bbPower_ ≠ 0
+⊢ (1 / c) ^ bbk * (1 - a * q * bbPower_ * p * bbPower) * bbProduct * (1 - c) * bbProduct__ / (c - a * p * bbPower) =
+    (1 / c) ^ bbk * bbProduct * bbProduct__ *
+      ((1 - a * p * bbPower) * (1 - c * q * bbPower_) / (c - a * p * bbPower) - (1 - q * bbPower_))
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:2:42: warning: This simp argument is unused:
+  mul_inv_rev
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, inv_inv, inv_pow,
+    pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc, mul_ne_zero_iff] at bbDomain
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:3:0: warning: This simp argument is unused:
+  inv_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:3:9: warning: This simp argument is unused:
+  inv_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:3:18: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:4:0: warning: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, pow_one, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:4:9: warning: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, pow_one, neg_mul, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:5:6: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_assoc, mul_ne_zero_iff] at bbDomain
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:1:11: warning: This simp argument is unused:
+  FiniteQBenchmark.pochList_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev, inv_inv, inv_pow, pow_one, neg_mul,
+    mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc, mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:1:43: warning: This simp argument is unused:
+  FiniteQBenchmark.pochList_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, div_eq_mul_inv, mul_inv_rev, inv_inv, inv_pow, pow_one, neg_mul,
+    mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc, mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:2:42: warning: This simp argument is unused:
+  mul_inv_rev
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, inv_inv, inv_pow,
+    pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc, mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:3:0: warning: This simp argument is unused:
+  inv_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:3:9: warning: This simp argument is unused:
+  inv_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:3:18: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:4:0: warning: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, pow_one, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:4:9: warning: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, pow_one, neg_mul, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:4:18: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, pow_one, neg_mul, mul_neg, mul_one, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:4:27: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_comm, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:4:36: warning: This simp argument is unused:
+  mul_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_left_comm, mul_assoc,
+    mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:5:6: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_assoc, mul_ne_zero_iff] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:6:6: warning: This simp argument is unused:
+  mul_ne_zero_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FiniteQBenchmark.pochList_cons, FiniteQBenchmark.pochList_nil, div_eq_mul_inv, mul_inv_rev,
+    inv_inv, inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm, mul_left_comm, mul_assoc] at bbDomain_2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:504:48: warning: This simp argument is unused:
+  inv_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:504:68: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:504:77: warning: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:504:86: warning: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:504:95: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:504:104: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:507:58: warning: This simp argument is unused:
+  inv_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:507:78: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:507:87: warning: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:507:96: warning: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:507:105: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:507:114: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:511:33: warning: This simp argument is unused:
+  mul_inv_rev
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:511:46: warning: This simp argument is unused:
+  inv_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:511:55: warning: This simp argument is unused:
+  ← inv_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc] at *
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:511:66: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:511:75: warning: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:511:84: warning: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:511:93: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, mul_one, mul_comm,
+    mul_left_comm, mul_assoc] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:511:102: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_comm,
+    mul_left_comm, mul_assoc] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:511:121: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one,
+    mul_comm, mul_assoc] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:520:23: warning: This simp argument is unused:
+  div_eq_mul_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:520:39: warning: This simp argument is unused:
+  mul_inv_rev
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:520:52: warning: This simp argument is unused:
+  inv_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:520:61: warning: This simp argument is unused:
+  ← inv_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:520:72: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:520:81: warning: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:520:90: warning: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:520:99: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:520:108: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:520:127: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one,
+    mul_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:523:23: warning: This simp argument is unused:
+  div_eq_mul_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:523:39: warning: This simp argument is unused:
+  mul_inv_rev
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:523:52: warning: This simp argument is unused:
+  inv_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:523:61: warning: This simp argument is unused:
+  ← inv_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, pow_one, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:523:72: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, neg_mul, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:523:81: warning: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, mul_neg, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:523:90: warning: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, one_mul, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:523:99: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, mul_one, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:523:108: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_comm,
+    mul_left_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:523:127: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, neg_mul, mul_neg, one_mul, mul_one,
+    mul_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:534:38: warning: This simp argument is unused:
+  mul_ne_zero_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_ne_zero_iff] at bbfactor0 bbfactor1
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:546:17: warning: This simp argument is unused:
+  div_eq_mul_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_inv_rev, inv_inv, ← inv_pow, pow_one, one_mul, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:546:46: warning: This simp argument is unused:
+  inv_inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, ← inv_pow, pow_one, one_mul, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:546:66: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, one_mul, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:547:8: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+finite_product_framework/generated/certificate_exits_20261021/debug34.lean:547:17: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [div_eq_mul_inv, mul_inv_rev, inv_inv, ← inv_pow, pow_one, one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'FiniteQBenchmark.Identity251.statement' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

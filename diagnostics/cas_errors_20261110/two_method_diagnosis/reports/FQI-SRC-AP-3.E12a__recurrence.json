@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "status": "analysis_failed",
+  "identity": "FQI-SRC-AP-3.E12a",
+  "method_request": "recurrence",
+  "budget": {
+    "seconds": 900,
+    "attempt_seconds": 600,
+    "analysis_seconds": 120,
+    "preprocessing_seconds": 600,
+    "selection_seconds": 10,
+    "symbolic_seconds": 240,
+    "max_order": 4,
+    "max_unknowns": 10000,
+    "max_degree": 5,
+    "laurent_floor": -1
+  },
+  "work_directory": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-AP-3.E12a/attempts/ab39e0473cb24129a417eb1b84490b38",
+  "source": {
+    "identity": "FQI-SRC-AP-3.E12a",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity279.lean",
+    "sha256": "f7a5c49c38c7b7de57ea23f5977125d0e0a739a129ea3e618a029fb92bfa7375",
+    "snapshot": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-AP-3.E12a/attempts/ab39e0473cb24129a417eb1b84490b38/source.lean",
+    "theorem": "FiniteQBenchmark.Identity279.statement",
+    "scope": "current Train; verified shared preprocessing",
+    "preprocessing": {
+      "directory": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096",
+      "status": "verified_unchanged",
+      "files": [
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/request.json",
+          "sha256": "47d821d706ac98961729201e5b1a1c04a4f013c2092579c747b74c3a86c0fc48"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/standard.json",
+          "sha256": "942a468fa431b3debdcb600a6c61ae1f673b41ff4a1ae0ad6ed2af54ef0ed7fc"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/bundle.json",
+          "sha256": "7779b6e3e237b7395918ad1f21a1d9b7f73f6077b12c096c85eb9919ed8c6e9d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/original.lean",
+          "sha256": "f7a5c49c38c7b7de57ea23f5977125d0e0a739a129ea3e618a029fb92bfa7375"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Auxiliary.olean",
+          "sha256": "785c0ab829c1ea52afb76f18afca6659695dc1e49fcd2332f2a24ac953112546"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Batch2Auxiliary.olean",
+          "sha256": "4f1fda64d2e3a8bc115c590bced6df652f64b874849b592b3f393a91fcf89f11"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Batch2Definitions.olean",
+          "sha256": "abe911308dedc35e82506404ee357b0d2f3171290b286e49b60e544c6412fcb6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Batch2Proofs.olean",
+          "sha256": "fb10d76626ad6b8a23d9a99262e2938e45e3009922fe13a57869ad4aa6909779"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Batch3Definitions.olean",
+          "sha256": "8f5134e4e9bbb4d1788db4ab4c31b0f4c40b7167b0c0dfa0e1b6dfd9c5771e0a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Batch3Proofs.olean",
+          "sha256": "fea601643964709367f72dc5e4556af9cf40facb877cdb43491832f37cfb9716"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Batch4Definitions.olean",
+          "sha256": "205ea0e1f02a45fb2661d9a3287ead862d225520ce19789beaebaf7c5fc632cb"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Batch4Proofs.olean",
+          "sha256": "90d913eee54411962acfa473ce5f1b93e46479fb1be124739f7d2a317043ea8d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Batch5Definitions.olean",
+          "sha256": "7980bcd75f0da4b7041759e68aeebb2fc77f99526a078800ea9e5444820db19a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/BatchAuxiliary.olean",
+          "sha256": "02268f2ecaeb505801cf39938c02e671019f6cc962bd7eb9c41e150148aad7c6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/BatchDefinitions.olean",
+          "sha256": "dbd97a7a3015d0c7e9405e7397bd11327d15bae70be0c3a2541e20792e9ec058"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Definitions.olean",
+          "sha256": "e8d1bc1ea7bd12dcb5f4191f7a1dd8aab627558372bb9997da5ffade423cd7fe"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Gaussian.olean",
+          "sha256": "1c1bac8a14316c51a3fcd2bd5296d78f1cd276fc69b66242d7091354cdde1af3"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/InitialValues.olean",
+          "sha256": "fa7f146d6b0fe04b84bcf96c1fce298295c8e53940f7954669a9ee39a48755ae"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/Benchmark/Representation.olean",
+          "sha256": "998c983947c9ba03b63f64c7a7f4f8eaa99b00c6ebcab879a1ca66d2569d91a1"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/FiniteQPreprocess/Export.olean",
+          "sha256": "c82b2e88a6c12db488db272db31ccbf2a8dd9b0c20c5f701cc4df549631f3f4d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/FiniteQPreprocess/Rules.olean",
+          "sha256": "a575e571b3630c5716fd54615f54f6184301eb9ccb61b5151005eb48f7121217"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/6e0a3528d989e1e960f274a37f197c0cbcbae513a13a483bf62bc69429471096/build/FiniteQPreprocess/Wire.olean",
+          "sha256": "b61263a3505a4744c31f1c62f66732a6dd5ab9c6b37dd8d3cdf8812faef8360d"
+        }
+      ]
+    }
+  },
+  "analysis": [
+    {
+      "kind": "p1",
+      "status": "adapter_failed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-AP-3.E12a/attempts/ab39e0473cb24129a417eb1b84490b38/analysis/p1/result.json"
+    }
+  ],
+  "plan": [],
+  "attempts": [],
+  "events": [
+    {
+      "stage": "snapshot",
+      "status": "passed",
+      "elapsed_seconds": 0.003
+    },
+    {
+      "stage": "preprocessing",
+      "status": "verified_unchanged",
+      "elapsed_seconds": 0.301
+    },
+    {
+      "stage": "analysis",
+      "status": "adapter_failed",
+      "elapsed_seconds": 17.28,
+      "adapter": "p1"
+    },
+    {
+      "stage": "finished",
+      "status": "analysis_failed",
+      "elapsed_seconds": 17.281
+    }
+  ],
+  "automatic_train_proofs": 0,
+  "test_files_read": 0,
+  "remaining_obligations": [
+    "Resolve adapter or representation failure"
+  ],
+  "new_unique_train_proofs": "not_counted_by_individual_run",
+  "unknown_policy": "mark",
+  "preprocessing": {
+    "status": "verified_unchanged",
+    "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-AP-3.E12a/attempts/ab39e0473cb24129a417eb1b84490b38/preprocessing/result.json",
+    "normalization_view": "structured",
+    "cache_hit": true,
+    "reused_from_parent": false,
+    "wall_seconds": 0.21633117005694658
+  },
+  "failure_stage": "analysis",
+  "analysis_failure_status": "adapter_failed",
+  "error": "ValueError: representation_gap: finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-AP-3.E12a/attempts/ab39e0473cb24129a417eb1b84490b38/analysis/p1/ExtractTarget.lean:96:2: error: Unsupported expression in P1 frontend: schurDInt q (2 * ↑n)\n",
+  "elapsed_seconds": 17.281
+}

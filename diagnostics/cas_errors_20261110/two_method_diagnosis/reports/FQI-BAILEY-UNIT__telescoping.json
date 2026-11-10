@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "status": "unproved",
+  "identity": "FQI-BAILEY-UNIT",
+  "method_request": "telescoping",
+  "budget": {
+    "seconds": 900,
+    "attempt_seconds": 600,
+    "analysis_seconds": 120,
+    "preprocessing_seconds": 600,
+    "selection_seconds": 10,
+    "symbolic_seconds": 240,
+    "max_order": 4,
+    "max_unknowns": 10000,
+    "max_degree": 5,
+    "laurent_floor": -1
+  },
+  "work_directory": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-BAILEY-UNIT/attempts/8c808ba049f444e98991064dc2f557c5",
+  "source": {
+    "identity": "FQI-BAILEY-UNIT",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity020.lean",
+    "sha256": "c9ff70f5bf2bf5d8733261930ecb4272ef3bdea4886fb44b63c93d51a4181133",
+    "snapshot": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-BAILEY-UNIT/attempts/8c808ba049f444e98991064dc2f557c5/source.lean",
+    "theorem": "FiniteQBenchmark.Identity020.statement",
+    "scope": "current Train; verified shared preprocessing",
+    "preprocessing": {
+      "directory": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc",
+      "status": "verified_unchanged",
+      "files": [
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/request.json",
+          "sha256": "854f8fdde7c0f06e75b352ef6cf76b2fa3795f34eeba4ffb53c6aa2076b5a24f"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/standard.json",
+          "sha256": "57a17c8ebeebf20d8da1721abf924ed1338aeb0b2a47fdbe6fb17012651d70a2"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/bundle.json",
+          "sha256": "2fe00ea0da25513f58f320efb1b70ac2a7bda9ba60d82d1bcf2e5a4d6115427b"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/original.lean",
+          "sha256": "c9ff70f5bf2bf5d8733261930ecb4272ef3bdea4886fb44b63c93d51a4181133"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Auxiliary.olean",
+          "sha256": "785c0ab829c1ea52afb76f18afca6659695dc1e49fcd2332f2a24ac953112546"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Batch2Auxiliary.olean",
+          "sha256": "50e29ad4b55f8cd33f2fc5941c56a79961c2f46d0be27c72def182332d9f3e33"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Batch2Definitions.olean",
+          "sha256": "abe911308dedc35e82506404ee357b0d2f3171290b286e49b60e544c6412fcb6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Batch2Proofs.olean",
+          "sha256": "65d3f212c32cb0eb2e8dbe5c0a902037d7f1955d8899fcdcba44b8a22643e22b"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Batch3Definitions.olean",
+          "sha256": "73e20f1b914977a4d4c555ca96b7158d88865c94f4376caac1b4059f6994bf18"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Batch3Proofs.olean",
+          "sha256": "fea601643964709367f72dc5e4556af9cf40facb877cdb43491832f37cfb9716"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Batch4Definitions.olean",
+          "sha256": "c5de2182b5cab917d87901d4fcd8fea739fd980b79ba05f4985c9da580618cdf"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Batch4Proofs.olean",
+          "sha256": "1f4bcbbe40e67f0bd7f09db4603c68b44926cd95e177c07b6987bc586f313d58"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Batch5Definitions.olean",
+          "sha256": "7980bcd75f0da4b7041759e68aeebb2fc77f99526a078800ea9e5444820db19a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/BatchAuxiliary.olean",
+          "sha256": "02268f2ecaeb505801cf39938c02e671019f6cc962bd7eb9c41e150148aad7c6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/BatchDefinitions.olean",
+          "sha256": "dbd97a7a3015d0c7e9405e7397bd11327d15bae70be0c3a2541e20792e9ec058"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Definitions.olean",
+          "sha256": "e8d1bc1ea7bd12dcb5f4191f7a1dd8aab627558372bb9997da5ffade423cd7fe"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Gaussian.olean",
+          "sha256": "75dbdb7b963da8ca67afaceea75f4c03366418af2b17cde0fb6ceb351ed87e1d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/InitialValues.olean",
+          "sha256": "1efe4b146f561831599fe33fe9eeb6691f139855e783348d4a3fd7d8091a9c3e"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/Benchmark/Representation.olean",
+          "sha256": "564bdd90616abff63f37572c9d4258e0d1e1720732678c9da87c992210965037"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/FiniteQPreprocess/Export.olean",
+          "sha256": "c82b2e88a6c12db488db272db31ccbf2a8dd9b0c20c5f701cc4df549631f3f4d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/FiniteQPreprocess/Rules.olean",
+          "sha256": "a575e571b3630c5716fd54615f54f6184301eb9ccb61b5151005eb48f7121217"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/e6301748cd2fc290b1365a07f9272d8f08c4a75a545b86072920f7adb250bebc/build/FiniteQPreprocess/Wire.olean",
+          "sha256": "b61263a3505a4744c31f1c62f66732a6dd5ab9c6b37dd8d3cdf8812faef8360d"
+        }
+      ]
+    }
+  },
+  "analysis": [
+    {
+      "kind": "p1",
+      "status": "analyzed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-BAILEY-UNIT/attempts/8c808ba049f444e98991064dc2f557c5/analysis/p1/result.json"
+    }
+  ],
+  "plan": [],
+  "attempts": [],
+  "events": [
+    {
+      "stage": "snapshot",
+      "status": "passed",
+      "elapsed_seconds": 0.01
+    },
+    {
+      "stage": "preprocessing",
+      "status": "verified_unchanged",
+      "elapsed_seconds": 0.269
+    },
+    {
+      "stage": "analysis",
+      "status": "analyzed",
+      "elapsed_seconds": 17.208,
+      "adapter": "p1"
+    },
+    {
+      "stage": "planning",
+      "status": "completed",
+      "elapsed_seconds": 17.208,
+      "candidate_count": 0
+    },
+    {
+      "stage": "finished",
+      "status": "unproved",
+      "elapsed_seconds": 17.209
+    }
+  ],
+  "automatic_train_proofs": 0,
+  "test_files_read": 0,
+  "remaining_obligations": [
+    "No executable candidate was established; see admission checks and unresolved obligations"
+  ],
+  "new_unique_train_proofs": "not_counted_by_individual_run",
+  "unknown_policy": "mark",
+  "preprocessing": {
+    "status": "verified_unchanged",
+    "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-BAILEY-UNIT/attempts/8c808ba049f444e98991064dc2f557c5/preprocessing/result.json",
+    "normalization_view": "structured",
+    "cache_hit": true,
+    "reused_from_parent": false,
+    "wall_seconds": 0.16671118594240397
+  },
+  "admission": [
+    {
+      "backend": "direct_q_gosper",
+      "applicable": false,
+      "reason": "unsupported exported node: FiniteQBenchmark.unitBailey",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "direct_q_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "one entire finite range sum against scalar; multiplicative q-hypergeometric term",
+          "bases": "one structural base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions, then original-domain obligations",
+          "order": 0,
+          "proof_exit_scope": "native explicit sums; structured definitions need a source bridge",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported exported node: FiniteQBenchmark.unitBailey",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "bibasic_gosper",
+      "applicable": false,
+      "reason": "unsupported_structure: first bibasic emitter needs n-independent term",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "bibasic_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "explicit finite sum, summand independent of outer index",
+          "bases": "two independent bases",
+          "summation_dimension": 1,
+          "coefficient_domain": "rational bivariate shift field; specialize in Lean",
+          "order": 0,
+          "proof_exit_scope": "restricted bibasic native grammar and endpoints",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: first bibasic emitter needs n-independent term",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "applicability_status": "outside_current_implementation",
+  "elapsed_seconds": 17.209
+}

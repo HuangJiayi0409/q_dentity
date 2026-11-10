@@ -1,0 +1,125 @@
+{
+  "status": "completed",
+  "updated_at": "2026-10-21T09:36:05.550376+00:00",
+  "pid": 1465164,
+  "workers": 24,
+  "total_tasks": 4152,
+  "completed": 4152,
+  "preprocess": true,
+  "remaining": 0,
+  "unique_proved": 34,
+  "proved_identities": [
+    "FQI-CHU-VANDERMONDE-BALANCED",
+    "FQI-CHU-VANDERMONDE-Q",
+    "FQI-FINITE-Q-BINOMIAL",
+    "FQI-GAUSS-ALTERNATING",
+    "FQI-POCHHAMMER-RESIDUES",
+    "FQI-POCHHAMMER-ROOTS",
+    "FQI-RECTANGLE-PARTITIONS",
+    "FQI-ROGERS-SZEGO-RECURRENCE",
+    "FQI-ROGERS-SZEGO-SQRT",
+    "FQI-SRC-AP-13.E3",
+    "FQI-SRC-AP-3.3.9",
+    "FQI-SRC-AQ-3.23",
+    "FQI-SRC-FINE-15.2",
+    "FQI-SRC-FINE-2.1",
+    "FQI-SRC-FINE-2.3",
+    "FQI-SRC-FINE-20.64b",
+    "FQI-SRC-FINE-20.66b",
+    "FQI-SRC-GR2-1.9.10",
+    "FQI-SRC-GR2-1.Ex3i",
+    "FQI-SRC-GR2-1.Ex6iii",
+    "FQI-SRC-GR2-7.Ex40",
+    "FQI-SRC-GR2-I-08",
+    "FQI-SRC-GR2-I-13",
+    "FQI-SRC-GR2-I-16",
+    "FQI-SRC-GR2-I-17",
+    "FQI-SRC-GR2-I-20",
+    "FQI-SRC-GR2-I-25",
+    "FQI-SRC-GR2-I-26",
+    "FQI-SRC-GR2-I-28",
+    "FQI-SRC-GR2-II-34",
+    "FQI-SRC-KAC-CHEUNG-1.11-12",
+    "FQI-SRC-KAC-CHEUNG-1.13-14",
+    "FQI-SRC-KAC-CHEUNG-4.4",
+    "FQI-SRC-KAC-CHEUNG-5.7"
+  ],
+  "labels": {
+    "adapter_error_needs_review": 759,
+    "representation_or_applicability_unresolved": 2228,
+    "unproved_needs_review": 1117,
+    "proved": 37,
+    "constructed_but_original_unproved": 5,
+    "resource_exhausted": 6
+  },
+  "per_method": {
+    "telescoping": {
+      "adapter_error_needs_review": 216,
+      "representation_or_applicability_unresolved": 108,
+      "unproved_needs_review": 19,
+      "proved": 2,
+      "constructed_but_original_unproved": 1
+    },
+    "recurrence": {
+      "adapter_error_needs_review": 216,
+      "representation_or_applicability_unresolved": 103,
+      "proved": 12,
+      "constructed_but_original_unproved": 4,
+      "unproved_needs_review": 9,
+      "resource_exhausted": 2
+    },
+    "coefficient": {
+      "unproved_needs_review": 343,
+      "proved": 2,
+      "representation_or_applicability_unresolved": 1
+    },
+    "product": {
+      "adapter_error_needs_review": 216,
+      "representation_or_applicability_unresolved": 80,
+      "unproved_needs_review": 42,
+      "proved": 7,
+      "resource_exhausted": 1
+    },
+    "interpolation": {
+      "adapter_error_needs_review": 6,
+      "unproved_needs_review": 329,
+      "proved": 8,
+      "resource_exhausted": 3
+    },
+    "noncommutative": {
+      "adapter_error_needs_review": 52,
+      "representation_or_applicability_unresolved": 293,
+      "proved": 1
+    },
+    "combinatorial": {
+      "representation_or_applicability_unresolved": 334,
+      "unproved_needs_review": 9,
+      "proved": 2,
+      "adapter_error_needs_review": 1
+    },
+    "difference_ring": {
+      "adapter_error_needs_review": 52,
+      "unproved_needs_review": 188,
+      "representation_or_applicability_unresolved": 105,
+      "proved": 1
+    },
+    "kernel_transform": {
+      "unproved_needs_review": 177,
+      "representation_or_applicability_unresolved": 168,
+      "proved": 1
+    },
+    "spectral": {
+      "representation_or_applicability_unresolved": 346
+    },
+    "determinant": {
+      "representation_or_applicability_unresolved": 345,
+      "unproved_needs_review": 1
+    },
+    "macmahon": {
+      "representation_or_applicability_unresolved": 345,
+      "proved": 1
+    }
+  },
+  "active": [],
+  "test_files_read": 0
+}

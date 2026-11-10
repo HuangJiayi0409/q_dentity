@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "status": "unproved",
+  "identity": "FQI-SRC-GR2-II-35",
+  "method_request": "telescoping",
+  "budget": {
+    "seconds": 900,
+    "attempt_seconds": 600,
+    "analysis_seconds": 120,
+    "preprocessing_seconds": 600,
+    "selection_seconds": 10,
+    "symbolic_seconds": 240,
+    "max_order": 4,
+    "max_unknowns": 10000,
+    "max_degree": 5,
+    "laurent_floor": -1
+  },
+  "work_directory": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-35/attempts/19074878ab3e43e9a83fe5b49fa471b1",
+  "source": {
+    "identity": "FQI-SRC-GR2-II-35",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity252.lean",
+    "sha256": "218f9029b7a43c0da83897f5d16aae60a06f8815d842df4436a66016f906d177",
+    "snapshot": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-35/attempts/19074878ab3e43e9a83fe5b49fa471b1/source.lean",
+    "theorem": "FiniteQBenchmark.Identity252.statement",
+    "scope": "current Train; verified shared preprocessing",
+    "preprocessing": {
+      "directory": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742",
+      "status": "verified_normalized",
+      "files": [
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/request.json",
+          "sha256": "a490dd479b30f368851f237cb532898cb75e8424b2ca5de2e3f2f2ccaa935a50"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/standard.json",
+          "sha256": "b3a4ca376971eb3cdc3d6dc2346e2f0276258596b39b1b38a9a587c4ec75d11d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/bundle.json",
+          "sha256": "ff0002dcec38bab753bc9c8239f9ee095426effbde189a4ecc297cf738a5c4e4"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/original.lean",
+          "sha256": "218f9029b7a43c0da83897f5d16aae60a06f8815d842df4436a66016f906d177"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Auxiliary.olean",
+          "sha256": "785c0ab829c1ea52afb76f18afca6659695dc1e49fcd2332f2a24ac953112546"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Batch2Auxiliary.olean",
+          "sha256": "add15272f1fe175a6dfa151880b092e8e014a2731c374cb2df166051f0d4155c"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Batch2Definitions.olean",
+          "sha256": "abe911308dedc35e82506404ee357b0d2f3171290b286e49b60e544c6412fcb6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Batch2Proofs.olean",
+          "sha256": "68f6c8f5fae3ac911eadc5bf9aea96a86c9b84f59ca387164ec299471baad8ef"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Batch3Definitions.olean",
+          "sha256": "cd230c2b24cfff42d1fae74bcb6a26069a60723c984b0b0b877f9fcdb9dca1fc"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Batch3Proofs.olean",
+          "sha256": "fea601643964709367f72dc5e4556af9cf40facb877cdb43491832f37cfb9716"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Batch4Definitions.olean",
+          "sha256": "275a3fce8c9b4065be669eca0215e6b08c679dc53160fd1624754282cd3412dd"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Batch4Proofs.olean",
+          "sha256": "e57ec848229bd90a2e120383c721e8d9fc46be6654d9c5d0520d4b971caf0952"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Batch5Definitions.olean",
+          "sha256": "7980bcd75f0da4b7041759e68aeebb2fc77f99526a078800ea9e5444820db19a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/BatchAuxiliary.olean",
+          "sha256": "02268f2ecaeb505801cf39938c02e671019f6cc962bd7eb9c41e150148aad7c6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/BatchDefinitions.olean",
+          "sha256": "dbd97a7a3015d0c7e9405e7397bd11327d15bae70be0c3a2541e20792e9ec058"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Definitions.olean",
+          "sha256": "e8d1bc1ea7bd12dcb5f4191f7a1dd8aab627558372bb9997da5ffade423cd7fe"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Gaussian.olean",
+          "sha256": "87c09a029f109a469d7aea54737f28f2065e1cd9420359e6a1e30938984e55dc"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/InitialValues.olean",
+          "sha256": "b2e16959cde512ebe23e03eed39f9c8c3dcdbe24e4d2d047d38f9bf115a7b1a0"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/Benchmark/Representation.olean",
+          "sha256": "3793f530dfd3538383a0c36a7bdacf636efce4f04be75a3cfd823d622f4e959a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/FiniteQPreprocess/Export.olean",
+          "sha256": "c82b2e88a6c12db488db272db31ccbf2a8dd9b0c20c5f701cc4df549631f3f4d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/FiniteQPreprocess/Rules.olean",
+          "sha256": "a575e571b3630c5716fd54615f54f6184301eb9ccb61b5151005eb48f7121217"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/b0ddf2a0028513a3bc9777c21462ecfb4fec965bb55a5e715ecc406c01796742/build/FiniteQPreprocess/Wire.olean",
+          "sha256": "b61263a3505a4744c31f1c62f66732a6dd5ab9c6b37dd8d3cdf8812faef8360d"
+        }
+      ]
+    }
+  },
+  "analysis": [
+    {
+      "kind": "p1",
+      "status": "analyzed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-35/attempts/19074878ab3e43e9a83fe5b49fa471b1/analysis/p1/result.json"
+    }
+  ],
+  "plan": [
+    {
+      "backend": "bibasic_gosper",
+      "method": "telescoping",
+      "environment": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-35/attempts/19074878ab3e43e9a83fe5b49fa471b1/analysis/p1/environment.json",
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "bibasic_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "explicit finite sum, summand independent of outer index",
+          "bases": "two independent bases",
+          "summation_dimension": 1,
+          "coefficient_domain": "rational bivariate shift field; specialize in Lean",
+          "order": 0,
+          "proof_exit_scope": "restricted bibasic native grammar and endpoints",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "backend": "bibasic_gosper",
+      "method": "telescoping",
+      "status": "lean_failed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-35/attempts/19074878ab3e43e9a83fe5b49fa471b1/attempts/00_bibasic_gosper/result.json",
+      "failure_stage": "verification",
+      "error": null,
+      "remaining_obligations": [
+        "Verify computed antidifference and both endpoints in Lean",
+        "Compile and audit the original target"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "stage": "snapshot",
+      "status": "passed",
+      "elapsed_seconds": 0.003
+    },
+    {
+      "stage": "preprocessing",
+      "status": "verified_normalized",
+      "elapsed_seconds": 0.243
+    },
+    {
+      "stage": "analysis",
+      "status": "analyzed",
+      "elapsed_seconds": 18.997,
+      "adapter": "p1"
+    },
+    {
+      "stage": "planning",
+      "status": "completed",
+      "elapsed_seconds": 18.997,
+      "candidate_count": 1
+    },
+    {
+      "stage": "attempt",
+      "status": "started",
+      "elapsed_seconds": 19.054,
+      "backend": "bibasic_gosper"
+    },
+    {
+      "stage": "attempt",
+      "status": "lean_failed",
+      "elapsed_seconds": 143.212,
+      "backend": "bibasic_gosper"
+    },
+    {
+      "stage": "finished",
+      "status": "unproved",
+      "elapsed_seconds": 143.213
+    }
+  ],
+  "automatic_train_proofs": 0,
+  "test_files_read": 0,
+  "remaining_obligations": [
+    "No attempted backend closed the original statement; see per-attempt obligations"
+  ],
+  "new_unique_train_proofs": "not_counted_by_individual_run",
+  "unknown_policy": "mark",
+  "preprocessing": {
+    "status": "verified_normalized",
+    "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/telescoping/FQI-SRC-GR2-II-35/attempts/19074878ab3e43e9a83fe5b49fa471b1/preprocessing/result.json",
+    "normalization_view": "structured",
+    "cache_hit": true,
+    "reused_from_parent": false,
+    "wall_seconds": 0.16534637799486518
+  },
+  "admission": [
+    {
+      "backend": "direct_q_gosper",
+      "applicable": false,
+      "reason": "multiple independent bases require a multibase backend: p, q",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "direct_q_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "one entire finite range sum against scalar; multiplicative q-hypergeometric term",
+          "bases": "one structural base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions, then original-domain obligations",
+          "order": 0,
+          "proof_exit_scope": "native explicit sums; structured definitions need a source bridge",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "multiple independent bases require a multibase backend: p, q",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "bibasic_gosper",
+      "applicable": true,
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "bibasic_gosper",
+        "method": "telescoping",
+        "scope": {
+          "syntax": "explicit finite sum, summand independent of outer index",
+          "bases": "two independent bases",
+          "summation_dimension": 1,
+          "coefficient_domain": "rational bivariate shift field; specialize in Lean",
+          "order": 0,
+          "proof_exit_scope": "restricted bibasic native grammar and endpoints",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "elapsed_seconds": 143.213
+}

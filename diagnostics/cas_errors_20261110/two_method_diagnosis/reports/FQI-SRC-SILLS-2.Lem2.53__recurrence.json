@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "status": "unproved",
+  "identity": "FQI-SRC-SILLS-2.Lem2.53",
+  "method_request": "recurrence",
+  "budget": {
+    "seconds": 900,
+    "attempt_seconds": 600,
+    "analysis_seconds": 120,
+    "preprocessing_seconds": 600,
+    "selection_seconds": 10,
+    "symbolic_seconds": 240,
+    "max_order": 4,
+    "max_unknowns": 10000,
+    "max_degree": 5,
+    "laurent_floor": -1
+  },
+  "work_directory": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-SILLS-2.Lem2.53/attempts/7c3ca40124234dac848d598ea81ebb33",
+  "source": {
+    "identity": "FQI-SRC-SILLS-2.Lem2.53",
+    "path": "benchmark/lean/Benchmark/Statements/Train/Identity381.lean",
+    "sha256": "a1d23ff78afbc78618ee74dc7d1c98de6e2fcfea9bb0931099aeecf95915b277",
+    "snapshot": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-SILLS-2.Lem2.53/attempts/7c3ca40124234dac848d598ea81ebb33/source.lean",
+    "theorem": "FiniteQBenchmark.Identity381.statement",
+    "scope": "current Train; verified shared preprocessing",
+    "preprocessing": {
+      "directory": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f",
+      "status": "verified_normalized",
+      "files": [
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/request.json",
+          "sha256": "3214cc25910f45a00f744c6aabce99d8f8655f4687a6609f8e7ce42f6dd99fc5"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/standard.json",
+          "sha256": "9fe8952b99db8a81cdf8f1e2956d3d13315912eb5709396d999e7e0c2fdc3388"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/bundle.json",
+          "sha256": "f723ac84b53ade5ce0ba4bdbbffab9a87d610ccd7e5f78811e03dba8101d9911"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/original.lean",
+          "sha256": "a1d23ff78afbc78618ee74dc7d1c98de6e2fcfea9bb0931099aeecf95915b277"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Auxiliary.olean",
+          "sha256": "785c0ab829c1ea52afb76f18afca6659695dc1e49fcd2332f2a24ac953112546"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Batch2Auxiliary.olean",
+          "sha256": "7bd096e8b2a55895377769cc27d168b03ea6116c3b7bd80259554ac8ec5b8dd0"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Batch2Definitions.olean",
+          "sha256": "abe911308dedc35e82506404ee357b0d2f3171290b286e49b60e544c6412fcb6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Batch2Proofs.olean",
+          "sha256": "96452693f173dbfeee2a6f4cbdb4bc78d75b8882f103130a9891f1057ef19ce5"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Batch3Definitions.olean",
+          "sha256": "ff3b5843e9e820e9ccc35d0e8566c2e65609eb8a1d28507470231bcb9af16ce6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Batch3Proofs.olean",
+          "sha256": "fea601643964709367f72dc5e4556af9cf40facb877cdb43491832f37cfb9716"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Batch4Definitions.olean",
+          "sha256": "4da6b09f2feef397304df85681f14514613cbd7af0576ec6894cb5d9344b40d3"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Batch4Proofs.olean",
+          "sha256": "e645e2f1d1f928141d676a55b754a6e12268c7712c2b222ca4bb355a20924a3b"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Batch5Definitions.olean",
+          "sha256": "7980bcd75f0da4b7041759e68aeebb2fc77f99526a078800ea9e5444820db19a"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/BatchAuxiliary.olean",
+          "sha256": "02268f2ecaeb505801cf39938c02e671019f6cc962bd7eb9c41e150148aad7c6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/BatchDefinitions.olean",
+          "sha256": "dbd97a7a3015d0c7e9405e7397bd11327d15bae70be0c3a2541e20792e9ec058"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Definitions.olean",
+          "sha256": "e8d1bc1ea7bd12dcb5f4191f7a1dd8aab627558372bb9997da5ffade423cd7fe"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Gaussian.olean",
+          "sha256": "06170e94b381903e84861c03709cb13d241c55bfd6c1a1af429f261acae4808f"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/InitialValues.olean",
+          "sha256": "cf1de6cc12737377bdad54ec8e472ee11df19ebe1f0178c182178049c7b7af1f"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/Benchmark/Representation.olean",
+          "sha256": "093e282ee3f24524a4d1ae10f2cbf03b80f7b48fefd5c65637330c81cee62cc6"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/FiniteQPreprocess/Export.olean",
+          "sha256": "c82b2e88a6c12db488db272db31ccbf2a8dd9b0c20c5f701cc4df549631f3f4d"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/FiniteQPreprocess/Rules.olean",
+          "sha256": "a575e571b3630c5716fd54615f54f6184301eb9ccb61b5151005eb48f7121217"
+        },
+        {
+          "path": "finite_product_framework/generated/preprocessing_cache_v2/fe0461e333f4ab32e5d07e0a5514e03bc64e95b4502c0e9bf6ca2c2522e8260f/build/FiniteQPreprocess/Wire.olean",
+          "sha256": "b61263a3505a4744c31f1c62f66732a6dd5ab9c6b37dd8d3cdf8812faef8360d"
+        }
+      ]
+    }
+  },
+  "analysis": [
+    {
+      "kind": "p1",
+      "status": "analyzed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-SILLS-2.Lem2.53/attempts/7c3ca40124234dac848d598ea81ebb33/analysis/p1/result.json"
+    }
+  ],
+  "plan": [
+    {
+      "backend": "general_q_zeilberger",
+      "method": "recurrence",
+      "environment": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-SILLS-2.Lem2.53/attempts/7c3ca40124234dac848d598ea81ebb33/analysis/p1/environment.json",
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "general_q_zeilberger",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "whole-side sums or registered structured sums; affine natural prefix",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions and original-domain specialization",
+          "order": "budget.max_order",
+          "proof_exit_scope": "finite-order common recurrence, moving tails, initials and singular-index obligations",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "backend": "general_q_zeilberger",
+      "method": "recurrence",
+      "status": "construction_failed",
+      "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-SILLS-2.Lem2.53/attempts/7c3ca40124234dac848d598ea81ebb33/attempts/00_general_q_zeilberger/result.json",
+      "failure_stage": "construction",
+      "error": "ValueError: representation_gap: not a single-base rational shift",
+      "remaining_obligations": [
+        "Verify local relation, boundary, initial and target recurrence in Lean",
+        "Compile and audit the original target"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "stage": "snapshot",
+      "status": "passed",
+      "elapsed_seconds": 0.003
+    },
+    {
+      "stage": "preprocessing",
+      "status": "verified_normalized",
+      "elapsed_seconds": 0.255
+    },
+    {
+      "stage": "analysis",
+      "status": "analyzed",
+      "elapsed_seconds": 18.104,
+      "adapter": "p1"
+    },
+    {
+      "stage": "planning",
+      "status": "completed",
+      "elapsed_seconds": 18.105,
+      "candidate_count": 1
+    },
+    {
+      "stage": "attempt",
+      "status": "started",
+      "elapsed_seconds": 18.159,
+      "backend": "general_q_zeilberger"
+    },
+    {
+      "stage": "attempt",
+      "status": "construction_failed",
+      "elapsed_seconds": 25.833,
+      "backend": "general_q_zeilberger"
+    },
+    {
+      "stage": "finished",
+      "status": "unproved",
+      "elapsed_seconds": 25.847
+    }
+  ],
+  "automatic_train_proofs": 0,
+  "test_files_read": 0,
+  "remaining_obligations": [
+    "No attempted backend closed the original statement; see per-attempt obligations"
+  ],
+  "new_unique_train_proofs": "not_counted_by_individual_run",
+  "unknown_policy": "mark",
+  "preprocessing": {
+    "status": "verified_normalized",
+    "result": "finite_product_framework/generated/two_method_diagnosis_20261021/tasks/recurrence/FQI-SRC-SILLS-2.Lem2.53/attempts/7c3ca40124234dac848d598ea81ebb33/preprocessing/result.json",
+    "normalization_view": "structured",
+    "cache_hit": true,
+    "reused_from_parent": false,
+    "wall_seconds": 0.16632294794544578
+  },
+  "admission": [
+    {
+      "backend": "target_first_order",
+      "applicable": false,
+      "reason": "unsupported_structure: Gaussian weight required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "target_first_order",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "native finite q-hypergeometric sum and target ratio",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal field with explicit specialization",
+          "order": 1,
+          "proof_exit_scope": "native first-order recurrence and initial value",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: Gaussian weight required",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "general_q_zeilberger",
+      "applicable": true,
+      "reason": "actual Lean expression accepted",
+      "admission": {
+        "candidate": "accepted",
+        "core_domain": "unknown",
+        "proof_exit": "unknown",
+        "obligations": [
+          "Construct and verify certificate, boundary, initial values and original-domain transport"
+        ],
+        "representation": "accepted",
+        "backend": "general_q_zeilberger",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "whole-side sums or registered structured sums; affine natural prefix",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "formal rational functions and original-domain specialization",
+          "order": "budget.max_order",
+          "proof_exit_scope": "finite-order common recurrence, moving tails, initials and singular-index obligations",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "actual Lean expression accepted",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "ore_closure",
+      "applicable": false,
+      "reason": "unsupported_structure: one defined-sequence observable and one finite sum required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "ore_closure",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "registered defined sequences with certified recurrences",
+          "bases": "one base",
+          "summation_dimension": 1,
+          "coefficient_domain": "q-Ore rational coefficient field",
+          "order": "bounded closure search",
+          "proof_exit_scope": "native second-order objects / first-order forcing; parameter-instance branch orders 1..4",
+          "implementation_limits": {},
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: one defined-sequence observable and one finite sum required",
+        "complete_original_proof": false
+      }
+    },
+    {
+      "backend": "multisum",
+      "applicable": false,
+      "reason": "unsupported_structure: at least two distinct sum indices required",
+      "admission": {
+        "candidate": "rejected",
+        "core_domain": "rejected",
+        "proof_exit": "unavailable",
+        "obligations": [
+          "Provide a supported source representation"
+        ],
+        "backend": "multisum",
+        "method": "recurrence",
+        "scope": {
+          "syntax": "nested affine range sums over boxes or simplices",
+          "bases": "one base",
+          "summation_dimension": "finite, at least 2",
+          "coefficient_domain": "formal rational multishifts; original support still required",
+          "order": "budget.max_order",
+          "proof_exit_scope": "2D simplex, order 1 monic, multiplicative Pochhammer kernel with lengths i,j,i+j and domain hypotheses",
+          "implementation_limits": {
+            "native_dimension": 2,
+            "native_domains": [
+              "simplex"
+            ],
+            "native_order": 1
+          },
+          "success_criterion": "original Lean theorem, source binding and axiom audit",
+          "guarantee": "bounded construction; no universal proof or termination claim"
+        },
+        "evidence": "unsupported_structure: at least two distinct sum indices required",
+        "complete_original_proof": false
+      }
+    }
+  ],
+  "elapsed_seconds": 25.847
+}
