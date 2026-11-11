@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "issues_fixed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "tests": {
+    "command": "python3 -m unittest discover -s agent_v2/tests -v",
+    "count": 100,
+    "passed": 100,
+    "exit_code": 0,
+    "seconds": 29.462,
+    "added_regressions": 33
+  },
+  "real_smoke": {
+    "command": "python3 -m agent_v2.tests.real_smoke",
+    "exit_code": 0,
+    "status": "original_theorem_proved",
+    "scope": "synthetic_test_only",
+    "rounds": 2,
+    "certificates": 2,
+    "artifact_hash_audit": "passed",
+    "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/20261111T132031Z-bbb7b62156"
+  },
+  "test_data_read": false,
+  "old_agent_used": false,
+  "historical_results_modified": false,
+  "new_source_files_hashed": 22
+}

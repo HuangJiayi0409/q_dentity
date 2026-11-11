@@ -94,7 +94,16 @@ def _candidate_request(candidate):
             ('id', 'proposition', 'proof_term', 'theorem', 'source_sha256', 'dependencies')}
 
 
+def validate_action_origin(state, action):
+    """Even a stale/forged route must not relocate r through an identity."""
+    if action.source != state.r:
+        raise ContractError('action source is not the current representation')
+    if action.T == 'identity' and action.target != state.r:
+        raise ContractError('identity action cannot change the current representation')
+
+
 def verify_and_update(state, action, result, checker, context):
+    validate_action_origin(state, action)
     verify_source(state.G, context['run_dir'])
     validate_invariant(state)
     certificates = {cert.id: cert for cert in state.C}
@@ -183,6 +192,7 @@ class Executor:
         self.adapters = dict(adapters)
 
     def execute(self, state, action, graph, attempt_dir):
+        validate_action_origin(state, action)
         legal, _ = graph.legal_candidates(state, llm_enabled=False)
         if action not in legal:
             raise ContractError('executor received unfiltered or changed action')

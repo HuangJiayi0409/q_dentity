@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from agent_v2.models import (Budget, Candidate, Cost, ExecutionResult, FailureSignature,
+from agent_v2.models import (Budget, Candidate, ContractError, Cost, ExecutionResult, FailureSignature,
                              JointAction, Obligation, ProofLink, VerifiedCertificate,
                              initial_state)
 from agent_v2.storage import RunStore, freeze_source
@@ -47,6 +47,65 @@ class ExecutorTests(unittest.TestCase):
     def candidate(self, name='c', proposition='True', closes=None, replaces=()):
         return Candidate(name, proposition, 'by trivial', 'AgentV2Candidate.proof',
                          self.source.sha256, (), closes, tuple(replaces))
+
+    def test_state_update_rejects_noncurrent_identity_before_checking_candidates(self):
+        from agent_v2.executor import verify_and_update
+        checker = RecordingChecker()
+        rogue = dataclasses.replace(self.action, source='child', target='child')
+        with self.assertRaises(ContractError):
+            verify_and_update(self.state, rogue, result([self.candidate()]), checker, self.context)
+        self.assertEqual(checker.seen, [])
+        self.assertEqual(self.state.r, 'original')
+
+    def test_state_update_rejects_identity_that_changes_target(self):
+        from agent_v2.executor import verify_and_update
+        rogue = dataclasses.replace(self.action, target='child')
+        with self.assertRaises(ContractError):
+            verify_and_update(self.state, rogue, result(), RecordingChecker(), self.context)
+
+    def test_state_update_rejects_noncurrent_nonidentity_source(self):
+        from agent_v2.executor import verify_and_update
+        rogue = dataclasses.replace(self.action, T='child-to-grandchild', source='child', target='grandchild')
+        with self.assertRaises(ContractError):
+            verify_and_update(self.state, rogue, result(), RecordingChecker(), self.context)
+
+    def test_executor_rejects_stale_origin_even_if_a_route_list_includes_it(self):
+        from agent_v2.executor import Executor
+        rogue = dataclasses.replace(self.action, source='child', target='child')
+        class StaleRoutes:
+            def legal_candidates(self, *args, **kwargs): return [rogue], []
+        class Adapter:
+            calls = 0
+            def execute(inner, *args):
+                inner.calls += 1
+                return result().to_dict()
+        adapter = Adapter()
+        with self.assertRaises(ContractError):
+            Executor({'method': adapter}).execute(self.state, rogue, StaleRoutes(), self.store.root / 'attempt')
+        self.assertEqual(adapter.calls, 0)
+
+    def test_checked_current_edge_can_execute_and_update_representation(self):
+        from agent_v2.executor import Executor, verify_and_update
+        from agent_v2.graph import Edge, Graph, Outlet
+        bridge = VerifiedCertificate('bridge', '(True) → (True)', 'fun h => h',
+            self.source.sha256, (), {'test_only': True, 'source_sha256': self.source.sha256,
+                                    'proposition': '(True) → (True)'})
+        state = dataclasses.replace(self.state, C=(bridge,))
+        graph = Graph(self.source.sha256)
+        original = dataclasses.replace(self.rep, semantic_domain='Prop')
+        graph.add_node(original)
+        graph.add_node(dataclasses.replace(original, id='child', payload={'proposition': 'True'}))
+        graph.add_edge(Edge('forward', 'original', 'child', 'bridge', bridge_certificate='bridge'))
+        graph.add_outlet(Outlet('child-method', 'child', 'CAS', 'method', {}, ('closed_prop',)))
+        legal, _ = graph.legal_candidates(state)
+        self.assertEqual([(a.T, a.source, a.target) for a in legal], [('forward', 'original', 'child')])
+        class Adapter:
+            def execute(self, *args): return result().to_dict()
+        outcome = Executor({'method': Adapter()}).execute(state, legal[0], graph, self.store.root / 'attempt')
+        updated, _ = verify_and_update(state, legal[0], outcome, RecordingChecker(), self.context)
+        self.assertEqual(updated.r, 'child')
+        self.assertEqual(updated.O, state.O)
+        self.assertEqual(updated.C, state.C)
 
     def test_unverified_candidate_cannot_close_obligation(self):
         from agent_v2.executor import verify_and_update

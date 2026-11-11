@@ -145,8 +145,8 @@ class Graph:
 
     def legal_candidates(self, state, llm_enabled=False):
         reasons, candidates = [], []
-        def reject(route, code):
-            reasons.append({'route_id': route, 'code': code})
+        def reject(route, code, **details):
+            reasons.append({'route_id': route, 'code': code, **details})
 
         if state.G.sha256 != self.source_sha256 or state.Gamma != state.G.Gamma:
             return [], [{'route_id': '*', 'code': 'original_binding_mismatch'}]
@@ -169,21 +169,24 @@ class Graph:
                     reachable.add(edge.target); changed = True
         if state.r not in reachable:
             return [], [{'route_id': '*', 'code': 'current_representation_unverified'}]
-        # Each candidate is exactly one transformation plus one method outlet.
-        # No candidate contains a preselected sequence to execute later.
-        attempts = {attempt.fingerprint for attempt in state.attempts}
+        # Root reachability establishes the representation's provenance, not
+        # permission to move the current pointer. Each candidate starts at r
+        # and contains exactly one conversion plus one method outlet.
+        attempts = {attempt.fingerprint: attempt for attempt in state.attempts}
         for outlet in sorted(self.outlets.values(), key=lambda item: item.id):
             target = self.nodes[outlet.node]
-            routes = [('identity', target.id, 0.0)] if target.id in reachable else []
-            for edge in sorted(self.edges.values(), key=lambda item: item.id):
-                if edge.target == target.id and edge.source in reachable:
-                    code = edge_reasons[edge.id]
-                    if code:
-                        reject(edge.id + '/' + outlet.id, code)
-                    elif edge.mode != 'identity':
-                        routes.append((edge.id, edge.source, edge.estimated_seconds))
-            if not routes and target.id not in reachable:
-                reject(outlet.id, 'unreachable_representation')
+            routes = [('identity', state.r, 0.0)] if target.id == state.r else []
+            current_edges = [edge for edge in sorted(self.edges.values(), key=lambda item: item.id)
+                             if edge.target == target.id and edge.source == state.r]
+            for edge in current_edges:
+                code = edge_reasons[edge.id]
+                if code:
+                    reject(edge.id + '/' + outlet.id, code)
+                elif edge.mode != 'identity':
+                    routes.append((edge.id, state.r, edge.estimated_seconds))
+            if not routes and not current_edges:
+                reject(outlet.id, 'unreachable_representation' if target.id not in reachable
+                       else 'no_transition_from_current')
             for transformation, source_id, transform_cost in routes:
                 route_id = 'route-' + digest({'T': transformation, 'source': source_id,
                                              'target': target.id, 'outlet': outlet.id})[:24]
@@ -211,8 +214,14 @@ class Graph:
                 # wall-clock budget was charged must not unlock a duplicate.
                 action = JointAction(route_id, transformation, source_id, target.id,
                                      outlet.M, outlet.backend, outlet.parameters)
-                if action_fingerprint(state, action) in attempts:
-                    reject(route_id, 'duplicate_action'); continue
+                attempted = attempts.get(action_fingerprint(state, action))
+                if attempted is not None:
+                    # Route display IDs may differ for the same semantic action.
+                    # Carry the matching attempt so stop classification cannot
+                    # accidentally inherit an unrelated route's latest failure.
+                    reject(route_id, 'duplicate_action', attempt_action_id=attempted.action_id,
+                           attempt_code=attempted.code)
+                    continue
                 candidates.append(action)
         return candidates, reasons
 

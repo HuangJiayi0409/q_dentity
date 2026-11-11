@@ -31,6 +31,17 @@ def positive_int(value):
     return value
 
 
+def _explicit_directory(path):
+    """Accept the chosen location without resolving away unsafe path aliases.
+
+    The filesystem anchor permits arbitrary explicit output locations while
+    retaining guard_path's traversal and symlink checks for every ancestor.
+    Individual artifacts remain bounded by their actual RunStore directory.
+    """
+    path = Path(path).absolute()
+    return guard_path(path, path.anchor)
+
+
 def parser():
     result = argparse.ArgumentParser(description='Agent v2: residual certificate MVP; Train only')
     sub = result.add_subparsers(dest='command', required=True)
@@ -116,12 +127,12 @@ def train_run(args, store):
 
 def resume_run(args):
     from .loop import resume, run
-    store = RunStore(guard_path(args.run_dir, GENERATED))
+    store = RunStore(_explicit_directory(args.run_dir))
     executor, checker = _production()
     saved = store.load_checkpoint()['state']['G']
     # A CLI checkpoint cannot remap a Train identity to a convenient synthetic
     # theorem even if a caller recomputes the checkpoint's content hashes.
-    manifest = REPOSITORY / 'benchmark/splits/train.jsonl'
+    manifest = guard_path(REPOSITORY / 'benchmark/splits/train.jsonl')
     rows = [json.loads(line) for line in manifest.read_text().splitlines() if line.strip()]
     matches = [row for row in rows if row['id'] == saved['identity']]
     if len(matches) != 1 or saved['sha256'] != matches[0]['lean_sha256'] or \
@@ -139,7 +150,7 @@ def main(argv=None):
             status, store = resume_run(args)
         else:
             if args.command == 'core-demo': guard_path(args.input)
-            root = guard_path(args.output_root, GENERATED)
+            root = _explicit_directory(args.output_root)
             store = RunStore.create(root)
             status = core_demo(args, store) if args.command == 'core-demo' else train_run(args, store)
     except (IntegrityError, ContractError, ValueError, KeyError, TypeError) as error:

@@ -162,5 +162,157 @@ class LoopTests(unittest.TestCase):
         self.assertEqual(legal, [], 'fresh evidence for the same lemma must not unlock a repeated action')
         self.assertIn('duplicate_action', str(reasons))
 
+    def test_no_affordable_action_stops_for_budget_without_execution(self):
+        from agent_v2.executor import Executor
+        from agent_v2.graph import Graph, Outlet
+        from agent_v2.loop import run
+        graph = Graph(self.source.sha256); graph.add_node(self.rep)
+        graph.add_outlet(Outlet('expensive', 'original', 'CAS', 'method',
+            {'method': 'telescoping'}, ('closed_prop',), estimated_seconds=101.0))
+        adapter = QueueAdapter([])
+        final = run(self.state, graph, self.store, Executor({'method': adapter}), FinalChecker())
+        self.assertEqual(final.status, 'budget_exhausted')
+        self.assertEqual(self.store.read_json('run.json')['stop_reason'], 'no_affordable_action')
+        self.assertEqual(adapter.calls, [])
+        self.assertEqual(final.O, self.state.O)
+        self.assertEqual(final.b.actions, self.state.b.actions)
+
+    def test_no_route_distinguishes_contract_and_missing_capability(self):
+        from agent_v2.executor import Executor
+        from agent_v2.graph import Graph, Outlet
+        from agent_v2.loop import run
+        for kind, reason in [('contract', 'input_contract_mismatch'), ('empty', 'graph_capability_missing')]:
+            with self.subTest(kind=kind):
+                graph = Graph(self.source.sha256); graph.add_node(self.rep)
+                if kind == 'contract':
+                    graph.add_outlet(Outlet('wrong-domain', 'original', 'CAS', 'method', {},
+                        ('closed_prop',), semantic_domain='Field'))
+                store = RunStore.create(Path(self.tmp.name) / 'runs', kind)
+                # A frozen source snapshot must belong to this run.
+                source = freeze_source(self.source.path, 'synthetic', 'demo', store, proposition='True')
+                state, _ = initial_state(source, Budget(100, 5))
+                final = run(state, graph, store, Executor({'method': QueueAdapter([])}), FinalChecker())
+                self.assertEqual(final.status, 'incomplete')
+                self.assertEqual(store.read_json('run.json')['stop_reason'], reason)
+
+    def test_duplicate_failure_has_its_own_stop_reason(self):
+        self.run_loop([result()])
+        self.assertEqual(self.store.read_json('run.json')['stop_reason'], 'repeated_actions_exhausted')
+
+    def test_disabled_only_route_is_environment_blocked(self):
+        from agent_v2.executor import Executor
+        from agent_v2.graph import Graph, Outlet
+        from agent_v2.loop import run
+        graph = Graph(self.source.sha256); graph.add_node(self.rep)
+        graph.add_outlet(Outlet('disabled', 'original', 'LLM', 'llm', {}, ('closed_prop',)))
+        final = run(self.state, graph, self.store, Executor({}), FinalChecker())
+        self.assertEqual(final.status, 'environment_blocked')
+        self.assertEqual(self.store.read_json('run.json')['stop_reason'], 'environment_unavailable')
+
+    def assert_final_classification(self, status, code, exception=None, evidence_mismatch=False):
+        class Checker(FinalChecker):
+            def accept_original(inner, report, source, attempt_dir):
+                if exception is not None: raise exception
+                if evidence_mismatch:
+                    return {'accepted': True, 'status': 'original_theorem_proved',
+                            'evidence': {'source_sha256': '0' * 64, 'theorem': source['theorem']},
+                            'sigma': {'code': 'claimed_success'}}
+                return {'accepted': False, 'status': status, 'evidence': {}, 'sigma': {'code': code}}
+        final, _ = self.run_loop([result([self.candidate()])], Checker())
+        self.assertEqual(final.status, status)
+        self.assertEqual(final.O, self.state.O)
+        self.assertEqual(final.links, ())
+        self.assertEqual(len(final.C), 1)
+        self.assertFalse(self.store.read_json('run.json')['original_identity_proved'])
+        self.assertEqual(self.store.read_json('run.json')['stop_reason'], code)
+        self.assertEqual(self.store.load_checkpoint()['state']['status'], status)
+        self.assertGreater(final.b.seconds, 0, 'explicit failure must survive even with time left')
+
+    def test_final_integrity_result_keeps_integrity_category(self):
+        self.assert_final_classification('integrity_error', 'hash_mismatch')
+
+    def test_final_budget_result_keeps_budget_category(self):
+        self.assert_final_classification('budget_exhausted', 'lean_timeout')
+
+    def test_final_environment_result_keeps_environment_category(self):
+        self.assert_final_classification('environment_blocked', 'dependency_missing')
+
+    def test_final_integrity_exception_keeps_integrity_category(self):
+        self.assert_final_classification('integrity_error', 'final_integrity_error',
+                                         IntegrityError('hash_mismatch'))
+
+    def test_final_timeout_exception_keeps_budget_category(self):
+        self.assert_final_classification('budget_exhausted', 'final_checker_timeout',
+                                         TimeoutError('deadline'))
+
+    def test_final_false_success_binding_is_integrity_error(self):
+        self.assert_final_classification('integrity_error', 'original_evidence_binding_mismatch',
+                                         evidence_mismatch=True)
+
+    def test_source_changed_during_final_check_stops_as_integrity_error(self):
+        class ChangingChecker(FinalChecker):
+            def accept_original(inner, report, source, attempt_dir):
+                Path(source['path']).write_text('changed during final verification')
+                return super().accept_original(report, source, attempt_dir)
+        final, _ = self.run_loop([result([self.candidate()])], ChangingChecker())
+        self.assertEqual(final.status, 'integrity_error')
+        self.assertEqual(final.O, self.state.O)
+        self.assertFalse(self.store.read_json('run.json')['original_identity_proved'])
+
+    def test_late_success_reports_wall_budget_not_lean_verified_as_stop_reason(self):
+        from unittest.mock import patch
+        from agent_v2.executor import verify_and_update
+        from agent_v2.models import JointAction
+        from agent_v2.loop import _final
+        action = JointAction('a', 'identity', 'original', 'original', 'CAS', 'method', {})
+        closed, _ = verify_and_update(self.state, action, result([self.candidate()]), RecordingChecker(),
+            {'source_sha256': self.source.sha256, 'run_dir': str(self.store.root),
+             'attempt_dir': str(self.store.root / 'attempt'), 'seconds': 10.0})
+        with patch('agent_v2.loop.time.monotonic', side_effect=[100.0, 201.0]):
+            final = _final(closed, self.graph(), self.store, FinalChecker())
+        self.assertEqual(final.status, 'budget_exhausted')
+        self.assertEqual(self.store.read_json('run.json')['stop_reason'], 'wall_budget_exhausted')
+
+    def test_stop_classification_uses_relevant_current_blockers(self):
+        from agent_v2.recovery import classify_stop
+        cases = [
+            (['budget_insufficient', 'semantic_domain_mismatch', 'no_transition_from_current'],
+             ('budget_exhausted', 'no_affordable_action')),
+            (['duplicate_action', 'no_transition_from_current'],
+             ('incomplete', 'repeated_actions_exhausted')),
+            (['semantic_domain_mismatch', 'index_ranges_mismatch'],
+             ('incomplete', 'input_contract_mismatch')),
+            (['bridge_not_verified', 'semantic_domain_mismatch'],
+             ('incomplete', 'graph_capability_missing')),
+            (['original_binding_mismatch', 'budget_insufficient'],
+             ('integrity_error', 'graph_integrity_error')),
+        ]
+        for codes, expected in cases:
+            with self.subTest(codes=codes):
+                self.assertEqual(classify_stop(self.state, [], [{'code': c} for c in codes]), expected)
+
+    def test_old_unrelated_environment_failure_does_not_reclassify_current_duplicate(self):
+        from dataclasses import replace
+        from agent_v2.models import Attempt
+        from agent_v2.recovery import classify_stop
+        state = replace(self.state, attempts=(Attempt('f1', 'current', 'search_exhausted', 1),
+            Attempt('f2', 'irrelevant', 'formal_frontend_unavailable', 2)))
+        reasons = [{'route_id': 'current', 'code': 'duplicate_action',
+                    'attempt_action_id': 'current', 'attempt_code': 'search_exhausted'}]
+        self.assertEqual(classify_stop(state, [], reasons), ('incomplete', 'repeated_actions_exhausted'))
+        reasons[0]['attempt_code'] = 'formal_frontend_unavailable'
+        self.assertEqual(classify_stop(state, [], reasons), ('environment_blocked', 'environment_unavailable'))
+
+    def test_malformed_final_result_is_recorded_without_losing_terminal_checkpoint(self):
+        class NonJSONChecker(FinalChecker):
+            def accept_original(inner, report, source, attempt_dir):
+                return {'accepted': False, 'status': 'integrity_error', 'evidence': {},
+                        'sigma': {'code': 'hash_mismatch'}, 'extra': object()}
+        final, _ = self.run_loop([result([self.candidate()])], NonJSONChecker())
+        self.assertEqual(final.status, 'integrity_error')
+        self.assertEqual(final.O, self.state.O)
+        self.assertEqual(self.store.load_checkpoint()['state']['status'], 'integrity_error')
+        self.assertFalse(self.store.read_json('run.json')['original_identity_proved'])
+
 
 if __name__ == '__main__': unittest.main()

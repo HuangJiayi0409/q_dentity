@@ -6,8 +6,9 @@ import time
 from .executor import (_candidate_request, assemble_term, validate_invariant,
                        verify_and_update)
 from .models import (Attempt, Candidate, ContractError, Cost, ExecutionResult,
-                     FailureSignature, ResidualState, action_fingerprint)
+                     FailureSignature, ResidualState, action_fingerprint, canonical)
 from .storage import IntegrityError, guard_path, sha256_file, verify_source
+from .recovery import classify_stop
 
 
 def checkpoint(store, state, graph, inflight=False):
@@ -36,29 +37,66 @@ def _final(state, graph, store, checker):
     final_dir = store.path('final/attempt-' + str(state.round_index))
     final_dir.mkdir(parents=True, exist_ok=True)
     store.write_json(str(final_dir.relative_to(store.root) / 'request.json'), report)
+    checked = None
+    def rejected(status, code, message):
+        previous = checked
+        try:
+            canonical(previous)
+        except (TypeError, ValueError, RecursionError):
+            previous = {'discarded_non_json_result': True, 'python_type': type(previous).__name__}
+        return {'schema_version': 1, 'accepted': False, 'status': status,
+                'evidence': {}, 'sigma': {'stage': 'original', 'code': code, 'message': message},
+                'checker_result': previous}
     try:
         checked = checker.accept_original(report, state.G.to_dict(), final_dir)
+        try:
+            canonical(checked)
+        except (TypeError, ValueError, RecursionError) as error:
+            raise ContractError('original checker result is not finite serializable JSON') from error
+        if (not isinstance(checked, dict) or type(checked.get('accepted')) is not bool or
+                checked.get('status') not in {'original_theorem_proved', 'incomplete',
+                    'integrity_error', 'environment_blocked', 'budget_exhausted'} or
+                not isinstance(checked.get('evidence'), dict)):
+            raise ContractError('invalid original checker result')
+        evidence = checked['evidence']
+        if checked['accepted'] is True or checked['status'] == 'original_theorem_proved':
+            if (checked['accepted'] is not True or checked['status'] != 'original_theorem_proved' or
+                    evidence.get('source_sha256') != state.G.sha256 or
+                    evidence.get('theorem') != state.G.theorem):
+                checked = rejected('integrity_error', 'original_evidence_binding_mismatch',
+                                   'Original proof receipt does not match the exact source and theorem.')
+        try:
+            verify_source(state.G, store.root)
+        except (IntegrityError, OSError) as error:
+            raise IntegrityError('original source integrity failed after final verification: ' + str(error)) from error
+    except (IntegrityError, ContractError) as error:
+        checked = rejected('integrity_error', 'final_integrity_error', str(error))
+    except TimeoutError as error:
+        checked = rejected('budget_exhausted', 'final_checker_timeout', str(error))
     except Exception as error:
-        checked = {'schema_version': 1, 'accepted': False, 'status': 'environment_blocked',
-                   'evidence': {}, 'sigma': {'code': 'final_checker_exception',
-                                             'message': str(error), 'type': type(error).__name__}}
+        checked = rejected('environment_blocked', 'final_checker_exception', str(error))
     elapsed = time.monotonic() - started
     state = replace(state, b=state.b.charge(elapsed, 0))
     store.write_json(str(final_dir.relative_to(store.root) / 'checked.json'), checked)
-    verify_source(state.G, store.root)
     evidence = checked.get('evidence', {})
     accepted = (checked.get('accepted') is True and checked.get('status') == 'original_theorem_proved'
                 and evidence.get('source_sha256') == state.G.sha256
                 and evidence.get('theorem') == state.G.theorem and elapsed <= report['seconds'])
     if accepted:
         return finish(store, replace(state, status='original_theorem_proved'), graph, 'strict_original_accepted')
-    status = 'budget_exhausted' if state.b.seconds <= 0 else (
-        'environment_blocked' if checked.get('status') == 'environment_blocked' else 'incomplete')
+    reported = checked['status']
+    status = reported if reported in {'integrity_error', 'budget_exhausted', 'environment_blocked'} else (
+        'budget_exhausted' if state.b.seconds <= 0 else 'incomplete')
     # The local lemmas remain checked. The failed original assembly cannot keep
     # an empty obligation set: reopen the exact original and drop only its links.
     state = replace(state, O=(state.root,), links=(), status=status)
     validate_invariant(state)
-    return finish(store, state, graph, 'original_acceptance_failed', [checked])
+    sigma = checked.get('sigma')
+    code = sigma.get('code') if isinstance(sigma, dict) else None
+    reason = code if status != 'incomplete' and isinstance(code, str) and code else 'original_acceptance_failed'
+    if status == 'budget_exhausted' and reported != 'budget_exhausted':
+        reason = 'wall_budget_exhausted'
+    return finish(store, state, graph, reason, [checked])
 
 
 def run(state, graph, store, executor, checker, router=None):
@@ -84,8 +122,9 @@ def run(state, graph, store, executor, checker, router=None):
             if graph.expand(state):
                 legal, reasons = graph.legal_candidates(state, llm_enabled=False)
             if not legal:
-                state = replace(state, b=state.b.charge(time.monotonic() - started, 0), status='incomplete')
-                return finish(store, state, graph, 'no_legal_route', reasons)
+                state = replace(state, b=state.b.charge(time.monotonic() - started, 0))
+                status, reason = classify_stop(state, legal, reasons)
+                return finish(store, replace(state, status=status), graph, reason, reasons)
         action = router.choose(state, legal)
         if action is None or action not in legal:
             raise ContractError('router returned no legal registered action')

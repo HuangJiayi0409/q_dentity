@@ -25,6 +25,50 @@ class GraphRouterTests(unittest.TestCase):
                                 ('closed_prop',), estimated_seconds=1.0))
         return state, graph
 
+    def certified_chain(self):
+        """Test-only accepted bridges: original -> child -> grandchild."""
+        from agent_v2.graph import Edge, Outlet
+        state, graph = self.graph()
+        for name, proposition in [('child', 'True ∧ True'), ('grandchild', 'True')]:
+            graph.add_node(RepresentationInstance(name, 'closed_prop', {'proposition': proposition},
+                'Prop', (), proposition, ('test-fixture',), state.G.sha256))
+            graph.add_outlet(Outlet(name + '-cas', name, 'CAS', 'method', {}, ('closed_prop',)))
+        first = VerifiedCertificate('first', '(True ∧ True) → (True)', 'fun h => And.left h',
+            state.G.sha256, (), {'test_only': True})
+        second = VerifiedCertificate('second', '(True) → (True ∧ True)', 'fun h => And.intro h h',
+            state.G.sha256, (), {'test_only': True})
+        graph.add_edge(Edge('to-child', 'original', 'child', 'split', bridge_certificate='first'))
+        graph.add_edge(Edge('to-grandchild', 'child', 'grandchild', 'simplify', bridge_certificate='second'))
+        return dataclasses.replace(state, C=(first, second)), graph
+
+    def test_identity_only_exists_at_current_representation(self):
+        state, graph = self.certified_chain()
+        legal, _ = graph.legal_candidates(state)
+        identities = [(a.source, a.target) for a in legal if a.T == 'identity']
+        self.assertEqual(identities, [('original', 'original')])
+
+    def test_one_action_cannot_skip_intermediate_transformation(self):
+        state, graph = self.certified_chain()
+        legal, reasons = graph.legal_candidates(state)
+        self.assertEqual([(a.T, a.source, a.target) for a in legal if a.T != 'identity'],
+                         [('to-child', 'original', 'child')])
+        self.assertFalse(any(a.target == 'grandchild' for a in legal))
+        self.assertIn({'route_id': 'grandchild-cas', 'code': 'no_transition_from_current'}, reasons)
+
+    def test_changed_current_node_needs_a_real_back_edge(self):
+        from agent_v2.graph import Edge
+        state, graph = self.certified_chain()
+        state = dataclasses.replace(state, r='child')
+        legal, reasons = graph.legal_candidates(state)
+        self.assertEqual([(a.source, a.target) for a in legal if a.T == 'identity'], [('child', 'child')])
+        self.assertFalse(any(a.target == 'original' for a in legal))
+        self.assertIn({'route_id': 'cas', 'code': 'no_transition_from_current'}, reasons)
+        self.assertTrue(any(a.T == 'to-grandchild' and a.source == 'child' for a in legal))
+        graph.add_edge(Edge('back-to-original', 'child', 'original', 'rebuild', bridge_certificate='second'))
+        returned, _ = graph.legal_candidates(state)
+        self.assertEqual([(a.T, a.source, a.target) for a in returned if a.target == 'original'],
+                         [('back-to-original', 'child', 'original')])
+
     def test_graph_preserves_history_and_only_appends_new_structure(self):
         from agent_v2.graph import Graph, Outlet
         state, graph = self.graph()
@@ -61,6 +105,27 @@ class GraphRouterTests(unittest.TestCase):
         self.assertIn('duplicate_action', {r['code'] for r in reasons})
         exhausted = dataclasses.replace(state, b=Budget(30.0, 0))
         self.assertEqual(graph.legal_candidates(exhausted)[0], [])
+
+    def test_duplicate_diagnostic_uses_the_matching_attempt_not_global_latest(self):
+        state, graph = self.graph()
+        action = graph.legal_candidates(state)[0][0]
+        fingerprint = action_fingerprint(state, action)
+        for history, expected_id, expected_code in [
+            ((Attempt(fingerprint, 'renamed-route', 'search_exhausted', 1),
+              Attempt('unrelated-state', 'unrelated-route', 'formal_frontend_unavailable', 2)),
+             'renamed-route', 'search_exhausted'),
+            ((Attempt(fingerprint, 'old-route', 'search_exhausted', 1),
+              Attempt(fingerprint, 'newer-alias', 'formal_frontend_unavailable', 2),
+              Attempt('unrelated-state', 'unrelated-route', 'search_exhausted', 3)),
+             'newer-alias', 'formal_frontend_unavailable'),
+        ]:
+            with self.subTest(expected_code=expected_code):
+                legal, reasons = graph.legal_candidates(dataclasses.replace(state, attempts=history))
+                self.assertEqual(legal, [])
+                duplicate = next(reason for reason in reasons if reason['code'] == 'duplicate_action')
+                self.assertEqual(duplicate['route_id'], action.id)
+                self.assertEqual(duplicate.get('attempt_action_id'), expected_id)
+                self.assertEqual(duplicate.get('attempt_code'), expected_code)
 
     def test_unverified_or_wrong_bridge_cannot_enable_transformation(self):
         from agent_v2.graph import Edge, Outlet
