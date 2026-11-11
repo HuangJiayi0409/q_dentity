@@ -2,9 +2,9 @@
 
 这是新的残差证书控制器。按用户后续要求，旧 Agent、旧 workflow、旧完整流程适配和历史验收代码全部不再使用。当前复用的是独立 `solve_core.py` 数学核心和项目固定的 Lean 工具链，没有改写数学算法。
 
-最新四项审查修复和 100 项测试结果见 [REVIEW_FIXES.md](REVIEW_FIXES.md)。原始 MVP 验证记录继续保留在 `VALIDATION.md`。
+第一阶段真实 Train 差分局部闭环见 [TELESCOPING_PHASE1.md](TELESCOPING_PHASE1.md)。此前四项修复记录见 [REVIEW_FIXES.md](REVIEW_FIXES.md)，原始 MVP 验证记录保留在 `VALIDATION.md`。
 
-本轮实现范围是状态管理、增量候选图、每轮一个动作、独立局部检查、严格受限的原题验收、失败恢复和留档。**尚未实现一般 Train 原题到局部 CAS 输入的形式化前端，也没有接通通用 LLM 自动证明。**
+当前支持一种窄结构的真实 Train 前端：任意 Field 上、范围为 `range(n+1)` 的 `q^j * gaussian q (m+j) m` 求和。它调用真实 q-Gosper 核心，将受支持的符号候选回译为无除法局部差分命题，经真实 Lean 检查后加入 C。**原题的有限求和与端点连接仍开放；一般 Train 前端与通用 LLM 自动证明尚未实现。**
 
 ## 运行
 
@@ -20,10 +20,13 @@ python3 -m agent_v2.cli core-demo \
 
 python3 -m agent_v2.cli run \
   --identity FQI-SRC-AP-3.3.9 --method telescoping \
-  --selector rule --max-steps 1 --seconds 30 \
+  --selector rule --max-steps 1 --seconds 600 \
   --output-root agent_v2/generated
 
 python3 -m agent_v2.cli resume --run-dir agent_v2/generated/实际运行目录
+
+# 独立验收：真实 Train CLI、恢复重验和错误证明负例
+python3 -m agent_v2.tests.telescoping_smoke
 ```
 
 每次新运行建立独立目录。`--output-root` 可指定默认目录之外的位置，恢复时将该次运行目录传给 `resume --run-dir` 即可；路径仍拒绝 Test、符号链接和父路径穿越。CLI 的 `resume` 只接收固定 Train 清单绑定的正式状态，不能用于无原命题的 `core-demo`。断点恢复不自动追加预算。
@@ -41,7 +44,7 @@ python3 -m agent_v2.cli resume --run-dir agent_v2/generated/实际运行目录
 
 `core-demo` 实际调用独立 q-Gosper 核心，保存完整返回和实际成本。输入没有原始 Lean 定理，所以它是**非形式化适配器探针**：没有伪造的 G、Gamma 或空 O。符号 `constructed` 只映射为 `symbolic_constructed`；C 不增加，原题证明状态为 false。
 
-`run` 从固定 Train 清单读取所选原声明，核验原哈希并冻结快照，建立原目标义务和方法出口。按照放弃旧 Agent 的最新要求，已取消附件中的旧完整流程调用；新的方法边界在缺少形式化前端时明确返回 `formal_frontend_unavailable`。它不会偷偷恢复旧 `prove_*`、借用历史证明或换一道题。
+`run` 从固定 Train 清单读取所选原声明，核验哈希并冻结快照。前端完整匹配受支持语法、类型、binder 和有限范围，保存原 Lean 对象与 CAS 对象的映射；不匹配的数学结构返回 `not_applicable`。形式化输入缺失或 Init-only 输入保留 `formal_frontend_unavailable` 边界。`constructed` 只是符号候选；无法回译时记录 `translation_pending` 且 C 不增加。支持的局部候选通过真实 Lean 后报告 `partial_lean_verified`，原题仍开放，运行以 `incomplete` 结束。
 
 ## 状态和正确性
 
@@ -51,7 +54,7 @@ python3 -m agent_v2.cli resume --run-dir agent_v2/generated/实际运行目录
 
 局部检查拒绝候选时，原义务保持开放。连接错误会回滚 r/O/连接变更，同时保留可独立验证的成果。O 为空后，还要从已验依赖组装证明并调用独立原题验收；拒绝或异常都会重开原目标，不能输出证明成功。
 
-当前新的 `LeanChecker` 只支持闭合的 Init 命题和受限纯证明项，使用固定 Lean 执行实际类型与公理审计；默认不导入 Benchmark 或 Mathlib。原题接口仅接受精确的 Init 单定理模板，绑定原文件、快照、定理名、类型和原上下文。一般 Train 声明不在支持范围内，明确拒绝，绝不降格成局部命题验收。
+`LeanChecker` 保留原有 Init 检查路径，并新增受控望远镜检查配置。该配置从冻结源独立重算预期局部命题，保留任意 universe 的 Field 参数及全部原假设，只加载固定基础数学依赖，重新编译基础模块和候选，核对实际导入闭包、源码、编译产物和公理。候选不能指定 import 或任意 tactic；不导入原题 Statements 模块。原题终验接口仍仅接受精确的 Init 单定理模板，一般 Train 完整证明验收不在本阶段范围内。
 
 ## Graph 和选择
 
@@ -80,8 +83,10 @@ Jev 只有经校验的可注入协议，没有外部服务调用；无效 ID、�
 | `executor.py` | 单动作适配、C/O 更新、可重建不变量、证明组装 |
 | `loop.py`、`recovery.py` | 循环、恢复、重复抑制、停止原因 |
 | `cas_adapter.py`、`process.py` | 独立数学核心、超时及后代进程清理 |
+| `formal_frontend.py`、`telescoping_translation.py` | 窄结构类型化前端、CAS 映射、无除法局部证书回译 |
 | `lean_checker.py`、`lean/PartialCheck.lean` | 新局部验证和独立原题验收 |
+| `math_lean_profile.py`、`lean/TelescopingCheck.lean` | 真实 Train 局部命题的固定依赖编译与多态公理审计 |
 | `llm_adapter.py` | 禁用的 LLM 和空 Library 边界 |
 | `cli.py` | 固定生产入口、Train 绑定与退出码 |
 
-下一阶段应先实现保留原域与上下文的形式化前端，以及至少一种 CAS 证书到 Lean 局部命题的真实桥接，再扩展 Graph 和生成式选择。当前测试不能解释为数学方法成功率提升。
+下一步仍需补齐局部差分到有限求和、端点及原题的已验证连接。本阶段没有自动扩图、其他 CAS 方法或网络模型调用；单题局部验收不能解释为完整原题成功或数学方法成功率提升。

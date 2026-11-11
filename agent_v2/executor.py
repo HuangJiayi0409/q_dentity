@@ -118,7 +118,7 @@ def verify_and_update(state, action, result, checker, context):
         if remaining <= 0:
             diagnostics.append({'code': 'verification_budget_exhausted'})
             break
-        check_context = dict(context, seconds=remaining,
+        check_context = dict(context, seconds=remaining, source=state.G.to_dict(),
             attempt_dir=str(Path(context['attempt_dir']) / 'lean' / ('candidate-' + str(len(diagnostics)))),
             approved_certificates={key: value.to_dict() for key, value in certificates.items()})
         try:

@@ -10,6 +10,7 @@ import time
 
 from .models import Artifact, Budget, ContractError, Cost, initial_state
 from .storage import IntegrityError, RunStore, guard_path, load_train, sha256_file
+from .loop import ReplayFailure
 
 REPOSITORY = Path(__file__).resolve().parents[1]
 GENERATED = REPOSITORY / 'agent_v2/generated'
@@ -73,6 +74,19 @@ def runtime_dependencies():
     return tuple(Artifact(str(path), sha256_file(path)) for path in paths)
 
 
+def telescoping_dependencies():
+    """Freeze the original meaning of the selected mathematical profile."""
+    names = [
+        'benchmark/lean/Benchmark/Definitions.lean',
+        'benchmark/lean/Benchmark/Auxiliary.lean',
+        'benchmark/lean/Benchmark/Gaussian.lean',
+        'finite_product_framework/p1/lean/GaussianRules.lean',
+        'benchmark/lean/lean-toolchain', 'benchmark/lean/lakefile.toml',
+        'project/lake-manifest.json', 'project/lakefile.toml', 'project/lean-toolchain',
+    ]
+    return tuple(Artifact(str(REPOSITORY / name), sha256_file(REPOSITORY / name)) for name in names)
+
+
 def core_demo(args, store):
     from .cas_adapter import CoreAdapter
     from .executor import normalize_result
@@ -115,11 +129,18 @@ def train_run(args, store):
     from .loop import run
     source = load_train(args.identity, store, REPOSITORY)
     source = replace(source, dependencies=source.dependencies + runtime_dependencies())
+    from .formal_frontend import analyze_source
+    frontend = analyze_source(source.to_dict(), run_root=store.root)
+    if frontend['status'] == 'applicable':
+        source = replace(source, proposition=frontend['original_proposition'],
+                         dependencies=source.dependencies + telescoping_dependencies())
+        frontend = analyze_source(source.to_dict(), run_root=store.root)
+    store.write_json('frontend.json', frontend)
     state, representation = initial_state(source, Budget(args.seconds, args.max_steps))
     graph = Graph(source.sha256)
     graph.add_node(representation)
     graph.add_outlet(Outlet('telescoping', representation.id, 'CAS', 'method',
-        {'method': args.method, 'seconds': args.seconds}, ('lean_source',),
+        {'method': args.method, 'seconds': args.seconds}, ('lean_source', 'closed_prop'),
         provenance=('new_v2_method_contract',)))
     executor, checker = _production()
     return run(state, graph, store, executor, checker).status
@@ -153,6 +174,13 @@ def main(argv=None):
             root = _explicit_directory(args.output_root)
             store = RunStore.create(root)
             status = core_demo(args, store) if args.command == 'core-demo' else train_run(args, store)
+    except ReplayFailure as error:
+        status = error.status
+        store = RunStore(error.run_dir)
+        store.write_json('error.json', {'schema_version': 1, 'status': status,
+            'code': error.code, 'message': str(error), 'original_identity_proved': False})
+        print(json.dumps({'status': status, 'code': error.code, 'message': str(error)},
+                         ensure_ascii=False), file=sys.stderr)
     except (IntegrityError, ContractError, ValueError, KeyError, TypeError) as error:
         status = 'integrity_error'
         if store:

@@ -1,9 +1,10 @@
 """Independent, fail-closed Lean certification for the new v2 agent.
 
-This MVP supports only closed Init propositions and a small pure term language.
-It never imports benchmark modules, old agent checkers, or candidate-provided
-imports. Original acceptance supports only ``init_original_template`` sources;
-other source layouts remain explicitly unsupported.
+Closed Init propositions retain their small pure term language. A separate
+fixed telescoping profile verifies supported Train local certificates in their
+original polymorphic context. Neither path permits candidate-provided imports.
+Original acceptance supports only ``init_original_template`` sources; other
+source layouts remain explicitly unsupported.
 """
 from __future__ import annotations
 
@@ -237,6 +238,11 @@ class LeanChecker:
             if candidate['dependencies']:
                 return _result(start, False, 'environment_blocked', 'partial', 'unsupported_dependencies',
                                'This checker requires a self-contained proof term.')
+            if context.get('source') is not None:
+                from .math_lean_profile import check_train_partial
+                checked = check_train_partial(self, candidate, context, start)
+                if checked is not None:
+                    return checked
             return self._verify(candidate, context, start, original=False)
         except TimeoutError as error:
             return _result(start, False, 'budget_exhausted', 'partial', 'integrity_check_timeout', str(error))

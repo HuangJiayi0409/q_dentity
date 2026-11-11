@@ -11,6 +11,17 @@ from .storage import IntegrityError, guard_path, sha256_file, verify_source
 from .recovery import classify_stop
 
 
+class ReplayFailure(IntegrityError):
+    """Resume refused with a preserved diagnostic category and saved run.
+
+    Inherits the existing refusal exception for API compatibility; callers
+    must use ``status`` to distinguish environment/budget/proof outcomes.
+    """
+    def __init__(self, status, code, message, run_dir):
+        super().__init__(message)
+        self.status, self.code, self.run_dir = status, code, str(run_dir)
+
+
 def checkpoint(store, state, graph, inflight=False):
     store.write_json('graph.json', graph.to_dict())
     store.save_checkpoint({'schema_version': 1, 'state': state.to_dict(),
@@ -27,6 +38,28 @@ def finish(store, state, graph, reason, diagnostics=()):
         'diagnostics': list(diagnostics), 'benchmark_split': 'Train_or_synthetic',
         'test_data_read': False})
     return state
+
+
+def _local_scope_outcome(before, updated, diagnostics, result):
+    """Classify a bounded local-proof attempt without implying parent closure."""
+    for status in ('integrity_error', 'budget_exhausted', 'environment_blocked'):
+        for diagnostic in diagnostics:
+            check = diagnostic.get('check', {})
+            if check.get('status') == status:
+                return status, check.get('sigma', {}).get('code') or status
+    for diagnostic in diagnostics:
+        if diagnostic.get('code') == 'partial_checker_exception':
+            return 'environment_blocked', 'partial_checker_exception'
+        if diagnostic.get('code') == 'verification_budget_exhausted':
+            return 'budget_exhausted', 'verification_budget_exhausted'
+        if diagnostic.get('code') in ('checker_binding_rejected', 'candidate_binding_rejected',
+                                      'invariant_update_rejected'):
+            return 'integrity_error', diagnostic['code']
+    if len(updated.C) > len(before.C):
+        return 'incomplete', 'local_certificate_verified_original_open'
+    if not result.C_partial:
+        return 'incomplete', result.sigma.code
+    return 'incomplete', 'local_verification_failed'
 
 
 def _final(state, graph, store, checker):
@@ -115,6 +148,13 @@ def run(state, graph, store, executor, checker, router=None):
             return finish(store, replace(state, status='budget_exhausted'), graph, 'wall_budget_exhausted')
         if not state.O:
             return _final(state, graph, store, checker)
+        if (state.C and state.attempts and
+                state.attempts[-1].code == 'local_certificate_verified_original_open'):
+            # This method's documented output is an independent local theorem.
+            # Fresh resume has already recompiled it; another identical CAS
+            # call cannot supply the missing finite-sum/endpoint connection.
+            return finish(store, replace(state, status='incomplete'), graph,
+                          'local_certificate_verified_original_open')
         if state.b.actions <= 0:
             return finish(store, replace(state, status='budget_exhausted'), graph, 'action_budget_exhausted')
         legal, reasons = graph.legal_candidates(state, llm_enabled=False)
@@ -168,14 +208,32 @@ def run(state, graph, store, executor, checker, router=None):
             store.write_json(f'{round_path}/raw_result.json', {})
         elapsed = time.monotonic() - started
         result = replace(result, cost=Cost(elapsed, 1))
+        local_stop = None
+        if result.raw_result.get('execution_scope') == 'local_certificate_only' and updated.O:
+            if result.status not in ('environment_blocked', 'integrity_error', 'budget_exhausted'):
+                if result.raw_result.get('remaining_work'):
+                    diagnostics.append({'code': 'original_connection_unavailable',
+                                        'remaining_work': result.raw_result['remaining_work']})
+                local_stop = _local_scope_outcome(before, updated, diagnostics, result)
+                if elapsed >= before.b.seconds and local_stop[0] != 'integrity_error':
+                    local_stop = ('budget_exhausted', 'wall_budget_exhausted')
+                result = replace(result, sigma=FailureSignature('partial', local_stop[1],
+                    'Local proof scope finished; original obligation remains open.',
+                    result.sigma.backend_status))
         state = replace(updated, round_index=n, b=before.b.charge(elapsed, 1),
-            attempts=before.attempts + (Attempt(fingerprint, action.id, result.sigma.code, n),))
+            attempts=before.attempts + (Attempt(fingerprint, action.id, result.sigma.code, n),),
+            status=local_stop[0] if local_stop else updated.status)
         if result.status != 'symbolic_constructed' and state.O:
             graph.mark_failure(action, result.sigma.code)
         store.write_json(f'{round_path}/result.json', result.to_dict())
-        store.write_json(f'{round_path}/verification.json', {'schema_version': 1, 'checks': diagnostics})
+        store.write_json(f'{round_path}/verification.json', {'schema_version': 1, 'checks': diagnostics,
+            'status': 'partial_lean_verified' if len(state.C) > len(before.C) else 'no_verified_progress',
+            'certificates_added': len(state.C) - len(before.C),
+            'open_obligations': [o.id for o in state.O], 'original_identity_proved': False})
         store.write_json(f'{round_path}/state_after.json', state.to_dict())
         checkpoint(store, state, graph)
+        if local_stop:
+            return finish(store, state, graph, local_stop[1], diagnostics)
         if result.status == 'environment_blocked':
             alternatives, _ = graph.legal_candidates(state, llm_enabled=False)
             if alternatives:
@@ -201,33 +259,65 @@ def resume(store, checker):
     validate_invariant(state)
     started = time.monotonic()
     replayed = []
+    diagnostics = []
     try:
         for index, cert in enumerate(state.C):
             remaining = state.b.seconds - (time.monotonic() - started)
             if remaining <= 0:
-                raise IntegrityError('insufficient budget to recheck checkpoint certificates')
+                raise ReplayFailure('budget_exhausted', 'checkpoint_replay_budget_exhausted',
+                                    'Insufficient budget to recheck checkpoint certificates.', store.root)
             for artifact in cert.evidence.get('artifacts', ()):
                 path = guard_path(artifact['path'], store.root)
                 if sha256_file(path) != artifact['sha256']:
                     raise IntegrityError('saved Lean artifact hash mismatch')
             candidate = Candidate(cert.id, cert.proposition, cert.proof_term, 'AgentV2Candidate.proof',
                                   cert.source_sha256, cert.dependencies)
+            check_dir = f'resume_checks/{time.time_ns()}-{index}'
             checked = checker.check_partial(_candidate_request(candidate),
-                {'source_sha256': state.G.sha256, 'run_dir': str(store.root),
-                 'attempt_dir': str(store.path(f'resume_checks/{time.time_ns()}-{index}')),
+                {'source_sha256': state.G.sha256, 'source': state.G.to_dict(), 'run_dir': str(store.root),
+                 'attempt_dir': str(store.path(check_dir)),
+                 'prior_evidence': cert.to_dict()['evidence'],
                  'seconds': remaining})
+            try:
+                canonical(checked)
+            except (TypeError, ValueError, RecursionError) as error:
+                raise ContractError('checkpoint checker returned non-JSON evidence') from error
+            if (not isinstance(checked, dict) or type(checked.get('accepted')) is not bool or
+                    checked.get('status') not in ('partial_lean_verified', 'incomplete',
+                        'environment_blocked', 'budget_exhausted', 'integrity_error')):
+                raise ContractError('checkpoint checker returned malformed status')
+            diagnostics.append({'candidate_id': cert.id, 'check': checked})
+            store.write_json(check_dir + '/result.json', checked)
+            verify_source(state.G, store.root)
             if checked.get('accepted') is not True or checked.get('status') != 'partial_lean_verified':
-                raise IntegrityError('checkpoint certificate failed fresh Lean replay')
+                status = checked['status']
+                if checked['accepted'] or status == 'partial_lean_verified':
+                    raise ContractError('checkpoint checker acceptance/status mismatch')
+                sigma = checked.get('sigma', {})
+                code = sigma.get('code') if isinstance(sigma, dict) else None
+                code = code if isinstance(code, str) and code else 'checkpoint_replay_failed'
+                raise ReplayFailure(status, code, 'Checkpoint certificate failed fresh Lean replay.', store.root)
             evidence = checked.get('evidence', {})
+            if not isinstance(evidence, dict):
+                raise ContractError('checkpoint checker returned malformed evidence')
             if evidence.get('source_sha256') != state.G.sha256 or evidence.get('proposition') != cert.proposition:
                 raise IntegrityError('fresh checkpoint evidence binding mismatch')
             replayed.append(replace(cert, evidence=evidence))
     except Exception as error:
-        state = replace(state, b=state.b.charge(time.monotonic() - started, 0), status='integrity_error')
+        if isinstance(error, ReplayFailure):
+            failure = error
+        else:
+            status = ('integrity_error' if isinstance(error, (IntegrityError, ContractError)) else
+                      'budget_exhausted' if isinstance(error, TimeoutError) else 'environment_blocked')
+            failure = ReplayFailure(status, 'checkpoint_replay_failed', str(error), store.root)
+        state = replace(state, b=state.b.charge(time.monotonic() - started, 0), status=failure.status)
         if not state.O:
             state = replace(state, O=(state.root,), links=())
-        finish(store, state, graph, 'checkpoint_replay_failed', [{'message': str(error)}])
-        raise IntegrityError('checkpoint replay refused; actual verification cost recorded') from error
+        diagnostics.append({'message': str(error), 'type': type(error).__name__})
+        finish(store, state, graph, failure.code, diagnostics)
+        if failure is error:
+            raise
+        raise failure from error
     state = replace(state, C=tuple(replayed), b=state.b.charge(time.monotonic() - started, 0), status='running')
     validate_invariant(state)
     checkpoint(store, state, graph)

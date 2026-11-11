@@ -25,3 +25,11 @@ Spec: `/home/hjy/.codex/attachments/836581c4-48c6-4734-84d9-c9a341e441bc/Codex_A
 - Related regressions cover fingerprint-matched duplicate history, non-JSON final results, guarded Train-manifest reads, and late final success budget classification. No old Agent, Test data, model API or mathematical algorithm changes.
 - Final review suite: 100/100 passed, exit 0, 29.462 seconds. Real Lean two-action synthetic smoke passed at generated/20261111T132031Z-bbb7b62156 (test-only handwritten candidate provider, not Train/model performance).
 - Current report: REVIEW_FIXES.md. New review evidence is separate from historical frozen manifests; old checkpoints bound to prior runtime hashes intentionally require a new run after code changes.
+# 第一阶段：真实 Train 差分／望远镜局部闭环（2026-11-11）
+
+按本阶段附件完成唯一选题 `FQI-SRC-AP-3.3.9` 的窄结构前端、真实 q-Gosper、受控无除法回译、真实 Lean 多态命题与公理／依赖审计，以及生产 CLI 和恢复重验。结果是局部成功：C 从 0 到 1，O 保持原题，`incomplete`，没有原题终验成功。
+
+修改前 100 项通过；最终 144/144，0 失败、0 跳过，115.037 秒。独立正式验收脚本完成真实 CLI、恢复重编译及 `by rfl` 真实拒绝，退出码 0；32 个源码／测试／驱动文件冻结前后相同。独立审阅发现并修复恢复错误类别丢失及高优先级 Lean 对象遮蔽，最终无未解决 Important。原数学核心 18 个已记录文件哈希保持一致；未读 benchmark Test、未用模型或旧 Agent/workflow。
+
+详细原声明、精确局部命题、命令、结果和边界见 [TELESCOPING_PHASE1.md](TELESCOPING_PHASE1.md)。普通运行证据仅保留于 `generated/telescoping_phase1_20261111/`。本阶段没有完整求和／端点连接、一般 Train 完整验收或自动扩图。
+

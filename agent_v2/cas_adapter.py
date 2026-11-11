@@ -182,17 +182,83 @@ class CoreAdapter:
 
 
 class MethodAdapter:
-    """Explicit unavailable boundary for complete original-theorem methods."""
+    """One bounded Train method: frontend -> real core -> unverified local term.
+
+    Only the controller's independent Lean checker may turn these candidates
+    into certificates. This adapter never closes an original obligation.
+    """
 
     def execute(self, identity, method, source, attempt_dir, seconds) -> dict:
         started = time.monotonic()
         try:
             validate_seconds(seconds)
             attempt = prepare_attempt(attempt_dir)
+            if any(attempt.iterdir()):
+                raise ValueError('method attempt directory must be empty')
             write_json(attempt / "method_request.json", {"identity": identity, "method": method,
                         "source": source, "seconds": seconds}, attempt)
-            return adapter_result(started, "environment_blocked", "formal_frontend_unavailable",
-                                  "当前仅接入独立局部符号核心；原题到局部表示的前端及 Lean 证明桥尚未实现。",
-                                  attempt=attempt)
+            # Keep the existing explicit boundary for callers without a formal
+            # Benchmark source (including the Init-only CLI unit fixtures).
+            if not source:
+                return adapter_result(started, 'environment_blocked', 'formal_frontend_unavailable',
+                                      'A frozen Benchmark mathematical source is required.', attempt=attempt)
+            from .models import Source
+            from .storage import verify_source
+            from .formal_frontend import analyze_source
+            from .telescoping_translation import translate_candidate
+            bound = Source.from_dict(source)
+            if identity != bound.identity or method != 'telescoping':
+                raise ValueError('method/identity does not match the frozen source')
+            run_root = Path(bound.snapshot_path).parent.parent
+            verify_source(bound, run_root)
+            frontend = analyze_source(source, run_root=run_root)
+            write_json(attempt / 'frontend.json', frontend, attempt)
+            if frontend['status'] != 'applicable':
+                if bound.declaration.lstrip().startswith('import Init\n'):
+                    return adapter_result(started, 'environment_blocked', 'formal_frontend_unavailable',
+                        'This CAS profile requires a supported Benchmark mathematical source.',
+                        raw_result={'frontend': frontend}, attempt=attempt)
+                return adapter_result(started, 'incomplete', 'not_applicable',
+                    'The frozen theorem is outside the supported telescoping structural pattern.',
+                    raw_result={'frontend': frontend}, attempt=attempt)
+            request = frontend['core_request']
+            write_json(attempt / 'mapping.json', frontend['mapping'], attempt)
+            write_json(attempt / 'cas_request.json', request, attempt)
+            remaining = seconds - (time.monotonic() - started)
+            if remaining <= 0:
+                return adapter_result(started, 'budget_exhausted', 'timeout',
+                                      'Frontend exhausted the action budget.', attempt=attempt)
+            core = CoreAdapter().execute(request, attempt / 'core', remaining)
+            write_json(attempt / 'cas_return.json', core, attempt)
+            verify_source(bound, run_root)
+            raw = {'frontend_profile': frontend['profile'], 'core': core['raw_result']}
+            if core['status'] != 'symbolic_constructed':
+                return adapter_result(started, core['status'], core['sigma']['code'],
+                    core['sigma']['message'], stage=core['sigma']['stage'],
+                    backend_status=core['sigma'].get('backend_status'), raw_result=raw,
+                    diagnostics=core.get('diagnostics', []), attempt=attempt)
+            translation = translate_candidate(frontend, core['raw_result'])
+            write_json(attempt / 'translation.json', translation, attempt)
+            raw.update(translation=translation, execution_scope='local_certificate_only',
+                remaining_work={
+                    'formal_obligations_exported': False,
+                    'open_obligation': 'original',
+                    'explanation': [
+                        '尚未提供将逐项差分等式提升到原有限范围求和的已验证连接。',
+                        '尚未证明零端点以及末端点与原题左端的一致性。',
+                        '尚未组装并独立验收未经修改的原命题。',
+                    ]})
+            if translation['status'] != 'candidate_ready':
+                return adapter_result(started, 'symbolic_constructed', 'translation_pending',
+                    'The symbolic result has no supported original-domain Lean translation.',
+                    stage='translation', backend_status='constructed', raw_result=raw, attempt=attempt)
+            candidate = translation['candidate']
+            write_json(attempt / 'candidate.json', candidate, attempt)
+            verify_source(bound, run_root)
+            outcome = adapter_result(started, 'symbolic_constructed', 'local_candidate_ready',
+                'A source-bound local difference candidate awaits independent Lean verification; the original remains open.',
+                stage='translation', backend_status='constructed', raw_result=raw, attempt=attempt)
+            outcome['C_partial'] = [candidate]
+            return outcome
         except (OSError, ValueError, TypeError) as exc:
             return adapter_result(started, "integrity_error", "artifact_integrity", str(exc))
