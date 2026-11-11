@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "baseline_files": [
+    {
+      "path": "README.md",
+      "unchanged": true
+    },
+    {
+      "path": "benchmark/README.md",
+      "unchanged": true
+    },
+    {
+      "path": "finite_product_framework/README.md",
+      "unchanged": true
+    },
+    {
+      "path": "finite_product_framework/prove.py",
+      "unchanged": true
+    },
+    {
+      "path": "finite_product_framework/prove_auto.py",
+      "unchanged": true
+    },
+    {
+      "path": "finite_product_framework/workflow/contracts.py",
+      "unchanged": true
+    },
+    {
+      "path": "finite_product_framework/workflow/engine.py",
+      "unchanged": true
+    },
+    {
+      "path": "finite_product_framework/workflow/worker.py",
+      "unchanged": true
+    },
+    {
+      "path": "finite_product_framework/solve_core.py",
+      "unchanged": true
+    },
+    {
+      "path": "finite_product_framework/p1/core.py",
+      "unchanged": true
+    },
+    {
+      "path": "finite_product_framework/p1/QGOSPER.md",
+      "unchanged": true
+    },
+    {
+      "path": "finite_product_framework/math_library/README.txt",
+      "unchanged": true
+    },
+    {
+      "path": "benchmark/lean/lakefile.toml",
+      "unchanged": true
+    },
+    {
+      "path": "benchmark/lean/lean-toolchain",
+      "unchanged": true
+    }
+  ],
+  "all_baseline_files_unchanged": true,
+  "old_agent_directory_exists": true,
+  "old_agent_directory_empty": true,
+  "test_problem_data_accessed": false
+}

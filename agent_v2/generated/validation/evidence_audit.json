@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "synthetic_scope_only": true,
+  "certificates": [
+    {
+      "id": "bridge",
+      "proposition": "(True) → (True)",
+      "axioms": [],
+      "toolchain_dependencies": 5213,
+      "artifact_hashes_verified": true
+    },
+    {
+      "id": "leaf_proof",
+      "proposition": "True",
+      "axioms": [],
+      "toolchain_dependencies": 5213,
+      "artifact_hashes_verified": true
+    }
+  ],
+  "final_theorem": "Synthetic.statement",
+  "final_axioms": [],
+  "core_source_hashes_checked": 18,
+  "original_Train_proved": false,
+  "test_data_read": false
+}

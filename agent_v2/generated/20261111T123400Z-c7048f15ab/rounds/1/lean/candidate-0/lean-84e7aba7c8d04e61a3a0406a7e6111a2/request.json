@@ -1,0 +1,1 @@
+{"dependencies": [], "id": "bridge", "proof_term": "fun h => h", "proposition": "(True) → (True)", "source_sha256": "685e27cb2af42d9e4f5f7c44266dd83f23c2a18535c67315acef1949b742b15d", "theorem": "AgentV2Candidate.proof"}

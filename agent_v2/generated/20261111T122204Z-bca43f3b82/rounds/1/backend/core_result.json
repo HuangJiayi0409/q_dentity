@@ -1,0 +1,85 @@
+{
+  "status": "constructed",
+  "solver": "q_gosper",
+  "normalized_input": {
+    "k_shift": "(X*a*q - q)/(X*q - 1)"
+  },
+  "result": {
+    "algorithm": "q-Gosper",
+    "coefficient_domain": "QQ(a,q)",
+    "down_ratio": "(X*a - q)/(X - 1)",
+    "normal_form": {
+      "dispersion": [],
+      "updates": [],
+      "P": "1",
+      "A": "X*a - q",
+      "B": "X - 1",
+      "normal_form_residual": "0",
+      "remaining_dispersion": []
+    },
+    "laurent_bounds": {
+      "lower": -1,
+      "upper": -1,
+      "lower_resonance": -1,
+      "upper_resonance": null,
+      "source": "q-Gosper Laurent leading/trailing coefficient bounds"
+    },
+    "linear_system": {
+      "unknowns": 1,
+      "equations": 1
+    },
+    "status": "constructed",
+    "laurent_solution": "1/(X*a*q - X*q)",
+    "antidifference_ratio": "(X - 1)/(X*a - X)",
+    "rational_residual": "0",
+    "certificate": "(X - 1)/(X*a - X)"
+  },
+  "certificate_term_expression": "q**k*(q**k - 1)*Poch(a, q, k)/((a*q**k - q**k)*Poch(q, q, k))",
+  "domain": {
+    "coefficient_field": "QQ(q, Q, other independent parameters)(X)",
+    "base": "q is an indeterminate; characteristic zero",
+    "normalized_input_denominators": [
+      "X*q - 1"
+    ],
+    "output_denominators": [
+      "X*(a - 1)"
+    ],
+    "specialization_policy": "generic rational-function result only; special parameter values not checked",
+    "negative_result_scope": "specified rational shift field and ansatz; never impossibility of the original identity"
+  },
+  "schema_version": 1,
+  "request_sha256": "3086896de4baaec4c77b174ea2a33442c1fbf9a63fbfcf60c28eb0559cae3f08",
+  "elapsed_seconds": 0.353561,
+  "budget": {
+    "seconds": 29.999365147203207,
+    "max_unknowns": 10000,
+    "max_normal_form_degree": 10000,
+    "max_order": null,
+    "max_states": 128
+  },
+  "source_sha256": {
+    "core.py": "9465d5b7c62b6cdc7543001d2ec22af8c4f8dfabeb1eff5c879aeb488a87b25e",
+    "qgosper.py": "ec3f0329814251c701221d82af6d117424597e9d48a45afd73227169e384f70d",
+    "qparameterized.py": "caad344d1f8acaca27c546b00b0edff1b9ed9dbaf8916a66c34228151de24df0",
+    "zeilberger.py": "81b5f7262fb9e4d154f78e673502158d7fe8301af2659d4277efd5f62239f7a9",
+    "expressions.py": "5158e915a5eed60a4708e3f317b8ff6b43090783e840e04f3e3e2b40f1b9a864",
+    "ore.py": "621c63ba9e9db246128ca3a44b36c75619133f8238dedf47618bdb7f9e91394d",
+    "ore_core.py": "921c7398acf45fef54c4c969f389c5bf62bb2d26236694018947b3ed19bedef4",
+    "qjoint.py": "790f7effc7f8279b457315935aa466489d1dc769d7757eae4055d14bbdf4b283",
+    "qrational_system.py": "eb55f18d542e1d265fe4dca3154ea75556e0be98dce33839c7aba7ec4f8b701e",
+    "qholonomic.py": "692002441dae18e5f7502747821ca6213c804e52980dcf760eb5c7b2293e1892",
+    "qdifference.py": "712977e3e71da738e24e7a2d28e6368b53c0fea6cc6142133cb6f86728972c07",
+    "qpisigma.py": "8a6ba5a361386d8dc15649cc71aac7db55582dd0b8a00e73fae78e674a2bd86d",
+    "qfinite.py": "58deb72312555401ee9d702e6db5d00da70bdcce7d90caaadb5ee5d36244092e",
+    "qpisigma_system.py": "c77c5501101a1849b8e14323e1db51289892c464c6d0b33a1f5801ed5986b11a",
+    "qplde.py": "fdef856c97f3efb65e360cc57ca9d1950f2313b560ab2c00c151f15ee83c51da",
+    "qnumberfield.py": "bae596c2d897692bdfab87699921419f1ddc093864c173f791fc778c2065a730",
+    "qconstant.py": "460869f1736e604d9490e0b781acdd50eec9e55f51eb7492303fd999cba090fe",
+    "qomega.py": "1665dbe5371efa711aea2d24d31252d5ce9ac1b5814daea9e85c23a535b7109c"
+  },
+  "sympy_version": "1.14.0",
+  "python_version": "3.10.12",
+  "output_scope": "local symbolic certificate; finite-sum boundaries and initial values not discharged",
+  "original_identity_proved": false,
+  "benchmark_files_read": 0
+}

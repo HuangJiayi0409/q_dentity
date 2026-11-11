@@ -1,0 +1,1 @@
+Initial diagnostics were moved from agent_v2/lean/validation_probe to initial_probe. Historical strace/source paths retain the original absolute locations. These are environment diagnostics, not accepted certificate artifacts; no original proof acceptance is claimed for these probes.

@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/solve_core.py",
+    "--input",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/20261111T122204Z-bca43f3b82/rounds/1/backend/core_request.json",
+    "--output",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/20261111T122204Z-bca43f3b82/rounds/1/backend/core_result.json",
+    "--seconds",
+    "29.999365147203207",
+    "--max-unknowns",
+    "10000",
+    "--max-normal-form-degree",
+    "10000",
+    "--max-states",
+    "128"
+  ],
+  "cwd": "/home/hjy/Project/finite_q_identity_catalog",
+  "deadline": 2524048.937315354,
+  "report_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/20261111T122204Z-bca43f3b82/rounds/1/backend/stdout.txt.process_result.json",
+  "stderr_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/20261111T122204Z-bca43f3b82/rounds/1/backend/stderr.txt",
+  "stdout_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/20261111T122204Z-bca43f3b82/rounds/1/backend/stdout.txt"
+}

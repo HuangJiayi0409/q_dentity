@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "git_available": false,
+  "requested_interfaces": {
+    "README.md": {
+      "exists": true,
+      "sha256": "332c7f93a16e69dbf6da5556a097d867258f658faaa0dcb7349dbe0c23e9ead6"
+    },
+    "benchmark/README.md": {
+      "exists": true,
+      "sha256": "891ebb144b455f5e72d1aaa4605e9352580cb6fa2a1dc2e2e872826e469dd1a0"
+    },
+    "finite_product_framework/README.md": {
+      "exists": true,
+      "sha256": "c3ac360d28bd577e87e4c1373385d17d992d30f455c917f520b28fd6caf140ab"
+    },
+    "finite_product_framework/prove.py": {
+      "exists": false,
+      "sha256": null
+    },
+    "finite_product_framework/prove_auto.py": {
+      "exists": false,
+      "sha256": null
+    },
+    "finite_product_framework/workflow/contracts.py": {
+      "exists": false,
+      "sha256": null
+    },
+    "finite_product_framework/workflow/engine.py": {
+      "exists": false,
+      "sha256": null
+    },
+    "finite_product_framework/workflow/worker.py": {
+      "exists": false,
+      "sha256": null
+    },
+    "finite_product_framework/solve_core.py": {
+      "exists": true,
+      "sha256": "2372da28e8c6809b061765ac90bba70cf27e1e184b4ed63f148f83e52a69862b"
+    },
+    "finite_product_framework/p1/core.py": {
+      "exists": true,
+      "sha256": "9465d5b7c62b6cdc7543001d2ec22af8c4f8dfabeb1eff5c879aeb488a87b25e"
+    },
+    "finite_product_framework/p1/QGOSPER.md": {
+      "exists": true,
+      "sha256": "2890a7bd4dbdab27d924be5171e0952fa8bec3856059e25d84ad7a1659a3ba81"
+    },
+    "finite_product_framework/math_library/README.txt": {
+      "exists": true,
+      "sha256": "4887b8db6af462cb8e48846ed62f3ddfff2d3250fa4cc6b3945ef255c0a5cef7"
+    },
+    "benchmark/lean/lakefile.toml": {
+      "exists": true,
+      "sha256": "ec336e04a32b47099fbd1f64f744bf1b9795f46862910bcf56612b3f58b8af33"
+    },
+    "benchmark/lean/lean-toolchain": {
+      "exists": true,
+      "sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7"
+    }
+  },
+  "test_problem_data_accessed": false
+}

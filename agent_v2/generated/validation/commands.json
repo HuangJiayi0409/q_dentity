@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "commands": [
+    {
+      "command": "python3 -m unittest discover -s agent_v2/tests -v",
+      "exit_code": 0,
+      "tests": 67,
+      "passed": 67,
+      "seconds": 28.398,
+      "scope": "new package only; includes real CAS and Lean checks"
+    },
+    {
+      "command": "python3 -m agent_v2.cli core-demo --input finite_product_framework/p1/examples/core_qgosper.json --seconds 30 --output-root agent_v2/generated",
+      "exit_code": 2,
+      "schema_version": 1,
+      "status": "incomplete",
+      "original_identity_proved": false,
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/20261111T122204Z-bca43f3b82"
+    },
+    {
+      "command": "python3 -m agent_v2.cli run --identity FQI-SRC-AP-3.3.9 --method telescoping --selector rule --max-steps 1 --seconds 30 --output-root agent_v2/generated",
+      "exit_code": 3,
+      "schema_version": 1,
+      "status": "environment_blocked",
+      "original_identity_proved": false,
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/20261111T123343Z-61d918ffb4"
+    },
+    {
+      "command": "python3 -m agent_v2.tests.real_smoke",
+      "exit_code": 0,
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/20261111T123400Z-c7048f15ab",
+      "status": "original_theorem_proved",
+      "scope": "synthetic_test_only",
+      "rounds": 2
+    }
+  ]
+}

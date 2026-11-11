@@ -1,0 +1,198 @@
+"""New adapters over the independent symbolic core; no retired agent imports."""
+from __future__ import annotations
+
+import hashlib
+import json
+from pathlib import Path
+import re
+import sys
+import time
+
+from .process import (collect_artifacts, guard_artifact, prepare_attempt,
+                      run_process, validate_seconds, write_json)
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+CORE_ENTRY = PROJECT_ROOT / "finite_product_framework" / "solve_core.py"
+SUPPORTED_CORE_SOLVERS = frozenset({"q_gosper", "q_zeilberger", "parameterized_q_gosper"})
+
+
+def adapter_result(started, status, code, message, *, stage="adapter", backend_status=None,
+                   raw_result=None, diagnostics=None, attempt=None):
+    artifacts = []
+    if attempt is not None:
+        artifacts = collect_artifacts(attempt)
+    return {"schema_version": 1, "status": status, "C_partial": [], "O_res": [],
+            "sigma": {"stage": stage, "code": code, "message": message,
+                      "backend_status": backend_status},
+            "cost": {"wall_seconds": time.monotonic() - started, "actions": 1},
+            "raw_result": raw_result if raw_result is not None else {},
+            "artifacts": artifacts, "diagnostics": diagnostics or [],
+            "original_identity_proved": False}
+
+
+def _tree(value, summand=False, depth=0, count=None):
+    if count is None:
+        count = [0]
+    count[0] += 1
+    if depth > 64 or count[0] > 10000:
+        raise ValueError("symbolic input exceeds structural limits")
+    if type(value) is int:
+        return
+    if isinstance(value, str):
+        pattern = r"[a-z][a-z0-9_]*" if summand else r"[A-Za-z][A-Za-z0-9_]*"
+        if not re.fullmatch(pattern, value) or (not summand and value in {"n", "k"}):
+            raise ValueError("invalid symbolic atom; rational shifts use Q and X")
+        return
+    if not isinstance(value, list) or not value or not isinstance(value[0], str):
+        raise ValueError("symbolic expressions must be typed arrays, integers or symbols")
+    op, args = value[0], value[1:]
+    arities = {"sub": 2, "div": 2, "pow": 2}
+    arities.update({"poch": 3, "fall": 4, "gaussian": 3} if summand else {"neg": 1})
+    if op in {"add", "mul"}:
+        if not args:
+            raise ValueError("add and mul require arguments")
+    elif op not in arities or len(args) != arities[op]:
+        raise ValueError("unsupported operator or wrong arity: " + op)
+    if not summand and op == "pow" and type(args[1]) is not int:
+        raise ValueError("rational powers require a literal integer exponent")
+    for arg in args:
+        _tree(arg, summand, depth + 1, count)
+
+
+def validate_request(request):
+    if not isinstance(request, dict) or set(request) != {"schema_version", "solver", "input"}:
+        raise ValueError("core request requires exactly schema_version, solver and input")
+    if type(request["schema_version"]) is not int or request["schema_version"] != 1:
+        raise ValueError("schema_version must be integer 1")
+    solver, data = request["solver"], request["input"]
+    if not isinstance(solver, str) or solver not in SUPPORTED_CORE_SOLVERS:
+        raise ValueError("this MVP supports q_gosper, q_zeilberger and parameterized_q_gosper")
+    if not isinstance(data, dict):
+        raise ValueError("input must be an object")
+    keys = set(data)
+    if solver in {"q_gosper", "q_zeilberger"} and keys == {"summand"}:
+        _tree(data["summand"], summand=True)
+        return
+    expected = {"k_shift"}
+    if solver == "q_zeilberger":
+        expected.add("n_shift")
+    elif solver == "parameterized_q_gosper":
+        expected.add("rhs_basis")
+    if keys != expected:
+        raise ValueError("input fields do not match the selected independent solver")
+    for key, value in data.items():
+        if key == "rhs_basis":
+            if not isinstance(value, list) or not value:
+                raise ValueError("rhs_basis must be a nonempty expression list")
+            for tree in value:
+                _tree(tree)
+        else:
+            _tree(value)
+
+
+class CoreAdapter:
+    """Run a local symbolic construction without treating it as a Lean proof."""
+
+    def execute(self, request: dict, attempt_dir: Path, seconds: float) -> dict:
+        started = time.monotonic()
+        attempt = None
+        raw = {}
+        try:
+            attempt = prepare_attempt(attempt_dir)
+            # A fresh directory prevents stale results from being accepted.
+            if any(attempt.iterdir()):
+                raise ValueError("core attempt directory must be empty")
+            try:
+                validate_seconds(seconds)
+                validate_request(request)
+            except (ValueError, TypeError) as exc:
+                write_json(attempt / "rejection.json", {"code": "input_mismatch", "message": str(exc)}, attempt)
+                return adapter_result(started, "incomplete", "input_mismatch", str(exc), attempt=attempt)
+            write_json(attempt / "core_request.json", request, attempt)
+            if not CORE_ENTRY.is_file():
+                return adapter_result(started, "environment_blocked", "core_unavailable",
+                                      "独立符号计算入口不存在。", attempt=attempt)
+            remaining = seconds - (time.monotonic() - started)
+            if remaining <= 0:
+                return adapter_result(started, "budget_exhausted", "timeout", "动作预算已耗尽。", attempt=attempt)
+            output = guard_artifact(attempt / "core_result.json", attempt)
+            command = [sys.executable, "-B", str(CORE_ENTRY), "--input", str(attempt / "core_request.json"),
+                       "--output", str(output), "--seconds", str(remaining),
+                       "--max-unknowns", "10000", "--max-normal-form-degree", "10000",
+                       "--max-states", "128"]
+            process = run_process(command, PROJECT_ROOT, remaining,
+                                  attempt / "stdout.txt", attempt / "stderr.txt")
+            write_json(attempt / "process.json", process, attempt)
+            if process.get("cleanup_survivors"):
+                return adapter_result(started, "environment_blocked", "cleanup_failed",
+                                      "后端进程清理未完成。", diagnostics=[process], attempt=attempt)
+            if output.exists():
+                guard_artifact(output, attempt)
+                try:
+                    raw = json.loads(output.read_text(encoding="utf-8"))
+                except (ValueError, UnicodeError) as exc:
+                    return adapter_result(started, "integrity_error", "malformed_core_output", str(exc), attempt=attempt)
+                expected_hash = hashlib.sha256(json.dumps(request, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+                if (not isinstance(raw, dict) or type(raw.get("schema_version")) is not int or
+                        raw.get("schema_version") != 1 or raw.get("request_sha256") != expected_hash or
+                        ("solver" in raw and raw["solver"] != request["solver"]) or
+                        (raw.get("status") == "constructed" and raw.get("solver") != request["solver"]) or
+                        (raw.get("status") == "constructed" and not isinstance(raw.get("result"), dict)) or
+                        raw.get("original_identity_proved") is not False):
+                    return adapter_result(started, "integrity_error", "core_output_mismatch",
+                                          "后端输出版本、请求哈希或原题状态不符合局部核心契约。",
+                                          raw_result=raw if isinstance(raw, dict) else {"invalid_output": raw}, attempt=attempt)
+            if process.get("timed_out"):
+                return adapter_result(started, "budget_exhausted", "timeout", "局部计算达到墙钟预算。",
+                                      raw_result=raw, diagnostics=[process], attempt=attempt)
+            if process.get("environment_error"):
+                return adapter_result(started, "environment_blocked", "process_error",
+                                      str(process["environment_error"]), raw_result=raw, diagnostics=[process], attempt=attempt)
+            if not raw:
+                return adapter_result(started, "environment_blocked", "core_output_missing",
+                                      "独立核心未返回结构化结果；原始 stdout/stderr 已保留。",
+                                      diagnostics=[process], attempt=attempt)
+            status = raw.get("status")
+            if status == "constructed":
+                if process.get("returncode") != 0:
+                    return adapter_result(started, "integrity_error", "core_exit_mismatch",
+                                          "后端声称构造成功但进程异常退出。", raw_result=raw, attempt=attempt)
+                message = "已生成局部符号候选；尚无 Lean 转译与验证，不能计入已验证证书。"
+                return adapter_result(started, "symbolic_constructed", "translation_pending", message,
+                                      stage="translation", backend_status=status, raw_result=raw,
+                                      diagnostics=[{"code": "translation_pending", "message": message,
+                                                    "formal_obligations_exported": False}], attempt=attempt)
+            if status == "resource_exhausted":
+                code = "timeout" if "wall-clock" in str(raw.get("reason", "")) else "resource_exhausted"
+                mapped = "budget_exhausted"
+            elif status in {"implementation_error", "worker_failed"}:
+                code, mapped = status, "environment_blocked"
+            elif status in {"invalid_input", "unsupported_input", "unsupported_domain"}:
+                code, mapped = "input_mismatch", "incomplete"
+            elif status in {"no_solution_in_class", "no_relation_in_declared_basis", "search_exhausted"}:
+                code, mapped = "search_exhausted", "incomplete"
+            else:
+                code, mapped = "unknown_core_status", "integrity_error"
+            return adapter_result(started, mapped, code,
+                                  str(raw.get("reason") or raw.get("message") or status), stage="symbolic_core",
+                                  backend_status=status, raw_result=raw, attempt=attempt)
+        except (OSError, ValueError, TypeError) as exc:
+            # Do not hash or follow any rejected path while reporting rejection.
+            return adapter_result(started, "integrity_error", "artifact_integrity", str(exc), raw_result=raw)
+
+
+class MethodAdapter:
+    """Explicit unavailable boundary for complete original-theorem methods."""
+
+    def execute(self, identity, method, source, attempt_dir, seconds) -> dict:
+        started = time.monotonic()
+        try:
+            validate_seconds(seconds)
+            attempt = prepare_attempt(attempt_dir)
+            write_json(attempt / "method_request.json", {"identity": identity, "method": method,
+                        "source": source, "seconds": seconds}, attempt)
+            return adapter_result(started, "environment_blocked", "formal_frontend_unavailable",
+                                  "当前仅接入独立局部符号核心；原题到局部表示的前端及 Lean 证明桥尚未实现。",
+                                  attempt=attempt)
+        except (OSError, ValueError, TypeError) as exc:
+            return adapter_result(started, "integrity_error", "artifact_integrity", str(exc))

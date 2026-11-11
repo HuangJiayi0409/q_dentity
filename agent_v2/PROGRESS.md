@@ -1,0 +1,23 @@
+# Progress ledger — agent_v2 MVP
+
+Spec: `/home/hjy/.codex/attachments/836581c4-48c6-4734-84d9-c9a341e441bc/Codex_Agent_v2构建提示词.md`
+
+- User authorized direct implementation after the attachment was supplied.
+- Baseline: no usable Git repository; no branch/worktree can be created. All work is additive in `agent_v2/`, with dependency hashes and evidence retained.
+- Baseline: production workflow contracts/engine/worker/preprocessed and prove entrypoints are missing. Do not restore historical implementations or weaken strict original acceptance.
+- Local core CLI, mathematical methods, fixed Lean executable and Mathlib cache exist.
+- Core-demo is a non-formal adapter probe because its input contains no original Lean statement. It must record no verified C and never claim a closed formal O or original proof.
+- Plan saved at `docs/superpowers/plans/2026-11-11-agent-v2-mvp.md`.
+- User correction: abandon ALL old Agent code. No legacy adapter, workflow imports or restored accept_proof. Implement a new strict restricted checker, and report unsupported original translation honestly. Same Train demo remains selected; no substitution with a historical proof.
+- Models/storage, constructive proof links, incremental graph, one-action executor, rule/validated Jev boundary, recovery/checkpoint and CLI implemented. Independent symbolic core and disabled LLM/empty Library boundaries implemented.
+- Behavioral/adapter suite passed 49 tests before the last schema/fingerprint additions. Real symbolic core used in adapter tests with a separate small geometric input; test substitutes remain under tests.
+- Independent review found and regression-tested fixes for checkpoint commit interruption, unpaid failed resume checks, uncaught final-check exceptions, loss of earlier independent certificates, and fresh replay receipts incorrectly unlocking repeated actions.
+- First full development suite: 55 tests, exit 1, five real Lean assertions timed out (four test methods, one has two failing subcases). This development result is retained here, not counted as a successful verification.
+- Lean diagnosis: default startup/threads and broad imports were too costly in this environment; pinned one-thread execution with a narrow standard import closure passed actual kernel/axiom checks. Checker reviewer found dependency-freeze and output-symlink gaps; regressions and repairs were added.
+- Specified demo A ran once: generated/20261111T122204Z-bca43f3b82, symbolic_constructed, translation_pending, incomplete, exit 2, actual adapter cost 0.7777034579776227 seconds; no verified C and no invented formal O.
+- Baseline listed source hashes remain unchanged; old finite_product_framework/agent directory remains empty.
+- Final frozen package verification: `python3 -m unittest discover -s agent_v2/tests -v`, host, 67/67 passed, exit 0, 28.398 seconds; full log and command records saved under generated/validation/.
+- Specified Train B attempted once in the NEW framework: generated/20261111T123343Z-61d918ffb4, environment_blocked/formal_frontend_unavailable, exit 3; no old flow or original proof executed, original obligation remains open.
+- Synthetic two-action real-Lean integration passed: generated/20261111T123400Z-c7048f15ab, handwritten test-only candidate provider, verified implication bridge then leaf then independent exact original acceptance, exit 0. Not a Train result or model-effect claim.
+- Final evidence audit passed: original source, both proof-state invariants, local/final artifact hashes, each local check's 5,213 toolchain dependency records, and 18 independent symbolic core sources.
+- Delivery and limitations recorded in VALIDATION.md. Implementation stopped at the requested MVP boundary.

@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.olean
+*.olean.*
+*.ilean
+# Existing committed text evidence remains tracked; new runs stay local.
+generated/
