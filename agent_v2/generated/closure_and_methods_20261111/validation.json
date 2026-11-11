@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "baseline": {
+    "tests": 144,
+    "passed": 144,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 117.922
+  },
+  "final_tests": {
+    "tests": 216,
+    "passed": 216,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 467.915
+  },
+  "phase1_original_proved": true,
+  "phase2_recurrence_local_verified": true,
+  "recurrence_original_proved": false,
+  "capabilities": {
+    "L0": [
+      "product",
+      "noncommutative",
+      "combinatorial"
+    ],
+    "L1": [],
+    "L2": [
+      "coefficient",
+      "interpolation",
+      "difference_ring",
+      "kernel_transform",
+      "spectral",
+      "determinant",
+      "macmahon"
+    ],
+    "L3": [
+      "telescoping",
+      "recurrence"
+    ]
+  },
+  "old_smoke_passed": true,
+  "production_and_test_hashes_unchanged_during_acceptance": true,
+  "original_tests_unchanged": true,
+  "modified_files": [
+    "README.md",
+    "cas_adapter.py",
+    "cli.py",
+    "executor.py",
+    "graph.py",
+    "lean_checker.py",
+    "loop.py",
+    "math_lean_profile.py",
+    "recovery.py"
+  ],
+  "new_files": [
+    "METHOD_CAPABILITIES.md",
+    "TELESCOPING_CLOSURE.md",
+    "lean/OriginalTrainCheck.lean",
+    "method_registry.py",
+    "recurrence_adapter.py",
+    "recurrence_frontend.py",
+    "recurrence_lean_profile.py",
+    "recurrence_translation.py",
+    "symbolic_methods.py",
+    "symbolic_worker.py",
+    "telescoping_closure.py",
+    "tests/closure_smoke.py",
+    "tests/recurrence_smoke.py",
+    "tests/test_closure_checker.py",
+    "tests/test_closure_flow.py",
+    "tests/test_closure_math.py",
+    "tests/test_closure_review.py",
+    "tests/test_method_demo.py",
+    "tests/test_method_registry.py",
+    "tests/test_recurrence_checker.py",
+    "tests/test_recurrence_frontend.py",
+    "tests/test_recurrence_method.py",
+    "tests/test_recurrence_review.py",
+    "tests/test_recurrence_translation.py",
+    "tests/test_registry_review.py",
+    "tests/test_symbolic_methods.py",
+    "tests/test_symbolic_review.py",
+    "CLOSURE_AND_CAS_REPORT.md"
+  ],
+  "deleted_files": [],
+  "symbolic_validation": {
+    "methods": 10,
+    "cases": 40,
+    "l2": 7,
+    "l0": 3,
+    "source_inventory_unchanged": true
+  },
+  "benchmark_Test_read": false,
+  "model_API_calls": 0,
+  "historical_proof_receipts_reused": false,
+  "evidence": {
+    "closure": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/closure_and_methods_20261111/final_closure/summary.json",
+    "recurrence": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/closure_and_methods_20261111/final_recurrence/summary.json",
+    "symbolic_methods": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/closure_and_methods_20261111/method_adaptation/final_v2"
+  }
+}

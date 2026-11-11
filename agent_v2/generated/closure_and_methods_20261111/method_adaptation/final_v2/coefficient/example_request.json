@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "method": "coefficient",
+  "input": {
+    "lhs": {
+      "op": "HAdd.hAdd",
+      "args": [
+        {
+          "op": "atom",
+          "key": 0,
+          "display": "x"
+        },
+        {
+          "op": "atom",
+          "key": 1,
+          "display": "y"
+        }
+      ]
+    },
+    "rhs": {
+      "op": "HAdd.hAdd",
+      "args": [
+        {
+          "op": "atom",
+          "key": 1,
+          "display": "y"
+        },
+        {
+          "op": "atom",
+          "key": 0,
+          "display": "x"
+        }
+      ]
+    }
+  }
+}

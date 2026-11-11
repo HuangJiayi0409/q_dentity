@@ -1,0 +1,6 @@
+{
+  "superseded": "positive/result was structural plans only, not a mathematical certificate; previous L2 proposal rejected before final acceptance",
+  "current_level": "L0",
+  "reason": "real product construction requires Lean extraction/rule replay and missing workflow dependencies",
+  "no_proof_claims_or_C_updates": true
+}

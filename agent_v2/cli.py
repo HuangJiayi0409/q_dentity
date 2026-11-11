@@ -44,16 +44,23 @@ def _explicit_directory(path):
 
 
 def parser():
+    from .method_registry import builtin_registry
     result = argparse.ArgumentParser(description='Agent v2: residual certificate MVP; Train only')
     sub = result.add_subparsers(dest='command', required=True)
+    sub.add_parser('methods', help='show actual registered capabilities and limitations')
     core = sub.add_parser('core-demo', help='one real local symbolic construction; never an original proof')
     core.add_argument('--input', required=True)
+    probe = sub.add_parser('method-demo', help='one registered typed symbolic request; no formal theorem is implied')
+    probe.add_argument('--method', choices=builtin_registry().ids(), required=True)
+    probe.add_argument('--input', required=True)
     run = sub.add_parser('run', help='one Train original, using only new v2 components')
     run.add_argument('--identity', required=True)
-    run.add_argument('--method', choices=['telescoping'], default='telescoping')
+    run.add_argument('--method', choices=builtin_registry().ids(), default='telescoping')
     run.add_argument('--selector', choices=['rule'], default='rule')
+    run.add_argument('--scope', choices=['local', 'full'], default='local',
+                     help='local certificate only, or the verified finite-sum/endpoint chain')
     run.add_argument('--max-steps', type=positive_int, default=1)
-    for command in (core, run):
+    for command in (core, probe, run):
         command.add_argument('--seconds', type=positive_float, default=30.0)
         command.add_argument('--output-root', default=str(GENERATED))
     resume = sub.add_parser('resume', help='recheck a v2 Train checkpoint, then continue within remaining budget')
@@ -84,7 +91,10 @@ def telescoping_dependencies():
         'benchmark/lean/lean-toolchain', 'benchmark/lean/lakefile.toml',
         'project/lake-manifest.json', 'project/lakefile.toml', 'project/lean-toolchain',
     ]
-    return tuple(Artifact(str(REPOSITORY / name), sha256_file(REPOSITORY / name)) for name in names)
+    paths = [REPOSITORY / name for name in names]
+    paths += [REPOSITORY / 'finite_product_framework/solve_core.py']
+    paths += sorted((REPOSITORY / 'finite_product_framework/p1').glob('*.py'))
+    return tuple(Artifact(str(path), sha256_file(path)) for path in paths)
 
 
 def core_demo(args, store):
@@ -124,24 +134,112 @@ def core_demo(args, store):
     return status
 
 
+def method_demo(args, store):
+    from .method_registry import builtin_registry
+    from .cas_adapter import adapter_result
+    from .executor import normalize_result
+    spec = builtin_registry().get(args.method)
+    spec.validate_parameters({'seconds': args.seconds})
+    path = guard_path(args.input)
+    if path.stat().st_size > 1000000:
+        raise ContractError('method request exceeds the input size limit')
+    content = path.read_bytes()
+    try:
+        request = json.loads(content)
+    except RecursionError as error:
+        raise ContractError('method request exceeds the nesting limit') from error
+    store.write_bytes('source/request.json', content)
+    store.write_json('method_spec.json', spec.to_dict())
+    initial = {'schema_version': 1, 'scope': 'non_formal_registered_method_probe',
+               'method': spec.id, 'method_version': spec.version, 'formal_state': False,
+               'input_sha256': hashlib.sha256(content).hexdigest(),
+               'verified_certificates': [], 'formal_obligations': None,
+               'original_identity_proved': False}
+    store.write_json('initial_state.json', initial)
+    store.write_json('rounds/1/state_before.json', initial)
+    store.write_json('rounds/1/action.json', {'schema_version': 1, 'method': spec.id,
+        'method_version': spec.version, 'seconds': args.seconds, 'formal_action': False})
+    started = time.monotonic()
+    adapter = None if spec.capability_level == 'L0' else spec.factory()()
+    if adapter is None or not hasattr(adapter, 'execute_request'):
+        raw = adapter_result(started, 'incomplete', 'capability_unavailable',
+                             'This method has no standalone typed-request execution contract.')
+    else:
+        raw = adapter.execute_request(request, store.path('rounds/1/backend'), args.seconds)
+    result = normalize_result(raw)
+    if result.C_partial or result.O_res:
+        raise ContractError('non-formal method probe cannot claim formal candidates or residuals')
+    result = replace(result, raw_result=dict(result.raw_result, method_id=spec.id,
+        method_version=spec.version, capability_level=spec.capability_level))
+    for artifact in result.artifacts:
+        artifact_path = guard_path(artifact.path, store.path('rounds/1/backend'))
+        if sha256_file(artifact_path) != artifact.sha256:
+            raise IntegrityError('method probe artifact hash mismatch')
+    if sha256_file(path) != initial['input_sha256']:
+        raise IntegrityError('method probe input changed during execution')
+    result = replace(result, cost=Cost(time.monotonic() - started, 1))
+    store.write_json('rounds/1/result.json', result.to_dict())
+    store.write_json('rounds/1/raw_result.json', result.raw_result)
+    status = result.status if result.status in ('environment_blocked', 'budget_exhausted', 'integrity_error') else 'incomplete'
+    final = dict(initial, status=status, symbolic_status=result.status, stop_reason=result.sigma.code,
+                 actual_cost=result.cost.to_dict(), test_data_read=False)
+    store.write_json('rounds/1/state_after.json', final)
+    store.write_json('run.json', final)
+    store.write_json('graph.json', {'schema_version': 1, 'scope': initial['scope'], 'formal_graph': None})
+    return status
+
+
 def train_run(args, store):
     from .graph import Graph, Outlet
     from .loop import run
+    from .method_registry import builtin_registry, resolve
+    spec = builtin_registry().get(args.method)
+    spec.validate_parameters({'seconds': args.seconds, 'scope': args.scope})
+    store.write_json('method_spec.json', spec.to_dict())
     source = load_train(args.identity, store, REPOSITORY)
     source = replace(source, dependencies=source.dependencies + runtime_dependencies())
-    from .formal_frontend import analyze_source
+    if spec.capability_level == 'L0':
+        from .loop import finish
+        state, representation = initial_state(source, Budget(args.seconds, args.max_steps))
+        graph = Graph(source.sha256)
+        graph.add_node(representation)
+        store.write_json('initial_state.json', state.to_dict())
+        return finish(store, replace(state, status='incomplete'), graph, 'capability_unavailable',
+                      [spec.to_dict()]).status
+    analyze_source = resolve(spec.frontend)
     frontend = analyze_source(source.to_dict(), run_root=store.root)
     if frontend['status'] == 'applicable':
-        source = replace(source, proposition=frontend['original_proposition'],
-                         dependencies=source.dependencies + telescoping_dependencies())
+        source = replace(source, proposition=frontend.get('original_proposition', source.proposition),
+                         dependencies=source.dependencies + tuple(resolve(spec.dependency_provider)()))
         frontend = analyze_source(source.to_dict(), run_root=store.root)
     store.write_json('frontend.json', frontend)
     state, representation = initial_state(source, Budget(args.seconds, args.max_steps))
     graph = Graph(source.sha256)
     graph.add_node(representation)
-    graph.add_outlet(Outlet('telescoping', representation.id, 'CAS', 'method',
-        {'method': args.method, 'seconds': args.seconds}, ('lean_source', 'closed_prop'),
-        provenance=('new_v2_method_contract',)))
+    if frontend['status'] != 'applicable' and not source.declaration.lstrip().startswith('import Init\n'):
+        from .loop import finish
+        store.write_json('initial_state.json', state.to_dict())
+        return finish(store, replace(state, status='incomplete'), graph,
+                      'not_applicable', [frontend]).status
+    if args.method == 'telescoping' and args.scope == 'full' and frontend['status'] == 'applicable':
+        from .telescoping_closure import closure_blueprint
+        plan = closure_blueprint(frontend)
+        store.write_json('closure_contract.json', plan)
+        for task in ('local', 'bridge', 'zero_endpoint', 'upper_endpoint'):
+            handles = ('original',) if task in ('local', 'bridge') else (plan['obligation_ids'][task],)
+            graph.add_outlet(Outlet('telescoping-' + task, representation.id, 'CAS', 'method',
+                {'method': args.method, 'method_version': spec.version,
+                 'seconds': args.seconds, 'scope': 'full', 'task': task,
+                 'produces_certificate': plan['certificate_ids'][task]}, ('closed_prop',),
+                estimated_seconds=spec.estimated_seconds,
+                handles=handles,
+                required_certificates=(plan['local_id'],) if task == 'bridge' else (),
+                provenance=('new_v2_finite_sum_contract',)))
+    else:
+        graph.add_outlet(Outlet(args.method, representation.id, 'CAS', 'method',
+            {'method': args.method, 'method_version': spec.version, 'seconds': args.seconds}, spec.accepted_kinds,
+            estimated_seconds=spec.estimated_seconds if frontend['status'] == 'applicable' else 0.01,
+            provenance=('new_v2_method_contract',)))
     executor, checker = _production()
     return run(state, graph, store, executor, checker).status
 
@@ -165,15 +263,20 @@ def resume_run(args):
 
 def main(argv=None):
     args = parser().parse_args(argv)
+    if args.command == 'methods':
+        from .method_registry import builtin_registry
+        print(json.dumps(builtin_registry().to_dict(), ensure_ascii=False))
+        return 0
     store = None
     try:
         if args.command == 'resume':
             status, store = resume_run(args)
         else:
-            if args.command == 'core-demo': guard_path(args.input)
+            if args.command in ('core-demo', 'method-demo'): guard_path(args.input)
             root = _explicit_directory(args.output_root)
             store = RunStore.create(root)
-            status = core_demo(args, store) if args.command == 'core-demo' else train_run(args, store)
+            handler = {'core-demo': core_demo, 'method-demo': method_demo, 'run': train_run}[args.command]
+            status = handler(args, store)
     except ReplayFailure as error:
         status = error.status
         store = RunStore(error.run_dir)

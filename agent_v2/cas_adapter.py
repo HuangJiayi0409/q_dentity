@@ -181,12 +181,61 @@ class CoreAdapter:
             return adapter_result(started, "integrity_error", "artifact_integrity", str(exc), raw_result=raw)
 
 
-class MethodAdapter:
+class TelescopingAdapter:
     """One bounded Train method: frontend -> real core -> unverified local term.
 
     Only the controller's independent Lean checker may turn these candidates
-    into certificates. This adapter never closes an original obligation.
+    into certificates or apply their proposed conditional proof connections.
     """
+
+    def execute_action(self, state, action, attempt_dir, seconds):
+        """Construct exactly one local step, with an explicit input contract."""
+        task = action.theta.get('task')
+        if action.theta.get('method') != 'telescoping' or action.theta.get('scope') != 'full':
+            raise ValueError('unregistered method task contract')
+        if task == 'local':
+            outcome = self.execute(state.G.identity, 'telescoping', state.G.to_dict(), attempt_dir, seconds)
+            outcome['raw_result']['execution_scope'] = 'certificate_chain'
+            outcome['raw_result'].pop('remaining_work', None)
+            return outcome
+        started = time.monotonic()
+        attempt = prepare_attempt(attempt_dir)
+        if any(attempt.iterdir()):
+            raise ValueError('method attempt directory must be empty')
+        validate_seconds(seconds)
+        from .formal_frontend import analyze_source
+        from .storage import verify_source
+        from .telescoping_closure import make_closure_candidate, closure_blueprint
+        run_root = Path(state.G.snapshot_path).parent.parent
+        verify_source(state.G, run_root)
+        frontend = analyze_source(state.G.to_dict(), run_root=run_root)
+        write_json(attempt / 'method_request.json', {
+            'method': 'telescoping', 'task': task, 'source': state.G.to_dict(),
+            'seconds': seconds, 'action_id': action.id,
+            'approved_certificates': [c.id for c in state.C],
+            'open_obligations': [o.to_dict() for o in state.O]}, attempt)
+        write_json(attempt / 'frontend.json', frontend, attempt)
+        if frontend['status'] != 'applicable':
+            return adapter_result(started, 'incomplete', 'not_applicable',
+                'The frozen original is outside the finite-sum closure contract.',
+                raw_result={'execution_scope': 'certificate_chain'}, attempt=attempt)
+        plan = closure_blueprint(frontend)
+        write_json(attempt / 'task_contract.json', plan, attempt)
+        candidate = make_closure_candidate(frontend, task,
+            {c.id: c.to_dict() for c in state.C}, action.id)
+        if candidate.closes not in {o.id for o in state.O}:
+            raise ValueError('task has no matching open formal obligation')
+        write_json(attempt / 'candidate.json', candidate.to_dict(), attempt)
+        verify_source(state.G, run_root)
+        outcome = adapter_result(started, 'symbolic_constructed', 'closure_candidate_ready',
+            'One conditional connection or endpoint candidate awaits independent Lean verification.',
+            stage='translation', raw_result={'execution_scope': 'certificate_chain',
+                'method': 'telescoping', 'task': task, 'cas_invoked': False,
+                'dependency_ids': list(candidate.dependencies), 'frontend_profile': frontend['profile']},
+            attempt=attempt)
+        outcome['C_partial'] = [candidate.to_dict()]
+        outcome['O_res'] = [o.to_dict() for o in candidate.replaces]
+        return outcome
 
     def execute(self, identity, method, source, attempt_dir, seconds) -> dict:
         started = time.monotonic()
@@ -262,3 +311,49 @@ class MethodAdapter:
             return outcome
         except (OSError, ValueError, TypeError) as exc:
             return adapter_result(started, "integrity_error", "artifact_integrity", str(exc))
+
+
+class MethodAdapter:
+    """Dispatch only registered methods, preserving the strict result boundary."""
+
+    def _dispatch(self, method, parameters):
+        from .method_registry import builtin_registry
+        spec = builtin_registry().get(method)
+        spec.validate_parameters(parameters)
+        return spec, None if spec.capability_level == 'L0' else spec.factory()()
+
+    def validate_action(self, action):
+        self._dispatch(action.theta.get('method'), action.theta)
+
+    @staticmethod
+    def _annotate(result, spec):
+        from .executor import normalize_result
+        from .models import ContractError
+        result = normalize_result(result).to_dict()
+        if spec.capability_level in ('L0', 'L2') and (result['C_partial'] or result['O_res']):
+            raise ContractError('method without a Lean bridge cannot export formal candidates or residuals')
+        result['raw_result'].update(method_id=spec.id, method_version=spec.version,
+            capability_level=spec.capability_level,
+            input_contract='see retained frontend.json and method_request.json')
+        return normalize_result(result).to_dict()
+
+    def execute(self, identity, method, source, attempt_dir, seconds):
+        spec, adapter = self._dispatch(method, {'seconds': seconds})
+        if adapter is None:
+            return self._annotate(adapter_result(time.monotonic(), 'incomplete', 'capability_unavailable',
+                'This method has a description only; no mathematical construction was executed.'), spec)
+        return self._annotate(adapter.execute(identity, method, source, attempt_dir, seconds), spec)
+
+    def execute_action(self, state, action, attempt_dir, seconds):
+        spec, adapter = self._dispatch(action.theta.get('method'), action.theta)
+        if adapter is None:
+            return self._annotate(adapter_result(time.monotonic(), 'incomplete', 'capability_unavailable',
+                'This method has no registered executable capability.'), spec)
+        return self._annotate(adapter.execute_action(state, action, attempt_dir, seconds), spec)
+
+    def execute_request(self, method, request, attempt_dir, seconds):
+        from .models import ContractError
+        spec, adapter = self._dispatch(method, {'seconds': seconds})
+        if adapter is None or 'core_request' not in spec.accepted_kinds or not hasattr(adapter, 'execute_request'):
+            raise ContractError('method has no executable core-request contract')
+        return self._annotate(adapter.execute_request(request, attempt_dir, seconds), spec)

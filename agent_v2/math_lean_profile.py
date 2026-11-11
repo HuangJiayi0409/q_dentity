@@ -216,15 +216,87 @@ def external_environment_digest(inventory):
     return hashlib.sha256(canonical(frozen).encode('utf-8')).hexdigest()
 
 
+def _check_certificate_binding(certificate, run):
+    """Bind dependency claims to their exact retained verification artifacts.
+
+    These receipts only describe provenance. A self-contained proof containing
+    every used dependency is compiled again below; no receipt proves a theorem.
+    """
+    from .lean_checker import _AXIOMS
+    from .models import thaw
+    evidence = thaw(certificate.evidence)
+    expected = {'certificate_id': certificate.id, 'proposition': certificate.proposition,
+                'proof_term': certificate.proof_term, 'source_sha256': certificate.source_sha256,
+                'dependencies': list(certificate.dependencies), 'theorem': 'AgentV2Candidate.proof'}
+    if any(evidence.get(key) != value for key, value in expected.items()):
+        raise IntegrityError('certificate receipt differs from its source, proposition, proof or dependencies')
+    audit = evidence.get('audit', {})
+    if (not isinstance(audit, dict) or evidence.get('profile') != PROFILE
+            or type(evidence.get('returncode')) is not int or evidence['returncode'] != 0
+            or audit.get('theorem') != expected['theorem']
+            or audit.get('universe_parameters') != ['u']
+            or not isinstance(audit.get('axioms'), list) or not set(audit['axioms']) <= _AXIOMS):
+        raise IntegrityError('certificate has no bound mathematical Lean audit')
+    artifacts = evidence.get('artifacts')
+    if not isinstance(artifacts, list) or not artifacts:
+        raise IntegrityError('certificate has no retained verification artifacts')
+    seen = set()
+    for artifact in artifacts:
+        if not isinstance(artifact, dict) or set(artifact) - {'schema_version', 'path', 'sha256'}:
+            raise IntegrityError('malformed certificate artifact')
+        target = guard_path(artifact['path'], run)
+        if target in seen or _hash(target, float('inf')) != artifact.get('sha256'):
+            raise IntegrityError('certificate artifact hash mismatch or duplicate')
+        seen.add(target)
+    if not any(p.name == 'Candidate.olean' for p in seen) or not any(p.name == 'Candidate.lean' for p in seen):
+        raise IntegrityError('certificate has no fresh compiled candidate artifacts')
+
+
+def _partial_template(frontend, candidate, context):
+    """Reconstruct one supported proposition and its explicit dependency set."""
+    from .telescoping_translation import local_proof
+    from .models import VerifiedCertificate
+    if candidate['proposition'] == frontend['local_proposition']:
+        if candidate['dependencies']:
+            raise IntegrityError('local difference proof has unexpected dependencies')
+        return local_proof(frontend)
+    from .telescoping_closure import closure_blueprint, make_closure_candidate
+    blueprint = closure_blueprint(frontend)
+    targets = {'bridge': blueprint['bridge_proposition']}
+    for task, obligation in zip(('zero_endpoint', 'upper_endpoint'), blueprint['obligations']):
+        targets[task] = obligation['proposition']
+    task = next((task for task, proposition in targets.items() if proposition == candidate['proposition']), None)
+    if task is None:
+        return None
+    required = [blueprint['local_id']] if task == 'bridge' else []
+    if candidate['dependencies'] != required:
+        raise IntegrityError('candidate dependency set differs from the reconstructed proof dependencies')
+    approved = context.get('approved_certificates', {})
+    if not isinstance(approved, dict):
+        raise IntegrityError('approved certificate context must be an object')
+    bound = {}
+    for identity in required:
+        if identity not in approved:
+            raise IntegrityError('required checked certificate is missing: ' + identity)
+        cert = VerifiedCertificate.from_dict(approved[identity])
+        if (cert.id != identity or cert.source_sha256 != frontend['source']['sha256']
+                or cert.proposition != frontend['local_proposition']
+                or cert.proof_term != local_proof(frontend) or cert.dependencies):
+            raise IntegrityError('dependency is not the exact source-bound local difference certificate')
+        _check_certificate_binding(cert, guard_path(context['run_dir']))
+        bound[identity] = cert.to_dict()
+    generated = make_closure_candidate(frontend, task, bound, 'checker-template')
+    if list(generated.dependencies) != required or generated.proposition != candidate['proposition']:
+        raise IntegrityError('closure generator and independently reconstructed target disagree')
+    return generated.proof_term
+
+
 def check_train_partial(checker, candidate, context, start):
     """Return None for non-profile sources, otherwise a strict checker result."""
     from .formal_frontend import analyze_source
-    from .telescoping_translation import local_proof
-    from .lean_checker import _AXIOMS, _IMPORTS, _header_imports, _lean_environment, _result
-
+    from .lean_checker import _result
     source = Source.from_dict(context['source'])
     run = guard_path(context['run_dir'])
-    attempt = guard_path(context['attempt_dir'], run)
     if source.sha256 != context.get('source_sha256') or source.sha256 != candidate['source_sha256']:
         raise IntegrityError('original source context binding mismatch')
     if source.Gamma != source.declaration:
@@ -235,38 +307,138 @@ def check_train_partial(checker, candidate, context, start):
         return None
     if frontend.get('profile') != PROFILE:
         raise IntegrityError('unsupported mathematical checking profile')
-    expected = frontend['local_proposition']
-    if candidate['proposition'] != expected:
+    template = _partial_template(frontend, candidate, context)
+    if template is None:
         return _result(start, False, 'integrity_error', 'partial', 'proposition_binding_mismatch',
-                       'Candidate proposition differs from the independently reconstructed local target.')
-    if candidate['proof_term'] not in (local_proof(frontend), 'by rfl', 'by exact True.intro'):
+                       'Candidate proposition differs from independently reconstructed local and closure targets.')
+    if candidate['proof_term'] not in (template, 'by rfl', 'by exact True.intro'):
         return _result(start, False, 'incomplete', 'partial', 'unsupported_term_syntax',
-                       'Only the fixed telescoping proof template and pure negative-test terms are accepted.')
+                       'Only fixed telescoping proof templates and pure negative-test terms are accepted.')
+    return _verify_train(checker, candidate, context, start, source, frontend, candidate['proposition'])
+
+
+def _original_declaration(source, frontend):
+    """Replace only the parsed proof token; preserve original declaration bytes.
+
+    Comments are masked without changing offsets, so a comment containing
+    `sorry` or `import` cannot select a replacement location. Source grammar is
+    fully checked by the caller before this renderer is used.
+    """
+    from .formal_frontend import _TOKEN
+    text = source.declaration
+    clean, i, depth = list(text), 0, 0
+    while i < len(text):
+        pair = text[i:i+2]
+        if pair == '/-':
+            depth += 1; clean[i:i+2] = '  '; i += 2
+        elif depth and pair == '-/':
+            depth -= 1; clean[i:i+2] = '  '; i += 2
+        elif not depth and pair == '--':
+            end = text.find('\n', i)
+            end = len(text) if end < 0 else end
+            clean[i:end] = ' ' * (end-i); i = end
+        else:
+            if depth and clean[i] != '\n': clean[i] = ' '
+            i += 1
+    if depth:
+        raise IntegrityError('unterminated comment in frozen source')
+    tokens = [match for match in _TOKEN.finditer(''.join(clean)) if not match.group().isspace()]
+    replacements = []
+    for index, token in enumerate(tokens):
+        if token.group() == 'import':
+            end = tokens[index+1].end()
+            if text[end:end+1] == '\n': end += 1
+            replacements.append((token.start(), end, ''))
+    sorry = [token for token in tokens if token.group() == 'sorry']
+    if len(sorry) != 1 or [token.group() for token in tokens[-5:]] != [':=', 'by', 'sorry', 'end', source.theorem.rpartition('.')[0]]:
+        raise IntegrityError('original declaration has no unique parsed proof placeholder')
+    arguments = ' '.join(binder['name'] for binder in frontend['binders'] if binder['kind'] == 'explicit')
+    replacements.append((sorry[0].start(), sorry[0].end(), 'exact _root_.AgentV2Assembled ' + arguments))
+    for left, right, replacement in sorted(replacements, reverse=True):
+        text = text[:left] + replacement + text[right:]
+    return text
+
+
+def check_train_original(checker, report, source_data, run, attempt, start):
+    from .formal_frontend import analyze_source, _Parser, _Unsupported
+    from .executor import assemble_term, validate_invariant
+    from .models import ResidualState
+    # Init and unknown source languages retain their existing final-check path.
+    try:
+        _Parser(source_data['declaration']).source()
+    except _Unsupported:
+        return None
+    source = Source.from_dict(dict(source_data, schema_version=1))
+    frontend = analyze_source(source.to_dict(), run)
+    if frontend.get('status') != 'applicable':
+        return None
+    if source.proposition != frontend['original_proposition']:
+        raise IntegrityError('original proposition is not the frozen source proposition')
+    state = ResidualState.from_dict(report.get('state'))
+    if state.G != source or state.Gamma != source.declaration:
+        raise IntegrityError('final state source or original context differs from frozen source')
+    validate_invariant(state)
+    term = assemble_term(state)
+    proof = report.get('candidate', report)
+    if (not isinstance(proof, dict) or proof.get('proof_term') != term
+            or proof.get('theorem', source.theorem) != source.theorem
+            or proof.get('proposition', source.proposition) != source.proposition
+            or proof.get('source_sha256', source.sha256) != source.sha256
+            or proof.get('dependencies', [])):
+        raise IntegrityError('final proof differs from the complete bound proof tree or original target')
+    context = {'run_dir': str(run), 'attempt_dir': str(attempt), 'source_sha256': source.sha256,
+               'source': source.to_dict(), 'seconds': report.get('seconds', 30.0), 'approved_certificates': {}}
+    # Validate all retained dependencies in topological order. The following
+    # compilation then rechecks their inline terms without trusting receipts.
+    for cert in state.C:
+        request = {'id': cert.id, 'proposition': cert.proposition, 'proof_term': cert.proof_term,
+                   'theorem': 'AgentV2Candidate.proof', 'source_sha256': cert.source_sha256,
+                   'dependencies': list(cert.dependencies)}
+        if _partial_template(frontend, request, context) != cert.proof_term:
+            raise IntegrityError('final proof tree contains an uncontrolled proof template')
+        _check_certificate_binding(cert, run)
+        context['approved_certificates'][cert.id] = cert.to_dict()
+    candidate = {'id': 'original', 'proposition': source.proposition, 'proof_term': term,
+                 'theorem': source.theorem, 'source_sha256': source.sha256, 'dependencies': []}
+    return _verify_train(checker, candidate, context, start, source, frontend,
+                         frontend['original_proposition'], original=True)
+
+
+def _verify_train(checker, candidate, context, start, source, frontend, expected, *, original=False,
+                  additional_rules=(), profile=PROFILE):
+    from .lean_checker import _AXIOMS, _IMPORTS, _header_imports, _lean_environment, _result
+    run = guard_path(context['run_dir'])
+    attempt = guard_path(context['attempt_dir'], run)
+    stage = 'original' if original else 'partial'
     seconds = context.get('seconds')
     if isinstance(seconds, bool) or not isinstance(seconds, (int, float)) or not math.isfinite(seconds):
         raise IntegrityError('finite numerical seconds budget required')
     deadline = start + seconds
     if time.monotonic() >= deadline:
-        return _result(start, False, 'budget_exhausted', 'partial', 'budget_exhausted',
+        return _result(start, False, 'budget_exhausted', stage, 'budget_exhausted',
                        'No verification time remains.')
     binary = checker.binary
-    driver = guard_path(Path(__file__).parent / 'lean/TelescopingCheck.lean')
+    driver = guard_path(Path(__file__).parent / 'lean' / ('OriginalTrainCheck.lean' if original else 'TelescopingCheck.lean'))
     rules = guard_path(checker.repository / 'finite_product_framework/p1/lean/GaussianRules.lean')
     if (binary is None or checker.expected_binary is None or not binary.is_file()
             or binary.resolve() != checker.expected_binary.resolve() or not os.access(binary, os.X_OK)
             or not driver.is_file() or not rules.is_file()):
-        return _result(start, False, 'environment_blocked', 'partial', 'lean_environment_unavailable',
+        return _result(start, False, 'environment_blocked', stage, 'lean_environment_unavailable',
                        'The fixed Lean toolchain, trusted driver or mathematical foundation is unavailable.')
     directory = guard_path(attempt / ('lean-telescoping-' + uuid.uuid4().hex), run)
     directory.mkdir(parents=True)
     evidence = {key: candidate[key] for key in
                 ('proposition', 'proof_term', 'theorem', 'source_sha256', 'dependencies')}
-    evidence.update(certificate_id=candidate['id'], profile=PROFILE, artifacts=[])
+    evidence.update(certificate_id=candidate['id'], profile=profile, artifacts=[])
     try:
         packages, package_manifest = _package_roots(checker.repository)
-        driver_text, rules_text = driver.read_text(), rules.read_text()
-        imports = tuple(dict.fromkeys((*_IMPORTS, *_header_imports(rules_text))))
-        fixed_paths = (driver, rules, package_manifest, checker.repository / 'project/lakefile.toml',
+        extra_paths = tuple(guard_path(path) for path in additional_rules)
+        driver_text = driver.read_text()
+        rule_texts = [path.read_text() for path in (rules, *extra_paths)]
+        rules_text = '\n'.join(rule_texts)
+        imports = tuple(dict.fromkeys((*_IMPORTS, *(name for text in rule_texts
+                                                   for name in _header_imports(text)))))
+        fixed_paths = (driver, rules, *extra_paths, package_manifest, checker.repository / 'project/lakefile.toml',
                        checker.repository / 'project/lean-toolchain')
         source_root, build = directory / 'sources', directory / 'build'
         (source_root / 'Benchmark').mkdir(parents=True)
@@ -279,7 +451,7 @@ def check_train_partial(checker, candidate, context, start):
             if (not isinstance(prior, dict) or
                     prior.get('external_environment_sha256') != evidence['external_environment_sha256']):
                 evidence['artifacts'] = _generated_inventory(directory, run, deadline)
-                return _result(start, False, 'integrity_error', 'partial', 'external_environment_changed',
+                return _result(start, False, 'integrity_error', stage, 'external_environment_changed',
                                'Saved mathematical/toolchain environment differs from fresh independent inventory; replay refused.', evidence)
         _save(directory / 'request.json', candidate)
         _save(directory / 'frontend.json', frontend)
@@ -299,11 +471,11 @@ def check_train_partial(checker, candidate, context, start):
                               directory / 'setup' / name, deadline)
             if report['timed_out']:
                 evidence['artifacts'] = _generated_inventory(directory, run, float('inf'))
-                return _result(start, False, 'budget_exhausted', 'partial', 'lean_timeout',
+                return _result(start, False, 'budget_exhausted', stage, 'lean_timeout',
                                'Lean dependency compilation exceeded the remaining budget.', evidence)
             if report['environment_error'] or report['returncode'] != 0:
                 evidence['artifacts'] = _generated_inventory(directory, run, deadline)
-                return _result(start, False, 'environment_blocked', 'partial', 'lean_dependency_compile_failed',
+                return _result(start, False, 'environment_blocked', stage, 'lean_dependency_compile_failed',
                                'A fixed mathematical dependency did not compile; setup diagnostics are retained.', evidence)
         local_dependencies = _generated_inventory(source_root, run, deadline) + _generated_inventory(build, run, deadline)
         # The initially empty build root has just acquired compiled artifacts.
@@ -314,12 +486,15 @@ def check_train_partial(checker, candidate, context, start):
             raise IntegrityError('fixed mathematical dependencies changed during setup')
         nonce = uuid.uuid4().hex
         without_imports = lambda text: re.sub(r'(?m)^import [A-Za-z0-9_.]+\s*\n', '', text)
+        declaration = (f'theorem AgentV2Assembled : ({expected}) := {candidate["proof_term"]}\n'
+                       + _original_declaration(source, frontend)) if original else (
+                       f'theorem {candidate["theorem"]} : ({candidate["proposition"]}) := {candidate["proof_term"]}\n')
+        command = 'agent_v2_original_train_audit' if original else 'agent_v2_telescoping_audit'
         code = ('\n'.join('import ' + name for name in imports) + '\n'
                 + without_imports(rules_text) + '\n' + without_imports(driver_text)
-                + '\nuniverse u\n'
-                + f'theorem {candidate["theorem"]} : ({candidate["proposition"]}) := {candidate["proof_term"]}\n'
-                + f'def AgentV2Expected : Prop := ({expected})\n'
-                + f'agent_v2_telescoping_audit {candidate["theorem"]} against AgentV2Expected nonce "{nonce}"\n')
+                + '\nopen scoped BigOperators\nuniverse u\n' + declaration
+                + f'\ndef AgentV2Expected : Prop := ({expected})\n'
+                + f'{command} {candidate["theorem"]} against AgentV2Expected nonce "{nonce}"\n')
         candidate_path = source_root / 'Candidate.lean'
         candidate_path.write_text(code)
         candidate_digest = _hash(candidate_path, deadline)
@@ -330,11 +505,11 @@ def check_train_partial(checker, candidate, context, start):
                         original_path=source.path, snapshot_path=source.snapshot_path)
         if report['timed_out']:
             evidence['artifacts'] = _generated_inventory(directory, run, float('inf'))
-            return _result(start, False, 'budget_exhausted', 'partial', 'lean_timeout',
+            return _result(start, False, 'budget_exhausted', stage, 'lean_timeout',
                            'Lean candidate verification exceeded the remaining budget.', evidence)
         if report['environment_error']:
             evidence['artifacts'] = _generated_inventory(directory, run, deadline)
-            return _result(start, False, 'environment_blocked', 'partial', 'lean_start_failed',
+            return _result(start, False, 'environment_blocked', stage, 'lean_start_failed',
                            report['environment_error'], evidence)
         verify_source(source, run)
         if _hash(candidate_path, deadline) != candidate_digest:
@@ -364,33 +539,35 @@ def check_train_partial(checker, candidate, context, start):
                     if isinstance(record, dict) and record.get('agent_v2_audit_v1') == nonce:
                         audits.append(record)
         except (ValueError, UnicodeError):
-            return _result(start, False, 'incomplete', 'partial', 'malformed_lean_output',
+            return _result(start, False, 'incomplete', stage, 'malformed_lean_output',
                            'Lean produced malformed candidate diagnostics.', evidence)
         good = (len(audits) == 1 and audits[0].get('theorem') == candidate['theorem']
-                and audits[0].get('universe_parameters') == ['u']
+                and (audits[0].get('universe_parameter_count') == 1 if original else
+                     audits[0].get('universe_parameters') == ['u'])
                 and isinstance(audits[0].get('axioms'), list) and set(audits[0]['axioms']) <= _AXIOMS)
         if good and sorted(audits[0].get('modules', [])) != dependencies['modules']:
-            return _result(start, False, 'integrity_error', 'partial', 'import_dependency_mismatch',
+            return _result(start, False, 'integrity_error', stage, 'import_dependency_mismatch',
                            'Actual imports differ from the fixed mathematical closure.', evidence)
         if (report['returncode'] != 0 or any(m.get('severity') == 'error' for m in messages)
                 or not good or not (build / 'Candidate.olean').is_file()):
-            return _result(start, False, 'incomplete', 'partial', 'lean_check_failed',
+            return _result(start, False, 'incomplete', stage, 'lean_check_failed',
                            'The local theorem did not pass compilation and the trusted audit.', evidence,
                            report['returncode'])
         evidence.update(axioms=audits[0]['axioms'], audit=audits[0], source_dependencies=source.to_dict()['dependencies'])
-        return _result(start, True, 'partial_lean_verified', 'partial', 'lean_verified',
+        return _result(start, True, 'original_theorem_proved' if original else 'partial_lean_verified', stage, 'lean_verified',
+                       'Frozen original theorem passed independent Lean compilation and axiom audit.' if original else
                        'Original-context local proposition passed real Lean compilation and axiom audit.',
                        evidence, report['returncode'])
     except FileNotFoundError as error:
         evidence['artifacts'] = _generated_inventory(directory, run, float('inf'))
-        return _result(start, False, 'environment_blocked', 'partial', 'lean_environment_unavailable', str(error), evidence)
+        return _result(start, False, 'environment_blocked', stage, 'lean_environment_unavailable', str(error), evidence)
     except TimeoutError as error:
         evidence['artifacts'] = _generated_inventory(directory, run, float('inf'))
-        return _result(start, False, 'budget_exhausted', 'partial', 'integrity_check_timeout', str(error), evidence)
+        return _result(start, False, 'budget_exhausted', stage, 'integrity_check_timeout', str(error), evidence)
     except IntegrityError as error:
         try:
             evidence['artifacts'] = _generated_inventory(directory, run, float('inf'))
         except IntegrityError as artifact_error:
             # Never follow a rejected artifact in order to describe its failure.
             evidence['artifact_collection_error'] = str(artifact_error)
-        return _result(start, False, 'integrity_error', 'partial', 'verification_input_changed', str(error), evidence)
+        return _result(start, False, 'integrity_error', stage, 'verification_input_changed', str(error), evidence)

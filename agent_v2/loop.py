@@ -52,6 +52,13 @@ def _local_scope_outcome(before, updated, diagnostics, result):
             return 'environment_blocked', 'partial_checker_exception'
         if diagnostic.get('code') == 'verification_budget_exhausted':
             return 'budget_exhausted', 'verification_budget_exhausted'
+        if (diagnostic.get('code') == 'invariant_update_rejected'
+                and len(updated.C) == len(before.C)
+                and any(d.get('check', {}).get('accepted') is False
+                        and d['check'].get('status') == 'incomplete' for d in diagnostics)):
+            # A rejected proof cannot authorize its proposed residuals. Their
+            # rollback is expected, not evidence of a corrupted proof state.
+            continue
         if diagnostic.get('code') in ('checker_binding_rejected', 'candidate_binding_rejected',
                                       'invariant_update_rejected'):
             return 'integrity_error', diagnostic['code']
@@ -66,8 +73,10 @@ def _final(state, graph, store, checker):
     started = time.monotonic()
     report = {'proof_term': assemble_term(state), 'theorem': state.G.theorem,
               'proposition': state.G.proposition, 'seconds': state.b.seconds,
-              'run_dir': str(store.root)}
+              'run_dir': str(store.root), 'state': state.to_dict()}
     final_dir = store.path('final/attempt-' + str(state.round_index))
+    if final_dir.exists():
+        final_dir = store.path(f'final/attempt-{state.round_index}-{time.time_ns()}')
     final_dir.mkdir(parents=True, exist_ok=True)
     store.write_json(str(final_dir.relative_to(store.root) / 'request.json'), report)
     checked = None
@@ -120,6 +129,10 @@ def _final(state, graph, store, checker):
     reported = checked['status']
     status = reported if reported in {'integrity_error', 'budget_exhausted', 'environment_blocked'} else (
         'budget_exhausted' if state.b.seconds <= 0 else 'incomplete')
+    if status != 'integrity_error':
+        # This is only a proposed tree for a future fresh replay. It is never
+        # accepted as proof evidence, nor applied before every C is rechecked.
+        store.write_json('final/retry.json', {'schema_version': 1, 'state': report['state']})
     # The local lemmas remain checked. The failed original assembly cannot keep
     # an empty obligation set: reopen the exact original and drop only its links.
     state = replace(state, O=(state.root,), links=(), status=status)
@@ -180,6 +193,11 @@ def run(state, graph, store, executor, checker, router=None):
         store.write_json(f'{round_path}/candidates.json', {'schema_version': 1,
             'legal': [candidate.to_dict() for candidate in legal], 'filtered': reasons})
         store.write_json(f'{round_path}/action.json', action.to_dict())
+        store.write_json(f'{round_path}/selection.json', {
+            'schema_version': 1, 'router': type(router).__name__, 'selected': action.id,
+            'open_obligations': [o.id for o in state.O],
+            'verified_certificates': [c.id for c in state.C],
+            'reason': 'Choose one current legal outlet after obligation, dependency, budget and failure filtering.'})
         fingerprint = action_fingerprint(before, action)
         reserved = min(before.b.seconds, action.theta.get('seconds', before.b.seconds))
         # Crash recovery cannot silently rerun an action whose outcome is unknown.
@@ -220,6 +238,14 @@ def run(state, graph, store, executor, checker, router=None):
                 result = replace(result, sigma=FailureSignature('partial', local_stop[1],
                     'Local proof scope finished; original obligation remains open.',
                     result.sigma.backend_status))
+        elif result.raw_result.get('execution_scope') == 'certificate_chain':
+            category, code = _local_scope_outcome(before, updated, diagnostics, result)
+            if category in ('integrity_error', 'budget_exhausted', 'environment_blocked'):
+                local_stop = category, code
+            elif result.status in ('integrity_error', 'budget_exhausted', 'environment_blocked'):
+                local_stop = result.status, result.sigma.code
+            elif len(updated.C) == len(before.C) and updated.O == before.O:
+                local_stop = 'incomplete', 'chain_verification_failed' if result.C_partial else result.sigma.code
         state = replace(updated, round_index=n, b=before.b.charge(elapsed, 1),
             attempts=before.attempts + (Attempt(fingerprint, action.id, result.sigma.code, n),),
             status=local_stop[0] if local_stop else updated.status)
@@ -277,6 +303,7 @@ def resume(store, checker):
                 {'source_sha256': state.G.sha256, 'source': state.G.to_dict(), 'run_dir': str(store.root),
                  'attempt_dir': str(store.path(check_dir)),
                  'prior_evidence': cert.to_dict()['evidence'],
+                 'approved_certificates': {c.id: c.to_dict() for c in replayed},
                  'seconds': remaining})
             try:
                 canonical(checked)
@@ -303,6 +330,27 @@ def resume(store, checker):
             if evidence.get('source_sha256') != state.G.sha256 or evidence.get('proposition') != cert.proposition:
                 raise IntegrityError('fresh checkpoint evidence binding mismatch')
             replayed.append(replace(cert, evidence=evidence))
+        if state.O == (state.root,) and not state.links and state.status != 'integrity_error' \
+                and store.path('final/retry.json').exists():
+            retry = store.read_json('final/retry.json')
+            if (set(retry) != {'schema_version', 'state'}
+                    or type(retry['schema_version']) is not int or retry['schema_version'] != 1):
+                raise IntegrityError('invalid pending final proof tree')
+            proposed = ResidualState.from_dict(retry['state'])
+            if (proposed.G != state.G or proposed.Gamma != state.Gamma or proposed.O
+                    or proposed.r != state.r or proposed.round_index != state.round_index
+                    or proposed.attempts != state.attempts or len(proposed.C) != len(replayed)
+                    or any(replace(old, evidence=fresh.evidence) != fresh
+                           for old, fresh in zip(proposed.C, replayed))):
+                raise IntegrityError('pending final proof tree differs from freshly replayed state')
+            restored = replace(state, C=tuple(replayed), O=(), links=proposed.links)
+            validate_invariant(restored)
+            state = restored
+            store.write_json(f'resume_checks/{time.time_ns()}-final-tree.json', {
+                'schema_version': 1, 'source_sha256': state.G.sha256,
+                'certificates_rechecked': [c.id for c in replayed],
+                'restored_links': [link.to_dict() for link in state.links],
+                'original_identity_proved': False})
     except Exception as error:
         if isinstance(error, ReplayFailure):
             failure = error

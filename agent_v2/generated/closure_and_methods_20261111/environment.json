@@ -1,0 +1,9 @@
+{
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "sympy": "1.14.0",
+  "lean_binary": "/home/hjy/.elan/toolchains/leanprover--lean4---v4.35.0-rc4/bin/lean",
+  "lean_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "repository": "/home/hjy/Project/finite_q_identity_catalog",
+  "model_calls": 0,
+  "benchmark_Test_read": false
+}

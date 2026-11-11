@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "method": "spectral",
+  "input": {
+    "weight": {
+      "display": "w",
+      "entries": [
+        {
+          "op": "integer",
+          "value": 1
+        },
+        {
+          "op": "integer",
+          "value": 1
+        }
+      ]
+    },
+    "left": {
+      "display": "f",
+      "entries": [
+        {
+          "op": "integer",
+          "value": 1
+        },
+        {
+          "op": "integer",
+          "value": 0
+        }
+      ]
+    },
+    "right": {
+      "display": "g",
+      "entries": [
+        {
+          "op": "integer",
+          "value": 0
+        },
+        {
+          "op": "integer",
+          "value": 1
+        }
+      ]
+    },
+    "size": 2,
+    "type": "K"
+  }
+}

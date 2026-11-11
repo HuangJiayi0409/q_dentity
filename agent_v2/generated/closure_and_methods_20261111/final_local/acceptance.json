@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "identity": "FQI-SRC-AP-3.3.9",
+  "scope": "single_real_Train_local_proof",
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/closure_and_methods_20261111/final_local/runs/20261111T154534Z-531f8e40bd",
+  "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+  "local_proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True) (j : ℕ), FiniteQBenchmark.gaussian q (m + (j + 1)) (m + 1) - FiniteQBenchmark.gaussian q (m + j) (m + 1) = q ^ j * FiniteQBenchmark.gaussian q (m + j) m",
+  "C_before": 0,
+  "C_after": 1,
+  "O_before": [
+    "original"
+  ],
+  "O_after": [
+    "original"
+  ],
+  "status": "incomplete",
+  "original_identity_proved": false,
+  "real_core_constructed": true,
+  "real_lean_verified": true,
+  "resume_fresh_lean_verified": true,
+  "wrong_proof_rejected_by_lean": true,
+  "artifact_hashes_checked": 77,
+  "commands": [
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "run",
+      "--identity",
+      "FQI-SRC-AP-3.3.9",
+      "--method",
+      "telescoping",
+      "--selector",
+      "rule",
+      "--max-steps",
+      "1",
+      "--seconds",
+      "600.0",
+      "--output-root",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/closure_and_methods_20261111/final_local/runs"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/closure_and_methods_20261111/final_local/runs/20261111T154534Z-531f8e40bd"
+    ]
+  ],
+  "test_data_read": false,
+  "test_data_scope": "benchmark held-out split",
+  "standard_library_modules_with_Test_component": [
+    "Std.Http.Test.Helpers"
+  ],
+  "model_calls": 0
+}

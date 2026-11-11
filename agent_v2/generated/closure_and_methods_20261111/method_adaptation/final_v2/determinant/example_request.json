@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "method": "determinant",
+  "input": {
+    "matrix": {
+      "display": "a",
+      "entries": [
+        [
+          {
+            "op": "integer",
+            "value": 1
+          },
+          {
+            "op": "integer",
+            "value": 2
+          }
+        ],
+        [
+          {
+            "op": "integer",
+            "value": 3
+          },
+          {
+            "op": "integer",
+            "value": 4
+          }
+        ]
+      ]
+    },
+    "size": 2,
+    "type": "K",
+    "reverse": false
+  }
+}

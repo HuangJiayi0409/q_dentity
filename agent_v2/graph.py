@@ -175,6 +175,24 @@ class Graph:
         attempts = {attempt.fingerprint: attempt for attempt in state.attempts}
         for outlet in sorted(self.outlets.values(), key=lambda item: item.id):
             target = self.nodes[outlet.node]
+            if outlet.backend == 'method' and 'method_version' in outlet.parameters:
+                from .method_registry import builtin_registry
+                try:
+                    spec = builtin_registry().get(outlet.parameters.get('method'))
+                except ContractError:
+                    reject(outlet.id, 'method_unregistered')
+                    continue
+                if spec.capability_level == 'L0':
+                    reject(outlet.id, 'capability_unavailable')
+                    continue
+                try:
+                    spec.validate_parameters(outlet.parameters)
+                except ContractError:
+                    reject(outlet.id, 'method_parameter_mismatch')
+                    continue
+                if target.kind not in spec.accepted_kinds:
+                    reject(outlet.id, 'representation_kind_mismatch')
+                    continue
             routes = [('identity', state.r, 0.0)] if target.id == state.r else []
             current_edges = [edge for edge in sorted(self.edges.values(), key=lambda item: item.id)
                              if edge.target == target.id and edge.source == state.r]
@@ -201,6 +219,8 @@ class Graph:
                     code = 'index_ranges_mismatch'
                 elif any(cert not in certificates for cert in outlet.required_certificates):
                     code = 'required_certificate_unavailable'
+                elif outlet.parameters.get('produces_certificate') in certificates:
+                    code = 'task_already_completed'
                 elif outlet.handles and not set(outlet.handles) & {o.id for o in state.O}:
                     code = 'no_matching_open_obligation'
                 elif state.b.actions <= 0 or state.b.seconds <= 0 or \

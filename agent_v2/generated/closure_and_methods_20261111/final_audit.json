@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "final_command_exit_codes": {
+    "full_tests": 0,
+    "local_smoke": 0,
+    "closure_smoke": 0,
+    "recurrence_smoke": 0
+  },
+  "checkpoints": {
+    "final_local": {
+      "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+      "status": "incomplete",
+      "C": 1,
+      "O": 1,
+      "links": 0,
+      "rounds": 1,
+      "original_identity_proved": false
+    },
+    "final_closure": {
+      "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+      "status": "original_theorem_proved",
+      "C": 4,
+      "O": 0,
+      "links": 3,
+      "rounds": 4,
+      "original_identity_proved": true
+    },
+    "final_recurrence": {
+      "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+      "status": "incomplete",
+      "C": 1,
+      "O": 1,
+      "links": 0,
+      "rounds": 1,
+      "original_identity_proved": false
+    }
+  },
+  "frozen_files_checked": 65,
+  "after_snapshot_files": 67,
+  "original_test_files_unchanged": 14,
+  "source_and_proof_tree_invariants": true,
+  "new_report_in_after_snapshot": true
+}

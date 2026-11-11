@@ -1,0 +1,372 @@
+[
+  {
+    "sequence": 1,
+    "method": "coefficient",
+    "started_at": "2026-11-11T15:45:36.643630+00:00",
+    "cases": {
+      "positive": {
+        "status": "symbolic_constructed",
+        "sigma": "translation_pending",
+        "wall_seconds": 0.4290932831354439,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "structure_mismatch": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.002090686932206154,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "mathematical_failure": {
+        "status": "incomplete",
+        "sigma": "search_exhausted",
+        "wall_seconds": 0.4324384708888829,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "prelaunch_budget_exhausted": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.005829698871821165,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "worker_timeout": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.12821358256042004,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      }
+    },
+    "capability_level": "L2",
+    "finished_at": "2026-11-11T15:45:37.665280+00:00"
+  },
+  {
+    "sequence": 2,
+    "method": "product",
+    "started_at": "2026-11-11T15:45:37.665644+00:00",
+    "cases": {
+      "positive": {
+        "status": "incomplete",
+        "sigma": "capability_unavailable",
+        "wall_seconds": 0.0036279018968343735,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "structure_mismatch": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.002042967826128006,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      }
+    },
+    "capability_level": "L0",
+    "finished_at": "2026-11-11T15:45:37.676114+00:00"
+  },
+  {
+    "sequence": 3,
+    "method": "interpolation",
+    "started_at": "2026-11-11T15:45:37.676673+00:00",
+    "cases": {
+      "positive": {
+        "status": "symbolic_constructed",
+        "sigma": "translation_pending",
+        "wall_seconds": 0.4337355028837919,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "structure_mismatch": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.002098571974784136,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "mathematical_failure": {
+        "status": "incomplete",
+        "sigma": "search_exhausted",
+        "wall_seconds": 0.4319845139980316,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "prelaunch_budget_exhausted": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.005707308184355497,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "worker_timeout": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.12827826524153352,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      }
+    },
+    "capability_level": "L2",
+    "finished_at": "2026-11-11T15:45:38.701898+00:00"
+  },
+  {
+    "sequence": 4,
+    "method": "noncommutative",
+    "started_at": "2026-11-11T15:45:38.702566+00:00",
+    "cases": {
+      "positive": {
+        "status": "incomplete",
+        "sigma": "capability_unavailable",
+        "wall_seconds": 0.0035446560941636562,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "structure_mismatch": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.0020229192450642586,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      }
+    },
+    "capability_level": "L0",
+    "finished_at": "2026-11-11T15:45:38.712652+00:00"
+  },
+  {
+    "sequence": 5,
+    "method": "combinatorial",
+    "started_at": "2026-11-11T15:45:38.713238+00:00",
+    "cases": {
+      "positive": {
+        "status": "incomplete",
+        "sigma": "capability_unavailable",
+        "wall_seconds": 0.0035322019830346107,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "structure_mismatch": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.002013222314417362,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      }
+    },
+    "capability_level": "L0",
+    "finished_at": "2026-11-11T15:45:38.723226+00:00"
+  },
+  {
+    "sequence": 6,
+    "method": "difference_ring",
+    "started_at": "2026-11-11T15:45:38.723896+00:00",
+    "cases": {
+      "positive": {
+        "status": "symbolic_constructed",
+        "sigma": "translation_pending",
+        "wall_seconds": 0.432150867767632,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "structure_mismatch": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.002074887976050377,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "mathematical_failure": {
+        "status": "incomplete",
+        "sigma": "search_exhausted",
+        "wall_seconds": 0.4321636511012912,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "prelaunch_budget_exhausted": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.005746521055698395,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "worker_timeout": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.12812740914523602,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      }
+    },
+    "capability_level": "L2",
+    "finished_at": "2026-11-11T15:45:39.753364+00:00"
+  },
+  {
+    "sequence": 7,
+    "method": "kernel_transform",
+    "started_at": "2026-11-11T15:45:39.754150+00:00",
+    "cases": {
+      "positive": {
+        "status": "symbolic_constructed",
+        "sigma": "translation_pending",
+        "wall_seconds": 0.43364561116322875,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "structure_mismatch": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.002132294699549675,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "mathematical_failure": {
+        "status": "incomplete",
+        "sigma": "search_exhausted",
+        "wall_seconds": 0.43366096913814545,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "prelaunch_budget_exhausted": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.006458733230829239,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "worker_timeout": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.1293981117196381,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      }
+    },
+    "capability_level": "L2",
+    "finished_at": "2026-11-11T15:45:40.783491+00:00"
+  },
+  {
+    "sequence": 8,
+    "method": "spectral",
+    "started_at": "2026-11-11T15:45:40.784399+00:00",
+    "cases": {
+      "positive": {
+        "status": "symbolic_constructed",
+        "sigma": "translation_pending",
+        "wall_seconds": 0.42915591411292553,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "structure_mismatch": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.0009771096520125866,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "mathematical_failure": {
+        "status": "incomplete",
+        "sigma": "search_exhausted",
+        "wall_seconds": 0.42525187227874994,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "prelaunch_budget_exhausted": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.004038655664771795,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "worker_timeout": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.1372033399529755,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      }
+    },
+    "capability_level": "L2",
+    "finished_at": "2026-11-11T15:45:41.794935+00:00"
+  },
+  {
+    "sequence": 9,
+    "method": "determinant",
+    "started_at": "2026-11-11T15:45:41.795655+00:00",
+    "cases": {
+      "positive": {
+        "status": "symbolic_constructed",
+        "sigma": "translation_pending",
+        "wall_seconds": 0.42650696402415633,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "structure_mismatch": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.0012769950553774834,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "prelaunch_budget_exhausted": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.004007167182862759,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "worker_timeout": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.12407666863873601,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      }
+    },
+    "capability_level": "L2",
+    "finished_at": "2026-11-11T15:45:42.362253+00:00"
+  },
+  {
+    "sequence": 10,
+    "method": "macmahon",
+    "started_at": "2026-11-11T15:45:42.362921+00:00",
+    "cases": {
+      "positive": {
+        "status": "symbolic_constructed",
+        "sigma": "translation_pending",
+        "wall_seconds": 0.5326273078098893,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "structure_mismatch": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.0020364862866699696,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "mathematical_failure": {
+        "status": "incomplete",
+        "sigma": "not_applicable",
+        "wall_seconds": 0.43605648586526513,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "prelaunch_budget_exhausted": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.007743423338979483,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      },
+      "worker_timeout": {
+        "status": "budget_exhausted",
+        "sigma": "timeout",
+        "wall_seconds": 0.12990170903503895,
+        "formal_certificates": 0,
+        "formal_obligations": 0
+      }
+    },
+    "capability_level": "L2",
+    "finished_at": "2026-11-11T15:45:43.494511+00:00"
+  }
+]

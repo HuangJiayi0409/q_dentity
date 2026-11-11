@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "method": "difference_ring",
+  "input": {
+    "goal": {
+      "lhs": {
+        "op": "pow",
+        "arg": {
+          "op": "atom",
+          "key": 0,
+          "display": "x"
+        },
+        "exponent": 2
+      },
+      "rhs": {
+        "op": "pow",
+        "arg": {
+          "op": "atom",
+          "key": 1,
+          "display": "y"
+        },
+        "exponent": 2
+      },
+      "hypotheses": [
+        {
+          "name": "h0",
+          "lhs": {
+            "op": "atom",
+            "key": 0,
+            "display": "x"
+          },
+          "rhs": {
+            "op": "atom",
+            "key": 1,
+            "display": "y"
+          }
+        }
+      ]
+    },
+    "max_degree": 8,
+    "max_unknowns": 1000
+  }
+}

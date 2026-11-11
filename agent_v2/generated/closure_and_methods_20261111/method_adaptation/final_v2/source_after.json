@@ -1,0 +1,64 @@
+{
+  "coefficient": {
+    "agent_v2/symbolic_methods.py": "e5ca622378f2d09c6ab165b1e4ebae898c034856cdf61925d2e20d3da689cf02",
+    "agent_v2/symbolic_worker.py": "a40c9b8f6e4c1ad482d83782535070f94e5916d1e865fb73f7359914185ac9ef",
+    "finite_product_framework/p2/run.py": "134f8e4c084e6f16a73f8d01ce070548446d2e5aed29c8b34d6a8a911f182044"
+  },
+  "product": {
+    "agent_v2/symbolic_methods.py": "e5ca622378f2d09c6ab165b1e4ebae898c034856cdf61925d2e20d3da689cf02",
+    "agent_v2/symbolic_worker.py": "a40c9b8f6e4c1ad482d83782535070f94e5916d1e865fb73f7359914185ac9ef",
+    "finite_product_framework/product/pipeline.py": "ceceae68a409e8fd61e77c671cf68791fc95702490bdb92f7ca1ffcc3a4e41ca"
+  },
+  "interpolation": {
+    "agent_v2/symbolic_methods.py": "e5ca622378f2d09c6ab165b1e4ebae898c034856cdf61925d2e20d3da689cf02",
+    "agent_v2/symbolic_worker.py": "a40c9b8f6e4c1ad482d83782535070f94e5916d1e865fb73f7359914185ac9ef",
+    "finite_product_framework/interpolation/algebra.py": "a314625032967b1f1b1fc79466b580f8e3c31e90af20f308004ead6c2d42935d"
+  },
+  "noncommutative": {
+    "agent_v2/symbolic_methods.py": "e5ca622378f2d09c6ab165b1e4ebae898c034856cdf61925d2e20d3da689cf02",
+    "agent_v2/symbolic_worker.py": "a40c9b8f6e4c1ad482d83782535070f94e5916d1e865fb73f7359914185ac9ef",
+    "finite_product_framework/noncommutative/pipeline.py": "8492d72e51db5503adf94086b4bfebc6f666c0655ac1036a05426231654c2bdb"
+  },
+  "combinatorial": {
+    "agent_v2/symbolic_methods.py": "e5ca622378f2d09c6ab165b1e4ebae898c034856cdf61925d2e20d3da689cf02",
+    "agent_v2/symbolic_worker.py": "a40c9b8f6e4c1ad482d83782535070f94e5916d1e865fb73f7359914185ac9ef",
+    "finite_product_framework/combinatorial/pipeline.py": "4f92d34edc987f974959049def808a493c7d080da973ea7df6354a8ed936d7c5"
+  },
+  "difference_ring": {
+    "agent_v2/symbolic_methods.py": "e5ca622378f2d09c6ab165b1e4ebae898c034856cdf61925d2e20d3da689cf02",
+    "agent_v2/symbolic_worker.py": "a40c9b8f6e4c1ad482d83782535070f94e5916d1e865fb73f7359914185ac9ef",
+    "finite_product_framework/difference_ring/algebra.py": "39b564b01bae6c027ad7b3ff282df56146df24cfd4f753f85d8fb900d0b2c1a4"
+  },
+  "kernel_transform": {
+    "agent_v2/symbolic_methods.py": "e5ca622378f2d09c6ab165b1e4ebae898c034856cdf61925d2e20d3da689cf02",
+    "agent_v2/symbolic_worker.py": "a40c9b8f6e4c1ad482d83782535070f94e5916d1e865fb73f7359914185ac9ef",
+    "finite_product_framework/kernel_transform/construct.py": "540849b13ede87181005af73c61c205b7cb7f0fb23f151b3fe286da329bcd06d",
+    "finite_product_framework/workflow/__init__.py": "5b7c60cb4037b7479e38f52dc5b15abc4f74a4d5828693314be3856ac320b6a0",
+    "finite_product_framework/workflow/matrix_symbolic.py": "5ffea9032a6c6cb79aeca8026ffa34e5981ceacc0b6b2181ade37257bc999e79"
+  },
+  "spectral": {
+    "agent_v2/symbolic_methods.py": "e5ca622378f2d09c6ab165b1e4ebae898c034856cdf61925d2e20d3da689cf02",
+    "agent_v2/symbolic_worker.py": "a40c9b8f6e4c1ad482d83782535070f94e5916d1e865fb73f7359914185ac9ef",
+    "finite_product_framework/spectral/construct.py": "b4327ae2db0cad16025c39469e09486301292141adaca15df04fa9c005a6bded",
+    "finite_product_framework/workflow/__init__.py": "5b7c60cb4037b7479e38f52dc5b15abc4f74a4d5828693314be3856ac320b6a0",
+    "finite_product_framework/workflow/matrix_symbolic.py": "5ffea9032a6c6cb79aeca8026ffa34e5981ceacc0b6b2181ade37257bc999e79"
+  },
+  "determinant": {
+    "agent_v2/symbolic_methods.py": "e5ca622378f2d09c6ab165b1e4ebae898c034856cdf61925d2e20d3da689cf02",
+    "agent_v2/symbolic_worker.py": "a40c9b8f6e4c1ad482d83782535070f94e5916d1e865fb73f7359914185ac9ef",
+    "finite_product_framework/determinant/construct.py": "ef52b528c930fd90392815baa7b21d62c5897a1e0d6bea9f42d5b634810c2c35",
+    "finite_product_framework/workflow/__init__.py": "5b7c60cb4037b7479e38f52dc5b15abc4f74a4d5828693314be3856ac320b6a0",
+    "finite_product_framework/workflow/matrix_symbolic.py": "5ffea9032a6c6cb79aeca8026ffa34e5981ceacc0b6b2181ade37257bc999e79"
+  },
+  "macmahon": {
+    "agent_v2/symbolic_methods.py": "e5ca622378f2d09c6ab165b1e4ebae898c034856cdf61925d2e20d3da689cf02",
+    "agent_v2/symbolic_worker.py": "a40c9b8f6e4c1ad482d83782535070f94e5916d1e865fb73f7359914185ac9ef",
+    "finite_product_framework/p1/core.py": "9465d5b7c62b6cdc7543001d2ec22af8c4f8dfabeb1eff5c879aeb488a87b25e",
+    "finite_product_framework/p1/expressions.py": "5158e915a5eed60a4708e3f317b8ff6b43090783e840e04f3e3e2b40f1b9a864",
+    "finite_product_framework/p1/ore.py": "621c63ba9e9db246128ca3a44b36c75619133f8238dedf47618bdb7f9e91394d",
+    "finite_product_framework/p1/qgosper.py": "ec3f0329814251c701221d82af6d117424597e9d48a45afd73227169e384f70d",
+    "finite_product_framework/p1/qomega.py": "1665dbe5371efa711aea2d24d31252d5ce9ac1b5814daea9e85c23a535b7109c",
+    "finite_product_framework/p1/qparameterized.py": "caad344d1f8acaca27c546b00b0edff1b9ed9dbaf8916a66c34228151de24df0",
+    "finite_product_framework/p1/zeilberger.py": "81b5f7262fb9e4d154f78e673502158d7fe8301af2659d4277efd5f62239f7a9"
+  }
+}

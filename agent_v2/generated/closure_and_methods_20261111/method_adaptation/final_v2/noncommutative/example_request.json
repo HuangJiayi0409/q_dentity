@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "method": "noncommutative",
+  "input": {
+    "op": "Eq",
+    "args": [
+      {
+        "op": "HMul.hMul",
+        "args": [
+          {
+            "op": "var",
+            "name": "x"
+          },
+          {
+            "op": "var",
+            "name": "y"
+          }
+        ]
+      },
+      {
+        "op": "HMul.hMul",
+        "args": [
+          {
+            "op": "var",
+            "name": "x"
+          },
+          {
+            "op": "var",
+            "name": "y"
+          }
+        ]
+      }
+    ]
+  }
+}

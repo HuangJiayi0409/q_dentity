@@ -36,13 +36,13 @@ def classify_stop(state, candidates, reasons):
     codes = {reason.get('code') for reason in reasons}
     integrity = {'original_binding_mismatch', 'unregistered_current_or_root',
         'original_representation_mismatch', 'representation_binding_mismatch',
-        'current_representation_unverified', 'invalid_identity_edge'}
+        'current_representation_unverified', 'invalid_identity_edge', 'method_unregistered'}
     if codes & integrity:
         return 'integrity_error', 'graph_integrity_error'
     if 'budget_insufficient' in codes:
         return 'budget_exhausted', 'no_affordable_action'
     navigation = {'unreachable_representation', 'no_transition_from_current'}
-    active = codes - navigation
+    active = codes - navigation - {'task_already_completed'}
     environmental = {code for code in active if failure_category({'code': code}) == 'environment'}
     if environmental:
         return 'environment_blocked', 'environment_unavailable'
@@ -61,11 +61,12 @@ def classify_stop(state, candidates, reasons):
         return 'incomplete', 'repeated_actions_exhausted'
     contracts = {'representation_kind_mismatch', 'semantic_domain_mismatch',
         'index_ranges_mismatch', 'core_input_contract_mismatch', 'transformation_domain_mismatch',
-        'unknown_transformation_domain', 'bridge_proposition_mismatch', 'no_matching_open_obligation'}
+        'unknown_transformation_domain', 'bridge_proposition_mismatch', 'no_matching_open_obligation',
+        'method_parameter_mismatch'}
     if active and active <= contracts:
         return 'incomplete', 'input_contract_mismatch'
     capability = {'bridge_not_verified', 'condition_not_verified', 'required_certificate_unavailable',
-                  'bridge_dependency_unavailable', 'unsupported_transformation_anchor'}
+                  'bridge_dependency_unavailable', 'unsupported_transformation_anchor', 'capability_unavailable'}
     if not active or active & capability:
         return 'incomplete', 'graph_capability_missing'
     return 'incomplete', 'no_legal_route'

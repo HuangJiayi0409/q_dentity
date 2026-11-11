@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "method": "product",
+  "input": {
+    "op": "Eq",
+    "args": [
+      {
+        "op": "Finset.prod",
+        "args": [
+          {
+            "op": "Finset.range",
+            "args": [
+              {
+                "op": "HAdd.hAdd",
+                "args": [
+                  {
+                    "op": "var",
+                    "name": "m"
+                  },
+                  {
+                    "op": "var",
+                    "name": "n"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "lambda",
+            "name": "k",
+            "body": {
+              "op": "var",
+              "name": "x"
+            }
+          }
+        ]
+      },
+      {
+        "op": "Finset.prod",
+        "args": [
+          {
+            "op": "Finset.range",
+            "args": [
+              {
+                "op": "HAdd.hAdd",
+                "args": [
+                  {
+                    "op": "var",
+                    "name": "m"
+                  },
+                  {
+                    "op": "var",
+                    "name": "n"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "lambda",
+            "name": "k",
+            "body": {
+              "op": "var",
+              "name": "x"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

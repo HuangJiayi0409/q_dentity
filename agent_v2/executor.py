@@ -83,7 +83,10 @@ def assemble_term(state):
 
     def build(node):
         link = links[node.id]
-        term = f'({certificates[link.certificate_id].proof_term})'
+        certificate = certificates[link.certificate_id]
+        # A tactic block applied as a function cannot infer its premise types
+        # from the final conclusion. Preserve the checked type at every node.
+        term = f'(({certificate.proof_term}) : ({certificate.proposition}))'
         return ' '.join([term, *(f'({build(child)})' for child in link.children)])
 
     return build(state.root)
@@ -155,6 +158,8 @@ def verify_and_update(state, action, result, checker, context):
             if parent is None or candidate.proposition != connection_type(parent, candidate.replaces):
                 raise ContractError('candidate does not prove requested connection')
             for child in candidate.replaces:
+                if 'task' in action.theta and child.origin_action != action.id:
+                    raise ContractError('task obligation origin differs from the selected action')
                 if child.id in obligations or child.id in introduced or child.id == state.root.id:
                     raise ContractError('obligation identity collision')
                 introduced[child.id] = child
@@ -210,8 +215,19 @@ class Executor:
                 raise ContractError('core requires an explicitly bound core_request representation')
             raw = adapter.execute(thaw(node.payload), backend_dir, seconds)
         elif action.backend == 'method':
-            raw = adapter.execute(state.G.identity, action.theta.get('method'), state.G.to_dict(),
-                                  backend_dir, seconds)
+            if hasattr(adapter, 'validate_action'):
+                adapter.validate_action(action)
+            node = graph.nodes[action.target]
+            if node.kind == 'core_request':
+                if set(node.payload) != {'declaration', 'request'}:
+                    raise ContractError('method core representation requires source declaration and typed request')
+                raw = adapter.execute_request(action.theta.get('method'), thaw(node.payload['request']),
+                                              backend_dir, seconds)
+            elif 'task' in action.theta:
+                raw = adapter.execute_action(state, action, backend_dir, seconds)
+            else:
+                raw = adapter.execute(state.G.identity, action.theta.get('method'), state.G.to_dict(),
+                                      backend_dir, seconds)
         elif action.backend == 'llm':
             raise ContractError('LLM execution is disabled')
         else:

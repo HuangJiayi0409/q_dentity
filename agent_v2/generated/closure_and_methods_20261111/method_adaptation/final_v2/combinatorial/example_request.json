@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "method": "combinatorial",
+  "input": {
+    "op": "Eq",
+    "args": [
+      {
+        "op": "Finset.sum",
+        "args": [
+          {
+            "op": "Finset.range",
+            "args": [
+              {
+                "op": "var",
+                "name": "n"
+              }
+            ]
+          },
+          {
+            "op": "lambda",
+            "name": "k",
+            "body": {
+              "op": "var",
+              "name": "x"
+            }
+          }
+        ]
+      },
+      {
+        "op": "Finset.sum",
+        "args": [
+          {
+            "op": "Finset.range",
+            "args": [
+              {
+                "op": "var",
+                "name": "n"
+              }
+            ]
+          },
+          {
+            "op": "lambda",
+            "name": "k",
+            "body": {
+              "op": "var",
+              "name": "x"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

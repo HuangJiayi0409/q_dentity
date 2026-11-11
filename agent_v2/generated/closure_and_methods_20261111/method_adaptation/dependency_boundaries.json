@@ -1,0 +1,76 @@
+{
+  "l0_boundaries": [
+    {
+      "method": "product",
+      "native_pipeline": "finite_product_framework/product/pipeline.py",
+      "workflow_imports": [
+        {
+          "line": 14,
+          "module": "workflow.contracts"
+        },
+        {
+          "line": 39,
+          "module": "workflow.preprocessed"
+        },
+        {
+          "line": 61,
+          "module": "workflow.preprocessed"
+        }
+      ],
+      "missing_dependencies": [
+        "finite_product_framework/workflow/contracts.py",
+        "finite_product_framework/workflow/preprocessed.py"
+      ],
+      "mathematical_construction": "requires native Lean exporter / rule execution; planner output alone is not a certificate"
+    },
+    {
+      "method": "noncommutative",
+      "native_pipeline": "finite_product_framework/noncommutative/pipeline.py",
+      "workflow_imports": [
+        {
+          "line": 11,
+          "module": "workflow.contracts"
+        },
+        {
+          "line": 21,
+          "module": "workflow.preprocessed"
+        },
+        {
+          "line": 31,
+          "module": "workflow.preprocessed"
+        }
+      ],
+      "missing_dependencies": [
+        "finite_product_framework/workflow/contracts.py",
+        "finite_product_framework/workflow/preprocessed.py"
+      ],
+      "mathematical_construction": "requires native Lean exporter / rule execution; planner output alone is not a certificate"
+    },
+    {
+      "method": "combinatorial",
+      "native_pipeline": "finite_product_framework/combinatorial/pipeline.py",
+      "workflow_imports": [
+        {
+          "line": 14,
+          "module": "workflow.contracts"
+        },
+        {
+          "line": 92,
+          "module": "workflow.preprocessed"
+        },
+        {
+          "line": 101,
+          "module": "workflow.preprocessed"
+        }
+      ],
+      "missing_dependencies": [
+        "finite_product_framework/workflow/contracts.py",
+        "finite_product_framework/workflow/preprocessed.py"
+      ],
+      "mathematical_construction": "requires native Lean exporter / rule execution; planner output alone is not a certificate"
+    }
+  ],
+  "matrix_helper": "finite_product_framework/workflow/matrix_symbolic.py",
+  "workflow_init_docstring_only": true,
+  "scope": "static source/dependency audit only; no legacy controller imported"
+}
