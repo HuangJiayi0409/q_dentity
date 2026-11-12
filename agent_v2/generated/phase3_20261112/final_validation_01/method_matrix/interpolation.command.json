@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "agent_v2.tests.local_method_smoke",
+    "--method",
+    "interpolation",
+    "--identity",
+    "FQI-SRC-GR2-I-20",
+    "--seconds",
+    "1200",
+    "--output-root",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation"
+  ],
+  "returncode": 0,
+  "wall_seconds": 194.84441839996725,
+  "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation.stdout.log",
+  "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation.stderr.log"
+}

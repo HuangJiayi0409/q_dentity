@@ -1,0 +1,795 @@
+{
+  "scope": "actual invocations retained verbatim; choose new empty output roots for reruns",
+  "commands": {
+    "telescoping": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/telescoping_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/summary.json",
+      "commands": [
+        [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.cli",
+          "run",
+          "--identity",
+          "FQI-SRC-AP-3.3.9",
+          "--method",
+          "telescoping",
+          "--scope",
+          "full",
+          "--selector",
+          "rule",
+          "--max-steps",
+          "4",
+          "--seconds",
+          "2400.0",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs"
+        ],
+        [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.cli",
+          "resume",
+          "--run-dir",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d"
+        ]
+      ]
+    },
+    "recurrence": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/recurrence_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/summary.json",
+      "commands": [
+        [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.cli",
+          "run",
+          "--identity",
+          "FQI-GAUSS-ALTERNATING",
+          "--method",
+          "recurrence",
+          "--scope",
+          "full",
+          "--selector",
+          "rule",
+          "--max-steps",
+          "5",
+          "--pause-after",
+          "1",
+          "--seconds",
+          "4000.0",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs"
+        ],
+        [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.cli",
+          "resume",
+          "--run-dir",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+          "--pause-after",
+          "1"
+        ],
+        [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.cli",
+          "resume",
+          "--run-dir",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+          "--pause-after",
+          "2"
+        ],
+        [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.cli",
+          "resume",
+          "--run-dir",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+          "--pause-after",
+          "1"
+        ],
+        [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.cli",
+          "resume",
+          "--run-dir",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba"
+        ],
+        [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.cli",
+          "resume",
+          "--run-dir",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba"
+        ]
+      ]
+    },
+    "coefficient": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/coefficient_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient/summary.json",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-FINITE-Q-BINOMIAL",
+            "--method",
+            "coefficient",
+            "--scope",
+            "local",
+            "--max-steps",
+            "1",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient/runs"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient/runs/20261112T033245Z-7230ca355b\"}\n",
+          "stderr": "",
+          "wall_seconds": 47.79665226908401
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "resume",
+            "--run-dir",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient/runs/20261112T033245Z-7230ca355b"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient/runs/20261112T033245Z-7230ca355b\"}\n",
+          "stderr": "",
+          "wall_seconds": 47.57223752094433
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-GAUSS-ALTERNATING",
+            "--method",
+            "coefficient",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient/mismatch"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient/mismatch/20261112T033508Z-60e932bac3\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.44494608929380774
+        }
+      ]
+    },
+    "product": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/product_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/summary.json",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-POCHHAMMER-RESIDUES",
+            "--method",
+            "product",
+            "--max-steps",
+            "2",
+            "--seconds",
+            "120.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.8805970721878111
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "resume",
+            "--run-dir",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.49172193510457873
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-GAUSS-ALTERNATING",
+            "--method",
+            "product",
+            "--seconds",
+            "120.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/mismatch"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/mismatch/20261112T034848Z-44545eb63a\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.463220268022269
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-POCHHAMMER-RESIDUES",
+            "--method",
+            "product",
+            "--seconds",
+            "0.000001",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/tiny_budget"
+          ],
+          "returncode": 3,
+          "stdout": "{\"schema_version\": 1, \"status\": \"budget_exhausted\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/tiny_budget/20261112T034848Z-b475a255c4\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.46365924272686243
+        }
+      ]
+    },
+    "interpolation": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/interpolation_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation/summary.json",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-SRC-GR2-I-20",
+            "--method",
+            "interpolation",
+            "--scope",
+            "local",
+            "--max-steps",
+            "1",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation/runs"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation/runs/20261112T033509Z-961608b5ba\"}\n",
+          "stderr": "",
+          "wall_seconds": 65.40464019868523
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "resume",
+            "--run-dir",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation/runs/20261112T033509Z-961608b5ba"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation/runs/20261112T033509Z-961608b5ba\"}\n",
+          "stderr": "",
+          "wall_seconds": 63.71583147486672
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-GAUSS-ALTERNATING",
+            "--method",
+            "interpolation",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation/mismatch"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation/mismatch/20261112T033823Z-047c595f1e\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.4400476450100541
+        }
+      ]
+    },
+    "noncommutative": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/noncommutative_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/summary.json",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-SRC-KAC-CHEUNG-5.7",
+            "--method",
+            "noncommutative",
+            "--max-steps",
+            "2",
+            "--seconds",
+            "120.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce\"}\n",
+          "stderr": "",
+          "wall_seconds": 1.05499946186319
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "resume",
+            "--run-dir",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.5538221169263124
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-GAUSS-ALTERNATING",
+            "--method",
+            "noncommutative",
+            "--seconds",
+            "120.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/mismatch"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/mismatch/20261112T034851Z-48f7c0829c\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.44577112421393394
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-SRC-KAC-CHEUNG-5.7",
+            "--method",
+            "noncommutative",
+            "--seconds",
+            "0.000001",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/tiny_budget"
+          ],
+          "returncode": 3,
+          "stdout": "{\"schema_version\": 1, \"status\": \"budget_exhausted\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/tiny_budget/20261112T034851Z-dc94bf4703\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.4938151710666716
+        }
+      ]
+    },
+    "combinatorial": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/combinatorial_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/summary.json",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-FINITE-Q-BINOMIAL",
+            "--method",
+            "combinatorial",
+            "--max-steps",
+            "2",
+            "--seconds",
+            "120.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/runs"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/runs/20261112T034852Z-fe653f32a6\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.9229351421818137
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "resume",
+            "--run-dir",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/runs/20261112T034852Z-fe653f32a6"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/runs/20261112T034852Z-fe653f32a6\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.44524418096989393
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-GAUSS-ALTERNATING",
+            "--method",
+            "combinatorial",
+            "--seconds",
+            "120.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/mismatch"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/mismatch/20261112T034854Z-1f136fc68a\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.3945277249440551
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-FINITE-Q-BINOMIAL",
+            "--method",
+            "combinatorial",
+            "--seconds",
+            "0.000001",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/tiny_budget"
+          ],
+          "returncode": 3,
+          "stdout": "{\"schema_version\": 1, \"status\": \"budget_exhausted\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/tiny_budget/20261112T034854Z-d67f47b552\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.4708771090954542
+        }
+      ]
+    },
+    "difference_ring": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/difference_ring_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/summary.json",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-SRC-FINE-2.1",
+            "--method",
+            "difference_ring",
+            "--scope",
+            "local",
+            "--max-steps",
+            "1",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/runs"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/runs/20261112T034319Z-f21b319a0b\"}\n",
+          "stderr": "",
+          "wall_seconds": 44.07492090482265
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "resume",
+            "--run-dir",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/runs/20261112T034319Z-f21b319a0b"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/runs/20261112T034319Z-f21b319a0b\"}\n",
+          "stderr": "",
+          "wall_seconds": 43.54382377071306
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-GAUSS-ALTERNATING",
+            "--method",
+            "difference_ring",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/mismatch"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/mismatch/20261112T034530Z-10dd86fe4e\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.4021878312341869
+        }
+      ]
+    },
+    "kernel_transform": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/kernel_transform_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/summary.json",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-SRC-AQ-3.23",
+            "--method",
+            "kernel_transform",
+            "--scope",
+            "local",
+            "--max-steps",
+            "1",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/runs"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/runs/20261112T034056Z-f2e18e652f\"}\n",
+          "stderr": "",
+          "wall_seconds": 47.43092287983745
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "resume",
+            "--run-dir",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/runs/20261112T034056Z-f2e18e652f"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/runs/20261112T034056Z-f2e18e652f\"}\n",
+          "stderr": "",
+          "wall_seconds": 47.59035273594782
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-GAUSS-ALTERNATING",
+            "--method",
+            "kernel_transform",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/mismatch"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/mismatch/20261112T034318Z-2321685e5a\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.4346039239317179
+        }
+      ]
+    },
+    "spectral": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/spectral_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_boundary.json",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-SRC-GR2-7.2.24",
+            "--method",
+            "spectral",
+            "--seconds",
+            "120",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs"
+          ],
+          "returncode": 2,
+          "wall_seconds": 0.5657032770104706,
+          "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_run.stdout.log",
+          "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_run.stderr.log"
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "resume",
+            "--run-dir",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs/20261112T034855Z-caca93e8fd"
+          ],
+          "returncode": 2,
+          "wall_seconds": 0.5656819972209632,
+          "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_resume.stdout.log",
+          "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_resume.stderr.log"
+        }
+      ]
+    },
+    "determinant": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/determinant_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/summary.json",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-SRC-AP-11.2.4",
+            "--method",
+            "determinant",
+            "--scope",
+            "local",
+            "--max-steps",
+            "1",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b\"}\n",
+          "stderr": "",
+          "wall_seconds": 51.860620251856744
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "resume",
+            "--run-dir",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b\"}\n",
+          "stderr": "",
+          "wall_seconds": 49.79193024523556
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-GAUSS-ALTERNATING",
+            "--method",
+            "determinant",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/mismatch"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/mismatch/20261112T034055Z-37b43fd0d2\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.44310753606259823
+        }
+      ]
+    },
+    "macmahon": {
+      "card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/macmahon_acceptance_card.json",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon/summary.json",
+      "commands": [
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-SRC-GR2-7.Ex14",
+            "--method",
+            "macmahon",
+            "--scope",
+            "local",
+            "--max-steps",
+            "1",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon/runs"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon/runs/20261112T034531Z-48c8e466aa\"}\n",
+          "stderr": "",
+          "wall_seconds": 65.73030483722687
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "resume",
+            "--run-dir",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon/runs/20261112T034531Z-48c8e466aa"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon/runs/20261112T034531Z-48c8e466aa\"}\n",
+          "stderr": "",
+          "wall_seconds": 64.28269467502832
+        },
+        {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "agent_v2.cli",
+            "run",
+            "--identity",
+            "FQI-GAUSS-ALTERNATING",
+            "--method",
+            "macmahon",
+            "--seconds",
+            "1200.0",
+            "--output-root",
+            "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon/mismatch"
+          ],
+          "returncode": 2,
+          "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon/mismatch/20261112T034845Z-f4171c1936\"}\n",
+          "stderr": "",
+          "wall_seconds": 0.4538674419745803
+        }
+      ]
+    }
+  },
+  "full_suite": [
+    "/usr/bin/python3",
+    "agent_v2/generated/phase3_20261112/run_full_suite.py",
+    "--output-root",
+    "agent_v2/generated/phase3_20261112/final_validation_01/full_suite"
+  ],
+  "method_matrix_invocation": [
+    "/usr/bin/python3",
+    "agent_v2/generated/phase3_20261112/run_final_method_matrix.py",
+    "--output-root",
+    "agent_v2/generated/phase3_20261112/final_validation_01/method_matrix"
+  ]
+}

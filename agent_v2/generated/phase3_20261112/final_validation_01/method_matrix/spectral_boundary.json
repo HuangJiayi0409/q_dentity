@@ -1,0 +1,55 @@
+{
+  "verification_passed": true,
+  "requested_Source_L3_upgrade_passed": false,
+  "scope": "fresh current-runtime Source refusal and resume; no mathematical proof",
+  "method": "spectral",
+  "identity": "FQI-SRC-GR2-7.2.24",
+  "source_sha256": "b8f35c5da4ec0e64366b20a87595c2ea6ca257d0f7b75b33a1aef29767a0b955",
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs/20261112T034855Z-caca93e8fd",
+  "initial_stop_reason": "not_applicable",
+  "resume_stop_reason": "graph_capability_missing",
+  "C": 0,
+  "O": [
+    "original"
+  ],
+  "links": 0,
+  "lean_calls": 0,
+  "CAS_calls": 0,
+  "original_identity_proved": false,
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-SRC-GR2-7.2.24",
+        "--method",
+        "spectral",
+        "--seconds",
+        "120",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.5657032770104706,
+      "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_run.stdout.log",
+      "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_run.stderr.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "resume",
+        "--run-dir",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs/20261112T034855Z-caca93e8fd"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.5656819972209632,
+      "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_resume.stdout.log",
+      "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_resume.stderr.log"
+    }
+  ]
+}

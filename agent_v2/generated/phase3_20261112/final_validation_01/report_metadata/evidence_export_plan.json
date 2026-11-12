@@ -1,0 +1,67 @@
+{
+  "scope": "planned explicit evidence directories; not yet exported while writers run",
+  "cases": [
+    {
+      "id": "final_frozen_source",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen"
+    },
+    {
+      "id": "final_full_suite",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/full_suite"
+    },
+    {
+      "id": "final_recurrence_full",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence"
+    },
+    {
+      "id": "final_telescoping_full",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping"
+    },
+    {
+      "id": "final_Init_smoke",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/init_runs"
+    },
+    {
+      "id": "final_coefficient",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient"
+    },
+    {
+      "id": "final_interpolation",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation"
+    },
+    {
+      "id": "final_determinant",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant"
+    },
+    {
+      "id": "final_kernel_transform",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform"
+    },
+    {
+      "id": "final_difference_ring",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring"
+    },
+    {
+      "id": "final_macmahon",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon"
+    },
+    {
+      "id": "final_product",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product"
+    },
+    {
+      "id": "final_noncommutative",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative"
+    },
+    {
+      "id": "final_combinatorial",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial"
+    }
+  ],
+  "export_after_all_writers_stop": true,
+  "earlier_22_packages_immutable": true,
+  "additional_selected_metadata": "final CLI commands, stopped spectral Source run, full-suite final summary, Init driver logs, 12 cards and final audit are selected after completion",
+  "receipt_paths_rewritten": false,
+  "external_toolchain_cache_bundled": false,
+  "proof_verification_by_exporter": false
+}

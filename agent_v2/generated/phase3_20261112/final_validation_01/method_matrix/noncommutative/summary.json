@@ -1,0 +1,169 @@
+{
+  "passed": true,
+  "scope": "one_real_Train_Source_symbolic_only",
+  "method": "noncommutative",
+  "method_version": "2.0",
+  "capability_level": "L2",
+  "identity": "FQI-SRC-KAC-CHEUNG-5.7",
+  "theorem": "FiniteQBenchmark.Identity425.statement",
+  "source_sha256": "fa7bfbfae1de6d6fdeaefd41e14a56f2cd236cd0158676f2ceb79418f84bb22c",
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce",
+  "mismatch_run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/mismatch/20261112T034851Z-48f7c0829c",
+  "tiny_budget_run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/tiny_budget/20261112T034851Z-dc94bf4703",
+  "C_before": 0,
+  "C_after": 0,
+  "O_before": [
+    "original"
+  ],
+  "O_after": [
+    "original"
+  ],
+  "links_before": 0,
+  "links_after": 0,
+  "original_identity_proved": false,
+  "result_status": "symbolic_constructed",
+  "stop_reason": "symbolic_translation_pending",
+  "core_constructed": true,
+  "independent_symbolic_check": {
+    "algorithm": "definition trace replay and independent ordered-pair monomial action",
+    "arbitrary_degree": true,
+    "degree_sampled": false,
+    "finite_polynomial_extension": {
+      "basis": "K-linearity of the original multiplication and substitution definitions",
+      "lean_verified": false,
+      "symbolic_rule_recorded": true
+    },
+    "formal_certificate_exported": false,
+    "lean_verified": false,
+    "normal_forms": {
+      "lhs": [
+        {
+          "coefficient": 1,
+          "m_power": 1,
+          "q_power": 1,
+          "x_power": 1
+        }
+      ],
+      "rhs": [
+        {
+          "coefficient": 1,
+          "m_power": 1,
+          "q_power": 1,
+          "x_power": 1
+        }
+      ]
+    },
+    "operator_commutativity_used": false,
+    "ordered_pairs_checked": 1,
+    "q_zero_supported": true,
+    "remaining_work": "Original polynomial definitions and finite linear extension still require a production Lean bridge",
+    "scalar_division_used": false,
+    "status": "passed",
+    "steps_checked": 4
+  },
+  "lean_calls": 0,
+  "resume_repeated_actions": 0,
+  "resume_lean_calls": 0,
+  "budget_actions_charged": 1,
+  "actual_action_seconds": 0.4077551169320941,
+  "artifact_hashes_checked": 17,
+  "artifacts": {
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/cas_request.json": "186c0b2ac61f1fb9166e9439341be9bcd4d38a9f0993a6f8cca8daf55b92ea56",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/cas_return.json": "70be5b9cc3535f89bd89d300254b4afb7f87396c4413766f49a6d6e7f1a50af3",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/definition_binding.json": "343e5375d7e4c7c0b7637584ccad8410888dd44c213e7481955c3ddce3962989",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/frontend.json": "a6db4e41fa13067b0daaa7303c3f7acac250f9c9e8a200a82ab07622e1cb0001",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/mapping.json": "07ecc4990cba9f4f82d951bf4de66e5b1920848ab9bc72e395ae2987101b2a2b",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/method_request.json": "8e998e6ee40c663bfdf14ce6677a86ca1d800b5d7df47177cc04475a0086f063",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/symbolic_certificate.json": "d7bdb9af4f4c8c7462881133b2bc8296a451a824324211a4f03dd2e9803ef994",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/core/construction.json": "44d9484402b7cc1e02ceaae0c1b86184707cf9640a04432e91571a22393bc2c4",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/core/dependencies_after.json": "349bd1382b0a772a0ff6bd9395f26c108ee3d8865973a9f68fdeb4af9e0c54ef",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/core/dependencies_before.json": "349bd1382b0a772a0ff6bd9395f26c108ee3d8865973a9f68fdeb4af9e0c54ef",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/core/independent_check.json": "624fd650b25fcf50dfcee5eed5be4c76277de67be336b5cf21a9750ddc5a3302",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/core/process.json": "6566958711f3ca1ce39b85083ce953749a3ebacf76d777ec675f43daf0b28e5a",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/core/request.json": "186c0b2ac61f1fb9166e9439341be9bcd4d38a9f0993a6f8cca8daf55b92ea56",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/core/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/core/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/core/stdout.txt.process_request.json": "7f5589453a7631df23c64bd8e0612cee184fdee3d8746020d94be2b7caf575f8",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce/rounds/1/backend/core/stdout.txt.process_result.json": "3331cd1c2ef2de8d30ba5dff0dc5f0b3f9f1baf61a34c4ce67b5a6e61d8a4b12"
+  },
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-SRC-KAC-CHEUNG-5.7",
+        "--method",
+        "noncommutative",
+        "--max-steps",
+        "2",
+        "--seconds",
+        "120.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce\"}\n",
+      "stderr": "",
+      "wall_seconds": 1.05499946186319
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "resume",
+        "--run-dir",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.5538221169263124
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-GAUSS-ALTERNATING",
+        "--method",
+        "noncommutative",
+        "--seconds",
+        "120.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/mismatch"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/mismatch/20261112T034851Z-48f7c0829c\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.44577112421393394
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-SRC-KAC-CHEUNG-5.7",
+        "--method",
+        "noncommutative",
+        "--seconds",
+        "0.000001",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/tiny_budget"
+      ],
+      "returncode": 3,
+      "stdout": "{\"schema_version\": 1, \"status\": \"budget_exhausted\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/tiny_budget/20261112T034851Z-dc94bf4703\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.4938151710666716
+    }
+  ],
+  "model_calls": 0,
+  "test_data_read": false
+}

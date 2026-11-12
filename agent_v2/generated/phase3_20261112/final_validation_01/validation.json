@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "status": "third_stage_partially_complete",
+  "verification_passed": true,
+  "all_requested_method_upgrades_complete": false,
+  "stages": {
+    "A": {
+      "status": "complete",
+      "recurrence_original_theorem_proved": true
+    },
+    "B": {
+      "status": "complete",
+      "shared_profiles_and_regression_passed": true
+    },
+    "C": {
+      "status": "partial",
+      "upgraded_to_local_L3": [
+        "coefficient",
+        "interpolation",
+        "determinant",
+        "kernel_transform",
+        "difference_ring",
+        "macmahon"
+      ],
+      "stopped": [
+        "spectral"
+      ]
+    },
+    "D": {
+      "status": "complete",
+      "upgraded_to_Source_L2": [
+        "product",
+        "noncommutative",
+        "combinatorial"
+      ]
+    }
+  },
+  "final_full_suite": {
+    "tests": 475,
+    "passed": 475,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "wall_seconds": 543.1358761228621,
+    "summary": "full_suite/summary.json"
+  },
+  "registry_levels": {
+    "L0": [],
+    "L1": [],
+    "L2": [
+      "product",
+      "noncommutative",
+      "combinatorial",
+      "spectral"
+    ],
+    "L3": [
+      "telescoping",
+      "recurrence",
+      "coefficient",
+      "interpolation",
+      "difference_ring",
+      "kernel_transform",
+      "determinant",
+      "macmahon"
+    ]
+  },
+  "real_Train_Source_methods": [
+    "telescoping",
+    "recurrence",
+    "coefficient",
+    "product",
+    "interpolation",
+    "noncommutative",
+    "combinatorial",
+    "difference_ring",
+    "kernel_transform",
+    "determinant",
+    "macmahon"
+  ],
+  "full_original_methods": [
+    "telescoping",
+    "recurrence"
+  ],
+  "generic_standalone_interfaces_still_L0": [
+    "product",
+    "noncommutative",
+    "combinatorial"
+  ],
+  "final_evidence": {
+    "method_smokes": "method_matrix/summary.json",
+    "state_and_receipt_audit": "current_method_audit.json",
+    "full_and_Init_smokes": "final_ab_summary.json",
+    "frozen_code_math_and_tests": "frozen/manifest.json"
+  },
+  "frozen_code_math_test_files": 262,
+  "old_test_files_unchanged": 30,
+  "remaining_gap": "spectral has only its old bounded explicit-vector core; actual Train Source export and local Lean bridge are not complete",
+  "model_API_calls": 0,
+  "benchmark_Test_read": false,
+  "all_Train_batch_started": false,
+  "GitHub_uploaded": false,
+  "delivery_note": "report and minimal evidence-package final audit are tracked separately"
+}

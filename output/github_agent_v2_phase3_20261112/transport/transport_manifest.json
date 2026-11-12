@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scope": "Byte-preserving transport of all curated phase3 evidence; no new proof execution",
+  "source_directory": "output/agent_v2_phase3_evidence_20261112",
+  "source_pack_index_sha256": "16d8f286ece33336b1fed14b44ed7f3010d0af297abc8d04dcfb8666d7554679",
+  "archive": {
+    "path": "output/github_agent_v2_phase3_20261112/transport/agent_v2_phase3_evidence_20261112.tar.xz",
+    "bytes": 7255636,
+    "sha256": "1b4b1e99ebf7a3a3d8691ab29deac72f3e174b208425c5a0836b83783513c84f",
+    "format": "tar.xz",
+    "tar_format": "PAX",
+    "compression": {
+      "filter": "LZMA2",
+      "preset": 6,
+      "dict_size": 67108864,
+      "check": "CRC64"
+    }
+  },
+  "tar_metadata": {
+    "mtime": 0,
+    "uid": 0,
+    "gid": 0,
+    "uname": "",
+    "gname": "",
+    "mode": "0644"
+  },
+  "members": {
+    "count": 6801,
+    "total_bytes": 1146424463,
+    "manifest": "output/github_agent_v2_phase3_20261112/transport/members.json",
+    "manifest_sha256": "3a0867ddcc5cd6e3b2c7c56999cacac9f2723294fff9485df0d98c2b06cdef39"
+  },
+  "roundtrip": {
+    "passed": true,
+    "file_members_verified": 6801,
+    "bytes_verified": 1146424463,
+    "source_files_unchanged_after_packaging": true,
+    "all_member_sha256_and_sizes_verified": true
+  },
+  "publication": {
+    "split": false,
+    "maximum_part_bytes": 12582912,
+    "parts": [
+      {
+        "path": "output/github_agent_v2_phase3_20261112/transport/agent_v2_phase3_evidence_20261112.tar.xz",
+        "bytes": 7255636,
+        "sha256": "1b4b1e99ebf7a3a3d8691ab29deac72f3e174b208425c5a0836b83783513c84f"
+      }
+    ],
+    "full_archive_kept_locally": true,
+    "concatenated_parts_sha256_verified": true
+  },
+  "benchmark_Test_read": false,
+  "model_API_calls": 0,
+  "elapsed_seconds": 215.0732733150944
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "agent_v2.tests.local_method_smoke",
+    "--method",
+    "difference_ring",
+    "--identity",
+    "FQI-SRC-FINE-2.1",
+    "--seconds",
+    "1200",
+    "--output-root",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring"
+  ],
+  "returncode": 0,
+  "wall_seconds": 131.90919292811304,
+  "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring.stdout.log",
+  "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring.stderr.log"
+}

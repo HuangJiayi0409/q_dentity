@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "method": "product",
+  "method_version": "2.0",
+  "capability_level": "L2",
+  "status": "Source_symbolic_constructed_translation_pending",
+  "identity": "FQI-POCHHAMMER-RESIDUES",
+  "theorem": "FiniteQBenchmark.Identity023.statement",
+  "source_sha256": "17f555760f965b55530908a84f8447b0590cecb3f8bcf50a3d9d75d1b06edf19",
+  "source_context_unchanged": true,
+  "full_original": false,
+  "local_lean": false,
+  "C": 0,
+  "O": [
+    "original"
+  ],
+  "links": 0,
+  "original_identity_proved": false,
+  "scope": "final frozen runtime, new execution; detailed mathematical contract also retained in stage card",
+  "certificates": [],
+  "remaining_budget": {
+    "actions": 1,
+    "schema_version": 1,
+    "seconds": 119.63645019615069
+  },
+  "resume_repeated_actions": 0,
+  "lean_calls": 0,
+  "formal_candidate_count": 0,
+  "formal_obligations_exported": 0,
+  "proof_profile_registered": false,
+  "stop_reason": "symbolic_translation_pending",
+  "independent_symbolic_check": {
+    "algorithm": "independent Euclidean rule instances and exact exponent-polynomial arithmetic",
+    "bound_specialized": false,
+    "empty_product_checked": true,
+    "euclidean_rules_checked": 6,
+    "factor_normal_forms": {
+      "left": {
+        "a": [
+          {
+            "coefficient": 1,
+            "variables": []
+          }
+        ],
+        "q": [
+          {
+            "coefficient": 1,
+            "variables": [
+              "i",
+              "m"
+            ]
+          },
+          {
+            "coefficient": 1,
+            "variables": [
+              "j"
+            ]
+          }
+        ]
+      },
+      "right": {
+        "a": [
+          {
+            "coefficient": 1,
+            "variables": []
+          }
+        ],
+        "q": [
+          {
+            "coefficient": 1,
+            "variables": [
+              "i",
+              "m"
+            ]
+          },
+          {
+            "coefficient": 1,
+            "variables": [
+              "j"
+            ]
+          }
+        ]
+      }
+    },
+    "field_cancellation_used": false,
+    "formal_certificate_exported": false,
+    "forward": [
+      "add",
+      "j",
+      [
+        "mul",
+        "m",
+        "i"
+      ]
+    ],
+    "inverse": {
+      "i": [
+        "div",
+        "k",
+        "m"
+      ],
+      "j": [
+        "mod",
+        "k",
+        "m"
+      ]
+    },
+    "lean_verified": false,
+    "natural_exponents_only": true,
+    "q_zero_supported": true,
+    "remaining_work": "Source expansion, Euclidean bijection and factor transport still require a production Lean bridge",
+    "singleton_product_checked": true,
+    "status": "passed"
+  },
+  "old_generic_standalone_capability": "L0",
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5",
+  "final_summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/summary.json",
+  "final_summary_sha256": "8c3a25680ec985d1c5f5a148d80693766543f00e7d0371c01350b1fa224ad0c9",
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-POCHHAMMER-RESIDUES",
+        "--method",
+        "product",
+        "--max-steps",
+        "2",
+        "--seconds",
+        "120.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.8805970721878111
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "resume",
+        "--run-dir",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.49172193510457873
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-GAUSS-ALTERNATING",
+        "--method",
+        "product",
+        "--seconds",
+        "120.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/mismatch"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/mismatch/20261112T034848Z-44545eb63a\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.463220268022269
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-POCHHAMMER-RESIDUES",
+        "--method",
+        "product",
+        "--seconds",
+        "0.000001",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/tiny_budget"
+      ],
+      "returncode": 3,
+      "stdout": "{\"schema_version\": 1, \"status\": \"budget_exhausted\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/tiny_budget/20261112T034848Z-b475a255c4\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.46365924272686243
+    }
+  ],
+  "final_frozen_manifest": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+  "final_frozen_manifest_sha256": "73a35e22ce43ee5d87cefcbd52f8eacdc7a83ba96da5a6dd0a8394bcc2162e91",
+  "stage_acceptance_card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/acceptance_card.json",
+  "stage_card_sha256": "bfea1e345fbf5a74042b0ee548fdcc003629d20571644b621576d650b0460508",
+  "source_frontend": "agent_v2.product_frontend:analyze_source",
+  "adapter": "agent_v2.product_adapter:ProductAdapter",
+  "lean_profile": "none",
+  "limitations": [
+    "source-only symbolic execution; no Lean certificate or original proof",
+    "finite product reindexing and source definition replay still need a Lean bridge",
+    "legacy broad standalone product requests remain unavailable"
+  ],
+  "benchmark_Test_read": false,
+  "model_calls": 0
+}

@@ -42,10 +42,11 @@ METHODS = {
         'domain':'exact QQ polynomial relation ideal with original-relation multipliers',
         'limits':'evaluated tower relation core only; original shift/evaluation bridges and Lean replay remain open'},
     'kernel_transform': {'family':'有限核变换与矩阵反演','entry':'finite_product_framework/kernel_transform/construct.py:construct',
-        'dependencies':('finite_product_framework/workflow/matrix_symbolic.py','finite_product_framework/workflow/__init__.py'),
-        'structure':'explicit square kernels of dimension one to four with exact scalar entries',
-        'domain':'rational-function matrices; denominators require later original-domain proof',
-        'limits':'computed inverse/composition certificate only; target-kernel bridge and Lean obligations remain open'},
+        'dependencies':('finite_product_framework/workflow/matrix_symbolic.py','finite_product_framework/workflow/__init__.py',
+                        'finite_product_framework/kernel_transform/triangle.py'),
+        'structure':'explicit square kernels of dimension one to four, or two-coordinate symbolic finite affine supports',
+        'domain':'rational-function matrices or CommRing triangular sums with certified natural indices',
+        'limits':'inverse/composition remains nonformal; triangular transpose is local and original theorem remains open'},
     'spectral': {'family':'有限谱正交','entry':'finite_product_framework/spectral/construct.py:construct',
         'dependencies':('finite_product_framework/workflow/matrix_symbolic.py','finite_product_framework/workflow/__init__.py'),
         'structure':'explicit weights and two vectors of common dimension one to four',
@@ -234,6 +235,24 @@ def _matrix(obj,size):
 
 
 def _kernel(data):
+    if isinstance(data,dict) and data.get('operation')=='triangular_transpose':
+        _fields(data,('operation','coordinates','parameter','type','left_domain','right_domain',
+                      'left_factors','right_factors','max_multiplier'))
+        _integer(data['coordinates'],2,2);_integer(data['max_multiplier'],0,2)
+        if data['parameter']!='N' or data['type']!='R':raise ValueError('symbolic N and CommRing R anchors required')
+        def affine(row):
+            if not isinstance(row,list) or len(row)!=4:raise ValueError('four-coordinate affine row required')
+            for value in row:_integer(value,-4,4)
+        for key in ('left_domain','right_domain'):
+            if not isinstance(data[key],list) or len(data[key])!=4:raise ValueError('four finite support constraints required')
+            for row in data[key]:affine(row)
+        for key in ('left_factors','right_factors'):
+            if not isinstance(data[key],list) or len(data[key])!=4:raise ValueError('four sequence factors required')
+            for item in data[key]:
+                _fields(item,('sequence','index'))
+                if item['sequence'] not in ('alpha','delta','u','v'):raise ValueError('unknown sequence atom')
+                affine(item['index'])
+        return
     if not isinstance(data,dict) or data.get('operation') not in ('inverse','composition'):raise ValueError('kernel operation required')
     keys=('operation','matrix','proposed_inverse','vector','size','type')
     _fields(data,keys+('target_kernel',) if data['operation']=='composition' else keys)
@@ -367,6 +386,19 @@ def validate_construction(method, data, value):
         require(cert['remainder']=='0' and isinstance(cert.get('coefficients'),dict)
                 and all(isinstance(k,str) and isinstance(v,str) for k,v in cert['coefficients'].items())
                 and isinstance(cert.get('relations'),list) and all(isinstance(r,str) for r in cert['relations']))
+    elif method=='kernel_transform' and data['operation']=='triangular_transpose':
+        rows=value.get('constructions');require(isinstance(rows,list) and len(rows)==1)
+        row=rows[0];require(isinstance(row,dict) and row.get('plan')=='constructed_triangular_transpose')
+        cert=row.get('certificate');strings(cert,('algorithm','parameter','type','index_arithmetic'))
+        require(cert.get('coordinates')==2 and cert.get('bound_specialized') is False)
+        for key in ('permutation','inverse_permutation'):
+            require(isinstance(cert.get(key),list) and sorted(cert[key])==[0,1]
+                    and all(type(v) is int for v in cert[key]))
+        for key in ('forward_implications','backward_implications','left_finite_bounds','right_finite_bounds',
+                    'left_index_guards','right_index_guards'):
+            rows=cert.get(key)
+            require(isinstance(rows,list) and len(rows)==4 and all(isinstance(r,list) and len(r)==4
+                    and all(type(x) is int and 0<=x<=2 for x in r) for r in rows))
     elif method in ('kernel_transform','spectral','determinant'):
         rows=value.get('constructions');require(isinstance(rows,list) and 1<=len(rows)<=2)
         plans={'kernel_transform':{'constructed_rational_inverse':('matrix','inverse'),

@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "method": "kernel_transform",
+  "method_version": "2.0",
+  "capability_level": "L3",
+  "scope": "one_real_Train_local_certificate_only",
+  "identity": "FQI-SRC-AQ-3.23",
+  "theorem": "FiniteQBenchmark.Identity313.statement",
+  "source_sha256": "62ecabe282447bdcb7b6b5bbdeb51172f92d640cbf5498cb4f87436a84586ac5",
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/runs/20261112T034056Z-f2e18e652f",
+  "mismatch_run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/mismatch/20261112T034318Z-2321685e5a",
+  "profile": "bailey_triangular_kernel_v1",
+  "local_proposition": "∀ {R : Type u} [CommRing R] (N : ℕ) (alpha : ℕ → R) (delta : ℕ → R) (u : ℕ → R) (v : ℕ → R), ((∑ n ∈ (Finset.range (N + 1)), ((alpha n) * (∑ r ∈ (Finset.Icc n N), (((delta r) * (u (r - n))) * (v (r + n)))))) = (∑ r ∈ (Finset.range (N + 1)), (∑ n ∈ (Finset.range (r + 1)), ((alpha n) * (((delta r) * (u (r - n))) * (v (r + n)))))))",
+  "certificate_id": "kernel-transform-local-d9603cb74629f83d3bbf4bff",
+  "C_before": 0,
+  "C_after": 1,
+  "O_before": [
+    "original"
+  ],
+  "O_after": [
+    "original"
+  ],
+  "links_before": 0,
+  "links_after": 0,
+  "original_identity_proved": false,
+  "actual_core_constructed": true,
+  "independent_symbolic_check": {
+    "arithmetic": "independent exact integer affine combinations; no search or symbolic solver",
+    "bound_specialized": false,
+    "cas_proof_text_used": false,
+    "finite_bound_witnesses_checked": 8,
+    "inverse_permutation": [
+      1,
+      0
+    ],
+    "natural_index_guards_checked": 8,
+    "natural_subtraction": "nonnegative affine index witnesses checked on both supports",
+    "permutation": [
+      1,
+      0
+    ],
+    "remaining_work": "Lean must check the source LHS transposition; extracting and reassociating delta for the original RHS remains open",
+    "request_sha256": "10ac6842086f114de402da9d3e2338f7490dcee66ab4d39991d6a24dd4625262",
+    "status": "passed",
+    "support_implications_checked": 8,
+    "weight_check": "exact sequence-index multiset including factor multiplicities"
+  },
+  "real_partial_lean_checks": 1,
+  "fresh_replay_checks": 1,
+  "real_negative_lean_checks": 1,
+  "resume_repeated_actions": 0,
+  "artifact_hashes_checked": 84,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-SRC-AQ-3.23",
+        "--method",
+        "kernel_transform",
+        "--scope",
+        "local",
+        "--max-steps",
+        "1",
+        "--seconds",
+        "1200.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/runs"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/runs/20261112T034056Z-f2e18e652f\"}\n",
+      "stderr": "",
+      "wall_seconds": 47.43092287983745
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "resume",
+        "--run-dir",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/runs/20261112T034056Z-f2e18e652f"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/runs/20261112T034056Z-f2e18e652f\"}\n",
+      "stderr": "",
+      "wall_seconds": 47.59035273594782
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-GAUSS-ALTERNATING",
+        "--method",
+        "kernel_transform",
+        "--seconds",
+        "1200.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/mismatch"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/mismatch/20261112T034318Z-2321685e5a\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.4346039239317179
+    }
+  ],
+  "model_calls": 0,
+  "test_data_read": false
+}

@@ -1,0 +1,933 @@
+{
+  "scope": "read-only local prepublication audit; no tests rerun, no API, no benchmark Test, no network/publish",
+  "passed": true,
+  "errors": [],
+  "frozen_manifest": "agent_v2/generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+  "frozen_manifest_sha256": "73a35e22ce43ee5d87cefcbd52f8eacdc7a83ba96da5a6dd0a8394bcc2162e91",
+  "live_and_frozen_files_checked": 262,
+  "baseline_tests_unchanged": 30,
+  "validation_status": "third_stage_partially_complete",
+  "final_full_suite": {
+    "tests": 475,
+    "passed": 475,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "wall_seconds": 543.1358761228621,
+    "summary": "full_suite/summary.json"
+  },
+  "registry_levels": {
+    "L0": [],
+    "L1": [],
+    "L2": [
+      "product",
+      "noncommutative",
+      "combinatorial",
+      "spectral"
+    ],
+    "L3": [
+      "telescoping",
+      "recurrence",
+      "coefficient",
+      "interpolation",
+      "difference_ring",
+      "kernel_transform",
+      "determinant",
+      "macmahon"
+    ]
+  },
+  "real_Train_Source_methods": [
+    "telescoping",
+    "recurrence",
+    "coefficient",
+    "product",
+    "interpolation",
+    "noncommutative",
+    "combinatorial",
+    "difference_ring",
+    "kernel_transform",
+    "determinant",
+    "macmahon"
+  ],
+  "full_original_methods": [
+    "telescoping",
+    "recurrence"
+  ],
+  "source_unchanged_since_validation": true,
+  "packages_checked": [
+    {
+      "package": "ab_staged",
+      "files_checked": 1212,
+      "bytes": 336995124
+    },
+    {
+      "package": "ab_default_compatible",
+      "files_checked": 430,
+      "bytes": 108413962
+    },
+    {
+      "package": "coefficient",
+      "files_checked": 146,
+      "bytes": 24779338
+    },
+    {
+      "package": "coefficient_supplement",
+      "files_checked": 45,
+      "bytes": 356803
+    },
+    {
+      "package": "retained_math_sources",
+      "files_checked": 34,
+      "bytes": 624426
+    },
+    {
+      "package": "interpolation",
+      "files_checked": 171,
+      "bytes": 33310430
+    },
+    {
+      "package": "interpolation_supplement",
+      "files_checked": 44,
+      "bytes": 204800
+    },
+    {
+      "package": "determinant",
+      "files_checked": 164,
+      "bytes": 27164507
+    },
+    {
+      "package": "determinant_supplement",
+      "files_checked": 57,
+      "bytes": 1069075
+    },
+    {
+      "package": "kernel_transform",
+      "files_checked": 171,
+      "bytes": 25338455
+    },
+    {
+      "package": "kernel_transform_supplement",
+      "files_checked": 149,
+      "bytes": 992199
+    },
+    {
+      "package": "spectral_stopped",
+      "files_checked": 110,
+      "bytes": 759440
+    },
+    {
+      "package": "difference_ring",
+      "files_checked": 172,
+      "bytes": 22613822
+    },
+    {
+      "package": "difference_ring_supplement",
+      "files_checked": 138,
+      "bytes": 894333
+    },
+    {
+      "package": "macmahon",
+      "files_checked": 197,
+      "bytes": 33839237
+    },
+    {
+      "package": "macmahon_supplement",
+      "files_checked": 157,
+      "bytes": 1312455
+    },
+    {
+      "package": "product",
+      "files_checked": 108,
+      "bytes": 1098045
+    },
+    {
+      "package": "product_supplement",
+      "files_checked": 143,
+      "bytes": 527375
+    },
+    {
+      "package": "noncommutative",
+      "files_checked": 111,
+      "bytes": 1124291
+    },
+    {
+      "package": "noncommutative_supplement",
+      "files_checked": 131,
+      "bytes": 487855
+    },
+    {
+      "package": "combinatorial",
+      "files_checked": 115,
+      "bytes": 1210605
+    },
+    {
+      "package": "combinatorial_supplement",
+      "files_checked": 133,
+      "bytes": 530274
+    },
+    {
+      "package": "final_validation_01",
+      "files_checked": 2553,
+      "bytes": 515970538
+    }
+  ],
+  "copied_files_checked": 6691,
+  "copied_bytes": 1139617389,
+  "evidence_directory_all_files": 6801,
+  "evidence_directory_all_bytes": 1146424463,
+  "evidence_suffix_counts": {
+    ".json": 3345,
+    ".txt": 660,
+    ".py": 849,
+    ".log": 182,
+    ".lean": 1068,
+    ".olean": 107,
+    ".jsonl": 534,
+    "": 14,
+    ".toml": 14,
+    ".md": 6,
+    ".diff": 20,
+    ".stderr": 2
+  },
+  "evidence_suffix_bytes": {
+    ".json": 1027807455,
+    ".txt": 36094,
+    ".py": 8163642,
+    ".log": 528446,
+    ".lean": 3758848,
+    ".olean": 92253968,
+    ".jsonl": 12772165,
+    "": 406,
+    ".toml": 4998,
+    ".md": 85437,
+    ".diff": 1013004,
+    ".stderr": 0
+  },
+  "suspicious_path_matches": [],
+  "documentation_links": [
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/validation.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/final_ab_summary.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/final_cases_audit.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/frozen_file_inventory.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/actual_reproduction_commands.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/full_suite/summary.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/full_suite/unittest.log",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/full_suite/discovered_tests.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_report_preparation/FINAL_AB_EXACT_EVIDENCE.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_report_preparation/final_ab_exact_evidence.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_report_preparation/final_ab_exact_evidence.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/final_cases_audit.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_report_preparation/final_C_exact_candidates.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/actual_reproduction_commands.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/telescoping_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/recurrence_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/coefficient_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/product_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/interpolation_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/noncommutative_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/combinatorial_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/difference_ring_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/kernel_transform_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/spectral_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/determinant_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/macmahon_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "METHOD_CAPABILITIES.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "target": "../output/agent_v2_phase3_evidence_20261112/pack_index.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3.md",
+      "target": "METHOD_CAPABILITIES.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3.md",
+      "target": "PHASE3_VALIDATION.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3.md",
+      "target": "PHASE3_VALIDATION.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "target": "TELESCOPING_CLOSURE.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "target": "TELESCOPING_PHASE1.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "target": "REVIEW_FIXES.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "target": "PHASE3.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "target": "METHOD_CAPABILITIES.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "target": "PHASE3.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "target": "PHASE3_VALIDATION.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "PHASE3.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/telescoping_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/recurrence_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/coefficient_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/interpolation_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/determinant_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/kernel_transform_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/spectral_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/difference_ring_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/macmahon_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/product_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/noncommutative_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/combinatorial_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "target": "PHASE3_VALIDATION.md",
+      "exists": true
+    }
+  ],
+  "compression_samples": [
+    {
+      "suffix": "",
+      "sample_path": "difference_ring/cases/difference_ring_frozen_source/project/lean-toolchain",
+      "sample_bytes": 29,
+      "compressed_bytes": 35,
+      "ratio": 1.2069
+    },
+    {
+      "suffix": ".diff",
+      "sample_path": "final_validation_01/cases/final_frozen/agent_v2_changes.diff",
+      "sample_bytes": 657437,
+      "compressed_bytes": 138198,
+      "ratio": 0.2102
+    },
+    {
+      "suffix": ".json",
+      "sample_path": "final_validation_01/cases/final_method_matrix/interpolation/runs/20261112T033509Z-961608b5ba/resume_checks/1794454575330255227-0/lean-interpolation-5f6424f941434d31bf0b27551695014d/dependencies_after.json",
+      "sample_bytes": 5031507,
+      "compressed_bytes": 1010208,
+      "ratio": 0.2008
+    },
+    {
+      "suffix": ".jsonl",
+      "sample_path": "product/cases/product_frozen_source/benchmark/splits/train.jsonl",
+      "sample_bytes": 256865,
+      "compressed_bytes": 63351,
+      "ratio": 0.2466
+    },
+    {
+      "suffix": ".lean",
+      "sample_path": "ab_default_compatible/cases/recurrence_default_cli/runs/20261111T173651Z-b1058dfcf2/final/attempt-5-1794419098908719447/lean-recurrence-1f902ed537f44ec0ba7ab80642d437f6/sources/Candidate.lean",
+      "sample_bytes": 17133,
+      "compressed_bytes": 4872,
+      "ratio": 0.2844
+    },
+    {
+      "suffix": ".log",
+      "sample_path": "final_validation_01/cases/final_full_suite/unittest.log",
+      "sample_bytes": 53881,
+      "compressed_bytes": 9877,
+      "ratio": 0.1833
+    },
+    {
+      "suffix": ".md",
+      "sample_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/PHASE3.md",
+      "sample_bytes": 29229,
+      "compressed_bytes": 12131,
+      "ratio": 0.415
+    },
+    {
+      "suffix": ".olean",
+      "sample_path": "final_validation_01/cases/final_recurrence/runs/20261112T033348Z-a6a6f668ba/final/attempt-5-1794455452173476871/lean-recurrence-32b0560e1c3647e8bc66e52f63c9e784/build/Candidate.olean",
+      "sample_bytes": 1455160,
+      "compressed_bytes": 473355,
+      "ratio": 0.3253
+    },
+    {
+      "suffix": ".py",
+      "sample_path": "retained_math_sources/cases/retained_math_sources/finite_product_framework/p1/qpisigma.py",
+      "sample_bytes": 37366,
+      "compressed_bytes": 9963,
+      "ratio": 0.2666
+    },
+    {
+      "suffix": ".toml",
+      "sample_path": "difference_ring/cases/difference_ring_frozen_source/benchmark/lean/lakefile.toml",
+      "sample_bytes": 360,
+      "compressed_bytes": 258,
+      "ratio": 0.7167
+    },
+    {
+      "suffix": ".txt",
+      "sample_path": "ab_staged/cases/recurrence_staged_acceptance/runs/20261111T171437Z-f14009b045/assembled_proof.txt",
+      "sample_bytes": 6423,
+      "compressed_bytes": 1662,
+      "ratio": 0.2588
+    }
+  ],
+  "suggested_current_live_source_paths": [
+    "agent_v2/__init__.py",
+    "agent_v2/cas_adapter.py",
+    "agent_v2/cli.py",
+    "agent_v2/coefficient_adapter.py",
+    "agent_v2/coefficient_frontend.py",
+    "agent_v2/coefficient_translation.py",
+    "agent_v2/combinatorial_adapter.py",
+    "agent_v2/combinatorial_check.py",
+    "agent_v2/combinatorial_frontend.py",
+    "agent_v2/combinatorial_worker.py",
+    "agent_v2/determinant_adapter.py",
+    "agent_v2/determinant_frontend.py",
+    "agent_v2/determinant_translation.py",
+    "agent_v2/difference_ring_adapter.py",
+    "agent_v2/difference_ring_check.py",
+    "agent_v2/difference_ring_frontend.py",
+    "agent_v2/difference_ring_translation.py",
+    "agent_v2/executor.py",
+    "agent_v2/formal_frontend.py",
+    "agent_v2/generated/phase3_20261112/freeze_final_sources.py",
+    "agent_v2/generated/phase3_20261112/run_final_method_matrix.py",
+    "agent_v2/generated/phase3_20261112/run_full_suite.py",
+    "agent_v2/graph.py",
+    "agent_v2/interpolation_adapter.py",
+    "agent_v2/interpolation_frontend.py",
+    "agent_v2/interpolation_translation.py",
+    "agent_v2/kernel_transform_adapter.py",
+    "agent_v2/kernel_transform_check.py",
+    "agent_v2/kernel_transform_frontend.py",
+    "agent_v2/kernel_transform_translation.py",
+    "agent_v2/lean/CoefficientRules.lean",
+    "agent_v2/lean/DeterminantRules.lean",
+    "agent_v2/lean/DifferenceRingRules.lean",
+    "agent_v2/lean/InterpolationRules.lean",
+    "agent_v2/lean/KernelTransformRules.lean",
+    "agent_v2/lean/MacMahonRules.lean",
+    "agent_v2/lean/MonomorphicCheck.lean",
+    "agent_v2/lean/OriginalTrainCheck.lean",
+    "agent_v2/lean/PartialCheck.lean",
+    "agent_v2/lean/TelescopingCheck.lean",
+    "agent_v2/lean_checker.py",
+    "agent_v2/llm_adapter.py",
+    "agent_v2/loop.py",
+    "agent_v2/macmahon_adapter.py",
+    "agent_v2/macmahon_check.py",
+    "agent_v2/macmahon_frontend.py",
+    "agent_v2/macmahon_translation.py",
+    "agent_v2/math_lean_profile.py",
+    "agent_v2/method_registry.py",
+    "agent_v2/method_tasks.py",
+    "agent_v2/models.py",
+    "agent_v2/noncommutative_adapter.py",
+    "agent_v2/noncommutative_check.py",
+    "agent_v2/noncommutative_frontend.py",
+    "agent_v2/noncommutative_worker.py",
+    "agent_v2/process.py",
+    "agent_v2/product_adapter.py",
+    "agent_v2/product_check.py",
+    "agent_v2/product_frontend.py",
+    "agent_v2/product_worker.py",
+    "agent_v2/proof_profiles.py",
+    "agent_v2/recovery.py",
+    "agent_v2/recurrence_adapter.py",
+    "agent_v2/recurrence_closure.py",
+    "agent_v2/recurrence_frontend.py",
+    "agent_v2/recurrence_lean_profile.py",
+    "agent_v2/recurrence_translation.py",
+    "agent_v2/router.py",
+    "agent_v2/storage.py",
+    "agent_v2/symbolic_methods.py",
+    "agent_v2/symbolic_worker.py",
+    "agent_v2/telescoping_closure.py",
+    "agent_v2/telescoping_translation.py",
+    "agent_v2/tests/closure_smoke.py",
+    "agent_v2/tests/export_phase3_evidence.py",
+    "agent_v2/tests/local_method_smoke.py",
+    "agent_v2/tests/real_smoke.py",
+    "agent_v2/tests/recurrence_closure_smoke.py",
+    "agent_v2/tests/recurrence_smoke.py",
+    "agent_v2/tests/source_method_smoke.py",
+    "agent_v2/tests/telescoping_smoke.py",
+    "agent_v2/tests/test_adapters.py",
+    "agent_v2/tests/test_checkpoint_pause.py",
+    "agent_v2/tests/test_cli.py",
+    "agent_v2/tests/test_closure_checker.py",
+    "agent_v2/tests/test_closure_flow.py",
+    "agent_v2/tests/test_closure_math.py",
+    "agent_v2/tests/test_closure_review.py",
+    "agent_v2/tests/test_coefficient_adapter.py",
+    "agent_v2/tests/test_coefficient_frontend.py",
+    "agent_v2/tests/test_coefficient_profile.py",
+    "agent_v2/tests/test_coefficient_translation.py",
+    "agent_v2/tests/test_combinatorial_adapter.py",
+    "agent_v2/tests/test_combinatorial_core.py",
+    "agent_v2/tests/test_combinatorial_frontend.py",
+    "agent_v2/tests/test_determinant_adapter.py",
+    "agent_v2/tests/test_determinant_frontend.py",
+    "agent_v2/tests/test_determinant_profile.py",
+    "agent_v2/tests/test_determinant_translation.py",
+    "agent_v2/tests/test_difference_ring_adapter.py",
+    "agent_v2/tests/test_difference_ring_check.py",
+    "agent_v2/tests/test_difference_ring_frontend.py",
+    "agent_v2/tests/test_difference_ring_profile.py",
+    "agent_v2/tests/test_difference_ring_translation.py",
+    "agent_v2/tests/test_executor.py",
+    "agent_v2/tests/test_formal_frontend.py",
+    "agent_v2/tests/test_graph_router.py",
+    "agent_v2/tests/test_interpolation_adapter.py",
+    "agent_v2/tests/test_interpolation_frontend.py",
+    "agent_v2/tests/test_interpolation_profile.py",
+    "agent_v2/tests/test_interpolation_translation.py",
+    "agent_v2/tests/test_kernel_transform_adapter.py",
+    "agent_v2/tests/test_kernel_transform_check.py",
+    "agent_v2/tests/test_kernel_transform_core.py",
+    "agent_v2/tests/test_kernel_transform_frontend.py",
+    "agent_v2/tests/test_kernel_transform_profile.py",
+    "agent_v2/tests/test_kernel_transform_translation.py",
+    "agent_v2/tests/test_lean_checker.py",
+    "agent_v2/tests/test_loop.py",
+    "agent_v2/tests/test_macmahon_adapter.py",
+    "agent_v2/tests/test_macmahon_check.py",
+    "agent_v2/tests/test_macmahon_frontend.py",
+    "agent_v2/tests/test_macmahon_profile.py",
+    "agent_v2/tests/test_macmahon_translation.py",
+    "agent_v2/tests/test_method_demo.py",
+    "agent_v2/tests/test_method_registry.py",
+    "agent_v2/tests/test_models_storage.py",
+    "agent_v2/tests/test_noncommutative_adapter.py",
+    "agent_v2/tests/test_noncommutative_core.py",
+    "agent_v2/tests/test_noncommutative_frontend.py",
+    "agent_v2/tests/test_phase3_contract.py",
+    "agent_v2/tests/test_product_adapter.py",
+    "agent_v2/tests/test_product_core.py",
+    "agent_v2/tests/test_product_frontend.py",
+    "agent_v2/tests/test_profile_universes.py",
+    "agent_v2/tests/test_proof_profiles.py",
+    "agent_v2/tests/test_recurrence_checker.py",
+    "agent_v2/tests/test_recurrence_closure.py",
+    "agent_v2/tests/test_recurrence_frontend.py",
+    "agent_v2/tests/test_recurrence_method.py",
+    "agent_v2/tests/test_recurrence_review.py",
+    "agent_v2/tests/test_recurrence_tasks.py",
+    "agent_v2/tests/test_recurrence_translation.py",
+    "agent_v2/tests/test_registry_review.py",
+    "agent_v2/tests/test_symbolic_methods.py",
+    "agent_v2/tests/test_symbolic_review.py",
+    "agent_v2/tests/test_symbolic_source_scope.py",
+    "agent_v2/tests/test_telescoping_checker.py",
+    "agent_v2/tests/test_telescoping_flow.py",
+    "agent_v2/tests/test_telescoping_method.py",
+    "agent_v2/tests/test_telescoping_translation.py",
+    "benchmark/lean/Benchmark/Auxiliary.lean",
+    "benchmark/lean/Benchmark/Batch5Definitions.lean",
+    "benchmark/lean/Benchmark/BatchDefinitions.lean",
+    "benchmark/lean/Benchmark/Definitions.lean",
+    "benchmark/lean/Benchmark/Gaussian.lean",
+    "benchmark/lean/lakefile.toml",
+    "benchmark/lean/lean-toolchain",
+    "finite_product_framework/combinatorial/choice_construct.py",
+    "finite_product_framework/determinant/construct.py",
+    "finite_product_framework/difference_ring/algebra.py",
+    "finite_product_framework/interpolation/algebra.py",
+    "finite_product_framework/kernel_transform/construct.py",
+    "finite_product_framework/kernel_transform/lean/Rules.lean",
+    "finite_product_framework/kernel_transform/triangle.py",
+    "finite_product_framework/noncommutative/operator_construct.py",
+    "finite_product_framework/p1/batch.py",
+    "finite_product_framework/p1/bibasic.py",
+    "finite_product_framework/p1/bibasic_pipeline.py",
+    "finite_product_framework/p1/check.py",
+    "finite_product_framework/p1/check_difference_completion.py",
+    "finite_product_framework/p1/check_difference_core.py",
+    "finite_product_framework/p1/check_difference_full.py",
+    "finite_product_framework/p1/check_difference_general.py",
+    "finite_product_framework/p1/check_omega_core.py",
+    "finite_product_framework/p1/core.py",
+    "finite_product_framework/p1/defined_relation.py",
+    "finite_product_framework/p1/direct.py",
+    "finite_product_framework/p1/exact_linear.py",
+    "finite_product_framework/p1/expressions.py",
+    "finite_product_framework/p1/general_sum_emit.py",
+    "finite_product_framework/p1/general_summation.py",
+    "finite_product_framework/p1/lean/GaussianRules.lean",
+    "finite_product_framework/p1/lean/Shared.lean",
+    "finite_product_framework/p1/lean_pipeline.py",
+    "finite_product_framework/p1/multisum.py",
+    "finite_product_framework/p1/multisum_domains.py",
+    "finite_product_framework/p1/multisum_lean.py",
+    "finite_product_framework/p1/multisum_pipeline.py",
+    "finite_product_framework/p1/ore.py",
+    "finite_product_framework/p1/ore_core.py",
+    "finite_product_framework/p1/ore_pipeline.py",
+    "finite_product_framework/p1/parameter_relation.py",
+    "finite_product_framework/p1/poch_domains.py",
+    "finite_product_framework/p1/poch_intervals.py",
+    "finite_product_framework/p1/poch_local.py",
+    "finite_product_framework/p1/poch_recurrence_emit.py",
+    "finite_product_framework/p1/proof_fixture.py",
+    "finite_product_framework/p1/qconstant.py",
+    "finite_product_framework/p1/qdifference.py",
+    "finite_product_framework/p1/qfinite.py",
+    "finite_product_framework/p1/qgosper.py",
+    "finite_product_framework/p1/qholonomic.py",
+    "finite_product_framework/p1/qjoint.py",
+    "finite_product_framework/p1/qnumberfield.py",
+    "finite_product_framework/p1/qomega.py",
+    "finite_product_framework/p1/qparameterized.py",
+    "finite_product_framework/p1/qpisigma.py",
+    "finite_product_framework/p1/qpisigma_system.py",
+    "finite_product_framework/p1/qplde.py",
+    "finite_product_framework/p1/qrational_system.py",
+    "finite_product_framework/p1/review_batch.py",
+    "finite_product_framework/p1/run.py",
+    "finite_product_framework/p1/run_omega_audit.py",
+    "finite_product_framework/p1/search.py",
+    "finite_product_framework/p1/setup_pari.py",
+    "finite_product_framework/p1/singular_emit.py",
+    "finite_product_framework/p1/source_ir.py",
+    "finite_product_framework/p1/sum_lean.py",
+    "finite_product_framework/p1/test_bibasic.py",
+    "finite_product_framework/p1/test_convolution_pipeline.py",
+    "finite_product_framework/p1/test_core_solver.py",
+    "finite_product_framework/p1/test_defined_relation.py",
+    "finite_product_framework/p1/test_difference_completion.py",
+    "finite_product_framework/p1/test_difference_core.py",
+    "finite_product_framework/p1/test_difference_full.py",
+    "finite_product_framework/p1/test_difference_general.py",
+    "finite_product_framework/p1/test_direct.py",
+    "finite_product_framework/p1/test_domain_pipeline.py",
+    "finite_product_framework/p1/test_general_certificate.py",
+    "finite_product_framework/p1/test_general_summation.py",
+    "finite_product_framework/p1/test_holonomic_core.py",
+    "finite_product_framework/p1/test_joint_core.py",
+    "finite_product_framework/p1/test_lean_pipeline.py",
+    "finite_product_framework/p1/test_multisum.py",
+    "finite_product_framework/p1/test_multisum_native.py",
+    "finite_product_framework/p1/test_omega_core.py",
+    "finite_product_framework/p1/test_ore.py",
+    "finite_product_framework/p1/test_ore_core.py",
+    "finite_product_framework/p1/test_parameter_relation.py",
+    "finite_product_framework/p1/test_phi_pipeline.py",
+    "finite_product_framework/p1/test_pipeline.py",
+    "finite_product_framework/p1/test_poch_intervals.py",
+    "finite_product_framework/p1/test_poch_order.py",
+    "finite_product_framework/p1/test_poch_recurrence.py",
+    "finite_product_framework/p1/test_poch_rules.py",
+    "finite_product_framework/p1/test_poch_train.py",
+    "finite_product_framework/p1/test_product_pipeline.py",
+    "finite_product_framework/p1/test_recurrence_closure.py",
+    "finite_product_framework/p1/test_source_ir.py",
+    "finite_product_framework/p1/test_zeilberger.py",
+    "finite_product_framework/p1/zeilberger.py",
+    "finite_product_framework/p1/zeilberger_pipeline.py",
+    "finite_product_framework/p2/run.py",
+    "finite_product_framework/product/index_construct.py",
+    "finite_product_framework/solve_core.py",
+    "finite_product_framework/spectral/construct.py",
+    "finite_product_framework/workflow/__init__.py",
+    "finite_product_framework/workflow/matrix_symbolic.py",
+    "project/lake-manifest.json",
+    "project/lakefile.toml",
+    "project/lean-toolchain"
+  ],
+  "suggested_current_docs": [
+    "agent_v2/CLOSURE_AND_CAS_REPORT.md",
+    "agent_v2/METHOD_CAPABILITIES.md",
+    "agent_v2/PHASE3.md",
+    "agent_v2/PHASE3_VALIDATION.md",
+    "agent_v2/PROGRESS.md",
+    "agent_v2/PUBLISHING.md",
+    "agent_v2/README.md",
+    "agent_v2/REVIEW_FIXES.md",
+    "agent_v2/TELESCOPING_CLOSURE.md",
+    "agent_v2/TELESCOPING_PHASE1.md",
+    "agent_v2/VALIDATION.md"
+  ],
+  "suggested_original_Train_inputs": [
+    "benchmark/lean/Benchmark/Statements/Train/Identity005.lean",
+    "benchmark/lean/Benchmark/Statements/Train/Identity009.lean",
+    "benchmark/lean/Benchmark/Statements/Train/Identity023.lean",
+    "benchmark/lean/Benchmark/Statements/Train/Identity130.lean",
+    "benchmark/lean/Benchmark/Statements/Train/Identity149.lean",
+    "benchmark/lean/Benchmark/Statements/Train/Identity233.lean",
+    "benchmark/lean/Benchmark/Statements/Train/Identity272.lean",
+    "benchmark/lean/Benchmark/Statements/Train/Identity284.lean",
+    "benchmark/lean/Benchmark/Statements/Train/Identity313.lean",
+    "benchmark/lean/Benchmark/Statements/Train/Identity342.lean",
+    "benchmark/lean/Benchmark/Statements/Train/Identity425.lean"
+  ],
+  "suggested_additional_input_dependencies": [
+    "benchmark/splits/train.jsonl"
+  ],
+  "possible_Representation_dependencies_not_in_frozen_manifest": [
+    "benchmark/lean/Benchmark/Representation.lean",
+    "benchmark/lean/Benchmark/Batch2Definitions.lean",
+    "benchmark/lean/Benchmark/Batch3Definitions.lean",
+    "benchmark/lean/Benchmark/Batch4Definitions.lean"
+  ],
+  "transport_recommendation": "Keep audit metadata and current source browseable; tar.xz or tar.gz all 23 curated package directories plus top-level maps/receipts, split only as required by upload size, retain exact bytes and receipt absolute paths. Do not upload uncurated generated tree or ordinary cache.",
+  "notes": [
+    "Frozen manifest validation_status=not yet run is immutable capture-time metadata; final_validation_01/validation.json is current final verdict.",
+    "agent_v2/PUBLISHING.md describes previous 216-test/2L3+7L2+3L0 publication; add an explicit current phase3 publishing note without rewriting historical evidence.",
+    "The 262-file manifest includes three generated reproduction drivers that should remain at their original paths.",
+    "Only telescoping and recurrence have full original theorem acceptance; spectral requested upgrade is incomplete."
+  ],
+  "additional_Lean_source_import_closure": {
+    "benchmark/lean/Benchmark/Batch5Proofs.lean": {
+      "imported_by": "benchmark/lean/Benchmark/Statements/Train/Identity425.lean",
+      "sha256": "c5496048113d14c715f46f31a616bbc7e8708a959a2844d8fcc5395c79f6ffa6",
+      "bytes": 7881
+    },
+    "benchmark/lean/Benchmark/Batch4Proofs.lean": {
+      "imported_by": "benchmark/lean/Benchmark/Statements/Train/Identity313.lean",
+      "sha256": "13ecce224a91202dd5766d72f4c34ee3019ad9b32d5b5490c167b9898c6c1882",
+      "bytes": 9430
+    },
+    "benchmark/lean/Benchmark/Batch4Definitions.lean": {
+      "imported_by": "benchmark/lean/Benchmark/Batch4Proofs.lean",
+      "sha256": "3277fd6edb7428873e4ae29f08fbe6d9e16bdbd1fb9f1bf3baf6c5ec5f983fd8",
+      "bytes": 8105
+    },
+    "benchmark/lean/Benchmark/Batch3Proofs.lean": {
+      "imported_by": "benchmark/lean/Benchmark/Statements/Train/Identity233.lean",
+      "sha256": "0b631f07ee41306c639c410d1cda5aa50cac1c57691763f9101a0a7696090133",
+      "bytes": 9639
+    },
+    "benchmark/lean/Benchmark/Batch3Definitions.lean": {
+      "imported_by": "benchmark/lean/Benchmark/Batch3Proofs.lean",
+      "sha256": "dc5704d3d50a33ecca328d64d3c48f2827f9224d1b9773e0f221e61b35fa0a7f",
+      "bytes": 4307
+    },
+    "benchmark/lean/Benchmark/Batch2Proofs.lean": {
+      "imported_by": "benchmark/lean/Benchmark/Statements/Train/Identity130.lean",
+      "sha256": "23000d980b15634511c601213a6d2751876a467cf93b2d2d1661060029a27797",
+      "bytes": 7755
+    },
+    "benchmark/lean/Benchmark/Batch2Auxiliary.lean": {
+      "imported_by": "benchmark/lean/Benchmark/Batch2Proofs.lean",
+      "sha256": "d878746612ded2d689c85014da5fabc7c60a00711042479fb1c757fb0f2676df",
+      "bytes": 1008
+    },
+    "benchmark/lean/Benchmark/Batch2Definitions.lean": {
+      "imported_by": "benchmark/lean/Benchmark/Batch2Auxiliary.lean",
+      "sha256": "f5b7faa20e024e5b12548074a18db35a31b8a5613cabac02476ab4b7c49a6812",
+      "bytes": 2059
+    },
+    "benchmark/lean/Benchmark/Representation.lean": {
+      "imported_by": "benchmark/lean/Benchmark/Statements/Train/Identity005.lean",
+      "sha256": "c7bc4523490cdc557b6e8fec6db56ecd43f52d2ee1af94cbdf1f46732ac3f917",
+      "bytes": 2115
+    },
+    "benchmark/lean/Benchmark/InitialValues.lean": {
+      "imported_by": "benchmark/lean/Benchmark/Representation.lean",
+      "sha256": "1fb29252dbe5d26d3fb7cccf4ed0f408346f39441fc99f9b0ec2e1ceb9ff2d62",
+      "bytes": 8856
+    },
+    "benchmark/lean/Benchmark/BatchAuxiliary.lean": {
+      "imported_by": "benchmark/lean/Benchmark/InitialValues.lean",
+      "sha256": "1414a7b649237a13a10adb784236e6bdbc731704cb3b144d7b2d4af21bb73f0f",
+      "bytes": 3201
+    }
+  },
+  "missing_Lean_source_imports": [],
+  "python_AST_import_dependencies_outside_frozen_manifest": {}
+}

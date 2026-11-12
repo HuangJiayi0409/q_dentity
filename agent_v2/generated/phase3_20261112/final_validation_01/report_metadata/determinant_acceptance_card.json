@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "method": "determinant",
+  "method_version": "2.0",
+  "capability_level": "L3",
+  "status": "local_Lean_verified_original_open",
+  "identity": "FQI-SRC-AP-11.2.4",
+  "theorem": "FiniteQBenchmark.Identity284.statement",
+  "source_sha256": "86d3a48107e99eeb5321582fddd12cf698e4b820445c8d38ad9cfe8c77589bb1",
+  "source_context_unchanged": true,
+  "full_original": false,
+  "local_lean": true,
+  "C": 1,
+  "O": [
+    "original"
+  ],
+  "links": 0,
+  "original_identity_proved": false,
+  "scope": "final frozen runtime, new execution; detailed mathematical contract also retained in stage card",
+  "certificates": [
+    {
+      "id": "determinant-local-18cb4a91ea2b4215a60cb6cf",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (k : ℕ) (r : ℕ) (n : Fin k → ℕ) (hk : (0 < k)) (hr : (0 < r)) (hn : (Antitone n)), ∀ (qv2i0 qv2i1 qv2j0 qv2j1 : Fin k), Matrix.det (AgentV2Determinant.minorTwo (fun i j : Fin k => ((q ^ (((((i.val : ℤ) - j.val) * (((i.val : ℤ) - j.val) - 1)) / 2)).toNat) * (FiniteQBenchmark.gaussianInt q ((((n j) : ℤ) + r) - 1) ((((r : ℤ) - i.val) + j.val) - 1)))) qv2i0 qv2i1 qv2j0 qv2j1) = ((q ^ (((((qv2i0.val : ℤ) - qv2j0.val) * (((qv2i0.val : ℤ) - qv2j0.val) - 1)) / 2)).toNat) * (FiniteQBenchmark.gaussianInt q ((((n qv2j0) : ℤ) + r) - 1) ((((r : ℤ) - qv2i0.val) + qv2j0.val) - 1))) * ((q ^ (((((qv2i1.val : ℤ) - qv2j1.val) * (((qv2i1.val : ℤ) - qv2j1.val) - 1)) / 2)).toNat) * (FiniteQBenchmark.gaussianInt q ((((n qv2j1) : ℤ) + r) - 1) ((((r : ℤ) - qv2i1.val) + qv2j1.val) - 1))) - ((q ^ (((((qv2i0.val : ℤ) - qv2j1.val) * (((qv2i0.val : ℤ) - qv2j1.val) - 1)) / 2)).toNat) * (FiniteQBenchmark.gaussianInt q ((((n qv2j1) : ℤ) + r) - 1) ((((r : ℤ) - qv2i0.val) + qv2j1.val) - 1))) * ((q ^ (((((qv2i1.val : ℤ) - qv2j0.val) * (((qv2i1.val : ℤ) - qv2j0.val) - 1)) / 2)).toNat) * (FiniteQBenchmark.gaussianInt q ((((n qv2j0) : ℤ) + r) - 1) ((((r : ℤ) - qv2i1.val) + qv2j0.val) - 1)))",
+      "dependencies": [],
+      "profile": "carlitz_matrix_minor_v1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "remaining_budget": {
+    "actions": 0,
+    "schema_version": 1,
+    "seconds": 1099.369607577566
+  },
+  "resume_repeated_actions": 0,
+  "real_partial_lean_checks": 1,
+  "fresh_replay_checks": 1,
+  "real_negative_lean_checks": 1,
+  "actual_core_constructed": true,
+  "independent_symbolic_check": {
+    "all_original_dimensions_preserved": true,
+    "arithmetic": "bounded exact integer polynomial dictionaries",
+    "atoms": {
+      "z0": "entry00",
+      "z1": "entry01",
+      "z2": "entry10",
+      "z3": "entry11"
+    },
+    "cas_determinant": "z0*z3 - z1*z2",
+    "cas_proof_text_used": false,
+    "expected_determinant": "entry00*entry11-entry01*entry10",
+    "lean_required": "Matrix.det_fin_two for the actual source matrix minor",
+    "leibniz_permutations": 2,
+    "matrix": [
+      [
+        "z0",
+        "z1"
+      ],
+      [
+        "z2",
+        "z3"
+      ]
+    ],
+    "pivot_nonzero_assumptions": false,
+    "request_sha256": "8480069f3b272b3a9ee361732b4afc8f72f66c83259edc9dbeb2f90cd7027eeb",
+    "selected_plan": "constructed_division_free_determinant",
+    "status": "passed"
+  },
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b",
+  "final_summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/summary.json",
+  "final_summary_sha256": "13905b9a40b46574ea3b873160f76f7823ac232193e1c93c768b499a8941dcce",
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-SRC-AP-11.2.4",
+        "--method",
+        "determinant",
+        "--scope",
+        "local",
+        "--max-steps",
+        "1",
+        "--seconds",
+        "1200.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b\"}\n",
+      "stderr": "",
+      "wall_seconds": 51.860620251856744
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "resume",
+        "--run-dir",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b\"}\n",
+      "stderr": "",
+      "wall_seconds": 49.79193024523556
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-GAUSS-ALTERNATING",
+        "--method",
+        "determinant",
+        "--seconds",
+        "1200.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/mismatch"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/mismatch/20261112T034055Z-37b43fd0d2\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.44310753606259823
+    }
+  ],
+  "final_frozen_manifest": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+  "final_frozen_manifest_sha256": "73a35e22ce43ee5d87cefcbd52f8eacdc7a83ba96da5a6dd0a8394bcc2162e91",
+  "stage_acceptance_card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/acceptance_card.json",
+  "stage_card_sha256": "571a0bbd797463cad93956243ae6d9d4f9723197a329cb27a4f1021f6487adfd",
+  "source_frontend": "agent_v2.determinant_frontend:analyze_source",
+  "adapter": "agent_v2.determinant_adapter:DeterminantAdapter",
+  "lean_profile": "carlitz_matrix_minor_v1",
+  "limitations": [
+    "local minor only; arbitrary-size determinant and planePi identity remain open",
+    "symbolic LU outputs are retained but not adopted as formal certificates",
+    "standalone matrix requests remain nonformal L2 executions"
+  ],
+  "benchmark_Test_read": false,
+  "model_calls": 0
+}

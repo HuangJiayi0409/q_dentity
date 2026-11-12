@@ -326,14 +326,22 @@ class MethodAdapter:
         self._dispatch(action.theta.get('method'), action.theta)
 
     @staticmethod
-    def _annotate(result, spec):
+    def _annotate(result, spec, *, core_request=False):
         from .executor import normalize_result
         from .models import ContractError
         result = normalize_result(result).to_dict()
+        if core_request and (result['C_partial'] or result['O_res']):
+            raise ContractError('source-free core request cannot export formal candidates or residuals')
+        if len(result['C_partial']) > 1:
+            raise ContractError('one method action may export at most one candidate')
+        if result['C_partial'] and result['raw_result'].get('execution_scope') not in (
+                'local_certificate_only', 'certificate_chain'):
+            raise ContractError('formal method candidate requires an explicit verification scope')
         if spec.capability_level in ('L0', 'L2') and (result['C_partial'] or result['O_res']):
             raise ContractError('method without a Lean bridge cannot export formal candidates or residuals')
         result['raw_result'].update(method_id=spec.id, method_version=spec.version,
-            capability_level=spec.capability_level,
+            capability_level='L2' if core_request else spec.capability_level,
+            registered_method_capability_level=spec.capability_level,
             input_contract='see retained frontend.json and method_request.json')
         return normalize_result(result).to_dict()
 
@@ -356,4 +364,4 @@ class MethodAdapter:
         spec, adapter = self._dispatch(method, {'seconds': seconds})
         if adapter is None or 'core_request' not in spec.accepted_kinds or not hasattr(adapter, 'execute_request'):
             raise ContractError('method has no executable core-request contract')
-        return self._annotate(adapter.execute_request(request, attempt_dir, seconds), spec)
+        return self._annotate(adapter.execute_request(request, attempt_dir, seconds), spec, core_request=True)

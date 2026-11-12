@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "identity": "FQI-SRC-AP-3.3.9",
+  "scope": "single_real_Train_complete_residual_proof",
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d",
+  "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+  "original_theorem": "FiniteQBenchmark.Identity272.statement",
+  "bridge_proposition": "(∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + 0) (m + 1) = 0) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + (n + 1)) (m + 1) = FiniteQBenchmark.gaussian q (n + m + 1) (m + 1)) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), ((FiniteQBenchmark.gaussian q ((n + m) + 1) (m + 1)) = (∑ j ∈ Finset.range (n + 1), ((q ^ j) * (FiniteQBenchmark.gaussian q (m + j) m)))))",
+  "steps": [
+    {
+      "round": 1,
+      "task": "local",
+      "action_id": "route-494caff37d36781d0f990e4e",
+      "candidate_id": "telescoping-local-d9a88ffda89d1bbb38da",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True) (j : ℕ), FiniteQBenchmark.gaussian q (m + (j + 1)) (m + 1) - FiniteQBenchmark.gaussian q (m + j) (m + 1) = q ^ j * FiniteQBenchmark.gaussian q (m + j) m",
+      "dependencies": [],
+      "C_before": [],
+      "C_after": [
+        "telescoping-local-d9a88ffda89d1bbb38da"
+      ],
+      "O_before": [
+        {
+          "schema_version": 1,
+          "id": "original",
+          "kind": "original",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), ((FiniteQBenchmark.gaussian q ((n + m) + 1) (m + 1)) = (∑ j ∈ Finset.range (n + 1), ((q ^ j) * (FiniteQBenchmark.gaussian q (m + j) m))))",
+          "lean_anchor": "FiniteQBenchmark.Identity272.statement",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "origin_action": null,
+          "dependencies": []
+        }
+      ],
+      "O_after": [
+        {
+          "schema_version": 1,
+          "id": "original",
+          "kind": "original",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), ((FiniteQBenchmark.gaussian q ((n + m) + 1) (m + 1)) = (∑ j ∈ Finset.range (n + 1), ((q ^ j) * (FiniteQBenchmark.gaussian q (m + j) m))))",
+          "lean_anchor": "FiniteQBenchmark.Identity272.statement",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "origin_action": null,
+          "dependencies": []
+        }
+      ],
+      "links_before": 0,
+      "links_after": 0,
+      "r": "original",
+      "cost": {
+        "schema_version": 1,
+        "wall_seconds": 43.81216169800609,
+        "actions": 1
+      }
+    },
+    {
+      "round": 2,
+      "task": "bridge",
+      "action_id": "route-7264dc1b6b405425a788a7d8",
+      "candidate_id": "telescoping-bridge-e5793920a7727e926aeb8179",
+      "proposition": "(∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + 0) (m + 1) = 0) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + (n + 1)) (m + 1) = FiniteQBenchmark.gaussian q (n + m + 1) (m + 1)) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), ((FiniteQBenchmark.gaussian q ((n + m) + 1) (m + 1)) = (∑ j ∈ Finset.range (n + 1), ((q ^ j) * (FiniteQBenchmark.gaussian q (m + j) m)))))",
+      "dependencies": [
+        "telescoping-local-d9a88ffda89d1bbb38da"
+      ],
+      "C_before": [
+        "telescoping-local-d9a88ffda89d1bbb38da"
+      ],
+      "C_after": [
+        "telescoping-local-d9a88ffda89d1bbb38da",
+        "telescoping-bridge-e5793920a7727e926aeb8179"
+      ],
+      "O_before": [
+        {
+          "schema_version": 1,
+          "id": "original",
+          "kind": "original",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), ((FiniteQBenchmark.gaussian q ((n + m) + 1) (m + 1)) = (∑ j ∈ Finset.range (n + 1), ((q ^ j) * (FiniteQBenchmark.gaussian q (m + j) m))))",
+          "lean_anchor": "FiniteQBenchmark.Identity272.statement",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "origin_action": null,
+          "dependencies": []
+        }
+      ],
+      "O_after": [
+        {
+          "schema_version": 1,
+          "id": "telescoping-zero-endpoint-f074f34a4bcd998e27901a64",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + 0) (m + 1) = 0",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "origin_action": "route-7264dc1b6b405425a788a7d8",
+          "dependencies": []
+        },
+        {
+          "schema_version": 1,
+          "id": "telescoping-upper-endpoint-f0916b8ad3e4358d5a69743e",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + (n + 1)) (m + 1) = FiniteQBenchmark.gaussian q (n + m + 1) (m + 1)",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "origin_action": "route-7264dc1b6b405425a788a7d8",
+          "dependencies": []
+        }
+      ],
+      "links_before": 0,
+      "links_after": 1,
+      "r": "original",
+      "cost": {
+        "schema_version": 1,
+        "wall_seconds": 43.64500460680574,
+        "actions": 1
+      }
+    },
+    {
+      "round": 3,
+      "task": "zero_endpoint",
+      "action_id": "route-bac6ec285fb66b7b2a546795",
+      "candidate_id": "telescoping-zero-endpoint-proof-20bacafe531d12b6b21470e9",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + 0) (m + 1) = 0",
+      "dependencies": [],
+      "C_before": [
+        "telescoping-local-d9a88ffda89d1bbb38da",
+        "telescoping-bridge-e5793920a7727e926aeb8179"
+      ],
+      "C_after": [
+        "telescoping-local-d9a88ffda89d1bbb38da",
+        "telescoping-bridge-e5793920a7727e926aeb8179",
+        "telescoping-zero-endpoint-proof-20bacafe531d12b6b21470e9"
+      ],
+      "O_before": [
+        {
+          "schema_version": 1,
+          "id": "telescoping-zero-endpoint-f074f34a4bcd998e27901a64",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + 0) (m + 1) = 0",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "origin_action": "route-7264dc1b6b405425a788a7d8",
+          "dependencies": []
+        },
+        {
+          "schema_version": 1,
+          "id": "telescoping-upper-endpoint-f0916b8ad3e4358d5a69743e",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + (n + 1)) (m + 1) = FiniteQBenchmark.gaussian q (n + m + 1) (m + 1)",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "origin_action": "route-7264dc1b6b405425a788a7d8",
+          "dependencies": []
+        }
+      ],
+      "O_after": [
+        {
+          "schema_version": 1,
+          "id": "telescoping-upper-endpoint-f0916b8ad3e4358d5a69743e",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + (n + 1)) (m + 1) = FiniteQBenchmark.gaussian q (n + m + 1) (m + 1)",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "origin_action": "route-7264dc1b6b405425a788a7d8",
+          "dependencies": []
+        }
+      ],
+      "links_before": 1,
+      "links_after": 2,
+      "r": "original",
+      "cost": {
+        "schema_version": 1,
+        "wall_seconds": 42.98920964309946,
+        "actions": 1
+      }
+    },
+    {
+      "round": 4,
+      "task": "upper_endpoint",
+      "action_id": "route-dad01d35bd0432825874ff12",
+      "candidate_id": "telescoping-upper-endpoint-proof-13de17f39271f5c0821fa0fe",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + (n + 1)) (m + 1) = FiniteQBenchmark.gaussian q (n + m + 1) (m + 1)",
+      "dependencies": [],
+      "C_before": [
+        "telescoping-local-d9a88ffda89d1bbb38da",
+        "telescoping-bridge-e5793920a7727e926aeb8179",
+        "telescoping-zero-endpoint-proof-20bacafe531d12b6b21470e9"
+      ],
+      "C_after": [
+        "telescoping-local-d9a88ffda89d1bbb38da",
+        "telescoping-bridge-e5793920a7727e926aeb8179",
+        "telescoping-zero-endpoint-proof-20bacafe531d12b6b21470e9",
+        "telescoping-upper-endpoint-proof-13de17f39271f5c0821fa0fe"
+      ],
+      "O_before": [
+        {
+          "schema_version": 1,
+          "id": "telescoping-upper-endpoint-f0916b8ad3e4358d5a69743e",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + (n + 1)) (m + 1) = FiniteQBenchmark.gaussian q (n + m + 1) (m + 1)",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "origin_action": "route-7264dc1b6b405425a788a7d8",
+          "dependencies": []
+        }
+      ],
+      "O_after": [],
+      "links_before": 2,
+      "links_after": 3,
+      "r": "original",
+      "cost": {
+        "schema_version": 1,
+        "wall_seconds": 44.20642195781693,
+        "actions": 1
+      }
+    }
+  ],
+  "C_final": [
+    "telescoping-local-d9a88ffda89d1bbb38da",
+    "telescoping-bridge-e5793920a7727e926aeb8179",
+    "telescoping-zero-endpoint-proof-20bacafe531d12b6b21470e9",
+    "telescoping-upper-endpoint-proof-13de17f39271f5c0821fa0fe"
+  ],
+  "O_final": [],
+  "links_final": 3,
+  "original_identity_proved": true,
+  "real_core_constructed": true,
+  "real_partial_lean_checks": 4,
+  "fresh_replay_checks": 4,
+  "real_original_lean_checks": 2,
+  "resume_repeated_actions": 0,
+  "negative_bridge": {
+    "passed": true,
+    "actual_wall_seconds": 43.10011709202081,
+    "parent_preserved": true,
+    "independent_local_certificate_preserved": true,
+    "real_lean_rejection": true
+  },
+  "artifact_hashes_checked": 304,
+  "commands": [
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "run",
+      "--identity",
+      "FQI-SRC-AP-3.3.9",
+      "--method",
+      "telescoping",
+      "--scope",
+      "full",
+      "--selector",
+      "rule",
+      "--max-steps",
+      "4",
+      "--seconds",
+      "2400.0",
+      "--output-root",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d"
+    ]
+  ],
+  "initial_cli_seconds": 220.41390164289623,
+  "resume_cli_seconds": 218.97403816506267,
+  "remaining_budget": {
+    "schema_version": 1,
+    "seconds": 1962.3954440904781,
+    "actions": 0
+  },
+  "test_data_read": false,
+  "test_data_scope": "benchmark held-out split",
+  "model_calls": 0,
+  "standard_library_modules_with_Test_component": [
+    "Std.Http.Test.Helpers"
+  ],
+  "historical_proofs_reused": false
+}

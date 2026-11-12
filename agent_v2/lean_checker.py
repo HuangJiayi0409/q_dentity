@@ -240,10 +240,6 @@ class LeanChecker:
                 checked = check_train_partial(self, candidate, context, start)
                 if checked is not None:
                     return checked
-                from .recurrence_lean_profile import check_recurrence_partial
-                checked = check_recurrence_partial(self, candidate, context, start)
-                if checked is not None:
-                    return checked
             if candidate['dependencies']:
                 return _result(start, False, 'environment_blocked', 'partial', 'unsupported_dependencies',
                                'This checker requires a self-contained proof term.')

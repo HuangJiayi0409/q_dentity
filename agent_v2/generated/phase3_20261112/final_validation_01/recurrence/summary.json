@@ -1,0 +1,616 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "identity": "FQI-GAUSS-ALTERNATING",
+  "original_theorem": "FiniteQBenchmark.Identity009.statement",
+  "scope": "single_real_Train_five_action_recurrence_closure",
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+  "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+  "original_declaration": "import Benchmark.Representation\n\nopen scoped BigOperators\nopen FiniteQBenchmark\nset_option autoImplicit false\nset_option linter.unusedVariables false\n\n/- FQI-GAUSS-ALTERNATING — Gauss 交错 Gaussian 奇偶求值\nOriginal representative source: AP-3.3.8\nFrozen statement: formulas/train/FQI-GAUSS-ALTERNATING.md\nSource formula:\n\\sum_{j=0}^m(-1)^j\\begin{bmatrix}m\\\\j\\end{bmatrix}_{q}=\\begin{cases}(q;q^2)_{m/2},&m\\text{ even},\\\\0,&m\\text{ odd}.\\end{cases}\nOnly this target theorem's proof is deferred. Shared auxiliary results are proved.\n-/\nnamespace FiniteQBenchmark.Identity009\nvariable {K : Type*} [Field K]\n\ntheorem statement (q : K) (m : ℕ) :\n (∑ j ∈ Finset.range (m+1), (-1)^j*gaussian q m j) =\n if m%2 = 0 then poch q (q^2) (m/2) else 0 := by\n  sorry\n\nend FiniteQBenchmark.Identity009\n",
+  "steps": [
+    {
+      "round": 1,
+      "task": "local",
+      "action_id": "route-d3f7090a72469c0bc7d9c433",
+      "candidate_id": "recurrence-local-3026508a6dc7cb8598c724e0",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range ((m + 2) + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q (m + 2) j))) + (((-1) + ((q^m) * q)) * (∑ j ∈ Finset.range (m + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q m j))) + (0) * (∑ j ∈ Finset.range ((m + 1) + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q (m + 1) j)))) = 0",
+      "dependencies": [],
+      "C_before": [],
+      "C_after": [
+        "recurrence-local-3026508a6dc7cb8598c724e0"
+      ],
+      "O_before": [
+        {
+          "schema_version": 1,
+          "id": "original",
+          "kind": "original",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), ((∑ j ∈ Finset.range (m + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q m j))) = (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0))",
+          "lean_anchor": "FiniteQBenchmark.Identity009.statement",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": null,
+          "dependencies": []
+        }
+      ],
+      "O_after": [
+        {
+          "schema_version": 1,
+          "id": "original",
+          "kind": "original",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), ((∑ j ∈ Finset.range (m + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q m j))) = (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0))",
+          "lean_anchor": "FiniteQBenchmark.Identity009.statement",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": null,
+          "dependencies": []
+        }
+      ],
+      "links_before": 0,
+      "links_after": 0,
+      "r": "original",
+      "budget_before": {
+        "schema_version": 1,
+        "seconds": 4000.0,
+        "actions": 5
+      },
+      "budget_after": {
+        "schema_version": 1,
+        "seconds": 3953.3232296393253,
+        "actions": 4
+      },
+      "cost": {
+        "schema_version": 1,
+        "wall_seconds": 46.67677036067471,
+        "actions": 1
+      }
+    },
+    {
+      "round": 2,
+      "task": "uniqueness_bridge",
+      "action_id": "route-fe6de1bf1377aefb5fef8cde",
+      "candidate_id": "recurrence-uniqueness-bridge-338af80c4b8b821e85c425b4",
+      "proposition": "(∀ {K : Type u} [Field K] (q : K) (m : ℕ), (if (((m + 2) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 2) / 2)) else 0) + (((-1) + ((q^m) * q)) * (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0) + (0) * (if (((m + 1) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 1) / 2)) else 0)) = 0) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (0 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 0 j))) = (if ((0 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (0 / 2)) else 0)) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (1 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 1 j))) = (if ((1 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (1 / 2)) else 0)) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ), ((∑ j ∈ Finset.range (m + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q m j))) = (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0)))",
+      "dependencies": [
+        "recurrence-local-3026508a6dc7cb8598c724e0"
+      ],
+      "C_before": [
+        "recurrence-local-3026508a6dc7cb8598c724e0"
+      ],
+      "C_after": [
+        "recurrence-local-3026508a6dc7cb8598c724e0",
+        "recurrence-uniqueness-bridge-338af80c4b8b821e85c425b4"
+      ],
+      "O_before": [
+        {
+          "schema_version": 1,
+          "id": "original",
+          "kind": "original",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), ((∑ j ∈ Finset.range (m + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q m j))) = (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0))",
+          "lean_anchor": "FiniteQBenchmark.Identity009.statement",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": null,
+          "dependencies": []
+        }
+      ],
+      "O_after": [
+        {
+          "schema_version": 1,
+          "id": "recurrence-rhs-recurrence-852b71da8c6610c3fe3cbb02",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (if (((m + 2) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 2) / 2)) else 0) + (((-1) + ((q^m) * q)) * (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0) + (0) * (if (((m + 1) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 1) / 2)) else 0)) = 0",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        },
+        {
+          "schema_version": 1,
+          "id": "recurrence-initial-zero-42dbe8dfe0300ff1438426d9",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (0 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 0 j))) = (if ((0 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (0 / 2)) else 0)",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        },
+        {
+          "schema_version": 1,
+          "id": "recurrence-initial-one-546db1ddeb6db1320fae79d5",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (1 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 1 j))) = (if ((1 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (1 / 2)) else 0)",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        }
+      ],
+      "links_before": 0,
+      "links_after": 1,
+      "r": "original",
+      "budget_before": {
+        "schema_version": 1,
+        "seconds": 3909.1027931887656,
+        "actions": 4
+      },
+      "budget_after": {
+        "schema_version": 1,
+        "seconds": 3863.223603123799,
+        "actions": 3
+      },
+      "cost": {
+        "schema_version": 1,
+        "wall_seconds": 45.87919006496668,
+        "actions": 1
+      }
+    },
+    {
+      "round": 3,
+      "task": "initial_one",
+      "action_id": "route-8f3f366d80cce2ce1c06a5aa",
+      "candidate_id": "recurrence-initial-one-proof-454fa646d9021f2b7c302731",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (1 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 1 j))) = (if ((1 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (1 / 2)) else 0)",
+      "dependencies": [],
+      "C_before": [
+        "recurrence-local-3026508a6dc7cb8598c724e0",
+        "recurrence-uniqueness-bridge-338af80c4b8b821e85c425b4"
+      ],
+      "C_after": [
+        "recurrence-local-3026508a6dc7cb8598c724e0",
+        "recurrence-uniqueness-bridge-338af80c4b8b821e85c425b4",
+        "recurrence-initial-one-proof-454fa646d9021f2b7c302731"
+      ],
+      "O_before": [
+        {
+          "schema_version": 1,
+          "id": "recurrence-rhs-recurrence-852b71da8c6610c3fe3cbb02",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (if (((m + 2) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 2) / 2)) else 0) + (((-1) + ((q^m) * q)) * (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0) + (0) * (if (((m + 1) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 1) / 2)) else 0)) = 0",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        },
+        {
+          "schema_version": 1,
+          "id": "recurrence-initial-zero-42dbe8dfe0300ff1438426d9",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (0 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 0 j))) = (if ((0 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (0 / 2)) else 0)",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        },
+        {
+          "schema_version": 1,
+          "id": "recurrence-initial-one-546db1ddeb6db1320fae79d5",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (1 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 1 j))) = (if ((1 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (1 / 2)) else 0)",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        }
+      ],
+      "O_after": [
+        {
+          "schema_version": 1,
+          "id": "recurrence-rhs-recurrence-852b71da8c6610c3fe3cbb02",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (if (((m + 2) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 2) / 2)) else 0) + (((-1) + ((q^m) * q)) * (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0) + (0) * (if (((m + 1) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 1) / 2)) else 0)) = 0",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        },
+        {
+          "schema_version": 1,
+          "id": "recurrence-initial-zero-42dbe8dfe0300ff1438426d9",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (0 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 0 j))) = (if ((0 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (0 / 2)) else 0)",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        }
+      ],
+      "links_before": 1,
+      "links_after": 2,
+      "r": "original",
+      "budget_before": {
+        "schema_version": 1,
+        "seconds": 3773.8475109399296,
+        "actions": 3
+      },
+      "budget_after": {
+        "schema_version": 1,
+        "seconds": 3730.2324231448583,
+        "actions": 2
+      },
+      "cost": {
+        "schema_version": 1,
+        "wall_seconds": 43.615087795071304,
+        "actions": 1
+      }
+    },
+    {
+      "round": 4,
+      "task": "initial_zero",
+      "action_id": "route-96eaf44702ce51ff620045da",
+      "candidate_id": "recurrence-initial-zero-proof-d96c092440ad5058df64a241",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (0 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 0 j))) = (if ((0 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (0 / 2)) else 0)",
+      "dependencies": [],
+      "C_before": [
+        "recurrence-local-3026508a6dc7cb8598c724e0",
+        "recurrence-uniqueness-bridge-338af80c4b8b821e85c425b4",
+        "recurrence-initial-one-proof-454fa646d9021f2b7c302731"
+      ],
+      "C_after": [
+        "recurrence-local-3026508a6dc7cb8598c724e0",
+        "recurrence-uniqueness-bridge-338af80c4b8b821e85c425b4",
+        "recurrence-initial-one-proof-454fa646d9021f2b7c302731",
+        "recurrence-initial-zero-proof-d96c092440ad5058df64a241"
+      ],
+      "O_before": [
+        {
+          "schema_version": 1,
+          "id": "recurrence-rhs-recurrence-852b71da8c6610c3fe3cbb02",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (if (((m + 2) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 2) / 2)) else 0) + (((-1) + ((q^m) * q)) * (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0) + (0) * (if (((m + 1) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 1) / 2)) else 0)) = 0",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        },
+        {
+          "schema_version": 1,
+          "id": "recurrence-initial-zero-42dbe8dfe0300ff1438426d9",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (0 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 0 j))) = (if ((0 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (0 / 2)) else 0)",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        }
+      ],
+      "O_after": [
+        {
+          "schema_version": 1,
+          "id": "recurrence-rhs-recurrence-852b71da8c6610c3fe3cbb02",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (if (((m + 2) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 2) / 2)) else 0) + (((-1) + ((q^m) * q)) * (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0) + (0) * (if (((m + 1) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 1) / 2)) else 0)) = 0",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        }
+      ],
+      "links_before": 2,
+      "links_after": 3,
+      "r": "original",
+      "budget_before": {
+        "schema_version": 1,
+        "seconds": 3730.2324231448583,
+        "actions": 2
+      },
+      "budget_after": {
+        "schema_version": 1,
+        "seconds": 3686.5522202826105,
+        "actions": 1
+      },
+      "cost": {
+        "schema_version": 1,
+        "wall_seconds": 43.680202862247825,
+        "actions": 1
+      }
+    },
+    {
+      "round": 5,
+      "task": "rhs_recurrence",
+      "action_id": "route-f905e1991800472e323e706d",
+      "candidate_id": "recurrence-rhs-recurrence-proof-ce2cd6df6cb0fd91b1f511ec",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (if (((m + 2) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 2) / 2)) else 0) + (((-1) + ((q^m) * q)) * (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0) + (0) * (if (((m + 1) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 1) / 2)) else 0)) = 0",
+      "dependencies": [],
+      "C_before": [
+        "recurrence-local-3026508a6dc7cb8598c724e0",
+        "recurrence-uniqueness-bridge-338af80c4b8b821e85c425b4",
+        "recurrence-initial-one-proof-454fa646d9021f2b7c302731",
+        "recurrence-initial-zero-proof-d96c092440ad5058df64a241"
+      ],
+      "C_after": [
+        "recurrence-local-3026508a6dc7cb8598c724e0",
+        "recurrence-uniqueness-bridge-338af80c4b8b821e85c425b4",
+        "recurrence-initial-one-proof-454fa646d9021f2b7c302731",
+        "recurrence-initial-zero-proof-d96c092440ad5058df64a241",
+        "recurrence-rhs-recurrence-proof-ce2cd6df6cb0fd91b1f511ec"
+      ],
+      "O_before": [
+        {
+          "schema_version": 1,
+          "id": "recurrence-rhs-recurrence-852b71da8c6610c3fe3cbb02",
+          "kind": "boundary",
+          "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (if (((m + 2) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 2) / 2)) else 0) + (((-1) + ((q^m) * q)) * (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0) + (0) * (if (((m + 1) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 1) / 2)) else 0)) = 0",
+          "lean_anchor": "AgentV2Candidate.proof",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "origin_action": "route-fe6de1bf1377aefb5fef8cde",
+          "dependencies": []
+        }
+      ],
+      "O_after": [],
+      "links_before": 3,
+      "links_after": 4,
+      "r": "original",
+      "budget_before": {
+        "schema_version": 1,
+        "seconds": 3510.5346832955256,
+        "actions": 1
+      },
+      "budget_after": {
+        "schema_version": 1,
+        "seconds": 3467.057081676554,
+        "actions": 0
+      },
+      "cost": {
+        "schema_version": 1,
+        "wall_seconds": 43.477601618971676,
+        "actions": 1
+      }
+    }
+  ],
+  "stages": [
+    {
+      "stage": "bridge",
+      "rounds": 2,
+      "C": 2,
+      "O": 3,
+      "links": 1,
+      "original_identity_proved": false,
+      "fresh_replay_checks": 1,
+      "budget_before": {
+        "schema_version": 1,
+        "seconds": 3953.3232296393253,
+        "actions": 4
+      },
+      "budget_after": {
+        "schema_version": 1,
+        "seconds": 3863.223603123799,
+        "actions": 3
+      },
+      "wall_seconds": 90.6584353451617
+    },
+    {
+      "stage": "two_leaves",
+      "rounds": 4,
+      "C": 4,
+      "O": 1,
+      "links": 3,
+      "original_identity_proved": false,
+      "fresh_replay_checks": 2,
+      "budget_before": {
+        "schema_version": 1,
+        "seconds": 3863.223603123799,
+        "actions": 3
+      },
+      "budget_after": {
+        "schema_version": 1,
+        "seconds": 3686.5522202826105,
+        "actions": 1
+      },
+      "wall_seconds": 177.45253887493163
+    },
+    {
+      "stage": "all_leaves",
+      "rounds": 5,
+      "C": 5,
+      "O": 0,
+      "links": 4,
+      "original_identity_proved": false,
+      "fresh_replay_checks": 4,
+      "budget_before": {
+        "schema_version": 1,
+        "seconds": 3686.5522202826105,
+        "actions": 1
+      },
+      "budget_after": {
+        "schema_version": 1,
+        "seconds": 3467.057081676554,
+        "actions": 0
+      },
+      "wall_seconds": 220.2123541701585
+    },
+    {
+      "stage": "original",
+      "rounds": 5,
+      "C": 5,
+      "O": 0,
+      "links": 4,
+      "original_identity_proved": true,
+      "fresh_replay_checks": 5,
+      "budget_before": {
+        "schema_version": 1,
+        "seconds": 3467.057081676554,
+        "actions": 0
+      },
+      "budget_after": {
+        "schema_version": 1,
+        "seconds": 3201.70325843757,
+        "actions": 0
+      },
+      "wall_seconds": 266.190506296698
+    },
+    {
+      "stage": "final_replay",
+      "rounds": 5,
+      "C": 5,
+      "O": 0,
+      "links": 4,
+      "original_identity_proved": true,
+      "fresh_replay_checks": 5,
+      "budget_before": {
+        "schema_version": 1,
+        "seconds": 3201.70325843757,
+        "actions": 0
+      },
+      "budget_after": {
+        "schema_version": 1,
+        "seconds": 2934.724022096023,
+        "actions": 0
+      },
+      "wall_seconds": 267.6160153178498
+    }
+  ],
+  "C_final": [
+    "recurrence-local-3026508a6dc7cb8598c724e0",
+    "recurrence-uniqueness-bridge-338af80c4b8b821e85c425b4",
+    "recurrence-initial-one-proof-454fa646d9021f2b7c302731",
+    "recurrence-initial-zero-proof-d96c092440ad5058df64a241",
+    "recurrence-rhs-recurrence-proof-ce2cd6df6cb0fd91b1f511ec"
+  ],
+  "O_final": [],
+  "links_final": 4,
+  "original_identity_proved": true,
+  "real_core_constructions": 1,
+  "real_partial_lean_checks": 5,
+  "fresh_replay_checks": 17,
+  "initial_value_pause_round": 4,
+  "resumed_after_initial_value": true,
+  "tasks_closed_before_initial_value_resume": [
+    "initial_one",
+    "initial_zero"
+  ],
+  "real_original_lean_checks": 2,
+  "negative_proofs": [
+    {
+      "task": "local",
+      "round": 1,
+      "passed": true,
+      "real_lean_rejection": true,
+      "state_unchanged": true,
+      "checkpoint_unchanged": true,
+      "actual_wall_seconds": 43.508068184833974,
+      "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-local"
+    },
+    {
+      "task": "uniqueness_bridge",
+      "round": 2,
+      "passed": true,
+      "real_lean_rejection": true,
+      "state_unchanged": true,
+      "checkpoint_unchanged": true,
+      "actual_wall_seconds": 44.11463590245694,
+      "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-uniqueness_bridge"
+    },
+    {
+      "task": "initial_one",
+      "round": 3,
+      "passed": true,
+      "real_lean_rejection": true,
+      "state_unchanged": true,
+      "checkpoint_unchanged": true,
+      "actual_wall_seconds": 43.33633921528235,
+      "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-initial_one"
+    },
+    {
+      "task": "initial_zero",
+      "round": 4,
+      "passed": true,
+      "real_lean_rejection": true,
+      "state_unchanged": true,
+      "checkpoint_unchanged": true,
+      "actual_wall_seconds": 43.56423883885145,
+      "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-initial_zero"
+    },
+    {
+      "task": "rhs_recurrence",
+      "round": 5,
+      "passed": true,
+      "real_lean_rejection": true,
+      "state_unchanged": true,
+      "checkpoint_unchanged": true,
+      "actual_wall_seconds": 43.517686835024506,
+      "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-rhs_recurrence"
+    }
+  ],
+  "resume_repeated_actions": 0,
+  "artifact_hashes_checked": 772,
+  "commands": [
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "run",
+      "--identity",
+      "FQI-GAUSS-ALTERNATING",
+      "--method",
+      "recurrence",
+      "--scope",
+      "full",
+      "--selector",
+      "rule",
+      "--max-steps",
+      "5",
+      "--pause-after",
+      "1",
+      "--seconds",
+      "4000.0",
+      "--output-root",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+      "--pause-after",
+      "1"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+      "--pause-after",
+      "2"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+      "--pause-after",
+      "1"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba"
+    ]
+  ],
+  "cli_seconds": 1069.497531373985,
+  "diagnostic_probe_seconds": 218.04096897644922,
+  "remaining_budget": {
+    "schema_version": 1,
+    "seconds": 2934.724022096023,
+    "actions": 0
+  },
+  "test_data_read": false,
+  "model_calls": 0,
+  "historical_proofs_reused": false,
+  "standard_library_modules_with_Test_component": [
+    "Std.Http.Test.Helpers"
+  ]
+}

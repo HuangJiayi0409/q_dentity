@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "agent_v2.cli",
+    "resume",
+    "--run-dir",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs/20261112T034855Z-caca93e8fd"
+  ],
+  "returncode": 2,
+  "wall_seconds": 0.5656819972209632,
+  "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_resume.stdout.log",
+  "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_resume.stderr.log"
+}

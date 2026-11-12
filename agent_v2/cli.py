@@ -65,6 +65,9 @@ def parser():
         command.add_argument('--output-root', default=str(GENERATED))
     resume = sub.add_parser('resume', help='recheck a v2 Train checkpoint, then continue within remaining budget')
     resume.add_argument('--run-dir', required=True)
+    for command in (run, resume):
+        command.add_argument('--pause-after', type=positive_int, default=None,
+            help='save a checkpoint after this many additional actions; preserve unused budget')
     return result
 
 
@@ -170,7 +173,9 @@ def method_demo(args, store):
     if result.C_partial or result.O_res:
         raise ContractError('non-formal method probe cannot claim formal candidates or residuals')
     result = replace(result, raw_result=dict(result.raw_result, method_id=spec.id,
-        method_version=spec.version, capability_level=spec.capability_level))
+        method_version=spec.version,
+        capability_level='L2' if adapter is not None and hasattr(adapter, 'execute_request') else 'L0',
+        registered_method_capability_level=spec.capability_level))
     for artifact in result.artifacts:
         artifact_path = guard_path(artifact.path, store.path('rounds/1/backend'))
         if sha256_file(artifact_path) != artifact.sha256:
@@ -235,13 +240,27 @@ def train_run(args, store):
                 handles=handles,
                 required_certificates=(plan['local_id'],) if task == 'bridge' else (),
                 provenance=('new_v2_finite_sum_contract',)))
+    elif args.method == 'recurrence' and args.scope == 'full' and frontend['status'] == 'applicable':
+        from .method_tasks import full_scope_contract, initial_full_outlet
+        try:
+            contract = full_scope_contract(frontend)
+        except IntegrityError:
+            raise
+        except ValueError as error:
+            from .loop import finish
+            store.write_json('initial_state.json', state.to_dict())
+            return finish(store, replace(state, status='incomplete'), graph,
+                          'not_applicable', [{'scope': 'full', 'message': str(error)}]).status
+        store.write_json('closure_contract.json', contract)
+        graph.add_outlet(initial_full_outlet(frontend, args.seconds, spec.version, spec.estimated_seconds))
     else:
         graph.add_outlet(Outlet(args.method, representation.id, 'CAS', 'method',
             {'method': args.method, 'method_version': spec.version, 'seconds': args.seconds}, spec.accepted_kinds,
             estimated_seconds=spec.estimated_seconds if frontend['status'] == 'applicable' else 0.01,
             provenance=('new_v2_method_contract',)))
     executor, checker = _production()
-    return run(state, graph, store, executor, checker).status
+    options = {} if getattr(args, 'pause_after', None) is None else {'pause_after': args.pause_after}
+    return run(state, graph, store, executor, checker, **options).status
 
 
 def resume_run(args):
@@ -258,7 +277,8 @@ def resume_run(args):
             Path(saved['path']) != guard_path(REPOSITORY / 'benchmark' / matches[0]['lean_path']):
         raise IntegrityError('checkpoint not bound to the selected Train original')
     state, graph = resume(store, checker)
-    return run(state, graph, store, executor, checker).status, store
+    options = {} if getattr(args, 'pause_after', None) is None else {'pause_after': args.pause_after}
+    return run(state, graph, store, executor, checker, **options).status, store
 
 
 def main(argv=None):

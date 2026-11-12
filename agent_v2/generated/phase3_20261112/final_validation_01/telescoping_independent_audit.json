@@ -1,0 +1,55 @@
+{
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d",
+  "source_identity": "FQI-SRC-AP-3.3.9",
+  "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+  "original_theorem": "FiniteQBenchmark.Identity272.statement",
+  "original_identity_proved": true,
+  "rounds": 4,
+  "C": 4,
+  "O": 0,
+  "links": 3,
+  "actual_check_counts": {
+    "partial": 4,
+    "replay": 4,
+    "original": 2,
+    "negative": 1
+  },
+  "original_audits": [
+    {
+      "result_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d/final/attempt-4/checked.json",
+      "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+      "theorem": "FiniteQBenchmark.Identity272.statement",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "universe_parameters": [
+        "u_1"
+      ],
+      "universe_parameter_count": 1,
+      "returncode": 0
+    },
+    {
+      "result_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d/final/attempt-4-1794454823161597686/checked.json",
+      "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+      "theorem": "FiniteQBenchmark.Identity272.statement",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "universe_parameters": [
+        "u_1"
+      ],
+      "universe_parameter_count": 1,
+      "returncode": 0
+    }
+  ],
+  "remaining_budget": {
+    "schema_version": 1,
+    "seconds": 1962.3954440904781,
+    "actions": 0
+  },
+  "independent_artifact_hashes_checked": 285
+}

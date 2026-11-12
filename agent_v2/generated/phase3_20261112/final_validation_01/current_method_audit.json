@@ -1,0 +1,154 @@
+{
+  "passed": true,
+  "scope": "independent current-source and checkpoint/receipt audit after final per-method smokes; no additional Lean run",
+  "methods": [
+    {
+      "method": "coefficient",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient/runs/20261112T033245Z-7230ca355b",
+      "source_sha256": "4963bc05a9be240c2bcf2a3b74efad216ea9678eeb596f0067c3dd3b54f95108",
+      "level": "L3",
+      "certificate_ids": [
+        "coefficient-local-77c50a6d3792f663bb99001e"
+      ],
+      "C": 1,
+      "O": [
+        "original"
+      ],
+      "links": 0,
+      "r": "original",
+      "replay_receipt_artifacts_checked": 26,
+      "original_identity_proved": false
+    },
+    {
+      "method": "interpolation",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation/runs/20261112T033509Z-961608b5ba",
+      "source_sha256": "92276ebe09255e6ae64ff0491b5fbe8a0bff7bee22a68fa56fb84fb478560a3c",
+      "level": "L3",
+      "certificate_ids": [
+        "interpolation-local-e04cfa302db775ecaeef8012"
+      ],
+      "C": 1,
+      "O": [
+        "original"
+      ],
+      "links": 0,
+      "r": "original",
+      "replay_receipt_artifacts_checked": 31,
+      "original_identity_proved": false
+    },
+    {
+      "method": "determinant",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b",
+      "source_sha256": "86d3a48107e99eeb5321582fddd12cf698e4b820445c8d38ad9cfe8c77589bb1",
+      "level": "L3",
+      "certificate_ids": [
+        "determinant-local-18cb4a91ea2b4215a60cb6cf"
+      ],
+      "C": 1,
+      "O": [
+        "original"
+      ],
+      "links": 0,
+      "r": "original",
+      "replay_receipt_artifacts_checked": 26,
+      "original_identity_proved": false
+    },
+    {
+      "method": "kernel_transform",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/runs/20261112T034056Z-f2e18e652f",
+      "source_sha256": "62ecabe282447bdcb7b6b5bbdeb51172f92d640cbf5498cb4f87436a84586ac5",
+      "level": "L3",
+      "certificate_ids": [
+        "kernel-transform-local-d9603cb74629f83d3bbf4bff"
+      ],
+      "C": 1,
+      "O": [
+        "original"
+      ],
+      "links": 0,
+      "r": "original",
+      "replay_receipt_artifacts_checked": 26,
+      "original_identity_proved": false
+    },
+    {
+      "method": "difference_ring",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/runs/20261112T034319Z-f21b319a0b",
+      "source_sha256": "c3eda83aab248ff5a577f8b43b5f82c995346ec43c769253770b5967fdcd356e",
+      "level": "L3",
+      "certificate_ids": [
+        "difference-ring-local-7b633cc3585ceacacf380513"
+      ],
+      "C": 1,
+      "O": [
+        "original"
+      ],
+      "links": 0,
+      "r": "original",
+      "replay_receipt_artifacts_checked": 26,
+      "original_identity_proved": false
+    },
+    {
+      "method": "macmahon",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon/runs/20261112T034531Z-48c8e466aa",
+      "source_sha256": "d955fd8fb345c0110619eb923c2b21eccdbd6e913aaf0fcaba92e77816342580",
+      "level": "L3",
+      "certificate_ids": [
+        "macmahon-local-0086445c194540adb19a9da5"
+      ],
+      "C": 1,
+      "O": [
+        "original"
+      ],
+      "links": 0,
+      "r": "original",
+      "replay_receipt_artifacts_checked": 31,
+      "original_identity_proved": false
+    },
+    {
+      "method": "product",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5",
+      "source_sha256": "17f555760f965b55530908a84f8447b0590cecb3f8bcf50a3d9d75d1b06edf19",
+      "level": "L2",
+      "certificate_ids": [],
+      "C": 0,
+      "O": [
+        "original"
+      ],
+      "links": 0,
+      "r": "original",
+      "replay_receipt_artifacts_checked": 0,
+      "original_identity_proved": false
+    },
+    {
+      "method": "noncommutative",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/runs/20261112T034849Z-23d684f8ce",
+      "source_sha256": "fa7bfbfae1de6d6fdeaefd41e14a56f2cd236cd0158676f2ceb79418f84bb22c",
+      "level": "L2",
+      "certificate_ids": [],
+      "C": 0,
+      "O": [
+        "original"
+      ],
+      "links": 0,
+      "r": "original",
+      "replay_receipt_artifacts_checked": 0,
+      "original_identity_proved": false
+    },
+    {
+      "method": "combinatorial",
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/runs/20261112T034852Z-fe653f32a6",
+      "source_sha256": "4963bc05a9be240c2bcf2a3b74efad216ea9678eeb596f0067c3dd3b54f95108",
+      "level": "L2",
+      "certificate_ids": [],
+      "C": 0,
+      "O": [
+        "original"
+      ],
+      "links": 0,
+      "r": "original",
+      "replay_receipt_artifacts_checked": 0,
+      "original_identity_proved": false
+    }
+  ],
+  "spectral_Source_upgrade_passed": false
+}

@@ -144,6 +144,7 @@ class Graph:
         return None
 
     def legal_candidates(self, state, llm_enabled=False):
+        from .method_tasks import fixed_task_completed
         reasons, candidates = [], []
         def reject(route, code, **details):
             reasons.append({'route_id': route, 'code': code, **details})
@@ -220,6 +221,8 @@ class Graph:
                 elif any(cert not in certificates for cert in outlet.required_certificates):
                     code = 'required_certificate_unavailable'
                 elif outlet.parameters.get('produces_certificate') in certificates:
+                    code = 'task_already_completed'
+                elif fixed_task_completed(state, outlet):
                     code = 'task_already_completed'
                 elif outlet.handles and not set(outlet.handles) & {o.id for o in state.O}:
                     code = 'no_matching_open_obligation'

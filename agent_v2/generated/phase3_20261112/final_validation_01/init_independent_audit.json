@@ -1,0 +1,34 @@
+{
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/init_runs/20261112T033348Z-0ec532d60c",
+  "source_identity": "synthetic-real-lean-smoke",
+  "source_sha256": "685e27cb2af42d9e4f5f7c44266dd83f23c2a18535c67315acef1949b742b15d",
+  "original_theorem": "Synthetic.statement",
+  "original_identity_proved": true,
+  "rounds": 2,
+  "C": 2,
+  "O": 0,
+  "links": 2,
+  "actual_check_counts": {
+    "partial": 2,
+    "replay": 0,
+    "original": 1,
+    "negative": 0
+  },
+  "original_audits": [
+    {
+      "result_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/init_runs/20261112T033348Z-0ec532d60c/final/attempt-2/checked.json",
+      "source_sha256": "685e27cb2af42d9e4f5f7c44266dd83f23c2a18535c67315acef1949b742b15d",
+      "theorem": "Synthetic.statement",
+      "axioms": [],
+      "universe_parameters": null,
+      "universe_parameter_count": null,
+      "returncode": 0
+    }
+  ],
+  "remaining_budget": {
+    "schema_version": 1,
+    "seconds": 73.708082113415,
+    "actions": 0
+  },
+  "independent_artifact_hashes_checked": 21
+}

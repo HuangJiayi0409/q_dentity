@@ -145,8 +145,11 @@ def _final(state, graph, store, checker):
     return finish(store, state, graph, reason, [checked])
 
 
-def run(state, graph, store, executor, checker, router=None):
+def run(state, graph, store, executor, checker, router=None, *, pause_after=None):
     from .router import RuleBasedRouter
+    if pause_after is not None and (type(pause_after) is not int or pause_after <= 0):
+        raise ContractError('pause_after must be a positive invocation action limit')
+    stop_round = None if pause_after is None else state.round_index + pause_after
     router = router or RuleBasedRouter()
     verify_source(state.G, store.root)
     validate_invariant(state)
@@ -159,8 +162,15 @@ def run(state, graph, store, executor, checker, router=None):
         validate_invariant(state)
         if state.b.seconds <= 0:
             return finish(store, replace(state, status='budget_exhausted'), graph, 'wall_budget_exhausted')
+        if stop_round is not None and state.round_index >= stop_round:
+            return finish(store, replace(state, status='incomplete'), graph, 'checkpoint_paused')
         if not state.O:
             return _final(state, graph, store, checker)
+        if state.attempts and state.attempts[-1].code == 'symbolic_translation_pending':
+            # The explicit source-only mathematical action has finished. There
+            # is no Lean certificate to replay or new proof route to execute.
+            return finish(store, replace(state, status='incomplete'), graph,
+                          'symbolic_translation_pending')
         if (state.C and state.attempts and
                 state.attempts[-1].code == 'local_certificate_verified_original_open'):
             # This method's documented output is an independent local theorem.
@@ -170,6 +180,18 @@ def run(state, graph, store, executor, checker, router=None):
                           'local_certificate_verified_original_open')
         if state.b.actions <= 0:
             return finish(store, replace(state, status='budget_exhausted'), graph, 'action_budget_exhausted')
+        # This instantiates only the declared recurrence full task chain after
+        # its actual witness ID exists. It performs no search or graph synthesis.
+        from .method_tasks import bind_full_scope_outlets
+        bound_outlets = bind_full_scope_outlets(state, graph)
+        if bound_outlets:
+            for outlet in bound_outlets:
+                graph.add_outlet(outlet)
+            store.write_json(f'task_bindings/{state.round_index}.json', {
+                'schema_version': 1, 'source_sha256': state.G.sha256,
+                'bound_outlets': [outlet.to_dict() for outlet in bound_outlets],
+                'certificates': [cert.id for cert in state.C],
+                'automatic_graph_expansion': False})
         legal, reasons = graph.legal_candidates(state, llm_enabled=False)
         if not legal:
             if graph.expand(state):
@@ -210,6 +232,9 @@ def run(state, graph, store, executor, checker, router=None):
             execution_state = replace(before, b=replace(before.b, seconds=remaining))
             result = executor.execute(execution_state, action, graph, attempt_dir)
             store.write_json(f'{round_path}/raw_result.json', result.raw_result)
+            if (result.raw_result.get('execution_scope') == 'source_symbolic_only'
+                    and (result.C_partial or result.O_res)):
+                raise ContractError('symbolic-only source execution cannot export formal candidates or residuals')
             remaining = max(0.0, before.b.seconds - (time.monotonic() - started))
             updated, diagnostics = verify_and_update(before, action, result, checker,
                 {'source_sha256': before.G.sha256, 'run_dir': str(store.root),
@@ -227,7 +252,19 @@ def run(state, graph, store, executor, checker, router=None):
         elapsed = time.monotonic() - started
         result = replace(result, cost=Cost(elapsed, 1))
         local_stop = None
-        if result.raw_result.get('execution_scope') == 'local_certificate_only' and updated.O:
+        if result.raw_result.get('execution_scope') == 'source_symbolic_only' and updated.O:
+            if result.status not in ('environment_blocked', 'integrity_error', 'budget_exhausted'):
+                code = ('symbolic_translation_pending' if result.status == 'symbolic_constructed'
+                        else result.sigma.code)
+                local_stop = ('incomplete', code)
+                if elapsed >= before.b.seconds:
+                    local_stop = ('budget_exhausted', 'wall_budget_exhausted')
+                result = replace(result, sigma=FailureSignature('translation', local_stop[1],
+                    'Source symbolic execution finished without Lean verification; original obligations remain open.',
+                    result.sigma.backend_status))
+                diagnostics.append({'code': 'symbolic_scope_original_open',
+                                    'remaining_work': result.raw_result.get('remaining_work')})
+        elif result.raw_result.get('execution_scope') == 'local_certificate_only' and updated.O:
             if result.status not in ('environment_blocked', 'integrity_error', 'budget_exhausted'):
                 if result.raw_result.get('remaining_work'):
                     diagnostics.append({'code': 'original_connection_unavailable',

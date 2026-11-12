@@ -1,0 +1,215 @@
+{
+  "passed": true,
+  "scope": "one_real_Train_Source_symbolic_only",
+  "method": "product",
+  "method_version": "2.0",
+  "capability_level": "L2",
+  "identity": "FQI-POCHHAMMER-RESIDUES",
+  "theorem": "FiniteQBenchmark.Identity023.statement",
+  "source_sha256": "17f555760f965b55530908a84f8447b0590cecb3f8bcf50a3d9d75d1b06edf19",
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5",
+  "mismatch_run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/mismatch/20261112T034848Z-44545eb63a",
+  "tiny_budget_run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/tiny_budget/20261112T034848Z-b475a255c4",
+  "C_before": 0,
+  "C_after": 0,
+  "O_before": [
+    "original"
+  ],
+  "O_after": [
+    "original"
+  ],
+  "links_before": 0,
+  "links_after": 0,
+  "original_identity_proved": false,
+  "result_status": "symbolic_constructed",
+  "stop_reason": "symbolic_translation_pending",
+  "core_constructed": true,
+  "independent_symbolic_check": {
+    "algorithm": "independent Euclidean rule instances and exact exponent-polynomial arithmetic",
+    "bound_specialized": false,
+    "empty_product_checked": true,
+    "euclidean_rules_checked": 6,
+    "factor_normal_forms": {
+      "left": {
+        "a": [
+          {
+            "coefficient": 1,
+            "variables": []
+          }
+        ],
+        "q": [
+          {
+            "coefficient": 1,
+            "variables": [
+              "i",
+              "m"
+            ]
+          },
+          {
+            "coefficient": 1,
+            "variables": [
+              "j"
+            ]
+          }
+        ]
+      },
+      "right": {
+        "a": [
+          {
+            "coefficient": 1,
+            "variables": []
+          }
+        ],
+        "q": [
+          {
+            "coefficient": 1,
+            "variables": [
+              "i",
+              "m"
+            ]
+          },
+          {
+            "coefficient": 1,
+            "variables": [
+              "j"
+            ]
+          }
+        ]
+      }
+    },
+    "field_cancellation_used": false,
+    "formal_certificate_exported": false,
+    "forward": [
+      "add",
+      "j",
+      [
+        "mul",
+        "m",
+        "i"
+      ]
+    ],
+    "inverse": {
+      "i": [
+        "div",
+        "k",
+        "m"
+      ],
+      "j": [
+        "mod",
+        "k",
+        "m"
+      ]
+    },
+    "lean_verified": false,
+    "natural_exponents_only": true,
+    "q_zero_supported": true,
+    "remaining_work": "Source expansion, Euclidean bijection and factor transport still require a production Lean bridge",
+    "singleton_product_checked": true,
+    "status": "passed"
+  },
+  "lean_calls": 0,
+  "resume_repeated_actions": 0,
+  "resume_lean_calls": 0,
+  "budget_actions_charged": 1,
+  "actual_action_seconds": 0.3630552436225116,
+  "artifact_hashes_checked": 17,
+  "artifacts": {
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/cas_request.json": "cd627934e5cd219044721ae9c1ba52915c02ed2a61bc900497fdbecdcfa7cfea",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/cas_return.json": "8c1743c86c7d73835d045a0876e674fa7ae186b96ad422256f19338f84d674b8",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/definition_binding.json": "c2c075e30dedc26f5db4dc47f5c45d7b2aff4eca29e3334ab2536ca5cb34a3f5",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/frontend.json": "1bc18d22665a4fe5f839cf6dedcf7a23c843dce1785e685b3978c355416a65a9",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/mapping.json": "d9c18b751ad882e8aebe1d8cb7e3d88130b9e63ca7173836f56054637056b4b5",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/method_request.json": "575b4b43afc061b95d87afb274aee19f8f0e048a6d686b662135f50c8651e46a",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/symbolic_certificate.json": "84b3f629f5664e8197124bdd20b452ec8bdb84e2f10079c96df11141d155c74d",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/core/construction.json": "46f252fcff9c1ef1ae5103f66404bbed88919479c7ec3287503021ead7d28899",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/core/dependencies_after.json": "27df2b098e0ac9d30c50f7f8cb534cd95e7639a77827c10a51e34185f5ae284b",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/core/dependencies_before.json": "27df2b098e0ac9d30c50f7f8cb534cd95e7639a77827c10a51e34185f5ae284b",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/core/independent_check.json": "9c6d41a3ddc284881299dbb2318fcb033538f23a760c9195c8c2e8f972d9ce1d",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/core/process.json": "b20ab2e61725ea1dacb6bfa9cc2729aee582bf239cf7e367295e1c03ccfafdeb",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/core/request.json": "cd627934e5cd219044721ae9c1ba52915c02ed2a61bc900497fdbecdcfa7cfea",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/core/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/core/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/core/stdout.txt.process_request.json": "e9ff7a65d36a9b8613f2ecceb229e0c23457f056133a1d6d54ad119352088e66",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5/rounds/1/backend/core/stdout.txt.process_result.json": "3331cd1c2ef2de8d30ba5dff0dc5f0b3f9f1baf61a34c4ce67b5a6e61d8a4b12"
+  },
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-POCHHAMMER-RESIDUES",
+        "--method",
+        "product",
+        "--max-steps",
+        "2",
+        "--seconds",
+        "120.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.8805970721878111
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "resume",
+        "--run-dir",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/runs/20261112T034846Z-be5936d8d5\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.49172193510457873
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-GAUSS-ALTERNATING",
+        "--method",
+        "product",
+        "--seconds",
+        "120.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/mismatch"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/mismatch/20261112T034848Z-44545eb63a\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.463220268022269
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-POCHHAMMER-RESIDUES",
+        "--method",
+        "product",
+        "--seconds",
+        "0.000001",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/tiny_budget"
+      ],
+      "returncode": 3,
+      "stdout": "{\"schema_version\": 1, \"status\": \"budget_exhausted\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/tiny_budget/20261112T034848Z-b475a255c4\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.46365924272686243
+    }
+  ],
+  "model_calls": 0,
+  "test_data_read": false
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "method": "difference_ring",
+  "method_version": "2.0",
+  "capability_level": "L3",
+  "status": "local_Lean_verified_original_open",
+  "identity": "FQI-SRC-FINE-2.1",
+  "theorem": "FiniteQBenchmark.Identity342.statement",
+  "source_sha256": "c3eda83aab248ff5a577f8b43b5f82c995346ec43c769253770b5967fdcd356e",
+  "source_context_unchanged": true,
+  "full_original": false,
+  "local_lean": true,
+  "C": 1,
+  "O": [
+    "original"
+  ],
+  "links": 0,
+  "original_identity_proved": false,
+  "scope": "final frozen runtime, new execution; detailed mathematical contract also retained in stage card",
+  "certificates": [
+    {
+      "id": "difference-ring-local-7b633cc3585ceacacf380513",
+      "proposition": "∀ {K : Type u} [Field K] (a : K) (q : K) (n : ℕ) (hn : (1 ≤ n)) (h_domain : True), (((FiniteQBenchmark.pochList [(a * q)] q n) - (FiniteQBenchmark.pochList [(a * q)] q (n - 1))) = (-(((a * q) * (q ^ (n - 1))) * (FiniteQBenchmark.pochList [(a * q)] q (n - 1)))))",
+      "dependencies": [],
+      "profile": "pochhammer_evaluated_difference_v1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "remaining_budget": {
+    "actions": 0,
+    "schema_version": 1,
+    "seconds": 1113.3814378818497
+  },
+  "resume_repeated_actions": 0,
+  "real_partial_lean_checks": 1,
+  "fresh_replay_checks": 1,
+  "real_negative_lean_checks": 1,
+  "actual_core_constructed": true,
+  "independent_symbolic_check": {
+    "arithmetic": "bounded exact integer polynomial dictionaries; no solver or CAS script",
+    "atoms": {
+      "0": "aq",
+      "1": "x",
+      "2": "p",
+      "3": "pnext"
+    },
+    "cas_proof_text_used": false,
+    "coefficients": {
+      "h0": "1"
+    },
+    "independent_residual": "0",
+    "integer_coefficients_only": true,
+    "multipliers_checked": 1,
+    "original_relation_names": [
+      "h0"
+    ],
+    "relations_checked": 1,
+    "remaining_work": "Lean must prove the evaluated source shift; the original first-factor connection remains open",
+    "request_sha256": "b5ea8ee71e7584d9c3cc967246223df3d3c31fdf14b1c14f77096033bb499fab",
+    "source_shift_requires_lean": true,
+    "status": "passed"
+  },
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/runs/20261112T034319Z-f21b319a0b",
+  "final_summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/summary.json",
+  "final_summary_sha256": "557af8c0be98d898b6ed26daebee80f0378f8ab961ae2e3906e6a1961d0136bc",
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-SRC-FINE-2.1",
+        "--method",
+        "difference_ring",
+        "--scope",
+        "local",
+        "--max-steps",
+        "1",
+        "--seconds",
+        "1200.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/runs"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/runs/20261112T034319Z-f21b319a0b\"}\n",
+      "stderr": "",
+      "wall_seconds": 44.07492090482265
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "resume",
+        "--run-dir",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/runs/20261112T034319Z-f21b319a0b"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/runs/20261112T034319Z-f21b319a0b\"}\n",
+      "stderr": "",
+      "wall_seconds": 43.54382377071306
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-GAUSS-ALTERNATING",
+        "--method",
+        "difference_ring",
+        "--seconds",
+        "1200.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/mismatch"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/mismatch/20261112T034530Z-10dd86fe4e\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.4021878312341869
+    }
+  ],
+  "final_frozen_manifest": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+  "final_frozen_manifest_sha256": "73a35e22ce43ee5d87cefcbd52f8eacdc7a83ba96da5a6dd0a8394bcc2162e91",
+  "stage_acceptance_card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/acceptance_card.json",
+  "stage_card_sha256": "01c14887049ac7a19bfd53528dc5ac244c1ef26825e788c2c2d26a48dde72cf7",
+  "source_frontend": "agent_v2.difference_ring_frontend:analyze_source",
+  "adapter": "agent_v2.difference_ring_adapter:DifferenceRingAdapter",
+  "lean_profile": "pochhammer_evaluated_difference_v1",
+  "limitations": [
+    "local evaluated last-step difference only; first-factor/tail connection remains open",
+    "rational multipliers and general difference towers have no source-bound Lean bridge",
+    "standalone core requests remain nonformal L2 executions"
+  ],
+  "benchmark_Test_read": false,
+  "model_calls": 0
+}

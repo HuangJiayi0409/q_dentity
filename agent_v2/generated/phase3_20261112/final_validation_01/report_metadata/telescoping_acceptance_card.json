@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "method": "telescoping",
+  "method_version": "2.0",
+  "capability_level": "L3",
+  "status": "original_theorem_proved",
+  "identity": "FQI-SRC-AP-3.3.9",
+  "theorem": "FiniteQBenchmark.Identity272.statement",
+  "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+  "source_context_unchanged": true,
+  "full_original": true,
+  "local_lean": true,
+  "C": 4,
+  "O": [],
+  "links": 3,
+  "original_identity_proved": true,
+  "scope": "final frozen runtime, new execution; detailed mathematical contract also retained in stage card",
+  "certificates": [
+    {
+      "id": "telescoping-local-d9a88ffda89d1bbb38da",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True) (j : ℕ), FiniteQBenchmark.gaussian q (m + (j + 1)) (m + 1) - FiniteQBenchmark.gaussian q (m + j) (m + 1) = q ^ j * FiniteQBenchmark.gaussian q (m + j) m",
+      "dependencies": [],
+      "profile": "gaussian_weighted_range_v1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "telescoping-bridge-e5793920a7727e926aeb8179",
+      "proposition": "(∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + 0) (m + 1) = 0) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + (n + 1)) (m + 1) = FiniteQBenchmark.gaussian q (n + m + 1) (m + 1)) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), ((FiniteQBenchmark.gaussian q ((n + m) + 1) (m + 1)) = (∑ j ∈ Finset.range (n + 1), ((q ^ j) * (FiniteQBenchmark.gaussian q (m + j) m)))))",
+      "dependencies": [
+        "telescoping-local-d9a88ffda89d1bbb38da"
+      ],
+      "profile": "gaussian_weighted_range_v1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "telescoping-zero-endpoint-proof-20bacafe531d12b6b21470e9",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + 0) (m + 1) = 0",
+      "dependencies": [],
+      "profile": "gaussian_weighted_range_v1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "telescoping-upper-endpoint-proof-13de17f39271f5c0821fa0fe",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), FiniteQBenchmark.gaussian q (m + (n + 1)) (m + 1) = FiniteQBenchmark.gaussian q (n + m + 1) (m + 1)",
+      "dependencies": [],
+      "profile": "gaussian_weighted_range_v1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "remaining_budget": {
+    "actions": 0,
+    "schema_version": 1,
+    "seconds": 1962.3954440904781
+  },
+  "resume_repeated_actions": 0,
+  "original_checks": [
+    {
+      "result": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d/final/attempt-4/checked.json",
+      "sha256": "af383a706654c8628272d97ae43d9d6b718f93ebf03f8538a76ff164458f4d8e",
+      "theorem": "FiniteQBenchmark.Identity272.statement",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), ((FiniteQBenchmark.gaussian q ((n + m) + 1) (m + 1)) = (∑ j ∈ Finset.range (n + 1), ((q ^ j) * (FiniteQBenchmark.gaussian q (m + j) m))))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "returncode": 0
+    },
+    {
+      "result": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d/final/attempt-4-1794454823161597686/checked.json",
+      "sha256": "d5283af621624b3f81d338a44b298bfe38e21124c59fe14aee1191a464a6062c",
+      "theorem": "FiniteQBenchmark.Identity272.statement",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ) (n : ℕ) (h_domain : True), ((FiniteQBenchmark.gaussian q ((n + m) + 1) (m + 1)) = (∑ j ∈ Finset.range (n + 1), ((q ^ j) * (FiniteQBenchmark.gaussian q (m + j) m))))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "returncode": 0
+    }
+  ],
+  "real_partial_lean_checks": 4,
+  "fresh_replay_checks": 4,
+  "real_original_lean_checks": 2,
+  "negative_evidence": {
+    "passed": true,
+    "actual_wall_seconds": 43.10011709202081,
+    "parent_preserved": true,
+    "independent_local_certificate_preserved": true,
+    "real_lean_rejection": true
+  },
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d",
+  "final_summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/summary.json",
+  "final_summary_sha256": "1fae9bf891bc300796b4de79992b0d50e158cfab2a295076388f5f37ac3e9f31",
+  "commands": [
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "run",
+      "--identity",
+      "FQI-SRC-AP-3.3.9",
+      "--method",
+      "telescoping",
+      "--scope",
+      "full",
+      "--selector",
+      "rule",
+      "--max-steps",
+      "4",
+      "--seconds",
+      "2400.0",
+      "--output-root",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d"
+    ]
+  ],
+  "final_frozen_manifest": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+  "final_frozen_manifest_sha256": "73a35e22ce43ee5d87cefcbd52f8eacdc7a83ba96da5a6dd0a8394bcc2162e91",
+  "stage_acceptance_card": null,
+  "stage_card_sha256": null,
+  "source_frontend": "agent_v2.formal_frontend:analyze_source",
+  "adapter": "agent_v2.cas_adapter:TelescopingAdapter",
+  "lean_profile": "gaussian_weighted_range_v1",
+  "limitations": [
+    "only the stated structural family",
+    "no model-driven transformations",
+    "fixed safe proof templates; CAS construction alone never certifies a theorem"
+  ],
+  "benchmark_Test_read": false,
+  "model_calls": 0
+}

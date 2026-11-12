@@ -1,0 +1,128 @@
+{
+  "passed": true,
+  "method": "determinant",
+  "method_version": "2.0",
+  "capability_level": "L3",
+  "scope": "one_real_Train_local_certificate_only",
+  "identity": "FQI-SRC-AP-11.2.4",
+  "theorem": "FiniteQBenchmark.Identity284.statement",
+  "source_sha256": "86d3a48107e99eeb5321582fddd12cf698e4b820445c8d38ad9cfe8c77589bb1",
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b",
+  "mismatch_run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/mismatch/20261112T034055Z-37b43fd0d2",
+  "profile": "carlitz_matrix_minor_v1",
+  "local_proposition": "∀ {K : Type u} [Field K] (q : K) (k : ℕ) (r : ℕ) (n : Fin k → ℕ) (hk : (0 < k)) (hr : (0 < r)) (hn : (Antitone n)), ∀ (qv2i0 qv2i1 qv2j0 qv2j1 : Fin k), Matrix.det (AgentV2Determinant.minorTwo (fun i j : Fin k => ((q ^ (((((i.val : ℤ) - j.val) * (((i.val : ℤ) - j.val) - 1)) / 2)).toNat) * (FiniteQBenchmark.gaussianInt q ((((n j) : ℤ) + r) - 1) ((((r : ℤ) - i.val) + j.val) - 1)))) qv2i0 qv2i1 qv2j0 qv2j1) = ((q ^ (((((qv2i0.val : ℤ) - qv2j0.val) * (((qv2i0.val : ℤ) - qv2j0.val) - 1)) / 2)).toNat) * (FiniteQBenchmark.gaussianInt q ((((n qv2j0) : ℤ) + r) - 1) ((((r : ℤ) - qv2i0.val) + qv2j0.val) - 1))) * ((q ^ (((((qv2i1.val : ℤ) - qv2j1.val) * (((qv2i1.val : ℤ) - qv2j1.val) - 1)) / 2)).toNat) * (FiniteQBenchmark.gaussianInt q ((((n qv2j1) : ℤ) + r) - 1) ((((r : ℤ) - qv2i1.val) + qv2j1.val) - 1))) - ((q ^ (((((qv2i0.val : ℤ) - qv2j1.val) * (((qv2i0.val : ℤ) - qv2j1.val) - 1)) / 2)).toNat) * (FiniteQBenchmark.gaussianInt q ((((n qv2j1) : ℤ) + r) - 1) ((((r : ℤ) - qv2i0.val) + qv2j1.val) - 1))) * ((q ^ (((((qv2i1.val : ℤ) - qv2j0.val) * (((qv2i1.val : ℤ) - qv2j0.val) - 1)) / 2)).toNat) * (FiniteQBenchmark.gaussianInt q ((((n qv2j0) : ℤ) + r) - 1) ((((r : ℤ) - qv2i1.val) + qv2j0.val) - 1)))",
+  "certificate_id": "determinant-local-18cb4a91ea2b4215a60cb6cf",
+  "C_before": 0,
+  "C_after": 1,
+  "O_before": [
+    "original"
+  ],
+  "O_after": [
+    "original"
+  ],
+  "links_before": 0,
+  "links_after": 0,
+  "original_identity_proved": false,
+  "actual_core_constructed": true,
+  "independent_symbolic_check": {
+    "all_original_dimensions_preserved": true,
+    "arithmetic": "bounded exact integer polynomial dictionaries",
+    "atoms": {
+      "z0": "entry00",
+      "z1": "entry01",
+      "z2": "entry10",
+      "z3": "entry11"
+    },
+    "cas_determinant": "z0*z3 - z1*z2",
+    "cas_proof_text_used": false,
+    "expected_determinant": "entry00*entry11-entry01*entry10",
+    "lean_required": "Matrix.det_fin_two for the actual source matrix minor",
+    "leibniz_permutations": 2,
+    "matrix": [
+      [
+        "z0",
+        "z1"
+      ],
+      [
+        "z2",
+        "z3"
+      ]
+    ],
+    "pivot_nonzero_assumptions": false,
+    "request_sha256": "8480069f3b272b3a9ee361732b4afc8f72f66c83259edc9dbeb2f90cd7027eeb",
+    "selected_plan": "constructed_division_free_determinant",
+    "status": "passed"
+  },
+  "real_partial_lean_checks": 1,
+  "fresh_replay_checks": 1,
+  "real_negative_lean_checks": 1,
+  "resume_repeated_actions": 0,
+  "artifact_hashes_checked": 84,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-SRC-AP-11.2.4",
+        "--method",
+        "determinant",
+        "--scope",
+        "local",
+        "--max-steps",
+        "1",
+        "--seconds",
+        "1200.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b\"}\n",
+      "stderr": "",
+      "wall_seconds": 51.860620251856744
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "resume",
+        "--run-dir",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/runs/20261112T033824Z-285552a03b\"}\n",
+      "stderr": "",
+      "wall_seconds": 49.79193024523556
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-GAUSS-ALTERNATING",
+        "--method",
+        "determinant",
+        "--seconds",
+        "1200.0",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/mismatch"
+      ],
+      "returncode": 2,
+      "stdout": "{\"schema_version\": 1, \"status\": \"incomplete\", \"original_identity_proved\": false, \"run_dir\": \"/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/mismatch/20261112T034055Z-37b43fd0d2\"}\n",
+      "stderr": "",
+      "wall_seconds": 0.44310753606259823
+    }
+  ],
+  "model_calls": 0,
+  "test_data_read": false
+}

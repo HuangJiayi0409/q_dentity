@@ -24,6 +24,58 @@ def dependencies(repository=None):
 
 
 class RecurrenceAdapter:
+    def execute_action(self, state, action, attempt_dir, seconds):
+        """Construct one declared full-scope task; approval stays in LeanChecker."""
+        from .cas_adapter import adapter_result
+        from .recurrence_closure import closure_blueprint, make_closure_candidate
+        started = time.monotonic()
+        if action.theta.get('method') != 'recurrence' or action.theta.get('scope') != 'full':
+            raise ValueError('unregistered recurrence task contract')
+        task = action.theta.get('task')
+        validate_seconds(seconds)
+        run_root = Path(state.G.snapshot_path).parent.parent
+        verify_source(state.G, run_root)
+        front = analyze_source(state.G.to_dict(), run_root)
+        # Full scope must validate the actual RHS, not just the local summand.
+        plan = closure_blueprint(front)
+        if task == 'local':
+            if any(c.id.startswith('recurrence-local-') for c in state.C):
+                raise ValueError('local recurrence task already completed')
+            remaining = seconds - (time.monotonic() - started)
+            if remaining <= 0:
+                return adapter_result(started,'budget_exhausted','timeout','Full-scope frontend exhausted budget.')
+            outcome = self.execute(state.G.identity, 'recurrence', state.G.to_dict(), attempt_dir, remaining)
+            outcome['raw_result']['execution_scope'] = 'certificate_chain'
+            outcome['raw_result'].pop('remaining_work', None)
+            return outcome
+        if task not in plan['tasks']:
+            raise ValueError('unknown recurrence closure task')
+        approved = {c.id: c.to_dict() for c in state.C}
+        candidate = make_closure_candidate(front, task, approved, action.id)
+        if candidate.closes not in {o.id for o in state.O}:
+            raise ValueError('task has no matching open formal obligation')
+        attempt = prepare_attempt(attempt_dir)
+        if any(attempt.iterdir()):
+            raise ValueError('recurrence attempt directory must be empty')
+        write_json(attempt/'method_request.json', {'method':'recurrence','version':'2.0','task':task,
+            'source':state.G.to_dict(),'seconds':seconds,'action_id':action.id,
+            'approved_certificates':list(approved),'open_obligations':[o.to_dict() for o in state.O]}, attempt)
+        write_json(attempt/'frontend.json', front, attempt)
+        write_json(attempt/'task_contract.json', closure_blueprint(front,approved), attempt)
+        write_json(attempt/'candidate.json', candidate.to_dict(), attempt)
+        verify_source(state.G, run_root)
+        if time.monotonic() - started >= seconds:
+            return adapter_result(started,'budget_exhausted','timeout',
+                'Closure reconstruction exhausted action budget.',attempt=attempt)
+        outcome = adapter_result(started,'symbolic_constructed','closure_candidate_ready',
+            'One recurrence closure candidate awaits independent Lean verification.',stage='translation',
+            raw_result={'execution_scope':'certificate_chain','method':'recurrence','task':task,
+                        'cas_invoked':False,'frontend_profile':front['profile'],
+                        'dependency_ids':list(candidate.dependencies)},attempt=attempt)
+        outcome['C_partial'] = [candidate.to_dict()]
+        outcome['O_res'] = [o.to_dict() for o in candidate.replaces]
+        return outcome
+
     def execute(self, identity, method, source, attempt_dir, seconds):
         from .cas_adapter import CoreAdapter, adapter_result
         started = time.monotonic(); attempt = None
@@ -35,7 +87,7 @@ class RecurrenceAdapter:
                 raise ValueError('recurrence method/source identity mismatch')
             run_root = Path(bound.snapshot_path).parent.parent
             verify_source(bound, run_root)
-            write_json(attempt / 'method_request.json', {'method': method, 'version': '1.0',
+            write_json(attempt / 'method_request.json', {'method': method, 'version': '2.0',
                 'identity': identity, 'source': source, 'seconds': seconds}, attempt)
             front = analyze_source(source, run_root)
             write_json(attempt / 'frontend.json', front, attempt)

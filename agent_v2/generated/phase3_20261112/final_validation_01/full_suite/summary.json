@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "scope": "fresh full discovery: contracts, unit fixtures and real Lean regression; not Train performance",
+  "tests_run": 475,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": [],
+  "unexpected_successes": [],
+  "wall_seconds": 543.1358761228621,
+  "command": [
+    "/usr/bin/python3",
+    "agent_v2/generated/phase3_20261112/run_full_suite.py",
+    "--output-root",
+    "agent_v2/generated/phase3_20261112/final_validation_01/full_suite"
+  ],
+  "discovered_tests": 475,
+  "model_calls": 0,
+  "benchmark_Test_read": false
+}

@@ -1,0 +1,532 @@
+{
+  "passed": true,
+  "scope": "read-only final document links and actual registry/final cards consistency; no Lean or tests run",
+  "documents": [
+    {
+      "path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3_VALIDATION.md",
+      "sha256": "326e1f6eebf064c04e1622796eb932b4e9ea05ae3d03a85c88d1fa22d56da7cc"
+    },
+    {
+      "path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3.md",
+      "sha256": "25974cfd3c4a28f43313dc981a93a93dccd43887ebd790f864d9559dfce0b81d"
+    },
+    {
+      "path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/METHOD_CAPABILITIES.md",
+      "sha256": "1f2141f8ee57ec3c94f7845801025760cc828bed22b43da434e06c90cd46d821"
+    },
+    {
+      "path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/README.md",
+      "sha256": "aa40fd05b4f5de1531afc5f1e40b2277352b7b826aca1aee8625643ca77a1581"
+    }
+  ],
+  "local_markdown_links_checked": 56,
+  "links": [
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 7,
+      "target": "generated/phase3_20261112/final_validation_01/validation.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/validation.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 7,
+      "target": "generated/phase3_20261112/final_validation_01/final_ab_summary.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/final_ab_summary.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 7,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/final_cases_audit.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/final_cases_audit.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 18,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/frozen_file_inventory.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/frozen_file_inventory.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 40,
+      "target": "generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 42,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/actual_reproduction_commands.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/actual_reproduction_commands.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 53,
+      "target": "generated/phase3_20261112/final_validation_01/full_suite/summary.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/full_suite/summary.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 53,
+      "target": "generated/phase3_20261112/final_validation_01/full_suite/unittest.log",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/full_suite/unittest.log",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 53,
+      "target": "generated/phase3_20261112/final_validation_01/full_suite/discovered_tests.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/full_suite/discovered_tests.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 104,
+      "target": "generated/phase3_20261112/final_report_preparation/FINAL_AB_EXACT_EVIDENCE.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_report_preparation/FINAL_AB_EXACT_EVIDENCE.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 104,
+      "target": "generated/phase3_20261112/final_report_preparation/final_ab_exact_evidence.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_report_preparation/final_ab_exact_evidence.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 148,
+      "target": "generated/phase3_20261112/final_report_preparation/final_ab_exact_evidence.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_report_preparation/final_ab_exact_evidence.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 148,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/final_cases_audit.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/final_cases_audit.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 160,
+      "target": "generated/phase3_20261112/final_report_preparation/final_C_exact_candidates.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_report_preparation/final_C_exact_candidates.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 186,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 186,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/actual_reproduction_commands.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/actual_reproduction_commands.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 190,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/telescoping_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/telescoping_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 191,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/recurrence_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/recurrence_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 192,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/coefficient_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/coefficient_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 193,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/product_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/product_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 194,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/interpolation_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/interpolation_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 195,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/noncommutative_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/noncommutative_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 196,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/combinatorial_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/combinatorial_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 197,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/difference_ring_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/difference_ring_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 198,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/kernel_transform_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/kernel_transform_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 199,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/spectral_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/spectral_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 200,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/determinant_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/determinant_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 201,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/macmahon_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/macmahon_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 220,
+      "target": "METHOD_CAPABILITIES.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/METHOD_CAPABILITIES.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3_VALIDATION.md",
+      "line": 236,
+      "target": "../output/agent_v2_phase3_evidence_20261112/pack_index.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/output/agent_v2_phase3_evidence_20261112/pack_index.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3.md",
+      "line": 171,
+      "target": "METHOD_CAPABILITIES.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/METHOD_CAPABILITIES.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3.md",
+      "line": 171,
+      "target": "PHASE3_VALIDATION.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3_VALIDATION.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3.md",
+      "line": 193,
+      "target": "PHASE3_VALIDATION.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3_VALIDATION.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/PHASE3.md",
+      "line": 193,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 3,
+      "target": "PHASE3.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 9,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/telescoping_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/telescoping_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 10,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/recurrence_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/recurrence_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 11,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/coefficient_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/coefficient_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 12,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/interpolation_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/interpolation_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 13,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/determinant_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/determinant_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 14,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/kernel_transform_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/kernel_transform_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 15,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/spectral_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/spectral_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 16,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/difference_ring_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/difference_ring_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 17,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/macmahon_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/macmahon_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 18,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/product_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/product_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 19,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/noncommutative_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/noncommutative_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 20,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/combinatorial_acceptance_card.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/combinatorial_acceptance_card.json",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/METHOD_CAPABILITIES.md",
+      "line": 22,
+      "target": "PHASE3_VALIDATION.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3_VALIDATION.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "line": 5,
+      "target": "TELESCOPING_CLOSURE.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/TELESCOPING_CLOSURE.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "line": 5,
+      "target": "TELESCOPING_PHASE1.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/TELESCOPING_PHASE1.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "line": 5,
+      "target": "REVIEW_FIXES.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/REVIEW_FIXES.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "line": 9,
+      "target": "PHASE3.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "line": 116,
+      "target": "METHOD_CAPABILITIES.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/METHOD_CAPABILITIES.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "line": 116,
+      "target": "PHASE3.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "line": 120,
+      "target": "PHASE3_VALIDATION.md",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3_VALIDATION.md",
+      "exists": true
+    },
+    {
+      "document": "agent_v2/README.md",
+      "line": 120,
+      "target": "generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "resolved": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "exists": true
+    }
+  ],
+  "method_cards_checked": [
+    {
+      "method": "telescoping",
+      "version": "2.0",
+      "level": "L3",
+      "full_original": true,
+      "source_route": true,
+      "card_sha256": "df7c24776d229c2e31c3d78cfd7ee75f3166035d65bc7cfc602218df1b528417"
+    },
+    {
+      "method": "recurrence",
+      "version": "2.0",
+      "level": "L3",
+      "full_original": true,
+      "source_route": true,
+      "card_sha256": "23d3fd067ace6615bd473a6212b50b2da51cc8ab2f9c033a5fe0da656b9a0539"
+    },
+    {
+      "method": "coefficient",
+      "version": "2.0",
+      "level": "L3",
+      "full_original": false,
+      "source_route": true,
+      "card_sha256": "13ee6c182d74dfe060fe32161e5956dbb93dea1d8e4e6615123e65a5625e2a53"
+    },
+    {
+      "method": "product",
+      "version": "2.0",
+      "level": "L2",
+      "full_original": false,
+      "source_route": true,
+      "card_sha256": "cd40c99199518770532acc789034c40f1626e50b99156e9bbeb25a7eb5043928"
+    },
+    {
+      "method": "interpolation",
+      "version": "2.0",
+      "level": "L3",
+      "full_original": false,
+      "source_route": true,
+      "card_sha256": "21149ba4ad62213f4bb26b7d3a7337716209ed534b0183f31092e141f66a740e"
+    },
+    {
+      "method": "noncommutative",
+      "version": "2.0",
+      "level": "L2",
+      "full_original": false,
+      "source_route": true,
+      "card_sha256": "8b17e706aa82bfffdadb29a06901e4fcbc1a538f23deeb5433b0362bb0cb88a5"
+    },
+    {
+      "method": "combinatorial",
+      "version": "2.0",
+      "level": "L2",
+      "full_original": false,
+      "source_route": true,
+      "card_sha256": "e3cd329ca55c1d83a8c0ed1023a3a5ae46f058be15c3effe5e721f7a7fe72011"
+    },
+    {
+      "method": "difference_ring",
+      "version": "2.0",
+      "level": "L3",
+      "full_original": false,
+      "source_route": true,
+      "card_sha256": "ca6e77e5b813c0d796435911ad054a4e2db56575fcbf07bcc94cf7e792d27e7a"
+    },
+    {
+      "method": "kernel_transform",
+      "version": "2.0",
+      "level": "L3",
+      "full_original": false,
+      "source_route": true,
+      "card_sha256": "4139e70e09d64052820aebfaae5c8d2ae1be2389d4f9d411266bde40502c8985"
+    },
+    {
+      "method": "spectral",
+      "version": "1.0",
+      "level": "L2",
+      "full_original": false,
+      "source_route": false,
+      "card_sha256": "f8e45ee2ac00002a71f725bab376a928f4744f322a7af97fe7c167e34a35be77"
+    },
+    {
+      "method": "determinant",
+      "version": "2.0",
+      "level": "L3",
+      "full_original": false,
+      "source_route": true,
+      "card_sha256": "824cada40101452f641b658941fc9cfa5ab4e841443378441b61c6a2ee783a09"
+    },
+    {
+      "method": "macmahon",
+      "version": "2.0",
+      "level": "L3",
+      "full_original": false,
+      "source_route": true,
+      "card_sha256": "03901a1d6fe22d43253fb696a03303b2f01cc9bbc3409a8714407d6bc928a3ff"
+    }
+  ],
+  "registry_matches_frozen": true,
+  "registry_levels": {
+    "L3": 8,
+    "L2": 4
+  },
+  "Source_routes": 11,
+  "only_full_original": [
+    "telescoping",
+    "recurrence"
+  ],
+  "full_suite_tests": 475,
+  "full_suite_failure_error_skip_counts": 0,
+  "third_stage_fully_complete": false,
+  "report_numbered_sections": 19,
+  "errors": [],
+  "runtime_edited": false,
+  "test_helpers_edited": false
+}

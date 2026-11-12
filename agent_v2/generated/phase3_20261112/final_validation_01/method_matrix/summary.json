@@ -1,0 +1,273 @@
+{
+  "verification_passed": true,
+  "third_stage_fully_complete": false,
+  "scope": "fresh six local L3, three Source L2 and one stopped spectral Source boundary",
+  "methods": [
+    {
+      "method": "coefficient",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient/summary.json",
+      "command": {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.local_method_smoke",
+          "--method",
+          "coefficient",
+          "--identity",
+          "FQI-FINITE-Q-BINOMIAL",
+          "--seconds",
+          "1200",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient"
+        ],
+        "returncode": 0,
+        "wall_seconds": 144.12817869568244,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient.stderr.log"
+      }
+    },
+    {
+      "method": "interpolation",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation/summary.json",
+      "command": {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.local_method_smoke",
+          "--method",
+          "interpolation",
+          "--identity",
+          "FQI-SRC-GR2-I-20",
+          "--seconds",
+          "1200",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation"
+        ],
+        "returncode": 0,
+        "wall_seconds": 194.84441839996725,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/interpolation.stderr.log"
+      }
+    },
+    {
+      "method": "determinant",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant/summary.json",
+      "command": {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.local_method_smoke",
+          "--method",
+          "determinant",
+          "--identity",
+          "FQI-SRC-AP-11.2.4",
+          "--seconds",
+          "1200",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant"
+        ],
+        "returncode": 0,
+        "wall_seconds": 152.24612471088767,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant.stderr.log"
+      }
+    },
+    {
+      "method": "kernel_transform",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform/summary.json",
+      "command": {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.local_method_smoke",
+          "--method",
+          "kernel_transform",
+          "--identity",
+          "FQI-SRC-AQ-3.23",
+          "--seconds",
+          "1200",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform"
+        ],
+        "returncode": 0,
+        "wall_seconds": 142.9902422861196,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/kernel_transform.stderr.log"
+      }
+    },
+    {
+      "method": "difference_ring",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring/summary.json",
+      "command": {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.local_method_smoke",
+          "--method",
+          "difference_ring",
+          "--identity",
+          "FQI-SRC-FINE-2.1",
+          "--seconds",
+          "1200",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring"
+        ],
+        "returncode": 0,
+        "wall_seconds": 131.90919292811304,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/difference_ring.stderr.log"
+      }
+    },
+    {
+      "method": "macmahon",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon/summary.json",
+      "command": {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.local_method_smoke",
+          "--method",
+          "macmahon",
+          "--identity",
+          "FQI-SRC-GR2-7.Ex14",
+          "--seconds",
+          "1200",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon"
+        ],
+        "returncode": 0,
+        "wall_seconds": 195.04358410881832,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon.stderr.log"
+      }
+    },
+    {
+      "method": "product",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product/summary.json",
+      "command": {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.source_method_smoke",
+          "--method",
+          "product",
+          "--identity",
+          "FQI-POCHHAMMER-RESIDUES",
+          "--seconds",
+          "120",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product"
+        ],
+        "returncode": 0,
+        "wall_seconds": 2.7705408688634634,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product.stderr.log"
+      }
+    },
+    {
+      "method": "noncommutative",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative/summary.json",
+      "command": {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.source_method_smoke",
+          "--method",
+          "noncommutative",
+          "--identity",
+          "FQI-SRC-KAC-CHEUNG-5.7",
+          "--seconds",
+          "120",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative"
+        ],
+        "returncode": 0,
+        "wall_seconds": 3.0714057120494545,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative.stderr.log"
+      }
+    },
+    {
+      "method": "combinatorial",
+      "summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial/summary.json",
+      "command": {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.source_method_smoke",
+          "--method",
+          "combinatorial",
+          "--identity",
+          "FQI-FINITE-Q-BINOMIAL",
+          "--seconds",
+          "120",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial"
+        ],
+        "returncode": 0,
+        "wall_seconds": 2.7209941558539867,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/combinatorial.stderr.log"
+      }
+    }
+  ],
+  "spectral": {
+    "verification_passed": true,
+    "requested_Source_L3_upgrade_passed": false,
+    "scope": "fresh current-runtime Source refusal and resume; no mathematical proof",
+    "method": "spectral",
+    "identity": "FQI-SRC-GR2-7.2.24",
+    "source_sha256": "b8f35c5da4ec0e64366b20a87595c2ea6ca257d0f7b75b33a1aef29767a0b955",
+    "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs/20261112T034855Z-caca93e8fd",
+    "initial_stop_reason": "not_applicable",
+    "resume_stop_reason": "graph_capability_missing",
+    "C": 0,
+    "O": [
+      "original"
+    ],
+    "links": 0,
+    "lean_calls": 0,
+    "CAS_calls": 0,
+    "original_identity_proved": false,
+    "commands": [
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.cli",
+          "run",
+          "--identity",
+          "FQI-SRC-GR2-7.2.24",
+          "--method",
+          "spectral",
+          "--seconds",
+          "120",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs"
+        ],
+        "returncode": 2,
+        "wall_seconds": 0.5657032770104706,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_run.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_run.stderr.log"
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.cli",
+          "resume",
+          "--run-dir",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs/20261112T034855Z-caca93e8fd"
+        ],
+        "returncode": 2,
+        "wall_seconds": 0.5656819972209632,
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_resume.stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_resume.stderr.log"
+      }
+    ]
+  },
+  "wall_seconds": 970.9493912337348,
+  "whole_stage_remaining_gap": "spectral Source export and local Lean integration",
+  "model_calls": 0,
+  "benchmark_Test_read": false
+}

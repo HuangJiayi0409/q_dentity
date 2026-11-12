@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "agent_v2.tests.local_method_smoke",
+    "--method",
+    "macmahon",
+    "--identity",
+    "FQI-SRC-GR2-7.Ex14",
+    "--seconds",
+    "1200",
+    "--output-root",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon"
+  ],
+  "returncode": 0,
+  "wall_seconds": 195.04358410881832,
+  "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon.stdout.log",
+  "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/macmahon.stderr.log"
+}

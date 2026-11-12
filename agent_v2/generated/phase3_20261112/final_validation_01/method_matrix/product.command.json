@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "agent_v2.tests.source_method_smoke",
+    "--method",
+    "product",
+    "--identity",
+    "FQI-POCHHAMMER-RESIDUES",
+    "--seconds",
+    "120",
+    "--output-root",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product"
+  ],
+  "returncode": 0,
+  "wall_seconds": 2.7705408688634634,
+  "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product.stdout.log",
+  "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/product.stderr.log"
+}

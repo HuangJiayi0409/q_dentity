@@ -32,6 +32,10 @@ def construct(method, data):
         helper=sys.modules['workflow.matrix_symbolic']
         if Path(helper.__file__).resolve() != (ROOT/'finite_product_framework/workflow/matrix_symbolic.py').resolve():
             raise RuntimeError('pure scalar helper module was shadowed')
+        if method=='kernel_transform':
+            affine=sys.modules['kernel_transform.triangle']
+            if Path(affine.__file__).resolve() != (ROOT/'finite_product_framework/kernel_transform/triangle.py').resolve():
+                raise RuntimeError('pure affine helper module was shadowed')
         return {'status':'constructed' if plans else 'search_exhausted','constructions':plans}
     if method=='macmahon':
         sys.path.insert(0,str(ROOT/'finite_product_framework/p1'))

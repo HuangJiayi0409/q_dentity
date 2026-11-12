@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "method": "recurrence",
+  "method_version": "2.0",
+  "capability_level": "L3",
+  "status": "original_theorem_proved",
+  "identity": "FQI-GAUSS-ALTERNATING",
+  "theorem": "FiniteQBenchmark.Identity009.statement",
+  "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+  "source_context_unchanged": true,
+  "full_original": true,
+  "local_lean": true,
+  "C": 5,
+  "O": [],
+  "links": 4,
+  "original_identity_proved": true,
+  "scope": "final frozen runtime, new execution; detailed mathematical contract also retained in stage card",
+  "certificates": [
+    {
+      "id": "recurrence-local-3026508a6dc7cb8598c724e0",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range ((m + 2) + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q (m + 2) j))) + (((-1) + ((q^m) * q)) * (∑ j ∈ Finset.range (m + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q m j))) + (0) * (∑ j ∈ Finset.range ((m + 1) + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q (m + 1) j)))) = 0",
+      "dependencies": [],
+      "profile": "gaussian_geometric_recurrence_v1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "recurrence-uniqueness-bridge-338af80c4b8b821e85c425b4",
+      "proposition": "(∀ {K : Type u} [Field K] (q : K) (m : ℕ), (if (((m + 2) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 2) / 2)) else 0) + (((-1) + ((q^m) * q)) * (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0) + (0) * (if (((m + 1) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 1) / 2)) else 0)) = 0) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (0 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 0 j))) = (if ((0 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (0 / 2)) else 0)) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (1 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 1 j))) = (if ((1 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (1 / 2)) else 0)) → (∀ {K : Type u} [Field K] (q : K) (m : ℕ), ((∑ j ∈ Finset.range (m + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q m j))) = (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0)))",
+      "dependencies": [
+        "recurrence-local-3026508a6dc7cb8598c724e0"
+      ],
+      "profile": "gaussian_geometric_recurrence_v1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "recurrence-initial-one-proof-454fa646d9021f2b7c302731",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (1 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 1 j))) = (if ((1 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (1 / 2)) else 0)",
+      "dependencies": [],
+      "profile": "gaussian_geometric_recurrence_v1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "recurrence-initial-zero-proof-d96c092440ad5058df64a241",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (∑ j ∈ Finset.range (0 + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q 0 j))) = (if ((0 % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (0 / 2)) else 0)",
+      "dependencies": [],
+      "profile": "gaussian_geometric_recurrence_v1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "recurrence-rhs-recurrence-proof-ce2cd6df6cb0fd91b1f511ec",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), (if (((m + 2) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 2) / 2)) else 0) + (((-1) + ((q^m) * q)) * (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0) + (0) * (if (((m + 1) % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) ((m + 1) / 2)) else 0)) = 0",
+      "dependencies": [],
+      "profile": "gaussian_geometric_recurrence_v1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "remaining_budget": {
+    "actions": 0,
+    "schema_version": 1,
+    "seconds": 2934.724022096023
+  },
+  "resume_repeated_actions": 0,
+  "original_checks": [
+    {
+      "result": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/final/attempt-5/checked.json",
+      "sha256": "636bcd5ae7639657391b462f910c54115e3fc47d2b0e09c8a60a79445f38096d",
+      "theorem": "FiniteQBenchmark.Identity009.statement",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), ((∑ j ∈ Finset.range (m + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q m j))) = (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "returncode": 0
+    },
+    {
+      "result": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/final/attempt-5-1794455452173476871/checked.json",
+      "sha256": "e5e5502857daa0d72e0608120432ddf7c803e2de0c28dc8231ca7662094dcd74",
+      "theorem": "FiniteQBenchmark.Identity009.statement",
+      "proposition": "∀ {K : Type u} [Field K] (q : K) (m : ℕ), ((∑ j ∈ Finset.range (m + 1), (((-1) ^ j) * (FiniteQBenchmark.gaussian q m j))) = (if ((m % 2) = 0) then (FiniteQBenchmark.poch q (q ^ 2) (m / 2)) else 0))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "returncode": 0
+    }
+  ],
+  "real_partial_lean_checks": 5,
+  "fresh_replay_checks": 17,
+  "real_original_lean_checks": 2,
+  "negative_evidence": [
+    {
+      "task": "local",
+      "round": 1,
+      "passed": true,
+      "real_lean_rejection": true,
+      "state_unchanged": true,
+      "checkpoint_unchanged": true,
+      "actual_wall_seconds": 43.508068184833974,
+      "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-local"
+    },
+    {
+      "task": "uniqueness_bridge",
+      "round": 2,
+      "passed": true,
+      "real_lean_rejection": true,
+      "state_unchanged": true,
+      "checkpoint_unchanged": true,
+      "actual_wall_seconds": 44.11463590245694,
+      "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-uniqueness_bridge"
+    },
+    {
+      "task": "initial_one",
+      "round": 3,
+      "passed": true,
+      "real_lean_rejection": true,
+      "state_unchanged": true,
+      "checkpoint_unchanged": true,
+      "actual_wall_seconds": 43.33633921528235,
+      "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-initial_one"
+    },
+    {
+      "task": "initial_zero",
+      "round": 4,
+      "passed": true,
+      "real_lean_rejection": true,
+      "state_unchanged": true,
+      "checkpoint_unchanged": true,
+      "actual_wall_seconds": 43.56423883885145,
+      "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-initial_zero"
+    },
+    {
+      "task": "rhs_recurrence",
+      "round": 5,
+      "passed": true,
+      "real_lean_rejection": true,
+      "state_unchanged": true,
+      "checkpoint_unchanged": true,
+      "actual_wall_seconds": 43.517686835024506,
+      "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-rhs_recurrence"
+    }
+  ],
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+  "final_summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/summary.json",
+  "final_summary_sha256": "26e20bd783bda431f9b8a56665deebb2b2ea2fe256ab083c97b33e8dd360a496",
+  "commands": [
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "run",
+      "--identity",
+      "FQI-GAUSS-ALTERNATING",
+      "--method",
+      "recurrence",
+      "--scope",
+      "full",
+      "--selector",
+      "rule",
+      "--max-steps",
+      "5",
+      "--pause-after",
+      "1",
+      "--seconds",
+      "4000.0",
+      "--output-root",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+      "--pause-after",
+      "1"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+      "--pause-after",
+      "2"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+      "--pause-after",
+      "1"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "agent_v2.cli",
+      "resume",
+      "--run-dir",
+      "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba"
+    ]
+  ],
+  "final_frozen_manifest": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+  "final_frozen_manifest_sha256": "73a35e22ce43ee5d87cefcbd52f8eacdc7a83ba96da5a6dd0a8394bcc2162e91",
+  "stage_acceptance_card": null,
+  "stage_card_sha256": null,
+  "source_frontend": "agent_v2.recurrence_frontend:analyze_source",
+  "adapter": "agent_v2.recurrence_adapter:RecurrenceAdapter",
+  "lean_profile": "gaussian_geometric_recurrence_v1",
+  "limitations": [
+    "native Lean translation requires monic polynomial order two and supported flux",
+    "full scope requires the source-parsed parity/Pochhammer RHS and exact approved recurrence",
+    "five fixed tasks only; no automatic mathematical graph expansion",
+    "other constructed operators are translation_pending, never checked certificates"
+  ],
+  "benchmark_Test_read": false,
+  "model_calls": 0
+}

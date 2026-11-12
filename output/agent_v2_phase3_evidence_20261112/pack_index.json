@@ -1,0 +1,2218 @@
+{
+  "schema_version": 1,
+  "scope": "phase3_final_verification_passed_partial_integration_spectral_stopped",
+  "current_workspace_equivalence_claimed": false,
+  "proof_verification_performed_by_packaging": false,
+  "packages": [
+    {
+      "package": "ab_staged",
+      "passed": true,
+      "manifest": "ab_staged/manifest.json",
+      "manifest_sha256": "72cc383455ccda845d1dd10725dd771620fafb9164b53a7d75325c76cbce5a2f",
+      "copied_files_checked": 1212,
+      "omitted_files_checked": 120,
+      "copied_bytes": 336995124,
+      "omitted_bytes": 35846288,
+      "important_basename_counts": {
+        "original.lean": 2,
+        "Candidate.lean": 40,
+        "Candidate.olean": 34,
+        "stdout.jsonl": 160,
+        "checkpoint_manifest.json": 2,
+        "summary.json": 2,
+        "checked.json": 4,
+        "verification.json": 15
+      },
+      "case_ids": [
+        "recurrence_staged_acceptance",
+        "telescoping_regression",
+        "runtime_used_by_both_smokes"
+      ]
+    },
+    {
+      "package": "ab_default_compatible",
+      "passed": true,
+      "manifest": "ab_default_compatible/manifest.json",
+      "manifest_sha256": "b12726e551e155baef0e31266aaffd636ad4600957c2926a6342ba25b6e06947",
+      "copied_files_checked": 430,
+      "omitted_files_checked": 36,
+      "copied_bytes": 108413962,
+      "omitted_bytes": 10753864,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 12,
+        "Candidate.olean": 12,
+        "stdout.jsonl": 48,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 1,
+        "checked.json": 2,
+        "verification.json": 5
+      },
+      "case_ids": [
+        "recurrence_default_cli",
+        "runtime_default_cli_compatible",
+        "ab_gate_and_validation_metadata"
+      ]
+    },
+    {
+      "package": "coefficient",
+      "passed": true,
+      "manifest": "coefficient/manifest.json",
+      "manifest_sha256": "4420d9c289e0b5488452eb7b3cb264260d6cd80d1949adf56b4f1eeedccd37f3",
+      "copied_files_checked": 146,
+      "omitted_files_checked": 9,
+      "copied_bytes": 24779338,
+      "omitted_bytes": 2688488,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 3,
+        "Candidate.olean": 2,
+        "stdout.jsonl": 12,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 0,
+        "checked.json": 0,
+        "verification.json": 2
+      },
+      "case_ids": [
+        "coefficient_local",
+        "coefficient_runtime"
+      ]
+    },
+    {
+      "package": "coefficient_supplement",
+      "passed": true,
+      "manifest": "coefficient_supplement/manifest.json",
+      "manifest_sha256": "99762dc7bb4e5e44f06fab17361dc08273aed1e741282c4400e6dc40821bb0ae",
+      "copied_files_checked": 45,
+      "omitted_files_checked": 0,
+      "copied_bytes": 356803,
+      "omitted_bytes": 0,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 1,
+        "checked.json": 0,
+        "verification.json": 0
+      },
+      "case_ids": [
+        "coefficient_acceptance_metadata",
+        "coefficient_independent_review_and_guard",
+        "coefficient_real_Train_mismatch"
+      ]
+    },
+    {
+      "package": "retained_math_sources",
+      "passed": true,
+      "manifest": "retained_math_sources/manifest.json",
+      "manifest_sha256": "8ea1612877b584b7269e3dcd9e626bb54f5ec8cd823d4b1ca9891ad9f9993c06",
+      "copied_files_checked": 34,
+      "omitted_files_checked": 0,
+      "copied_bytes": 624426,
+      "omitted_bytes": 0,
+      "important_basename_counts": {
+        "original.lean": 0,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 0,
+        "summary.json": 0,
+        "checked.json": 0,
+        "verification.json": 0
+      },
+      "case_ids": [
+        "retained_math_sources"
+      ]
+    },
+    {
+      "package": "interpolation",
+      "passed": true,
+      "manifest": "interpolation/manifest.json",
+      "manifest_sha256": "6a3a573644c21153a39b777d0c4200ce4dffa9b82223c9932cfab67b43b02677",
+      "copied_files_checked": 171,
+      "omitted_files_checked": 12,
+      "copied_bytes": 33310430,
+      "omitted_bytes": 4379344,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 3,
+        "Candidate.olean": 2,
+        "stdout.jsonl": 15,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 0,
+        "checked.json": 0,
+        "verification.json": 2
+      },
+      "case_ids": [
+        "interpolation_local",
+        "interpolation_frozen_source"
+      ]
+    },
+    {
+      "package": "interpolation_supplement",
+      "passed": true,
+      "manifest": "interpolation_supplement/manifest.json",
+      "manifest_sha256": "407b79726743145f246fc53fe0ca545715184e89d734b90e74cbcec7a8d58a8c",
+      "copied_files_checked": 44,
+      "omitted_files_checked": 2,
+      "copied_bytes": 204800,
+      "omitted_bytes": 150928,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 1,
+        "checked.json": 0,
+        "verification.json": 0
+      },
+      "case_ids": [
+        "interpolation_acceptance_metadata",
+        "interpolation_independent_review",
+        "interpolation_component_development",
+        "interpolation_real_Train_mismatch"
+      ]
+    },
+    {
+      "package": "determinant",
+      "passed": true,
+      "manifest": "determinant/manifest.json",
+      "manifest_sha256": "04946500f9273bb42f078e6018694ab877e7ba0f137806bd8186019eb95a0763",
+      "copied_files_checked": 164,
+      "omitted_files_checked": 9,
+      "copied_bytes": 27164507,
+      "omitted_bytes": 2688488,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 3,
+        "Candidate.olean": 2,
+        "stdout.jsonl": 12,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 0,
+        "checked.json": 0,
+        "verification.json": 2
+      },
+      "case_ids": [
+        "determinant_local",
+        "determinant_frozen_source"
+      ]
+    },
+    {
+      "package": "determinant_supplement",
+      "passed": true,
+      "manifest": "determinant_supplement/manifest.json",
+      "manifest_sha256": "c7094e3728814c2d9d6b2ce5288b1b2bf9a03706e5a16c831b64ca6ab87a9de3",
+      "copied_files_checked": 57,
+      "omitted_files_checked": 3,
+      "copied_bytes": 1069075,
+      "omitted_bytes": 635240,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 1,
+        "checked.json": 0,
+        "verification.json": 0
+      },
+      "case_ids": [
+        "determinant_acceptance_metadata",
+        "determinant_independent_review",
+        "determinant_component_development",
+        "determinant_real_Train_mismatch"
+      ]
+    },
+    {
+      "package": "kernel_transform",
+      "passed": true,
+      "manifest": "kernel_transform/manifest.json",
+      "manifest_sha256": "4be4889d3f414afe16821c915dc82f7413ac5a0f886ec73aa2b66e72db37a758",
+      "copied_files_checked": 171,
+      "omitted_files_checked": 9,
+      "copied_bytes": 25338455,
+      "omitted_bytes": 2688520,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 3,
+        "Candidate.olean": 2,
+        "stdout.jsonl": 12,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 0,
+        "checked.json": 0,
+        "verification.json": 2
+      },
+      "case_ids": [
+        "kernel_transform_local",
+        "kernel_transform_frozen_source"
+      ]
+    },
+    {
+      "package": "kernel_transform_supplement",
+      "passed": true,
+      "manifest": "kernel_transform_supplement/manifest.json",
+      "manifest_sha256": "bc17f049e84b0d3fab29adb4e33f7404b6caed66f0b53684dd1fc9099d81adc0",
+      "copied_files_checked": 149,
+      "omitted_files_checked": 5,
+      "copied_bytes": 992199,
+      "omitted_bytes": 1154800,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 3,
+        "checked.json": 0,
+        "verification.json": 0
+      },
+      "case_ids": [
+        "kernel_transform_acceptance_metadata",
+        "kernel_transform_independent_review",
+        "kernel_transform_component_development",
+        "kernel_transform_core_positive_and_negative",
+        "kernel_transform_real_Train_mismatch"
+      ]
+    },
+    {
+      "package": "spectral_stopped",
+      "passed": true,
+      "verification_scope": "byte integrity only; integration failed",
+      "manifest": "spectral_stopped/manifest.json",
+      "manifest_sha256": "3555977ab00d2678dc475e1780eadca592c4dbdca1651ccc7603e5e461cc8f80",
+      "copied_files_checked": 110,
+      "omitted_files_checked": 0,
+      "copied_bytes": 759440,
+      "omitted_bytes": 0,
+      "case_ids": [
+        "spectral_stopped_branch",
+        "spectral_independent_review"
+      ]
+    },
+    {
+      "package": "difference_ring",
+      "passed": true,
+      "manifest": "difference_ring/manifest.json",
+      "manifest_sha256": "0e496371ef168f30e514672ef50de80fab7054386caa43b7508fe2b6bcb92a8d",
+      "copied_files_checked": 172,
+      "omitted_files_checked": 9,
+      "copied_bytes": 22613822,
+      "omitted_bytes": 2688512,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 3,
+        "Candidate.olean": 2,
+        "stdout.jsonl": 12,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 0,
+        "checked.json": 0,
+        "verification.json": 2
+      },
+      "case_ids": [
+        "difference_ring_local",
+        "difference_ring_frozen_source"
+      ]
+    },
+    {
+      "package": "difference_ring_supplement",
+      "passed": true,
+      "manifest": "difference_ring_supplement/manifest.json",
+      "manifest_sha256": "e43c4c94be33f441be1b68823f59cb798e85cdb6bebf022df4fe786f9f0c6580",
+      "copied_files_checked": 138,
+      "omitted_files_checked": 5,
+      "copied_bytes": 894333,
+      "omitted_bytes": 795072,
+      "important_basename_counts": {
+        "original.lean": 2,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 3,
+        "checked.json": 0,
+        "verification.json": 0
+      },
+      "case_ids": [
+        "difference_ring_acceptance_metadata",
+        "difference_ring_independent_review",
+        "difference_ring_component_development",
+        "difference_ring_core_positive_and_negative",
+        "difference_ring_real_Train_mismatch"
+      ]
+    },
+    {
+      "package": "macmahon",
+      "passed": true,
+      "manifest": "macmahon/manifest.json",
+      "manifest_sha256": "e8ea229fff39c8c85f86473f03f56bc63f6eb4d89a454d9a99f5e18a7b6525f7",
+      "copied_files_checked": 197,
+      "omitted_files_checked": 12,
+      "copied_bytes": 33839237,
+      "omitted_bytes": 4379320,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 3,
+        "Candidate.olean": 2,
+        "stdout.jsonl": 15,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 0,
+        "checked.json": 0,
+        "verification.json": 2
+      },
+      "case_ids": [
+        "macmahon_local",
+        "macmahon_frozen_source"
+      ]
+    },
+    {
+      "package": "macmahon_supplement",
+      "passed": true,
+      "manifest": "macmahon_supplement/manifest.json",
+      "manifest_sha256": "c15f038ff6a0d2ceda38ada0bfda17258acae47710852dbb77b4b142882d6ec8",
+      "copied_files_checked": 157,
+      "omitted_files_checked": 8,
+      "copied_bytes": 1312455,
+      "omitted_bytes": 2036032,
+      "important_basename_counts": {
+        "original.lean": 2,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 3,
+        "checked.json": 0,
+        "verification.json": 0
+      },
+      "case_ids": [
+        "macmahon_acceptance_metadata",
+        "macmahon_independent_review",
+        "macmahon_component_development",
+        "macmahon_core_positive_and_negative",
+        "macmahon_real_Train_mismatch"
+      ]
+    },
+    {
+      "package": "product",
+      "passed": true,
+      "manifest": "product/manifest.json",
+      "manifest_sha256": "e3ff74325ec4f98a7651461c6248f23d56d00654244c801a960bbab6a1f29b79",
+      "copied_files_checked": 108,
+      "omitted_files_checked": 0,
+      "copied_bytes": 1098045,
+      "omitted_bytes": 0,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 0,
+        "checked.json": 0,
+        "verification.json": 1
+      },
+      "case_ids": [
+        "product_Source_L2",
+        "product_frozen_source"
+      ]
+    },
+    {
+      "package": "product_supplement",
+      "passed": true,
+      "manifest": "product_supplement/manifest.json",
+      "manifest_sha256": "b7000660978d0a768dfbd59666e1bbae2de0d390e9636e300192cc20be1c4513",
+      "copied_files_checked": 143,
+      "omitted_files_checked": 0,
+      "copied_bytes": 527375,
+      "omitted_bytes": 0,
+      "important_basename_counts": {
+        "original.lean": 3,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 2,
+        "summary.json": 4,
+        "checked.json": 0,
+        "verification.json": 0
+      },
+      "case_ids": [
+        "product_acceptance_and_development_metadata",
+        "product_independent_review",
+        "product_core_component_development",
+        "product_real_core_positive_negative_timeout",
+        "product_real_Train_mismatch",
+        "product_real_tiny_budget"
+      ]
+    },
+    {
+      "package": "noncommutative",
+      "passed": true,
+      "manifest": "noncommutative/manifest.json",
+      "manifest_sha256": "fd666c1363cb7b290271e2c197b9301d5f0aa1f0a09862c9e43105e69555b09a",
+      "copied_files_checked": 111,
+      "omitted_files_checked": 0,
+      "copied_bytes": 1124291,
+      "omitted_bytes": 0,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 0,
+        "checked.json": 0,
+        "verification.json": 1
+      },
+      "case_ids": [
+        "noncommutative_Source_L2",
+        "noncommutative_frozen_source"
+      ]
+    },
+    {
+      "package": "noncommutative_supplement",
+      "passed": true,
+      "manifest": "noncommutative_supplement/manifest.json",
+      "manifest_sha256": "d39b53a1587533222d88080bd7c540b6450aec00795462ffa683d6b09ca61b5a",
+      "copied_files_checked": 131,
+      "omitted_files_checked": 0,
+      "copied_bytes": 487855,
+      "omitted_bytes": 0,
+      "important_basename_counts": {
+        "original.lean": 3,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 2,
+        "summary.json": 4,
+        "checked.json": 0,
+        "verification.json": 0
+      },
+      "case_ids": [
+        "noncommutative_acceptance_and_development_metadata",
+        "noncommutative_independent_review",
+        "noncommutative_real_core_positive_negative_timeout",
+        "noncommutative_real_Train_mismatch",
+        "noncommutative_real_tiny_budget"
+      ]
+    },
+    {
+      "package": "combinatorial",
+      "passed": true,
+      "manifest": "combinatorial/manifest.json",
+      "manifest_sha256": "20db2b8912fe33c79ba64556d370ce50ba1784ec3407d6798bb69f0f710cbaa4",
+      "copied_files_checked": 115,
+      "omitted_files_checked": 0,
+      "copied_bytes": 1210605,
+      "omitted_bytes": 0,
+      "important_basename_counts": {
+        "original.lean": 1,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 1,
+        "summary.json": 0,
+        "checked.json": 0,
+        "verification.json": 1
+      },
+      "case_ids": [
+        "combinatorial_Source_L2",
+        "combinatorial_frozen_source"
+      ]
+    },
+    {
+      "package": "combinatorial_supplement",
+      "passed": true,
+      "manifest": "combinatorial_supplement/manifest.json",
+      "manifest_sha256": "89124f0c64b921cd4a4f994887e9932a0ca44d686c48dfc01d70ab9890553dcb",
+      "copied_files_checked": 133,
+      "omitted_files_checked": 0,
+      "copied_bytes": 530274,
+      "omitted_bytes": 0,
+      "important_basename_counts": {
+        "original.lean": 3,
+        "Candidate.lean": 0,
+        "Candidate.olean": 0,
+        "stdout.jsonl": 0,
+        "checkpoint_manifest.json": 2,
+        "summary.json": 3,
+        "checked.json": 0,
+        "verification.json": 0
+      },
+      "case_ids": [
+        "combinatorial_acceptance_and_development_metadata",
+        "combinatorial_independent_review",
+        "combinatorial_core_component_development",
+        "combinatorial_real_core_positive_negative_timeout",
+        "combinatorial_real_Train_mismatch",
+        "combinatorial_real_tiny_budget"
+      ]
+    },
+    {
+      "package": "final_validation_01",
+      "passed": true,
+      "manifest": "final_validation_01/manifest.json",
+      "manifest_sha256": "dd6dfa2fe3525da6cab35565311289cf9d84aa680e3266c67b21c0f6125d886a",
+      "copied_files_checked": 2553,
+      "omitted_files_checked": 180,
+      "copied_bytes": 515970538,
+      "omitted_bytes": 55359576,
+      "important_basename_counts": {
+        "agent_v2_changes.diff": 1,
+        "manifest.json": 1,
+        "__init__.py": 2,
+        "cas_adapter.py": 1,
+        "cli.py": 1,
+        "coefficient_adapter.py": 1,
+        "coefficient_frontend.py": 1,
+        "coefficient_translation.py": 1,
+        "combinatorial_adapter.py": 1,
+        "combinatorial_check.py": 1,
+        "combinatorial_frontend.py": 1,
+        "combinatorial_worker.py": 1,
+        "determinant_adapter.py": 1,
+        "determinant_frontend.py": 1,
+        "determinant_translation.py": 1,
+        "difference_ring_adapter.py": 1,
+        "difference_ring_check.py": 1,
+        "difference_ring_frontend.py": 1,
+        "difference_ring_translation.py": 1,
+        "executor.py": 1,
+        "formal_frontend.py": 1,
+        "freeze_final_sources.py": 1,
+        "run_final_method_matrix.py": 1,
+        "run_full_suite.py": 1,
+        "graph.py": 1,
+        "interpolation_adapter.py": 1,
+        "interpolation_frontend.py": 1,
+        "interpolation_translation.py": 1,
+        "kernel_transform_adapter.py": 1,
+        "kernel_transform_check.py": 1,
+        "kernel_transform_frontend.py": 1,
+        "kernel_transform_translation.py": 1,
+        "CoefficientRules.lean": 1,
+        "DeterminantRules.lean": 1,
+        "DifferenceRingRules.lean": 1,
+        "InterpolationRules.lean": 1,
+        "KernelTransformRules.lean": 1,
+        "MacMahonRules.lean": 1,
+        "MonomorphicCheck.lean": 1,
+        "OriginalTrainCheck.lean": 1,
+        "PartialCheck.lean": 1,
+        "TelescopingCheck.lean": 1,
+        "lean_checker.py": 1,
+        "llm_adapter.py": 1,
+        "loop.py": 1,
+        "macmahon_adapter.py": 1,
+        "macmahon_check.py": 1,
+        "macmahon_frontend.py": 1,
+        "macmahon_translation.py": 1,
+        "math_lean_profile.py": 1,
+        "method_registry.py": 1,
+        "method_tasks.py": 1,
+        "models.py": 1,
+        "noncommutative_adapter.py": 1,
+        "noncommutative_check.py": 1,
+        "noncommutative_frontend.py": 1,
+        "noncommutative_worker.py": 1,
+        "process.py": 1,
+        "product_adapter.py": 1,
+        "product_check.py": 1,
+        "product_frontend.py": 1,
+        "product_worker.py": 1,
+        "proof_profiles.py": 1,
+        "recovery.py": 1,
+        "recurrence_adapter.py": 1,
+        "recurrence_closure.py": 1,
+        "recurrence_frontend.py": 1,
+        "recurrence_lean_profile.py": 1,
+        "recurrence_translation.py": 1,
+        "router.py": 1,
+        "storage.py": 1,
+        "symbolic_methods.py": 1,
+        "symbolic_worker.py": 1,
+        "telescoping_closure.py": 1,
+        "telescoping_translation.py": 1,
+        "closure_smoke.py": 1,
+        "export_phase3_evidence.py": 1,
+        "local_method_smoke.py": 1,
+        "real_smoke.py": 1,
+        "recurrence_closure_smoke.py": 1,
+        "recurrence_smoke.py": 1,
+        "source_method_smoke.py": 1,
+        "telescoping_smoke.py": 1,
+        "test_adapters.py": 1,
+        "test_checkpoint_pause.py": 1,
+        "test_cli.py": 1,
+        "test_closure_checker.py": 1,
+        "test_closure_flow.py": 1,
+        "test_closure_math.py": 1,
+        "test_closure_review.py": 1,
+        "test_coefficient_adapter.py": 1,
+        "test_coefficient_frontend.py": 1,
+        "test_coefficient_profile.py": 1,
+        "test_coefficient_translation.py": 1,
+        "test_combinatorial_adapter.py": 1,
+        "test_combinatorial_core.py": 1,
+        "test_combinatorial_frontend.py": 1,
+        "test_determinant_adapter.py": 1,
+        "test_determinant_frontend.py": 1,
+        "test_determinant_profile.py": 1,
+        "test_determinant_translation.py": 1,
+        "test_difference_ring_adapter.py": 1,
+        "test_difference_ring_check.py": 1,
+        "test_difference_ring_frontend.py": 1,
+        "test_difference_ring_profile.py": 1,
+        "test_difference_ring_translation.py": 1,
+        "test_executor.py": 1,
+        "test_formal_frontend.py": 1,
+        "test_graph_router.py": 1,
+        "test_interpolation_adapter.py": 1,
+        "test_interpolation_frontend.py": 1,
+        "test_interpolation_profile.py": 1,
+        "test_interpolation_translation.py": 1,
+        "test_kernel_transform_adapter.py": 1,
+        "test_kernel_transform_check.py": 1,
+        "test_kernel_transform_core.py": 1,
+        "test_kernel_transform_frontend.py": 1,
+        "test_kernel_transform_profile.py": 1,
+        "test_kernel_transform_translation.py": 1,
+        "test_lean_checker.py": 1,
+        "test_loop.py": 1,
+        "test_macmahon_adapter.py": 1,
+        "test_macmahon_check.py": 1,
+        "test_macmahon_frontend.py": 1,
+        "test_macmahon_profile.py": 1,
+        "test_macmahon_translation.py": 1,
+        "test_method_demo.py": 1,
+        "test_method_registry.py": 1,
+        "test_models_storage.py": 1,
+        "test_noncommutative_adapter.py": 1,
+        "test_noncommutative_core.py": 1,
+        "test_noncommutative_frontend.py": 1,
+        "test_phase3_contract.py": 1,
+        "test_product_adapter.py": 1,
+        "test_product_core.py": 1,
+        "test_product_frontend.py": 1,
+        "test_profile_universes.py": 1,
+        "test_proof_profiles.py": 1,
+        "test_recurrence_checker.py": 1,
+        "test_recurrence_closure.py": 2,
+        "test_recurrence_frontend.py": 1,
+        "test_recurrence_method.py": 1,
+        "test_recurrence_review.py": 1,
+        "test_recurrence_tasks.py": 1,
+        "test_recurrence_translation.py": 1,
+        "test_registry_review.py": 1,
+        "test_symbolic_methods.py": 1,
+        "test_symbolic_review.py": 1,
+        "test_symbolic_source_scope.py": 1,
+        "test_telescoping_checker.py": 1,
+        "test_telescoping_flow.py": 1,
+        "test_telescoping_method.py": 1,
+        "test_telescoping_translation.py": 1,
+        "Auxiliary.lean": 59,
+        "Batch5Definitions.lean": 1,
+        "BatchDefinitions.lean": 7,
+        "Definitions.lean": 59,
+        "Gaussian.lean": 59,
+        "lakefile.toml": 2,
+        "lean-toolchain": 2,
+        "choice_construct.py": 1,
+        "construct.py": 3,
+        "algebra.py": 2,
+        "Rules.lean": 1,
+        "triangle.py": 1,
+        "operator_construct.py": 1,
+        "batch.py": 1,
+        "bibasic.py": 1,
+        "bibasic_pipeline.py": 1,
+        "check.py": 1,
+        "check_difference_completion.py": 1,
+        "check_difference_core.py": 1,
+        "check_difference_full.py": 1,
+        "check_difference_general.py": 1,
+        "check_omega_core.py": 1,
+        "core.py": 1,
+        "defined_relation.py": 1,
+        "direct.py": 1,
+        "exact_linear.py": 1,
+        "expressions.py": 1,
+        "general_sum_emit.py": 1,
+        "general_summation.py": 1,
+        "GaussianRules.lean": 59,
+        "Shared.lean": 1,
+        "lean_pipeline.py": 1,
+        "multisum.py": 1,
+        "multisum_domains.py": 1,
+        "multisum_lean.py": 1,
+        "multisum_pipeline.py": 1,
+        "ore.py": 1,
+        "ore_core.py": 1,
+        "ore_pipeline.py": 1,
+        "parameter_relation.py": 1,
+        "poch_domains.py": 1,
+        "poch_intervals.py": 1,
+        "poch_local.py": 1,
+        "poch_recurrence_emit.py": 1,
+        "proof_fixture.py": 1,
+        "qconstant.py": 1,
+        "qdifference.py": 1,
+        "qfinite.py": 1,
+        "qgosper.py": 1,
+        "qholonomic.py": 1,
+        "qjoint.py": 1,
+        "qnumberfield.py": 1,
+        "qomega.py": 1,
+        "qparameterized.py": 1,
+        "qpisigma.py": 1,
+        "qpisigma_system.py": 1,
+        "qplde.py": 1,
+        "qrational_system.py": 1,
+        "review_batch.py": 1,
+        "run.py": 2,
+        "run_omega_audit.py": 1,
+        "search.py": 1,
+        "setup_pari.py": 1,
+        "singular_emit.py": 1,
+        "source_ir.py": 1,
+        "sum_lean.py": 1,
+        "test_bibasic.py": 1,
+        "test_convolution_pipeline.py": 1,
+        "test_core_solver.py": 1,
+        "test_defined_relation.py": 1,
+        "test_difference_completion.py": 1,
+        "test_difference_core.py": 1,
+        "test_difference_full.py": 1,
+        "test_difference_general.py": 1,
+        "test_direct.py": 1,
+        "test_domain_pipeline.py": 1,
+        "test_general_certificate.py": 1,
+        "test_general_summation.py": 1,
+        "test_holonomic_core.py": 1,
+        "test_joint_core.py": 1,
+        "test_lean_pipeline.py": 1,
+        "test_multisum.py": 1,
+        "test_multisum_native.py": 1,
+        "test_omega_core.py": 1,
+        "test_ore.py": 1,
+        "test_ore_core.py": 1,
+        "test_parameter_relation.py": 1,
+        "test_phi_pipeline.py": 1,
+        "test_pipeline.py": 1,
+        "test_poch_intervals.py": 1,
+        "test_poch_order.py": 1,
+        "test_poch_recurrence.py": 1,
+        "test_poch_rules.py": 1,
+        "test_poch_train.py": 1,
+        "test_product_pipeline.py": 1,
+        "test_source_ir.py": 1,
+        "test_zeilberger.py": 1,
+        "zeilberger.py": 1,
+        "zeilberger_pipeline.py": 1,
+        "index_construct.py": 1,
+        "solve_core.py": 1,
+        "matrix_symbolic.py": 1,
+        "lake-manifest.json": 1,
+        "discovered_tests.json": 1,
+        "summary.json": 13,
+        "unittest.log": 1,
+        "coefficient.command.json": 1,
+        "coefficient.stderr.log": 1,
+        "coefficient.stdout.log": 1,
+        "cli_mismatch.json": 9,
+        "cli_resume.json": 10,
+        "cli_run.json": 10,
+        "checkpoint.json": 31,
+        "checkpoint_manifest.json": 25,
+        "38450b386d81f3da5b8b788c9b598a512ac5d7ddf93a66e418d2525db4d141c3.json": 1,
+        "frontend.json": 100,
+        "graph.json": 25,
+        "initial_state.json": 25,
+        "method_spec.json": 24,
+        "run.json": 31,
+        "original.lean": 25,
+        "binding-negative.json": 6,
+        "2c97d7ce06e41bc2109027e16c5407bb73c628f02279fe78afbc0a7839309503.json": 1,
+        "3686e6d50b149666afced3e42cff6d1831be15d7522091b40d8cca916a1c4ddd.json": 1,
+        "4c924cffc2dbf26767e228853cab9896ec13e5886d8e11b9c44f6ddec38324ab.json": 1,
+        "b210c7021011a03276bf36780b67300ce6988056a13731c240187ba804b70e94.json": 1,
+        "candidate.json": 27,
+        "TrustedDriver.lean": 61,
+        "process.json": 249,
+        "stderr.txt": 252,
+        "stdout.jsonl": 241,
+        "dependencies_after.json": 67,
+        "dependencies_before.json": 67,
+        "request.json": 75,
+        "Candidate.lean": 61,
+        "state_after.json": 32,
+        "state_before.json": 32,
+        "verification.json": 32,
+        "Candidate.olean": 49,
+        "result.json": 56,
+        "action.json": 20,
+        "cas_request.json": 11,
+        "cas_return.json": 11,
+        "construction.json": 9,
+        "input_contract.json": 6,
+        "stdout.txt": 11,
+        "stdout.txt.process_request.json": 11,
+        "stdout.txt.process_result.json": 11,
+        "mapping.json": 11,
+        "method_request.json": 18,
+        "translation.json": 8,
+        "candidates.json": 20,
+        "raw_result.json": 20,
+        "selection.json": 20,
+        "combinatorial.command.json": 1,
+        "combinatorial.stderr.log": 1,
+        "combinatorial.stdout.log": 1,
+        "cli_tiny_budget.json": 3,
+        "4cc9137b8c9bb762642bb15784db24d7d115f10232171c9604b5c48124d6cedd.json": 1,
+        "0a8a38cf7cd70782e6a1fd09843c267f622b6382eec80e31826287b7e6728880.json": 1,
+        "355a65d272fa090778b608fc4076880869da105e725e9e12115a79e302fc16db.json": 1,
+        "894a8003d1b2b0000c336bc734948af65c08039324f3d4c8a058a688d41a3f72.json": 1,
+        "8a03a39dc352216d1d551a7051d527ee7412fe4ede5981ee9fac2f9c19771afe.json": 1,
+        "independent_check.json": 3,
+        "definition_binding.json": 3,
+        "symbolic_certificate.json": 3,
+        "state_before_resume.json": 3,
+        "26641ebcb4085b858177720751b360f19aedc8bd98a3a4f5146f0813860ff9b8.json": 1,
+        "determinant.command.json": 1,
+        "determinant.stderr.log": 1,
+        "determinant.stdout.log": 1,
+        "b690545c23850db315deced372cf89599a500d71583d085ebcce52822fdff86f.json": 1,
+        "0c6d379b05febe5e0e856bad72a55415b79f84657bb53dfb17c1a0f5904c9ae8.json": 1,
+        "481803e50a57c0df4cd34622ff244d0c9c5f924ccd97babb2b2a63fab633c2cd.json": 1,
+        "ad2b6d539a990cdab76d4aa9cacfd6fd4a9a229bb8e8290178175264e57dea4e.json": 1,
+        "c7a541d3f91fbd964ab48054ef94b3967484cf7c0ff5b7698a25a274083942db.json": 1,
+        "difference_ring.command.json": 1,
+        "difference_ring.stderr.log": 1,
+        "difference_ring.stdout.log": 1,
+        "f6ccef3621b57ae52124f9e95363c782d6e6f8bc1543f3df10450feeca9ab8f5.json": 1,
+        "4a00d6528d3c209af630ba5e2bb63c0634669c3661cc4e2043eb8ba4e6e3b337.json": 1,
+        "7632c95e2cbfd5eb4b5983caad19ebd1dfc4c7c21567c431ff0e85316b440d69.json": 1,
+        "d5b679888ecf27cab50c2eaf279ba4e12ce630fab56a4323e022ff1aa266d4eb.json": 1,
+        "e27d6ef8591761799bbf473595ce41903fe848916720d7bbfbcb72da4e06182b.json": 1,
+        "interpolation.command.json": 1,
+        "interpolation.stderr.log": 1,
+        "interpolation.stdout.log": 1,
+        "4bc144d9f4ff79e2c02dfb98e5bb0661f7395e150f52aa3443b429ef61297335.json": 1,
+        "e32066b990d8349834da324363bf32c93c93e4d28b36e6fadc4b4ac2b66d6fe1.json": 1,
+        "ead1a25debc8028f6a6834ea29f6038fc20bb356600fc63ea1a8804cc7b6c1d1.json": 1,
+        "eb94058ba2ca6a81972aeb14c0a51585b110a61515cc5eafb9724cd6fa3a4ac6.json": 1,
+        "fae6c76d7de9670f1e6b209b8ae34a208c6e32409970992a9da3487bd21c6535.json": 1,
+        "kernel_transform.command.json": 1,
+        "kernel_transform.stderr.log": 1,
+        "kernel_transform.stdout.log": 1,
+        "ed1d36af3ddb9f2c28cb14bd9cae20b93ea5cbc99fbb300706b4a28859c2493a.json": 1,
+        "088b51088d99c5871e718f363eee73b5fb3acba4f0399c51d8b2963f75bb88a0.json": 1,
+        "59eb42dcd39d685049392255c40b5617902e2692a0658f43db990f8586452ae5.json": 1,
+        "bda49e0d8b3acffeb9faff510e0bd91a5f2267935155c4f39a4b5346590573a4.json": 1,
+        "dae970c80c3e162c6fdd0aba1422a3b286f6809d29a05249a56796c3b8f0d100.json": 1,
+        "macmahon.command.json": 1,
+        "macmahon.stderr.log": 1,
+        "macmahon.stdout.log": 1,
+        "8e71b879ea21de181b34dae8a75febbe1b70294d9d277c6c1056416ee3e0a3ab.json": 1,
+        "1b1701825e6957272d162c00e4405b7655e16c576f77b668dffe662f81557322.json": 1,
+        "2d3bea06398dc09be44598c158fe2c9dfcfcca789613ae051f6de506e31dbd67.json": 1,
+        "e10defab10f61bac434026a0e8a0703d7c70600fdde7845d600a223fd8b1b9ab.json": 1,
+        "ecc680cb1c950a07e3a7f1f4947ddd57539a33b906312ec486b802587f68aa4f.json": 1,
+        "noncommutative.command.json": 1,
+        "noncommutative.stderr.log": 1,
+        "noncommutative.stdout.log": 1,
+        "628929f3d638ad4874ddf1eaaddb7a43abebc16082b6b844f20e4757e74063b8.json": 1,
+        "08745902b8068f31e5295a814cb8997b9711e7c3690e7b656596be407656610e.json": 1,
+        "acf543298d7f004aca5b8de4027d9fab31063eff29f3984b93380e3fff78e769.json": 1,
+        "d89d5e1540b7a4742f3828d49c0e97529b1cc17dfd94b363f219bccc4a2c4d1a.json": 1,
+        "e141c9098c7f7d9043a7b8677ed27a2f68657a97e410ada84f4deeddb9cc62bb.json": 1,
+        "2b13222d4e9cbf731905123abed3a36c6285526a7413993fb467208578408113.json": 1,
+        "product.command.json": 1,
+        "product.stderr.log": 1,
+        "product.stdout.log": 1,
+        "8beedb861775890bfcf49a7dc97679592747bb75d279e8b7d2c5ebaf05fc6ba2.json": 1,
+        "4969660f6086f7076e6f18e3a5b37bc710bb73b0506970452bfa7a3191266590.json": 1,
+        "917ac5eb2de310e349384065b46900b099d8d0eab2d1eb20403e4bd3cdaa6df5.json": 1,
+        "949c0a7fe26404bc74786c7de910265e77951c02815e4189f9a117b737d6c7b8.json": 1,
+        "dc5cbe742de0afb70c077e7bc6ce003cbad7b61f130c713ebeb547b04422c88f.json": 1,
+        "d5a320e68da86208cf4737a76dde567c79657b8254a53e610faaaa63cd439716.json": 1,
+        "progress.json": 1,
+        "spectral_boundary.json": 1,
+        "spectral_resume.command.json": 1,
+        "spectral_resume.stderr.log": 1,
+        "spectral_resume.stdout.log": 1,
+        "spectral_run.command.json": 1,
+        "spectral_run.stderr.log": 1,
+        "spectral_run.stdout.log": 1,
+        "13ec1d98f9240132b72c90780f8d3f5687ddfccceacaf8f81d21c3a8ef41ce3b.json": 1,
+        "3a8da5e2fdfb70cc96ded6f9723530a9163c5189197f08cffa7f114a8f5111ef.json": 1,
+        "5be530b4081eb98128e73229b58e7961f0f6954ba1afe38e4205e82028a2e536.json": 1,
+        "cli_all_leaves.json": 1,
+        "cli_bridge.json": 1,
+        "cli_final_replay.json": 1,
+        "cli_local.json": 1,
+        "cli_original.json": 1,
+        "cli_two_leaves.json": 1,
+        "assembled_proof.txt": 2,
+        "270aaa3c39cbc016429a9a496be537db827fd6fa1aeca2c8100c8e8443ec5193.json": 1,
+        "37bf464bd075e1dacd34f27e876afac6d652b5494aaa7a12950dc2b8d2ce2d62.json": 1,
+        "3d365f422ccc1b54ec13960b97d331cd5ced90546b511db05392cc35c553be71.json": 1,
+        "43e5835e61ebb564ffed1f7cccfc7ad99123734c7a7d98d369da9192f135702c.json": 1,
+        "4fc5e458adfd8ff9853f94b43136c1ecbb1a4008e16d1e17cf94e9611b5d318f.json": 1,
+        "50221dbf398accdd72262495840a627242714dfd299e942f789528ab8ebd562b.json": 1,
+        "505bd7d39cf72d464cfca49997c233c8da63a1bc5060c13366af93cf5d19b429.json": 1,
+        "5455b951d8c4bde7fd707d1adc468cd01677ce7057d784643caef56ea4fdfd68.json": 1,
+        "54801a21da04378fd83565283db61003df5d7a9881df792729ee3fb301f308f3.json": 1,
+        "6051fb923d885fd111164b2331d99636487eca2fa142c70a8d86d1fd1f871200.json": 1,
+        "69d2885349c12a3f5faa4bc47d903277690aaf63ca08407b2bf468d35d5efec8.json": 1,
+        "6a34d5c0e22afb29787ebaf64773a6314fdc66b5da56cde19eb6af4af0eea6f0.json": 1,
+        "6f2e70e6b92bb306eeb399c13950da43e53bfe3bc162949602773f7e39010c79.json": 1,
+        "775703f9f3020f4f7b08710b4bb258bc280e7fed3eebb16a10e2075390f328b2.json": 1,
+        "800620a0d816e775795c143e20d1330d193dfee98284c2dd3eca53d0e741501f.json": 1,
+        "87247f56bd9ff3018e4b20b063f44f8a66f0a2e691570f30c783180f6a2acf15.json": 1,
+        "90f3b002df84f5ab351f60776820fe67d90011e9ef878569368a850478c7ba43.json": 1,
+        "9f8acf759e071cd73c253d876c21114639454b961408412d12b6d85648e4482c.json": 1,
+        "ba9a2b7b2f4879aaae24f1fed692dce892a0968d17e20fb3a875c88ddc571328.json": 1,
+        "d1e7174f254f30dbb8da3af54576f4edb9526d0c4f63b3a6a42d44fd04441595.json": 1,
+        "eca21be4b0d21b34230cec3a7c240040f79000e494dd23fb910ed624500e3580.json": 1,
+        "closure_contract.json": 2,
+        "checked.json": 5,
+        "core_request.json": 2,
+        "core_result.json": 2,
+        "task_contract.json": 7,
+        "1.json": 1,
+        "retained_paths.json": 6,
+        "22147c828dc07166acea847cfa80255a150e1408b4758d80814bd35aa8d11c53.json": 1,
+        "6621d96c176fe1a145bc1b5ae9080c26c1385a7fe9e694724fb86323c5d7c556.json": 1,
+        "82bca44825d0d5110c1c740515b505a9f69912dcc1dab9267ed5ff4ab596f39b.json": 1,
+        "86ba9f18d9228da37e031f3d226bd83d70cf7457c79c16f8f555f438a0a3fb22.json": 1,
+        "893db99d809b31e36c510ff9f0226bf1186bc7587ec55f3ed76dd30509aae63b.json": 1,
+        "8cc59356f7f63f5e7c9e9eac01aa4b046823f448e62609f92e707bb9ce3c6ab0.json": 1,
+        "aacae166abd1a503586a1f84ba7195379f06aa6cd477e94796f08dd5966b5ec2.json": 1,
+        "c70c9dd7b284932dabd59bb999ecdb0841a56b2b498abdf50c55e4fcc825f511.json": 1,
+        "d0f723198c95f3e131f9f539e16bc4007e53730f2d6a2a8528cb8d1c1fc29b38.json": 1,
+        "e246e0ce094ae4f14ba33855d45a9db0b5c1a09d6ceb2349b25457df5f70dfa3.json": 1,
+        "fc2859da883651bd3fe75453d167b098d373a8f55a835c030037f73a23251b8c.json": 1,
+        "04c42825430b493fe6e920864ee19ab896e5f335ec7a1f3f0f209091dc8624d5.json": 1,
+        "36076cf264e278f2e6dc6c34b563ce401fe6c910b9900a2782e9b432fe168e68.json": 1,
+        "5347552d3d0ce604880a755bdf07e52aa97a086e24b3cb09d0570b264287f0fb.json": 1,
+        "7937cb2c2ff5fd99ff86c1428467dd589e3acd85061efc24e0d34b58d2470db7.json": 1,
+        "e59e421900832a9cf278870c09b0b4d7c097366ae1921619ef5ac84d37a4500a.json": 1,
+        "toolchain_dependencies.json": 3,
+        "fixture_scope.json": 1,
+        "Original.lean": 1,
+        "command.json": 3,
+        "running.json": 3,
+        "stderr.log": 3,
+        "stdout.log": 3,
+        "METHOD_CAPABILITIES.md": 1,
+        "PHASE3.md": 1,
+        "PHASE3_VALIDATION.md": 1,
+        "README.md": 1,
+        "prepare_final_pack.py": 1,
+        "FINAL_AB_EXACT_EVIDENCE.md": 1,
+        "audit_final_cases.py": 1,
+        "collect_final_acceptance.py": 1,
+        "final_C_exact_candidates.json": 1,
+        "final_ab_exact_evidence.json": 1,
+        "final_collection_validation.json": 1,
+        "ab_hashes_before.json": 1,
+        "audit_ab_results.py": 1,
+        "current_method_audit.json": 1,
+        "final_ab_summary.json": 1,
+        "init_independent_audit.json": 1,
+        "invoke_init_smoke.py": 1,
+        "actual_reproduction_commands.json": 1,
+        "coefficient_acceptance_card.json": 1,
+        "combinatorial_acceptance_card.json": 1,
+        "determinant_acceptance_card.json": 1,
+        "difference_ring_acceptance_card.json": 1,
+        "final_cases_audit.json": 1,
+        "frozen_file_inventory.json": 1,
+        "train.jsonl": 1,
+        "input_dependency_manifest.json": 1,
+        "interpolation_acceptance_card.json": 1,
+        "kernel_transform_acceptance_card.json": 1,
+        "macmahon_acceptance_card.json": 1,
+        "method_cards_index.json": 1,
+        "noncommutative_acceptance_card.json": 1,
+        "product_acceptance_card.json": 1,
+        "recurrence_acceptance_card.json": 1,
+        "spectral_acceptance_card.json": 1,
+        "telescoping_acceptance_card.json": 1,
+        "run_ab_smoke.py": 1,
+        "telescoping_independent_audit.json": 1,
+        "validation.json": 1,
+        "metadata_source_map.json": 1
+      },
+      "case_ids": [
+        "final_frozen",
+        "final_full_suite",
+        "final_method_matrix",
+        "final_recurrence",
+        "final_telescoping",
+        "final_init_runs",
+        "final_driver_logs",
+        "final_metadata_and_reports"
+      ]
+    }
+  ],
+  "runtime_maps": {
+    "ab_staged": "runtime_source_map_ab.json",
+    "ab_default": "runtime_source_map_ab_default.json",
+    "coefficient": "runtime_source_map_coefficient.json",
+    "interpolation": "runtime_source_map_interpolation.json",
+    "determinant": "runtime_source_map_determinant.json",
+    "kernel_transform": "runtime_source_map_kernel_transform.json",
+    "spectral_stopped": "runtime_source_map_spectral_stopped.json",
+    "difference_ring": "runtime_source_map_difference_ring.json",
+    "macmahon": "runtime_source_map_macmahon.json",
+    "product": "runtime_source_map_product.json",
+    "noncommutative": "runtime_source_map_noncommutative.json",
+    "combinatorial": "runtime_source_map_combinatorial.json",
+    "final_validation": "runtime_source_map_final.json"
+  },
+  "selected_metadata_map": "selected_metadata_source_map.json",
+  "runtime_dependency_bindings_checked": {
+    "ab_staged": 30,
+    "ab_default": 30,
+    "coefficient": 34,
+    "interpolation": 38,
+    "determinant": 42,
+    "kernel_transform": 47,
+    "spectral_stopped": 47,
+    "difference_ring": 52,
+    "macmahon": 58,
+    "product": 62,
+    "noncommutative": 66,
+    "combinatorial": 70
+  },
+  "retained_mathematical_sources": {
+    "map": "retained_math_source_map.json",
+    "files": 33,
+    "bytes": 598253,
+    "scope": "Run-bound retained CAS core sources, mathematical foundations, Train manifest and Lean configuration; not all external environment files"
+  },
+  "version_relationships": [
+    {
+      "from": "ab_staged",
+      "to": "ab_default_compatible",
+      "changed_paths": [
+        "agent_v2/cli.py"
+      ],
+      "diff": "runtime_diffs/ab_staged_to_default_compatible.diff",
+      "sha256": "d39a0ebb5ece1e64a82c006f1b6d048f29d8939454ed3f4799f636f02553f374",
+      "reason": "Only absent pause_after forwarding compatibility; staged and default full/replay runs stay separate."
+    },
+    {
+      "from": "ab_default_compatible",
+      "to": "coefficient_acceptance",
+      "changed_paths": [
+        "agent_v2/cas_adapter.py",
+        "agent_v2/cli.py",
+        "agent_v2/coefficient_adapter.py",
+        "agent_v2/coefficient_frontend.py",
+        "agent_v2/coefficient_translation.py",
+        "agent_v2/lean/CoefficientRules.lean",
+        "agent_v2/method_registry.py",
+        "agent_v2/proof_profiles.py",
+        "agent_v2/recurrence_adapter.py"
+      ],
+      "diff": "runtime_diffs/ab_default_to_coefficient_acceptance.diff",
+      "sha256": "8998782021cf3970c57a13d4abaff9fdec3207c54364c58c495ff1dc52fca951",
+      "reason": "New coefficient source/core/Lean path and supporting metadata safeguards; old AB run is not relabeled as this version."
+    },
+    {
+      "from": "coefficient_acceptance",
+      "to": "post_acceptance_core_request_guard",
+      "diff": "coefficient_supplement/cases/coefficient_independent_review_and_guard/core_request_guard.diff",
+      "hash_inventory": "coefficient_supplement/cases/coefficient_independent_review_and_guard/core_request_guard_hashes.json",
+      "reason": "Only adds unconditional formal C/O rejection for core_request=True. The Train Source execution calls _annotate with core_request=False, and Lean inputs/profile/rules/checker remain byte-identical."
+    },
+    {
+      "from": "coefficient_post_acceptance_core_request_guard",
+      "to": "interpolation_acceptance",
+      "changed_paths": [
+        "agent_v2/interpolation_adapter.py",
+        "agent_v2/interpolation_frontend.py",
+        "agent_v2/interpolation_translation.py",
+        "agent_v2/lean/InterpolationRules.lean",
+        "agent_v2/method_registry.py",
+        "agent_v2/proof_profiles.py"
+      ],
+      "diff": "runtime_diffs/coefficient_after_guard_to_interpolation_acceptance.diff",
+      "sha256": "ab7f0aaea157829b74d349739d1533e88b095647f5ba2194b0c9e274a168385c",
+      "reason": "Adds the source-bound degree-one interpolation profile and registration; retains earlier runs as their original versions."
+    },
+    {
+      "from": "interpolation_acceptance",
+      "to": "determinant_acceptance",
+      "changed_paths": [
+        "agent_v2/determinant_adapter.py",
+        "agent_v2/determinant_frontend.py",
+        "agent_v2/determinant_translation.py",
+        "agent_v2/lean/DeterminantRules.lean",
+        "agent_v2/method_registry.py",
+        "agent_v2/proof_profiles.py"
+      ],
+      "diff": "runtime_diffs/interpolation_to_determinant_acceptance.diff",
+      "sha256": "9d8dd738970159b2a3d3c6f2ad27cc38ab2f6c4861fc221da3fb4f6e0d11f626",
+      "reason": "Adds the source-bound arbitrary matrix minor profile and registration; retains earlier runs as their original versions."
+    },
+    {
+      "from": "determinant_acceptance",
+      "to": "kernel_transform_acceptance",
+      "changed_paths": [
+        "agent_v2/kernel_transform_adapter.py",
+        "agent_v2/kernel_transform_check.py",
+        "agent_v2/kernel_transform_frontend.py",
+        "agent_v2/kernel_transform_translation.py",
+        "agent_v2/lean/KernelTransformRules.lean",
+        "agent_v2/method_registry.py",
+        "agent_v2/proof_profiles.py",
+        "agent_v2/symbolic_methods.py",
+        "agent_v2/symbolic_worker.py"
+      ],
+      "diff": "runtime_diffs/determinant_to_kernel_transform_acceptance.diff",
+      "sha256": "1d497e74ca0263c85f1bd58eaecf9b74eae050079ebe6a556c348cb405702ad5",
+      "reason": "Adds arbitrary-N triangular kernel Source/affine core/check/profile and registration; retains earlier runs as their original versions."
+    },
+    {
+      "from": "kernel_transform_acceptance",
+      "to": "spectral_stopped_branch",
+      "changed_paths": [],
+      "runtime_sha256_mapping_equal": true,
+      "reason": "The spectral branch made no runtime change and no capability promotion; five separately scoped mathematical source files document the diagnostic and missing rules."
+    },
+    {
+      "from": "kernel_transform_acceptance",
+      "to": "difference_ring_acceptance",
+      "changed_paths": [
+        "agent_v2/difference_ring_adapter.py",
+        "agent_v2/difference_ring_check.py",
+        "agent_v2/difference_ring_frontend.py",
+        "agent_v2/difference_ring_translation.py",
+        "agent_v2/lean/DifferenceRingRules.lean",
+        "agent_v2/method_registry.py",
+        "agent_v2/proof_profiles.py"
+      ],
+      "diff": "runtime_diffs/kernel_transform_to_difference_ring_acceptance.diff",
+      "sha256": "4f1f33308ea224f9b2c521d19f03bbc2920e1f1b879174c07c7a1f7bc82b1c9f",
+      "reason": "Adds source-bound evaluated Pochhammer difference Source/integer multiplier check/profile and registration; retains earlier runs as their original versions."
+    },
+    {
+      "from": "difference_ring_acceptance",
+      "to": "macmahon_acceptance",
+      "changed_paths": [
+        "agent_v2/lean/MacMahonRules.lean",
+        "agent_v2/lean/MonomorphicCheck.lean",
+        "agent_v2/macmahon_adapter.py",
+        "agent_v2/macmahon_check.py",
+        "agent_v2/macmahon_frontend.py",
+        "agent_v2/macmahon_translation.py",
+        "agent_v2/math_lean_profile.py",
+        "agent_v2/method_registry.py",
+        "agent_v2/proof_profiles.py"
+      ],
+      "diff": "runtime_diffs/difference_ring_to_macmahon_acceptance.diff",
+      "sha256": "dfb90561387880c804a47f6c9becacf1f49beaa4715bd164481390ad0625c9f5",
+      "reason": "Adds source-bound finite Laurent Omega profile and a separately fixed monomorphic audit driver; old polymorphic drivers remain byte-identical and earlier runs keep their original versions."
+    },
+    {
+      "from": "macmahon_acceptance",
+      "to": "product_Source_L2_acceptance",
+      "changed_paths": [
+        "agent_v2/loop.py",
+        "agent_v2/method_registry.py",
+        "agent_v2/product_adapter.py",
+        "agent_v2/product_check.py",
+        "agent_v2/product_frontend.py",
+        "agent_v2/product_worker.py"
+      ],
+      "diff": "runtime_diffs/macmahon_to_product_acceptance.diff",
+      "sha256": "d7344be85b95dcf1f7e0a5ecc2a888ed1eede87da6e5280d99eed5a8ad7e4090",
+      "new_core_diff": "runtime_diffs/product_new_index_core.diff",
+      "new_core_diff_sha256": "e122565beb927d0defaba774204c383275060c30919e3df6969e7683029862f1",
+      "reason": "Adds a Source-only mixed-radix product construction and shared symbolic terminal scope; no Lean profile or candidate. Old generic product standalone remains L0. The exact acceptance version is retained independently of later work."
+    },
+    {
+      "from": "product_acceptance",
+      "to": "noncommutative_Source_L2_acceptance",
+      "changed_paths": [
+        "agent_v2/method_registry.py",
+        "agent_v2/noncommutative_adapter.py",
+        "agent_v2/noncommutative_check.py",
+        "agent_v2/noncommutative_frontend.py",
+        "agent_v2/noncommutative_worker.py"
+      ],
+      "diff": "runtime_diffs/product_to_noncommutative_acceptance.diff",
+      "sha256": "3e8f41183cf300b44d2895823a8d7ff46729dd0048ff79284ad629b4ea944879",
+      "new_core_diff": "runtime_diffs/noncommutative_new_operator_core.diff",
+      "new_core_diff_sha256": "3d2fe6f83aa653f5798138707a84684a3d7dd1b4db2e8319d9d0d19338f59c53",
+      "reason": "Adds a Source-only ordered polynomial operator action constructor using the existing symbolic terminal scope; no Lean profile or candidate. Old generic noncommutative standalone remains L0. The exact acceptance version is retained independently of later work."
+    },
+    {
+      "from": "noncommutative_acceptance",
+      "to": "combinatorial_Source_L2_acceptance",
+      "changed_paths": [
+        "agent_v2/combinatorial_adapter.py",
+        "agent_v2/combinatorial_check.py",
+        "agent_v2/combinatorial_frontend.py",
+        "agent_v2/combinatorial_worker.py",
+        "agent_v2/method_registry.py"
+      ],
+      "diff": "runtime_diffs/noncommutative_to_combinatorial_acceptance.diff",
+      "sha256": "a2210a5489f2314110c9216ac691d193694e8af5b9d1fce89f0c52f328544ead",
+      "new_core_diff": "runtime_diffs/combinatorial_new_choice_core.diff",
+      "new_core_diff_sha256": "10cfa14c6b81d6798bcfa4fb06c434151a4386e709dc952ef7db3461ff75e71c",
+      "reason": "Adds a Source-only ranked subset and Boolean choice constructor using the existing symbolic terminal scope; no Lean profile or candidate. Old generic combinatorial standalone remains L0. The exact acceptance version is retained independently of later work."
+    },
+    {
+      "from": "combinatorial_acceptance",
+      "to": "final_validation",
+      "changed_paths": [],
+      "diff": "runtime_diffs/combinatorial_to_final_validation.diff",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "All 70 Agent runtime files match the last accepted method freeze. Final snapshot additionally records all tests, mathematics and validation drivers; no prior acceptance is relabeled."
+    }
+  ],
+  "key_evidence": [
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/ab_gate.json",
+      "package_path": "ab_default_compatible/cases/ab_gate_and_validation_metadata/ab_gate.json",
+      "sha256": "1a2dbea0fe54d58bf7652c8449a2adc53100b8a8a3a5421f88339bc7846c1f2d"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/ab_full_suite_final.log",
+      "package_path": "ab_default_compatible/cases/ab_gate_and_validation_metadata/ab_full_suite_final.log",
+      "sha256": "c6c65aa8bdd53597030eab34ba23d5248d14c6865ec39a2d11f3cca077788b5a"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/default_call_compatibility.diff",
+      "package_path": "ab_default_compatible/cases/ab_gate_and_validation_metadata/default_call_compatibility.diff",
+      "sha256": "21da5e60b3a3d73ee5edf94ea6195e38837b6f8180ef34d3b5fd7700a2064832"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/ab_recurrence_closure/summary.json",
+      "package_path": "ab_staged/cases/recurrence_staged_acceptance/summary.json",
+      "sha256": "5792a38ec7caede7d4d980a2326dc66c637cc83bc1ea3f08afaf21d44c27994e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/ab_telescoping_closure/summary.json",
+      "package_path": "ab_staged/cases/telescoping_regression/summary.json",
+      "sha256": "7e779f2b739863733172a86609ea9e96221b8c403b7b391a0a301c376e7dfd29"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/ab_default_cli_acceptance/summary.json",
+      "package_path": "ab_default_compatible/cases/recurrence_default_cli/summary.json",
+      "sha256": "f9f320c89999ce30b63c7cde6c14cad7a24bf02ef09fd6cc3eb8e82cb89cb11c"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient/acceptance_final/summary.json",
+      "package_path": "coefficient_supplement/cases/coefficient_acceptance_metadata/coefficient/acceptance_final/summary.json",
+      "sha256": "fe727c1e5800a719cafbb715db23dbbe02ba048ebf722caf5bf126073562d602"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient_review/acceptance_card.json",
+      "package_path": "coefficient_supplement/cases/coefficient_independent_review_and_guard/acceptance_card.json",
+      "sha256": "1b3492357655f24b6eebb5fc8823371d0e606b273e0b34d9579253cd4cb2898a"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient_review/coefficient_gate.json",
+      "package_path": "coefficient_supplement/cases/coefficient_independent_review_and_guard/coefficient_gate.json",
+      "sha256": "5c3fa57d0c1295047cfafc531850cb571611bb379f5722ff6478a1a6a9b3944d"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient_review/core_guard_final_validation.json",
+      "package_path": "coefficient_supplement/cases/coefficient_independent_review_and_guard/core_guard_final_validation.json",
+      "sha256": "9b78cf6f5ec8aea95acab3876980c166a0d84966c61ffb0910cb34586852ff3c"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient_review/core_request_guard.diff",
+      "package_path": "coefficient_supplement/cases/coefficient_independent_review_and_guard/core_request_guard.diff",
+      "sha256": "0ee92ea951183aa475a23badd847d55a49b039dcb1ed41bb5401dfc1c2b6c625"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient_review/core_request_guard_hashes.json",
+      "package_path": "coefficient_supplement/cases/coefficient_independent_review_and_guard/core_request_guard_hashes.json",
+      "sha256": "3b4146115d623869dc9b0291801fc087103d706e86bc6449b1b7eeb282aaf06e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient/acceptance_final/runs/20261112T005712Z-e975cb3b3f/negative-proof/verification.json",
+      "package_path": "coefficient/cases/coefficient_local/negative-proof/verification.json",
+      "sha256": "60c837767cd842f58cd83977b1d879c0317b099e23fbc7ff14633704eaa4112f"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient/acceptance_final/runs/20261112T005712Z-e975cb3b3f/negative-proof/state_before.json",
+      "package_path": "coefficient/cases/coefficient_local/negative-proof/state_before.json",
+      "sha256": "a68a208ceea779d58720d5989d3fca8c4e07c098625197c89f5f71fb21bab0c2"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient/acceptance_final/runs/20261112T005712Z-e975cb3b3f/negative-proof/state_after.json",
+      "package_path": "coefficient/cases/coefficient_local/negative-proof/state_after.json",
+      "sha256": "a68a208ceea779d58720d5989d3fca8c4e07c098625197c89f5f71fb21bab0c2"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient/acceptance_final/runs/20261112T005712Z-e975cb3b3f/binding-negative.json",
+      "package_path": "coefficient/cases/coefficient_local/binding-negative.json",
+      "sha256": "109f267c3ca417bb6f0cabcefc13b99435fed430069ffacbc62255159b19c000"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient/acceptance_final/runs/20261112T005712Z-e975cb3b3f/rounds/1/result.json",
+      "package_path": "coefficient/cases/coefficient_local/rounds/1/result.json",
+      "sha256": "7372d203c68580ba7466bb38b56bd5c18ab60d9f43642f4e703d2eaf77324a3e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/coefficient/acceptance_final/runs/20261112T005712Z-e975cb3b3f/checkpoint_manifest.json",
+      "package_path": "coefficient/cases/coefficient_local/checkpoint_manifest.json",
+      "sha256": "971261a2184c6361b130ca4f70d901c5aa9a46d4499ff3d28323ffab1dc61231"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/acceptance_final/summary.json",
+      "package_path": "interpolation_supplement/cases/interpolation_acceptance_metadata/interpolation/acceptance_final/summary.json",
+      "sha256": "e40ee34a3fa3153aa0e3bb15c631c95b1ca62d485495a563b5a2c57b878c8879"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/acceptance_card.json",
+      "package_path": "interpolation_supplement/cases/interpolation_acceptance_metadata/interpolation/acceptance_card.json",
+      "sha256": "8af453087bab00ce0958057ff26e075ccb42ce82e95f35555fefd7efc653235b"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/gate.json",
+      "package_path": "interpolation_supplement/cases/interpolation_acceptance_metadata/interpolation/gate.json",
+      "sha256": "9482af72e6a12ecc49c1bd0ec88bd0cccab7f64d996ec193df0c218885db7709"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/source_differences.json",
+      "package_path": "interpolation_supplement/cases/interpolation_acceptance_metadata/interpolation/source_differences.json",
+      "sha256": "27b82236230aea2574ff7c1585278c7f3b925a1f68dbb6c2bb1928cb0fbbce4b"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/final_source_manifest.json",
+      "package_path": "interpolation_supplement/cases/interpolation_acceptance_metadata/interpolation/final_source_manifest.json",
+      "sha256": "daf45bed4a9c11dd71321b434b7bc479a4988d6a5f989b2939836e96cb541f96"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation_review/review.json",
+      "package_path": "interpolation_supplement/cases/interpolation_independent_review/review.json",
+      "sha256": "70c31e9ba96399a216a569053affd7dcf46cd1d56582a2145f9302d94d830274"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation_review/interfaces_validation.json",
+      "package_path": "interpolation_supplement/cases/interpolation_independent_review/interfaces_validation.json",
+      "sha256": "aea38650a4cd13640dc43aca23c351c4ba8795e1927ea638f6a0f5bd55e5527e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/acceptance_final/runs/20261112T011216Z-64db4ffbdd/negative-proof/verification.json",
+      "package_path": "interpolation/cases/interpolation_local/negative-proof/verification.json",
+      "sha256": "e2371dd9abf5d449ebdc151b42c4b6807f3e7cae94974b978fa2903c69f969e2"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/acceptance_final/runs/20261112T011216Z-64db4ffbdd/negative-proof/state_before.json",
+      "package_path": "interpolation/cases/interpolation_local/negative-proof/state_before.json",
+      "sha256": "be07f22c10c618ad2269ed6938aa0c161e27ce5e4ef6f3badaed9652c1d25dda"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/acceptance_final/runs/20261112T011216Z-64db4ffbdd/negative-proof/state_after.json",
+      "package_path": "interpolation/cases/interpolation_local/negative-proof/state_after.json",
+      "sha256": "be07f22c10c618ad2269ed6938aa0c161e27ce5e4ef6f3badaed9652c1d25dda"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/acceptance_final/runs/20261112T011216Z-64db4ffbdd/binding-negative.json",
+      "package_path": "interpolation/cases/interpolation_local/binding-negative.json",
+      "sha256": "077d361f16083840129c56e5f5135a44e1e32f814caa48e46d06cdabe8b4fcaf"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/acceptance_final/runs/20261112T011216Z-64db4ffbdd/rounds/1/result.json",
+      "package_path": "interpolation/cases/interpolation_local/rounds/1/result.json",
+      "sha256": "60494caf117c4409b0f0545208465dd9aa1e70a1007061894747da54b95a5319"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/interpolation/acceptance_final/runs/20261112T011216Z-64db4ffbdd/checkpoint_manifest.json",
+      "package_path": "interpolation/cases/interpolation_local/checkpoint_manifest.json",
+      "sha256": "6304ba670bcaac4af5cf6ad2cf7b9d162aa873281197593196a05e4be25f0fc4"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/acceptance_final/summary.json",
+      "package_path": "determinant_supplement/cases/determinant_acceptance_metadata/determinant/acceptance_final/summary.json",
+      "sha256": "6025374c9fcf5e339abf2a976e029293873abc0fc00144cacc4bdde2409ec1c3"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/acceptance_card.json",
+      "package_path": "determinant_supplement/cases/determinant_acceptance_metadata/determinant/acceptance_card.json",
+      "sha256": "571a0bbd797463cad93956243ae6d9d4f9723197a329cb27a4f1021f6487adfd"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/gate.json",
+      "package_path": "determinant_supplement/cases/determinant_acceptance_metadata/determinant/gate.json",
+      "sha256": "443227fe7562af3e93f4ecbdbf713f8fbb35131c844eef0d3134afc634307cd9"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/source_differences.json",
+      "package_path": "determinant_supplement/cases/determinant_acceptance_metadata/determinant/source_differences.json",
+      "sha256": "4e8ce21de5b1352fe3553380f24ce7e2f86be22eeb89459e0775304a45ed0f87"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/final_source_manifest.json",
+      "package_path": "determinant_supplement/cases/determinant_acceptance_metadata/determinant/final_source_manifest.json",
+      "sha256": "3d85a4459a6c52679588b521d4a58e3a734d4a4a2189dfef0e5e8ec65ede384e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant_review/review.json",
+      "package_path": "determinant_supplement/cases/determinant_independent_review/review.json",
+      "sha256": "c15d420e0cde931d229c070550cb1a9a562ca9f19784f74d225f3cbc1ac0ebfb"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant_review/interfaces_validation.json",
+      "package_path": "determinant_supplement/cases/determinant_independent_review/interfaces_validation.json",
+      "sha256": "d813c5b3f93f6a1c690dcb5f682efbc8dd981064ffeb05f6235ab63b95287139"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/acceptance_final/runs/20261112T012915Z-45d4c241ee/negative-proof/verification.json",
+      "package_path": "determinant/cases/determinant_local/negative-proof/verification.json",
+      "sha256": "7289b0c58329f7fdcc74420bc415b08e7c87f9b44e3c2f3f2010613f444e6b24"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/acceptance_final/runs/20261112T012915Z-45d4c241ee/negative-proof/state_before.json",
+      "package_path": "determinant/cases/determinant_local/negative-proof/state_before.json",
+      "sha256": "248f822cc950869c5eee6c0e2831af828a1623d566f6c3ab8490fedc9b581769"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/acceptance_final/runs/20261112T012915Z-45d4c241ee/negative-proof/state_after.json",
+      "package_path": "determinant/cases/determinant_local/negative-proof/state_after.json",
+      "sha256": "248f822cc950869c5eee6c0e2831af828a1623d566f6c3ab8490fedc9b581769"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/acceptance_final/runs/20261112T012915Z-45d4c241ee/binding-negative.json",
+      "package_path": "determinant/cases/determinant_local/binding-negative.json",
+      "sha256": "318b15103bd3624ffcf174d5a0349a77ed02cc63a1ba6475d64e93379646c9ac"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/acceptance_final/runs/20261112T012915Z-45d4c241ee/rounds/1/result.json",
+      "package_path": "determinant/cases/determinant_local/rounds/1/result.json",
+      "sha256": "84b771b8a4311958a680e0629f8ba3c88b0e41b29b58eb3b2db6d58380cbcfb7"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/determinant/acceptance_final/runs/20261112T012915Z-45d4c241ee/checkpoint_manifest.json",
+      "package_path": "determinant/cases/determinant_local/checkpoint_manifest.json",
+      "sha256": "75fa4d7a77c5748661e46607433e68dafe0ef792c08980e729da109985ad2872"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/acceptance_final/summary.json",
+      "package_path": "kernel_transform_supplement/cases/kernel_transform_acceptance_metadata/kernel_transform/acceptance_final/summary.json",
+      "sha256": "eb0cfceb15a3f35fa92d96a550b5161895aa409ec6fb72572e3b5af71db4cf26"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/acceptance_card.json",
+      "package_path": "kernel_transform_supplement/cases/kernel_transform_acceptance_metadata/kernel_transform/acceptance_card.json",
+      "sha256": "fd6c82435b20eb62a430a2fa833104e30b91fc087abf3162437877b9d3137b70"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/gate.json",
+      "package_path": "kernel_transform_supplement/cases/kernel_transform_acceptance_metadata/kernel_transform/gate.json",
+      "sha256": "f6d1d9aa84744cc34772c03a6117c8071920ed7bb012c5cfc21bf432a523b9b5"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/source_differences.json",
+      "package_path": "kernel_transform_supplement/cases/kernel_transform_acceptance_metadata/kernel_transform/source_differences.json",
+      "sha256": "835c7cfe4c5dda736d27915435757f5d4fe7ea5ae6376f19cd3ac83125c16492"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/final_source_manifest.json",
+      "package_path": "kernel_transform_supplement/cases/kernel_transform_acceptance_metadata/kernel_transform/final_source_manifest.json",
+      "sha256": "b3ccbaf32faf3b21f0c91752b8639d6964caead728a938f888d78c37c2c4c5b4"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform_review/review.json",
+      "package_path": "kernel_transform_supplement/cases/kernel_transform_independent_review/review.json",
+      "sha256": "5e5415fe843d20f2a5afb6b6bf52e9cc651af9ec5ef76d7481a22ad5d512a58c"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform_review/audit.py",
+      "package_path": "kernel_transform_supplement/cases/kernel_transform_independent_review/audit.py",
+      "sha256": "aab71a2834b8dd3ad5523f0a491410cc6617fe0ff3cca3424849d6301671a422"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/acceptance_final/runs/20261112T015216Z-d7ca8a4cc5/negative-proof/verification.json",
+      "package_path": "kernel_transform/cases/kernel_transform_local/negative-proof/verification.json",
+      "sha256": "97d02380883c7cf0e8b358121542dac450fc941afdd9e6f3628f8c078a142861"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/acceptance_final/runs/20261112T015216Z-d7ca8a4cc5/negative-proof/state_before.json",
+      "package_path": "kernel_transform/cases/kernel_transform_local/negative-proof/state_before.json",
+      "sha256": "883894672f769f14f8a79694d93ea2babc124212fb0808d4f7e8c20064179968"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/acceptance_final/runs/20261112T015216Z-d7ca8a4cc5/negative-proof/state_after.json",
+      "package_path": "kernel_transform/cases/kernel_transform_local/negative-proof/state_after.json",
+      "sha256": "883894672f769f14f8a79694d93ea2babc124212fb0808d4f7e8c20064179968"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/acceptance_final/runs/20261112T015216Z-d7ca8a4cc5/binding-negative.json",
+      "package_path": "kernel_transform/cases/kernel_transform_local/binding-negative.json",
+      "sha256": "17ff61face564c525e0649daa62ec52b7c1c1de2070a0bc0e846d13c2ad85b69"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/acceptance_final/runs/20261112T015216Z-d7ca8a4cc5/rounds/1/result.json",
+      "package_path": "kernel_transform/cases/kernel_transform_local/rounds/1/result.json",
+      "sha256": "86f64239ae5e7463e987f80965adc1e04c4bc7ece1d1ed081156bbfeba014207"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/kernel_transform/acceptance_final/runs/20261112T015216Z-d7ca8a4cc5/checkpoint_manifest.json",
+      "package_path": "kernel_transform/cases/kernel_transform_local/checkpoint_manifest.json",
+      "sha256": "811d06aa12411d05ade3a28b5fbd7ba8a5af54cd9c0c90f931fc57186033c198"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/gate.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/gate.json",
+      "sha256": "917686c2eefc7ef07d06bc8eb44b5bb5576171c32adec8961e03dcfcac758836"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/acceptance_card.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/acceptance_card.json",
+      "sha256": "2b9684b6a1912f5ad1f97a6c7fa02ab8af8734ea50a3d8c08906c218abb22c3a"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/unchanged_contract_regression.log",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/unchanged_contract_regression.log",
+      "sha256": "1e83b9afc99906f4ece635e7e06554faf3335ee56d1b729f4e9bfe433f476797"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/summary.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/summary.json",
+      "sha256": "ab79947d6f5d41b7a533fd7eee02bce754e433deb481d96ff07c0e30c71e6bda"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/source_manifest.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/source_manifest.json",
+      "sha256": "fbb21147056e05d785a6bb3041b6b0445ce6ea8569778d103420d900ca39dbca"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/artifact_hashes.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/artifact_hashes.json",
+      "sha256": "a8c6d0fbe99e688ef2afaff4fb9eeab433d61a3032e0c0f79404fc20417c4c95"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/Source.lean",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/Source.lean",
+      "sha256": "b8f35c5da4ec0e64366b20a87595c2ea6ca257d0f7b75b33a1aef29767a0b955"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/symbolic_dimension_request.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/symbolic_dimension_request.json",
+      "sha256": "e0e44364a06976ebfb5e4ea8b73298fecb96362e4d214b372ff067df35904982"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/symbolic_dimension_result.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/symbolic_dimension_result.json",
+      "sha256": "52f741dfa5082254e3c27bda3d334631d1d06ce5b57c19dc5acc26e724c2c01e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/diagonal_component_request.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/diagonal_component_request.json",
+      "sha256": "be44de80e9d1f626872d4c1babe0c76d8a44fa43cee393e6bffe1a29c245486a"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/diagonal_component/construction.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/diagonal_component/construction.json",
+      "sha256": "21d6035bc54d188c4331a108c12e980c76c69edc9595ad59c0c7e0daf049512f"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/diagonal_component/process.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/diagonal_component/process.json",
+      "sha256": "3ef9204c3ad89bf3c1ef3ca7cdbff452f4c671a28f88e371b042f32fa1f59af2"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/independent_diagonal_check.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/independent_diagonal_check.json",
+      "sha256": "ea9e3f9a501187bd9f226c8eeec082dd95029206ef9e409068f435f6d3ac955f"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/prelaunch_budget_result.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/prelaunch_budget_result.json",
+      "sha256": "b4f9373ec48c0be1d710a04805bf38947e7dc1f519a5fac42e006224ce370734"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/runs/20261112T020001Z-5dba11dd70/checkpoint_manifest.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/runs/20261112T020001Z-5dba11dd70/checkpoint_manifest.json",
+      "sha256": "be9dae0a3014c95890c7825a60e0992f0d9c11d343299a65a54b2697b0ba3cde"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/attempt_01/runs/20261112T020001Z-5dba11dd70/checkpoint.json",
+      "package_path": "spectral_stopped/cases/spectral_stopped_branch/attempt_01/runs/20261112T020001Z-5dba11dd70/checkpoint.json",
+      "sha256": "bcc846279e941e2d6a299c0149f87146e4333e86da1d83c7d9ae7368bf98b79c"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral_independent/review.json",
+      "package_path": "spectral_stopped/cases/spectral_independent_review/review.json",
+      "sha256": "1470e8343141000a137e7a4381e468677d011711b303da3bbac50813d8aa427b"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/acceptance_final/summary.json",
+      "package_path": "difference_ring_supplement/cases/difference_ring_acceptance_metadata/difference_ring/acceptance_final/summary.json",
+      "sha256": "6daa5f9a38d3a3f856efe06787d5e3a4f3249ada50439f55b53780d06d59fb07"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/acceptance_card.json",
+      "package_path": "difference_ring_supplement/cases/difference_ring_acceptance_metadata/difference_ring/acceptance_card.json",
+      "sha256": "01c14887049ac7a19bfd53528dc5ac244c1ef26825e788c2c2d26a48dde72cf7"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/gate.json",
+      "package_path": "difference_ring_supplement/cases/difference_ring_acceptance_metadata/difference_ring/gate.json",
+      "sha256": "6ae141d4e270cbcdcd01389f6b76dcaacb7e1cd4351f4ffd49ba2f82652ef8d5"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/source_differences.json",
+      "package_path": "difference_ring_supplement/cases/difference_ring_acceptance_metadata/difference_ring/source_differences.json",
+      "sha256": "8b77ad0e4bfca7aeac5c7f17aa4d1b4d7266dc43d7207837a16855093e503214"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/final_source_manifest.json",
+      "package_path": "difference_ring_supplement/cases/difference_ring_acceptance_metadata/difference_ring/final_source_manifest.json",
+      "sha256": "f9cd6235826d320a12a86213ca883d14a0b55402a231b8c3916d484a2242e3f3"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring_review/review.json",
+      "package_path": "difference_ring_supplement/cases/difference_ring_independent_review/review.json",
+      "sha256": "af054323efa11cc600267208c3654afa8afa6722efdd662f5d4f80741792911a"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring_review/audit.py",
+      "package_path": "difference_ring_supplement/cases/difference_ring_independent_review/audit.py",
+      "sha256": "09ff1814d616f94f599fb53a714d6fd23c4ab95a4a7897ff6d38df10735e78da"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/acceptance_final/runs/20261112T020951Z-89f0db060a/negative-proof/verification.json",
+      "package_path": "difference_ring/cases/difference_ring_local/negative-proof/verification.json",
+      "sha256": "cd2d177a271ff43b6eea6437e9fbdeaeae6f20f836abf78b317e8202ae28f3ee"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/acceptance_final/runs/20261112T020951Z-89f0db060a/negative-proof/state_before.json",
+      "package_path": "difference_ring/cases/difference_ring_local/negative-proof/state_before.json",
+      "sha256": "b677bdf4e21d4346c6f90f6f51d74be1256df6460747e9bd5eb85f2449b5d6c3"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/acceptance_final/runs/20261112T020951Z-89f0db060a/negative-proof/state_after.json",
+      "package_path": "difference_ring/cases/difference_ring_local/negative-proof/state_after.json",
+      "sha256": "b677bdf4e21d4346c6f90f6f51d74be1256df6460747e9bd5eb85f2449b5d6c3"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/acceptance_final/runs/20261112T020951Z-89f0db060a/binding-negative.json",
+      "package_path": "difference_ring/cases/difference_ring_local/binding-negative.json",
+      "sha256": "1d341a5f60f89e1502c5c12504f45487bb324ab4f980764163cf8339c06d2800"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/acceptance_final/runs/20261112T020951Z-89f0db060a/rounds/1/result.json",
+      "package_path": "difference_ring/cases/difference_ring_local/rounds/1/result.json",
+      "sha256": "0ae2d089d883cecc498b7761fcda1ad6e513c1cecf6d3d81ff8e6f5400797d10"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/difference_ring/acceptance_final/runs/20261112T020951Z-89f0db060a/checkpoint_manifest.json",
+      "package_path": "difference_ring/cases/difference_ring_local/checkpoint_manifest.json",
+      "sha256": "dbe829611ec9c628af2c4d0f0924b7a14136af55eca6f3bb4be2b0d4d8c1c3b1"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/acceptance_final/summary.json",
+      "package_path": "macmahon_supplement/cases/macmahon_acceptance_metadata/macmahon/acceptance_final/summary.json",
+      "sha256": "cf2013be6cf391fcce03a290089ef53b78dd24e5ffd3d3387007e17d653500bf"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/acceptance_card.json",
+      "package_path": "macmahon_supplement/cases/macmahon_acceptance_metadata/macmahon/acceptance_card.json",
+      "sha256": "ad657c68869b9d900effbd1a39f0c14a945dbbabc038e927cda99c32acb30bcc"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/gate.json",
+      "package_path": "macmahon_supplement/cases/macmahon_acceptance_metadata/macmahon/gate.json",
+      "sha256": "b25f0f09501536636cb5eca154f7512346f9ad824237499bef96193b98fd8814"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/source_differences.json",
+      "package_path": "macmahon_supplement/cases/macmahon_acceptance_metadata/macmahon/source_differences.json",
+      "sha256": "129de6d003afd451fe20275f5ee97209ddf4042b8679569261e809d75f7fa0d1"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/final_source_manifest.json",
+      "package_path": "macmahon_supplement/cases/macmahon_acceptance_metadata/macmahon/final_source_manifest.json",
+      "sha256": "c33ea78f8f5885eb206dd7f83767ef49123db45b0f13794dcec1c1fdc2960de3"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon_review/review.json",
+      "package_path": "macmahon_supplement/cases/macmahon_independent_review/review.json",
+      "sha256": "dfcb468d7dae4ddee742a02c4dd6988d0d9a5b4e2cad46a843e34456ce27d1b7"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon_review/audit.py",
+      "package_path": "macmahon_supplement/cases/macmahon_independent_review/audit.py",
+      "sha256": "1c4b4f6474b16d4dd284b2d007e52b2a62ed357fc8251f5c64f7b5420d2db174"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/acceptance_final/runs/20261112T022558Z-f6d71e920b/negative-proof/verification.json",
+      "package_path": "macmahon/cases/macmahon_local/negative-proof/verification.json",
+      "sha256": "9b237e2b0b37c3c53c4b207df88f356b79f39306d64ad9daa224cb9205e7e7b3"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/acceptance_final/runs/20261112T022558Z-f6d71e920b/negative-proof/state_before.json",
+      "package_path": "macmahon/cases/macmahon_local/negative-proof/state_before.json",
+      "sha256": "6d8b8876015e019e29c4682d4f31e1316d5d9666781c24698444432879a403e6"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/acceptance_final/runs/20261112T022558Z-f6d71e920b/negative-proof/state_after.json",
+      "package_path": "macmahon/cases/macmahon_local/negative-proof/state_after.json",
+      "sha256": "6d8b8876015e019e29c4682d4f31e1316d5d9666781c24698444432879a403e6"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/acceptance_final/runs/20261112T022558Z-f6d71e920b/binding-negative.json",
+      "package_path": "macmahon/cases/macmahon_local/binding-negative.json",
+      "sha256": "01d8b658540209abc5118d5473b0aa9ed76723f1517aa2c7b2d016844c307a3e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/acceptance_final/runs/20261112T022558Z-f6d71e920b/rounds/1/result.json",
+      "package_path": "macmahon/cases/macmahon_local/rounds/1/result.json",
+      "sha256": "9406fa8177d59234d18f060774f4a056c4824140e3b2e19be4ab8219f91e2f61"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/macmahon/acceptance_final/runs/20261112T022558Z-f6d71e920b/checkpoint_manifest.json",
+      "package_path": "macmahon/cases/macmahon_local/checkpoint_manifest.json",
+      "sha256": "efcdca32a6443a54fdd2ba0e1b834a29d355d68e67fcc79bfe3b471914775588"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/acceptance_final/summary.json",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/acceptance_final/summary.json",
+      "sha256": "a6ee11c4d5016f1410bcca225fa94c5f78a2e9d8aa8fc6f6bf6c694664620617"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/acceptance_card.json",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/acceptance_card.json",
+      "sha256": "bfea1e345fbf5a74042b0ee548fdcc003629d20571644b621576d650b0460508"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/gate.json",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/gate.json",
+      "sha256": "ba404d5e1342ac8205909f7cefa8e94c1c5cc986a36030dfe1086214ec0c0474"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/final_source_manifest.json",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/final_source_manifest.json",
+      "sha256": "0f756960e736a922b3655ee4d0b8c18066f7c604c44905d0fecd6d4003c13c37"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/source_differences.json",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/source_differences.json",
+      "sha256": "a0cecc46e53e69ab58e5f00f193d0984ea9b9e9f1c9c8a8efef2552fe5ae2c8a"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product_review/review.json",
+      "package_path": "product_supplement/cases/product_independent_review/review.json",
+      "sha256": "4f8e247a74ef2bee6ecabcfdecd128c8351db534de19ea9a144b512a09891a3e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product_review/audit.py",
+      "package_path": "product_supplement/cases/product_independent_review/audit.py",
+      "sha256": "54971201d8d64d960d367291604b8d431a2a54b69b5ab1617b86d50cdae45f56"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/core_evidence/summary.json",
+      "package_path": "product_supplement/cases/product_real_core_positive_negative_timeout/summary.json",
+      "sha256": "27f507f04348a10399ad9eef71ef0165c368a6823bd05e34fa88cbdb0835aade"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/old_tests_unchanged.json",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/old_tests_unchanged.json",
+      "sha256": "4f86036c61c2daba2258f46b24425655b648de3c3f3138f1f1d5368f4a58aa33"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/preregister_01.log",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/preregister_01.log",
+      "sha256": "dd8871dcfcfca8051ce4507404fc36bb94f892151b04b1f14bae1f2ae6611af3"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/preregister_02.log",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/preregister_02.log",
+      "sha256": "bffc12d842b1c6bf581435270dc25167c4aa07b23c25ce41fda4452dac35b545"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/preregister_03.log",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/preregister_03.log",
+      "sha256": "59a9aeca1446fbdfd5d34a769208fdd9b3ae9f27387c81dcd9e735401a777b03"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/preregister_04.log",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/preregister_04.log",
+      "sha256": "e9e9b5dcb745dfe7bc3e0bdb240c992df64239000b600a0c5603d01b8347dea1"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/finalize_01.log",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/finalize_01.log",
+      "sha256": "478742063c4c20ae6067e8a8be7e9de937540ac89ab88c94d50b3dc084d6a2db"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/finalize_02.log",
+      "package_path": "product_supplement/cases/product_acceptance_and_development_metadata/product/finalize_02.log",
+      "sha256": "56f164a1f007da8c239b7c26120e04b78ac68836fe917e500cd2497d86e7b6a0"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/acceptance_final/runs/20261112T025613Z-18fe7bfba1/rounds/1/result.json",
+      "package_path": "product/cases/product_Source_L2/rounds/1/result.json",
+      "sha256": "b4d06e6f47c583110ef04bb2f58e00048bebcb0ffe8825a0a1227a6549757648"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/acceptance_final/runs/20261112T025613Z-18fe7bfba1/checkpoint_manifest.json",
+      "package_path": "product/cases/product_Source_L2/checkpoint_manifest.json",
+      "sha256": "9206bbc200f931d3e68e89589abe30747772e1c20b8f002c30460a152481bb81"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/product/acceptance_final/runs/20261112T025613Z-18fe7bfba1/rounds/1/backend/symbolic_certificate.json",
+      "package_path": "product/cases/product_Source_L2/rounds/1/backend/symbolic_certificate.json",
+      "sha256": "84b3f629f5664e8197124bdd20b452ec8bdb84e2f10079c96df11141d155c74d"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/acceptance_final/summary.json",
+      "package_path": "noncommutative_supplement/cases/noncommutative_acceptance_and_development_metadata/noncommutative/acceptance_final/summary.json",
+      "sha256": "f12cc7440fa7f811e20fcb41278081c39563dcad9e74db518696fe648452b775"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/acceptance_card.json",
+      "package_path": "noncommutative_supplement/cases/noncommutative_acceptance_and_development_metadata/noncommutative/acceptance_card.json",
+      "sha256": "79a7a6d540c7d56c1650a6e04846f1a5e468eda5a6ded93dbc0907f8a6b97a53"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/gate.json",
+      "package_path": "noncommutative_supplement/cases/noncommutative_acceptance_and_development_metadata/noncommutative/gate.json",
+      "sha256": "37e162df8a62e5d4409ae526e961ba8d069721f4c956afc41983f33f49c63b90"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/final_source_manifest.json",
+      "package_path": "noncommutative_supplement/cases/noncommutative_acceptance_and_development_metadata/noncommutative/final_source_manifest.json",
+      "sha256": "61d9a5e5ea27fa7b525506594eb1161fef5201b3377a76d5ad41f7acf4dd8a7e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/source_differences.json",
+      "package_path": "noncommutative_supplement/cases/noncommutative_acceptance_and_development_metadata/noncommutative/source_differences.json",
+      "sha256": "6b01213408c4319dc85bd228cc1ebc2c6f247e021c410b5610d099891d512fc5"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative_review/review.json",
+      "package_path": "noncommutative_supplement/cases/noncommutative_independent_review/review.json",
+      "sha256": "f0492c6fb642867d5e061fc9df16e81b7b985e3b88eea7f18d29fda7dd8fb556"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative_review/audit.py",
+      "package_path": "noncommutative_supplement/cases/noncommutative_independent_review/audit.py",
+      "sha256": "8310c5b0887bf6fa30f8083d6814f09a6cd2d973e8e85f18e4344cfb8640f580"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/core_evidence/summary.json",
+      "package_path": "noncommutative_supplement/cases/noncommutative_real_core_positive_negative_timeout/summary.json",
+      "sha256": "291b3dd16a5626405cbad539803f345a99d8b64d4e257b49bc1c779bb3e4bcee"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/old_tests_unchanged.json",
+      "package_path": "noncommutative_supplement/cases/noncommutative_acceptance_and_development_metadata/noncommutative/old_tests_unchanged.json",
+      "sha256": "4f86036c61c2daba2258f46b24425655b648de3c3f3138f1f1d5368f4a58aa33"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/preregister_01.log",
+      "package_path": "noncommutative_supplement/cases/noncommutative_acceptance_and_development_metadata/noncommutative/preregister_01.log",
+      "sha256": "5151c03d99a484211d2595496690f681d98d647b3f85bbae86eb50d793d3604f"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/preregister_02.log",
+      "package_path": "noncommutative_supplement/cases/noncommutative_acceptance_and_development_metadata/noncommutative/preregister_02.log",
+      "sha256": "98da7c6cdfb3240a1bb4cca6a5ebb57af7043277e6d75cb1b7898703b2af89ec"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/finalize_01.log",
+      "package_path": "noncommutative_supplement/cases/noncommutative_acceptance_and_development_metadata/noncommutative/finalize_01.log",
+      "sha256": "50cb4348db2f51a16dddc2369db063c77fc40251133e73b4877f7315f9080586"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/finalize_02.log",
+      "package_path": "noncommutative_supplement/cases/noncommutative_acceptance_and_development_metadata/noncommutative/finalize_02.log",
+      "sha256": "79b6b0f5761e0058ac0984cee864dcbe3fe4abcb32612762039568b7c2d41817"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/acceptance_final/runs/20261112T031459Z-91fc050e11/rounds/1/result.json",
+      "package_path": "noncommutative/cases/noncommutative_Source_L2/rounds/1/result.json",
+      "sha256": "79e432cc4b2ab2406f02dbb87d50b32e8e93f09c5b79c5061181294b4598a3d8"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/acceptance_final/runs/20261112T031459Z-91fc050e11/checkpoint_manifest.json",
+      "package_path": "noncommutative/cases/noncommutative_Source_L2/checkpoint_manifest.json",
+      "sha256": "daf205a789db935ed3133e1b43a0e00b8b218575eaf0e6e77e60e360216e757a"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/noncommutative/acceptance_final/runs/20261112T031459Z-91fc050e11/rounds/1/backend/symbolic_certificate.json",
+      "package_path": "noncommutative/cases/noncommutative_Source_L2/rounds/1/backend/symbolic_certificate.json",
+      "sha256": "d7bdb9af4f4c8c7462881133b2bc8296a451a824324211a4f03dd2e9803ef994"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/acceptance_final/summary.json",
+      "package_path": "combinatorial_supplement/cases/combinatorial_acceptance_and_development_metadata/combinatorial/acceptance_final/summary.json",
+      "sha256": "41f1d781152ce941ee64f401169f71d38bd4fb5de8b96ea05c58c6665928869e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/acceptance_card.json",
+      "package_path": "combinatorial_supplement/cases/combinatorial_acceptance_and_development_metadata/combinatorial/acceptance_card.json",
+      "sha256": "7857397bb481bc452c4381f93e00a7c33c3ce6676a059c4c03b41f4d0b5416db"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/gate.json",
+      "package_path": "combinatorial_supplement/cases/combinatorial_acceptance_and_development_metadata/combinatorial/gate.json",
+      "sha256": "479feacf0f82037e7d496a03be7b0665b9116ffcf329e5cbcc1c4cd5aca28cf8"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/final_source_manifest.json",
+      "package_path": "combinatorial_supplement/cases/combinatorial_acceptance_and_development_metadata/combinatorial/final_source_manifest.json",
+      "sha256": "e508e826346f50128b9d190080b85affb9d5de141e19f12e6c910d86e5e38994"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/source_differences.json",
+      "package_path": "combinatorial_supplement/cases/combinatorial_acceptance_and_development_metadata/combinatorial/source_differences.json",
+      "sha256": "ba5cbfcb98e9d168e8071ebcbc1b8aa23d7d10d60a6e32008d1f0b395fcd5628"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial_review/review.json",
+      "package_path": "combinatorial_supplement/cases/combinatorial_independent_review/review.json",
+      "sha256": "693a0eb2275b68ed2c595a1dbe76f85b32ad2e6cec18a981f3fa22cb40a9e84e"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial_review/audit.py",
+      "package_path": "combinatorial_supplement/cases/combinatorial_independent_review/audit.py",
+      "sha256": "5ecbeba6fcfc40fd28cad6d956f210bcd17d17721c49bef56a35a8b13deddf95"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/core_evidence/summary.json",
+      "package_path": "combinatorial_supplement/cases/combinatorial_real_core_positive_negative_timeout/summary.json",
+      "sha256": "df79e5c23106540242314e09d618862a00b1e1c1c9bb312b766d15cf563240b7"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/old_tests_unchanged.json",
+      "package_path": "combinatorial_supplement/cases/combinatorial_acceptance_and_development_metadata/combinatorial/old_tests_unchanged.json",
+      "sha256": "4f86036c61c2daba2258f46b24425655b648de3c3f3138f1f1d5368f4a58aa33"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/preregister_01.log",
+      "package_path": "combinatorial_supplement/cases/combinatorial_acceptance_and_development_metadata/combinatorial/preregister_01.log",
+      "sha256": "fcea34e2f587d47a2fbd50b646fd50198d02a10b7806d42e706f1b87e003ada2"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/finalize_01.log",
+      "package_path": "combinatorial_supplement/cases/combinatorial_acceptance_and_development_metadata/combinatorial/finalize_01.log",
+      "sha256": "506b311f497cfa496c7c52bcb50c68e1a0a94e616b3ef29de7a2943908eb730a"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/acceptance_final/runs/20261112T033121Z-f021e284a5/rounds/1/result.json",
+      "package_path": "combinatorial/cases/combinatorial_Source_L2/rounds/1/result.json",
+      "sha256": "92c693bcd76c8929b447b4f37d18d3c1d6c71d1f3f0e185e74c3f0fdbdf664a8"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/acceptance_final/runs/20261112T033121Z-f021e284a5/checkpoint_manifest.json",
+      "package_path": "combinatorial/cases/combinatorial_Source_L2/checkpoint_manifest.json",
+      "sha256": "3bb34e00272da066f74e77403908d5fb628886cb2e9c6fd4b54cf7eeabf1b645"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/acceptance_final/runs/20261112T033121Z-f021e284a5/rounds/1/backend/symbolic_certificate.json",
+      "package_path": "combinatorial/cases/combinatorial_Source_L2/rounds/1/backend/symbolic_certificate.json",
+      "sha256": "7102dfc3ef493364864c12c373dbf2d8f9d67320f83c2e123b0e0b0b304cb4c7"
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/validation.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/validation.json",
+      "sha256": "7fbdbb124678afdbb0952d7bac920fba096af0e0d75266f81e1e4021145c45c3",
+      "bytes": 2455
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/final_ab_summary.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/final_ab_summary.json",
+      "sha256": "525e6318af6526ba70b1555dbaad00c222c555424bacbc779d0b4becdf3b1aa0",
+      "bytes": 16576
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/full_suite/summary.json",
+      "package_path": "final_validation_01/cases/final_full_suite/summary.json",
+      "sha256": "da593ef9fbfef876c2b61953e4d82bcdd9ce269770c9c142461c88568ffb1ab5",
+      "bytes": 571
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/summary.json",
+      "package_path": "final_validation_01/cases/final_method_matrix/summary.json",
+      "sha256": "86e3b9021b52d2c74ef2a89ff73916c73fb8519bd20af524aedf03388069abac",
+      "bytes": 12142
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "sha256": "1aaab977d3ce272f07847b9867fcb996d89d3bbd39b39c305b6613d8d0db02bc",
+      "bytes": 18890
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/final_cases_audit.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/final_cases_audit.json",
+      "sha256": "60cca0ec1d949df03f4ef271e8380fda0bdfdd17d609799ae43c73b9d6ced49d",
+      "bytes": 572476
+    },
+    {
+      "origin_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3_VALIDATION.md",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/PHASE3_VALIDATION.md",
+      "sha256": "326e1f6eebf064c04e1622796eb932b4e9ea05ae3d03a85c88d1fa22d56da7cc",
+      "bytes": 24510
+    }
+  ],
+  "completed_capabilities": {
+    "telescoping": "existing L3 full-original regression passed",
+    "recurrence": "L3 full-original A/B gate passed",
+    "coefficient": "L3 local-only; C1/Ooriginal/links0; original_identity_proved=false",
+    "interpolation": "L3 local-only; all tail-index factor bridge; C1/Ooriginal/links0; original_identity_proved=false",
+    "determinant": "L3 local-only; arbitrary original matrix 2x2 minor; C1/Ooriginal/links0; original_identity_proved=false",
+    "kernel_transform": "L3 local-only; arbitrary-N source triangular kernel transpose; C1/Ooriginal/links0; original_identity_proved=false",
+    "difference_ring": "L3 local-only; original Pochhammer product last-step difference with proved shift relation; C1/Ooriginal/links0; original_identity_proved=false",
+    "macmahon": "L3 local-only; original Complex finite Laurent sum realized as coefficient of the constructed two-factor formal series; C1/Ooriginal/links0; original_identity_proved=false",
+    "product": "L2 Source-only; actual mixed-radix bijection and factor exponent certificate constructed and independently symbolically checked; C0/Ooriginal/links0; Lean0; original_identity_proved=false; legacy standalone L0",
+    "noncommutative": "L2 Source-only; actual arbitrary-degree ordered polynomial action trace and pair-count normal form independently symbolically checked; finite linear extension recorded symbolically only; C0/Ooriginal/links0; Lean0; original_identity_proved=false; legacy standalone L0",
+    "combinatorial": "L2 Source-only; actual arbitrary-n ranked subset/Boolean choice bijection, finite cardinality rules, signed weights and distributivity checked symbolically; Gaussian subset bridge pending; C0/Ooriginal/links0; Lean0; original_identity_proved=false; legacy standalone L0"
+  },
+  "not_completed_by_this_package": {
+    "spectral": "C branch stopped with explicit source/core/eigenrelation/norm gaps; remains L2, C0/Ooriginal/links0; no Lean candidate"
+  },
+  "portability_limits": [
+    "Original receipts keep absolute paths; use explicit origin-to-package maps.",
+    "External Lean toolchain, Mathlib/import caches and Python/SymPy installation remain described by inventories, not bundled.",
+    "Selected run-bound retained CAS mathematical source/configuration files are bundled separately; unrelated conservative inventory entries are not copied.",
+    "Repeated foundation compilation caches are intentionally omitted; Candidate.olean and all source/log evidence are retained.",
+    "Historical full-suite logs are evidence of their recorded run, not a claim that the evolving current workspace has that suite result.",
+    "Final validation is included; spectral remains a stopped requested upgrade. The 262 frozen files and additional Train manifest have separate maps; each original statement is mapped from its actual run snapshot."
+  ],
+  "benchmark_Test_read": false,
+  "model_calls": 0,
+  "additional_source_dependency_bindings_checked": {
+    "interpolation": 10,
+    "determinant": 11,
+    "kernel_transform": 13,
+    "spectral_stopped": {
+      "diagnostic_core": 3,
+      "inspected_only": 2
+    },
+    "difference_ring": 9,
+    "macmahon": 16,
+    "product": 3,
+    "noncommutative": 3,
+    "combinatorial": 3
+  },
+  "additional_metadata_maps": [
+    "selected_metadata_source_map_interpolation.json",
+    "selected_metadata_source_map_determinant.json",
+    "selected_metadata_source_map_kernel_transform.json",
+    "selected_metadata_source_map_difference_ring.json",
+    "selected_metadata_source_map_macmahon.json",
+    "selected_metadata_source_map_product.json",
+    "selected_metadata_source_map_noncommutative.json",
+    "selected_metadata_source_map_combinatorial.json",
+    "selected_metadata_source_map_final.json"
+  ],
+  "incremental_notes": [
+    {
+      "method": "interpolation",
+      "prior_index_sha256": "90eace4364788e7aa0e51ce689f32d04f2b567227c31bd2e89ef35db6a68ce47",
+      "component_evidence": "Development/component probes predate the final BatchDefinitions import; final_source snapshot and production receipts define the accepted runtime.",
+      "review_source_hashes_are_historical": true,
+      "mathematical_revalidation_by_packaging": false
+    },
+    {
+      "method": "determinant",
+      "prior_index_sha256": "e66b1da2e0f70e1ff1b1f3828eec0fc6b1777edfd7dea03dd5e69312640dd9a8",
+      "component_evidence": "Component probes are separate from common-checker acceptance; final_source snapshot and production receipts define the accepted runtime. Shared integer-polynomial parsing is verification infrastructure, not a coefficient solver call.",
+      "review_source_hashes_are_historical": true,
+      "mathematical_revalidation_by_packaging": false
+    },
+    {
+      "method": "kernel_transform",
+      "prior_index_sha256": "d680442b7108bf64a537c5b05564080d7d84ae0ad5f7198b03883397f200b04d",
+      "component_evidence": "Component probes are separate from common-checker acceptance; final_source snapshot and production receipts define the accepted runtime. The retained matrix serializer is pure infrastructure; the affine core genuinely searches coordinate permutations and nonnegative witnesses, and independent checking calls no other solver.",
+      "review_source_hashes_are_historical": true,
+      "mathematical_revalidation_by_packaging": false
+    },
+    {
+      "method": "spectral",
+      "prior_index_sha256": "3eba620b8a5f2ec3f16a916c4187e63c6309daf9d0930f080a41107843acb598",
+      "phase_cannot_be_complete_until_this_gap_is_resolved": true,
+      "mathematical_revalidation_by_packaging": false
+    },
+    {
+      "method": "difference_ring",
+      "prior_index_sha256": "c7794bdf9a8c06a6a2175f34885a4f6ba1a629dc0b2ee35ab9006ab2ef0ce60d",
+      "component_evidence": "Component probes are separate from common-checker acceptance; final_source snapshot and production receipts define the accepted runtime. The shared integer-polynomial parser is checking infrastructure, not a coefficient solver; the original shift is proved in Lean and no QQ denominator is admitted by the local translation.",
+      "review_source_hashes_are_historical": true,
+      "mathematical_revalidation_by_packaging": false
+    },
+    {
+      "method": "macmahon",
+      "prior_index_sha256": "8c7c12c6893fd328f9b43f5cf055556fb24951a70ba6b49d0ae0544e806a144e",
+      "component_evidence": "Component probes are separate from common-checker acceptance; final_source snapshot and production receipts define the accepted runtime. Rational Omega algebra is independently checked over formal external indeterminates; one-sided blocks and finite fibers are separate checks. Lean proves the unit formal denominator and exact source coefficient over original Complex. common_validation and static reviews retain their earlier pending markers as stage history, not final gate status.",
+      "review_source_hashes_are_historical": true,
+      "mathematical_revalidation_by_packaging": false
+    },
+    {
+      "method": "product",
+      "prior_index_sha256": "5976845e6aec1c098973094564b6bea96a2ca791d497c69436a66d6d5b16b829",
+      "component_evidence": "Source L2 only. Earlier prereg01/02/03 and finalize01 failures remain byte-preserved; prereg04 and acceptance_final are the accepted runs. The 71 frozen files comprise 65 Source dependencies, the original statement and five new tests/helpers. No receipt or Lean proof exists for this method.",
+      "review_source_hashes_are_historical": true,
+      "mathematical_revalidation_by_packaging": false
+    },
+    {
+      "method": "noncommutative",
+      "prior_index_sha256": "b6f593cadef15b77063a828b2ddde715e4f34d32cc6bd0692f01831ac990f7c8",
+      "component_evidence": "Source L2 only. Earlier prereg01, registered_green command spelling and finalize01 failures remain byte-preserved; prereg02 and acceptance_final are the accepted runs. The 74 frozen files comprise 69 Source dependencies, the original statement and four tests/helpers. No receipt or Lean proof exists for this method.",
+      "review_source_hashes_are_historical": true,
+      "mathematical_revalidation_by_packaging": false
+    },
+    {
+      "method": "combinatorial",
+      "prior_index_sha256": "21f5c5a51fccdb1c96d8ff5e3f327e22c9b0c94113f0f8aecad07ec0bfba4c04",
+      "component_evidence": "Source L2 only. Component development failures are retained byte-for-byte; prereg01 and acceptance_final passed. The 78 frozen files comprise 73 Source dependencies, the original statement and four tests/helpers. The Gaussian-to-ranked-subset bridge remains explicitly pending. No receipt or Lean proof exists for this method.",
+      "review_source_hashes_are_historical": true,
+      "mathematical_revalidation_by_packaging": false
+    }
+  ],
+  "stopped_branches": {
+    "spectral": {
+      "integration_passed": false,
+      "capability": "L2",
+      "evidence_validation_passed": true,
+      "source_run_reason": "not_applicable",
+      "resume_stop_reason": "graph_capability_missing",
+      "formal_proofs": 0,
+      "note": "The one-entry failed core probe is a source-diagonal incompatibility diagnostic, not a specialization used as the original Train proof."
+    }
+  },
+  "final_runtime_validation_status": "passed; final frozen 262 files, 475 tests, eleven Source routes and spectral refusal audited; spectral requested upgrade remains incomplete",
+  "final_validation": {
+    "status": "third_stage_partially_complete",
+    "verification_passed": true,
+    "full_suite_tests": 475,
+    "L3": 8,
+    "L2": 4,
+    "Train_Source_routes": 11,
+    "full_original_methods": [
+      "telescoping",
+      "recurrence"
+    ],
+    "old_package_count": 22,
+    "old_packages_unchanged": true,
+    "input_source_map": "case_input_source_map_final.json",
+    "final_cards_index": {
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "sha256": "1aaab977d3ce272f07847b9867fcb996d89d3bbd39b39c305b6613d8d0db02bc",
+      "bytes": 18890
+    },
+    "validation": {
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/validation.json",
+      "sha256": "7fbdbb124678afdbb0952d7bac920fba096af0e0d75266f81e1e4021145c45c3",
+      "bytes": 2455
+    },
+    "prior_index_sha256": "26f03b4f8ba2daed8e5a28dbaa0c2d6e603093d34fbfd8d2aabf2a332e563321"
+  }
+}

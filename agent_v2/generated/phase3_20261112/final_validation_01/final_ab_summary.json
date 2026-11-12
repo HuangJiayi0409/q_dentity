@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "scope": "final frozen A/B plus real synthetic/test-only Init validation",
+  "passed": true,
+  "created_utc": "2026-11-12T03:55:42.092615+00:00",
+  "freeze_manifest": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+  "freeze_manifest_sha256": "73a35e22ce43ee5d87cefcbd52f8eacdc7a83ba96da5a6dd0a8394bcc2162e91",
+  "frozen_current_and_snapshot_files_checked": 262,
+  "current_and_snapshot_mismatches": [],
+  "baseline_test_files_unchanged": 30,
+  "results": {
+    "recurrence": {
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba",
+      "source_identity": "FQI-GAUSS-ALTERNATING",
+      "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+      "original_theorem": "FiniteQBenchmark.Identity009.statement",
+      "original_identity_proved": true,
+      "rounds": 5,
+      "C": 5,
+      "O": 0,
+      "links": 4,
+      "actual_check_counts": {
+        "partial": 5,
+        "replay": 17,
+        "original": 2,
+        "negative": 5
+      },
+      "original_audits": [
+        {
+          "result_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/final/attempt-5/checked.json",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "theorem": "FiniteQBenchmark.Identity009.statement",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "universe_parameters": [
+            "u_1"
+          ],
+          "universe_parameter_count": 1,
+          "returncode": 0
+        },
+        {
+          "result_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/final/attempt-5-1794455452173476871/checked.json",
+          "source_sha256": "c49f5a4417e3d4d19df4463a377c4d3117cea07619d1867156eccb454ca8123c",
+          "theorem": "FiniteQBenchmark.Identity009.statement",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "universe_parameters": [
+            "u_1"
+          ],
+          "universe_parameter_count": 1,
+          "returncode": 0
+        }
+      ],
+      "remaining_budget": {
+        "schema_version": 1,
+        "seconds": 2934.724022096023,
+        "actions": 0
+      },
+      "independent_artifact_hashes_checked": 749,
+      "scope": "single_real_Train_five_action_recurrence_closure",
+      "smoke_summary_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/summary.json",
+      "requested_initial_budget_seconds": 4000,
+      "smoke_self_checked_artifact_hashes": 772,
+      "resume_repeated_actions": 0,
+      "diagnostic_probes_are_separate_from_runtime_budget": true,
+      "stages": [
+        {
+          "stage": "bridge",
+          "rounds": 2,
+          "C": 2,
+          "O": 3,
+          "links": 1,
+          "original_identity_proved": false,
+          "fresh_replay_checks": 1,
+          "budget_before": {
+            "schema_version": 1,
+            "seconds": 3953.3232296393253,
+            "actions": 4
+          },
+          "budget_after": {
+            "schema_version": 1,
+            "seconds": 3863.223603123799,
+            "actions": 3
+          },
+          "wall_seconds": 90.6584353451617
+        },
+        {
+          "stage": "two_leaves",
+          "rounds": 4,
+          "C": 4,
+          "O": 1,
+          "links": 3,
+          "original_identity_proved": false,
+          "fresh_replay_checks": 2,
+          "budget_before": {
+            "schema_version": 1,
+            "seconds": 3863.223603123799,
+            "actions": 3
+          },
+          "budget_after": {
+            "schema_version": 1,
+            "seconds": 3686.5522202826105,
+            "actions": 1
+          },
+          "wall_seconds": 177.45253887493163
+        },
+        {
+          "stage": "all_leaves",
+          "rounds": 5,
+          "C": 5,
+          "O": 0,
+          "links": 4,
+          "original_identity_proved": false,
+          "fresh_replay_checks": 4,
+          "budget_before": {
+            "schema_version": 1,
+            "seconds": 3686.5522202826105,
+            "actions": 1
+          },
+          "budget_after": {
+            "schema_version": 1,
+            "seconds": 3467.057081676554,
+            "actions": 0
+          },
+          "wall_seconds": 220.2123541701585
+        },
+        {
+          "stage": "original",
+          "rounds": 5,
+          "C": 5,
+          "O": 0,
+          "links": 4,
+          "original_identity_proved": true,
+          "fresh_replay_checks": 5,
+          "budget_before": {
+            "schema_version": 1,
+            "seconds": 3467.057081676554,
+            "actions": 0
+          },
+          "budget_after": {
+            "schema_version": 1,
+            "seconds": 3201.70325843757,
+            "actions": 0
+          },
+          "wall_seconds": 266.190506296698
+        },
+        {
+          "stage": "final_replay",
+          "rounds": 5,
+          "C": 5,
+          "O": 0,
+          "links": 4,
+          "original_identity_proved": true,
+          "fresh_replay_checks": 5,
+          "budget_before": {
+            "schema_version": 1,
+            "seconds": 3201.70325843757,
+            "actions": 0
+          },
+          "budget_after": {
+            "schema_version": 1,
+            "seconds": 2934.724022096023,
+            "actions": 0
+          },
+          "wall_seconds": 267.6160153178498
+        }
+      ],
+      "negative_proofs": [
+        {
+          "task": "local",
+          "round": 1,
+          "passed": true,
+          "real_lean_rejection": true,
+          "state_unchanged": true,
+          "checkpoint_unchanged": true,
+          "actual_wall_seconds": 43.508068184833974,
+          "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-local"
+        },
+        {
+          "task": "uniqueness_bridge",
+          "round": 2,
+          "passed": true,
+          "real_lean_rejection": true,
+          "state_unchanged": true,
+          "checkpoint_unchanged": true,
+          "actual_wall_seconds": 44.11463590245694,
+          "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-uniqueness_bridge"
+        },
+        {
+          "task": "initial_one",
+          "round": 3,
+          "passed": true,
+          "real_lean_rejection": true,
+          "state_unchanged": true,
+          "checkpoint_unchanged": true,
+          "actual_wall_seconds": 43.33633921528235,
+          "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-initial_one"
+        },
+        {
+          "task": "initial_zero",
+          "round": 4,
+          "passed": true,
+          "real_lean_rejection": true,
+          "state_unchanged": true,
+          "checkpoint_unchanged": true,
+          "actual_wall_seconds": 43.56423883885145,
+          "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-initial_zero"
+        },
+        {
+          "task": "rhs_recurrence",
+          "round": 5,
+          "passed": true,
+          "real_lean_rejection": true,
+          "state_unchanged": true,
+          "checkpoint_unchanged": true,
+          "actual_wall_seconds": 43.517686835024506,
+          "evidence_directory": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence/runs/20261112T033348Z-a6a6f668ba/negative-rhs_recurrence"
+        }
+      ],
+      "resumed_after_initial_value": true,
+      "original_declaration": "import Benchmark.Representation\n\nopen scoped BigOperators\nopen FiniteQBenchmark\nset_option autoImplicit false\nset_option linter.unusedVariables false\n\n/- FQI-GAUSS-ALTERNATING — Gauss 交错 Gaussian 奇偶求值\nOriginal representative source: AP-3.3.8\nFrozen statement: formulas/train/FQI-GAUSS-ALTERNATING.md\nSource formula:\n\\sum_{j=0}^m(-1)^j\\begin{bmatrix}m\\\\j\\end{bmatrix}_{q}=\\begin{cases}(q;q^2)_{m/2},&m\\text{ even},\\\\0,&m\\text{ odd}.\\end{cases}\nOnly this target theorem's proof is deferred. Shared auxiliary results are proved.\n-/\nnamespace FiniteQBenchmark.Identity009\nvariable {K : Type*} [Field K]\n\ntheorem statement (q : K) (m : ℕ) :\n (∑ j ∈ Finset.range (m+1), (-1)^j*gaussian q m j) =\n if m%2 = 0 then poch q (q^2) (m/2) else 0 := by\n  sorry\n\nend FiniteQBenchmark.Identity009\n",
+      "driver_record": {
+        "schema_version": 1,
+        "label": "recurrence",
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.recurrence_closure_smoke",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/recurrence",
+          "--seconds",
+          "4000"
+        ],
+        "cwd": "/home/hjy/Project/finite_q_identity_catalog",
+        "started_utc": "2026-11-12T03:33:48.346976+00:00",
+        "scope": "real_single_Train_full_closure",
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/driver_logs/recurrence/stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/driver_logs/recurrence/stderr.log",
+        "returncode": 0,
+        "wall_seconds": 1290.2646990884095,
+        "ended_utc": "2026-11-12T03:55:18.611833+00:00"
+      }
+    },
+    "telescoping": {
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d",
+      "source_identity": "FQI-SRC-AP-3.3.9",
+      "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+      "original_theorem": "FiniteQBenchmark.Identity272.statement",
+      "original_identity_proved": true,
+      "rounds": 4,
+      "C": 4,
+      "O": 0,
+      "links": 3,
+      "actual_check_counts": {
+        "partial": 4,
+        "replay": 4,
+        "original": 2,
+        "negative": 1
+      },
+      "original_audits": [
+        {
+          "result_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d/final/attempt-4/checked.json",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "theorem": "FiniteQBenchmark.Identity272.statement",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "universe_parameters": [
+            "u_1"
+          ],
+          "universe_parameter_count": 1,
+          "returncode": 0
+        },
+        {
+          "result_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/runs/20261112T033348Z-da76757a4d/final/attempt-4-1794454823161597686/checked.json",
+          "source_sha256": "d9a88ffda89d1bbb38da774ac9f30bba41b11674e6057b698c11d0407dc26efa",
+          "theorem": "FiniteQBenchmark.Identity272.statement",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "universe_parameters": [
+            "u_1"
+          ],
+          "universe_parameter_count": 1,
+          "returncode": 0
+        }
+      ],
+      "remaining_budget": {
+        "schema_version": 1,
+        "seconds": 1962.3954440904781,
+        "actions": 0
+      },
+      "independent_artifact_hashes_checked": 285,
+      "scope": "single_real_Train_complete_residual_proof",
+      "smoke_summary_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping/summary.json",
+      "requested_initial_budget_seconds": 2400,
+      "smoke_self_checked_artifact_hashes": 304,
+      "resume_repeated_actions": 0,
+      "diagnostic_probes_are_separate_from_runtime_budget": true,
+      "negative_bridge": {
+        "passed": true,
+        "actual_wall_seconds": 43.10011709202081,
+        "parent_preserved": true,
+        "independent_local_certificate_preserved": true,
+        "real_lean_rejection": true
+      },
+      "driver_record": {
+        "schema_version": 1,
+        "label": "telescoping",
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "agent_v2.tests.closure_smoke",
+          "--output-root",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping",
+          "--seconds",
+          "2400"
+        ],
+        "cwd": "/home/hjy/Project/finite_q_identity_catalog",
+        "started_utc": "2026-11-12T03:33:48.345928+00:00",
+        "scope": "real_single_Train_full_closure",
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/driver_logs/telescoping/stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/driver_logs/telescoping/stderr.log",
+        "returncode": 0,
+        "wall_seconds": 483.3430754789151,
+        "ended_utc": "2026-11-12T03:41:51.689170+00:00"
+      }
+    },
+    "init": {
+      "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/init_runs/20261112T033348Z-0ec532d60c",
+      "source_identity": "synthetic-real-lean-smoke",
+      "source_sha256": "685e27cb2af42d9e4f5f7c44266dd83f23c2a18535c67315acef1949b742b15d",
+      "original_theorem": "Synthetic.statement",
+      "original_identity_proved": true,
+      "rounds": 2,
+      "C": 2,
+      "O": 0,
+      "links": 2,
+      "actual_check_counts": {
+        "partial": 2,
+        "replay": 0,
+        "original": 1,
+        "negative": 0
+      },
+      "original_audits": [
+        {
+          "result_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/init_runs/20261112T033348Z-0ec532d60c/final/attempt-2/checked.json",
+          "source_sha256": "685e27cb2af42d9e4f5f7c44266dd83f23c2a18535c67315acef1949b742b15d",
+          "theorem": "Synthetic.statement",
+          "axioms": [],
+          "universe_parameters": null,
+          "universe_parameter_count": null,
+          "returncode": 0
+        }
+      ],
+      "remaining_budget": {
+        "schema_version": 1,
+        "seconds": 73.708082113415,
+        "actions": 0
+      },
+      "independent_artifact_hashes_checked": 21,
+      "scope": "synthetic_test_only",
+      "Train_result": false,
+      "candidate_provider": "test_only_handwritten",
+      "unchanged_test_budget_seconds": 90,
+      "fixture_scope_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/init_runs/20261112T033348Z-0ec532d60c/fixture_scope.json",
+      "driver_record": {
+        "schema_version": 1,
+        "label": "init",
+        "command": [
+          "/usr/bin/python3",
+          "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/invoke_init_smoke.py"
+        ],
+        "cwd": "/home/hjy/Project/finite_q_identity_catalog",
+        "started_utc": "2026-11-12T03:33:48.334658+00:00",
+        "scope": "synthetic_test_only",
+        "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/driver_logs/init/stdout.log",
+        "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/driver_logs/init/stderr.log",
+        "returncode": 0,
+        "wall_seconds": 16.62218984402716,
+        "ended_utc": "2026-11-12T03:34:04.956996+00:00"
+      }
+    }
+  },
+  "model_calls": 0,
+  "benchmark_Test_read": false,
+  "production_or_existing_test_edits": [],
+  "entire_phase_three_completion_claimed": false
+}

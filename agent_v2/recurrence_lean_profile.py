@@ -1,26 +1,20 @@
 """Controlled recurrence proof reconstruction and fresh mathematical verification."""
-from .models import Source
 from .storage import IntegrityError
-from .recurrence_frontend import PROFILE, analyze_source
+from .recurrence_frontend import PROFILE
 from .recurrence_translation import reconstruct_candidate
 
 
+def reconstruct_profile_candidate(frontend, request, approved_certificates):
+    """Rebuild local witnesses or the fixed closure tasks without approving them."""
+    if request['id'].startswith('recurrence-local-') or request['proof_term'].startswith('/- agent_v2_recurrence_v1 '):
+        if request['dependencies']:
+            raise IntegrityError('local recurrence candidate has unexpected dependencies')
+        return reconstruct_candidate(frontend, request['proof_term'], allow_negative=True)
+    from .recurrence_closure import reconstruct_closure_candidate
+    return reconstruct_closure_candidate(frontend, request, approved_certificates)
+
+
 def check_recurrence_partial(checker, candidate, context, start):
-    from .lean_checker import _result
-    from .math_lean_profile import _verify_train
-    source = Source.from_dict(context['source'])
-    frontend = analyze_source(source.to_dict(), context['run_dir'])
-    if frontend['status'] != 'applicable': return None
-    if candidate['source_sha256'] != source.sha256 or context['source_sha256'] != source.sha256:
-        raise IntegrityError('recurrence source binding mismatch')
-    if candidate['dependencies']:
-        raise IntegrityError('local recurrence candidate has unexpected dependencies')
-    try:
-        rebuilt = reconstruct_candidate(frontend, candidate['proof_term'], allow_negative=True)
-    except ValueError as error:
-        return _result(start, False, 'incomplete', 'partial', 'unsupported_term_syntax', str(error))
-    if candidate['proposition'] != rebuilt.proposition or candidate['id'] != rebuilt.id:
-        raise IntegrityError('recurrence proposition or witness identity mismatch')
-    return _verify_train(checker, candidate, context, start, source, frontend, rebuilt.proposition,
-        additional_rules=(checker.repository / 'finite_product_framework/p1/lean/Shared.lean',),
-        profile=PROFILE)
+    # Compatibility entry point; Source resolution and all checking are shared.
+    from .math_lean_profile import check_train_partial
+    return check_train_partial(checker, candidate, context, start)

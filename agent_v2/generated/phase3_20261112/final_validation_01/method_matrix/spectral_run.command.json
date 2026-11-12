@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "agent_v2.cli",
+    "run",
+    "--identity",
+    "FQI-SRC-GR2-7.2.24",
+    "--method",
+    "spectral",
+    "--seconds",
+    "120",
+    "--output-root",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs"
+  ],
+  "returncode": 2,
+  "wall_seconds": 0.5657032770104706,
+  "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_run.stdout.log",
+  "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_run.stderr.log"
+}

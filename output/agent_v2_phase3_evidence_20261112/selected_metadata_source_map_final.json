@@ -1,0 +1,234 @@
+{
+  "scope": "final byte-preserving metadata and document source map",
+  "proof_receipts_rewritten": false,
+  "files": [
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/validation.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/validation.json",
+      "sha256": "7fbdbb124678afdbb0952d7bac920fba096af0e0d75266f81e1e4021145c45c3",
+      "bytes": 2455
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/final_ab_summary.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/final_ab_summary.json",
+      "sha256": "525e6318af6526ba70b1555dbaad00c222c555424bacbc779d0b4becdf3b1aa0",
+      "bytes": 16576
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/current_method_audit.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/current_method_audit.json",
+      "sha256": "26d6515a9f71a3d52d0f319bdc98c60c0abed283919f8244c66300bc45b290c4",
+      "bytes": 5495
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/telescoping_independent_audit.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/telescoping_independent_audit.json",
+      "sha256": "cc9266d8956a875bd1e4f69b2ce2a07a29b6fe65285e4d633e3ea6960c15a325",
+      "bytes": 1879
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/init_independent_audit.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/init_independent_audit.json",
+      "sha256": "2aa244b02985f4cf2cec0abf78191c421ef2ae1a6540d80787971f731ed416a4",
+      "bytes": 1153
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/audit_ab_results.py",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/audit_ab_results.py",
+      "sha256": "db130a043fa260024e6ae2293d348662338911cbf0e57890b8d88938c18de1bb",
+      "bytes": 10776
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/run_ab_smoke.py",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/run_ab_smoke.py",
+      "sha256": "f563cf71dfe694ff19936ecb5d2a3dc0bbe39d540649f50267a68225a8205f55",
+      "bytes": 2129
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/invoke_init_smoke.py",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/invoke_init_smoke.py",
+      "sha256": "88ce3ccb4ed7278fb185237b2513a2dcb295eba8800b15bd451a2b9f7e6241c6",
+      "bytes": 333
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/ab_hashes_before.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/ab_hashes_before.json",
+      "sha256": "bcd748af9168a9fbfb432f78d4f24d57b748ce9c9b67e01167cbbfb9555f9913",
+      "bytes": 3626
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/final_cases_audit.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/final_cases_audit.json",
+      "sha256": "60cca0ec1d949df03f4ef271e8380fda0bdfdd17d609799ae43c73b9d6ced49d",
+      "bytes": 572476
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/frozen_file_inventory.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/frozen_file_inventory.json",
+      "sha256": "46a3f5387b0be910a6f71ed30738138f277df5fa4d70b86cb7102c5752c9de8a",
+      "bytes": 152861
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/input_dependency_manifest.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/input_dependency_manifest.json",
+      "sha256": "c7f93eeeaf25c327f91d1ab9bd254d42a3c00090860f70a497004bcc8b4eaecc",
+      "bytes": 745
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/actual_reproduction_commands.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/actual_reproduction_commands.json",
+      "sha256": "5b677a55fd2f3162734244a8c4a9bf851110dfc57e78e17c9716525b7859ccff",
+      "bytes": 35517
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/method_cards_index.json",
+      "sha256": "1aaab977d3ce272f07847b9867fcb996d89d3bbd39b39c305b6613d8d0db02bc",
+      "bytes": 18890
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/coefficient_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/coefficient_acceptance_card.json",
+      "sha256": "13ee6c182d74dfe060fe32161e5956dbb93dea1d8e4e6615123e65a5625e2a53",
+      "bytes": 6323
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/combinatorial_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/combinatorial_acceptance_card.json",
+      "sha256": "e3cd329ca55c1d83a8c0ed1023a3a5ae46f058be15c3effe5e721f7a7fe72011",
+      "bytes": 6618
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/determinant_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/determinant_acceptance_card.json",
+      "sha256": "824cada40101452f641b658941fc9cfa5ab4e841443378441b61c6a2ee783a09",
+      "bytes": 7024
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/difference_ring_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/difference_ring_acceptance_card.json",
+      "sha256": "ca6e77e5b813c0d796435911ad054a4e2db56575fcbf07bcc94cf7e792d27e7a",
+      "bytes": 6051
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/interpolation_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/interpolation_acceptance_card.json",
+      "sha256": "21149ba4ad62213f4bb26b7d3a7337716209ed534b0183f31092e141f66a740e",
+      "bytes": 5984
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/kernel_transform_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/kernel_transform_acceptance_card.json",
+      "sha256": "4139e70e09d64052820aebfaae5c8d2ae1be2389d4f9d411266bde40502c8985",
+      "bytes": 6222
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/macmahon_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/macmahon_acceptance_card.json",
+      "sha256": "03901a1d6fe22d43253fb696a03303b2f01cc9bbc3409a8714407d6bc928a3ff",
+      "bytes": 6417
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/noncommutative_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/noncommutative_acceptance_card.json",
+      "sha256": "8b17e706aa82bfffdadb29a06901e4fcbc1a538f23deeb5433b0362bb0cb88a5",
+      "bytes": 6681
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/product_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/product_acceptance_card.json",
+      "sha256": "cd40c99199518770532acc789034c40f1626e50b99156e9bbeb25a7eb5043928",
+      "bytes": 7169
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/recurrence_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/recurrence_acceptance_card.json",
+      "sha256": "23d3fd067ace6615bd473a6212b50b2da51cc8ab2f9c033a5fe0da656b9a0539",
+      "bytes": 11171
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/spectral_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/spectral_acceptance_card.json",
+      "sha256": "f8e45ee2ac00002a71f725bab376a928f4744f322a7af97fe7c167e34a35be77",
+      "bytes": 3774
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/telescoping_acceptance_card.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/telescoping_acceptance_card.json",
+      "sha256": "df7c24776d229c2e31c3d78cfd7ee75f3166035d65bc7cfc602218df1b528417",
+      "bytes": 6515
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/input_dependencies/benchmark/splits/train.jsonl",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/input_dependencies/benchmark/splits/train.jsonl",
+      "sha256": "41de71c9504a838846e0e22139fcfba3657af7f77ee49dcee43d316d094112b4",
+      "bytes": 256865
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_report_preparation/collect_final_acceptance.py",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_report_preparation/collect_final_acceptance.py",
+      "sha256": "a4a343685883de2c1dfc32b3b9178c390efddc3c7c6fc57f74c1718be4ffd534",
+      "bytes": 9055
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_report_preparation/audit_final_cases.py",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_report_preparation/audit_final_cases.py",
+      "sha256": "7a87ec49e6a9be1e5fe8909427a0c2785378c204977e83c604408e03368a2926",
+      "bytes": 10463
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_report_preparation/final_ab_exact_evidence.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_report_preparation/final_ab_exact_evidence.json",
+      "sha256": "b93da809dedaf39fd2c8135513f065e048912b4faa9f7f6bcb05bb2f01e05dfd",
+      "bytes": 99949
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_report_preparation/FINAL_AB_EXACT_EVIDENCE.md",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_report_preparation/FINAL_AB_EXACT_EVIDENCE.md",
+      "sha256": "a1ba572ad0db49776080801d59769efabf2849037461d1f6f1c19250f4c9971d",
+      "bytes": 6287
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_report_preparation/final_C_exact_candidates.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_report_preparation/final_C_exact_candidates.json",
+      "sha256": "2a4141781888d1c5570690069be53683a627d4b381030788eabe4a6afbbe9acf",
+      "bytes": 26530
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_report_preparation/final_collection_validation.json",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_report_preparation/final_collection_validation.json",
+      "sha256": "1a5fc4c90992e2ba0bb82a4b363ab5c3e2bd1a3257ab813f578ae18d0fa534f7",
+      "bytes": 343
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/README.md",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/README.md",
+      "sha256": "aa40fd05b4f5de1531afc5f1e40b2277352b7b826aca1aee8625643ca77a1581",
+      "bytes": 12594
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3.md",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/PHASE3.md",
+      "sha256": "25974cfd3c4a28f43313dc981a93a93dccd43887ebd790f864d9559dfce0b81d",
+      "bytes": 29229
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/PHASE3_VALIDATION.md",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/PHASE3_VALIDATION.md",
+      "sha256": "326e1f6eebf064c04e1622796eb932b4e9ea05ae3d03a85c88d1fa22d56da7cc",
+      "bytes": 24510
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/METHOD_CAPABILITIES.md",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/METHOD_CAPABILITIES.md",
+      "sha256": "1f2141f8ee57ec3c94f7845801025760cc828bed22b43da434e06c90cd46d821",
+      "bytes": 10165
+    },
+    {
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/evidence_pack_review/prepare_final_pack.py",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/evidence_pack_review/prepare_final_pack.py",
+      "sha256": "bddb84f0c33b4b8dcd4a51f407bb969e9978807cc75da5a7676b3ce5032e6c79",
+      "bytes": 3284
+    }
+  ]
+}

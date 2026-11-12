@@ -1,0 +1,12 @@
+{
+  "scope": "input manifest bound by final actual Source, separate from 262 code/test/math freeze",
+  "files": {
+    "benchmark/splits/train.jsonl": {
+      "sha256": "41de71c9504a838846e0e22139fcfba3657af7f77ee49dcee43d316d094112b4",
+      "bytes": 256865,
+      "snapshot_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/input_dependencies/benchmark/splits/train.jsonl",
+      "original_path": "/home/hjy/Project/finite_q_identity_catalog/benchmark/splits/train.jsonl",
+      "copied_from_previous_immutable_snapshot": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/combinatorial/final_source/benchmark/splits/train.jsonl"
+    }
+  }
+}

@@ -1,0 +1,2384 @@
+{
+  "scope": "final 262 frozen code/math/test/config files plus one input manifest",
+  "frozen_manifest_sha256": "73a35e22ce43ee5d87cefcbd52f8eacdc7a83ba96da5a6dd0a8394bcc2162e91",
+  "frozen_files": 262,
+  "additional_input_manifest_files": 1,
+  "categories": {
+    "agent_runtime": 70,
+    "generated_validation_driver": 3,
+    "test_or_smoke_helper": 78,
+    "mathematical_foundation_or_build_configuration": 10,
+    "pure_mathematical_implementation": 101
+  },
+  "current_hash_equality_checked": true,
+  "original_statements_mapped_separately": true,
+  "files": [
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/__init__.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/__init__.py",
+      "source_sha256": "651a84506b141ddf64e6647fb532728426e218cb43542b3dcd9eeaa270a03763",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/__init__.py",
+      "sha256": "651a84506b141ddf64e6647fb532728426e218cb43542b3dcd9eeaa270a03763",
+      "bytes": 99
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/cas_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/cas_adapter.py",
+      "source_sha256": "3957fe63a94dd168023ca013d3fe6e32cdb3d08830294d71d9d0b5cf2c00795f",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/cas_adapter.py",
+      "sha256": "3957fe63a94dd168023ca013d3fe6e32cdb3d08830294d71d9d0b5cf2c00795f",
+      "bytes": 22329
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/cli.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/cli.py",
+      "source_sha256": "e7f1397d1847322d345d80034dc7d6c475e0a5c12564336df7a5f58d6151dd80",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/cli.py",
+      "sha256": "e7f1397d1847322d345d80034dc7d6c475e0a5c12564336df7a5f58d6151dd80",
+      "bytes": 17762
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/coefficient_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/coefficient_adapter.py",
+      "source_sha256": "ed56c84f780177801c5da7c05b56659a4b40c8c1b6f68a0da9d20a907738808e",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/coefficient_adapter.py",
+      "sha256": "ed56c84f780177801c5da7c05b56659a4b40c8c1b6f68a0da9d20a907738808e",
+      "bytes": 5413
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/coefficient_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/coefficient_frontend.py",
+      "source_sha256": "36bb51123dad68d8ea9e919fafa47c4ee8a271c11394b167e954f827bf0d68ce",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/coefficient_frontend.py",
+      "sha256": "36bb51123dad68d8ea9e919fafa47c4ee8a271c11394b167e954f827bf0d68ce",
+      "bytes": 5400
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/coefficient_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/coefficient_translation.py",
+      "source_sha256": "3176575922a0add2b225b8a4034ab056c8fb809d4d53bd227a102bbd997e1cf2",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/coefficient_translation.py",
+      "sha256": "3176575922a0add2b225b8a4034ab056c8fb809d4d53bd227a102bbd997e1cf2",
+      "bytes": 10209
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/combinatorial_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/combinatorial_adapter.py",
+      "source_sha256": "8a06f3f8f351a138baff25713470c04ddf631f9fddd4f41e8cc262039856d60e",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/combinatorial_adapter.py",
+      "sha256": "8a06f3f8f351a138baff25713470c04ddf631f9fddd4f41e8cc262039856d60e",
+      "bytes": 9664
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/combinatorial_check.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/combinatorial_check.py",
+      "source_sha256": "f1b8117a33ce32ba054958c877e0777f936de6d6a1943a313c218f4293315977",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/combinatorial_check.py",
+      "sha256": "f1b8117a33ce32ba054958c877e0777f936de6d6a1943a313c218f4293315977",
+      "bytes": 13885
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/combinatorial_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/combinatorial_frontend.py",
+      "source_sha256": "8da107390c4d51ac2585cdd76ea03822962088e7776d28c2ecbcf86e17d0c3ea",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/combinatorial_frontend.py",
+      "sha256": "8da107390c4d51ac2585cdd76ea03822962088e7776d28c2ecbcf86e17d0c3ea",
+      "bytes": 6790
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/combinatorial_worker.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/combinatorial_worker.py",
+      "source_sha256": "471abb9d93a18f2f788ef928c563d4b48028b782453f9c03e0f6f6bbd098f857",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/combinatorial_worker.py",
+      "sha256": "471abb9d93a18f2f788ef928c563d4b48028b782453f9c03e0f6f6bbd098f857",
+      "bytes": 2046
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/determinant_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/determinant_adapter.py",
+      "source_sha256": "0bdab954c39dfcf34fcd6b7c972058d6f34686f451acad79f225ef7b59dfeac8",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/determinant_adapter.py",
+      "sha256": "0bdab954c39dfcf34fcd6b7c972058d6f34686f451acad79f225ef7b59dfeac8",
+      "bytes": 5104
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/determinant_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/determinant_frontend.py",
+      "source_sha256": "fbfa6957067f7e1a6509c5b88f03e143d4d0ebcb626543c7cbfdedbac9735b88",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/determinant_frontend.py",
+      "sha256": "fbfa6957067f7e1a6509c5b88f03e143d4d0ebcb626543c7cbfdedbac9735b88",
+      "bytes": 11073
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/determinant_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/determinant_translation.py",
+      "source_sha256": "04a91ecf8d06654849fb9097a11c5ecf8c4a55f109f817f41fecbbcf293d80e8",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/determinant_translation.py",
+      "sha256": "04a91ecf8d06654849fb9097a11c5ecf8c4a55f109f817f41fecbbcf293d80e8",
+      "bytes": 6225
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/difference_ring_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/difference_ring_adapter.py",
+      "source_sha256": "f4251215d839ba884ee773c92b3b0f626958d44a23a8fcda9ae7ed8d8acb9da8",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/difference_ring_adapter.py",
+      "sha256": "f4251215d839ba884ee773c92b3b0f626958d44a23a8fcda9ae7ed8d8acb9da8",
+      "bytes": 5321
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/difference_ring_check.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/difference_ring_check.py",
+      "source_sha256": "5c429a55212b3798ea364d8ec64ef7d7232631faa355a5ff86f2e3a7af9ceb1f",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/difference_ring_check.py",
+      "sha256": "5c429a55212b3798ea364d8ec64ef7d7232631faa355a5ff86f2e3a7af9ceb1f",
+      "bytes": 5690
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/difference_ring_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/difference_ring_frontend.py",
+      "source_sha256": "808e441dedaba654d39f6784d1122fc789291b2ea20b9c64552ab305cde61107",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/difference_ring_frontend.py",
+      "sha256": "808e441dedaba654d39f6784d1122fc789291b2ea20b9c64552ab305cde61107",
+      "bytes": 6924
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/difference_ring_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/difference_ring_translation.py",
+      "source_sha256": "48be842caa019f6fcd3beda34ef9e79a28e839e57f6c107682ca2612b23680bb",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/difference_ring_translation.py",
+      "sha256": "48be842caa019f6fcd3beda34ef9e79a28e839e57f6c107682ca2612b23680bb",
+      "bytes": 2290
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/executor.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/executor.py",
+      "source_sha256": "e3765ef9f86b79d534665b6e136372c577e3b141f2388e2428090099d81c65ef",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/executor.py",
+      "sha256": "e3765ef9f86b79d534665b6e136372c577e3b141f2388e2428090099d81c65ef",
+      "bytes": 12362
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/formal_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/formal_frontend.py",
+      "source_sha256": "f8e85eba95c446b9f47ec96e1339ebaad199f98b7f62be07ac79423fae022182",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/formal_frontend.py",
+      "sha256": "f8e85eba95c446b9f47ec96e1339ebaad199f98b7f62be07ac79423fae022182",
+      "bytes": 13963
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/freeze_final_sources.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/generated/phase3_20261112/freeze_final_sources.py",
+      "source_sha256": "4569e7b8b9ab7c3237df955b6dc3d51659a0c9c3d69954e50a5e397ac5d3c985",
+      "category": "generated_validation_driver",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/generated/phase3_20261112/freeze_final_sources.py",
+      "sha256": "4569e7b8b9ab7c3237df955b6dc3d51659a0c9c3d69954e50a5e397ac5d3c985",
+      "bytes": 4133
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/run_final_method_matrix.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/generated/phase3_20261112/run_final_method_matrix.py",
+      "source_sha256": "f06b632606c693adfb0f2abec8bce0b0ed194b043e7a8513f2c4fd446d3309d4",
+      "category": "generated_validation_driver",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/generated/phase3_20261112/run_final_method_matrix.py",
+      "sha256": "f06b632606c693adfb0f2abec8bce0b0ed194b043e7a8513f2c4fd446d3309d4",
+      "bytes": 6069
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/run_full_suite.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/generated/phase3_20261112/run_full_suite.py",
+      "source_sha256": "480a7b687c4126d2a0488e572528ba9bfd7829bd4b4a768aae7035e775839e74",
+      "category": "generated_validation_driver",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/generated/phase3_20261112/run_full_suite.py",
+      "sha256": "480a7b687c4126d2a0488e572528ba9bfd7829bd4b4a768aae7035e775839e74",
+      "bytes": 2256
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/graph.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/graph.py",
+      "source_sha256": "3fdd6af854ba7fb8620825d34e82f33fd9405e53afdc55e1b74fa57d2826ee3d",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/graph.py",
+      "sha256": "3fdd6af854ba7fb8620825d34e82f33fd9405e53afdc55e1b74fa57d2826ee3d",
+      "bytes": 15062
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/interpolation_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/interpolation_adapter.py",
+      "source_sha256": "0e77080bd1bcf79a157ec47f07119ea3c1ff6fabbf32a3491d93cf8f443d6a64",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/interpolation_adapter.py",
+      "sha256": "0e77080bd1bcf79a157ec47f07119ea3c1ff6fabbf32a3491d93cf8f443d6a64",
+      "bytes": 5215
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/interpolation_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/interpolation_frontend.py",
+      "source_sha256": "e118da3c911525d00bb4333299954e6267a208a4c9a167dcc946d0e915573ea0",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/interpolation_frontend.py",
+      "sha256": "e118da3c911525d00bb4333299954e6267a208a4c9a167dcc946d0e915573ea0",
+      "bytes": 9323
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/interpolation_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/interpolation_translation.py",
+      "source_sha256": "8096b85733426339d7afbb63c4667322117e29f1db5a6407501f4638ab167e5a",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/interpolation_translation.py",
+      "sha256": "8096b85733426339d7afbb63c4667322117e29f1db5a6407501f4638ab167e5a",
+      "bytes": 7191
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/kernel_transform_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/kernel_transform_adapter.py",
+      "source_sha256": "adec83a9e1144f3277d6bcd31155721e0f2ab613a123c06fd1133d2fe18e6183",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/kernel_transform_adapter.py",
+      "sha256": "adec83a9e1144f3277d6bcd31155721e0f2ab613a123c06fd1133d2fe18e6183",
+      "bytes": 5864
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/kernel_transform_check.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/kernel_transform_check.py",
+      "source_sha256": "cbbd8f519c82df446bd08864319c3cdd5abfcbf59d68ae7be7683fd02630996a",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/kernel_transform_check.py",
+      "sha256": "cbbd8f519c82df446bd08864319c3cdd5abfcbf59d68ae7be7683fd02630996a",
+      "bytes": 7380
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/kernel_transform_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/kernel_transform_frontend.py",
+      "source_sha256": "06f99b8ba9df4d33c3f86b8acf1b923070443d24078a90cd1c2080e21adb936a",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/kernel_transform_frontend.py",
+      "sha256": "06f99b8ba9df4d33c3f86b8acf1b923070443d24078a90cd1c2080e21adb936a",
+      "bytes": 12286
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/kernel_transform_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/kernel_transform_translation.py",
+      "source_sha256": "cb2418ad6d4457586b4192aae3d14e880b4b0b4e955903951ae271d990f4852f",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/kernel_transform_translation.py",
+      "sha256": "cb2418ad6d4457586b4192aae3d14e880b4b0b4e955903951ae271d990f4852f",
+      "bytes": 2252
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean/CoefficientRules.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean/CoefficientRules.lean",
+      "source_sha256": "1c634b4c04a3609cec4291f4f1f5211d1086cbde28cdd67dbc0147f7fc49601b",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean/CoefficientRules.lean",
+      "sha256": "1c634b4c04a3609cec4291f4f1f5211d1086cbde28cdd67dbc0147f7fc49601b",
+      "bytes": 4063
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean/DeterminantRules.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean/DeterminantRules.lean",
+      "source_sha256": "5e3f1a49360aaed0d56a89fb99eeaae2e6a1ac7fc02d7241506666052e378925",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean/DeterminantRules.lean",
+      "sha256": "5e3f1a49360aaed0d56a89fb99eeaae2e6a1ac7fc02d7241506666052e378925",
+      "bytes": 941
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean/DifferenceRingRules.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean/DifferenceRingRules.lean",
+      "source_sha256": "2ce2b5e18f2afa16d0eb3b531eb8b9ab0ac87b7c7efeb24249087c3337f76ce1",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean/DifferenceRingRules.lean",
+      "sha256": "2ce2b5e18f2afa16d0eb3b531eb8b9ab0ac87b7c7efeb24249087c3337f76ce1",
+      "bytes": 1233
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean/InterpolationRules.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean/InterpolationRules.lean",
+      "source_sha256": "bf39240ae69a251c2f6fea89c40e244609a8e842c24c05390934937d8c046751",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean/InterpolationRules.lean",
+      "sha256": "bf39240ae69a251c2f6fea89c40e244609a8e842c24c05390934937d8c046751",
+      "bytes": 2864
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean/KernelTransformRules.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean/KernelTransformRules.lean",
+      "source_sha256": "babcb28cdde200bc15666f9a66c4f9bdc72e7c126bfb38daf21ba77cc999e2e3",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean/KernelTransformRules.lean",
+      "sha256": "babcb28cdde200bc15666f9a66c4f9bdc72e7c126bfb38daf21ba77cc999e2e3",
+      "bytes": 1014
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean/MacMahonRules.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean/MacMahonRules.lean",
+      "source_sha256": "236bffe9b247d2ee5cb2e79a434cb7e0484b61ddd2e93a532a305e2b69112a2c",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean/MacMahonRules.lean",
+      "sha256": "236bffe9b247d2ee5cb2e79a434cb7e0484b61ddd2e93a532a305e2b69112a2c",
+      "bytes": 3554
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean/MonomorphicCheck.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean/MonomorphicCheck.lean",
+      "source_sha256": "1e8c4e15a20ab8edd7a4e9cd8c3e94b7a8dee2e901373d5dec43a2f234e4d6dd",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean/MonomorphicCheck.lean",
+      "sha256": "1e8c4e15a20ab8edd7a4e9cd8c3e94b7a8dee2e901373d5dec43a2f234e4d6dd",
+      "bytes": 2144
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean/OriginalTrainCheck.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean/OriginalTrainCheck.lean",
+      "source_sha256": "1b3853629bc12944018123ea67912fe497256324f375958f39750c387b78f8cb",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean/OriginalTrainCheck.lean",
+      "sha256": "1b3853629bc12944018123ea67912fe497256324f375958f39750c387b78f8cb",
+      "bytes": 2339
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean/PartialCheck.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean/PartialCheck.lean",
+      "source_sha256": "b0de52732d9828f6b755a57c176c456c1119cd757908176c80884b6ea4e65d5e",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean/PartialCheck.lean",
+      "sha256": "b0de52732d9828f6b755a57c176c456c1119cd757908176c80884b6ea4e65d5e",
+      "bytes": 1938
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean/TelescopingCheck.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean/TelescopingCheck.lean",
+      "source_sha256": "5b649488a010a304b6c5eab8c916cddfacdc5f78fd6b63aa8656ec3b990555c7",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean/TelescopingCheck.lean",
+      "sha256": "5b649488a010a304b6c5eab8c916cddfacdc5f78fd6b63aa8656ec3b990555c7",
+      "bytes": 2141
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/lean_checker.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/lean_checker.py",
+      "source_sha256": "67d9fc09014c6bbe216f4508d3195940e2f9651f4e25eb1632d23acb6cc3bcc8",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/lean_checker.py",
+      "sha256": "67d9fc09014c6bbe216f4508d3195940e2f9651f4e25eb1632d23acb6cc3bcc8",
+      "bytes": 26712
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/llm_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/llm_adapter.py",
+      "source_sha256": "5f8af68c29c030293798b82769142c7b0d8e9b50b99a79284daecf0d43bd876c",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/llm_adapter.py",
+      "sha256": "5f8af68c29c030293798b82769142c7b0d8e9b50b99a79284daecf0d43bd876c",
+      "bytes": 1308
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/loop.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/loop.py",
+      "source_sha256": "936568ebc82588712bb53e2c0b2f0453213716d08dbd789d2f8e80e71dc9524f",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/loop.py",
+      "sha256": "936568ebc82588712bb53e2c0b2f0453213716d08dbd789d2f8e80e71dc9524f",
+      "bytes": 25859
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/macmahon_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/macmahon_adapter.py",
+      "source_sha256": "07dc8fa7dc5ff002096ba41358fda1a4e38f050c5c3c6dd358837ec39f3ba269",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/macmahon_adapter.py",
+      "sha256": "07dc8fa7dc5ff002096ba41358fda1a4e38f050c5c3c6dd358837ec39f3ba269",
+      "bytes": 5261
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/macmahon_check.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/macmahon_check.py",
+      "source_sha256": "d31e30fa6eb2d2f836296e6f8dbc5a6619372a00a90ccfa6040e1a008f7a2c8d",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/macmahon_check.py",
+      "sha256": "d31e30fa6eb2d2f836296e6f8dbc5a6619372a00a90ccfa6040e1a008f7a2c8d",
+      "bytes": 10301
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/macmahon_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/macmahon_frontend.py",
+      "source_sha256": "8202d85925262d5791ac62ef97ccd9b87f2af174f998a2baf3de9bd9878b8ad0",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/macmahon_frontend.py",
+      "sha256": "8202d85925262d5791ac62ef97ccd9b87f2af174f998a2baf3de9bd9878b8ad0",
+      "bytes": 11498
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/macmahon_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/macmahon_translation.py",
+      "source_sha256": "2b125d09c38a35f832d759ab5f6993a7d78f42c10d62801b730e427984d522d7",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/macmahon_translation.py",
+      "sha256": "2b125d09c38a35f832d759ab5f6993a7d78f42c10d62801b730e427984d522d7",
+      "bytes": 2362
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/math_lean_profile.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/math_lean_profile.py",
+      "source_sha256": "69a1d4face870f66f74e98e074887ac3900fa1c1dc37404fb32429f31c4b858a",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/math_lean_profile.py",
+      "sha256": "69a1d4face870f66f74e98e074887ac3900fa1c1dc37404fb32429f31c4b858a",
+      "bytes": 32487
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/method_registry.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/method_registry.py",
+      "source_sha256": "bff978a28a1bed37de9ea755741eb59d254bb7f8154e532ce3391fd5d32282b0",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/method_registry.py",
+      "sha256": "bff978a28a1bed37de9ea755741eb59d254bb7f8154e532ce3391fd5d32282b0",
+      "bytes": 24964
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/method_tasks.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/method_tasks.py",
+      "source_sha256": "a2e4b86f679dd7d6d8afc0a8d5ccf2e32b61eb3b55dd12d6673164ec7966cf0c",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/method_tasks.py",
+      "sha256": "a2e4b86f679dd7d6d8afc0a8d5ccf2e32b61eb3b55dd12d6673164ec7966cf0c",
+      "bytes": 5289
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/models.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/models.py",
+      "source_sha256": "fe2e6610fe1668dd487cc06cb7166ab474a1ac055306d13037743bea098e28a5",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/models.py",
+      "sha256": "fe2e6610fe1668dd487cc06cb7166ab474a1ac055306d13037743bea098e28a5",
+      "bytes": 8852
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/noncommutative_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/noncommutative_adapter.py",
+      "source_sha256": "dca80ef100a770d5aaab3d3a095677053b195a2ec85a18090fd61da0284449da",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/noncommutative_adapter.py",
+      "sha256": "dca80ef100a770d5aaab3d3a095677053b195a2ec85a18090fd61da0284449da",
+      "bytes": 9683
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/noncommutative_check.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/noncommutative_check.py",
+      "source_sha256": "29fc9398b920945be61d9b5883c13aed259a4efa7affb2321922c5fbb473b181",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/noncommutative_check.py",
+      "sha256": "29fc9398b920945be61d9b5883c13aed259a4efa7affb2321922c5fbb473b181",
+      "bytes": 9092
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/noncommutative_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/noncommutative_frontend.py",
+      "source_sha256": "b6e9c9f6f396b86f82b76230c6bf021938804bc296c30123d9d495a58288eee6",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/noncommutative_frontend.py",
+      "sha256": "b6e9c9f6f396b86f82b76230c6bf021938804bc296c30123d9d495a58288eee6",
+      "bytes": 10125
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/noncommutative_worker.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/noncommutative_worker.py",
+      "source_sha256": "dbc6f64e361b0d99b00d147c842e4dc31a669ecba9ba95b6a1c821ac7ee757c5",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/noncommutative_worker.py",
+      "sha256": "dbc6f64e361b0d99b00d147c842e4dc31a669ecba9ba95b6a1c821ac7ee757c5",
+      "bytes": 2052
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/process.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/process.py",
+      "source_sha256": "3223337e04c828509e0dbd7311ed478fc93a8de4e9cffe17448a91fe025eaaff",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/process.py",
+      "sha256": "3223337e04c828509e0dbd7311ed478fc93a8de4e9cffe17448a91fe025eaaff",
+      "bytes": 10790
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/product_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/product_adapter.py",
+      "source_sha256": "e9184c8caa300efb643c8628a3f906a7d09852a83d80f8d810a9a02e8c6d08bb",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/product_adapter.py",
+      "sha256": "e9184c8caa300efb643c8628a3f906a7d09852a83d80f8d810a9a02e8c6d08bb",
+      "bytes": 9435
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/product_check.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/product_check.py",
+      "source_sha256": "59e2edf82a3f41688d31746d2adf20883e31b3fa01083df00f3d98aeab89f003",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/product_check.py",
+      "sha256": "59e2edf82a3f41688d31746d2adf20883e31b3fa01083df00f3d98aeab89f003",
+      "bytes": 11804
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/product_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/product_frontend.py",
+      "source_sha256": "ce5564816456fbd28a81469962dde619154835a7e88aed431e60e84a381b27cd",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/product_frontend.py",
+      "sha256": "ce5564816456fbd28a81469962dde619154835a7e88aed431e60e84a381b27cd",
+      "bytes": 10075
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/product_worker.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/product_worker.py",
+      "source_sha256": "8e48e85da1c1589f6946be90812b88a7235a719f08e24135ec4085e82fe1cf83",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/product_worker.py",
+      "sha256": "8e48e85da1c1589f6946be90812b88a7235a719f08e24135ec4085e82fe1cf83",
+      "bytes": 2015
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/proof_profiles.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/proof_profiles.py",
+      "source_sha256": "3cf8d0b432984a2e816eb5b18b4109e3b2e0285916be755b76a7a941edd52541",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/proof_profiles.py",
+      "sha256": "3cf8d0b432984a2e816eb5b18b4109e3b2e0285916be755b76a7a941edd52541",
+      "bytes": 17095
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/recovery.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/recovery.py",
+      "source_sha256": "222678c4965bb9208095ca35509f1ecd24113afcb0546bac0b5e6c8a4cb7bead",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/recovery.py",
+      "sha256": "222678c4965bb9208095ca35509f1ecd24113afcb0546bac0b5e6c8a4cb7bead",
+      "bytes": 4051
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/recurrence_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/recurrence_adapter.py",
+      "source_sha256": "51e2be0495847aa194be6144058e9b58a12ca66f2ceb2045bbb0fc54797e4b59",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/recurrence_adapter.py",
+      "sha256": "51e2be0495847aa194be6144058e9b58a12ca66f2ceb2045bbb0fc54797e4b59",
+      "bytes": 8550
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/recurrence_closure.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/recurrence_closure.py",
+      "source_sha256": "8ffdec49147c158ed7b56579e007f754128e4df63282897d58263b85d42d4d26",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/recurrence_closure.py",
+      "sha256": "8ffdec49147c158ed7b56579e007f754128e4df63282897d58263b85d42d4d26",
+      "bytes": 13521
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/recurrence_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/recurrence_frontend.py",
+      "source_sha256": "c780a0cf5ad868e9dc8e8262c1fac8da7832fa84c7e21f3d48c5b4b2656fc2e5",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/recurrence_frontend.py",
+      "sha256": "c780a0cf5ad868e9dc8e8262c1fac8da7832fa84c7e21f3d48c5b4b2656fc2e5",
+      "bytes": 11563
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/recurrence_lean_profile.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/recurrence_lean_profile.py",
+      "source_sha256": "65dd1b9f2683bb9434fd74cdf520f703ac5527031b6898bdec17615cc87cbcfd",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/recurrence_lean_profile.py",
+      "sha256": "65dd1b9f2683bb9434fd74cdf520f703ac5527031b6898bdec17615cc87cbcfd",
+      "bytes": 1142
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/recurrence_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/recurrence_translation.py",
+      "source_sha256": "a297061ea41e1f57ae8e03716cd53035a6df88610fbee5cbc53ec67b1878d124",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/recurrence_translation.py",
+      "sha256": "a297061ea41e1f57ae8e03716cd53035a6df88610fbee5cbc53ec67b1878d124",
+      "bytes": 8081
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/router.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/router.py",
+      "source_sha256": "5e7d3d7fb5781f2481a02e25d263dc2266a1adddc23ff54593c6faf981402f5c",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/router.py",
+      "sha256": "5e7d3d7fb5781f2481a02e25d263dc2266a1adddc23ff54593c6faf981402f5c",
+      "bytes": 3218
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/storage.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/storage.py",
+      "source_sha256": "1cbee934166646debd5a2060a1070f3e5ad7ccc1f33b6203bf1e871a792b9a60",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/storage.py",
+      "sha256": "1cbee934166646debd5a2060a1070f3e5ad7ccc1f33b6203bf1e871a792b9a60",
+      "bytes": 7132
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/symbolic_methods.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/symbolic_methods.py",
+      "source_sha256": "60d0ba281e6ddec8ca53523cce365a4587276fff61c0f418c68e95bfc0a3de95",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/symbolic_methods.py",
+      "sha256": "60d0ba281e6ddec8ca53523cce365a4587276fff61c0f418c68e95bfc0a3de95",
+      "bytes": 36697
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/symbolic_worker.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/symbolic_worker.py",
+      "source_sha256": "88181fd5fad01be0cc4c730d540b1efbe2099aa2dc3b6ace6297cc930f8d7256",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/symbolic_worker.py",
+      "sha256": "88181fd5fad01be0cc4c730d540b1efbe2099aa2dc3b6ace6297cc930f8d7256",
+      "bytes": 4222
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/telescoping_closure.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/telescoping_closure.py",
+      "source_sha256": "f6f7d7e6db17efc2582a12583c779dc3f595d4f05e26562db8874e65a04b8110",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/telescoping_closure.py",
+      "sha256": "f6f7d7e6db17efc2582a12583c779dc3f595d4f05e26562db8874e65a04b8110",
+      "bytes": 8450
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/telescoping_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/telescoping_translation.py",
+      "source_sha256": "6122c3281fc36dcbb667197fbfd0cf7e054282c30a88c9493d9ba5510d732b55",
+      "category": "agent_runtime",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/telescoping_translation.py",
+      "sha256": "6122c3281fc36dcbb667197fbfd0cf7e054282c30a88c9493d9ba5510d732b55",
+      "bytes": 7281
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/closure_smoke.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/closure_smoke.py",
+      "source_sha256": "2f0ef70745e39cd514ac7383b9aa3c3a251e94b3de7001a49fb0bb003a576e37",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/closure_smoke.py",
+      "sha256": "2f0ef70745e39cd514ac7383b9aa3c3a251e94b3de7001a49fb0bb003a576e37",
+      "bytes": 16443
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/export_phase3_evidence.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/export_phase3_evidence.py",
+      "source_sha256": "7eda33395158d77a011738519237ff5bdd5e687a2d7ba1952bc7aecec0331c46",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/export_phase3_evidence.py",
+      "sha256": "7eda33395158d77a011738519237ff5bdd5e687a2d7ba1952bc7aecec0331c46",
+      "bytes": 12538
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/local_method_smoke.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/local_method_smoke.py",
+      "source_sha256": "65406ecef91a63b349002945d21e05371abd575d758da87eb70e3cc59d22360d",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/local_method_smoke.py",
+      "sha256": "65406ecef91a63b349002945d21e05371abd575d758da87eb70e3cc59d22360d",
+      "bytes": 10186
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/real_smoke.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/real_smoke.py",
+      "source_sha256": "ca447581559fad63c85b04ebf029e0dd64eaae6fed25bfa651cabe8b253a9e28",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/real_smoke.py",
+      "sha256": "ca447581559fad63c85b04ebf029e0dd64eaae6fed25bfa651cabe8b253a9e28",
+      "bytes": 3225
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/recurrence_closure_smoke.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/recurrence_closure_smoke.py",
+      "source_sha256": "9f744aff2e0884802fa28f0baf5a3b991c25a8d80f47ff8aa771826412d612e6",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/recurrence_closure_smoke.py",
+      "sha256": "9f744aff2e0884802fa28f0baf5a3b991c25a8d80f47ff8aa771826412d612e6",
+      "bytes": 24879
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/recurrence_smoke.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/recurrence_smoke.py",
+      "source_sha256": "8da5537cff1da652c3a3c5aa444afcca27e5b7bcdb7411f3baef94c99cf61de6",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/recurrence_smoke.py",
+      "sha256": "8da5537cff1da652c3a3c5aa444afcca27e5b7bcdb7411f3baef94c99cf61de6",
+      "bytes": 15921
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/source_method_smoke.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/source_method_smoke.py",
+      "source_sha256": "7f44f0c8b90a5545f49d10eac18a84ac3588db85801579316aad65973b52147a",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/source_method_smoke.py",
+      "sha256": "7f44f0c8b90a5545f49d10eac18a84ac3588db85801579316aad65973b52147a",
+      "bytes": 9402
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/telescoping_smoke.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/telescoping_smoke.py",
+      "source_sha256": "089760de4635778745a5789ae78a8777f007ffc0f20beec5a8245adbb0500b5a",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/telescoping_smoke.py",
+      "sha256": "089760de4635778745a5789ae78a8777f007ffc0f20beec5a8245adbb0500b5a",
+      "bytes": 6067
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_adapters.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_adapters.py",
+      "source_sha256": "87a56e35ac65ec946d4e4e8e611f61c3f37c850b5d14c5170a87c40c2abd252c",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_adapters.py",
+      "sha256": "87a56e35ac65ec946d4e4e8e611f61c3f37c850b5d14c5170a87c40c2abd252c",
+      "bytes": 12283
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_checkpoint_pause.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_checkpoint_pause.py",
+      "source_sha256": "0171f6d66cbcf190c33b0243ca276cb2345595a453ea2809f69ff71b59c62f62",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_checkpoint_pause.py",
+      "sha256": "0171f6d66cbcf190c33b0243ca276cb2345595a453ea2809f69ff71b59c62f62",
+      "bytes": 4110
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_cli.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_cli.py",
+      "source_sha256": "5c96318b5ae111729453d822ae719505a36697f55d102338b6916d2a5d690078",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_cli.py",
+      "sha256": "5c96318b5ae111729453d822ae719505a36697f55d102338b6916d2a5d690078",
+      "bytes": 9111
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_closure_checker.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_closure_checker.py",
+      "source_sha256": "c8414101c25bbdfb018905f6034b7b9866ded5a0171b219fb96418e7ae7ba8fc",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_closure_checker.py",
+      "sha256": "c8414101c25bbdfb018905f6034b7b9866ded5a0171b219fb96418e7ae7ba8fc",
+      "bytes": 9859
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_closure_flow.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_closure_flow.py",
+      "source_sha256": "630907fd40ff5d7e581dc6a9304db1d3fb39089ece93124d4c9ccd065f709b80",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_closure_flow.py",
+      "sha256": "630907fd40ff5d7e581dc6a9304db1d3fb39089ece93124d4c9ccd065f709b80",
+      "bytes": 8559
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_closure_math.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_closure_math.py",
+      "source_sha256": "04cd906f1f14db8a9c3b1be8b74a554406fdb927e1fdad0edc609b3cd2be0123",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_closure_math.py",
+      "sha256": "04cd906f1f14db8a9c3b1be8b74a554406fdb927e1fdad0edc609b3cd2be0123",
+      "bytes": 8428
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_closure_review.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_closure_review.py",
+      "source_sha256": "f9adef06ac9ac5b13902284dc628852fb4fbbfee6acd5347ff4ebffacea67bca",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_closure_review.py",
+      "sha256": "f9adef06ac9ac5b13902284dc628852fb4fbbfee6acd5347ff4ebffacea67bca",
+      "bytes": 5758
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_coefficient_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_coefficient_adapter.py",
+      "source_sha256": "2d7920dfb41982ee6b93fa9ba34b8b25f849b7095d7e1a378da87928d3643b0a",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_coefficient_adapter.py",
+      "sha256": "2d7920dfb41982ee6b93fa9ba34b8b25f849b7095d7e1a378da87928d3643b0a",
+      "bytes": 3721
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_coefficient_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_coefficient_frontend.py",
+      "source_sha256": "0c5d57f65dfe3b0ba0cd73aab07beca65af68156d7e6b37c7f8512840afde4a2",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_coefficient_frontend.py",
+      "sha256": "0c5d57f65dfe3b0ba0cd73aab07beca65af68156d7e6b37c7f8512840afde4a2",
+      "bytes": 4084
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_coefficient_profile.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_coefficient_profile.py",
+      "source_sha256": "1fe52f5a749cb7558812fae2800c46371eb425ec4e5eed1d6baadca49fdbe909",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_coefficient_profile.py",
+      "sha256": "1fe52f5a749cb7558812fae2800c46371eb425ec4e5eed1d6baadca49fdbe909",
+      "bytes": 3266
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_coefficient_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_coefficient_translation.py",
+      "source_sha256": "e2adc47be00eb10fc907ed7759110412c703b1890c377ba3fb78ca1de15f2a4f",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_coefficient_translation.py",
+      "sha256": "e2adc47be00eb10fc907ed7759110412c703b1890c377ba3fb78ca1de15f2a4f",
+      "bytes": 8152
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_combinatorial_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_combinatorial_adapter.py",
+      "source_sha256": "7f4f51b022d135d5ac3ec863fd62715468eec7c8f77b84e177b7fd8eda26487f",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_combinatorial_adapter.py",
+      "sha256": "7f4f51b022d135d5ac3ec863fd62715468eec7c8f77b84e177b7fd8eda26487f",
+      "bytes": 3848
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_combinatorial_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_combinatorial_core.py",
+      "source_sha256": "ba7845810e56165d46df37013e72250c4869e91523b6b9ddec755db576428cf3",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_combinatorial_core.py",
+      "sha256": "ba7845810e56165d46df37013e72250c4869e91523b6b9ddec755db576428cf3",
+      "bytes": 7649
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_combinatorial_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_combinatorial_frontend.py",
+      "source_sha256": "792969df2cd9c2fc417fbcc4fe6005e946f9ff3b0fa2c691aee26492379e86f8",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_combinatorial_frontend.py",
+      "sha256": "792969df2cd9c2fc417fbcc4fe6005e946f9ff3b0fa2c691aee26492379e86f8",
+      "bytes": 4184
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_determinant_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_determinant_adapter.py",
+      "source_sha256": "3a72669479f1541f3d976bb5f122e5569b7f669adfc086c74d53f36c5e358612",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_determinant_adapter.py",
+      "sha256": "3a72669479f1541f3d976bb5f122e5569b7f669adfc086c74d53f36c5e358612",
+      "bytes": 3453
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_determinant_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_determinant_frontend.py",
+      "source_sha256": "f3045f2e7935f1261b03cffd88f70939519645f29eba36b56941c6fc64bbad25",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_determinant_frontend.py",
+      "sha256": "f3045f2e7935f1261b03cffd88f70939519645f29eba36b56941c6fc64bbad25",
+      "bytes": 4936
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_determinant_profile.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_determinant_profile.py",
+      "source_sha256": "20ecf093b0bbab2f83ee2a9fc914582d3f4ba5a0e0b87b67c905fb38cde643d1",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_determinant_profile.py",
+      "sha256": "20ecf093b0bbab2f83ee2a9fc914582d3f4ba5a0e0b87b67c905fb38cde643d1",
+      "bytes": 4156
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_determinant_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_determinant_translation.py",
+      "source_sha256": "51fffe7ab26df877e10834f84ed8d955c462c7d74cd9bf54ac24aa0e410f8655",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_determinant_translation.py",
+      "sha256": "51fffe7ab26df877e10834f84ed8d955c462c7d74cd9bf54ac24aa0e410f8655",
+      "bytes": 5138
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_difference_ring_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_difference_ring_adapter.py",
+      "source_sha256": "03f35b2e0b6856cddcea2e534ed4c4933e43f60fea08f077aaa3460d83967ef8",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_difference_ring_adapter.py",
+      "sha256": "03f35b2e0b6856cddcea2e534ed4c4933e43f60fea08f077aaa3460d83967ef8",
+      "bytes": 4227
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_difference_ring_check.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_difference_ring_check.py",
+      "source_sha256": "6d8fcd5777b998b3c0f5babcf687673f57769f78937286b5bd82e1a8690baa37",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_difference_ring_check.py",
+      "sha256": "6d8fcd5777b998b3c0f5babcf687673f57769f78937286b5bd82e1a8690baa37",
+      "bytes": 4356
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_difference_ring_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_difference_ring_frontend.py",
+      "source_sha256": "0371972322031ccd4a55e3d69e7afde7f09370d0e150a321db214ad368f12bcc",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_difference_ring_frontend.py",
+      "sha256": "0371972322031ccd4a55e3d69e7afde7f09370d0e150a321db214ad368f12bcc",
+      "bytes": 3967
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_difference_ring_profile.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_difference_ring_profile.py",
+      "source_sha256": "3051e5fb01fa5919660241da9b91b856ad05910803993eee5b0c5928ba7d7015",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_difference_ring_profile.py",
+      "sha256": "3051e5fb01fa5919660241da9b91b856ad05910803993eee5b0c5928ba7d7015",
+      "bytes": 4181
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_difference_ring_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_difference_ring_translation.py",
+      "source_sha256": "9fb3b9462fe5eb5252649db1871785878b676f746736ababfdd1bf5558ed3892",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_difference_ring_translation.py",
+      "sha256": "9fb3b9462fe5eb5252649db1871785878b676f746736ababfdd1bf5558ed3892",
+      "bytes": 3614
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_executor.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_executor.py",
+      "source_sha256": "1c8b339f49f44b2336549d0df379b2e9db61cd81e6824038bb3175fe0f9a911e",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_executor.py",
+      "sha256": "1c8b339f49f44b2336549d0df379b2e9db61cd81e6824038bb3175fe0f9a911e",
+      "bytes": 10568
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_formal_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_formal_frontend.py",
+      "source_sha256": "97503e9930c83ce4732aea681a1b22f8e7effd4be75631db32c2b20e3df47c7b",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_formal_frontend.py",
+      "sha256": "97503e9930c83ce4732aea681a1b22f8e7effd4be75631db32c2b20e3df47c7b",
+      "bytes": 5441
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_graph_router.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_graph_router.py",
+      "source_sha256": "594497016ce1ee4c26a9f6b90f841c4143b008045be167d7b6ba6b9a355e55e5",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_graph_router.py",
+      "sha256": "594497016ce1ee4c26a9f6b90f841c4143b008045be167d7b6ba6b9a355e55e5",
+      "bytes": 12514
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_interpolation_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_interpolation_adapter.py",
+      "source_sha256": "27a19a15248668feeef2c61bd9cf493f1a04cbc94bfef6f69532e51cf37493a5",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_interpolation_adapter.py",
+      "sha256": "27a19a15248668feeef2c61bd9cf493f1a04cbc94bfef6f69532e51cf37493a5",
+      "bytes": 3618
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_interpolation_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_interpolation_frontend.py",
+      "source_sha256": "7a7a8e13fdca3b6eece89f2cf3987b7cbdc2e594d1faa62aa4825acd8b18a67a",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_interpolation_frontend.py",
+      "sha256": "7a7a8e13fdca3b6eece89f2cf3987b7cbdc2e594d1faa62aa4825acd8b18a67a",
+      "bytes": 4604
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_interpolation_profile.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_interpolation_profile.py",
+      "source_sha256": "d8b21197132df08aae77c445cb1c8e54742c6dfd93e6034ac3c652d6aff98dad",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_interpolation_profile.py",
+      "sha256": "d8b21197132df08aae77c445cb1c8e54742c6dfd93e6034ac3c652d6aff98dad",
+      "bytes": 4188
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_interpolation_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_interpolation_translation.py",
+      "source_sha256": "008e3ddd8ba37aad1d5c9cdfbe3c6bf2c8c3cbb05e9325bfdf87b6b89626aa6e",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_interpolation_translation.py",
+      "sha256": "008e3ddd8ba37aad1d5c9cdfbe3c6bf2c8c3cbb05e9325bfdf87b6b89626aa6e",
+      "bytes": 5189
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_kernel_transform_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_kernel_transform_adapter.py",
+      "source_sha256": "eb7dad2d2b7d088f52d910e602439a829010a67fe0d9c5c581ad47f7b8702fa3",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_kernel_transform_adapter.py",
+      "sha256": "eb7dad2d2b7d088f52d910e602439a829010a67fe0d9c5c581ad47f7b8702fa3",
+      "bytes": 5012
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_kernel_transform_check.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_kernel_transform_check.py",
+      "source_sha256": "0c4c3abb976305c8c1017a3ada5be6a7cba483db91e2a3d23c72089b9d1a587f",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_kernel_transform_check.py",
+      "sha256": "0c4c3abb976305c8c1017a3ada5be6a7cba483db91e2a3d23c72089b9d1a587f",
+      "bytes": 5508
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_kernel_transform_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_kernel_transform_core.py",
+      "source_sha256": "36765b6dd7a1aca35def3366e89a35c9ccca18ec02b9309d3f18d62d3c6078f1",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_kernel_transform_core.py",
+      "sha256": "36765b6dd7a1aca35def3366e89a35c9ccca18ec02b9309d3f18d62d3c6078f1",
+      "bytes": 3775
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_kernel_transform_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_kernel_transform_frontend.py",
+      "source_sha256": "72c8fd78d826521aec6fca96efda3aec1ba083e8f75797bf3378860e2ed77497",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_kernel_transform_frontend.py",
+      "sha256": "72c8fd78d826521aec6fca96efda3aec1ba083e8f75797bf3378860e2ed77497",
+      "bytes": 4157
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_kernel_transform_profile.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_kernel_transform_profile.py",
+      "source_sha256": "757cd3450e29425049701663c583ef1842a00ae323968fd479800429c29caa75",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_kernel_transform_profile.py",
+      "sha256": "757cd3450e29425049701663c583ef1842a00ae323968fd479800429c29caa75",
+      "bytes": 4246
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_kernel_transform_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_kernel_transform_translation.py",
+      "source_sha256": "d677f83b71a8b03cbdd525994ac535923e1d54b9894566cb427b3595cff6064d",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_kernel_transform_translation.py",
+      "sha256": "d677f83b71a8b03cbdd525994ac535923e1d54b9894566cb427b3595cff6064d",
+      "bytes": 4045
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_lean_checker.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_lean_checker.py",
+      "source_sha256": "73b0a164ad2f5f9a8e5cd0c1d790eefe823b9fbb8af915305e6bf6fc68c60494",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_lean_checker.py",
+      "sha256": "73b0a164ad2f5f9a8e5cd0c1d790eefe823b9fbb8af915305e6bf6fc68c60494",
+      "bytes": 12075
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_loop.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_loop.py",
+      "source_sha256": "a1acc65f6cfb61cd296175f1fcce09bcbe54cd65c897af6cf324beea89fe8115",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_loop.py",
+      "sha256": "a1acc65f6cfb61cd296175f1fcce09bcbe54cd65c897af6cf324beea89fe8115",
+      "bytes": 17546
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_macmahon_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_macmahon_adapter.py",
+      "source_sha256": "bdf983614c9be096dcc32ab1732995762bc0d7faa1db98b67b721b22956b3df4",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_macmahon_adapter.py",
+      "sha256": "bdf983614c9be096dcc32ab1732995762bc0d7faa1db98b67b721b22956b3df4",
+      "bytes": 4184
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_macmahon_check.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_macmahon_check.py",
+      "source_sha256": "a1907a97b83dcf82b1b9c62d16d2522f5bc3fe5fd360da121dc84cf397a16c9c",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_macmahon_check.py",
+      "sha256": "a1907a97b83dcf82b1b9c62d16d2522f5bc3fe5fd360da121dc84cf397a16c9c",
+      "bytes": 4834
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_macmahon_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_macmahon_frontend.py",
+      "source_sha256": "d99c3360bffc0d07eab892dc2d3dc230a7dcc143074081890f23f3c37ebf54c6",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_macmahon_frontend.py",
+      "sha256": "d99c3360bffc0d07eab892dc2d3dc230a7dcc143074081890f23f3c37ebf54c6",
+      "bytes": 3780
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_macmahon_profile.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_macmahon_profile.py",
+      "source_sha256": "18aaa984a61a439609f135b705ac76cb48015b753fa20e8c5d82403630b20eb1",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_macmahon_profile.py",
+      "sha256": "18aaa984a61a439609f135b705ac76cb48015b753fa20e8c5d82403630b20eb1",
+      "bytes": 4666
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_macmahon_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_macmahon_translation.py",
+      "source_sha256": "4008052a22618158fe9876a0eba7b8e71add3f250ece08099d9b52f8e486f0b0",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_macmahon_translation.py",
+      "sha256": "4008052a22618158fe9876a0eba7b8e71add3f250ece08099d9b52f8e486f0b0",
+      "bytes": 3190
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_method_demo.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_method_demo.py",
+      "source_sha256": "7d5c68e0d90dbf6ab2c74e708808441e2f619a7a45c37d1b80161565cc80b706",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_method_demo.py",
+      "sha256": "7d5c68e0d90dbf6ab2c74e708808441e2f619a7a45c37d1b80161565cc80b706",
+      "bytes": 2591
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_method_registry.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_method_registry.py",
+      "source_sha256": "75e77b66ecd6a589e8955203076f60a6d52e88e83c1de0c1378080b78f622a83",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_method_registry.py",
+      "sha256": "75e77b66ecd6a589e8955203076f60a6d52e88e83c1de0c1378080b78f622a83",
+      "bytes": 6894
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_models_storage.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_models_storage.py",
+      "source_sha256": "9d67d2f320a157f7328f7864fafdc062a916d6474d071af8c88b945e30554edc",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_models_storage.py",
+      "sha256": "9d67d2f320a157f7328f7864fafdc062a916d6474d071af8c88b945e30554edc",
+      "bytes": 6222
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_noncommutative_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_noncommutative_adapter.py",
+      "source_sha256": "0ee04c2f1f04a849e45c439133a95b73c748e0e1175d513acccada0e3f8719b7",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_noncommutative_adapter.py",
+      "sha256": "0ee04c2f1f04a849e45c439133a95b73c748e0e1175d513acccada0e3f8719b7",
+      "bytes": 3869
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_noncommutative_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_noncommutative_core.py",
+      "source_sha256": "c605c4e8c11442b8387de2c5d4d6b665085e57e987a6ab3da3d25a456e121cda",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_noncommutative_core.py",
+      "sha256": "c605c4e8c11442b8387de2c5d4d6b665085e57e987a6ab3da3d25a456e121cda",
+      "bytes": 5754
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_noncommutative_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_noncommutative_frontend.py",
+      "source_sha256": "f6633b8caa37e7bd8ccaac7429c215ad1de1b75df75d325c0254bc65c3b6cf0c",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_noncommutative_frontend.py",
+      "sha256": "f6633b8caa37e7bd8ccaac7429c215ad1de1b75df75d325c0254bc65c3b6cf0c",
+      "bytes": 4740
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_phase3_contract.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_phase3_contract.py",
+      "source_sha256": "30dcdf235383ee1b982085cd78d2974ebc0440a8855afba26dc0b4e18cab8a16",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_phase3_contract.py",
+      "sha256": "30dcdf235383ee1b982085cd78d2974ebc0440a8855afba26dc0b4e18cab8a16",
+      "bytes": 5394
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_product_adapter.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_product_adapter.py",
+      "source_sha256": "6ad52c65d2b389ac10d2a54681d284f3e94c3e5e8f2ca4904c00e3e761a15743",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_product_adapter.py",
+      "sha256": "6ad52c65d2b389ac10d2a54681d284f3e94c3e5e8f2ca4904c00e3e761a15743",
+      "bytes": 3765
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_product_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_product_core.py",
+      "source_sha256": "4667953170db7be7f88ea80909fdd61cb9585f090d799dbdb6b26304977aacdf",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_product_core.py",
+      "sha256": "4667953170db7be7f88ea80909fdd61cb9585f090d799dbdb6b26304977aacdf",
+      "bytes": 6457
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_product_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_product_frontend.py",
+      "source_sha256": "90311e931e76d1c0a59e8a02ebe3f0888515db71d6c2abd8c458a1efb6da3717",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_product_frontend.py",
+      "sha256": "90311e931e76d1c0a59e8a02ebe3f0888515db71d6c2abd8c458a1efb6da3717",
+      "bytes": 4005
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_profile_universes.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_profile_universes.py",
+      "source_sha256": "a1c4892165971b7c450082c7648250a5807574339a868cdb23478cce873fce15",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_profile_universes.py",
+      "sha256": "a1c4892165971b7c450082c7648250a5807574339a868cdb23478cce873fce15",
+      "bytes": 4848
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_proof_profiles.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_proof_profiles.py",
+      "source_sha256": "e29cb39cbbe819f33db6897a28796b4a5c2eb9376414b4b8f76a7046a90e4bde",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_proof_profiles.py",
+      "sha256": "e29cb39cbbe819f33db6897a28796b4a5c2eb9376414b4b8f76a7046a90e4bde",
+      "bytes": 15986
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_recurrence_checker.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_recurrence_checker.py",
+      "source_sha256": "b80498c1dfdc1c531d515819210e4270852f62480275d3d1cd014f4314499024",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_recurrence_checker.py",
+      "sha256": "b80498c1dfdc1c531d515819210e4270852f62480275d3d1cd014f4314499024",
+      "bytes": 4453
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_recurrence_closure.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_recurrence_closure.py",
+      "source_sha256": "227a84fe1f1a810bfe316ee8353016199df636423bb22c2e6806a2e6e53b55ae",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_recurrence_closure.py",
+      "sha256": "227a84fe1f1a810bfe316ee8353016199df636423bb22c2e6806a2e6e53b55ae",
+      "bytes": 11031
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_recurrence_frontend.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_recurrence_frontend.py",
+      "source_sha256": "dcbae11acbb0dd26989f65c43ab2c7cadead383db4f16270aa3293813028d5fa",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_recurrence_frontend.py",
+      "sha256": "dcbae11acbb0dd26989f65c43ab2c7cadead383db4f16270aa3293813028d5fa",
+      "bytes": 2865
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_recurrence_method.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_recurrence_method.py",
+      "source_sha256": "f7595957e848f831fec2273b71574f936c48c99f2a1e2ecff11136baeb6c5de1",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_recurrence_method.py",
+      "sha256": "f7595957e848f831fec2273b71574f936c48c99f2a1e2ecff11136baeb6c5de1",
+      "bytes": 2542
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_recurrence_review.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_recurrence_review.py",
+      "source_sha256": "d4608016222094dff7040292735989927d436968be352d13da5e5fc7478c8cf4",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_recurrence_review.py",
+      "sha256": "d4608016222094dff7040292735989927d436968be352d13da5e5fc7478c8cf4",
+      "bytes": 4044
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_recurrence_tasks.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_recurrence_tasks.py",
+      "source_sha256": "037231142e560cc3d912ccd03ae903e35c80f89e2cf5801108d11e7a9f73ca27",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_recurrence_tasks.py",
+      "sha256": "037231142e560cc3d912ccd03ae903e35c80f89e2cf5801108d11e7a9f73ca27",
+      "bytes": 8864
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_recurrence_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_recurrence_translation.py",
+      "source_sha256": "29e1c25e2a39b2f2fe98a9512d461a9b18ee031578ba37d68f4b3c8fb58092c3",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_recurrence_translation.py",
+      "sha256": "29e1c25e2a39b2f2fe98a9512d461a9b18ee031578ba37d68f4b3c8fb58092c3",
+      "bytes": 3733
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_registry_review.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_registry_review.py",
+      "source_sha256": "554f08c391ac1380b39badf74fc1ae9f077918783d262c1c550667c40b4211de",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_registry_review.py",
+      "sha256": "554f08c391ac1380b39badf74fc1ae9f077918783d262c1c550667c40b4211de",
+      "bytes": 3818
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_symbolic_methods.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_symbolic_methods.py",
+      "source_sha256": "6c5b337932af3f41f2747d92b3a5d06d5a65ddfbdfe5081b56c71932f7be817e",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_symbolic_methods.py",
+      "sha256": "6c5b337932af3f41f2747d92b3a5d06d5a65ddfbdfe5081b56c71932f7be817e",
+      "bytes": 7795
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_symbolic_review.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_symbolic_review.py",
+      "source_sha256": "fc1a4bb0fcee87c736f6a770ce390f4c4867be10b7371e3e540280bf72497077",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_symbolic_review.py",
+      "sha256": "fc1a4bb0fcee87c736f6a770ce390f4c4867be10b7371e3e540280bf72497077",
+      "bytes": 4486
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_symbolic_source_scope.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_symbolic_source_scope.py",
+      "source_sha256": "4eb6cb56e6d843dc150fddf6e930307786d23c82112b6a7ad6a47063b991f23b",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_symbolic_source_scope.py",
+      "sha256": "4eb6cb56e6d843dc150fddf6e930307786d23c82112b6a7ad6a47063b991f23b",
+      "bytes": 4807
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_telescoping_checker.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_telescoping_checker.py",
+      "source_sha256": "bdf80f77f52f4456764045ad032d56e28f7786cbb324c9b4e675ba574e3c1a05",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_telescoping_checker.py",
+      "sha256": "bdf80f77f52f4456764045ad032d56e28f7786cbb324c9b4e675ba574e3c1a05",
+      "bytes": 13682
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_telescoping_flow.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_telescoping_flow.py",
+      "source_sha256": "9e6e25cb87e4927e480bfd23102dd121ed0fd4ea33e4655a173012e3bdcc398f",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_telescoping_flow.py",
+      "sha256": "9e6e25cb87e4927e480bfd23102dd121ed0fd4ea33e4655a173012e3bdcc398f",
+      "bytes": 8346
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_telescoping_method.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_telescoping_method.py",
+      "source_sha256": "06a8df2679b69ad060fac428455cfa7e5c65804eb9a74eb0925fc6377c7491c1",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_telescoping_method.py",
+      "sha256": "06a8df2679b69ad060fac428455cfa7e5c65804eb9a74eb0925fc6377c7491c1",
+      "bytes": 6116
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/tests/test_telescoping_translation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/agent_v2/tests/test_telescoping_translation.py",
+      "source_sha256": "c564d547a2d678d296b9dc276a038a00093954b0864face6822c6698dbac8ed0",
+      "category": "test_or_smoke_helper",
+      "package_path": "final_validation_01/cases/final_frozen/source/agent_v2/tests/test_telescoping_translation.py",
+      "sha256": "c564d547a2d678d296b9dc276a038a00093954b0864face6822c6698dbac8ed0",
+      "bytes": 3948
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/benchmark/lean/Benchmark/Auxiliary.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/benchmark/lean/Benchmark/Auxiliary.lean",
+      "source_sha256": "43d0d24048f1d726bcd40e71a9db8ca5ca21c9e01cca66421f922ef035589c30",
+      "category": "mathematical_foundation_or_build_configuration",
+      "package_path": "final_validation_01/cases/final_frozen/source/benchmark/lean/Benchmark/Auxiliary.lean",
+      "sha256": "43d0d24048f1d726bcd40e71a9db8ca5ca21c9e01cca66421f922ef035589c30",
+      "bytes": 1599
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/benchmark/lean/Benchmark/Batch5Definitions.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/benchmark/lean/Benchmark/Batch5Definitions.lean",
+      "source_sha256": "f363f4f6b9e7c4676c1bbdfb587d90ae7362495f278730dd8e324f9bcb881775",
+      "category": "mathematical_foundation_or_build_configuration",
+      "package_path": "final_validation_01/cases/final_frozen/source/benchmark/lean/Benchmark/Batch5Definitions.lean",
+      "sha256": "f363f4f6b9e7c4676c1bbdfb587d90ae7362495f278730dd8e324f9bcb881775",
+      "bytes": 4428
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/benchmark/lean/Benchmark/BatchDefinitions.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/benchmark/lean/Benchmark/BatchDefinitions.lean",
+      "source_sha256": "bcf0b2cfc6b4cffd9cdf83942c3233491cda8848eb53f50f1c81c95a5874b80c",
+      "category": "mathematical_foundation_or_build_configuration",
+      "package_path": "final_validation_01/cases/final_frozen/source/benchmark/lean/Benchmark/BatchDefinitions.lean",
+      "sha256": "bcf0b2cfc6b4cffd9cdf83942c3233491cda8848eb53f50f1c81c95a5874b80c",
+      "bytes": 7348
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/benchmark/lean/Benchmark/Definitions.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/benchmark/lean/Benchmark/Definitions.lean",
+      "source_sha256": "a6361c499801dec2ead09a2ee65e1fc85ec5d029f065dc656eb239f6ea405621",
+      "category": "mathematical_foundation_or_build_configuration",
+      "package_path": "final_validation_01/cases/final_frozen/source/benchmark/lean/Benchmark/Definitions.lean",
+      "sha256": "a6361c499801dec2ead09a2ee65e1fc85ec5d029f065dc656eb239f6ea405621",
+      "bytes": 3213
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/benchmark/lean/Benchmark/Gaussian.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/benchmark/lean/Benchmark/Gaussian.lean",
+      "source_sha256": "2d4baad78917edeb734c4dfcfcc297c5143d1b1ee71914ea9cba9f3fd0f92ba3",
+      "category": "mathematical_foundation_or_build_configuration",
+      "package_path": "final_validation_01/cases/final_frozen/source/benchmark/lean/Benchmark/Gaussian.lean",
+      "sha256": "2d4baad78917edeb734c4dfcfcc297c5143d1b1ee71914ea9cba9f3fd0f92ba3",
+      "bytes": 3069
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/benchmark/lean/lakefile.toml",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/benchmark/lean/lakefile.toml",
+      "source_sha256": "ec336e04a32b47099fbd1f64f744bf1b9795f46862910bcf56612b3f58b8af33",
+      "category": "mathematical_foundation_or_build_configuration",
+      "package_path": "final_validation_01/cases/final_frozen/source/benchmark/lean/lakefile.toml",
+      "sha256": "ec336e04a32b47099fbd1f64f744bf1b9795f46862910bcf56612b3f58b8af33",
+      "bytes": 360
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/benchmark/lean/lean-toolchain",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/benchmark/lean/lean-toolchain",
+      "source_sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "category": "mathematical_foundation_or_build_configuration",
+      "package_path": "final_validation_01/cases/final_frozen/source/benchmark/lean/lean-toolchain",
+      "sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "bytes": 29
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/combinatorial/choice_construct.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/combinatorial/choice_construct.py",
+      "source_sha256": "316b3830fda64f05de0574e757b77cce3d44cdaca91e876223fff2f92a2a0555",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/combinatorial/choice_construct.py",
+      "sha256": "316b3830fda64f05de0574e757b77cce3d44cdaca91e876223fff2f92a2a0555",
+      "bytes": 9790
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/determinant/construct.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/determinant/construct.py",
+      "source_sha256": "ef52b528c930fd90392815baa7b21d62c5897a1e0d6bea9f42d5b634810c2c35",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/determinant/construct.py",
+      "sha256": "ef52b528c930fd90392815baa7b21d62c5897a1e0d6bea9f42d5b634810c2c35",
+      "bytes": 3656
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/difference_ring/algebra.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/difference_ring/algebra.py",
+      "source_sha256": "39b564b01bae6c027ad7b3ff282df56146df24cfd4f753f85d8fb900d0b2c1a4",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/difference_ring/algebra.py",
+      "sha256": "39b564b01bae6c027ad7b3ff282df56146df24cfd4f753f85d8fb900d0b2c1a4",
+      "bytes": 6227
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/interpolation/algebra.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/interpolation/algebra.py",
+      "source_sha256": "a314625032967b1f1b1fc79466b580f8e3c31e90af20f308004ead6c2d42935d",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/interpolation/algebra.py",
+      "sha256": "a314625032967b1f1b1fc79466b580f8e3c31e90af20f308004ead6c2d42935d",
+      "bytes": 7907
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/kernel_transform/construct.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/kernel_transform/construct.py",
+      "source_sha256": "83f36219b2e99383319203f2601043b1bb05a6b37ddf9a2c9dfa199ba73df3d0",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/kernel_transform/construct.py",
+      "sha256": "83f36219b2e99383319203f2601043b1bb05a6b37ddf9a2c9dfa199ba73df3d0",
+      "bytes": 3512
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/kernel_transform/lean/Rules.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/kernel_transform/lean/Rules.lean",
+      "source_sha256": "e5bcb6d78debe346debae0d9004661f644ddf475df4d007e667a65fe255fdcad",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/kernel_transform/lean/Rules.lean",
+      "sha256": "e5bcb6d78debe346debae0d9004661f644ddf475df4d007e667a65fe255fdcad",
+      "bytes": 2181
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/kernel_transform/triangle.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/kernel_transform/triangle.py",
+      "source_sha256": "e09743b6d806e43a2118c6f47f3335d51d2e06b104d4bd4ac50eefa1998df176",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/kernel_transform/triangle.py",
+      "sha256": "e09743b6d806e43a2118c6f47f3335d51d2e06b104d4bd4ac50eefa1998df176",
+      "bytes": 3149
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/noncommutative/operator_construct.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/noncommutative/operator_construct.py",
+      "source_sha256": "1ec0eb85e49fcca6a8a1d33cbcfa838dbc04253dca8d5fd73db3c6f0309c4cc0",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/noncommutative/operator_construct.py",
+      "sha256": "1ec0eb85e49fcca6a8a1d33cbcfa838dbc04253dca8d5fd73db3c6f0309c4cc0",
+      "bytes": 5493
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/batch.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/batch.py",
+      "source_sha256": "7687fbcbfd541f191b912f9b80da9233297c5ffad9340b65f292c22dce4b7983",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/batch.py",
+      "sha256": "7687fbcbfd541f191b912f9b80da9233297c5ffad9340b65f292c22dce4b7983",
+      "bytes": 12508
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/bibasic.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/bibasic.py",
+      "source_sha256": "394a9f7310c4d71704d73c9cb7e9905fe1b8a8583843940dc3977ab9ebc31baf",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/bibasic.py",
+      "sha256": "394a9f7310c4d71704d73c9cb7e9905fe1b8a8583843940dc3977ab9ebc31baf",
+      "bytes": 7288
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/bibasic_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/bibasic_pipeline.py",
+      "source_sha256": "c9b48a50fc1ce7f098462ce7c5156145807de50f3f885e8c9ef75415efe7f195",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/bibasic_pipeline.py",
+      "sha256": "c9b48a50fc1ce7f098462ce7c5156145807de50f3f885e8c9ef75415efe7f195",
+      "bytes": 13019
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/check.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/check.py",
+      "source_sha256": "d45d34f1ff6bafbab74135039f173062b7db792b1164de1a17220157b8bb5e48",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/check.py",
+      "sha256": "d45d34f1ff6bafbab74135039f173062b7db792b1164de1a17220157b8bb5e48",
+      "bytes": 9885
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/check_difference_completion.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/check_difference_completion.py",
+      "source_sha256": "03d5a16afdd870c7ee0f5a4ae57636e5f37d0b5ef40f3dc617cac8a4bb14503c",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/check_difference_completion.py",
+      "sha256": "03d5a16afdd870c7ee0f5a4ae57636e5f37d0b5ef40f3dc617cac8a4bb14503c",
+      "bytes": 5966
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/check_difference_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/check_difference_core.py",
+      "source_sha256": "2bffbc975274c84bcf5c0df1aae8bad9fe0be0493600030830d42fb98e750fb0",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/check_difference_core.py",
+      "sha256": "2bffbc975274c84bcf5c0df1aae8bad9fe0be0493600030830d42fb98e750fb0",
+      "bytes": 3728
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/check_difference_full.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/check_difference_full.py",
+      "source_sha256": "f531d7f65028d4b0f967246fb00ff13d8d7e7ab4f3e64717eda79f2bcda446ca",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/check_difference_full.py",
+      "sha256": "f531d7f65028d4b0f967246fb00ff13d8d7e7ab4f3e64717eda79f2bcda446ca",
+      "bytes": 3989
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/check_difference_general.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/check_difference_general.py",
+      "source_sha256": "abf4c278d5b317cefab7f29c9771a70152c6f638107e5b911149fadbc58710a2",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/check_difference_general.py",
+      "sha256": "abf4c278d5b317cefab7f29c9771a70152c6f638107e5b911149fadbc58710a2",
+      "bytes": 6704
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/check_omega_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/check_omega_core.py",
+      "source_sha256": "9917959515f7676787377da5bcb67e5dce981e92210ada5738f34eb1e1cb94bf",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/check_omega_core.py",
+      "sha256": "9917959515f7676787377da5bcb67e5dce981e92210ada5738f34eb1e1cb94bf",
+      "bytes": 3301
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/core.py",
+      "source_sha256": "9465d5b7c62b6cdc7543001d2ec22af8c4f8dfabeb1eff5c879aeb488a87b25e",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/core.py",
+      "sha256": "9465d5b7c62b6cdc7543001d2ec22af8c4f8dfabeb1eff5c879aeb488a87b25e",
+      "bytes": 13613
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/defined_relation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/defined_relation.py",
+      "source_sha256": "7f416a237eaa106b2760eba1832c4c5c00cc43f22450928a542eec8c645e01f3",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/defined_relation.py",
+      "sha256": "7f416a237eaa106b2760eba1832c4c5c00cc43f22450928a542eec8c645e01f3",
+      "bytes": 6160
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/direct.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/direct.py",
+      "source_sha256": "3111707c8a8f0f924b40ff1e91d016f6fff5fd0de0e09beb1739aefe02fefbcf",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/direct.py",
+      "sha256": "3111707c8a8f0f924b40ff1e91d016f6fff5fd0de0e09beb1739aefe02fefbcf",
+      "bytes": 9332
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/exact_linear.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/exact_linear.py",
+      "source_sha256": "570b6f2ae079f9bea7f8091e9b652540e5899faed336bf4d37381958b6c78e66",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/exact_linear.py",
+      "sha256": "570b6f2ae079f9bea7f8091e9b652540e5899faed336bf4d37381958b6c78e66",
+      "bytes": 6854
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/expressions.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/expressions.py",
+      "source_sha256": "5158e915a5eed60a4708e3f317b8ff6b43090783e840e04f3e3e2b40f1b9a864",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/expressions.py",
+      "sha256": "5158e915a5eed60a4708e3f317b8ff6b43090783e840e04f3e3e2b40f1b9a864",
+      "bytes": 4640
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/general_sum_emit.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/general_sum_emit.py",
+      "source_sha256": "cdc29d1cd9ba72567b038eae2463664cdfeaf9cd1ebc6244afb04dbd9915f37a",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/general_sum_emit.py",
+      "sha256": "cdc29d1cd9ba72567b038eae2463664cdfeaf9cd1ebc6244afb04dbd9915f37a",
+      "bytes": 12631
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/general_summation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/general_summation.py",
+      "source_sha256": "d7202cb9328c1b9807b93437fad55cbdca6dd4e504ca773b55acc89ca66e24a4",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/general_summation.py",
+      "sha256": "d7202cb9328c1b9807b93437fad55cbdca6dd4e504ca773b55acc89ca66e24a4",
+      "bytes": 12325
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/lean/GaussianRules.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/lean/GaussianRules.lean",
+      "source_sha256": "0b92a53171ab1f0678ef2f093be7b0d16f5c3bbb19af1ebd11b79df1ebb92d6f",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/lean/GaussianRules.lean",
+      "sha256": "0b92a53171ab1f0678ef2f093be7b0d16f5c3bbb19af1ebd11b79df1ebb92d6f",
+      "bytes": 1632
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/lean/Shared.lean",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/lean/Shared.lean",
+      "source_sha256": "a0fcb3a591e108ed0975fc7544e2d120ea980189e6ac962efc8fbb57c119858e",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/lean/Shared.lean",
+      "sha256": "a0fcb3a591e108ed0975fc7544e2d120ea980189e6ac962efc8fbb57c119858e",
+      "bytes": 5323
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/lean_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/lean_pipeline.py",
+      "source_sha256": "d96692499c4883fc45065f67d310d15ce59e3713aebaaacfa7fc42cef6d5ade9",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/lean_pipeline.py",
+      "sha256": "d96692499c4883fc45065f67d310d15ce59e3713aebaaacfa7fc42cef6d5ade9",
+      "bytes": 28102
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/multisum.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/multisum.py",
+      "source_sha256": "706ace4a9af40c80c59dd61900f005fca524689c97864a85dc4d6751dfaaf756",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/multisum.py",
+      "sha256": "706ace4a9af40c80c59dd61900f005fca524689c97864a85dc4d6751dfaaf756",
+      "bytes": 16865
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/multisum_domains.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/multisum_domains.py",
+      "source_sha256": "eeb1256c65f0da020e42c7a0ed65f1f74ed80c1665377f5233aacd2321c2486f",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/multisum_domains.py",
+      "sha256": "eeb1256c65f0da020e42c7a0ed65f1f74ed80c1665377f5233aacd2321c2486f",
+      "bytes": 2047
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/multisum_lean.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/multisum_lean.py",
+      "source_sha256": "0538b2f983f7473316df82d2462fc9c2b360d9d76b699a578a2153421fa9bef9",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/multisum_lean.py",
+      "sha256": "0538b2f983f7473316df82d2462fc9c2b360d9d76b699a578a2153421fa9bef9",
+      "bytes": 28504
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/multisum_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/multisum_pipeline.py",
+      "source_sha256": "b7f88bba345ea98af0187ca9f8eb3e9abda7eeaf25bff3bdb0028282857f6157",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/multisum_pipeline.py",
+      "sha256": "b7f88bba345ea98af0187ca9f8eb3e9abda7eeaf25bff3bdb0028282857f6157",
+      "bytes": 6264
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/ore.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/ore.py",
+      "source_sha256": "621c63ba9e9db246128ca3a44b36c75619133f8238dedf47618bdb7f9e91394d",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/ore.py",
+      "sha256": "621c63ba9e9db246128ca3a44b36c75619133f8238dedf47618bdb7f9e91394d",
+      "bytes": 10077
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/ore_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/ore_core.py",
+      "source_sha256": "921c7398acf45fef54c4c969f389c5bf62bb2d26236694018947b3ed19bedef4",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/ore_core.py",
+      "sha256": "921c7398acf45fef54c4c969f389c5bf62bb2d26236694018947b3ed19bedef4",
+      "bytes": 9523
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/ore_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/ore_pipeline.py",
+      "source_sha256": "918aaa8e3ff0c566cd10e495e56009bd7538fe1a5c16bdca22a641a4cd6f9781",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/ore_pipeline.py",
+      "sha256": "918aaa8e3ff0c566cd10e495e56009bd7538fe1a5c16bdca22a641a4cd6f9781",
+      "bytes": 14748
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/parameter_relation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/parameter_relation.py",
+      "source_sha256": "5b2808fdc76ee98903c745d313a8ca238c98021f30c32aa6b437fa664fd0b405",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/parameter_relation.py",
+      "sha256": "5b2808fdc76ee98903c745d313a8ca238c98021f30c32aa6b437fa664fd0b405",
+      "bytes": 13587
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/poch_domains.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/poch_domains.py",
+      "source_sha256": "076bb14c35f0600d945355da1bc299af21e27f033c0e5f794609b29f09cc853a",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/poch_domains.py",
+      "sha256": "076bb14c35f0600d945355da1bc299af21e27f033c0e5f794609b29f09cc853a",
+      "bytes": 8532
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/poch_intervals.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/poch_intervals.py",
+      "source_sha256": "8c23f60c63a9a4570ebf439a95e3f66bca18818e4c5046c0977a93948830b52c",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/poch_intervals.py",
+      "sha256": "8c23f60c63a9a4570ebf439a95e3f66bca18818e4c5046c0977a93948830b52c",
+      "bytes": 4231
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/poch_local.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/poch_local.py",
+      "source_sha256": "e9f2f0316e66b4a0cbc0ad9a8f56ddb5ea455dd85b36bcadb49f86a787cc8064",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/poch_local.py",
+      "sha256": "e9f2f0316e66b4a0cbc0ad9a8f56ddb5ea455dd85b36bcadb49f86a787cc8064",
+      "bytes": 5548
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/poch_recurrence_emit.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/poch_recurrence_emit.py",
+      "source_sha256": "32684fa3056e891e1b8786c5b7ae819de7ebe7d44e0d82160bac9a2f64b8e79f",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/poch_recurrence_emit.py",
+      "sha256": "32684fa3056e891e1b8786c5b7ae819de7ebe7d44e0d82160bac9a2f64b8e79f",
+      "bytes": 19327
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/proof_fixture.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/proof_fixture.py",
+      "source_sha256": "0b7460774c3e3ee7e8160b314d19a97990feb624cbea83298b41765a60b24d03",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/proof_fixture.py",
+      "sha256": "0b7460774c3e3ee7e8160b314d19a97990feb624cbea83298b41765a60b24d03",
+      "bytes": 460
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qconstant.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qconstant.py",
+      "source_sha256": "460869f1736e604d9490e0b781acdd50eec9e55f51eb7492303fd999cba090fe",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qconstant.py",
+      "sha256": "460869f1736e604d9490e0b781acdd50eec9e55f51eb7492303fd999cba090fe",
+      "bytes": 7022
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qdifference.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qdifference.py",
+      "source_sha256": "712977e3e71da738e24e7a2d28e6368b53c0fea6cc6142133cb6f86728972c07",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qdifference.py",
+      "sha256": "712977e3e71da738e24e7a2d28e6368b53c0fea6cc6142133cb6f86728972c07",
+      "bytes": 22922
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qfinite.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qfinite.py",
+      "source_sha256": "58deb72312555401ee9d702e6db5d00da70bdcce7d90caaadb5ee5d36244092e",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qfinite.py",
+      "sha256": "58deb72312555401ee9d702e6db5d00da70bdcce7d90caaadb5ee5d36244092e",
+      "bytes": 37275
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qgosper.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qgosper.py",
+      "source_sha256": "ec3f0329814251c701221d82af6d117424597e9d48a45afd73227169e384f70d",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qgosper.py",
+      "sha256": "ec3f0329814251c701221d82af6d117424597e9d48a45afd73227169e384f70d",
+      "bytes": 7562
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qholonomic.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qholonomic.py",
+      "source_sha256": "692002441dae18e5f7502747821ca6213c804e52980dcf760eb5c7b2293e1892",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qholonomic.py",
+      "sha256": "692002441dae18e5f7502747821ca6213c804e52980dcf760eb5c7b2293e1892",
+      "bytes": 10301
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qjoint.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qjoint.py",
+      "source_sha256": "790f7effc7f8279b457315935aa466489d1dc769d7757eae4055d14bbdf4b283",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qjoint.py",
+      "sha256": "790f7effc7f8279b457315935aa466489d1dc769d7757eae4055d14bbdf4b283",
+      "bytes": 8336
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qnumberfield.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qnumberfield.py",
+      "source_sha256": "bae596c2d897692bdfab87699921419f1ddc093864c173f791fc778c2065a730",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qnumberfield.py",
+      "sha256": "bae596c2d897692bdfab87699921419f1ddc093864c173f791fc778c2065a730",
+      "bytes": 29344
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qomega.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qomega.py",
+      "source_sha256": "1665dbe5371efa711aea2d24d31252d5ce9ac1b5814daea9e85c23a535b7109c",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qomega.py",
+      "sha256": "1665dbe5371efa711aea2d24d31252d5ce9ac1b5814daea9e85c23a535b7109c",
+      "bytes": 9217
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qparameterized.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qparameterized.py",
+      "source_sha256": "caad344d1f8acaca27c546b00b0edff1b9ed9dbaf8916a66c34228151de24df0",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qparameterized.py",
+      "sha256": "caad344d1f8acaca27c546b00b0edff1b9ed9dbaf8916a66c34228151de24df0",
+      "bytes": 8434
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qpisigma.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qpisigma.py",
+      "source_sha256": "8a6ba5a361386d8dc15649cc71aac7db55582dd0b8a00e73fae78e674a2bd86d",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qpisigma.py",
+      "sha256": "8a6ba5a361386d8dc15649cc71aac7db55582dd0b8a00e73fae78e674a2bd86d",
+      "bytes": 37366
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qpisigma_system.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qpisigma_system.py",
+      "source_sha256": "c77c5501101a1849b8e14323e1db51289892c464c6d0b33a1f5801ed5986b11a",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qpisigma_system.py",
+      "sha256": "c77c5501101a1849b8e14323e1db51289892c464c6d0b33a1f5801ed5986b11a",
+      "bytes": 17400
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qplde.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qplde.py",
+      "source_sha256": "fdef856c97f3efb65e360cc57ca9d1950f2313b560ab2c00c151f15ee83c51da",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qplde.py",
+      "sha256": "fdef856c97f3efb65e360cc57ca9d1950f2313b560ab2c00c151f15ee83c51da",
+      "bytes": 19412
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/qrational_system.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/qrational_system.py",
+      "source_sha256": "eb55f18d542e1d265fe4dca3154ea75556e0be98dce33839c7aba7ec4f8b701e",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/qrational_system.py",
+      "sha256": "eb55f18d542e1d265fe4dca3154ea75556e0be98dce33839c7aba7ec4f8b701e",
+      "bytes": 10940
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/review_batch.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/review_batch.py",
+      "source_sha256": "1fc1188c5e019f5d170003fef737831046a82e817226e5f8de46086eef91efe0",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/review_batch.py",
+      "sha256": "1fc1188c5e019f5d170003fef737831046a82e817226e5f8de46086eef91efe0",
+      "bytes": 5971
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/run.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/run.py",
+      "source_sha256": "e24849126dc20bb953dd34e9e131e0a91a4ddb71fd0bfeada7def81707151706",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/run.py",
+      "sha256": "e24849126dc20bb953dd34e9e131e0a91a4ddb71fd0bfeada7def81707151706",
+      "bytes": 19321
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/run_omega_audit.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/run_omega_audit.py",
+      "source_sha256": "f3d1cf8b692c3b5eeeda0c7f905eef3fceb2da1c2f82e4fc85c79b2920597e29",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/run_omega_audit.py",
+      "sha256": "f3d1cf8b692c3b5eeeda0c7f905eef3fceb2da1c2f82e4fc85c79b2920597e29",
+      "bytes": 3424
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/search.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/search.py",
+      "source_sha256": "a8e11a7d4fa7e9433d2a1dbcf44ad621640016932cbbce992e5b103a828cd9a9",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/search.py",
+      "sha256": "a8e11a7d4fa7e9433d2a1dbcf44ad621640016932cbbce992e5b103a828cd9a9",
+      "bytes": 1226
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/setup_pari.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/setup_pari.py",
+      "source_sha256": "8d0279d84332eaca42c99c3a3c0500e5c80b48e7e8aeec4005b751b275b4671c",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/setup_pari.py",
+      "sha256": "8d0279d84332eaca42c99c3a3c0500e5c80b48e7e8aeec4005b751b275b4671c",
+      "bytes": 2245
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/singular_emit.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/singular_emit.py",
+      "source_sha256": "8d7d1b332525fcdee3442737e86f9a85bb20c474089449a3aa9e74d44667f63a",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/singular_emit.py",
+      "sha256": "8d7d1b332525fcdee3442737e86f9a85bb20c474089449a3aa9e74d44667f63a",
+      "bytes": 1541
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/source_ir.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/source_ir.py",
+      "source_sha256": "95ea7c28b44933af938d534cb3fa81873350e73673aa9c72feb8d73d1bd6b4ff",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/source_ir.py",
+      "sha256": "95ea7c28b44933af938d534cb3fa81873350e73673aa9c72feb8d73d1bd6b4ff",
+      "bytes": 7157
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/sum_lean.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/sum_lean.py",
+      "source_sha256": "e5eb55276f0170f009be0f6bddfa7b638f45b8f03d37f718cefb16206128734e",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/sum_lean.py",
+      "sha256": "e5eb55276f0170f009be0f6bddfa7b638f45b8f03d37f718cefb16206128734e",
+      "bytes": 4221
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_bibasic.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_bibasic.py",
+      "source_sha256": "9c5ba264508bdee28c6ad9bda8826eed8e98364e9abe156ba426871a586d17bf",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_bibasic.py",
+      "sha256": "9c5ba264508bdee28c6ad9bda8826eed8e98364e9abe156ba426871a586d17bf",
+      "bytes": 4808
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_convolution_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_convolution_pipeline.py",
+      "source_sha256": "7d2c5d7d772c4fff688680bda84581691abf012d262f5ffbd113c40aedf68237",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_convolution_pipeline.py",
+      "sha256": "7d2c5d7d772c4fff688680bda84581691abf012d262f5ffbd113c40aedf68237",
+      "bytes": 4326
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_core_solver.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_core_solver.py",
+      "source_sha256": "f099d015fc6cfa72db305ada0275237ff27c684df0ce850de60d2aca8ed4caf1",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_core_solver.py",
+      "sha256": "f099d015fc6cfa72db305ada0275237ff27c684df0ce850de60d2aca8ed4caf1",
+      "bytes": 8727
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_defined_relation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_defined_relation.py",
+      "source_sha256": "2a9eeb52e30107c7b3e7f9a3209d002a27ac1959aa2c437224c0eac01e184d65",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_defined_relation.py",
+      "sha256": "2a9eeb52e30107c7b3e7f9a3209d002a27ac1959aa2c437224c0eac01e184d65",
+      "bytes": 3194
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_difference_completion.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_difference_completion.py",
+      "source_sha256": "316912e8545b88b78d8962bf35bd9f46cf8156372f99a5e920455db6ec82a5b2",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_difference_completion.py",
+      "sha256": "316912e8545b88b78d8962bf35bd9f46cf8156372f99a5e920455db6ec82a5b2",
+      "bytes": 10423
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_difference_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_difference_core.py",
+      "source_sha256": "49bcfe05aa512734d95277e4a3976e3be36f5e8624096ed2ac29ff34307d2e72",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_difference_core.py",
+      "sha256": "49bcfe05aa512734d95277e4a3976e3be36f5e8624096ed2ac29ff34307d2e72",
+      "bytes": 12849
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_difference_full.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_difference_full.py",
+      "source_sha256": "f95455b7012523fb6d6a1b154af259af7544fbdea9877052b90368a4c9533fbe",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_difference_full.py",
+      "sha256": "f95455b7012523fb6d6a1b154af259af7544fbdea9877052b90368a4c9533fbe",
+      "bytes": 11998
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_difference_general.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_difference_general.py",
+      "source_sha256": "dd237660282aa863b0464d1e8b7c1acafc30911f8e6fcdde726818c12ef11169",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_difference_general.py",
+      "sha256": "dd237660282aa863b0464d1e8b7c1acafc30911f8e6fcdde726818c12ef11169",
+      "bytes": 17924
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_direct.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_direct.py",
+      "source_sha256": "ee1ab3c5b147c9b5be64ab59868796eee8bc5610d4ba6687c1825f243f2150cf",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_direct.py",
+      "sha256": "ee1ab3c5b147c9b5be64ab59868796eee8bc5610d4ba6687c1825f243f2150cf",
+      "bytes": 3252
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_domain_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_domain_pipeline.py",
+      "source_sha256": "04aa0515ce3ba99e581797550a9bded90544a79c50d7c40102f58c2e0c4604a2",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_domain_pipeline.py",
+      "sha256": "04aa0515ce3ba99e581797550a9bded90544a79c50d7c40102f58c2e0c4604a2",
+      "bytes": 3530
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_general_certificate.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_general_certificate.py",
+      "source_sha256": "3a69a80899024cafa71593223108fc5e1477896d61846ca4155447fd698eb34d",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_general_certificate.py",
+      "sha256": "3a69a80899024cafa71593223108fc5e1477896d61846ca4155447fd698eb34d",
+      "bytes": 1595
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_general_summation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_general_summation.py",
+      "source_sha256": "b9243a25b93269c50168dde30bbacfac4ad28b866f65b0752681f19ee1cb67ca",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_general_summation.py",
+      "sha256": "b9243a25b93269c50168dde30bbacfac4ad28b866f65b0752681f19ee1cb67ca",
+      "bytes": 5445
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_holonomic_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_holonomic_core.py",
+      "source_sha256": "098126c3ee5e8048506039fb1399de6dca71fc887ff85bdc331efa24396265bb",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_holonomic_core.py",
+      "sha256": "098126c3ee5e8048506039fb1399de6dca71fc887ff85bdc331efa24396265bb",
+      "bytes": 12035
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_joint_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_joint_core.py",
+      "source_sha256": "c298977619965e2d9b0d0cd243056c4b72984da324ae55dc2e83a5262699ba3d",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_joint_core.py",
+      "sha256": "c298977619965e2d9b0d0cd243056c4b72984da324ae55dc2e83a5262699ba3d",
+      "bytes": 8967
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_lean_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_lean_pipeline.py",
+      "source_sha256": "d9bb36b5ac107798750c3d2bb05857094a392be06cc33cb36ed3bc9d56c6532e",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_lean_pipeline.py",
+      "sha256": "d9bb36b5ac107798750c3d2bb05857094a392be06cc33cb36ed3bc9d56c6532e",
+      "bytes": 3027
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_multisum.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_multisum.py",
+      "source_sha256": "1faa1f47bac6a1fd49595389a8ddc4d9f287c526485e6fc41f9a7c0a04390d51",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_multisum.py",
+      "sha256": "1faa1f47bac6a1fd49595389a8ddc4d9f287c526485e6fc41f9a7c0a04390d51",
+      "bytes": 11234
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_multisum_native.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_multisum_native.py",
+      "source_sha256": "577f3daed3e450844b797e6cecd53bf88e02ed6868b308cfcfe4e8e2dbf5d263",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_multisum_native.py",
+      "sha256": "577f3daed3e450844b797e6cecd53bf88e02ed6868b308cfcfe4e8e2dbf5d263",
+      "bytes": 4463
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_omega_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_omega_core.py",
+      "source_sha256": "9ca197524df73dd7e6788b07d7a4b520c0a0066baaa403d5fa3192d2e498fc17",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_omega_core.py",
+      "sha256": "9ca197524df73dd7e6788b07d7a4b520c0a0066baaa403d5fa3192d2e498fc17",
+      "bytes": 11059
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_ore.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_ore.py",
+      "source_sha256": "dbfa973b44446d84eb45af1218d333b34368d47b948dfbe2023a0db8d5462979",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_ore.py",
+      "sha256": "dbfa973b44446d84eb45af1218d333b34368d47b948dfbe2023a0db8d5462979",
+      "bytes": 5722
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_ore_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_ore_core.py",
+      "source_sha256": "0bdcf63b9a7e295a39defdb309ec5ecb524a3cdaa7c124585c0f9b35d56b89a1",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_ore_core.py",
+      "sha256": "0bdcf63b9a7e295a39defdb309ec5ecb524a3cdaa7c124585c0f9b35d56b89a1",
+      "bytes": 9783
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_parameter_relation.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_parameter_relation.py",
+      "source_sha256": "a2a9309829850a62449ba07b011799d5a05bd1c2ba4f283df089fcd45166cec8",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_parameter_relation.py",
+      "sha256": "a2a9309829850a62449ba07b011799d5a05bd1c2ba4f283df089fcd45166cec8",
+      "bytes": 4087
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_phi_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_phi_pipeline.py",
+      "source_sha256": "b6f59185eb2014a4480fabffc07ebd3a34b2c4c47bd3ef1ffa502902ad664269",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_phi_pipeline.py",
+      "sha256": "b6f59185eb2014a4480fabffc07ebd3a34b2c4c47bd3ef1ffa502902ad664269",
+      "bytes": 2196
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_pipeline.py",
+      "source_sha256": "26f7a261243d34fc227324c7ae688a7311de8045f769d9720a3b9b6048087010",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_pipeline.py",
+      "sha256": "26f7a261243d34fc227324c7ae688a7311de8045f769d9720a3b9b6048087010",
+      "bytes": 7224
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_poch_intervals.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_poch_intervals.py",
+      "source_sha256": "c9e3f5f896ae45472485992ed890ecbb09c6b7406c7d49a94a563e95de3361dd",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_poch_intervals.py",
+      "sha256": "c9e3f5f896ae45472485992ed890ecbb09c6b7406c7d49a94a563e95de3361dd",
+      "bytes": 1716
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_poch_order.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_poch_order.py",
+      "source_sha256": "38ba695bd3573fa2e94d9cbe027139e2fe8db4284b105984d8ba8eb639a3bbef",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_poch_order.py",
+      "sha256": "38ba695bd3573fa2e94d9cbe027139e2fe8db4284b105984d8ba8eb639a3bbef",
+      "bytes": 3323
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_poch_recurrence.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_poch_recurrence.py",
+      "source_sha256": "89a4d30d24fbe6d8939e4520a24a3ff067cb0ce01393bca2e5fd48935869e174",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_poch_recurrence.py",
+      "sha256": "89a4d30d24fbe6d8939e4520a24a3ff067cb0ce01393bca2e5fd48935869e174",
+      "bytes": 3882
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_poch_rules.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_poch_rules.py",
+      "source_sha256": "090cdaf88efb99ebe3ef251e1d00f431c2972ba96343eb82df46803df9d5a546",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_poch_rules.py",
+      "sha256": "090cdaf88efb99ebe3ef251e1d00f431c2972ba96343eb82df46803df9d5a546",
+      "bytes": 5383
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_poch_train.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_poch_train.py",
+      "source_sha256": "0376e9d21e6e81611b56165e01fa0a7b9bd62fa732b340fb4bed431315db8fab",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_poch_train.py",
+      "sha256": "0376e9d21e6e81611b56165e01fa0a7b9bd62fa732b340fb4bed431315db8fab",
+      "bytes": 3263
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_product_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_product_pipeline.py",
+      "source_sha256": "b541008e3a729e5c585e934b4c61c27667da2d960ba417c3a2807a8921059c16",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_product_pipeline.py",
+      "sha256": "b541008e3a729e5c585e934b4c61c27667da2d960ba417c3a2807a8921059c16",
+      "bytes": 3001
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_recurrence_closure.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_recurrence_closure.py",
+      "source_sha256": "5c3f9f29bf46430c23092673307c22582c21c98423a27fb9c5c8f6f59bbad9d9",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_recurrence_closure.py",
+      "sha256": "5c3f9f29bf46430c23092673307c22582c21c98423a27fb9c5c8f6f59bbad9d9",
+      "bytes": 2508
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_source_ir.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_source_ir.py",
+      "source_sha256": "3d1e6064577c7faa70e0ecb4040d6c39a63be46c63399987d1f35bccf83daf46",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_source_ir.py",
+      "sha256": "3d1e6064577c7faa70e0ecb4040d6c39a63be46c63399987d1f35bccf83daf46",
+      "bytes": 1462
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/test_zeilberger.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/test_zeilberger.py",
+      "source_sha256": "e9dd0e3c6dad2fa1d57ca44d70554442a16a8e8d3b6219e88e80f732805e350f",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/test_zeilberger.py",
+      "sha256": "e9dd0e3c6dad2fa1d57ca44d70554442a16a8e8d3b6219e88e80f732805e350f",
+      "bytes": 6809
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/zeilberger.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/zeilberger.py",
+      "source_sha256": "81b5f7262fb9e4d154f78e673502158d7fe8301af2659d4277efd5f62239f7a9",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/zeilberger.py",
+      "sha256": "81b5f7262fb9e4d154f78e673502158d7fe8301af2659d4277efd5f62239f7a9",
+      "bytes": 4695
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p1/zeilberger_pipeline.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p1/zeilberger_pipeline.py",
+      "source_sha256": "f7a1d2fbf0e4518bbe7a3761f24592a03390074f53ed182727f97c9affa7321e",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p1/zeilberger_pipeline.py",
+      "sha256": "f7a1d2fbf0e4518bbe7a3761f24592a03390074f53ed182727f97c9affa7321e",
+      "bytes": 9816
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/p2/run.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/p2/run.py",
+      "source_sha256": "134f8e4c084e6f16a73f8d01ce070548446d2e5aed29c8b34d6a8a911f182044",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/p2/run.py",
+      "sha256": "134f8e4c084e6f16a73f8d01ce070548446d2e5aed29c8b34d6a8a911f182044",
+      "bytes": 16352
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/product/index_construct.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/product/index_construct.py",
+      "source_sha256": "26776ddaf16d508a41748873c6534c61e75d3f973e15ffb4b32a35595b60d963",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/product/index_construct.py",
+      "sha256": "26776ddaf16d508a41748873c6534c61e75d3f973e15ffb4b32a35595b60d963",
+      "bytes": 9188
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/solve_core.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/solve_core.py",
+      "source_sha256": "2372da28e8c6809b061765ac90bba70cf27e1e184b4ed63f148f83e52a69862b",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/solve_core.py",
+      "sha256": "2372da28e8c6809b061765ac90bba70cf27e1e184b4ed63f148f83e52a69862b",
+      "bytes": 282
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/spectral/construct.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/spectral/construct.py",
+      "source_sha256": "b4327ae2db0cad16025c39469e09486301292141adaca15df04fa9c005a6bded",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/spectral/construct.py",
+      "sha256": "b4327ae2db0cad16025c39469e09486301292141adaca15df04fa9c005a6bded",
+      "bytes": 2703
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/workflow/__init__.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/workflow/__init__.py",
+      "source_sha256": "5b7c60cb4037b7479e38f52dc5b15abc4f74a4d5828693314be3856ac320b6a0",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/workflow/__init__.py",
+      "sha256": "5b7c60cb4037b7479e38f52dc5b15abc4f74a4d5828693314be3856ac320b6a0",
+      "bytes": 76
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/finite_product_framework/workflow/matrix_symbolic.py",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/finite_product_framework/workflow/matrix_symbolic.py",
+      "source_sha256": "5ffea9032a6c6cb79aeca8026ffa34e5981ceacc0b6b2181ade37257bc999e79",
+      "category": "pure_mathematical_implementation",
+      "package_path": "final_validation_01/cases/final_frozen/source/finite_product_framework/workflow/matrix_symbolic.py",
+      "sha256": "5ffea9032a6c6cb79aeca8026ffa34e5981ceacc0b6b2181ade37257bc999e79",
+      "bytes": 3000
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/project/lake-manifest.json",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/project/lake-manifest.json",
+      "source_sha256": "17cbe56015223d012c5b10d5378b1d89654901c0b3c906e977414abc3b379c58",
+      "category": "mathematical_foundation_or_build_configuration",
+      "package_path": "final_validation_01/cases/final_frozen/source/project/lake-manifest.json",
+      "sha256": "17cbe56015223d012c5b10d5378b1d89654901c0b3c906e977414abc3b379c58",
+      "bytes": 3149
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/project/lakefile.toml",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/project/lakefile.toml",
+      "source_sha256": "7e68d3dabd858621892366147975c370116bb7828f7251587da973a376456a36",
+      "category": "mathematical_foundation_or_build_configuration",
+      "package_path": "final_validation_01/cases/final_frozen/source/project/lakefile.toml",
+      "sha256": "7e68d3dabd858621892366147975c370116bb7828f7251587da973a376456a36",
+      "bytes": 354
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/project/lean-toolchain",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/source/project/lean-toolchain",
+      "source_sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "category": "mathematical_foundation_or_build_configuration",
+      "package_path": "final_validation_01/cases/final_frozen/source/project/lean-toolchain",
+      "sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "bytes": 29
+    },
+    {
+      "original_absolute_path": "/home/hjy/Project/finite_q_identity_catalog/benchmark/splits/train.jsonl",
+      "frozen_source_path": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/input_dependencies/benchmark/splits/train.jsonl",
+      "source_sha256": "41de71c9504a838846e0e22139fcfba3657af7f77ee49dcee43d316d094112b4",
+      "category": "additional_Train_input_manifest",
+      "package_path": "final_validation_01/cases/final_metadata_and_reports/agent_v2/generated/phase3_20261112/final_validation_01/report_metadata/input_dependencies/benchmark/splits/train.jsonl",
+      "sha256": "41de71c9504a838846e0e22139fcfba3657af7f77ee49dcee43d316d094112b4",
+      "bytes": 256865
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "agent_v2.tests.source_method_smoke",
+    "--method",
+    "noncommutative",
+    "--identity",
+    "FQI-SRC-KAC-CHEUNG-5.7",
+    "--seconds",
+    "120",
+    "--output-root",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative"
+  ],
+  "returncode": 0,
+  "wall_seconds": 3.0714057120494545,
+  "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative.stdout.log",
+  "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/noncommutative.stderr.log"
+}

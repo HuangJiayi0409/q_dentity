@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "method": "spectral",
+  "method_version": "1.0",
+  "capability_level": "L2",
+  "status": "branch_stopped",
+  "requested_Source_upgrade_passed": false,
+  "evidence_validation_passed": true,
+  "identity": "FQI-SRC-GR2-7.2.24",
+  "source_sha256": "b8f35c5da4ec0e64366b20a87595c2ea6ca257d0f7b75b33a1aef29767a0b955",
+  "theorem": "FiniteQBenchmark.Identity130.statement",
+  "actual_Source_execution": "not_applicable then graph_capability_missing on resume",
+  "CAS_calls": 0,
+  "lean_calls": 0,
+  "local_lean": false,
+  "full_original": false,
+  "original_identity_proved": false,
+  "C": 0,
+  "O": [
+    "original"
+  ],
+  "links": 0,
+  "scope": "current-runtime Source refusal; old explicit-core L2 retained",
+  "remaining_work": "Symbolic size, original phi eigenrelations and denominators, diagonal norm and valid Lean foundation import.",
+  "run_dir": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs/20261112T034855Z-caca93e8fd",
+  "final_summary": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_boundary.json",
+  "final_summary_sha256": "5e19d5178b2ffc162a599f721996a8cc12d087aa8e9b5b8f8f9f3b8decd70fd8",
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "run",
+        "--identity",
+        "FQI-SRC-GR2-7.2.24",
+        "--method",
+        "spectral",
+        "--seconds",
+        "120",
+        "--output-root",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.5657032770104706,
+      "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_run.stdout.log",
+      "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_run.stderr.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "agent_v2.cli",
+        "resume",
+        "--run-dir",
+        "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_runs/20261112T034855Z-caca93e8fd"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.5656819972209632,
+      "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_resume.stdout.log",
+      "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/spectral_resume.stderr.log"
+    }
+  ],
+  "final_frozen_manifest": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/frozen/manifest.json",
+  "final_frozen_manifest_sha256": "73a35e22ce43ee5d87cefcbd52f8eacdc7a83ba96da5a6dd0a8394bcc2162e91",
+  "stage_acceptance_card": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/spectral/acceptance_card.json",
+  "stage_card_sha256": "2b9684b6a1912f5ad1f97a6c7fa02ab8af8734ea50a3d8c08906c218abb22c3a",
+  "source_frontend": "agent_v2.symbolic_methods:analyze_source",
+  "adapter": "agent_v2.symbolic_methods:spectral_adapter",
+  "lean_profile": "none",
+  "limitations": [
+    "operator/eigenvalue separator certificate only; rational denominators and original pairing require Lean replay",
+    "standalone core request only; Train export and local Lean bridge unavailable",
+    "historical full workflow is not invoked; constructed never enters C"
+  ],
+  "benchmark_Test_read": false,
+  "model_calls": 0
+}

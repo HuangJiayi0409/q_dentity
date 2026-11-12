@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "agent_v2.tests.local_method_smoke",
+    "--method",
+    "coefficient",
+    "--identity",
+    "FQI-FINITE-Q-BINOMIAL",
+    "--seconds",
+    "1200",
+    "--output-root",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient"
+  ],
+  "returncode": 0,
+  "wall_seconds": 144.12817869568244,
+  "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient.stdout.log",
+  "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/coefficient.stderr.log"
+}

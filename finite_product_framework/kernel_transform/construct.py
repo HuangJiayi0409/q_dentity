@@ -1,9 +1,12 @@
 """Construct the inverse from A alone, then bridge it to the target's B."""
 import sympy as s
 from workflow.matrix_symbolic import ScalarCodec, checked_zero, matrix_record, scalar_finish
+from kernel_transform.triangle import construct as construct_triangle
 
 
 def construct(raw):
+    if raw.get('operation') == 'triangular_transpose':
+        return construct_triangle(raw)
     codec = ScalarCodec()
     a = codec.matrix(raw['matrix'])
     if raw.get('operation') == 'composition':

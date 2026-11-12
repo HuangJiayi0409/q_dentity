@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "agent_v2.tests.local_method_smoke",
+    "--method",
+    "determinant",
+    "--identity",
+    "FQI-SRC-AP-11.2.4",
+    "--seconds",
+    "1200",
+    "--output-root",
+    "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant"
+  ],
+  "returncode": 0,
+  "wall_seconds": 152.24612471088767,
+  "stdout": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant.stdout.log",
+  "stderr": "/home/hjy/Project/finite_q_identity_catalog/agent_v2/generated/phase3_20261112/final_validation_01/method_matrix/determinant.stderr.log"
+}
