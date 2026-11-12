@@ -1,4 +1,4 @@
-"""Bounded local CLI. No old Agent, network model or test-double entrypoints."""
+"""Bounded Train CLI; model calls require the explicit autonomous entrypoint."""
 import argparse
 from dataclasses import replace
 import hashlib
@@ -60,12 +60,26 @@ def parser():
     run.add_argument('--scope', choices=['local', 'full'], default='local',
                      help='local certificate only, or the verified finite-sum/endpoint chain')
     run.add_argument('--max-steps', type=positive_int, default=1)
-    for command in (core, probe, run):
+    auto = sub.add_parser('auto', help='autonomous residual CAS/LLM loop; real configured model calls')
+    auto.add_argument('--identity', required=True)
+    auto.add_argument('--methods', default='all', help='comma-separated registered source methods, or all')
+    auto.add_argument('--selector', choices=['rule','jev'], default='rule')
+    auto.add_argument('--max-steps', type=positive_int, default=12)
+    auto.add_argument('--action-seconds', type=positive_float, default=180.0)
+    auto.add_argument('--max-model-calls', type=positive_int, default=8)
+    auto.add_argument('--max-expansions', type=positive_int, default=3)
+    auto.add_argument('--max-repairs', type=positive_int, default=2)
+    auto.add_argument('--model', default='gpt-6-astra')
+    auto.add_argument('--model-credential', default=str(REPOSITORY/'API_GPT'))
+    auto.add_argument('--model-endpoint', default=None)
+    auto.add_argument('--jev-credential', default=str(REPOSITORY/'API_Jev'))
+    for command in (core, probe, run, auto):
         command.add_argument('--seconds', type=positive_float, default=30.0)
         command.add_argument('--output-root', default=str(GENERATED))
+    auto.set_defaults(seconds=1200.0)
     resume = sub.add_parser('resume', help='recheck a v2 Train checkpoint, then continue within remaining budget')
     resume.add_argument('--run-dir', required=True)
-    for command in (run, resume):
+    for command in (run, auto, resume):
         command.add_argument('--pause-after', type=positive_int, default=None,
             help='save a checkpoint after this many additional actions; preserve unused budget')
     return result
@@ -276,6 +290,9 @@ def resume_run(args):
     if len(matches) != 1 or saved['sha256'] != matches[0]['lean_sha256'] or \
             Path(saved['path']) != guard_path(REPOSITORY / 'benchmark' / matches[0]['lean_path']):
         raise IntegrityError('checkpoint not bound to the selected Train original')
+    if 'autonomous' in store.load_checkpoint():
+        from .autonomous_cli import resume_run as autonomous_resume
+        return autonomous_resume(args,store), store
     state, graph = resume(store, checker)
     options = {} if getattr(args, 'pause_after', None) is None else {'pause_after': args.pause_after}
     return run(state, graph, store, executor, checker, **options).status, store
@@ -295,7 +312,11 @@ def main(argv=None):
             if args.command in ('core-demo', 'method-demo'): guard_path(args.input)
             root = _explicit_directory(args.output_root)
             store = RunStore.create(root)
-            handler = {'core-demo': core_demo, 'method-demo': method_demo, 'run': train_run}[args.command]
+            if args.command == 'auto':
+                from .autonomous_cli import train_run as autonomous_train
+                handler = autonomous_train
+            else:
+                handler = {'core-demo': core_demo, 'method-demo': method_demo, 'run': train_run}[args.command]
             status = handler(args, store)
     except ReplayFailure as error:
         status = error.status

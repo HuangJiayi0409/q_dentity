@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "status": "validated",
+  "runtime_files": 81,
+  "final_runtime_hashes_match": true,
+  "revision_01_to_02_changed": [
+    "agent_v2/autonomous.py"
+  ],
+  "full_suite": {
+    "path": "final_revision_01/unittest.log",
+    "sha256": "c7dd300a5c5cc29a8b4d77f5c89b4dbacb01eec6bded958f6026a03bc4fc1ef8",
+    "tests": 553,
+    "seconds": 958.963,
+    "passed": true
+  },
+  "final_targeted_suite": {
+    "path": "final_revision_02/targeted_unittest.log",
+    "sha256": "2c3500ad85d210bccd18bb54a14d4b0b3e16fd88db9d09c14f1ac46aa2c710da",
+    "tests": 66,
+    "seconds": 1.876,
+    "passed": true
+  },
+  "test_suites_overlap": true,
+  "runs": [
+    {
+      "path": "final_revision_01/live_hockey/20261112T055221Z-05ffaad720",
+      "identity": "FQI-SRC-AP-3.3.9",
+      "status": "original_theorem_proved",
+      "stop_reason": "strict_original_accepted",
+      "rounds": 3,
+      "model_calls": 2,
+      "jev_calls": 0,
+      "open_obligations": [],
+      "verified_certificates": 2,
+      "graph_nodes": 1,
+      "edge_modes": [],
+      "active_wall_seconds": 210.63811037968844,
+      "accepted_generated_proofs_match_provider": true,
+      "model_evidence": [
+        {
+          "round": 2,
+          "status": "ok",
+          "request_sha256": "1104c4ca4b3aeb8372c15cf95a8090d9b1608b85f66623681e968be836a5d4e3",
+          "model_calls": 1,
+          "total_tokens": 15409,
+          "kind": null
+        },
+        {
+          "round": 3,
+          "status": "ok",
+          "request_sha256": "39f092a25321f6992f3c66ad741e479d4b213c0eb8d89292ab3231f2527c6234",
+          "model_calls": 1,
+          "total_tokens": 15825,
+          "kind": "prove"
+        }
+      ]
+    },
+    {
+      "path": "final_revision_01/live_recurrence/20261112T055819Z-d489a737b9",
+      "identity": "FQI-GAUSS-ALTERNATING",
+      "status": "original_theorem_proved",
+      "stop_reason": "strict_original_accepted",
+      "rounds": 4,
+      "model_calls": 3,
+      "jev_calls": 0,
+      "open_obligations": [],
+      "verified_certificates": 2,
+      "graph_nodes": 1,
+      "edge_modes": [],
+      "active_wall_seconds": 302.29622642090544,
+      "accepted_generated_proofs_match_provider": true,
+      "model_evidence": [
+        {
+          "round": 2,
+          "status": "ok",
+          "request_sha256": "89a9fe0f25988af438c5ceda8a6ded1197c97321e1e864893a7e2f000c1004e5",
+          "model_calls": 1,
+          "total_tokens": 15883,
+          "kind": "prove"
+        },
+        {
+          "round": 3,
+          "status": "ok",
+          "request_sha256": "e5a0b171eaa6268a95e3b69dfd96acb19ff6b9064d1520ff0ab59415d2f225f8",
+          "model_calls": 1,
+          "total_tokens": 21730,
+          "kind": "prove"
+        },
+        {
+          "round": 4,
+          "status": "ok",
+          "request_sha256": "29643d986d03634621834e33f011a1e5d555aae523c3c037c265e5f6a39e5089",
+          "model_calls": 1,
+          "total_tokens": 28233,
+          "kind": "prove"
+        }
+      ]
+    },
+    {
+      "path": "final_revision_01/live_multi_method/20261112T055459Z-062bba8130",
+      "identity": "FQI-FINITE-Q-BINOMIAL",
+      "status": "incomplete",
+      "stop_reason": "repeated_actions_exhausted",
+      "rounds": 10,
+      "model_calls": 8,
+      "jev_calls": 4,
+      "open_obligations": [
+        "goal-a72e6aa4e1e2e60e1a75661a-0",
+        "goal-a72e6aa4e1e2e60e1a75661a-1"
+      ],
+      "verified_certificates": 2,
+      "graph_nodes": 3,
+      "edge_modes": [
+        "decomposition",
+        "focus_obligation"
+      ],
+      "active_wall_seconds": 544.3112595197745,
+      "accepted_generated_proofs_match_provider": true,
+      "model_evidence": [
+        {
+          "round": 10,
+          "status": "ok",
+          "request_sha256": "d77f291a20a24f2ee04218bc2d23dde6a8e3178761d38fff2e8abe96e41eba50",
+          "model_calls": 1,
+          "total_tokens": 15638,
+          "kind": "prove"
+        },
+        {
+          "round": 3,
+          "status": "ok",
+          "request_sha256": "542ed596665b4da1ba2158c85a770d0425c6ae9f4f3a2550a45add75258a27ae",
+          "model_calls": 1,
+          "total_tokens": 15493,
+          "kind": "decompose"
+        },
+        {
+          "round": 4,
+          "status": "ok",
+          "request_sha256": "33bb02beabf06d245aa398eaf05d46117c3ee98662b0cabfb1b5926b0e777b8c",
+          "model_calls": 1,
+          "total_tokens": 16001,
+          "kind": "decompose"
+        },
+        {
+          "round": 5,
+          "status": "ok",
+          "request_sha256": "0c8875a382d89988cbffcf65e07c944577515fb21f549a33d118636c61b044ed",
+          "model_calls": 1,
+          "total_tokens": 13075,
+          "kind": "decompose"
+        },
+        {
+          "round": 6,
+          "status": "ok",
+          "request_sha256": "cb63f2866c77a8efbf146c1fbcd2c9adfc3486b0a03c9055ad19f8e2b054b624",
+          "model_calls": 1,
+          "total_tokens": 19298,
+          "kind": "prove"
+        },
+        {
+          "round": 7,
+          "status": "ok",
+          "request_sha256": "eb0ec0fd0dccb3b6b57fca9016d6c5655a7410951a689fbe2732d5a38aa6a453",
+          "model_calls": 1,
+          "total_tokens": 23634,
+          "kind": "decompose"
+        },
+        {
+          "round": 8,
+          "status": "ok",
+          "request_sha256": "a16ae52525d2aece5307ed09bf5d369f0ed22afb74e626f8e07a75722d44d60a",
+          "model_calls": 1,
+          "total_tokens": 16324,
+          "kind": null
+        },
+        {
+          "round": 9,
+          "status": "ok",
+          "request_sha256": "9e0f4aa803f56f08a44a5470e3f28bbaef10a2db9090f902991163cdd098bd46",
+          "model_calls": 1,
+          "total_tokens": 15552,
+          "kind": "prove"
+        }
+      ]
+    },
+    {
+      "path": "final_revision_02/live_controlled_expansion/20261112T060938Z-aeac5e776a",
+      "identity": "FQI-SRC-AP-3.3.9",
+      "status": "original_theorem_proved",
+      "stop_reason": "strict_original_accepted",
+      "rounds": 2,
+      "model_calls": 1,
+      "jev_calls": 0,
+      "open_obligations": [],
+      "verified_certificates": 2,
+      "graph_nodes": 2,
+      "edge_modes": [
+        "decomposition"
+      ],
+      "active_wall_seconds": 162.33356134220958,
+      "accepted_generated_proofs_match_provider": true,
+      "model_evidence": [
+        {
+          "round": 1,
+          "status": "ok",
+          "request_sha256": "3560ac07a6348542b34f18a73e96cac3b89a99f4ef736a64f0421085f02d3dcd",
+          "model_calls": 1,
+          "total_tokens": 9681,
+          "kind": "decompose"
+        }
+      ]
+    }
+  ],
+  "jev_selections": [
+    {
+      "round": 1,
+      "confidence": 0.38,
+      "fallback": {
+        "code": "low_confidence",
+        "fallback": "rule"
+      }
+    },
+    {
+      "round": 2,
+      "confidence": 0.92,
+      "fallback": null
+    },
+    {
+      "round": 6,
+      "confidence": 0.02,
+      "fallback": {
+        "code": "low_confidence",
+        "fallback": "rule"
+      }
+    },
+    {
+      "round": 7,
+      "confidence": 0.6,
+      "fallback": null
+    }
+  ],
+  "controlled_expansion": {
+    "controlled_first_action": true,
+    "model_proof_supplied": false,
+    "actual_child_cas_verified": true,
+    "exact_original_accepted": true
+  },
+  "independent_original_audit": "math_probe/live_hockey_audit.json",
+  "duplicate_run_excluded": {
+    "schema_version": 1,
+    "status": "interrupted",
+    "exit_code": 130,
+    "reason": "Tool orchestration reported earlier launch aborted before dispatch, but its process had started. This later duplicate was explicitly interrupted and excluded.",
+    "original_run": "20261112T055459Z-062bba8130",
+    "counts_as_benchmark_result": false,
+    "selection_calls": [
+      {
+        "path": "selection_calls/jev-0001-5873a5a3694a4df4bb5a997aab6c4c18/result.json",
+        "status": "ok",
+        "error_code": null,
+        "model_calls": 1
+      },
+      {
+        "path": "selection_calls/jev-0002-257fedfeeaf84b8682658a02e4a3814f/result.json",
+        "status": "unavailable",
+        "error_code": "cancelled",
+        "model_calls": 1
+      }
+    ]
+  },
+  "test_data_read": false,
+  "full_train_batch": false,
+  "historical_solutions_read": false,
+  "git_available": false,
+  "github_published": false,
+  "limits": [
+    "existing formal Source profiles only",
+    "bounded pure Lean syntax and declaration library",
+    "third preselected problem retains two open obligations",
+    "controlled expansion is not autonomous selection evidence",
+    "revision 01 live proofs remain attributed to revision 01; only stop classification changed"
+  ]
+}

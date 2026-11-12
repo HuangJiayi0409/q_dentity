@@ -1,0 +1,15 @@
+{
+  "compressed_member_inventory_scanned_as_plaintext": true,
+  "credential_source_names": [
+    "API_GPT",
+    "API_Jev",
+    "API_deepseek"
+  ],
+  "credential_values_saved": false,
+  "files_scanned": 1469,
+  "findings": [],
+  "known_secret_exact_match_scan": true,
+  "regex_scan": true,
+  "scope": "Selected plaintext evidence and transport metadata; credential values never output.",
+  "status": "passed"
+}

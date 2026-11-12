@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "purpose": "Small preselected integration set; not a Train success-rate experiment",
+  "identities": [
+    {"id": "FQI-SRC-AP-3.3.9", "selector": "rule", "purpose": "Real CAS local difference followed by live LLM and exact original acceptance"},
+    {"id": "FQI-GAUSS-ALTERNATING", "selector": "rule", "purpose": "Witness-dependent recurrence certificate and model residual continuation"},
+    {"id": "FQI-FINITE-Q-BINOMIAL", "selector": "jev", "purpose": "Actual choice among multiple applicable mathematical method outlets and LLM"}
+  ],
+  "budgets": {"seconds_per_problem": 1200, "actions_per_problem": 12, "max_model_calls": 8, "action_seconds": 180},
+  "selection_basis": "Current frontend structure probes before any live theorem request",
+  "test_data_read": false,
+  "historical_solutions_read": false,
+  "full_train_batch": false,
+  "reporting": "Preserve failed attempts, distinguish plumbing from live model evidence, do not merge successful runs into a benchmark rate"
+}

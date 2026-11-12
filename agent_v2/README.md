@@ -1,5 +1,7 @@
 # Agent v2 最小闭环
 
+2026-11-12 新增显式 `auto` 自主入口，连接当前残差任务、多方法候选、现场模型证明、Jev 选路、受 Lean 约束的增量分解与断点恢复。使用与能力边界见 [AUTONOMOUS.md](AUTONOMOUS.md)，本轮实际结果见 [AUTONOMOUS_VALIDATION.md](AUTONOMOUS_VALIDATION.md)。下文的“LLM 禁用／无自动扩图”等说明描述原有 `run` 单方法入口；该入口保持原行为。
+
 这是新的残差证书控制器。按用户后续要求，旧 Agent、旧 workflow 控制层、旧完整流程适配和历史验收代码不再使用。当前复用独立数学核心和项目固定 Lean 工具链。矩阵方法显式共享仍保留的 `finite_product_framework/workflow/matrix_symbolic.py` 纯计算辅助模块；它只有标量/矩阵序列化和残差核对，不运行旧框架控制流程。
 
 第一阶段完整收尾见 [TELESCOPING_CLOSURE.md](TELESCOPING_CLOSURE.md)。原始真实 Train 差分局部闭环见 [TELESCOPING_PHASE1.md](TELESCOPING_PHASE1.md)。此前四项修复记录见 [REVIEW_FIXES.md](REVIEW_FIXES.md)，原始 MVP 验证记录保留在 `VALIDATION.md`。

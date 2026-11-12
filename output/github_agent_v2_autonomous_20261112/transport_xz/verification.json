@@ -1,0 +1,33 @@
+{
+  "archive": "autonomous_20261112_audit.tar.xz",
+  "archive_bytes": 1352456,
+  "archive_sha256": "25d9e39cdc942d2c4468ea2bb5d382b0434313f3c73a179ddec06819ceffb6d5",
+  "compressed_member_inventory": {
+    "compressed_bytes": 734856,
+    "compressed_file": "members.json.xz",
+    "compressed_sha256": "37673ebab3b96c6105475628cd6d215d83e101dcf81d81e278b2e7772e66a027",
+    "decompressed_bytes": 13209102,
+    "decompressed_sha256": "64fa57a5966ea17113bb7fd54c3cf703d88def5c6146829df380cb43c789be3a",
+    "decompression_matches_original_json": true,
+    "second_compression_byte_identical": true
+  },
+  "original_gzip_member_inventory_identical": true,
+  "original_selected_files_unchanged_during_packaging": true,
+  "per_member_sha256_and_size_match": true,
+  "publication_files": [
+    "README.md",
+    "autonomous_20261112_audit.tar.xz",
+    "build_transport.py",
+    "manifest.json",
+    "members.json.xz",
+    "sensitive_scan.json",
+    "verification.json",
+    "SHA256SUMS"
+  ],
+  "safe_member_paths": true,
+  "second_build_byte_identical": true,
+  "sensitive_scan_status": "passed",
+  "status": "passed",
+  "unresolved_internal_artifact_references": 0,
+  "verified_extracted_files": 1464
+}

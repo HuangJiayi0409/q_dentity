@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "agent_v2/AUTONOMOUS.md",
+      "change": "added",
+      "sha256": "bc8c528968c880ba4d8c003c3053af928e132a3e35dad820f7616359d8c40c9c"
+    },
+    {
+      "path": "agent_v2/AUTONOMOUS_VALIDATION.md",
+      "change": "added",
+      "sha256": "3a201f3358be17a69d79006513b6f97e300e7402c5346612a4fdd6db2600c660"
+    },
+    {
+      "path": "agent_v2/README.md",
+      "change": "modified",
+      "sha256": "30cb4f194609c9eef1bf18390605cf02313db1485bfe8f1e2a810618204858e6"
+    },
+    {
+      "path": "agent_v2/autonomous.py",
+      "change": "added",
+      "sha256": "c6900f340ce19430f2119e8d1aa222a9c1b614a31bc1e9cdc4d71865ffad37ed"
+    },
+    {
+      "path": "agent_v2/autonomous_adapter.py",
+      "change": "added",
+      "sha256": "ff01fd0fa0452bb0e4cc8029d74d49de779c7e06150584f7b45ec4b75dd792be"
+    },
+    {
+      "path": "agent_v2/autonomous_cli.py",
+      "change": "added",
+      "sha256": "c2037712e11ca3309a0773751340890df8aa4d8b52ff30eac9ee62c207a44e5a"
+    },
+    {
+      "path": "agent_v2/cli.py",
+      "change": "modified",
+      "sha256": "61200e179b55268b977b72cb3ff2c61c96ee1c369f0e117bdae08955eb21c856"
+    },
+    {
+      "path": "agent_v2/graph.py",
+      "change": "modified",
+      "sha256": "781c62bb4efff677e083cef96f2637c566c14167fa43490bb5568ad80994d6b2"
+    },
+    {
+      "path": "agent_v2/graph_builder.py",
+      "change": "added",
+      "sha256": "e6d4b8002ace36c175cdd1df37f9760cf96bee360029572f710908027fa7e9ef"
+    },
+    {
+      "path": "agent_v2/graph_proposals.py",
+      "change": "added",
+      "sha256": "cc4262ef1c3c3254608c6f70a062375988f5e4e3212cc1fa5635b7218299f26e"
+    },
+    {
+      "path": "agent_v2/jev_client.py",
+      "change": "added",
+      "sha256": "3bbcd4feb8aa205f673f26e02a762b686405ea72017f3a791f8ce71366078053"
+    },
+    {
+      "path": "agent_v2/lean/LocalProofCheck.lean",
+      "change": "added",
+      "sha256": "f59552bc7c2d96674456ace0c2d527844d33f69d7bf7fd3cfd26d48b815e4ec6"
+    },
+    {
+      "path": "agent_v2/library.py",
+      "change": "added",
+      "sha256": "84a88e486deec4f02ef1f3f01e214663eb9558161ec36100f7f67498acdfa3fe"
+    },
+    {
+      "path": "agent_v2/local_proof_checker.py",
+      "change": "added",
+      "sha256": "86ca5c11bfe93363af96e4c6bcdcd85653893dd8372661a9da745b80a0804afb"
+    },
+    {
+      "path": "agent_v2/local_tasks.py",
+      "change": "added",
+      "sha256": "7a5e3d86a9a12a28d832992a81069e2112ab7b40ccda15cd0d32c1333bd6eba9"
+    },
+    {
+      "path": "agent_v2/math_lean_profile.py",
+      "change": "modified",
+      "sha256": "f783fd3d6392f769d1a76e2a300661357d55130ac4f2738b3ab2d02fb1b0fb2a"
+    },
+    {
+      "path": "agent_v2/model_client.py",
+      "change": "added",
+      "sha256": "5a9d8d41b9a64f485bf4d920daf43aadd4880e81ec66c89c46bdd117df7980cd"
+    },
+    {
+      "path": "agent_v2/tests/autonomous_expansion_smoke.py",
+      "change": "added",
+      "sha256": "6e4bfca7e6e1d03207bf3440a28fc25a2c91143c2532ac6e0cdb86ff54ed37e6"
+    },
+    {
+      "path": "agent_v2/tests/test_autonomous_adapter.py",
+      "change": "added",
+      "sha256": "ab430c1aa3d896e323856521ea9a1542ebaa849ec4b72147ca513d16a2b36b42"
+    },
+    {
+      "path": "agent_v2/tests/test_autonomous_cli.py",
+      "change": "added",
+      "sha256": "38f9fb496cc44d7ff08e0c42b8ec1e4577a25b2e388933058427c19a22589303"
+    },
+    {
+      "path": "agent_v2/tests/test_autonomous_expansion_smoke.py",
+      "change": "added",
+      "sha256": "3b521b813d9e85925487e4a5fed4a00c8ffaaa49b5b3754426d6bdc37dcce0f6"
+    },
+    {
+      "path": "agent_v2/tests/test_autonomous_graph.py",
+      "change": "added",
+      "sha256": "a6e28f39f6a36fb7c0944815eba85a6c26ecf5097e7f192d4fb791925f24177a"
+    },
+    {
+      "path": "agent_v2/tests/test_autonomous_loop.py",
+      "change": "added",
+      "sha256": "41ffe6066938eab1e698355418c6d59bb52516f0638907872660fa711c92e837"
+    },
+    {
+      "path": "agent_v2/tests/test_jev_client.py",
+      "change": "added",
+      "sha256": "16e5bd42d93937840e55e5ab4903a32828a50ed4e153b7f667a9798a7e665523"
+    },
+    {
+      "path": "agent_v2/tests/test_library.py",
+      "change": "added",
+      "sha256": "6be5989d245d5d1c1c98479592539aaadfc584eae0265221ab592c8fbcf06fc5"
+    },
+    {
+      "path": "agent_v2/tests/test_local_proof_checker.py",
+      "change": "added",
+      "sha256": "3aaebdbd1554418bb7663089cd961298553a486460a89695135183bdad7227ab"
+    },
+    {
+      "path": "agent_v2/tests/test_local_proof_syntax.py",
+      "change": "added",
+      "sha256": "cccec1a8c820e4f991f6d6bbc15dd3b1a5b6b08ea36001de6fd6d6e6732bef56"
+    },
+    {
+      "path": "agent_v2/tests/test_local_tasks.py",
+      "change": "added",
+      "sha256": "67f8f4e4e04d5033b338afe51b843a2c367a1360ca3c6812b16aacfbc678325b"
+    },
+    {
+      "path": "agent_v2/tests/test_local_train_checker.py",
+      "change": "added",
+      "sha256": "e1ff00f26513861243014e074ca05e2c14332c0890b099fa216f0eb439be3b13"
+    },
+    {
+      "path": "agent_v2/tests/test_model_client.py",
+      "change": "added",
+      "sha256": "d5abad70e609e35a35e74e933a8fd93446900d140ee0ba0e3daa0e3be9b48e27"
+    }
+  ]
+}

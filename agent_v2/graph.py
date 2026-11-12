@@ -10,6 +10,30 @@ from .models import (ContractError, JointAction, Model, RepresentationInstance,
                      action_fingerprint, digest, thaw)
 
 
+def proof_tree_obligations(state):
+    """Return only obligations justified by the complete current proof tree."""
+    from .executor import validate_invariant
+    validate_invariant(state)
+    obligations = {state.root.id: state.root}
+    for link in state.links:
+        obligations[link.parent.id] = link.parent
+        obligations.update((child.id, child) for child in link.children)
+    return obligations
+
+
+def obligation_node_matches(node, obligation, state):
+    if node.id != obligation.id or node.source_sha256 != state.G.sha256:
+        return False
+    if obligation.id == state.root.id:
+        return (node.lean_anchor == state.G.theorem
+                and node.payload.get('declaration') == state.G.declaration
+                and node.payload.get('proposition') == state.G.proposition
+                and node.kind == ('closed_prop' if state.G.proposition else 'lean_source'))
+    return (node.kind == 'closed_prop' and node.semantic_domain == 'Prop'
+            and dict(node.payload) == {'proposition': obligation.proposition,
+                                       'obligation_id': obligation.id})
+
+
 @dataclass(frozen=True)
 class Edge(Model):
     id: str
@@ -118,12 +142,29 @@ class Graph:
         value = node.payload.get('proposition')
         return value if isinstance(value, str) and value.strip() else None
 
-    def _edge_reason(self, edge, state, certificates):
+    def _edge_reason(self, edge, state, certificates, proof_obligations=None):
         source, target = self.nodes[edge.source], self.nodes[edge.target]
         if any(condition not in certificates for condition in edge.conditions):
             return 'condition_not_verified'
         if edge.mode == 'identity':
             return None if source == target else 'invalid_identity_edge'
+        if edge.mode in ('decomposition', 'focus_obligation'):
+            obligations = proof_obligations if proof_obligations is not None else proof_tree_obligations(state)
+            if source.id not in obligations or target.id not in obligations:
+                return ('unregistered_focus_obligation' if edge.mode == 'focus_obligation'
+                        else 'unregistered_decomposition_obligation')
+            if not all(obligation_node_matches(node, obligations[node.id], state)
+                       for node in (source, target)):
+                return 'obligation_representation_mismatch'
+            if edge.mode == 'focus_obligation':
+                return None if target.id in {o.id for o in state.O} else 'focus_target_not_open'
+            link = next((link for link in state.links if link.parent.id == source.id), None)
+            if (link is None or edge.bridge_certificate != link.certificate_id
+                    or target.id not in {child.id for child in link.children}):
+                return 'decomposition_link_mismatch'
+            # The invariant verifies the *whole* children -> parent theorem.
+            # Visiting one child never asserts that it alone implies its parent.
+            return None
         cert = certificates.get(edge.bridge_certificate)
         if cert is None:
             return 'bridge_not_verified'
@@ -158,8 +199,16 @@ class Graph:
             return [], [{'route_id': '*', 'code': 'original_representation_mismatch'}]
         if any(n.source_sha256 != self.source_sha256 for n in self.nodes.values()):
             return [], [{'route_id': '*', 'code': 'representation_binding_mismatch'}]
+        autonomous = (any(edge.mode in ('decomposition', 'focus_obligation') for edge in self.edges.values())
+                      or any(outlet.parameters.get('autonomous') is True for outlet in self.outlets.values()))
+        proof_obligations = None
+        if autonomous or state.links or state.O != (state.root,):
+            try:
+                proof_obligations = proof_tree_obligations(state)
+            except ContractError:
+                return [], [{'route_id': '*', 'code': 'proof_invariant_invalid'}]
         certificates = {c.id: c for c in state.C if c.source_sha256 == self.source_sha256}
-        edge_reasons = {edge.id: self._edge_reason(edge, state, certificates)
+        edge_reasons = {edge.id: self._edge_reason(edge, state, certificates, proof_obligations)
                         for edge in self.edges.values()}
         reachable = {state.root.id}
         changed = True
@@ -176,6 +225,12 @@ class Graph:
         attempts = {attempt.fingerprint: attempt for attempt in state.attempts}
         for outlet in sorted(self.outlets.values(), key=lambda item: item.id):
             target = self.nodes[outlet.node]
+            if outlet.parameters.get('autonomous') is True:
+                obligation = proof_obligations.get(target.id)
+                if (obligation is None or not obligation_node_matches(target, obligation, state)
+                        or outlet.parameters.get('goal_id') != target.id or outlet.handles != (target.id,)):
+                    reject(outlet.id, 'autonomous_goal_binding_mismatch')
+                    continue
             if outlet.backend == 'method' and 'method_version' in outlet.parameters:
                 from .method_registry import builtin_registry
                 try:
@@ -221,6 +276,11 @@ class Graph:
                 elif any(cert not in certificates for cert in outlet.required_certificates):
                     code = 'required_certificate_unavailable'
                 elif outlet.parameters.get('produces_certificate') in certificates:
+                    code = 'task_already_completed'
+                elif (outlet.parameters.get('autonomous') is True and outlet.M == 'CAS'
+                      and isinstance(outlet.parameters.get('produces_proposition'), str)
+                      and any(cert.proposition == outlet.parameters['produces_proposition']
+                              for cert in certificates.values())):
                     code = 'task_already_completed'
                 elif fixed_task_completed(state, outlet):
                     code = 'task_already_completed'

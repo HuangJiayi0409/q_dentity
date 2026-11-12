@@ -1,0 +1,344 @@
+{
+  "allowlist_files": [
+    "baseline.json",
+    "changed_files.json",
+    "changes.diff",
+    "final_validation.json",
+    "finalize.py",
+    "train_preregistration.json",
+    "live_preflight.py",
+    "math_probe/live_hockey_audit.json",
+    "math_probe/live_hockey_audit.md",
+    "math_probe/live_hockey_audit.py",
+    "math_probe/runtime_review.md",
+    "math_probe/review_controls.json",
+    "math_probe/review_controls.py",
+    "math_probe/local_security_review.md",
+    "math_probe/local_boundary_probe.py",
+    "task2_independent_review.md",
+    "task2_review_counter_probe.json",
+    "task2_review_inflight_probe.json",
+    "task2_tests.log",
+    "task2_validation.json",
+    "task2_ua_diagnosis.md",
+    "task2_ua_validation.json",
+    "controlled_expansion_driver_report.md",
+    "task1/controlled_expansion_driver.diff",
+    "task1/controlled_expansion_driver_manifest.json",
+    "task1/controlled_expansion_driver_tests.log",
+    "task1/controlled_expansion_prepare.log",
+    "task1/controlled_expansion_prepare_validation.json"
+  ],
+  "allowlist_trees": [
+    "before",
+    "after",
+    "final_revision_01",
+    "final_revision_02",
+    "math_probe/local_boundary",
+    "preflight_sandbox",
+    "preflight_host",
+    "preflight_identified_client",
+    "preflight_updated_credential"
+  ],
+  "archive_metadata": {
+    "gid": 0,
+    "member_order": "lexicographic repository-relative path",
+    "mode": "0644",
+    "mtime": 0,
+    "uid": 0,
+    "xz_check": "CRC64",
+    "xz_dictionary_bytes": 67108864,
+    "xz_preset": 9
+  },
+  "bound_source_and_log_checks": {
+    "after_hashes_match": true,
+    "changed_files": 30,
+    "revisions": [
+      {
+        "files": 81,
+        "frozen_hashes_match": true,
+        "revision": "final_revision_01"
+      },
+      {
+        "files": 81,
+        "frozen_hashes_match": true,
+        "revision": "final_revision_02"
+      }
+    ],
+    "suite_logs_match_final_validation": true
+  },
+  "compressed_member_inventory": {
+    "compression": "xz preset 9, 64 MiB dictionary, CRC64",
+    "decompressed_name": "members.json",
+    "publication_path": "members.json.xz"
+  },
+  "excluded_bytes_in_allowlist": 52091136,
+  "excluded_files_in_allowlist": 105,
+  "exclusion_policy": [
+    "No recursive repository scan: enumerate only the explicit current-run allowlist.",
+    "No benchmark/Test read or scan; no historical agent frameworks read or archived.",
+    "No API_* files, auth configuration, secrets, toolchain binaries, compiled/build artifacts.",
+    "Unlisted temporary development directories are omitted; reported failed model rounds and the excluded duplicate remain.",
+    "Retain original receipt/dependency hashes; enumerate omitted binaries and locate same-hash source copies.",
+    "Dependencies outside the evidence allowlist are recorded prerequisites, not asserted available in this archive."
+  ],
+  "limits": [
+    "Not a full runtime backup; archived checkpoints cannot be resumed directly after relocation.",
+    "Frozen source and stored logs support audit; they do not replace a fresh Lean recheck.",
+    "Original raw evidence remains byte-for-byte unchanged; absolute paths are historical provenance."
+  ],
+  "local_only_files": [
+    "members.json"
+  ],
+  "original_allowlist_summaries": [
+    {
+      "bytes": 1136810,
+      "files": 149,
+      "inventory_sha256": "c932dc140c4331bef6d513d894eb31ad5c20534649b3de40d214e564d9216d1a",
+      "path": "agent_v2/generated/autonomous_20261112/before"
+    },
+    {
+      "bytes": 287542,
+      "files": 30,
+      "inventory_sha256": "d8ee4f26267b1952b6ac2a987de894ee8a188b070d64693e6d7559ee177cb327",
+      "path": "agent_v2/generated/autonomous_20261112/after"
+    },
+    {
+      "bytes": 249180093,
+      "files": 1103,
+      "inventory_sha256": "0b7ef70eaed4324ccfec1bc978a757e7c5b4dabaecda5a98a5565f7beb6bdb08",
+      "path": "agent_v2/generated/autonomous_20261112/final_revision_01"
+    },
+    {
+      "bytes": 31423028,
+      "files": 214,
+      "inventory_sha256": "2ddc015549634b6dcd8a2b81032d35f09691b125661ad15bafc49ba248d50ffd",
+      "path": "agent_v2/generated/autonomous_20261112/final_revision_02"
+    },
+    {
+      "bytes": 457460,
+      "files": 34,
+      "inventory_sha256": "832d59c7d65f4c1d081f4dcc7602d90296eedcb9983beedf966c1200da83e230",
+      "path": "agent_v2/generated/autonomous_20261112/math_probe/local_boundary"
+    },
+    {
+      "bytes": 1358,
+      "files": 2,
+      "inventory_sha256": "4fdf21903d3f2652dcb75c7244a9882bf2efe725a96b64224d575c8dd88634e3",
+      "path": "agent_v2/generated/autonomous_20261112/preflight_sandbox"
+    },
+    {
+      "bytes": 1589,
+      "files": 3,
+      "inventory_sha256": "f167f6ff8894d4c4944b098e7167f0dfd03960728e7dd1944b72ea4b8dc01c5c",
+      "path": "agent_v2/generated/autonomous_20261112/preflight_host"
+    },
+    {
+      "bytes": 1844,
+      "files": 3,
+      "inventory_sha256": "e3bbe25b38441eb5ac2c8d5d42d1d11d36569d76a5ce8ce7ae0cb4f82b6fec40",
+      "path": "agent_v2/generated/autonomous_20261112/preflight_identified_client"
+    },
+    {
+      "bytes": 5135,
+      "files": 3,
+      "inventory_sha256": "bf6187dcf755c4c2ba66e0f3f42ab97f0cabb670027aeea24919dccccbd7197d",
+      "path": "agent_v2/generated/autonomous_20261112/preflight_updated_credential"
+    },
+    {
+      "bytes": 23261,
+      "files": 1,
+      "inventory_sha256": "31c536513b47f3c0df082246dfe8dc004bd39ba32421fd646d71fb5f9d8689f8",
+      "path": "agent_v2/generated/autonomous_20261112/baseline.json"
+    },
+    {
+      "bytes": 5147,
+      "files": 1,
+      "inventory_sha256": "6b64200868a8985ed9c7e6bdd217bdd1fe9610471f487028560f4cc05c86163d",
+      "path": "agent_v2/generated/autonomous_20261112/changed_files.json"
+    },
+    {
+      "bytes": 221910,
+      "files": 1,
+      "inventory_sha256": "0b6fca9ce44067c53d37c2b020860176985e4c80b10d90171fabdc977b7f42cc",
+      "path": "agent_v2/generated/autonomous_20261112/changes.diff"
+    },
+    {
+      "bytes": 8554,
+      "files": 1,
+      "inventory_sha256": "396d7f76f7e5e39126c7db7a23f2410a16dad7e9c030bc8874db781f283a0e78",
+      "path": "agent_v2/generated/autonomous_20261112/final_validation.json"
+    },
+    {
+      "bytes": 8332,
+      "files": 1,
+      "inventory_sha256": "4f41d46281647200608e40874e523be326d018f492e89340c057a9212ee9c6a7",
+      "path": "agent_v2/generated/autonomous_20261112/finalize.py"
+    },
+    {
+      "bytes": 1010,
+      "files": 1,
+      "inventory_sha256": "8cee4815c4f2d73aa2b33553943da956ebcc6cc1b24c51567539afdfdd3886de",
+      "path": "agent_v2/generated/autonomous_20261112/train_preregistration.json"
+    },
+    {
+      "bytes": 825,
+      "files": 1,
+      "inventory_sha256": "145eec7ac60f822386fae2b8a50b597f40d5aeb7b6161726f800dedf4a559a24",
+      "path": "agent_v2/generated/autonomous_20261112/live_preflight.py"
+    },
+    {
+      "bytes": 153538,
+      "files": 1,
+      "inventory_sha256": "47f8967a6b60ea83c51b41b4e14f5e65addb6552a9edadaed5fe42e0b50412b2",
+      "path": "agent_v2/generated/autonomous_20261112/math_probe/live_hockey_audit.json"
+    },
+    {
+      "bytes": 4077,
+      "files": 1,
+      "inventory_sha256": "7a2bebf2d394def2fda811295b3a5e8601e16e116ac97225ab2f50f62d0c92d1",
+      "path": "agent_v2/generated/autonomous_20261112/math_probe/live_hockey_audit.md"
+    },
+    {
+      "bytes": 8561,
+      "files": 1,
+      "inventory_sha256": "8ecaf161372ff01eb1005198dec9785c9fd175aa9cf7139b89979bd6763cb99a",
+      "path": "agent_v2/generated/autonomous_20261112/math_probe/live_hockey_audit.py"
+    },
+    {
+      "bytes": 4441,
+      "files": 1,
+      "inventory_sha256": "51e735399dd0d4a74637c4dfa52c0267dcf9e16e6d3d2c8e5709cb5bca255d1a",
+      "path": "agent_v2/generated/autonomous_20261112/math_probe/runtime_review.md"
+    },
+    {
+      "bytes": 817,
+      "files": 1,
+      "inventory_sha256": "71e8bba0ac576c0b130d5903947cf29345f4b33f58f397514aba0975c3428979",
+      "path": "agent_v2/generated/autonomous_20261112/math_probe/review_controls.json"
+    },
+    {
+      "bytes": 5507,
+      "files": 1,
+      "inventory_sha256": "f71d26786ab0ed5512ece9c1f9f68d54dc5b949d664a284076d61956367c258a",
+      "path": "agent_v2/generated/autonomous_20261112/math_probe/review_controls.py"
+    },
+    {
+      "bytes": 5598,
+      "files": 1,
+      "inventory_sha256": "eeecc61d5b56e7183d4d6532e0f076182b54cac2dbf9510e12705c2f169ffaa1",
+      "path": "agent_v2/generated/autonomous_20261112/math_probe/local_security_review.md"
+    },
+    {
+      "bytes": 3434,
+      "files": 1,
+      "inventory_sha256": "b054f9ffa12c0a445596c69cda1e0fba24f4d57d0052d585303b2828ff67101f",
+      "path": "agent_v2/generated/autonomous_20261112/math_probe/local_boundary_probe.py"
+    },
+    {
+      "bytes": 3390,
+      "files": 1,
+      "inventory_sha256": "128ccf4cc026afd714cff452f47b28629aa1a8d5bd6d6816595a0376404f26ee",
+      "path": "agent_v2/generated/autonomous_20261112/task2_independent_review.md"
+    },
+    {
+      "bytes": 206,
+      "files": 1,
+      "inventory_sha256": "9c0213e0215e9599f743fb324d8e9993b86e921516fcf52ead701204ccb52691",
+      "path": "agent_v2/generated/autonomous_20261112/task2_review_counter_probe.json"
+    },
+    {
+      "bytes": 164,
+      "files": 1,
+      "inventory_sha256": "4bd9ff4b2e633a3e5cca5e1155827393bd6335a5a4b23ed35de8e11606f070ee",
+      "path": "agent_v2/generated/autonomous_20261112/task2_review_inflight_probe.json"
+    },
+    {
+      "bytes": 4573,
+      "files": 1,
+      "inventory_sha256": "e5eb224470ef1989380e7753e2bf006286710d358ad1ad943a56431507e0da4c",
+      "path": "agent_v2/generated/autonomous_20261112/task2_tests.log"
+    },
+    {
+      "bytes": 1412,
+      "files": 1,
+      "inventory_sha256": "37ed9d1b9c238007aad7def72f0aeb1a1af5a4508a06b9fbc4b2a4ab4083dae5",
+      "path": "agent_v2/generated/autonomous_20261112/task2_validation.json"
+    },
+    {
+      "bytes": 2388,
+      "files": 1,
+      "inventory_sha256": "f72f8ce88d5b57289679db406226c98dbec726e05b7ed9da33fafd9d74822063",
+      "path": "agent_v2/generated/autonomous_20261112/task2_ua_diagnosis.md"
+    },
+    {
+      "bytes": 527,
+      "files": 1,
+      "inventory_sha256": "6ede67f1368c495b1b58d920f91f5148370309b82bab99f5bb43fbb72f8170c6",
+      "path": "agent_v2/generated/autonomous_20261112/task2_ua_validation.json"
+    },
+    {
+      "bytes": 4031,
+      "files": 1,
+      "inventory_sha256": "00be774039550d6ac0c72e8b1fd35330cf4b59e91626f123135b295906bb8009",
+      "path": "agent_v2/generated/autonomous_20261112/controlled_expansion_driver_report.md"
+    },
+    {
+      "bytes": 18702,
+      "files": 1,
+      "inventory_sha256": "fc74132074cfd21a6380f35c66e93f79a0bb4d8a9aca70ade30a7b073e7e0213",
+      "path": "agent_v2/generated/autonomous_20261112/task1/controlled_expansion_driver.diff"
+    },
+    {
+      "bytes": 352,
+      "files": 1,
+      "inventory_sha256": "cc99daea80b2cd63f22a98ee34621eac7f995ff9a8f8f8d53ec09eb07e7cfa46",
+      "path": "agent_v2/generated/autonomous_20261112/task1/controlled_expansion_driver_manifest.json"
+    },
+    {
+      "bytes": 715,
+      "files": 1,
+      "inventory_sha256": "0659018f1feb40583ce856c79ef045bb01f13a7137164559fc49574966329ad9",
+      "path": "agent_v2/generated/autonomous_20261112/task1/controlled_expansion_driver_tests.log"
+    },
+    {
+      "bytes": 319,
+      "files": 1,
+      "inventory_sha256": "59fde7455b5224003492fcb40b3504dccfced2f18ae6d7dadb2a0530c69f9c84",
+      "path": "agent_v2/generated/autonomous_20261112/task1/controlled_expansion_prepare.log"
+    },
+    {
+      "bytes": 837,
+      "files": 1,
+      "inventory_sha256": "cc0ea88af690c64dfeed2432e65c08c1892ac291677780ffecaa61b594881490",
+      "path": "agent_v2/generated/autonomous_20261112/task1/controlled_expansion_prepare_validation.json"
+    }
+  ],
+  "payload_bytes": 230896351,
+  "payload_files": 1464,
+  "payload_inventory_sha256": "881a8ecd14758fe550ca85391eafbe4fbf86fabe6ab0eb55eaa4d9e7dc9dd7e2",
+  "publication_files": [
+    "README.md",
+    "autonomous_20261112_audit.tar.xz",
+    "build_transport.py",
+    "manifest.json",
+    "members.json.xz",
+    "sensitive_scan.json",
+    "verification.json",
+    "SHA256SUMS"
+  ],
+  "reference_dispositions": {
+    "external_environment_or_repository_prerequisite_not_packaged": 15907,
+    "identical_content_available_in_archive": 194,
+    "included_at_original_relative_path": 721,
+    "omitted_compiled_artifact": 97
+  },
+  "schema_version": 1,
+  "source_root": "agent_v2/generated/autonomous_20261112",
+  "test_and_network_activity": {
+    "historical_tests_rerun": false,
+    "lean_reruns": 0,
+    "network_calls": 0,
+    "new_model_calls": 0
+  }
+}

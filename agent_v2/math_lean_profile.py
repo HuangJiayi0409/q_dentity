@@ -350,7 +350,7 @@ def check_train_original(checker, report, source_data, run, attempt, start):
 
 
 def _verify_train(checker, candidate, context, start, source, frontend, expected, *, original=False,
-                  bound=None):
+                  bound=None, declaration_renderer=None, open_scopes=('BigOperators',)):
     from .lean_checker import _AXIOMS, _IMPORTS, _header_imports, _lean_environment, _result
     from .proof_profiles import resolve_source_profile
     if bound is None:
@@ -462,13 +462,18 @@ def _verify_train(checker, candidate, context, start, source, frontend, expected
         declaration = (f'theorem AgentV2Assembled : ({expected}) := {candidate["proof_term"]}\n'
                        + _original_declaration(source, frontend)) if original else (
                        f'theorem {candidate["theorem"]} : ({candidate["proposition"]}) := {candidate["proof_term"]}\n')
+        expected_declaration = f'\ndef AgentV2Expected : Prop := ({expected})\n'
+        # Only trusted Python callers provide this renderer. Neither candidate
+        # nor context can select it; existing fixed-profile behavior is unchanged.
+        if declaration_renderer is not None:
+            declaration, expected_declaration = declaration_renderer(candidate, expected, source, frontend, original)
         command = profile.original_command if original else profile.partial_command
         universes = ('universe ' + ' '.join(profile.universe_parameters) + '\n'
                      if profile.universe_parameters else '')
         code = ('\n'.join('import ' + name for name in imports) + '\n'
                 + without_imports(rules_text) + '\n' + without_imports(driver_text)
-                + '\nopen scoped BigOperators\n' + universes + declaration
-                + f'\ndef AgentV2Expected : Prop := ({expected})\n'
+                + '\n' + ''.join('open scoped ' + scope + '\n' for scope in open_scopes) + universes + declaration
+                + expected_declaration
                 + f'{command} {candidate["theorem"]} against AgentV2Expected nonce "{nonce}"\n')
         candidate_path = source_root / 'Candidate.lean'
         candidate_path.write_text(code)
